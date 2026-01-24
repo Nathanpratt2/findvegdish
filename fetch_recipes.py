@@ -1,7 +1,6 @@
 import feedparser
 import json
 import os
-import requests
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 from dateutil import parser
@@ -44,25 +43,55 @@ cutoff_date = datetime.now().astimezone() - timedelta(days=60)
 
 recipes = []
 
+# Pretend to be a real browser to avoid blocks
+USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+
 def extract_image(entry):
-    """Attempts to find an image in the RSS entry or content."""
-    # 1. Try media_content (standard RSS media extension)
-    if 'media_content' in entry:
-        return entry.media_content[0]['url']
+    """
+    Smarter extraction: checks for media tags, handles lazy loading, 
+    and filters out tracking pixels/icons.
+    """
     
-    # 2. Try media_thumbnail
+    # 1. Try standard RSS media extensions (Highest Quality)
+    if 'media_content' in entry:
+        # Some feeds return a list, try to find the 'medium' or 'large' one
+        for media in entry.media_content:
+            if 'url' in media and ('image' in media.get('type', '') or 'jpg' in media.get('url', '')):
+                return media['url']
+    
     if 'media_thumbnail' in entry:
         return entry.media_thumbnail[0]['url']
-        
-    # 3. Parse HTML content to find the first <img> tag
+
+    # 2. Parse HTML Content
     content = entry.get('content', [{}])[0].get('value', '') or entry.get('summary', '')
+    
     if content:
         soup = BeautifulSoup(content, 'lxml')
-        img = soup.find('img')
-        if img and img.get('src'):
-            return img['src']
+        images = soup.find_all('img')
+        
+        for img in images:
+            # Check for Lazy Loading attributes first
+            src = img.get('data-src') or img.get('data-lazy-src') or img.get('data-original') or img.get('src')
             
-    # 4. Fallback: No image found
+            if not src:
+                continue
+            
+            src_lower = src.lower()
+            
+            # FILTERS: Skip bad images
+            # Skip generic icons, tracking pixels, and emojis
+            if any(x in src_lower for x in ['pixel', 'emoji', 'icon', 'logo', 'badge', 'gravatar', 'gif', 'facebook', 'pinterest']):
+                continue
+                
+            # Skip tiny images if width is specified in HTML
+            width = img.get('width')
+            if width and width.isdigit() and int(width) < 150:
+                continue
+            
+            # If we made it here, it's likely a real recipe photo
+            return src
+
+    # 3. Fallback
     return "default.jpg"
 
 print(f"Fetching recipes from {len(ALL_FEEDS)} blogs...")
@@ -70,21 +99,27 @@ print(f"Fetching recipes from {len(ALL_FEEDS)} blogs...")
 for name, url in ALL_FEEDS:
     try:
         print(f"Checking {name}...")
-        feed = feedparser.parse(url)
+        # Use custom agent to prevent 403 Forbidden errors
+        feed = feedparser.parse(url, agent=USER_AGENT)
         
         for entry in feed.entries:
-            # Parse date safely
             try:
+                # Handle dates safely
                 published_time = parser.parse(entry.published if 'published' in entry else entry.updated)
-                # Ensure timezone awareness for comparison
                 if published_time.tzinfo is None:
                     published_time = published_time.replace(tzinfo=datetime.now().astimezone().tzinfo)
             except:
-                continue # Skip if no valid date
+                continue
             
-            # Filter: Keep only last 2 months
             if published_time > cutoff_date:
                 image_url = extract_image(entry)
+                
+                # Double check: If image URL is relative, make it absolute
+                if image_url and image_url.startswith('/'):
+                    # Simple fix for relative URLs (rare in RSS but happens)
+                    base_url = feed.feed.get('link', '')
+                    if base_url:
+                        image_url = base_url.rstrip('/') + image_url
                 
                 recipes.append({
                     "blog_name": name,
@@ -97,10 +132,10 @@ for name, url in ALL_FEEDS:
     except Exception as e:
         print(f"Failed to parse {name}: {e}")
 
-# Sort by date (newest first)
+# Sort new -> old
 recipes.sort(key=lambda x: x['date'], reverse=True)
 
-# Save to JSON
+# Save
 with open('data.json', 'w') as f:
     json.dump(recipes, f, indent=2)
 
