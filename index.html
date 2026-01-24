@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find Vegan Recipes Fast</title>
+    <title>The Vegan Feed</title>
     
     <!-- 1. Install to Home Screen (Manifest) -->
     <link rel="manifest" href="manifest.json">
@@ -21,6 +21,7 @@
             background-color: #f8f9fa;
             margin: 0;
             padding: 20px;
+            padding-bottom: 60px; /* Space for footer */
         }
         header {
             text-align: center;
@@ -34,21 +35,11 @@
         }
         p { color: #666; font-size: 1.1em; margin-top: 0; }
 
-        /* Controls Container (Search + Buttons) */
-        .controls {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-
-        /* Search Bar Style */
+        /* Search Bar */
         #searchInput {
             padding: 12px 20px;
             width: 100%;
-            max-width: 300px;
+            max-width: 400px;
             border-radius: 25px;
             border: 1px solid #ddd;
             font-family: 'Poppins', sans-serif;
@@ -56,13 +47,63 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
             outline: none;
             transition: all 0.3s ease;
+            margin-top: 15px;
         }
         #searchInput:focus {
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
             border-color: #27ae60;
         }
 
-        /* Action Buttons */
+        /* Smart Chips Container */
+        .chip-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+            padding: 10px 5px;
+            margin: 10px auto;
+            max-width: 700px;
+            scrollbar-width: none; /* Hide scrollbar Firefox */
+            -ms-overflow-style: none; /* Hide scrollbar IE */
+            justify-content: flex-start; /* Aligns left on mobile */
+        }
+        .chip-container::-webkit-scrollbar { display: none; } /* Hide Chrome */
+        
+        @media(min-width: 600px) {
+            .chip-container { justify-content: center; }
+        }
+
+        /* Chip Style */
+        .chip {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            padding: 8px 15px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            white-space: nowrap;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: #555;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .chip:hover {
+            background-color: #2c3e50;
+            color: white;
+            transform: translateY(-2px);
+        }
+        .chip:active { transform: scale(0.95); }
+
+        /* Controls Container (Buttons) */
+        .controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        /* Buttons */
         .btn {
             padding: 10px 20px;
             border-radius: 25px;
@@ -85,12 +126,12 @@
         .btn-favorites.active { background-color: #ff4757; color: white; border-color: #ff4757; }
 
         #installBtn {
-            display: none; 
+            display: none; /* Hidden by default */
             background-color: #2c3e50;
             color: white;
         }
 
-        /* Pinterest Style Grid */
+        /* Grid Layout */
         .gallery {
             column-count: 4;
             column-gap: 15px;
@@ -114,7 +155,7 @@
             display: block;
             text-decoration: none;
             color: inherit;
-            position: relative; /* For absolute positioning of heart */
+            position: relative;
         }
         .card:hover {
             transform: translateY(-5px);
@@ -125,7 +166,7 @@
             display: block;
         }
         
-        /* Heart Icon on Card */
+        /* Heart Icon */
         .heart-btn {
             position: absolute;
             top: 10px;
@@ -146,9 +187,8 @@
         .heart-btn:hover { transform: scale(1.1); }
         .heart-btn.is-active { color: #ff4757; }
 
-        .info {
-            padding: 15px;
-        }
+        .info { padding: 15px; }
+        
         .tag {
             font-size: 0.75em;
             text-transform: uppercase;
@@ -186,30 +226,47 @@
             color: #333;
         }
         .blogger { font-size: 0.9em; color: #888; }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #aaa;
+            font-size: 0.9em;
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Find Vegan Recipes Fast</h1>
-    <p>Daily recipes from the top bloggers.</p>
+    <h1>The Vegan Feed</h1>
+    <p>Curated recipes from the top bloggers and rising stars.</p>
     
+    <!-- 1. Search Bar -->
+    <input type="text" id="searchInput" placeholder="Search pasta, tofu, soup...">
+    
+    <!-- 2. Smart Category Chips -->
+    <div class="chip-container">
+        <button class="chip" onclick="quickSearch('pasta')">🍝 Pasta</button>
+        <button class="chip" onclick="quickSearch('curry')">🍛 Curry</button>
+        <button class="chip" onclick="quickSearch('soup')">🥣 Soup</button>
+        <button class="chip" onclick="quickSearch('salad')">🥗 Salad</button>
+        <button class="chip" onclick="quickSearch('tofu')">🧊 Tofu</button>
+        <button class="chip" onclick="quickSearch('burger')">🍔 Burger</button>
+        <button class="chip" onclick="quickSearch('cake')">🍰 Cake</button>
+        <button class="chip" onclick="quickSearch('cookie')">🍪 Cookie</button>
+    </div>
+
+    <!-- 3. Control Buttons -->
     <div class="controls">
-        <!-- Search -->
-        <input type="text" id="searchInput" placeholder="Search pasta, tofu, soup...">
-        
-        <!-- Surprise Me -->
         <button class="btn btn-surprise" id="surpriseBtn" title="Random Recipe">
             🎲 Surprise Me
         </button>
         
-        <!-- Favorites Filter -->
         <button class="btn btn-favorites" id="favFilterBtn" title="Show Favorites">
             ❤️ Saved
         </button>
 
-        <!-- Install App -->
-        <button class="btn" id="installBtn">📲 Install</button>
+        <button class="btn" id="installBtn">📲 Install App</button>
     </div>
 </header>
 
@@ -217,40 +274,48 @@
     <p style="text-align:center; width:100%;">Loading fresh recipes...</p>
 </div>
 
+<footer>
+    <p>Updated daily. Images belong to respective authors.</p>
+</footer>
+
 <script>
-    let allRecipes = []; // Store data globally for search/surprise
-    
-    // --- FAVORITES LOGIC ---
-    // Get favorites from local storage or empty array
+    let allRecipes = []; 
+    // Load favorites from local storage
     let favorites = JSON.parse(localStorage.getItem('veganFavs')) || [];
 
+    // --- QUICK SEARCH CHIP LOGIC ---
+    function quickSearch(term) {
+        const input = document.getElementById('searchInput');
+        input.value = term;
+        // Trigger the keyup event so the search logic runs
+        input.dispatchEvent(new Event('keyup')); 
+    }
+
+    // --- FAVORITES LOGIC ---
     function toggleFavorite(e, link) {
-        e.preventDefault(); // Stop link from opening
-        e.stopPropagation(); // Stop bubble up
+        e.preventDefault(); 
+        e.stopPropagation(); 
 
         const btn = e.currentTarget;
         const index = favorites.indexOf(link);
 
         if (index === -1) {
-            favorites.push(link); // Add
+            favorites.push(link);
             btn.classList.add('is-active');
-            btn.innerHTML = '❤️'; // Filled heart
+            btn.innerHTML = '❤️'; 
         } else {
-            favorites.splice(index, 1); // Remove
+            favorites.splice(index, 1);
             btn.classList.remove('is-active');
-            btn.innerHTML = '🤍'; // Empty heart
+            btn.innerHTML = '🤍';
         }
-        
-        // Save to phone/browser
         localStorage.setItem('veganFavs', JSON.stringify(favorites));
 
-        // If we are currently filtering by favorites, refresh the view
         if(document.getElementById('favFilterBtn').classList.contains('active')) {
             filterByFavorites();
         }
     }
 
-    // --- FILTER & SEARCH LOGIC ---
+    // --- FILTER LOGIC ---
     function filterByFavorites() {
         const btn = document.getElementById('favFilterBtn');
         const cards = document.querySelectorAll('.card');
@@ -258,26 +323,19 @@
 
         cards.forEach(card => {
             const link = card.getAttribute('href');
-            if (isFiltering) {
-                // Hide if NOT in favorites
-                if (!favorites.includes(link)) {
-                    card.style.display = 'none';
-                } else {
-                    card.style.display = 'block';
-                }
+            if (isFiltering && !favorites.includes(link)) {
+                card.style.display = 'none';
             } else {
-                // Show all
                 card.style.display = 'block';
             }
         });
         
-        // Clear search input if filtering favorites to avoid confusion
         if(isFiltering) document.getElementById('searchInput').value = '';
     }
 
     document.getElementById('favFilterBtn').addEventListener('click', filterByFavorites);
 
-    // --- SURPRISE ME LOGIC ---
+    // --- SURPRISE BUTTON ---
     document.getElementById('surpriseBtn').addEventListener('click', () => {
         if(allRecipes.length > 0) {
             const randomRecipe = allRecipes[Math.floor(Math.random() * allRecipes.length)];
@@ -285,7 +343,7 @@
         }
     });
 
-    // --- INSTALL BUTTON LOGIC ---
+    // --- INSTALL BUTTON ---
     let deferredPrompt;
     const installBtn = document.getElementById('installBtn');
     window.addEventListener('beforeinstallprompt', (e) => {
@@ -299,11 +357,11 @@
         deferredPrompt = null;
     });
 
-    // --- FETCH DATA ---
+    // --- MAIN FETCH ---
     fetch('data.json')
         .then(response => response.json())
         .then(data => {
-            allRecipes = data; // Save to global variable
+            allRecipes = data;
             const gallery = document.getElementById('gallery');
             gallery.innerHTML = ''; 
 
@@ -313,16 +371,18 @@
                 card.href = recipe.link;
                 card.target = "_blank"; 
 
-                // Is this recipe already favorited?
+                // Heart Check
                 const isFav = favorites.includes(recipe.link);
                 const heartIcon = isFav ? '❤️' : '🤍';
                 const heartClass = isFav ? 'heart-btn is-active' : 'heart-btn';
 
+                // Image Handling
                 const img = document.createElement('img');
                 img.src = recipe.image;
                 img.onerror = function() { this.src = 'default.jpg'; };
                 img.loading = "lazy"; 
 
+                // Info & Tags
                 const info = document.createElement('div');
                 info.className = 'info';
 
@@ -333,10 +393,10 @@
                     tagText = 'Rising Blog';
                 }
 
+                // Fresh Badge
                 const recipeDate = new Date(recipe.date);
                 const now = new Date();
                 const daysOld = (now - recipeDate) / (1000 * 3600 * 24);
-                
                 let newBadge = '';
                 if(daysOld < 2) newBadge = '<span class="fresh-badge">NEW!</span>';
 
@@ -346,11 +406,10 @@
                     <div class="blogger">by ${recipe.blog_name}</div>
                 `;
 
-                // Heart Button HTML
+                // Heart Button
                 const heartBtn = document.createElement('div');
                 heartBtn.className = heartClass;
                 heartBtn.innerHTML = heartIcon;
-                // Add click event for heart
                 heartBtn.onclick = (e) => toggleFavorite(e, recipe.link);
 
                 card.appendChild(heartBtn);
@@ -361,12 +420,10 @@
 
             // Search Logic
             document.getElementById('searchInput').addEventListener('keyup', function(e) {
-                // If favorites are active, turn them off to search everything
                 const favBtn = document.getElementById('favFilterBtn');
+                // If searching, turn off favorites filter so we search everything
                 if(favBtn.classList.contains('active')) {
-                    favBtn.classList.remove('active'); // Turn off visual state
-                    // Note: We don't trigger filterByFavorites() here to keep flow smooth,
-                    // we just reset the display logic below.
+                    favBtn.classList.remove('active');
                 }
 
                 const term = e.target.value.toLowerCase();
