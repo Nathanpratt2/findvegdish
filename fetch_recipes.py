@@ -1,13 +1,16 @@
 import feedparser
 import json
-import os
+import requests
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 from dateutil import parser
 import time
+import re
 
 # --- CONFIGURATION ---
+# Updated Simple Vegan Blog URL to FeedBurner (more reliable)
 TOP_BLOGGERS = [
+    ("Simple Vegan Blog", "http://feeds.feedburner.com/simpleveganblog"),
     ("Vegan Richa", "https://www.veganricha.com/feed/"),
     ("It Doesn't Taste Like Chicken", "https://itdoesnttastelikechicken.com/feed/"),
     ("Pick Up Limes", "https://www.pickuplimes.com/recipe/latest/rss"),
@@ -24,7 +27,6 @@ TOP_BLOGGERS = [
     ("Running on Real Food", "https://runningonrealfood.com/feed/"),
     ("Vegconomist", "https://vegconomist.com/feed/"),
     ("Namely Marly", "https://namelymarly.com/feed/"),
-    ("Simple Vegan Blog", "https://simpleveganblog.com/feed/"),
     ("The First Mess", "https://thefirstmess.com/feed/"),
     ("My Darling Vegan", "https://www.mydarlingvegan.com/feed/"),
     ("The Foodie Takes Flight", "https://thefoodietakesflight.com/feed/")
@@ -44,25 +46,49 @@ cutoff_date = datetime.now().astimezone() - timedelta(days=60)
 recipes = []
 
 # Pretend to be a real browser to avoid blocks
-USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+}
 
-def extract_image(entry):
+def fetch_og_image(link):
     """
-    Smarter extraction: checks for media tags, handles lazy loading, 
-    and filters out tracking pixels/icons.
+    FALLBACK: Visits the actual page to find the 'og:image' (Facebook share image).
+    This is the most reliable method for stubborn sites.
     """
-    
+    try:
+        # Respectful delay to not hammer servers
+        time.sleep(0.5) 
+        r = requests.get(link, headers=HEADERS, timeout=5)
+        soup = BeautifulSoup(r.content, 'lxml')
+        
+        # Look for the Open Graph image tag
+        og_image = soup.find('meta', property='og:image')
+        if og_image and og_image.get('content'):
+            return og_image['content']
+            
+    except Exception as e:
+        # Fail silently if page visit fails
+        return None
+    return None
+
+def extract_image(entry, blog_name):
+    """
+    Attempts to find an image in the RSS entry. 
+    If failing, calls fetch_og_image to look at the real page.
+    """
+    image_candidate = None
+
     # 1. Try standard RSS media extensions (Highest Quality)
     if 'media_content' in entry:
-        # Some feeds return a list, try to find the 'medium' or 'large' one
         for media in entry.media_content:
-            if 'url' in media and ('image' in media.get('type', '') or 'jpg' in media.get('url', '')):
+            if 'url' in media:
                 return media['url']
     
     if 'media_thumbnail' in entry:
         return entry.media_thumbnail[0]['url']
 
-    # 2. Parse HTML Content
+    # 2. Parse HTML Content for <img> tags
     content = entry.get('content', [{}])[0].get('value', '') or entry.get('summary', '')
     
     if content:
@@ -70,37 +96,49 @@ def extract_image(entry):
         images = soup.find_all('img')
         
         for img in images:
-            # Check for Lazy Loading attributes first
-            src = img.get('data-src') or img.get('data-lazy-src') or img.get('data-original') or img.get('src')
+            # Check all possible lazy load attributes
+            src = (img.get('data-src') or 
+                   img.get('data-lazy-src') or 
+                   img.get('data-original') or 
+                   img.get('src'))
             
+            # Handle srcset (comma separated list of images)
+            srcset = img.get('srcset') or img.get('data-srcset')
+            if srcset:
+                # Grab the first URL from the srcset list
+                src = srcset.split(',')[0].split(' ')[0]
+
             if not src:
                 continue
             
             src_lower = src.lower()
             
-            # FILTERS: Skip bad images
-            # Skip generic icons, tracking pixels, and emojis
-            if any(x in src_lower for x in ['pixel', 'emoji', 'icon', 'logo', 'badge', 'gravatar', 'gif', 'facebook', 'pinterest']):
-                continue
-                
-            # Skip tiny images if width is specified in HTML
-            width = img.get('width')
-            if width and width.isdigit() and int(width) < 150:
+            # Filter out bad images
+            if any(x in src_lower for x in ['pixel', 'emoji', 'icon', 'logo', 'gravatar', 'gif', 'facebook', 'pinterest', 'share']):
                 continue
             
-            # If we made it here, it's likely a real recipe photo
-            return src
+            # Skip tiny images
+            width = img.get('width')
+            if width and width.isdigit() and int(width) < 200:
+                continue
+            
+            # Found a good candidate
+            image_candidate = src
+            break
 
-    # 3. Fallback
-    return "default.jpg"
+    # 3. IF NO IMAGE FOUND IN RSS -> VISIT THE PAGE (The Nuclear Option)
+    if not image_candidate:
+        print(f"   -> No RSS image for {entry.title[:30]}... visiting page.")
+        image_candidate = fetch_og_image(entry.link)
+
+    return image_candidate if image_candidate else "default.jpg"
 
 print(f"Fetching recipes from {len(ALL_FEEDS)} blogs...")
 
 for name, url in ALL_FEEDS:
     try:
         print(f"Checking {name}...")
-        # Use custom agent to prevent 403 Forbidden errors
-        feed = feedparser.parse(url, agent=USER_AGENT)
+        feed = feedparser.parse(url, agent=HEADERS['User-Agent'])
         
         for entry in feed.entries:
             try:
@@ -112,14 +150,13 @@ for name, url in ALL_FEEDS:
                 continue
             
             if published_time > cutoff_date:
-                image_url = extract_image(entry)
+                image_url = extract_image(entry, name)
                 
-                # Double check: If image URL is relative, make it absolute
+                # Fix relative URLs
                 if image_url and image_url.startswith('/'):
-                    # Simple fix for relative URLs (rare in RSS but happens)
-                    base_url = feed.feed.get('link', '')
-                    if base_url:
-                        image_url = base_url.rstrip('/') + image_url
+                    base = feed.feed.get('link', '')
+                    if base:
+                        image_url = base.rstrip('/') + image_url
                 
                 recipes.append({
                     "blog_name": name,
