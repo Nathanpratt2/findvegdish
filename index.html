@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Vegan Feed</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 { font-size: 2.5em; color: #2c3e50; margin-bottom: 10px; }
+        p { color: #666; font-size: 1.1em; }
+        
+        /* Pinterest Style Grid */
+        .gallery {
+            column-count: 4;
+            column-gap: 15px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        @media (max-width: 1000px) { .gallery { column-count: 3; } }
+        @media (max-width: 800px) { .gallery { column-count: 2; } }
+        @media (max-width: 500px) { .gallery { column-count: 1; } }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            break-inside: avoid;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+            overflow: hidden;
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+        }
+        .card img {
+            width: 100%;
+            display: block;
+        }
+        .info {
+            padding: 15px;
+        }
+        .tag {
+            font-size: 0.75em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #27ae60; /* Green for vegan */
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+        .disruptor-tag {
+            color: #e67e22; /* Orange for disruptors */
+        }
+        .title {
+            font-size: 1.1em;
+            font-weight: 600;
+            line-height: 1.4;
+            margin: 5px 0;
+            color: #333;
+        }
+        .blogger {
+            font-size: 0.9em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>The Vegan Feed</h1>
+    <p>Curated recipes from the top bloggers and rising stars.</p>
+</header>
+
+<div id="gallery" class="gallery">
+    <!-- Content loads here via JS -->
+    <p style="text-align:center; width:100%;">Loading fresh recipes...</p>
+</div>
+
+<script>
+    fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+            const gallery = document.getElementById('gallery');
+            gallery.innerHTML = ''; // Clear loading text
+
+            data.forEach(recipe => {
+                const card = document.createElement('a');
+                card.className = 'card';
+                card.href = recipe.link;
+                card.target = "_blank"; // Open in new tab
+
+                // Image error handling to fallback to default
+                const img = document.createElement('img');
+                img.src = recipe.image;
+                img.onerror = function() { this.src = 'default.jpg'; };
+                img.loading = "lazy"; // Performance boost
+
+                const info = document.createElement('div');
+                info.className = 'info';
+
+                let tagClass = 'tag';
+                let tagText = 'Top Blog';
+                if(recipe.is_disruptor) {
+                    tagClass += ' disruptor-tag';
+                    tagText = 'Disruptor';
+                }
+
+                info.innerHTML = `
+                    <span class="${tagClass}">${tagText}</span>
+                    <div class="title">${recipe.title}</div>
+                    <div class="blogger">by ${recipe.blog_name}</div>
+                `;
+
+                card.appendChild(img);
+                card.appendChild(info);
+                gallery.appendChild(card);
+            });
+        })
+        .catch(error => {
+            console.error('Error loading data:', error);
+            document.getElementById('gallery').innerHTML = '<p>Could not load recipes. Please try again later.</p>';
+        });
+</script>
+
+</body>
+</html>
