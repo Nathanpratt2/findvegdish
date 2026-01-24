@@ -17,7 +17,6 @@
 
     <style>
         body {
-            /* Applied Poppins Font */
             font-family: 'Poppins', sans-serif;
             background-color: #f8f9fa;
             margin: 0;
@@ -25,26 +24,35 @@
         }
         header {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
         h1 { 
             font-size: 2.5em; 
             color: #2c3e50; 
-            margin-bottom: 10px;
+            margin-bottom: 5px;
             font-weight: 700;
         }
-        p { color: #666; font-size: 1.1em; }
+        p { color: #666; font-size: 1.1em; margin-top: 0; }
+
+        /* Controls Container (Search + Buttons) */
+        .controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
 
         /* Search Bar Style */
         #searchInput {
             padding: 12px 20px;
-            width: 80%;
-            max-width: 400px;
+            width: 100%;
+            max-width: 300px;
             border-radius: 25px;
             border: 1px solid #ddd;
             font-family: 'Poppins', sans-serif;
             font-size: 16px;
-            margin-top: 15px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
             outline: none;
             transition: all 0.3s ease;
@@ -53,13 +61,42 @@
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
             border-color: #27ae60;
         }
+
+        /* Action Buttons */
+        .btn {
+            padding: 10px 20px;
+            border-radius: 25px;
+            border: none;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 14px;
+            transition: transform 0.2s, background 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .btn:active { transform: scale(0.95); }
         
+        .btn-surprise { background-color: #f1c40f; color: #2c3e50; }
+        .btn-surprise:hover { background-color: #f39c12; }
+
+        .btn-favorites { background-color: white; border: 1px solid #ddd; color: #555; }
+        .btn-favorites.active { background-color: #ff4757; color: white; border-color: #ff4757; }
+
+        #installBtn {
+            display: none; 
+            background-color: #2c3e50;
+            color: white;
+        }
+
         /* Pinterest Style Grid */
         .gallery {
             column-count: 4;
             column-gap: 15px;
             max-width: 1400px;
             margin: 0 auto;
+            margin-top: 30px;
         }
         
         @media (max-width: 1000px) { .gallery { column-count: 3; } }
@@ -77,6 +114,7 @@
             display: block;
             text-decoration: none;
             color: inherit;
+            position: relative; /* For absolute positioning of heart */
         }
         .card:hover {
             transform: translateY(-5px);
@@ -86,6 +124,28 @@
             width: 100%;
             display: block;
         }
+        
+        /* Heart Icon on Card */
+        .heart-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            cursor: pointer;
+            z-index: 10;
+            transition: transform 0.2s;
+        }
+        .heart-btn:hover { transform: scale(1.1); }
+        .heart-btn.is-active { color: #ff4757; }
+
         .info {
             padding: 15px;
         }
@@ -93,16 +153,13 @@
             font-size: 0.75em;
             text-transform: uppercase;
             letter-spacing: 1px;
-            color: #27ae60; /* Green for vegan */
+            color: #27ae60; 
             font-weight: bold;
             margin-bottom: 5px;
             display: inline-block;
         }
-        .disruptor-tag {
-            color: #e67e22; /* Orange for disruptors */
-        }
+        .disruptor-tag { color: #e67e22; }
         
-        /* Fresh Badge Style */
         .fresh-badge {
             background-color: #ff4757;
             color: white;
@@ -128,10 +185,7 @@
             margin: 5px 0;
             color: #333;
         }
-        .blogger {
-            font-size: 0.9em;
-            color: #888;
-        }
+        .blogger { font-size: 0.9em; color: #888; }
     </style>
 </head>
 <body>
@@ -139,33 +193,135 @@
 <header>
     <h1>Find Vegan Recipes Fast</h1>
     <p>Daily recipes from the top bloggers.</p>
-    <!-- Search Bar Input -->
-    <input type="text" id="searchInput" placeholder="Search for pasta, tofu, soup...">
+    
+    <div class="controls">
+        <!-- Search -->
+        <input type="text" id="searchInput" placeholder="Search pasta, tofu, soup...">
+        
+        <!-- Surprise Me -->
+        <button class="btn btn-surprise" id="surpriseBtn" title="Random Recipe">
+            🎲 Surprise Me
+        </button>
+        
+        <!-- Favorites Filter -->
+        <button class="btn btn-favorites" id="favFilterBtn" title="Show Favorites">
+            ❤️ Saved
+        </button>
+
+        <!-- Install App -->
+        <button class="btn" id="installBtn">📲 Install</button>
+    </div>
 </header>
 
 <div id="gallery" class="gallery">
-    <!-- Content loads here via JS -->
     <p style="text-align:center; width:100%;">Loading fresh recipes...</p>
 </div>
 
 <script>
+    let allRecipes = []; // Store data globally for search/surprise
+    
+    // --- FAVORITES LOGIC ---
+    // Get favorites from local storage or empty array
+    let favorites = JSON.parse(localStorage.getItem('veganFavs')) || [];
+
+    function toggleFavorite(e, link) {
+        e.preventDefault(); // Stop link from opening
+        e.stopPropagation(); // Stop bubble up
+
+        const btn = e.currentTarget;
+        const index = favorites.indexOf(link);
+
+        if (index === -1) {
+            favorites.push(link); // Add
+            btn.classList.add('is-active');
+            btn.innerHTML = '❤️'; // Filled heart
+        } else {
+            favorites.splice(index, 1); // Remove
+            btn.classList.remove('is-active');
+            btn.innerHTML = '🤍'; // Empty heart
+        }
+        
+        // Save to phone/browser
+        localStorage.setItem('veganFavs', JSON.stringify(favorites));
+
+        // If we are currently filtering by favorites, refresh the view
+        if(document.getElementById('favFilterBtn').classList.contains('active')) {
+            filterByFavorites();
+        }
+    }
+
+    // --- FILTER & SEARCH LOGIC ---
+    function filterByFavorites() {
+        const btn = document.getElementById('favFilterBtn');
+        const cards = document.querySelectorAll('.card');
+        const isFiltering = btn.classList.toggle('active');
+
+        cards.forEach(card => {
+            const link = card.getAttribute('href');
+            if (isFiltering) {
+                // Hide if NOT in favorites
+                if (!favorites.includes(link)) {
+                    card.style.display = 'none';
+                } else {
+                    card.style.display = 'block';
+                }
+            } else {
+                // Show all
+                card.style.display = 'block';
+            }
+        });
+        
+        // Clear search input if filtering favorites to avoid confusion
+        if(isFiltering) document.getElementById('searchInput').value = '';
+    }
+
+    document.getElementById('favFilterBtn').addEventListener('click', filterByFavorites);
+
+    // --- SURPRISE ME LOGIC ---
+    document.getElementById('surpriseBtn').addEventListener('click', () => {
+        if(allRecipes.length > 0) {
+            const randomRecipe = allRecipes[Math.floor(Math.random() * allRecipes.length)];
+            window.open(randomRecipe.link, '_blank');
+        }
+    });
+
+    // --- INSTALL BUTTON LOGIC ---
+    let deferredPrompt;
+    const installBtn = document.getElementById('installBtn');
+    window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        deferredPrompt = e;
+        installBtn.style.display = 'inline-block';
+    });
+    installBtn.addEventListener('click', (e) => {
+        installBtn.style.display = 'none';
+        deferredPrompt.prompt();
+        deferredPrompt = null;
+    });
+
+    // --- FETCH DATA ---
     fetch('data.json')
         .then(response => response.json())
         .then(data => {
+            allRecipes = data; // Save to global variable
             const gallery = document.getElementById('gallery');
-            gallery.innerHTML = ''; // Clear loading text
+            gallery.innerHTML = ''; 
 
             data.forEach(recipe => {
                 const card = document.createElement('a');
                 card.className = 'card';
                 card.href = recipe.link;
-                card.target = "_blank"; // Open in new tab
+                card.target = "_blank"; 
 
-                // Image error handling to fallback to default
+                // Is this recipe already favorited?
+                const isFav = favorites.includes(recipe.link);
+                const heartIcon = isFav ? '❤️' : '🤍';
+                const heartClass = isFav ? 'heart-btn is-active' : 'heart-btn';
+
                 const img = document.createElement('img');
                 img.src = recipe.image;
                 img.onerror = function() { this.src = 'default.jpg'; };
-                img.loading = "lazy"; // Performance boost
+                img.loading = "lazy"; 
 
                 const info = document.createElement('div');
                 info.className = 'info';
@@ -177,17 +333,12 @@
                     tagText = 'Rising Blog';
                 }
 
-                // 3. Logic for "Fresh" Badge
-                // Calculate if recipe is less than 2 days old
                 const recipeDate = new Date(recipe.date);
                 const now = new Date();
-                const timeDiff = now - recipeDate;
-                const daysOld = timeDiff / (1000 * 3600 * 24);
+                const daysOld = (now - recipeDate) / (1000 * 3600 * 24);
                 
                 let newBadge = '';
-                if(daysOld < 2) {
-                    newBadge = '<span class="fresh-badge">NEW!</span>';
-                }
+                if(daysOld < 2) newBadge = '<span class="fresh-badge">NEW!</span>';
 
                 info.innerHTML = `
                     <span class="${tagClass}">${tagText}</span> ${newBadge}
@@ -195,13 +346,29 @@
                     <div class="blogger">by ${recipe.blog_name}</div>
                 `;
 
+                // Heart Button HTML
+                const heartBtn = document.createElement('div');
+                heartBtn.className = heartClass;
+                heartBtn.innerHTML = heartIcon;
+                // Add click event for heart
+                heartBtn.onclick = (e) => toggleFavorite(e, recipe.link);
+
+                card.appendChild(heartBtn);
                 card.appendChild(img);
                 card.appendChild(info);
                 gallery.appendChild(card);
             });
 
-            // 4. Logic for Search Bar
+            // Search Logic
             document.getElementById('searchInput').addEventListener('keyup', function(e) {
+                // If favorites are active, turn them off to search everything
+                const favBtn = document.getElementById('favFilterBtn');
+                if(favBtn.classList.contains('active')) {
+                    favBtn.classList.remove('active'); // Turn off visual state
+                    // Note: We don't trigger filterByFavorites() here to keep flow smooth,
+                    // we just reset the display logic below.
+                }
+
                 const term = e.target.value.toLowerCase();
                 const cards = document.querySelectorAll('.card');
                 
@@ -209,7 +376,6 @@
                     const title = card.querySelector('.title').textContent.toLowerCase();
                     const blogger = card.querySelector('.blogger').textContent.toLowerCase();
                     
-                    // Show if title OR blogger name matches search
                     if(title.includes(term) || blogger.includes(term)) {
                         card.style.display = 'block';
                     } else {
