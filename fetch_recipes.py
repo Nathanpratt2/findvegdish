@@ -37,7 +37,10 @@ DISRUPTORS = [
     ("The Korean Vegan", "https://thekoreanvegan.com/feed/"),
     ("The Burger Dude", "https://theeburgerdude.com/feed/"),
     ("FitGreenMind", "https://fit-green-mind.com/feed/"),
-    ("PlantYou", "https://plantyou.com/feed/")
+    ("PlantYou", "https://plantyou.com/feed/"),
+    ("Chez Jorge", "https://chejorge.com/feed/"),
+    ("The Canadian African", "https://thecanadianafrican.com/feed/"),
+    ("Zacchary Bird", "https://zaccharybird.com/feed/")
 ]
 
 ALL_FEEDS = TOP_BLOGGERS + DISRUPTORS
