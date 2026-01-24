@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find Vegan Recipes Fast</title>
+    
+    <!-- 1. Install to Home Screen (Manifest) -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" href="default.jpg">
+
+    <!-- 2. Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* Applied Poppins Font */
+            font-family: 'Poppins', sans-serif;
             background-color: #f8f9fa;
             margin: 0;
             padding: 20px;
@@ -15,8 +27,32 @@
             text-align: center;
             margin-bottom: 40px;
         }
-        h1 { font-size: 2.5em; color: #2c3e50; margin-bottom: 10px; }
+        h1 { 
+            font-size: 2.5em; 
+            color: #2c3e50; 
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
         p { color: #666; font-size: 1.1em; }
+
+        /* Search Bar Style */
+        #searchInput {
+            padding: 12px 20px;
+            width: 80%;
+            max-width: 400px;
+            border-radius: 25px;
+            border: 1px solid #ddd;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            margin-top: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            outline: none;
+            transition: all 0.3s ease;
+        }
+        #searchInput:focus {
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-color: #27ae60;
+        }
         
         /* Pinterest Style Grid */
         .gallery {
@@ -65,6 +101,26 @@
         .disruptor-tag {
             color: #e67e22; /* Orange for disruptors */
         }
+        
+        /* Fresh Badge Style */
+        .fresh-badge {
+            background-color: #ff4757;
+            color: white;
+            font-size: 0.7em;
+            padding: 2px 8px;
+            border-radius: 10px;
+            margin-left: 5px;
+            vertical-align: middle;
+            font-weight: bold;
+            text-transform: uppercase;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.7; }
+            100% { opacity: 1; }
+        }
+
         .title {
             font-size: 1.1em;
             font-weight: 600;
@@ -83,6 +139,8 @@
 <header>
     <h1>Find Vegan Recipes Fast</h1>
     <p>Daily recipes from the top bloggers.</p>
+    <!-- Search Bar Input -->
+    <input type="text" id="searchInput" placeholder="Search for pasta, tofu, soup...">
 </header>
 
 <div id="gallery" class="gallery">
@@ -119,8 +177,20 @@
                     tagText = 'Rising Blog';
                 }
 
+                // 3. Logic for "Fresh" Badge
+                // Calculate if recipe is less than 2 days old
+                const recipeDate = new Date(recipe.date);
+                const now = new Date();
+                const timeDiff = now - recipeDate;
+                const daysOld = timeDiff / (1000 * 3600 * 24);
+                
+                let newBadge = '';
+                if(daysOld < 2) {
+                    newBadge = '<span class="fresh-badge">NEW!</span>';
+                }
+
                 info.innerHTML = `
-                    <span class="${tagClass}">${tagText}</span>
+                    <span class="${tagClass}">${tagText}</span> ${newBadge}
                     <div class="title">${recipe.title}</div>
                     <div class="blogger">by ${recipe.blog_name}</div>
                 `;
@@ -128,6 +198,24 @@
                 card.appendChild(img);
                 card.appendChild(info);
                 gallery.appendChild(card);
+            });
+
+            // 4. Logic for Search Bar
+            document.getElementById('searchInput').addEventListener('keyup', function(e) {
+                const term = e.target.value.toLowerCase();
+                const cards = document.querySelectorAll('.card');
+                
+                cards.forEach(card => {
+                    const title = card.querySelector('.title').textContent.toLowerCase();
+                    const blogger = card.querySelector('.blogger').textContent.toLowerCase();
+                    
+                    // Show if title OR blogger name matches search
+                    if(title.includes(term) || blogger.includes(term)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
             });
         })
         .catch(error => {
