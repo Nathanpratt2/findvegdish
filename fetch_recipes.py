@@ -8,7 +8,6 @@ import time
 import re
 
 # --- CONFIGURATION ---
-# Updated Simple Vegan Blog URL to FeedBurner (more reliable)
 TOP_BLOGGERS = [
     ("Simple Vegan Blog", "http://feeds.feedburner.com/simpleveganblog"),
     ("Vegan Richa", "https://www.veganricha.com/feed/"),
@@ -48,41 +47,54 @@ cutoff_date = datetime.now().astimezone() - timedelta(days=60)
 
 recipes = []
 
-# Pretend to be a real browser to avoid blocks
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
 }
 
+def is_pet_recipe(title):
+    """
+    Returns True if the recipe is for pets (treats/food).
+    Careful not to filter out 'Hot Dogs' or 'Copycat' recipes.
+    """
+    t = title.lower()
+    
+    # 1. Check for explicit pet phrase
+    pet_phrases = [
+        'dog treat', 'cat treat', 
+        'dog biscuit', 'cat biscuit',
+        'dog food', 'cat food',
+        'for dogs', 'for cats',
+        'pup treat', 'kitty treat',
+        'dog cookie'
+    ]
+    
+    if any(phrase in t for phrase in pet_phrases):
+        return True
+        
+    return False
+
 def fetch_og_image(link):
     """
-    FALLBACK: Visits the actual page to find the 'og:image' (Facebook share image).
-    This is the most reliable method for stubborn sites.
+    FALLBACK: Visits the actual page to find the 'og:image'.
     """
     try:
-        # Respectful delay to not hammer servers
         time.sleep(0.5) 
         r = requests.get(link, headers=HEADERS, timeout=5)
         soup = BeautifulSoup(r.content, 'lxml')
         
-        # Look for the Open Graph image tag
         og_image = soup.find('meta', property='og:image')
         if og_image and og_image.get('content'):
             return og_image['content']
             
     except Exception as e:
-        # Fail silently if page visit fails
         return None
     return None
 
 def extract_image(entry, blog_name):
-    """
-    Attempts to find an image in the RSS entry. 
-    If failing, calls fetch_og_image to look at the real page.
-    """
     image_candidate = None
 
-    # 1. Try standard RSS media extensions (Highest Quality)
+    # 1. Try standard RSS media extensions
     if 'media_content' in entry:
         for media in entry.media_content:
             if 'url' in media:
@@ -91,7 +103,7 @@ def extract_image(entry, blog_name):
     if 'media_thumbnail' in entry:
         return entry.media_thumbnail[0]['url']
 
-    # 2. Parse HTML Content for <img> tags
+    # 2. Parse HTML Content
     content = entry.get('content', [{}])[0].get('value', '') or entry.get('summary', '')
     
     if content:
@@ -99,16 +111,13 @@ def extract_image(entry, blog_name):
         images = soup.find_all('img')
         
         for img in images:
-            # Check all possible lazy load attributes
             src = (img.get('data-src') or 
                    img.get('data-lazy-src') or 
                    img.get('data-original') or 
                    img.get('src'))
             
-            # Handle srcset (comma separated list of images)
             srcset = img.get('srcset') or img.get('data-srcset')
             if srcset:
-                # Grab the first URL from the srcset list
                 src = srcset.split(',')[0].split(' ')[0]
 
             if not src:
@@ -116,20 +125,17 @@ def extract_image(entry, blog_name):
             
             src_lower = src.lower()
             
-            # Filter out bad images
             if any(x in src_lower for x in ['pixel', 'emoji', 'icon', 'logo', 'gravatar', 'gif', 'facebook', 'pinterest', 'share']):
                 continue
             
-            # Skip tiny images
             width = img.get('width')
             if width and width.isdigit() and int(width) < 200:
                 continue
             
-            # Found a good candidate
             image_candidate = src
             break
 
-    # 3. IF NO IMAGE FOUND IN RSS -> VISIT THE PAGE (The Nuclear Option)
+    # 3. Fallback to OG Image
     if not image_candidate:
         print(f"   -> No RSS image for {entry.title[:30]}... visiting page.")
         image_candidate = fetch_og_image(entry.link)
@@ -145,7 +151,6 @@ for name, url in ALL_FEEDS:
         
         for entry in feed.entries:
             try:
-                # Handle dates safely
                 published_time = parser.parse(entry.published if 'published' in entry else entry.updated)
                 if published_time.tzinfo is None:
                     published_time = published_time.replace(tzinfo=datetime.now().astimezone().tzinfo)
@@ -153,9 +158,13 @@ for name, url in ALL_FEEDS:
                 continue
             
             if published_time > cutoff_date:
+                # --- NEW FILTER CHECK ---
+                if is_pet_recipe(entry.title):
+                    print(f"   Skipping Pet Recipe: {entry.title}")
+                    continue
+
                 image_url = extract_image(entry, name)
                 
-                # Fix relative URLs
                 if image_url and image_url.startswith('/'):
                     base = feed.feed.get('link', '')
                     if base:
@@ -172,10 +181,8 @@ for name, url in ALL_FEEDS:
     except Exception as e:
         print(f"Failed to parse {name}: {e}")
 
-# Sort new -> old
 recipes.sort(key=lambda x: x['date'], reverse=True)
 
-# Save
 with open('data.json', 'w') as f:
     json.dump(recipes, f, indent=2)
 
