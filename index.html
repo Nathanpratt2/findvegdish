@@ -8,7 +8,10 @@
     <!-- 1. Install to Home Screen (Manifest) -->
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#ffffff">
-    <link rel="apple-touch-icon" href="default.jpg">
+    
+    <!-- CHANGED: Browser Tab Icon & Apple Icon to icon.jpg -->
+    <link rel="icon" href="icon.jpg"> 
+    <link rel="apple-touch-icon" href="icon.jpg">
 
     <!-- 2. Poppins Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,13 +30,15 @@
             text-align: center;
             margin-bottom: 30px;
         }
-        h1 { 
-            font-size: 2.5em; 
-            color: #2c3e50; 
-            margin-bottom: 5px;
-            font-weight: 700;
+        
+        /* NEW: Logo Styling */
+        .logo-img {
+            max-width: 90%;       /* Prevents scrolling on mobile */
+            width: 350px;         /* Standard width for desktop */
+            height: auto;         /* Maintains aspect ratio */
+            display: block;
+            margin: 0 auto 15px auto; /* Centers the image */
         }
-        p { color: #666; font-size: 1.1em; margin-top: 0; }
 
         /* Search Bar */
         #searchInput {
@@ -47,7 +52,7 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
             outline: none;
             transition: all 0.3s ease;
-            margin-top: 15px;
+            margin-top: 10px;
         }
         #searchInput:focus {
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -238,8 +243,8 @@
 <body>
 
 <header>
-    <h1>Find Vegan Recipes Fast</h1>
-    <p>Daily recipes from the top bloggers.</p>
+    <!-- CHANGED: Image Logo instead of Text -->
+    <img src="default.jpg" alt="Find Vegan Recipes Fast" class="logo-img">
     
     <!-- 1. Search Bar -->
     <input type="text" id="searchInput" placeholder="Search pasta, tofu, soup...">
@@ -379,7 +384,9 @@
                 // Image Handling
                 const img = document.createElement('img');
                 img.src = recipe.image;
-                img.onerror = function() { this.src = 'default.jpg'; };
+                
+                // CHANGED: Fallback image is now icon.jpg
+                img.onerror = function() { this.src = 'icon.jpg'; };
                 img.loading = "lazy"; 
 
                 // Info & Tags
