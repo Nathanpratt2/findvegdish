@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find Vegan Recipes Fast</title>
     
-    <!-- 1. Install to Home Screen (Manifest) -->
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#ffffff">
     
     <link rel="icon" href="icon.jpg"> 
     <link rel="apple-touch-icon" href="icon.jpg">
 
-    <!-- 2. Poppins Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -30,7 +28,6 @@
             margin-bottom: 30px;
         }
         
-        /* Logo Styling */
         .logo-img {
             max-width: 90%;
             width: 350px;
@@ -39,7 +36,7 @@
             margin: 0 auto 15px auto;
         }
 
-        /* Search Bar Wrapper (For positioning the X button) */
+        /* Search Bar Wrapper */
         .search-wrapper {
             position: relative;
             width: 100%;
@@ -47,11 +44,10 @@
             margin: 10px auto;
         }
 
-        /* Search Input */
         #searchInput {
-            padding: 12px 45px 12px 20px; /* Extra padding right for the X button */
+            padding: 12px 45px 12px 20px;
             width: 100%;
-            box-sizing: border-box; /* Ensures padding doesn't break width */
+            box-sizing: border-box;
             border-radius: 25px;
             border: 1px solid #ddd;
             font-family: 'Poppins', sans-serif;
@@ -59,8 +55,6 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
             outline: none;
             transition: all 0.3s ease;
-            
-            /* CHANGED: Green text */
             color: #27ae60; 
             font-weight: 600;
         }
@@ -69,11 +63,10 @@
             border-color: #27ae60;
         }
         #searchInput::placeholder {
-            color: #aaa; /* Keep placeholder gray */
+            color: #aaa;
             font-weight: 400;
         }
 
-        /* Clear (X) Button */
         #clearBtn {
             position: absolute;
             right: 15px;
@@ -84,12 +77,12 @@
             font-size: 18px;
             color: #aaa;
             cursor: pointer;
-            display: none; /* Hidden by default */
+            display: none;
             padding: 5px;
         }
         #clearBtn:hover { color: #555; }
 
-        /* Controls Container (Buttons) */
+        /* Controls Container */
         .controls {
             display: flex;
             justify-content: center;
@@ -99,7 +92,7 @@
             margin-top: 20px;
         }
 
-        /* Buttons */
+        /* General Button Style */
         .btn {
             padding: 10px 20px;
             border-radius: 25px;
@@ -112,16 +105,33 @@
             display: flex;
             align-items: center;
             gap: 5px;
+            color: #555;
+            background-color: white;
+            border: 1px solid #ddd;
         }
         .btn:active { transform: scale(0.95); }
-        
-        .btn-surprise { background-color: #f1c40f; color: #2c3e50; }
+        .btn:hover { background-color: #f0f0f0; }
+
+        /* Specific Button Colors */
+        .btn-surprise { 
+            background-color: #f1c40f; 
+            color: #2c3e50; 
+            border: none;
+        }
         .btn-surprise:hover { background-color: #f39c12; }
 
-        #installBtn {
-            display: none; /* Hidden by default */
+        /* Active State for Filter Buttons */
+        .btn.active-filter {
             background-color: #2c3e50;
             color: white;
+            border-color: #2c3e50;
+        }
+
+        #installBtn {
+            display: none;
+            background-color: #2c3e50;
+            color: white;
+            border: none;
         }
 
         /* Grid Layout */
@@ -159,14 +169,15 @@
             display: block;
         }
         
-        /* NEW: Share Icon */
+        /* UPDATED: Share Icon (25% Bigger) */
         .share-btn {
             position: absolute;
             top: 10px;
             right: 10px;
             background: white;
-            width: 35px;
-            height: 35px;
+            /* Was 35px, increased by ~25% to 44px */
+            width: 44px;
+            height: 44px;
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -178,8 +189,9 @@
         }
         .share-btn:hover { transform: scale(1.1); background-color: #f0f0f0; }
         .share-btn svg {
-            width: 18px;
-            height: 18px;
+            /* Was 18px, increased to 22px */
+            width: 22px;
+            height: 22px;
             fill: #555;
         }
 
@@ -236,16 +248,21 @@
 <header>
     <img src="default.jpg" alt="Find Vegan Recipes Fast" class="logo-img">
     
-    <!-- Search Bar with Clear Button -->
+    <!-- Search Bar -->
     <div class="search-wrapper">
         <input type="text" id="searchInput" placeholder="Search pasta, tofu, soup...">
         <button id="clearBtn" title="Clear Search">✕</button>
     </div>
 
+    <!-- Controls: Meals, Sweets, Surprise, Install -->
     <div class="controls">
+        <button class="btn" id="mealsBtn" onclick="toggleCategory('meal')">🍝 Meals Only</button>
+        <button class="btn" id="sweetsBtn" onclick="toggleCategory('sweet')">🍪 Sweets Only</button>
+        
         <button class="btn btn-surprise" id="surpriseBtn" title="Random Recipe">
             🎲 Surprise Me
         </button>
+        
         <button class="btn" id="installBtn">📲 Install App</button>
     </div>
 </header>
@@ -260,6 +277,100 @@
 
 <script>
     let allRecipes = []; 
+    let activeCategory = null; // 'meal', 'sweet', or null
+
+    // --- SMART KEYWORDS ---
+    // Keywords that define a "Sweet", but we verify it's not savory later
+    const SWEET_KEYWORDS = [
+        'cookie', 'cake', 'brownie', 'chocolate', 'dessert', 'pie', 'tart', 
+        'muffin', 'donut', 'doughnut', 'ice cream', 'pudding', 'cheesecake', 
+        'sweet', 'fudge', 'truffle', 'bar', 'cupcake', 'blondie', 'galette',
+        'cobbler', 'mousse', 'cinnamon roll', 'scone', 'waffle', 'pancake'
+    ];
+
+    // Keywords that define a "Meal" (Main Dish)
+    const MEAL_KEYWORDS = [
+        'pasta', 'burger', 'curry', 'soup', 'stew', 'taco', 'pizza', 'sandwich', 
+        'wrap', 'salad', 'bowl', 'rice', 'noodle', 'stir fry', 'lasagna', 
+        'casserole', 'tofu', 'tempeh', 'lentil', 'chickpea', 'potato', 'dinner', 
+        'lunch', 'roast', 'chili', 'shepherd', 'risotto', 'gnocchi', 'quiche', 
+        'enchilada', 'burrito', 'quesadilla', 'mac and cheese', 'dumpling', 
+        'meatball', 'loaf', 'skillet', 'gratin', 'pad thai', 'ramen'
+    ];
+
+    // --- CATEGORY TOGGLE LOGIC ---
+    function toggleCategory(category) {
+        const mealsBtn = document.getElementById('mealsBtn');
+        const sweetsBtn = document.getElementById('sweetsBtn');
+        const searchInput = document.getElementById('searchInput');
+
+        // Toggle logic
+        if (activeCategory === category) {
+            // Turning it off
+            activeCategory = null;
+            mealsBtn.classList.remove('active-filter');
+            sweetsBtn.classList.remove('active-filter');
+        } else {
+            // Turning new one on
+            activeCategory = category;
+            
+            // Visual updates
+            if(category === 'meal') {
+                mealsBtn.classList.add('active-filter');
+                sweetsBtn.classList.remove('active-filter');
+            } else {
+                sweetsBtn.classList.add('active-filter');
+                mealsBtn.classList.remove('active-filter');
+            }
+            
+            // Clear text search to avoid conflicts
+            searchInput.value = '';
+            document.getElementById('clearBtn').style.display = 'none';
+        }
+
+        renderGrid(); // Re-run the filter logic
+    }
+
+    // --- MAIN FILTER/RENDER LOGIC ---
+    function renderGrid() {
+        const term = document.getElementById('searchInput').value.toLowerCase();
+        const cards = document.querySelectorAll('.card');
+        
+        cards.forEach(card => {
+            const title = card.querySelector('.title').textContent.toLowerCase();
+            const blogger = card.querySelector('.blogger').textContent.toLowerCase();
+            let shouldShow = true;
+
+            // 1. Text Search Filter
+            if (term.length > 0) {
+                if (!title.includes(term) && !blogger.includes(term)) {
+                    shouldShow = false;
+                }
+            }
+
+            // 2. Category Filter (Smart Logic)
+            if (activeCategory && shouldShow) {
+                if (activeCategory === 'sweet') {
+                    // It IS a sweet if it has a keyword...
+                    const hasKeyword = SWEET_KEYWORDS.some(k => title.includes(k));
+                    // ...BUT it is NOT a sweet if it's "Sweet Potato" or "Sweet and Sour"
+                    const isSavory = title.includes('sweet potato') || title.includes('sweet and sour');
+                    
+                    if (!hasKeyword || isSavory) shouldShow = false;
+
+                } else if (activeCategory === 'meal') {
+                    // It IS a meal if it has a keyword...
+                    const hasKeyword = MEAL_KEYWORDS.some(k => title.includes(k));
+                    // ...AND it doesn't sound like a side dish
+                    const isSide = title.includes('sauce') || title.includes('dressing') || title.includes('side');
+                    
+                    if (!hasKeyword || isSide) shouldShow = false;
+                }
+            }
+
+            card.style.display = shouldShow ? 'block' : 'none';
+        });
+    }
 
     // --- SURPRISE BUTTON ---
     document.getElementById('surpriseBtn').addEventListener('click', () => {
@@ -289,13 +400,11 @@
         e.stopPropagation(); 
 
         if (navigator.share) {
-            // Use native share (Mobile/Modern Browsers)
             navigator.share({
                 title: title,
                 url: link
             }).catch(console.error);
         } else {
-            // Fallback: Copy to clipboard
             navigator.clipboard.writeText(link);
             alert("Link copied to clipboard!");
         }
@@ -332,7 +441,6 @@
                     tagText = 'Rising Blog';
                 }
 
-                // Fresh Badge
                 const recipeDate = new Date(recipe.date);
                 const now = new Date();
                 const daysOld = (now - recipeDate) / (1000 * 3600 * 24);
@@ -345,10 +453,9 @@
                     <div class="blogger">by ${recipe.blog_name}</div>
                 `;
 
-                // Share Button (SVG Icon)
+                // Share Button (Updated Size)
                 const shareBtn = document.createElement('div');
                 shareBtn.className = 'share-btn';
-                // Simple universal share icon SVG
                 shareBtn.innerHTML = `
                 <svg viewBox="0 0 24 24">
                     <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
@@ -362,40 +469,27 @@
                 gallery.appendChild(card);
             });
 
-            // --- SEARCH LOGIC (WITH CLEAR BUTTON) ---
+            // --- SEARCH EVENTS ---
             const searchInput = document.getElementById('searchInput');
             const clearBtn = document.getElementById('clearBtn');
 
-            function performSearch() {
-                const term = searchInput.value.toLowerCase();
+            searchInput.addEventListener('keyup', () => {
+                // If typing, reset categories for clarity
+                if(activeCategory && searchInput.value.length > 0) {
+                   toggleCategory(activeCategory); // Toggles it off
+                }
                 
                 // Show/Hide Clear Button
-                if(term.length > 0) {
-                    clearBtn.style.display = 'block';
-                } else {
-                    clearBtn.style.display = 'none';
-                }
+                clearBtn.style.display = searchInput.value.length > 0 ? 'block' : 'none';
+                
+                renderGrid();
+            });
 
-                const cards = document.querySelectorAll('.card');
-                cards.forEach(card => {
-                    const title = card.querySelector('.title').textContent.toLowerCase();
-                    const blogger = card.querySelector('.blogger').textContent.toLowerCase();
-                    
-                    if(title.includes(term) || blogger.includes(term)) {
-                        card.style.display = 'block';
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
-            }
-
-            searchInput.addEventListener('keyup', performSearch);
-
-            // Clear Button Click Event
             clearBtn.addEventListener('click', () => {
-                searchInput.value = ''; // Clear text
-                searchInput.focus();    // Keep focus
-                performSearch();        // Reset grid
+                searchInput.value = '';
+                searchInput.focus();
+                clearBtn.style.display = 'none';
+                renderGrid();
             });
         })
         .catch(error => {
