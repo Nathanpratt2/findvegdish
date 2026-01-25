@@ -9,7 +9,6 @@
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#ffffff">
     
-    <!-- CHANGED: Browser Tab Icon & Apple Icon to icon.jpg -->
     <link rel="icon" href="icon.jpg"> 
     <link rel="apple-touch-icon" href="icon.jpg">
 
@@ -24,27 +23,35 @@
             background-color: #f8f9fa;
             margin: 0;
             padding: 20px;
-            padding-bottom: 60px; /* Space for footer */
+            padding-bottom: 60px;
         }
         header {
             text-align: center;
             margin-bottom: 30px;
         }
         
-        /* NEW: Logo Styling */
+        /* Logo Styling */
         .logo-img {
-            max-width: 90%;       /* Prevents scrolling on mobile */
-            width: 350px;         /* Standard width for desktop */
-            height: auto;         /* Maintains aspect ratio */
+            max-width: 90%;
+            width: 350px;
+            height: auto;
             display: block;
-            margin: 0 auto 15px auto; /* Centers the image */
+            margin: 0 auto 15px auto;
         }
 
-        /* Search Bar */
-        #searchInput {
-            padding: 12px 20px;
+        /* Search Bar Wrapper (For positioning the X button) */
+        .search-wrapper {
+            position: relative;
             width: 100%;
             max-width: 400px;
+            margin: 10px auto;
+        }
+
+        /* Search Input */
+        #searchInput {
+            padding: 12px 45px 12px 20px; /* Extra padding right for the X button */
+            width: 100%;
+            box-sizing: border-box; /* Ensures padding doesn't break width */
             border-radius: 25px;
             border: 1px solid #ddd;
             font-family: 'Poppins', sans-serif;
@@ -52,51 +59,35 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
             outline: none;
             transition: all 0.3s ease;
-            margin-top: 10px;
+            
+            /* CHANGED: Green text */
+            color: #27ae60; 
+            font-weight: 600;
         }
         #searchInput:focus {
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
             border-color: #27ae60;
         }
-
-        /* Smart Chips Container */
-        .chip-container {
-            display: flex;
-            overflow-x: auto;
-            gap: 10px;
-            padding: 10px 5px;
-            margin: 10px auto;
-            max-width: 700px;
-            scrollbar-width: none; /* Hide scrollbar Firefox */
-            -ms-overflow-style: none; /* Hide scrollbar IE */
-            justify-content: flex-start; /* Aligns left on mobile */
-        }
-        .chip-container::-webkit-scrollbar { display: none; } /* Hide Chrome */
-        
-        @media(min-width: 600px) {
-            .chip-container { justify-content: center; }
+        #searchInput::placeholder {
+            color: #aaa; /* Keep placeholder gray */
+            font-weight: 400;
         }
 
-        /* Chip Style */
-        .chip {
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 20px;
-            padding: 8px 15px;
-            font-family: 'Poppins', sans-serif;
-            font-size: 14px;
-            white-space: nowrap;
+        /* Clear (X) Button */
+        #clearBtn {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            font-size: 18px;
+            color: #aaa;
             cursor: pointer;
-            transition: all 0.2s;
-            color: #555;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            display: none; /* Hidden by default */
+            padding: 5px;
         }
-        .chip:hover {
-            background-color: #2c3e50;
-            color: white;
-            transform: translateY(-2px);
-        }
-        .chip:active { transform: scale(0.95); }
+        #clearBtn:hover { color: #555; }
 
         /* Controls Container (Buttons) */
         .controls {
@@ -105,7 +96,7 @@
             align-items: center;
             gap: 10px;
             flex-wrap: wrap;
-            margin-top: 10px;
+            margin-top: 20px;
         }
 
         /* Buttons */
@@ -126,9 +117,6 @@
         
         .btn-surprise { background-color: #f1c40f; color: #2c3e50; }
         .btn-surprise:hover { background-color: #f39c12; }
-
-        .btn-favorites { background-color: white; border: 1px solid #ddd; color: #555; }
-        .btn-favorites.active { background-color: #ff4757; color: white; border-color: #ff4757; }
 
         #installBtn {
             display: none; /* Hidden by default */
@@ -171,8 +159,8 @@
             display: block;
         }
         
-        /* Heart Icon */
-        .heart-btn {
+        /* NEW: Share Icon */
+        .share-btn {
             position: absolute;
             top: 10px;
             right: 10px;
@@ -183,14 +171,17 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 20px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
             cursor: pointer;
             z-index: 10;
-            transition: transform 0.2s;
+            transition: transform 0.2s, background 0.2s;
         }
-        .heart-btn:hover { transform: scale(1.1); }
-        .heart-btn.is-active { color: #ff4757; }
+        .share-btn:hover { transform: scale(1.1); background-color: #f0f0f0; }
+        .share-btn svg {
+            width: 18px;
+            height: 18px;
+            fill: #555;
+        }
 
         .info { padding: 15px; }
         
@@ -243,34 +234,18 @@
 <body>
 
 <header>
-    <!-- CHANGED: Image Logo instead of Text -->
     <img src="default.jpg" alt="Find Vegan Recipes Fast" class="logo-img">
     
-    <!-- 1. Search Bar -->
-    <input type="text" id="searchInput" placeholder="Search pasta, tofu, soup...">
-    
-    <!-- 2. Smart Category Chips -->
-    <div class="chip-container">
-        <button class="chip" onclick="quickSearch('pasta')">🍝 Pasta</button>
-        <button class="chip" onclick="quickSearch('curry')">🍛 Curry</button>
-        <button class="chip" onclick="quickSearch('soup')">🥣 Soup</button>
-        <button class="chip" onclick="quickSearch('salad')">🥗 Salad</button>
-        <button class="chip" onclick="quickSearch('tofu')">🧊 Tofu</button>
-        <button class="chip" onclick="quickSearch('burger')">🍔 Burger</button>
-        <button class="chip" onclick="quickSearch('cake')">🍰 Cake</button>
-        <button class="chip" onclick="quickSearch('cookie')">🍪 Cookie</button>
+    <!-- Search Bar with Clear Button -->
+    <div class="search-wrapper">
+        <input type="text" id="searchInput" placeholder="Search pasta, tofu, soup...">
+        <button id="clearBtn" title="Clear Search">✕</button>
     </div>
 
-    <!-- 3. Control Buttons -->
     <div class="controls">
         <button class="btn btn-surprise" id="surpriseBtn" title="Random Recipe">
             🎲 Surprise Me
         </button>
-        
-        <button class="btn btn-favorites" id="favFilterBtn" title="Show Favorites">
-            ❤️ Saved
-        </button>
-
         <button class="btn" id="installBtn">📲 Install App</button>
     </div>
 </header>
@@ -285,60 +260,6 @@
 
 <script>
     let allRecipes = []; 
-    // Load favorites from local storage
-    let favorites = JSON.parse(localStorage.getItem('veganFavs')) || [];
-
-    // --- QUICK SEARCH CHIP LOGIC ---
-    function quickSearch(term) {
-        const input = document.getElementById('searchInput');
-        input.value = term;
-        // Trigger the keyup event so the search logic runs
-        input.dispatchEvent(new Event('keyup')); 
-    }
-
-    // --- FAVORITES LOGIC ---
-    function toggleFavorite(e, link) {
-        e.preventDefault(); 
-        e.stopPropagation(); 
-
-        const btn = e.currentTarget;
-        const index = favorites.indexOf(link);
-
-        if (index === -1) {
-            favorites.push(link);
-            btn.classList.add('is-active');
-            btn.innerHTML = '❤️'; 
-        } else {
-            favorites.splice(index, 1);
-            btn.classList.remove('is-active');
-            btn.innerHTML = '🤍';
-        }
-        localStorage.setItem('veganFavs', JSON.stringify(favorites));
-
-        if(document.getElementById('favFilterBtn').classList.contains('active')) {
-            filterByFavorites();
-        }
-    }
-
-    // --- FILTER LOGIC ---
-    function filterByFavorites() {
-        const btn = document.getElementById('favFilterBtn');
-        const cards = document.querySelectorAll('.card');
-        const isFiltering = btn.classList.toggle('active');
-
-        cards.forEach(card => {
-            const link = card.getAttribute('href');
-            if (isFiltering && !favorites.includes(link)) {
-                card.style.display = 'none';
-            } else {
-                card.style.display = 'block';
-            }
-        });
-        
-        if(isFiltering) document.getElementById('searchInput').value = '';
-    }
-
-    document.getElementById('favFilterBtn').addEventListener('click', filterByFavorites);
 
     // --- SURPRISE BUTTON ---
     document.getElementById('surpriseBtn').addEventListener('click', () => {
@@ -362,6 +283,24 @@
         deferredPrompt = null;
     });
 
+    // --- SHARE FUNCTION ---
+    function shareRecipe(e, title, link) {
+        e.preventDefault(); 
+        e.stopPropagation(); 
+
+        if (navigator.share) {
+            // Use native share (Mobile/Modern Browsers)
+            navigator.share({
+                title: title,
+                url: link
+            }).catch(console.error);
+        } else {
+            // Fallback: Copy to clipboard
+            navigator.clipboard.writeText(link);
+            alert("Link copied to clipboard!");
+        }
+    }
+
     // --- MAIN FETCH ---
     fetch('data.json')
         .then(response => response.json())
@@ -376,16 +315,9 @@
                 card.href = recipe.link;
                 card.target = "_blank"; 
 
-                // Heart Check
-                const isFav = favorites.includes(recipe.link);
-                const heartIcon = isFav ? '❤️' : '🤍';
-                const heartClass = isFav ? 'heart-btn is-active' : 'heart-btn';
-
                 // Image Handling
                 const img = document.createElement('img');
                 img.src = recipe.image;
-                
-                // CHANGED: Fallback image is now icon.jpg
                 img.onerror = function() { this.src = 'icon.jpg'; };
                 img.loading = "lazy"; 
 
@@ -413,29 +345,38 @@
                     <div class="blogger">by ${recipe.blog_name}</div>
                 `;
 
-                // Heart Button
-                const heartBtn = document.createElement('div');
-                heartBtn.className = heartClass;
-                heartBtn.innerHTML = heartIcon;
-                heartBtn.onclick = (e) => toggleFavorite(e, recipe.link);
+                // Share Button (SVG Icon)
+                const shareBtn = document.createElement('div');
+                shareBtn.className = 'share-btn';
+                // Simple universal share icon SVG
+                shareBtn.innerHTML = `
+                <svg viewBox="0 0 24 24">
+                    <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
+                </svg>`;
+                
+                shareBtn.onclick = (e) => shareRecipe(e, recipe.title, recipe.link);
 
-                card.appendChild(heartBtn);
+                card.appendChild(shareBtn);
                 card.appendChild(img);
                 card.appendChild(info);
                 gallery.appendChild(card);
             });
 
-            // Search Logic
-            document.getElementById('searchInput').addEventListener('keyup', function(e) {
-                const favBtn = document.getElementById('favFilterBtn');
-                // If searching, turn off favorites filter so we search everything
-                if(favBtn.classList.contains('active')) {
-                    favBtn.classList.remove('active');
+            // --- SEARCH LOGIC (WITH CLEAR BUTTON) ---
+            const searchInput = document.getElementById('searchInput');
+            const clearBtn = document.getElementById('clearBtn');
+
+            function performSearch() {
+                const term = searchInput.value.toLowerCase();
+                
+                // Show/Hide Clear Button
+                if(term.length > 0) {
+                    clearBtn.style.display = 'block';
+                } else {
+                    clearBtn.style.display = 'none';
                 }
 
-                const term = e.target.value.toLowerCase();
                 const cards = document.querySelectorAll('.card');
-                
                 cards.forEach(card => {
                     const title = card.querySelector('.title').textContent.toLowerCase();
                     const blogger = card.querySelector('.blogger').textContent.toLowerCase();
@@ -446,6 +387,15 @@
                         card.style.display = 'none';
                     }
                 });
+            }
+
+            searchInput.addEventListener('keyup', performSearch);
+
+            // Clear Button Click Event
+            clearBtn.addEventListener('click', () => {
+                searchInput.value = ''; // Clear text
+                searchInput.focus();    // Keep focus
+                performSearch();        // Reset grid
             });
         })
         .catch(error => {
