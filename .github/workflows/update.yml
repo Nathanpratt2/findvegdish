@@ -2,7 +2,7 @@ name: Daily Recipe Refresh
 
 on:
   schedule:
-    - cron: '0 8 * * *' # Runs daily at 8am UTC
+    - cron: '23 8 * * *' # 8:23 AM UTC - much less likely to be delayed by the 8:00 AM crowd
   workflow_dispatch: # Allows you to run it manually button click
 
 permissions:
