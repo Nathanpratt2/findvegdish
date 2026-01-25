@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fine Vegan Recipes Fast</title>
 
-        <!-- --- FACEBOOK / SOCIAL META TAGS (NEW) --- -->
     <meta property="og:title" content="Find Vegan Recipes Fast">
     <meta property="og:description" content="Daily recipes from the top bloggers">
-    <!-- IMPORTANT: Replace 'findvegdish.com' with your actual domain if different -->
     <meta property="og:image" content="https://findvegdish.com/default.jpg"> 
     <meta property="og:url" content="https://findvegdish.com">
     <meta property="og:type" content="website">
@@ -169,13 +167,12 @@
             display: block;
         }
         
-        /* UPDATED: Share Icon (25% Bigger) */
+        /* Share Icon */
         .share-btn {
             position: absolute;
             top: 10px;
             right: 10px;
             background: white;
-            /* Was 35px, increased by ~25% to 44px */
             width: 44px;
             height: 44px;
             border-radius: 50%;
@@ -189,7 +186,6 @@
         }
         .share-btn:hover { transform: scale(1.1); background-color: #f0f0f0; }
         .share-btn svg {
-            /* Was 18px, increased to 22px */
             width: 22px;
             height: 22px;
             fill: #555;
@@ -248,16 +244,15 @@
 <header>
     <img src="default.jpg" alt="Find Vegan Recipes Fast" class="logo-img">
     
-    <!-- Search Bar -->
     <div class="search-wrapper">
         <input type="text" id="searchInput" placeholder="Search pasta, tofu, soup...">
         <button id="clearBtn" title="Clear Search">✕</button>
     </div>
 
-    <!-- Controls: Meals, Sweets, Surprise, Install -->
     <div class="controls">
         <button class="btn" id="mealsBtn" onclick="toggleCategory('meal')">🍝 Meals Only</button>
         <button class="btn" id="sweetsBtn" onclick="toggleCategory('sweet')">🍪 Sweets Only</button>
+        <button class="btn" onclick="shuffleRecipes()">🔀 Shuffle</button>
                 
         <button class="btn" id="installBtn">📲 Install App</button>
     </div>
@@ -276,7 +271,6 @@
     let activeCategory = null; // 'meal', 'sweet', or null
 
     // --- SMART KEYWORDS ---
-    // Keywords that define a "Sweet", but we verify it's not savory later
     const SWEET_KEYWORDS = [
         'cookie', 'cake', 'brownie', 'chocolate', 'dessert', 'pie', 'tart', 
         'muffin', 'donut', 'doughnut', 'ice cream', 'pudding', 'cheesecake', 
@@ -284,7 +278,6 @@
         'cobbler', 'mousse', 'cinnamon roll', 'scone', 'waffle', 'pancake'
     ];
 
-    // Keywords that define a "Meal" (Main Dish)
     const MEAL_KEYWORDS = [
         'pasta', 'burger', 'curry', 'soup', 'stew', 'taco', 'pizza', 'sandwich', 
         'wrap', 'salad', 'bowl', 'rice', 'noodle', 'stir fry', 'lasagna', 
@@ -294,23 +287,34 @@
         'meatball', 'loaf', 'skillet', 'gratin', 'pad thai', 'ramen'
     ];
 
+    // --- NEW: SHUFFLE FUNCTION ---
+    function shuffleRecipes() {
+        // Fisher-Yates shuffle algorithm
+        for (let i = allRecipes.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [allRecipes[i], allRecipes[j]] = [allRecipes[j], allRecipes[i]];
+        }
+        
+        // Re-generate HTML with new order
+        generateGalleryHTML(allRecipes);
+        
+        // Re-apply any existing filters (like text search or category)
+        renderGrid();
+    }
+
     // --- CATEGORY TOGGLE LOGIC ---
     function toggleCategory(category) {
         const mealsBtn = document.getElementById('mealsBtn');
         const sweetsBtn = document.getElementById('sweetsBtn');
         const searchInput = document.getElementById('searchInput');
 
-        // Toggle logic
         if (activeCategory === category) {
-            // Turning it off
             activeCategory = null;
             mealsBtn.classList.remove('active-filter');
             sweetsBtn.classList.remove('active-filter');
         } else {
-            // Turning new one on
             activeCategory = category;
             
-            // Visual updates
             if(category === 'meal') {
                 mealsBtn.classList.add('active-filter');
                 sweetsBtn.classList.remove('active-filter');
@@ -319,12 +323,11 @@
                 mealsBtn.classList.remove('active-filter');
             }
             
-            // Clear text search to avoid conflicts
             searchInput.value = '';
             document.getElementById('clearBtn').style.display = 'none';
         }
 
-        renderGrid(); // Re-run the filter logic
+        renderGrid(); 
     }
 
     // --- MAIN FILTER/RENDER LOGIC ---
@@ -347,24 +350,75 @@
             // 2. Category Filter (Smart Logic)
             if (activeCategory && shouldShow) {
                 if (activeCategory === 'sweet') {
-                    // It IS a sweet if it has a keyword...
                     const hasKeyword = SWEET_KEYWORDS.some(k => title.includes(k));
-                    // ...BUT it is NOT a sweet if it's "Sweet Potato" or "Sweet and Sour"
                     const isSavory = title.includes('sweet potato') || title.includes('sweet and sour');
-                    
                     if (!hasKeyword || isSavory) shouldShow = false;
 
                 } else if (activeCategory === 'meal') {
-                    // It IS a meal if it has a keyword...
                     const hasKeyword = MEAL_KEYWORDS.some(k => title.includes(k));
-                    // ...AND it doesn't sound like a side dish
                     const isSide = title.includes('sauce') || title.includes('dressing') || title.includes('side');
-                    
                     if (!hasKeyword || isSide) shouldShow = false;
                 }
             }
 
             card.style.display = shouldShow ? 'block' : 'none';
+        });
+    }
+
+    // --- GENERATE HTML FUNCTION (REUSABLE) ---
+    function generateGalleryHTML(data) {
+        const gallery = document.getElementById('gallery');
+        gallery.innerHTML = ''; 
+
+        data.forEach(recipe => {
+            const card = document.createElement('a');
+            card.className = 'card';
+            card.href = recipe.link;
+            card.target = "_blank"; 
+
+            // Image Handling
+            const img = document.createElement('img');
+            img.src = recipe.image;
+            img.onerror = function() { this.src = 'icon.jpg'; };
+            img.loading = "lazy"; 
+
+            // Info & Tags
+            const info = document.createElement('div');
+            info.className = 'info';
+
+            let tagClass = 'tag';
+            let tagText = 'Top Blog';
+            if(recipe.is_disruptor) {
+                tagClass += ' disruptor-tag';
+                tagText = 'Rising Blog';
+            }
+
+            const recipeDate = new Date(recipe.date);
+            const now = new Date();
+            const daysOld = (now - recipeDate) / (1000 * 3600 * 24);
+            let newBadge = '';
+            if(daysOld < 2) newBadge = '<span class="fresh-badge">NEW!</span>';
+
+            info.innerHTML = `
+                <span class="${tagClass}">${tagText}</span> ${newBadge}
+                <div class="title">${recipe.title}</div>
+                <div class="blogger">by ${recipe.blog_name}</div>
+            `;
+
+            // Share Button
+            const shareBtn = document.createElement('div');
+            shareBtn.className = 'share-btn';
+            shareBtn.innerHTML = `
+            <svg viewBox="0 0 24 24">
+                <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
+            </svg>`;
+            
+            shareBtn.onclick = (e) => shareRecipe(e, recipe.title, recipe.link);
+
+            card.appendChild(shareBtn);
+            card.appendChild(img);
+            card.appendChild(info);
+            gallery.appendChild(card);
         });
     }
 
@@ -403,73 +457,18 @@
         .then(response => response.json())
         .then(data => {
             allRecipes = data;
-            const gallery = document.getElementById('gallery');
-            gallery.innerHTML = ''; 
-
-            data.forEach(recipe => {
-                const card = document.createElement('a');
-                card.className = 'card';
-                card.href = recipe.link;
-                card.target = "_blank"; 
-
-                // Image Handling
-                const img = document.createElement('img');
-                img.src = recipe.image;
-                img.onerror = function() { this.src = 'icon.jpg'; };
-                img.loading = "lazy"; 
-
-                // Info & Tags
-                const info = document.createElement('div');
-                info.className = 'info';
-
-                let tagClass = 'tag';
-                let tagText = 'Top Blog';
-                if(recipe.is_disruptor) {
-                    tagClass += ' disruptor-tag';
-                    tagText = 'Rising Blog';
-                }
-
-                const recipeDate = new Date(recipe.date);
-                const now = new Date();
-                const daysOld = (now - recipeDate) / (1000 * 3600 * 24);
-                let newBadge = '';
-                if(daysOld < 2) newBadge = '<span class="fresh-badge">NEW!</span>';
-
-                info.innerHTML = `
-                    <span class="${tagClass}">${tagText}</span> ${newBadge}
-                    <div class="title">${recipe.title}</div>
-                    <div class="blogger">by ${recipe.blog_name}</div>
-                `;
-
-                // Share Button (Updated Size)
-                const shareBtn = document.createElement('div');
-                shareBtn.className = 'share-btn';
-                shareBtn.innerHTML = `
-                <svg viewBox="0 0 24 24">
-                    <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
-                </svg>`;
-                
-                shareBtn.onclick = (e) => shareRecipe(e, recipe.title, recipe.link);
-
-                card.appendChild(shareBtn);
-                card.appendChild(img);
-                card.appendChild(info);
-                gallery.appendChild(card);
-            });
+            // Generate initial view
+            generateGalleryHTML(allRecipes);
 
             // --- SEARCH EVENTS ---
             const searchInput = document.getElementById('searchInput');
             const clearBtn = document.getElementById('clearBtn');
 
             searchInput.addEventListener('keyup', () => {
-                // If typing, reset categories for clarity
                 if(activeCategory && searchInput.value.length > 0) {
-                   toggleCategory(activeCategory); // Toggles it off
+                   toggleCategory(activeCategory); 
                 }
-                
-                // Show/Hide Clear Button
                 clearBtn.style.display = searchInput.value.length > 0 ? 'block' : 'none';
-                
                 renderGrid();
             });
 
