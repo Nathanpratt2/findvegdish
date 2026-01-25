@@ -360,14 +360,6 @@
         });
     }
 
-    // --- SURPRISE BUTTON ---
-    document.getElementById('surpriseBtn').addEventListener('click', () => {
-        if(allRecipes.length > 0) {
-            const randomRecipe = allRecipes[Math.floor(Math.random() * allRecipes.length)];
-            window.open(randomRecipe.link, '_blank');
-        }
-    });
-
     // --- INSTALL BUTTON ---
     let deferredPrompt;
     const installBtn = document.getElementById('installBtn');
