@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 from dateutil import parser
 import time
-import re
+import os
 
 # --- CONFIGURATION ---
 TOP_BLOGGERS = [
@@ -43,58 +43,47 @@ DISRUPTORS = [
 ]
 
 ALL_FEEDS = TOP_BLOGGERS + DISRUPTORS
+
+# CHANGED: You can increase this to 120 or 365 if you want more history
 cutoff_date = datetime.now().astimezone() - timedelta(days=90)
 
 recipes = []
+feed_stats = [] # To store the health report
 
+# UPDATED: Headers to look exactly like a real Chrome Browser
 HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'Accept-Language': 'en-US,en;q=0.9',
+    'Referer': 'https://www.google.com/'
 }
 
 def is_pet_recipe(title):
-    """
-    Returns True if the recipe is for pets (treats/food).
-    Careful not to filter out 'Hot Dogs' or 'Copycat' recipes.
-    """
     t = title.lower()
-    
-    # 1. Check for explicit pet phrase
     pet_phrases = [
-        'dog treat', 'cat treat', 
-        'dog biscuit', 'cat biscuit',
-        'dog food', 'cat food',
-        'for dogs', 'for cats',
-        'pup treat', 'kitty treat',
-        'dog cookie'
+        'dog treat', 'cat treat', 'dog biscuit', 'cat biscuit',
+        'dog food', 'cat food', 'for dogs', 'for cats',
+        'pup treat', 'kitty treat', 'dog cookie'
     ]
-    
     if any(phrase in t for phrase in pet_phrases):
         return True
-        
     return False
 
 def fetch_og_image(link):
-    """
-    FALLBACK: Visits the actual page to find the 'og:image'.
-    """
     try:
         time.sleep(0.5) 
-        r = requests.get(link, headers=HEADERS, timeout=5)
+        r = requests.get(link, headers=HEADERS, timeout=10) # Increased timeout
         soup = BeautifulSoup(r.content, 'lxml')
-        
         og_image = soup.find('meta', property='og:image')
         if og_image and og_image.get('content'):
             return og_image['content']
-            
-    except Exception as e:
+    except:
         return None
     return None
 
 def extract_image(entry, blog_name):
     image_candidate = None
 
-    # 1. Try standard RSS media extensions
     if 'media_content' in entry:
         for media in entry.media_content:
             if 'url' in media:
@@ -103,7 +92,6 @@ def extract_image(entry, blog_name):
     if 'media_thumbnail' in entry:
         return entry.media_thumbnail[0]['url']
 
-    # 2. Parse HTML Content
     content = entry.get('content', [{}])[0].get('value', '') or entry.get('summary', '')
     
     if content:
@@ -111,20 +99,14 @@ def extract_image(entry, blog_name):
         images = soup.find_all('img')
         
         for img in images:
-            src = (img.get('data-src') or 
-                   img.get('data-lazy-src') or 
-                   img.get('data-original') or 
-                   img.get('src'))
-            
+            src = (img.get('data-src') or img.get('data-lazy-src') or img.get('data-original') or img.get('src'))
             srcset = img.get('srcset') or img.get('data-srcset')
             if srcset:
                 src = srcset.split(',')[0].split(' ')[0]
 
-            if not src:
-                continue
+            if not src: continue
             
             src_lower = src.lower()
-            
             if any(x in src_lower for x in ['pixel', 'emoji', 'icon', 'logo', 'gravatar', 'gif', 'facebook', 'pinterest', 'share']):
                 continue
             
@@ -135,55 +117,91 @@ def extract_image(entry, blog_name):
             image_candidate = src
             break
 
-    # 3. Fallback to OG Image
     if not image_candidate:
-        print(f"   -> No RSS image for {entry.title[:30]}... visiting page.")
         image_candidate = fetch_og_image(entry.link)
 
     return image_candidate if image_candidate else "default.jpg"
 
 print(f"Fetching recipes from {len(ALL_FEEDS)} blogs...")
 
+# --- MAIN LOOP ---
 for name, url in ALL_FEEDS:
+    blog_recipe_count = 0
+    status = "✅ OK"
+    
     try:
         print(f"Checking {name}...")
-        feed = feedparser.parse(url, agent=HEADERS['User-Agent'])
+        # We use requests to get the feed content first, passing headers to fool filters
+        response = requests.get(url, headers=HEADERS, timeout=10)
+        
+        # If the blog blocks us, record it
+        if response.status_code != 200:
+            status = f"❌ Error {response.status_code}"
+            feed_stats.append({"name": name, "count": 0, "status": status})
+            continue
+
+        feed = feedparser.parse(response.content)
+        
+        if not feed.entries:
+            status = "⚠️ Empty Feed (Format changed?)"
         
         for entry in feed.entries:
             try:
-                published_time = parser.parse(entry.published if 'published' in entry else entry.updated)
+                # Flexible date parsing
+                dt = entry.get('published', entry.get('updated', None))
+                if not dt: continue
+                
+                published_time = parser.parse(dt)
                 if published_time.tzinfo is None:
                     published_time = published_time.replace(tzinfo=datetime.now().astimezone().tzinfo)
-            except:
-                continue
-            
-            if published_time > cutoff_date:
-                # --- NEW FILTER CHECK ---
-                if is_pet_recipe(entry.title):
-                    print(f"   Skipping Pet Recipe: {entry.title}")
-                    continue
+                
+                if published_time > cutoff_date:
+                    if is_pet_recipe(entry.title): continue
 
-                image_url = extract_image(entry, name)
-                
-                if image_url and image_url.startswith('/'):
-                    base = feed.feed.get('link', '')
-                    if base:
-                        image_url = base.rstrip('/') + image_url
-                
-                recipes.append({
-                    "blog_name": name,
-                    "title": entry.title,
-                    "link": entry.link,
-                    "image": image_url,
-                    "date": published_time.isoformat(),
-                    "is_disruptor": name in [d[0] for d in DISRUPTORS]
-                })
+                    image_url = extract_image(entry, name)
+                    
+                    # Relative URL fix
+                    if image_url and image_url.startswith('/'):
+                        base = feed.feed.get('link', '')
+                        if base: image_url = base.rstrip('/') + image_url
+                    
+                    recipes.append({
+                        "blog_name": name,
+                        "title": entry.title,
+                        "link": entry.link,
+                        "image": image_url,
+                        "date": published_time.isoformat(),
+                        "is_disruptor": name in [d[0] for d in DISRUPTORS]
+                    })
+                    blog_recipe_count += 1
+            except Exception as e:
+                continue
+        
+        feed_stats.append({"name": name, "count": blog_recipe_count, "status": status})
+
     except Exception as e:
         print(f"Failed to parse {name}: {e}")
+        feed_stats.append({"name": name, "count": 0, "status": f"❌ Crash: {str(e)[:20]}"})
 
+# Sort new -> old
 recipes.sort(key=lambda x: x['date'], reverse=True)
 
+# Save JSON
 with open('data.json', 'w') as f:
     json.dump(recipes, f, indent=2)
 
-print(f"Successfully scraped {len(recipes)} recipes.")
+# --- GENERATE REPORT (FEED_HEALTH.md) ---
+with open('FEED_HEALTH.md', 'w') as f:
+    f.write(f"# Feed Health Report\n")
+    f.write(f"**Last Run:** {datetime.now().isoformat()}\n")
+    f.write(f"**Total Recipes Fetched:** {len(recipes)}\n\n")
+    f.write("| Blog Name | Recipes Found (90 Days) | Status |\n")
+    f.write("|-----------|-------------------------|--------|\n")
+    
+    # Sort stats: Errors first, then Empty, then Success
+    feed_stats.sort(key=lambda x: (x['status'] == '✅ OK', x['count']), reverse=False)
+    
+    for stat in feed_stats:
+        f.write(f"| {stat['name']} | {stat['count']} | {stat['status']} |\n")
+
+print(f"Successfully scraped {len(recipes)} recipes. Check FEED_HEALTH.md for errors.")
