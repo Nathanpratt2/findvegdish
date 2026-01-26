@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fine Vegan Recipes Fast</title>
+    <title>Find Vegan Recipes Fast</title>
 
     <meta property="og:title" content="Find Vegan Recipes Fast">
     <meta property="og:description" content="Daily recipes from the top bloggers">
@@ -157,7 +157,15 @@
             text-decoration: none;
             color: inherit;
             position: relative;
+            /* Fade in animation for new items */
+            animation: fadeIn 0.5s ease-in;
         }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
         .card:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 12px rgba(0,0,0,0.15);
@@ -237,6 +245,15 @@
             color: #aaa;
             font-size: 0.9em;
         }
+        
+        /* Loading Indicator */
+        #loader {
+            text-align: center;
+            padding: 20px;
+            color: #888;
+            font-style: italic;
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -259,18 +276,23 @@
 </header>
 
 <div id="gallery" class="gallery">
-    <p style="text-align:center; width:100%;">Loading fresh recipes...</p>
+    <!-- Recipes load here -->
 </div>
+<div id="loader">Loading more recipes...</div>
 
 <footer>
     <p>Updated daily. Images belong to respective authors.</p>
 </footer>
 
 <script>
-    let allRecipes = []; 
-    let activeCategory = null; // 'meal', 'sweet', or null
+    // --- GLOBAL STATE ---
+    let allRecipes = [];          // The full database (365 days)
+    let currentContext = [];      // The currently filtered list (subset of allRecipes)
+    let renderedCount = 0;        // How many we have shown so far
+    let activeCategory = null;    // 'meal', 'sweet', or null
+    const BATCH_SIZE = 48;        // Items to load per scroll (divisible by 2,3,4)
 
-    // --- SMART KEYWORDS ---
+    // --- KEYWORDS ---
     const SWEET_KEYWORDS = [
         'cookie', 'cake', 'brownie', 'chocolate', 'dessert', 'pie', 'tart', 
         'muffin', 'donut', 'doughnut', 'ice cream', 'pudding', 'cheesecake', 
@@ -287,26 +309,187 @@
         'meatball', 'loaf', 'skillet', 'gratin', 'pad thai', 'ramen'
     ];
 
-    // --- NEW: SHUFFLE FUNCTION ---
+    // --- INITIALIZATION ---
+    fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+            allRecipes = data;
+            currentContext = allRecipes; // Start showing everything
+            renderNextBatch();           // Load first 48
+            setupInfiniteScroll();       // Start watching scroll
+        })
+        .catch(error => {
+            console.error('Error loading data:', error);
+            document.getElementById('gallery').innerHTML = '<p style="text-align:center">Could not load recipes.</p>';
+        });
+
+    // --- RENDER LOGIC (BATCHED) ---
+    function renderNextBatch() {
+        const gallery = document.getElementById('gallery');
+        const loader = document.getElementById('loader');
+        
+        // Stop if we have shown everything in the current context
+        if (renderedCount >= currentContext.length) {
+            loader.style.display = 'none';
+            return;
+        }
+
+        // Get the next slice of data
+        const nextBatch = currentContext.slice(renderedCount, renderedCount + BATCH_SIZE);
+        
+        // Generate HTML for just this batch
+        nextBatch.forEach(recipe => {
+            const card = createCard(recipe);
+            gallery.appendChild(card);
+        });
+
+        // Update counter
+        renderedCount += nextBatch.length;
+        
+        // Show/Hide loader based on if there are more left
+        if (renderedCount < currentContext.length) {
+            loader.style.display = 'block';
+        } else {
+            loader.style.display = 'none';
+        }
+    }
+
+    function createCard(recipe) {
+        const card = document.createElement('a');
+        card.className = 'card';
+        card.href = recipe.link;
+        card.target = "_blank"; 
+
+        const img = document.createElement('img');
+        img.src = recipe.image;
+        img.onerror = function() { this.src = 'icon.jpg'; };
+        img.loading = "lazy"; 
+
+        const info = document.createElement('div');
+        info.className = 'info';
+
+        let tagClass = 'tag';
+        let tagText = 'Top Blog';
+        if(recipe.is_disruptor) {
+            tagClass += ' disruptor-tag';
+            tagText = 'Rising Blog';
+        }
+
+        const recipeDate = new Date(recipe.date);
+        const now = new Date();
+        const daysOld = (now - recipeDate) / (1000 * 3600 * 24);
+        let newBadge = '';
+        if(daysOld < 2) newBadge = '<span class="fresh-badge">NEW!</span>';
+
+        info.innerHTML = `
+            <span class="${tagClass}">${tagText}</span> ${newBadge}
+            <div class="title">${recipe.title}</div>
+            <div class="blogger">by ${recipe.blog_name}</div>
+        `;
+
+        const shareBtn = document.createElement('div');
+        shareBtn.className = 'share-btn';
+        shareBtn.innerHTML = `
+        <svg viewBox="0 0 24 24">
+            <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
+        </svg>`;
+        shareBtn.onclick = (e) => shareRecipe(e, recipe.title, recipe.link);
+
+        card.appendChild(shareBtn);
+        card.appendChild(img);
+        card.appendChild(info);
+        return card;
+    }
+
+    // --- INFINITE SCROLL HANDLER ---
+    function setupInfiniteScroll() {
+        window.addEventListener('scroll', () => {
+            // Check if we are near bottom of page (200px buffer)
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 500) {
+                // Determine if we need to load more
+                if (renderedCount < currentContext.length) {
+                    renderNextBatch();
+                }
+            }
+        });
+    }
+
+    // --- RESET VIEW FUNCTION ---
+    function resetView(newContext) {
+        // Update context
+        currentContext = newContext;
+        renderedCount = 0;
+        
+        // Clear DOM
+        document.getElementById('gallery').innerHTML = '';
+        document.getElementById('searchInput').value = '';
+        document.getElementById('clearBtn').style.display = 'none';
+        
+        // Render first batch of new context
+        renderNextBatch();
+    }
+
+    // --- SHUFFLE FUNCTION ---
     function shuffleRecipes() {
-        // Fisher-Yates shuffle algorithm
+        // 1. Shuffle the ENTIRE database
         for (let i = allRecipes.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [allRecipes[i], allRecipes[j]] = [allRecipes[j], allRecipes[i]];
         }
         
-        // Re-generate HTML with new order
-        generateGalleryHTML(allRecipes);
+        // 2. Reset category buttons visually
+        activeCategory = null;
+        document.getElementById('mealsBtn').classList.remove('active-filter');
+        document.getElementById('sweetsBtn').classList.remove('active-filter');
         
-        // Re-apply any existing filters (like text search or category)
-        renderGrid();
+        // 3. Reset view using the full (shuffled) list
+        resetView(allRecipes);
     }
 
-    // --- CATEGORY TOGGLE LOGIC ---
+    // --- FILTER/SEARCH LOGIC ---
+    function applyFilters() {
+        const term = document.getElementById('searchInput').value.toLowerCase();
+        
+        // Start with full database
+        let filtered = allRecipes;
+
+        // 1. Apply Search Term
+        if (term.length > 0) {
+            filtered = filtered.filter(recipe => {
+                const title = recipe.title.toLowerCase();
+                const blogger = recipe.blog_name.toLowerCase();
+                return title.includes(term) || blogger.includes(term);
+            });
+        }
+
+        // 2. Apply Category
+        if (activeCategory === 'sweet') {
+            filtered = filtered.filter(recipe => {
+                const t = recipe.title.toLowerCase();
+                const hasKeyword = SWEET_KEYWORDS.some(k => t.includes(k));
+                const isSavory = t.includes('sweet potato') || t.includes('sweet and sour');
+                return hasKeyword && !isSavory;
+            });
+        } else if (activeCategory === 'meal') {
+            filtered = filtered.filter(recipe => {
+                const t = recipe.title.toLowerCase();
+                const hasKeyword = MEAL_KEYWORDS.some(k => t.includes(k));
+                const isSide = t.includes('sauce') || t.includes('dressing') || t.includes('side');
+                return hasKeyword && !isSide;
+            });
+        }
+
+        // 3. Reset view with the filtered list
+        currentContext = filtered;
+        renderedCount = 0;
+        document.getElementById('gallery').innerHTML = '';
+        renderNextBatch();
+    }
+
+    // --- CATEGORY TOGGLE ---
     function toggleCategory(category) {
         const mealsBtn = document.getElementById('mealsBtn');
         const sweetsBtn = document.getElementById('sweetsBtn');
-        const searchInput = document.getElementById('searchInput');
 
         if (activeCategory === category) {
             activeCategory = null;
@@ -314,7 +497,6 @@
             sweetsBtn.classList.remove('active-filter');
         } else {
             activeCategory = category;
-            
             if(category === 'meal') {
                 mealsBtn.classList.add('active-filter');
                 sweetsBtn.classList.remove('active-filter');
@@ -322,107 +504,27 @@
                 sweetsBtn.classList.add('active-filter');
                 mealsBtn.classList.remove('active-filter');
             }
-            
-            searchInput.value = '';
-            document.getElementById('clearBtn').style.display = 'none';
         }
-
-        renderGrid(); 
+        applyFilters();
     }
 
-    // --- MAIN FILTER/RENDER LOGIC ---
-    function renderGrid() {
-        const term = document.getElementById('searchInput').value.toLowerCase();
-        const cards = document.querySelectorAll('.card');
-        
-        cards.forEach(card => {
-            const title = card.querySelector('.title').textContent.toLowerCase();
-            const blogger = card.querySelector('.blogger').textContent.toLowerCase();
-            let shouldShow = true;
+    // --- SEARCH INPUT LISTENERS ---
+    const searchInput = document.getElementById('searchInput');
+    const clearBtn = document.getElementById('clearBtn');
 
-            // 1. Text Search Filter
-            if (term.length > 0) {
-                if (!title.includes(term) && !blogger.includes(term)) {
-                    shouldShow = false;
-                }
-            }
+    searchInput.addEventListener('keyup', () => {
+        clearBtn.style.display = searchInput.value.length > 0 ? 'block' : 'none';
+        applyFilters();
+    });
 
-            // 2. Category Filter (Smart Logic)
-            if (activeCategory && shouldShow) {
-                if (activeCategory === 'sweet') {
-                    const hasKeyword = SWEET_KEYWORDS.some(k => title.includes(k));
-                    const isSavory = title.includes('sweet potato') || title.includes('sweet and sour');
-                    if (!hasKeyword || isSavory) shouldShow = false;
+    clearBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        searchInput.focus();
+        clearBtn.style.display = 'none';
+        applyFilters();
+    });
 
-                } else if (activeCategory === 'meal') {
-                    const hasKeyword = MEAL_KEYWORDS.some(k => title.includes(k));
-                    const isSide = title.includes('sauce') || title.includes('dressing') || title.includes('side');
-                    if (!hasKeyword || isSide) shouldShow = false;
-                }
-            }
-
-            card.style.display = shouldShow ? 'block' : 'none';
-        });
-    }
-
-    // --- GENERATE HTML FUNCTION (REUSABLE) ---
-    function generateGalleryHTML(data) {
-        const gallery = document.getElementById('gallery');
-        gallery.innerHTML = ''; 
-
-        data.forEach(recipe => {
-            const card = document.createElement('a');
-            card.className = 'card';
-            card.href = recipe.link;
-            card.target = "_blank"; 
-
-            // Image Handling
-            const img = document.createElement('img');
-            img.src = recipe.image;
-            img.onerror = function() { this.src = 'icon.jpg'; };
-            img.loading = "lazy"; 
-
-            // Info & Tags
-            const info = document.createElement('div');
-            info.className = 'info';
-
-            let tagClass = 'tag';
-            let tagText = 'Top Blog';
-            if(recipe.is_disruptor) {
-                tagClass += ' disruptor-tag';
-                tagText = 'Rising Blog';
-            }
-
-            const recipeDate = new Date(recipe.date);
-            const now = new Date();
-            const daysOld = (now - recipeDate) / (1000 * 3600 * 24);
-            let newBadge = '';
-            if(daysOld < 2) newBadge = '<span class="fresh-badge">NEW!</span>';
-
-            info.innerHTML = `
-                <span class="${tagClass}">${tagText}</span> ${newBadge}
-                <div class="title">${recipe.title}</div>
-                <div class="blogger">by ${recipe.blog_name}</div>
-            `;
-
-            // Share Button
-            const shareBtn = document.createElement('div');
-            shareBtn.className = 'share-btn';
-            shareBtn.innerHTML = `
-            <svg viewBox="0 0 24 24">
-                <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
-            </svg>`;
-            
-            shareBtn.onclick = (e) => shareRecipe(e, recipe.title, recipe.link);
-
-            card.appendChild(shareBtn);
-            card.appendChild(img);
-            card.appendChild(info);
-            gallery.appendChild(card);
-        });
-    }
-
-    // --- INSTALL BUTTON ---
+    // --- INSTALL & SHARE (Unchanged) ---
     let deferredPrompt;
     const installBtn = document.getElementById('installBtn');
     window.addEventListener('beforeinstallprompt', (e) => {
@@ -436,53 +538,16 @@
         deferredPrompt = null;
     });
 
-    // --- SHARE FUNCTION ---
     function shareRecipe(e, title, link) {
         e.preventDefault(); 
         e.stopPropagation(); 
-
         if (navigator.share) {
-            navigator.share({
-                title: title,
-                url: link
-            }).catch(console.error);
+            navigator.share({ title: title, url: link }).catch(console.error);
         } else {
             navigator.clipboard.writeText(link);
             alert("Link copied to clipboard!");
         }
     }
-
-    // --- MAIN FETCH ---
-    fetch('data.json')
-        .then(response => response.json())
-        .then(data => {
-            allRecipes = data;
-            // Generate initial view
-            generateGalleryHTML(allRecipes);
-
-            // --- SEARCH EVENTS ---
-            const searchInput = document.getElementById('searchInput');
-            const clearBtn = document.getElementById('clearBtn');
-
-            searchInput.addEventListener('keyup', () => {
-                if(activeCategory && searchInput.value.length > 0) {
-                   toggleCategory(activeCategory); 
-                }
-                clearBtn.style.display = searchInput.value.length > 0 ? 'block' : 'none';
-                renderGrid();
-            });
-
-            clearBtn.addEventListener('click', () => {
-                searchInput.value = '';
-                searchInput.focus();
-                clearBtn.style.display = 'none';
-                renderGrid();
-            });
-        })
-        .catch(error => {
-            console.error('Error loading data:', error);
-            document.getElementById('gallery').innerHTML = '<p>Could not load recipes. Please try again later.</p>';
-        });
 </script>
 
 </body>
