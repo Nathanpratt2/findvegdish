@@ -1,5 +1,13 @@
 [
   {
+    "blog_name": "Love and Lemons",
+    "title": "White Bean Chili",
+    "link": "https://www.loveandlemons.com/white-bean-chili/",
+    "image": "https://cdn.loveandlemons.com/wp-content/uploads/2022/02/white-bean-soup-1.jpg",
+    "date": "2026-01-25T14:00:49+00:00",
+    "is_disruptor": false
+  },
+  {
     "blog_name": "It Doesn't Taste Like Chicken",
     "title": "How to Cook Tofu (Crispy, Baked, Air Fryer, Pan-Fried)",
     "link": "https://itdoesnttastelikechicken.com/how-to-cook-tofu/",
@@ -493,14 +501,6 @@
     "link": "https://www.loveandlemons.com/love-lemons-cooking-club-january-6/",
     "image": "https://cdn.loveandlemons.com/wp-content/uploads/2025/12/white-bean-soup-1.jpg",
     "date": "2026-01-05T16:32:44+00:00",
-    "is_disruptor": false
-  },
-  {
-    "blog_name": "Love and Lemons",
-    "title": "White Bean Soup",
-    "link": "https://www.loveandlemons.com/white-bean-soup/",
-    "image": "https://cdn.loveandlemons.com/wp-content/uploads/2025/12/white-bean-soup-1.jpg",
-    "date": "2026-01-04T13:31:45+00:00",
     "is_disruptor": false
   },
   {
@@ -1093,6 +1093,390 @@
     "link": "https://www.veganricha.com/breakfast-taquitos/",
     "image": "https://www.veganricha.com/wp-content/uploads/2025/09/Breakfast-Taquitos-6808.jpg",
     "date": "2025-11-26T13:25:35+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "It Doesn't Taste Like Chicken",
+    "title": "Pecan Crunch Oat Latte (Starbucks Dupe)",
+    "link": "https://itdoesnttastelikechicken.com/pecan-crunch-oat-latte/",
+    "image": "https://itdoesnttastelikechicken.com/wp-content/uploads/2025/11/Pecan-Crunch-Oat-Latte-starbucks-dupe-oatmilk-ingredients-vegan-recipe-facebook.jpg",
+    "date": "2025-11-26T10:00:00+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "PlantYou",
+    "title": "Hasselback Butternut Squash",
+    "link": "https://plantyou.com/hasselback-butternut-squash/",
+    "image": "https://plantyou.com/wp-content/uploads/2025/11/DSC02117-scaled.jpg",
+    "date": "2025-11-25T14:32:01+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "Minimalist Baker",
+    "title": "Thanksgiving Turkey Meatballs",
+    "link": "https://minimalistbaker.com/thanksgiving-turkey-meatballs/",
+    "image": "https://minimalistbaker.com/wp-content/uploads/2023/10/Baked-Thanksgiving-Turkey-Meatballs-7-680x1020.jpg",
+    "date": "2025-11-25T09:00:00+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "The Korean Vegan",
+    "title": "Easy and Delicious Garlic Knots Recipe (Vegan)",
+    "link": "https://thekoreanvegan.com/easy-and-delicious-garlic-knots-recipe-vegan/",
+    "image": "https://thekoreanvegan.com/wp-content/uploads/2025/11/20251123-Screenshot-2025-11-22-at-5.36.04-PM.jpg",
+    "date": "2025-11-24T21:25:09+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "The Korean Vegan",
+    "title": "15-minute Quick and Easy Vegan Mushroom Gravy Recipe.",
+    "link": "https://thekoreanvegan.com/quick-and-easy-vegan-mushroom-gravy-recipe/",
+    "image": "https://thekoreanvegan.com/wp-content/uploads/2025/11/20251123-Screenshot-2025-11-22-at-6.43.55-PM.jpg",
+    "date": "2025-11-24T20:53:45+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "My Darling Vegan",
+    "title": "Vegan Pumpkin Cinnamon Rolls with Maple Cream Cheese Glaze",
+    "link": "https://www.mydarlingvegan.com/vegan-pumpkin-cinnamon-rolls-with-maple-cream-cheese-glaze/",
+    "image": "https://www.mydarlingvegan.com/wp-content/uploads/2025/11/pumpkin-cinnamon-rolls-top.jpg",
+    "date": "2025-11-24T20:32:52+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "Simple Vegan Blog",
+    "title": "35+ Easy Vegan Thanksgiving Recipes for a Stress-Free Holiday",
+    "link": "https://simpleveganblog.com/vegan-thanksgiving-recipes/",
+    "image": "https://simpleveganblog.com/wp-content/uploads/2025/11/vegan-thanksgiving-recipes-social.jpg",
+    "date": "2025-11-24T09:02:10+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "The Korean Vegan",
+    "title": "The Korean Vegan\u2019s 2025 VEGAN Holiday Gift GUIDE.",
+    "link": "https://thekoreanvegan.com/the-korean-vegans-2025-vegan-holiday-gift-guide/",
+    "image": "https://thekoreanvegan.com/wp-content/uploads/2025/11/2025-TKV-Holiday-Gift-Guide-16x9-1.jpg",
+    "date": "2025-11-24T02:32:30+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "Lazy Cat Kitchen",
+    "title": "Vegan cranberry cheesecake bars",
+    "link": "https://www.lazycatkitchen.com/vegan-cranberry-cheesecake-bars/",
+    "image": "https://cdn77-s3.lazycatkitchen.com/wp-content/uploads/2025/11/cranberry-cheesecake-bars-stack.jpg",
+    "date": "2025-11-23T17:43:20+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "Sweet Potato Soul",
+    "title": "Wild Rice Stuffed Sweet Potatoes",
+    "link": "https://sweetpotatosoul.com/wild-rice-stuffed-sweet-potatoes/",
+    "image": "https://sweetpotatosoul.com/wp-content/uploads/2025/11/amazing-stuffed-sweet-potatoes.jpg",
+    "date": "2025-11-23T13:00:00+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "It Doesn't Taste Like Chicken",
+    "title": "Maple-Tahini Mashed Sweet Potatoes (Vegan & Creamy)",
+    "link": "https://itdoesnttastelikechicken.com/maple-tahini-mashed-sweet-potatoes/",
+    "image": "https://itdoesnttastelikechicken.com/wp-content/uploads/2025/10/Maple-Tahini-Mashed-Sweet-Potatoes-recipe-easy-best-healthy-cinnamon-how-to-make-vegan-facebook.jpg",
+    "date": "2025-11-23T10:00:00+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "Lazy Cat Kitchen",
+    "title": "Vegan biscuits with miso and rosemary",
+    "link": "https://www.lazycatkitchen.com/vegan-biscuits-miso-rosemary/",
+    "image": "https://cdn77-s3.lazycatkitchen.com/wp-content/uploads/2025/11/vegan-biscuits-stack.jpg",
+    "date": "2025-11-22T17:30:55+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "Elavegan",
+    "title": "Crispy Chickpea Crackers",
+    "link": "https://elavegan.com/chickpea-crackers/",
+    "image": "https://elavegan.com/wp-content/uploads/2025/11/A-hand-reaches-for-a-square-herb-seasoned-chickpea-cracker-on-a-white-plate-full-of-similar-crackers.jpg",
+    "date": "2025-11-21T15:06:36+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "The Korean Vegan",
+    "title": "Cheesy Mushroom Rigatoni Pie \u2013 Easy Vegan Recipe.",
+    "link": "https://thekoreanvegan.com/cheesy-mushroom-rigatoni-pie-easy-vegan-recipe/",
+    "image": "https://thekoreanvegan.com/wp-content/uploads/2025/11/20251111-5P4A7194.jpg",
+    "date": "2025-11-20T03:40:20+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "Running on Real Food",
+    "title": "Pesto Farro Salad",
+    "link": "https://runningonrealfood.com/pesto-farro-salad/",
+    "image": "https://runningonrealfood.com/wp-content/uploads/2025/11/warm-pesto-farro-salad-roasted-vegetables-7.jpg",
+    "date": "2025-11-20T02:07:36+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "Vegan Richa",
+    "title": "Holiday Vegan Cheese Log",
+    "link": "https://www.veganricha.com/vegan-cheese-log/",
+    "image": "https://www.veganricha.com/wp-content/uploads/2025/10/Holiday-Cheese-Log-8797.jpg",
+    "date": "2025-11-19T12:00:00+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "It Doesn't Taste Like Chicken",
+    "title": "Vegan Buttermilk Pie",
+    "link": "https://itdoesnttastelikechicken.com/vegan-buttermilk-pie/",
+    "image": "https://itdoesnttastelikechicken.com/wp-content/uploads/2025/10/Vegan-Buttermilk-Pie-recipe-easy-ingredients-crust-old-fashioned-southern-best-facebook.jpg",
+    "date": "2025-11-19T10:00:00+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "The First Mess",
+    "title": "Roasted Honeynut Squash Wedges with Apple Cider",
+    "link": "https://thefirstmess.com/2025/11/19/roasted-honeynut-squash-apple-cider/",
+    "image": "https://thefirstmess.com/wp-content/uploads/2025/11/roasted-honeynut-squash-14.jpg",
+    "date": "2025-11-19T06:59:00+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "The Foodie Takes Flight",
+    "title": "Stuffed Mushrooms with Pesto (Vegan)",
+    "link": "https://thefoodietakesflight.com/stuffed-mushrooms-with-pesto/",
+    "image": "https://thefoodietakesflight.com/wp-content/uploads/2025/11/Stuffed-Mushrooms-with-Homemade-Basil-Pesto-16-of-79-768x1024.jpg",
+    "date": "2025-11-18T16:41:19+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "My Darling Vegan",
+    "title": "21 Vegan Holiday Recipes for Christmas and Thanksgiving",
+    "link": "https://www.mydarlingvegan.com/21-vegan-holiday-recipes-for-christmas-and-thanksgiving/",
+    "image": "https://www.mydarlingvegan.com/wp-content/uploads/2025/11/21-holiday-recipe.jpeg",
+    "date": "2025-11-17T21:05:40+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "PlantYou",
+    "title": "Caramelized Onion Dip",
+    "link": "https://plantyou.com/caramelized-onion-dip/",
+    "image": "https://plantyou.com/wp-content/uploads/2025/11/DSC01975-scaled.jpg",
+    "date": "2025-11-17T18:08:40+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "It Doesn't Taste Like Chicken",
+    "title": "Vegan Chocolate Cream Pie",
+    "link": "https://itdoesnttastelikechicken.com/vegan-chocolate-cream-pie/",
+    "image": "https://itdoesnttastelikechicken.com/wp-content/uploads/2025/10/Vegan-Chocolate-Cream-Pie-recipe-no-tofu-dairy-free-easy-best-old-fashioned-homemade-facebook.jpg",
+    "date": "2025-11-16T10:00:00+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "The First Mess",
+    "title": "Sticky Chocolate Pecan Bars with Chocolate Crust (Vegan & GF)",
+    "link": "https://thefirstmess.com/2025/11/14/chocolate-pecan-bars-vegan-gluten-free/",
+    "image": "https://thefirstmess.com/wp-content/uploads/2025/11/chocolate-pecan-pie-bars-vegan-gf-02.jpg",
+    "date": "2025-11-14T21:43:53+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "My Darling Vegan",
+    "title": "vegan vegetable gratin with roasted red beats",
+    "link": "https://www.mydarlingvegan.com/vegan-vegetable-gratin/",
+    "image": "https://www.mydarlingvegan.com/wp-content/uploads/2025/11/vegetable-gratin-2.jpg",
+    "date": "2025-11-14T20:46:21+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "Simple Vegan Blog",
+    "title": "Vegan Pumpkin Pancakes",
+    "link": "https://simpleveganblog.com/vegan-pumpkin-pancakes/",
+    "image": "https://simpleveganblog.com/wp-content/uploads/2025/11/vegan-pumpkin-pancakes-social.jpg",
+    "date": "2025-11-14T11:16:25+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "Namely Marly",
+    "title": "Chickpea Pot Pie",
+    "link": "https://namelymarly.com/chickpea-pot-pie/",
+    "image": "https://namelymarly.com/wp-content/uploads/2025/10/Chickpea-Pot-Pie-0704-16x9-web.jpg",
+    "date": "2025-11-13T21:23:44+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "Rainbow Plant Life",
+    "title": "Chickpea Salad Sandwich",
+    "link": "https://rainbowplantlife.com/chickpea-salad-sandwich/",
+    "image": "https://rainbowplantlife.com/wp-content/uploads/2025/11/Chickpea-Salad-Sandwich-hero-1.jpg",
+    "date": "2025-11-13T14:25:39+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "Vegan Richa",
+    "title": "Caramelized Onion Mashed Potatoes",
+    "link": "https://www.veganricha.com/caramelized-onion-mashed-potatoes/",
+    "image": "https://www.veganricha.com/wp-content/uploads/2025/10/Caramelized-Onion-Mash-8425.jpg",
+    "date": "2025-11-12T12:00:00+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "It Doesn't Taste Like Chicken",
+    "title": "Easy Vegan Spoon Bread",
+    "link": "https://itdoesnttastelikechicken.com/easy-vegan-spoon-bread/",
+    "image": "https://itdoesnttastelikechicken.com/wp-content/uploads/2025/10/Vegan-Spoon-Bread-recipe-with-corn-casserole-old-fashioned-easy-how-to-make-facebook.jpg",
+    "date": "2025-11-12T10:00:00+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "Namely Marly",
+    "title": "Vegan One-Pan Meals",
+    "link": "https://namelymarly.com/vegan-one-pan-meals/",
+    "image": "https://namelymarly.com/wp-content/uploads/2025/09/Beyond-Meat-Shepherds-Pie-0588-2x3-web.jpg",
+    "date": "2025-11-11T22:26:59+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "PlantYou",
+    "title": "Creamy Tortellini Pasta",
+    "link": "https://plantyou.com/creamy-tortellini-pasta/",
+    "image": "https://plantyou.com/wp-content/uploads/2025/11/DSC02019-scaled.jpg",
+    "date": "2025-11-11T17:34:42+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "Running on Real Food",
+    "title": "Roasted Veggie Bowl",
+    "link": "https://runningonrealfood.com/roasted-veggie-bowl/",
+    "image": "https://runningonrealfood.com/wp-content/uploads/2025/11/roasted-veggie-bowls-lemon-tofu-tahini-sauce-2.jpg",
+    "date": "2025-11-10T16:20:08+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "The Korean Vegan",
+    "title": "30+ AMAZING VEGAN Holiday Recipes Everyone\u2019s gonna Love.",
+    "link": "https://thekoreanvegan.com/vegan-holiday-recipes-youre-going-love/",
+    "image": "https://thekoreanvegan.com/wp-content/uploads/2025/11/30-Holiday-Recipes-2-4x3-1.jpg",
+    "date": "2025-11-10T04:26:17+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "It Doesn't Taste Like Chicken",
+    "title": "Vegan Broccoli Rice Casserole",
+    "link": "https://itdoesnttastelikechicken.com/vegan-broccoli-rice-casserole/",
+    "image": "https://itdoesnttastelikechicken.com/wp-content/uploads/2025/10/Vegan-Broccoli-Rice-Casserole-easy-best-vegetarian-facebook.jpg",
+    "date": "2025-11-09T10:00:00+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "Lazy Cat Kitchen",
+    "title": "Vegan pumpkin marble cake",
+    "link": "https://www.lazycatkitchen.com/vegan-pumpkin-marble-cake/",
+    "image": "https://cdn77-s3.lazycatkitchen.com/wp-content/uploads/2025/11/vegan-pumpkin-marble-cake.jpg",
+    "date": "2025-11-08T19:03:12+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "Running on Real Food",
+    "title": "Edamame Bean Salad",
+    "link": "https://runningonrealfood.com/edamame-bean-salad/",
+    "image": "https://runningonrealfood.com/wp-content/uploads/2025/11/edamame-bean-salad-recipe-1-2.jpg",
+    "date": "2025-11-06T16:33:47+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "The Foodie Takes Flight",
+    "title": "Vegan Shiitake Mushroom \u201cBacon\u201d",
+    "link": "https://thefoodietakesflight.com/shiitake-mushroom-bacon/",
+    "image": "https://thefoodietakesflight.com/wp-content/uploads/2025/11/Creamy-Pumpkin-Pasta-with-Shiitake-Bacon-and-Calabrian-Chili-Breadcrumbs-18-of-90-576x1024.jpg",
+    "date": "2025-11-06T14:38:16+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "The Foodie Takes Flight",
+    "title": "Creamy Miso Pumpkin Pasta with Calabrian Chili Breadcrumbs and Shiitake Mushroom Bacon",
+    "link": "https://thefoodietakesflight.com/creamy-miso-pumpkin-pasta/",
+    "image": "https://thefoodietakesflight.com/wp-content/uploads/2025/11/Creamy-Pumpkin-Pasta-with-Shiitake-Bacon-and-Calabrian-Chili-Breadcrumbs-56-of-90-768x1024.jpg",
+    "date": "2025-11-06T13:06:00+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "Elavegan",
+    "title": "Creamy Onion Pasta With Tomatoes",
+    "link": "https://elavegan.com/onion-tomato-pasta/",
+    "image": "https://elavegan.com/wp-content/uploads/2025/11/A-pan-filled-with-creamy-onion-pasta-mixed-with-cherry-tomatoes-and-herbs-sits-on-a-gray-cloth-1.jpg",
+    "date": "2025-11-06T11:11:11+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "The Korean Vegan",
+    "title": "Easy Cherry Brioche Sweet Roll \u2013 Vegan Pastry.",
+    "link": "https://thekoreanvegan.com/easy-cherry-brioche-sweet-rolls-vegan-pastry/",
+    "image": "https://thekoreanvegan.com/wp-content/uploads/2025/11/20241214-0G1A9049.jpg",
+    "date": "2025-11-06T04:37:21+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "Rainbow Plant Life",
+    "title": "Savory Oatmeal with Chili Crisp",
+    "link": "https://rainbowplantlife.com/savory-oatmeal/",
+    "image": "https://rainbowplantlife.com/wp-content/uploads/2025/11/Savoury-Porridge-11-scaled.jpg",
+    "date": "2025-11-05T18:14:20+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "It Doesn't Taste Like Chicken",
+    "title": "One-Pan Roasted Tomato Rice Bake (Easy + Flavor-Packed!)",
+    "link": "https://itdoesnttastelikechicken.com/tomato-rice-bake/",
+    "image": "https://itdoesnttastelikechicken.com/wp-content/uploads/2025/10/One-Pan-Roasted-Tomato-Rice-Bake-easy-casserole-vegan-vegetarian-facebook.jpg",
+    "date": "2025-11-05T10:00:00+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "The First Mess",
+    "title": "Crisp Celery Root Salad with Peanut Vinaigrette & Apple",
+    "link": "https://thefirstmess.com/2025/11/05/celery-root-salad-peanut-vinaigrette-apple/",
+    "image": "https://thefirstmess.com/wp-content/uploads/2025/11/celery-root-salad-peanut-vinaigrette-2.jpg",
+    "date": "2025-11-05T06:59:00+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "It Doesn't Taste Like Chicken",
+    "title": "Easy Vegan Vanilla Cupcakes",
+    "link": "https://itdoesnttastelikechicken.com/easy-vegan-vanilla-cupcakes/",
+    "image": "https://itdoesnttastelikechicken.com/wp-content/uploads/2025/10/Easy-Vegan-Vanilla-Cupcakes-recipe-best-no-milk-gluten-free-moist-small-batch-without-eggs-with-buttercream-frosting-with-oil-no-milk-facebook.jpg",
+    "date": "2025-11-02T10:00:00+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "Namely Marly",
+    "title": "Vegan No-Bake Cheesecake",
+    "link": "https://namelymarly.com/no-bake-cheesecake-vegan/",
+    "image": "https://namelymarly.com/wp-content/uploads/2025/10/Vegan-No-Bake-Cheesecake-0768-edit-sq-web.jpg",
+    "date": "2025-11-01T12:13:00+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "Namely Marly",
+    "title": "Vegan Thanksgiving Desserts",
+    "link": "https://namelymarly.com/vegan-thanksgiving-desserts/",
+    "image": "https://namelymarly.com/wp-content/uploads/2024/10/Vegan-Apple-Pie-02-16x9-web.jpg",
+    "date": "2025-10-30T21:38:13+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "Namely Marly",
+    "title": "Vegan Chicken Pot Pie",
+    "link": "https://namelymarly.com/vegan-chicken-pot-pie/",
+    "image": "https://namelymarly.com/wp-content/uploads/2025/10/Vegan-Chicken-Pot-Pie-0662-sq-web.jpg",
+    "date": "2025-10-30T17:54:56+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "It Doesn't Taste Like Chicken",
+    "title": "Chocolate Mug Cake (Quick & Easy + Vegan)",
+    "link": "https://itdoesnttastelikechicken.com/chocolate-mug-cake/",
+    "image": "https://itdoesnttastelikechicken.com/wp-content/uploads/2025/09/Chocolate-Mug-Cake-quick-easy-vegan-recope-no-milk-no-egg-hot-best-how-to-make-gluten-free-facebook.jpg",
+    "date": "2025-10-29T09:00:00+00:00",
     "is_disruptor": false
   }
 ]
