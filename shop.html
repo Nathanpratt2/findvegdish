@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Vegan Chef's Toolkit - Recommended Gear</title>
+    <title>Top 10 Vegan Kitchen Tools</title>
     
     <link rel="icon" href="icon.jpg"> 
     <link rel="apple-touch-icon" href="icon.jpg">
 
-    <!-- Fonts (Same as main site) -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -29,29 +29,40 @@
             margin: 0 auto 40px auto;
             text-align: center;
             position: relative;
+            padding-top: 10px;
         }
         
-        .back-link {
+        /* New Back Button Style */
+        .back-btn {
             position: absolute;
             left: 0;
-            top: 50%;
-            transform: translateY(-50%);
+            top: 0;
             text-decoration: none;
             color: #555;
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 8px 15px;
+            border-radius: 20px;
             font-weight: 600;
+            font-size: 14px;
             display: flex;
             align-items: center;
             gap: 5px;
-            transition: color 0.2s;
+            transition: all 0.2s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
-        .back-link:hover { color: #27ae60; }
+        .back-btn:hover { 
+            background-color: #f0f0f0; 
+            transform: translateY(-2px);
+        }
 
         h1 {
             color: #2c3e50;
-            margin: 0;
+            margin: 10px 0 0 0;
             font-size: 2em;
+            font-weight: 700;
         }
-        .subtitle { color: #666; margin-top: 10px; }
+        .subtitle { color: #666; margin-top: 5px; }
 
         /* Product Grid */
         .product-grid {
@@ -101,20 +112,20 @@
         /* Image Container */
         .img-container {
             width: 100%;
-            height: 250px;
-            background-color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            box-sizing: border-box;
-            border-bottom: 1px solid #f0f0f0;
+            height: 220px;
+            background-color: #f4f4f4;
+            overflow: hidden;
         }
         
         .img-container img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures image fills box nicely */
+            transition: transform 0.3s;
+        }
+        
+        .product-card:hover .img-container img {
+            transform: scale(1.05); /* Zoom effect on hover */
         }
 
         /* Content */
@@ -149,21 +160,23 @@
             border-radius: 8px;
             font-weight: 600;
             transition: background 0.2s;
+            box-sizing: border-box; /* Fixes padding width issues */
         }
         .shop-btn:hover { background-color: #34495e; }
 
         @media (max-width: 600px) {
-            .back-link span { display: none; } /* Hide 'Back to Recipes' text on small screens, keep arrow */
-            h1 { font-size: 1.5em; }
+            .back-btn { position: relative; display: inline-flex; margin-bottom: 15px; }
+            nav { text-align: left; }
+            h1 { font-size: 1.8em; line-height: 1.2; }
         }
     </style>
 </head>
 <body>
 
 <nav>
-    <a href="index.html" class="back-link">← <span>Back to Recipes</span></a>
-    <h1>The Vegan Chef's Toolkit</h1>
-    <p class="subtitle">The top 10 tools recommended by the world's best plant-based creators.</p>
+    <a href="index.html" class="back-btn">← Back to Recipes</a>
+    <h1>Top 10 Vegan Kitchen Tools</h1>
+    <p class="subtitle">Recommended by the world's best plant-based creators.</p>
 </nav>
 
 <div class="product-grid">
@@ -172,13 +185,12 @@
     <div class="product-card">
         <div class="rank-badge">#1</div>
         <div class="img-container">
-            <!-- Placeholder image - replace with Amazon image URL later -->
-            <img src="https://m.media-amazon.com/images/I/71I6bQ+N7RL._AC_SL1500_.jpg" alt="Vitamix Blender">
+            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=600&q=80" alt="High Speed Blender">
         </div>
         <div class="content">
             <h2>High-Speed Blender (Vitamix)</h2>
             <p class="consensus"><strong>The Undisputed Champion.</strong> Almost every top blogger lists this as "non-negotiable." Essential for making silky smooth cashew creams, hot soups, and perfect smoothies without any grit.</p>
-            <a href="https://www.amazon.com/s?k=vitamix+5200" target="_blank" class="shop-btn">Check Price on Amazon</a>
+            <a href="https://www.amazon.com/s?k=vitamix+5200" target="_blank" class="shop-btn">Check it out on Amazon</a>
         </div>
     </div>
 
@@ -186,12 +198,12 @@
     <div class="product-card">
         <div class="rank-badge">#2</div>
         <div class="img-container">
-            <img src="https://m.media-amazon.com/images/I/710R38-lF7L._AC_SL1500_.jpg" alt="Cuisinart Food Processor">
+            <img src="https://images.unsplash.com/photo-1608613437190-6743b67e0d68?auto=format&fit=crop&w=600&q=80" alt="Food Processor">
         </div>
         <div class="content">
             <h2>Food Processor (14-Cup)</h2>
             <p class="consensus"><strong>The Heavy Lifter.</strong> While blenders handle liquids, this is essential for texture. The standard choice for chopping veggies, making falafel dough, pestos, and even vegan pie crusts.</p>
-            <a href="https://www.amazon.com/s?k=cuisinart+14+cup+food+processor" target="_blank" class="shop-btn">Check Price on Amazon</a>
+            <a href="https://www.amazon.com/s?k=cuisinart+14+cup+food+processor" target="_blank" class="shop-btn">Check it out on Amazon</a>
         </div>
     </div>
 
@@ -199,12 +211,12 @@
     <div class="product-card">
         <div class="rank-badge">#3</div>
         <div class="img-container">
-            <img src="https://m.media-amazon.com/images/I/81+3b9p+QTL._AC_SL1500_.jpg" alt="Lodge Cast Iron">
+            <img src="https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?auto=format&fit=crop&w=600&q=80" alt="Cast Iron Skillet">
         </div>
         <div class="content">
             <h2>Cast Iron Skillet (12-inch)</h2>
             <p class="consensus"><strong>The Flavor Maker.</strong> The favorite pan for searing tofu, getting crispy rice bottoms, and baking cornbread. It creates a depth of flavor and crust that non-stick pans simply can't match.</p>
-            <a href="https://www.amazon.com/s?k=lodge+cast+iron+skillet" target="_blank" class="shop-btn">Check Price on Amazon</a>
+            <a href="https://www.amazon.com/s?k=lodge+cast+iron+skillet" target="_blank" class="shop-btn">Check it out on Amazon</a>
         </div>
     </div>
 
@@ -212,12 +224,12 @@
     <div class="product-card">
         <div class="rank-badge">#4</div>
         <div class="img-container">
-            <img src="https://m.media-amazon.com/images/I/61M2rL3YdLL._AC_SL1500_.jpg" alt="Tofu Press">
+            <img src="https://plus.unsplash.com/premium_photo-1664648119293-c42337777742?auto=format&fit=crop&w=600&q=80" alt="Tofu Block">
         </div>
         <div class="content">
             <h2>Tofu Press</h2>
             <p class="consensus"><strong>The Texture Changer.</strong> Stop wasting paper towels and using heavy books. A proper press removes water quickly, allowing your tofu to absorb marinades and get crispier when cooked.</p>
-            <a href="https://www.amazon.com/s?k=tofu+press" target="_blank" class="shop-btn">Check Price on Amazon</a>
+            <a href="https://www.amazon.com/s?k=tofu+press" target="_blank" class="shop-btn">Check it out on Amazon</a>
         </div>
     </div>
 
@@ -225,12 +237,12 @@
     <div class="product-card">
         <div class="rank-badge">#5</div>
         <div class="img-container">
-            <img src="https://m.media-amazon.com/images/I/61+9C5Q3ZpL._AC_SL1500_.jpg" alt="Instant Pot">
+            <img src="https://images.unsplash.com/photo-1563205764-6e9270df8864?auto=format&fit=crop&w=600&q=80" alt="Pressure Cooker">
         </div>
         <div class="content">
             <h2>Instant Pot (Duo 7-in-1)</h2>
             <p class="consensus"><strong>The Time Saver.</strong> Critical for cooking dried beans and lentils in minutes instead of hours. A staple for batch-cooking grains and stews for the week.</p>
-            <a href="https://www.amazon.com/s?k=instant+pot" target="_blank" class="shop-btn">Check Price on Amazon</a>
+            <a href="https://www.amazon.com/s?k=instant+pot" target="_blank" class="shop-btn">Check it out on Amazon</a>
         </div>
     </div>
 
@@ -238,12 +250,12 @@
     <div class="product-card">
         <div class="rank-badge">#6</div>
         <div class="img-container">
-            <img src="https://m.media-amazon.com/images/I/71+2+1-mJ8L._AC_SL1500_.jpg" alt="KitchenAid Mixer">
+            <img src="https://images.unsplash.com/photo-1594385208974-2e75f8d7bb48?auto=format&fit=crop&w=600&q=80" alt="Stand Mixer">
         </div>
         <div class="content">
             <h2>Stand Mixer</h2>
             <p class="consensus"><strong>The Baker's Best Friend.</strong> Essential for anyone serious about vegan baking. Perfect for kneading seitan dough, mixing cookie batter, and whipping aquafaba.</p>
-            <a href="https://www.amazon.com/s?k=kitchenaid+stand+mixer" target="_blank" class="shop-btn">Check Price on Amazon</a>
+            <a href="https://www.amazon.com/s?k=kitchenaid+stand+mixer" target="_blank" class="shop-btn">Check it out on Amazon</a>
         </div>
     </div>
 
@@ -251,12 +263,12 @@
     <div class="product-card">
         <div class="rank-badge">#7</div>
         <div class="img-container">
-            <img src="https://m.media-amazon.com/images/I/81Y7+29Vb+L._AC_SL1500_.jpg" alt="Dutch Oven">
+            <img src="https://images.unsplash.com/photo-1629196914375-f7e48f477b6d?auto=format&fit=crop&w=600&q=80" alt="Dutch Oven Pot">
         </div>
         <div class="content">
             <h2>Dutch Oven (5.5 Quart)</h2>
             <p class="consensus"><strong>The One-Pot Wonder.</strong> The status symbol pot that lasts forever. Heavy and consistent, it's the go-to choice for slow-simmered soups, curries, and artisan breads.</p>
-            <a href="https://www.amazon.com/s?k=dutch+oven" target="_blank" class="shop-btn">Check Price on Amazon</a>
+            <a href="https://www.amazon.com/s?k=dutch+oven" target="_blank" class="shop-btn">Check it out on Amazon</a>
         </div>
     </div>
 
@@ -264,12 +276,12 @@
     <div class="product-card">
         <div class="rank-badge">#8</div>
         <div class="img-container">
-            <img src="https://m.media-amazon.com/images/I/61w6Mh-eYdL._AC_SL1500_.jpg" alt="Microplane">
+            <img src="https://images.unsplash.com/photo-1599309226997-7d84e5783307?auto=format&fit=crop&w=600&q=80" alt="Lemons for Zesting">
         </div>
         <div class="content">
             <h2>Microplane Zester</h2>
             <p class="consensus"><strong>The Secret Weapon.</strong> The hidden gem for adding "umami." Used constantly for zesting citrus or creating fine garlic/ginger pastes that melt into sauces.</p>
-            <a href="https://www.amazon.com/s?k=microplane" target="_blank" class="shop-btn">Check Price on Amazon</a>
+            <a href="https://www.amazon.com/s?k=microplane" target="_blank" class="shop-btn">Check it out on Amazon</a>
         </div>
     </div>
 
@@ -277,12 +289,12 @@
     <div class="product-card">
         <div class="rank-badge">#9</div>
         <div class="img-container">
-            <img src="https://m.media-amazon.com/images/I/71RtmF2Kx+L._AC_SL1500_.jpg" alt="Air Fryer">
+            <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=600&q=80" alt="Fries in Air Fryer">
         </div>
         <div class="content">
             <h2>Air Fryer</h2>
             <p class="consensus"><strong>The Rising Star.</strong> Rapidly becoming a standard tool. It is unrivaled for making "fried" tofu, crispy chickpeas, and roasted veggies with barely any oil.</p>
-            <a href="https://www.amazon.com/s?k=ninja+air+fryer" target="_blank" class="shop-btn">Check Price on Amazon</a>
+            <a href="https://www.amazon.com/s?k=ninja+air+fryer" target="_blank" class="shop-btn">Check it out on Amazon</a>
         </div>
     </div>
 
@@ -290,12 +302,12 @@
     <div class="product-card">
         <div class="rank-badge">#10</div>
         <div class="img-container">
-            <img src="https://m.media-amazon.com/images/I/61N8q7K+eUL._AC_SL1500_.jpg" alt="Carbon Steel Wok">
+            <img src="https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&w=600&q=80" alt="Cooking in Wok">
         </div>
         <div class="content">
             <h2>Carbon Steel Wok</h2>
             <p class="consensus"><strong>The Stir-Fry King.</strong> Essential for getting that smoky "wok hei" flavor in your vegetable stir-fries and noodle dishes that standard non-stick pans just can't achieve.</p>
-            <a href="https://www.amazon.com/s?k=carbon+steel+wok" target="_blank" class="shop-btn">Check Price on Amazon</a>
+            <a href="https://www.amazon.com/s?k=carbon+steel+wok" target="_blank" class="shop-btn">Check it out on Amazon</a>
         </div>
     </div>
 
