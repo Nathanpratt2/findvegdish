@@ -12,19 +12,19 @@ TOP_BLOGGERS = [
     ("Simple Vegan Blog", "https://simpleveganblog.com/feed/"),
     ("Vegan Richa", "https://www.veganricha.com/feed/"),
     ("It Doesn't Taste Like Chicken", "https://itdoesnttastelikechicken.com/feed/"),
-    ("Pick Up Limes", "https://www.pickuplimes.com/recipe/latest/rss"),
+    # Pick Up Limes REMOVED (No RSS)
     ("Sweet Potato Soul", "https://sweetpotatosoul.com/feed/"),
     ("Connoisseurus Veg", "https://www.connoisseurusveg.com/feed/"),
     ("VegNews", "https://vegnews.com/feed"), 
     ("Lazy Cat Kitchen", "https://www.lazycatkitchen.com/feed/"),
     ("The Full Helping", "https://thefullhelping.com/feed/"),
     ("Love and Lemons", "https://www.loveandlemons.com/feed/"),
-    ("Minimalist Baker", "https://minimalistbaker.com/recipes/vegan/feed/"), # CHANGED: Vegan only
+    ("Minimalist Baker", "https://minimalistbaker.com/recipes/vegan/feed/"), 
     ("Nora Cooks", "https://www.noracooks.com/feed/"),
     ("Rainbow Plant Life", "https://rainbowplantlife.com/feed/"),
     ("Elavegan", "https://elavegan.com/feed/"),
     ("Running on Real Food", "https://runningonrealfood.com/feed/"),
-    ("Vegconomist", "https://vegconomist.com/feed/"),
+    # Vegconomist REMOVED (Blocked)
     ("Namely Marly", "https://namelymarly.com/feed/"),
     ("The First Mess", "https://thefirstmess.com/feed/"),
     ("My Darling Vegan", "https://www.mydarlingvegan.com/feed/"),
@@ -35,27 +35,39 @@ DISRUPTORS = [
     ("School Night Vegan", "https://schoolnightvegan.com/feed/"),
     ("The Korean Vegan", "https://thekoreanvegan.com/feed/"),
     ("The Burger Dude", "https://theeburgerdude.com/feed/"),
-    ("FitGreenMind", "https://fit-green-mind.com/feed/"),
+    ("FitGreenMind", "https://fit-green-mind.com/recipes/feed/"), 
     ("PlantYou", "https://plantyou.com/feed/"),
     ("Chez Jorge", "https://chejorge.com/feed/"),
-    ("The Canadian African", "https://thecanadianafrican.com/feed/"),
-    ("Zacchary Bird", "https://zaccharybird.com/feed/")
+    ("The Canadian African", "http://thecanadianafrican.com/feed/"), 
+    ("Zacchary Bird", "https://zaccharybird.com/recipes/feed/") 
 ]
 
 ALL_FEEDS = TOP_BLOGGERS + DISRUPTORS
+MAX_RECIPES_PER_BLOG = 100  # <--- LIMIT SETTING
 
-# Keeping 360 days of history
+# Keeping 360 days of history check, but the 100 limit will override this if they post often
 cutoff_date = datetime.now().astimezone() - timedelta(days=360)
 
-recipes = []
+# --- LOAD EXISTING DATA (ACCUMULATIVE MEMORY) ---
+try:
+    with open('data.json', 'r') as f:
+        recipes = json.load(f)
+        print(f"Loaded {len(recipes)} existing recipes from database.")
+except (FileNotFoundError, json.JSONDecodeError):
+    recipes = []
+    print("No existing database found. Starting fresh.")
+
+# Create a set of existing links to prevent duplicates
+existing_links = {r['link'] for r in recipes}
+
 feed_stats = [] 
 
-# HEADERS: Disguise Python script as Chrome Browser to bypass blockers
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
     'Accept-Language': 'en-US,en;q=0.9',
-    'Referer': 'https://www.google.com/'
+    'Referer': 'https://www.google.com/',
+    'Upgrade-Insecure-Requests': '1'
 }
 
 def is_pet_recipe(title):
@@ -133,7 +145,6 @@ for name, url in ALL_FEEDS:
         print(f"Checking {name}...")
         response = requests.get(url, headers=HEADERS, timeout=15)
         
-        # VegNews Special Handling: Try fallback if main feed fails
         if response.status_code != 200 and name == "VegNews":
              print("   -> Retrying VegNews with fallback RSS...")
              response = requests.get("https://vegnews.com/rss", headers=HEADERS, timeout=15)
@@ -146,7 +157,10 @@ for name, url in ALL_FEEDS:
         feed = feedparser.parse(response.content)
         
         if not feed.entries:
-            status = "⚠️ Empty Feed (Format changed?)"
+            if len(response.content) > 0:
+                 status = "⚠️ Parsed 0 items (Cloudflare?)"
+            else:
+                 status = "⚠️ Empty Feed"
         
         for entry in feed.entries:
             try:
@@ -157,7 +171,12 @@ for name, url in ALL_FEEDS:
                 if published_time.tzinfo is None:
                     published_time = published_time.replace(tzinfo=datetime.now().astimezone().tzinfo)
                 
+                # Filter by date
                 if published_time > cutoff_date:
+                    # Deduplication Check
+                    if entry.link in existing_links:
+                        continue
+
                     if is_pet_recipe(entry.title): continue
 
                     image_url = extract_image(entry, name)
@@ -166,14 +185,17 @@ for name, url in ALL_FEEDS:
                         base = feed.feed.get('link', '')
                         if base: image_url = base.rstrip('/') + image_url
                     
-                    recipes.append({
+                    new_recipe = {
                         "blog_name": name,
                         "title": entry.title,
                         "link": entry.link,
                         "image": image_url,
                         "date": published_time.isoformat(),
                         "is_disruptor": name in [d[0] for d in DISRUPTORS]
-                    })
+                    }
+                    
+                    recipes.append(new_recipe)
+                    existing_links.add(entry.link) # Add to set to prevent duplicate in same run
                     blog_recipe_count += 1
             except Exception as e:
                 continue
@@ -184,22 +206,48 @@ for name, url in ALL_FEEDS:
         print(f"Failed to parse {name}: {e}")
         feed_stats.append({"name": name, "count": 0, "status": f"❌ Crash: {str(e)[:20]}"})
 
-recipes.sort(key=lambda x: x['date'], reverse=True)
 
+# --- PRUNING STEP: LIMIT 100 PER BLOG ---
+print("Pruning database to max 100 recipes per blog...")
+
+recipes_by_blog = {}
+for r in recipes:
+    bname = r['blog_name']
+    if bname not in recipes_by_blog:
+        recipes_by_blog[bname] = []
+    recipes_by_blog[bname].append(r)
+
+final_pruned_list = []
+
+for bname, blog_recipes in recipes_by_blog.items():
+    # Sort descending by date (newest first)
+    blog_recipes.sort(key=lambda x: x['date'], reverse=True)
+    
+    # Keep only the top 100
+    kept_recipes = blog_recipes[:MAX_RECIPES_PER_BLOG]
+    final_pruned_list.extend(kept_recipes)
+    
+    if len(blog_recipes) > MAX_RECIPES_PER_BLOG:
+        print(f"   Trimmed {bname}: Removed {len(blog_recipes) - MAX_RECIPES_PER_BLOG} old recipes.")
+
+# Final Sort of the master list
+final_pruned_list.sort(key=lambda x: x['date'], reverse=True)
+
+# Save JSON
 with open('data.json', 'w') as f:
-    json.dump(recipes, f, indent=2)
+    json.dump(final_pruned_list, f, indent=2)
 
 # --- GENERATE REPORT (FEED_HEALTH.md) ---
 with open('FEED_HEALTH.md', 'w') as f:
     f.write(f"# Feed Health Report\n")
     f.write(f"**Last Run:** {datetime.now().isoformat()}\n")
-    f.write(f"**Total Recipes Fetched:** {len(recipes)}\n\n")
-    f.write("| Blog Name | Recipes Found (360 Days) | Status |\n")
-    f.write("|-----------|-------------------------|--------|\n")
+    f.write(f"**Total Database Size:** {len(final_pruned_list)}\n\n")
+    f.write("| Blog Name | New Items Found Today | Status |\n")
+    f.write("|-----------|-----------------------|--------|\n")
     
     feed_stats.sort(key=lambda x: (x['status'] == '✅ OK', x['count']), reverse=False)
     
     for stat in feed_stats:
         f.write(f"| {stat['name']} | {stat['count']} | {stat['status']} |\n")
 
-print(f"Successfully scraped {len(recipes)} recipes. Check FEED_HEALTH.md for errors.")
+print(f"Successfully scraped. Database size: {len(final_pruned_list)}")
