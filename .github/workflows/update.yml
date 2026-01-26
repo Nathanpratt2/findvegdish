@@ -2,9 +2,9 @@ name: Daily Recipe Refresh
 
 on:
   schedule:
-    # Changed to 8:45 UTC to force a timer reset.
+    # Changed to 8:44 UTC to force a timer reset.
     # Note: GitHub Free actions can be delayed by 15-30 mins.
-    - cron: '45 8 * * *' 
+    - cron: '44 8 * * *' 
   workflow_dispatch: # Allows manual button click
 
 permissions:
