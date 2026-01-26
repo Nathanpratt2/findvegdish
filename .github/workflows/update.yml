@@ -2,8 +2,10 @@ name: Daily Recipe Refresh
 
 on:
   schedule:
-    - cron: '23 8 * * *' # 8:23 AM UTC - much less likely to be delayed by the 8:00 AM crowd
-  workflow_dispatch: # Allows you to run it manually button click
+    # Changed to 8:45 UTC to force a timer reset.
+    # Note: GitHub Free actions can be delayed by 15-30 mins.
+    - cron: '45 8 * * *' 
+  workflow_dispatch: # Allows manual button click
 
 permissions:
   contents: write
@@ -32,6 +34,7 @@ jobs:
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
-          git add data.json
-          git commit -m "Daily recipe refresh" || echo "No changes to commit"
+          # CRITICAL CHANGE: We now add the health report to the commit
+          git add data.json FEED_HEALTH.md
+          git commit -m "Daily recipe & health refresh" || echo "No changes to commit"
           git push
