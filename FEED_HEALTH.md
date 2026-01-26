@@ -1,11 +1,10 @@
 # Feed Health Report
-**Last Run:** 2026-01-26T13:20:00.820123
-**Total Recipes Fetched:** 258
+**Last Run:** 2026-01-26T13:26:15.650641
+**Total Recipes Fetched:** 288
 
 | Blog Name | Recipes Found (360 Days) | Status |
 |-----------|-------------------------|--------|
 | Pick Up Limes | 0 | ❌ Error 404 |
-| VegNews | 0 | ❌ Error 404 |
 | Vegconomist | 0 | ❌ Error 403 |
 | FitGreenMind | 0 | ❌ Error 404 |
 | The Canadian African | 0 | ❌ Error 404 |
@@ -30,5 +29,6 @@
 | My Darling Vegan | 11 | ✅ OK |
 | The First Mess | 12 | ✅ OK |
 | The Burger Dude | 12 | ✅ OK |
+| VegNews | 30 | ✅ OK |
 | It Doesn't Taste Like Chicken | 31 | ✅ OK |
 | Namely Marly | 57 | ✅ OK |
