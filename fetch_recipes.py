@@ -43,7 +43,7 @@ DISRUPTORS = [
 ]
 
 ALL_FEEDS = TOP_BLOGGERS + DISRUPTORS
-cutoff_date = datetime.now().astimezone() - timedelta(days=60)
+cutoff_date = datetime.now().astimezone() - timedelta(days=90)
 
 recipes = []
 
