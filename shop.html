@@ -32,7 +32,7 @@
             padding-top: 10px;
         }
         
-        /* New Back Button Style */
+        /* Back Button Style */
         .back-btn {
             position: absolute;
             left: 0;
@@ -113,19 +113,24 @@
         .img-container {
             width: 100%;
             height: 220px;
-            background-color: #f4f4f4;
+            background-color: #ffffff; /* Changed to white for cleaner product look */
             overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
         }
         
         .img-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Ensures image fills box nicely */
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain; /* Ensures the whole product is visible */
             transition: transform 0.3s;
         }
         
         .product-card:hover .img-container img {
-            transform: scale(1.05); /* Zoom effect on hover */
+            transform: scale(1.05);
         }
 
         /* Content */
@@ -160,7 +165,7 @@
             border-radius: 8px;
             font-weight: 600;
             transition: background 0.2s;
-            box-sizing: border-box; /* Fixes padding width issues */
+            box-sizing: border-box;
         }
         .shop-btn:hover { background-color: #34495e; }
 
@@ -185,7 +190,7 @@
     <div class="product-card">
         <div class="rank-badge">#1</div>
         <div class="img-container">
-            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=600&q=80" alt="High Speed Blender">
+            <img src="vitamix.jpg" alt="High Speed Blender">
         </div>
         <div class="content">
             <h2>High-Speed Blender (Vitamix)</h2>
@@ -198,7 +203,7 @@
     <div class="product-card">
         <div class="rank-badge">#2</div>
         <div class="img-container">
-            <img src="https://images.unsplash.com/photo-1608613437190-6743b67e0d68?auto=format&fit=crop&w=600&q=80" alt="Food Processor">
+            <img src="food-processor.jpg" alt="Food Processor">
         </div>
         <div class="content">
             <h2>Food Processor (14-Cup)</h2>
@@ -211,7 +216,7 @@
     <div class="product-card">
         <div class="rank-badge">#3</div>
         <div class="img-container">
-            <img src="https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?auto=format&fit=crop&w=600&q=80" alt="Cast Iron Skillet">
+            <img src="cast-iron.jpg" alt="Cast Iron Skillet">
         </div>
         <div class="content">
             <h2>Cast Iron Skillet (12-inch)</h2>
@@ -224,7 +229,7 @@
     <div class="product-card">
         <div class="rank-badge">#4</div>
         <div class="img-container">
-            <img src="https://plus.unsplash.com/premium_photo-1664648119293-c42337777742?auto=format&fit=crop&w=600&q=80" alt="Tofu Block">
+            <img src="tofu-press.jpg" alt="Tofu Press">
         </div>
         <div class="content">
             <h2>Tofu Press</h2>
@@ -237,7 +242,7 @@
     <div class="product-card">
         <div class="rank-badge">#5</div>
         <div class="img-container">
-            <img src="https://images.unsplash.com/photo-1563205764-6e9270df8864?auto=format&fit=crop&w=600&q=80" alt="Pressure Cooker">
+            <img src="instant-pot.jpg" alt="Instant Pot">
         </div>
         <div class="content">
             <h2>Instant Pot (Duo 7-in-1)</h2>
@@ -250,7 +255,7 @@
     <div class="product-card">
         <div class="rank-badge">#6</div>
         <div class="img-container">
-            <img src="https://images.unsplash.com/photo-1594385208974-2e75f8d7bb48?auto=format&fit=crop&w=600&q=80" alt="Stand Mixer">
+            <img src="stand-mixer.jpg" alt="Stand Mixer">
         </div>
         <div class="content">
             <h2>Stand Mixer</h2>
@@ -263,7 +268,7 @@
     <div class="product-card">
         <div class="rank-badge">#7</div>
         <div class="img-container">
-            <img src="https://images.unsplash.com/photo-1629196914375-f7e48f477b6d?auto=format&fit=crop&w=600&q=80" alt="Dutch Oven Pot">
+            <img src="dutch-oven.jpg" alt="Dutch Oven">
         </div>
         <div class="content">
             <h2>Dutch Oven (5.5 Quart)</h2>
@@ -276,7 +281,7 @@
     <div class="product-card">
         <div class="rank-badge">#8</div>
         <div class="img-container">
-            <img src="https://images.unsplash.com/photo-1599309226997-7d84e5783307?auto=format&fit=crop&w=600&q=80" alt="Lemons for Zesting">
+            <img src="microplane.jpg" alt="Microplane">
         </div>
         <div class="content">
             <h2>Microplane Zester</h2>
@@ -289,7 +294,7 @@
     <div class="product-card">
         <div class="rank-badge">#9</div>
         <div class="img-container">
-            <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=600&q=80" alt="Fries in Air Fryer">
+            <img src="air-fryer.jpg" alt="Air Fryer">
         </div>
         <div class="content">
             <h2>Air Fryer</h2>
@@ -302,7 +307,7 @@
     <div class="product-card">
         <div class="rank-badge">#10</div>
         <div class="img-container">
-            <img src="https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&w=600&q=80" alt="Cooking in Wok">
+            <img src="wok.jpg" alt="Carbon Steel Wok">
         </div>
         <div class="content">
             <h2>Carbon Steel Wok</h2>
