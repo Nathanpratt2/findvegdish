@@ -9,17 +9,17 @@ import os
 
 # --- CONFIGURATION ---
 TOP_BLOGGERS = [
-    ("Simple Vegan Blog", "http://feeds.feedburner.com/simpleveganblog"),
+    ("Simple Vegan Blog", "https://simpleveganblog.com/feed/"),
     ("Vegan Richa", "https://www.veganricha.com/feed/"),
     ("It Doesn't Taste Like Chicken", "https://itdoesnttastelikechicken.com/feed/"),
     ("Pick Up Limes", "https://www.pickuplimes.com/recipe/latest/rss"),
     ("Sweet Potato Soul", "https://sweetpotatosoul.com/feed/"),
     ("Connoisseurus Veg", "https://www.connoisseurusveg.com/feed/"),
-    ("VegNews", "https://vegnews.com/feed"),
+    ("VegNews", "https://vegnews.com/feed"), 
     ("Lazy Cat Kitchen", "https://www.lazycatkitchen.com/feed/"),
     ("The Full Helping", "https://thefullhelping.com/feed/"),
     ("Love and Lemons", "https://www.loveandlemons.com/feed/"),
-    ("Minimalist Baker", "https://minimalistbaker.com/feed/"),
+    ("Minimalist Baker", "https://minimalistbaker.com/recipes/vegan/feed/"), # CHANGED: Vegan only
     ("Nora Cooks", "https://www.noracooks.com/feed/"),
     ("Rainbow Plant Life", "https://rainbowplantlife.com/feed/"),
     ("Elavegan", "https://elavegan.com/feed/"),
@@ -44,13 +44,13 @@ DISRUPTORS = [
 
 ALL_FEEDS = TOP_BLOGGERS + DISRUPTORS
 
-# CHANGED: You can increase this to 120 or 365 if you want more history
+# Keeping 360 days of history
 cutoff_date = datetime.now().astimezone() - timedelta(days=360)
 
 recipes = []
-feed_stats = [] # To store the health report
+feed_stats = [] 
 
-# UPDATED: Headers to look exactly like a real Chrome Browser
+# HEADERS: Disguise Python script as Chrome Browser to bypass blockers
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
@@ -72,7 +72,7 @@ def is_pet_recipe(title):
 def fetch_og_image(link):
     try:
         time.sleep(0.5) 
-        r = requests.get(link, headers=HEADERS, timeout=10) # Increased timeout
+        r = requests.get(link, headers=HEADERS, timeout=10)
         soup = BeautifulSoup(r.content, 'lxml')
         og_image = soup.find('meta', property='og:image')
         if og_image and og_image.get('content'):
@@ -131,10 +131,13 @@ for name, url in ALL_FEEDS:
     
     try:
         print(f"Checking {name}...")
-        # We use requests to get the feed content first, passing headers to fool filters
-        response = requests.get(url, headers=HEADERS, timeout=10)
+        response = requests.get(url, headers=HEADERS, timeout=15)
         
-        # If the blog blocks us, record it
+        # VegNews Special Handling: Try fallback if main feed fails
+        if response.status_code != 200 and name == "VegNews":
+             print("   -> Retrying VegNews with fallback RSS...")
+             response = requests.get("https://vegnews.com/rss", headers=HEADERS, timeout=15)
+
         if response.status_code != 200:
             status = f"❌ Error {response.status_code}"
             feed_stats.append({"name": name, "count": 0, "status": status})
@@ -147,7 +150,6 @@ for name, url in ALL_FEEDS:
         
         for entry in feed.entries:
             try:
-                # Flexible date parsing
                 dt = entry.get('published', entry.get('updated', None))
                 if not dt: continue
                 
@@ -160,7 +162,6 @@ for name, url in ALL_FEEDS:
 
                     image_url = extract_image(entry, name)
                     
-                    # Relative URL fix
                     if image_url and image_url.startswith('/'):
                         base = feed.feed.get('link', '')
                         if base: image_url = base.rstrip('/') + image_url
@@ -183,10 +184,8 @@ for name, url in ALL_FEEDS:
         print(f"Failed to parse {name}: {e}")
         feed_stats.append({"name": name, "count": 0, "status": f"❌ Crash: {str(e)[:20]}"})
 
-# Sort new -> old
 recipes.sort(key=lambda x: x['date'], reverse=True)
 
-# Save JSON
 with open('data.json', 'w') as f:
     json.dump(recipes, f, indent=2)
 
@@ -198,7 +197,6 @@ with open('FEED_HEALTH.md', 'w') as f:
     f.write("| Blog Name | Recipes Found (360 Days) | Status |\n")
     f.write("|-----------|-------------------------|--------|\n")
     
-    # Sort stats: Errors first, then Empty, then Success
     feed_stats.sort(key=lambda x: (x['status'] == '✅ OK', x['count']), reverse=False)
     
     for stat in feed_stats:
