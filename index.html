@@ -218,7 +218,8 @@
             padding: 15px; 
             display: flex;
             flex-direction: column;
-            flex-grow: 1; /* Pushes content to fill card */
+            flex-grow: 1; 
+            align-items: flex-start; /* <--- THIS FIXES THE STRETCHING */
         }
         
         .tag {
@@ -233,16 +234,19 @@
         .disruptor-tag { color: #e67e22; }
         
         .fresh-badge {
-            background-color: #ff4757;
+            bbackground-color: #ff4757;
             color: white;
             font-size: 0.7em;
             padding: 2px 8px;
             border-radius: 10px;
-            margin-left: 5px;
+            /* Changed margins to look good stacked */
+            margin-left: 0; 
+            margin-top: 5px; 
             vertical-align: middle;
             font-weight: bold;
             text-transform: uppercase;
             animation: pulse 2s infinite;
+            width: fit-content; /* <--- ENSURES IT STAYS SMALL */
         }
         @keyframes pulse {
             0% { opacity: 1; }
