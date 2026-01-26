@@ -45,7 +45,7 @@ DISRUPTORS = [
 ALL_FEEDS = TOP_BLOGGERS + DISRUPTORS
 
 # CHANGED: You can increase this to 120 or 365 if you want more history
-cutoff_date = datetime.now().astimezone() - timedelta(days=90)
+cutoff_date = datetime.now().astimezone() - timedelta(days=360)
 
 recipes = []
 feed_stats = [] # To store the health report
@@ -195,7 +195,7 @@ with open('FEED_HEALTH.md', 'w') as f:
     f.write(f"# Feed Health Report\n")
     f.write(f"**Last Run:** {datetime.now().isoformat()}\n")
     f.write(f"**Total Recipes Fetched:** {len(recipes)}\n\n")
-    f.write("| Blog Name | Recipes Found (90 Days) | Status |\n")
+    f.write("| Blog Name | Recipes Found (360 Days) | Status |\n")
     f.write("|-----------|-------------------------|--------|\n")
     
     # Sort stats: Errors first, then Empty, then Success
