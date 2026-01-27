@@ -30,11 +30,13 @@ TOP_BLOGGERS = [
 ]
 
 DISRUPTORS = [
-    ("School Night Vegan", "https://schoolnightvegan.com/feed/"),
+    ("School Night Vegan", "https://schoolnightvegan.com/feed/"), # (Keep checking or remove if still 0)
     ("The Korean Vegan", "https://thekoreanvegan.com/feed/"),
     ("The Burger Dude", "https://theeburgerdude.com/feed/"),
     ("PlantYou", "https://plantyou.com/feed/"),
-    ("Chez Jorge", "https://chejorge.com/feed/")
+    ("From My Bowl", "https://frommybowl.com/feed/"),
+    ("Rabbit and Wolves", "https://www.rabbitandwolves.com/feed/"),
+    ("Okonomi Kitchen", "https://okonomikitchen.com/feed/")
 ]
 
 ALL_FEEDS = TOP_BLOGGERS + DISRUPTORS
