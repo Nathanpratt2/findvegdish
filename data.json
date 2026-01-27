@@ -1,11 +1,35 @@
 [
   {
+    "blog_name": "Okonomi Kitchen",
+    "title": "Cinnamon Roll Salt Bread",
+    "link": "https://www.okonomikitchen.com/cinnamon-roll-salt-bread/",
+    "image": "https://www.okonomikitchen.com/wp-content/uploads/2026/01/cinnamon-roll-salt-bread-scaled.jpg",
+    "date": "2026-01-27T13:47:03+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Elavegan",
     "title": "Date Brownies (No Flour, No Added Sugar)",
     "link": "https://elavegan.com/date-brownies/",
     "image": "https://elavegan.com/wp-content/uploads/2026/01/Stack-of-rich-moist-chocolate-brownies-topped-with-glossy-chocolate-chips-on-a-white-plate.-Nearby-are-whole-dates.jpg",
     "date": "2026-01-27T12:53:04+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Okonomi Kitchen",
+    "title": "Imo Kenpi\u00a0(Crispy Sweet Potato Sticks)",
+    "link": "https://www.okonomikitchen.com/imo-kenpi-crispy-sweet-potato-sticks/",
+    "image": "https://www.okonomikitchen.com/wp-content/uploads/2026/01/imo-kenpi.jpg",
+    "date": "2026-01-27T11:20:21+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "From My Bowl",
+    "title": "Crispy Lentil Wraps (30g protein!)",
+    "link": "https://frommybowl.com/crispy-lentil-wraps/?utm_source=rss&utm_medium=rss&utm_campaign=crispy-lentil-wraps",
+    "image": "https://frommybowl.com/wp-content/uploads/2026/01/Crispy_Lentil_Wraps_Vegan_FromMyBowl-10.jpg",
+    "date": "2026-01-27T11:00:00+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "The Korean Vegan",
@@ -152,6 +176,14 @@
     "is_disruptor": true
   },
   {
+    "blog_name": "From My Bowl",
+    "title": "Super Green Curry Dumpling Bake",
+    "link": "https://frommybowl.com/super-green-curry-dumpling-bake/?utm_source=rss&utm_medium=rss&utm_campaign=super-green-curry-dumpling-bake",
+    "image": "https://frommybowl.com/wp-content/uploads/2026/01/Super_Green_Curry_Dumpling_Bake_Vegan_FromMyBowl-9.jpg",
+    "date": "2026-01-23T11:33:00+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "VegNews",
     "title": "Supreme Vegan Nacho Fries With Tofu Bacon Crumbles",
     "link": "https://vegnews.com/recipes/vegan-loaded-fries-supreme",
@@ -272,6 +304,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "From My Bowl",
+    "title": "Black Bean Stew",
+    "link": "https://frommybowl.com/black-bean-stew/?utm_source=rss&utm_medium=rss&utm_campaign=black-bean-stew",
+    "image": "https://frommybowl.com/wp-content/uploads/2026/01/Black_Bean_Stew_Vegan_FromMyBowl-10.jpg",
+    "date": "2026-01-20T11:00:00+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Minimalist Baker",
     "title": "Vegan Gluten-Free Morning Glory Muffins",
     "link": "https://minimalistbaker.com/vegan-gluten-free-morning-glory-muffins/",
@@ -286,6 +326,14 @@
     "image": "https://www.thefullhelping.com/wp-content/uploads/2025/11/vegan-cream-of-mushroom-soup-4-1024x1536.jpg",
     "date": "2026-01-19T20:13:14+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Rabbit and Wolves",
+    "title": "The Best Vegan Potato Skins",
+    "link": "https://www.rabbitandwolves.com/the-best-vegan-potato-skins/?utm_source=rss&utm_medium=rss&utm_campaign=the-best-vegan-potato-skins",
+    "image": "https://www.rabbitandwolves.com/wp-content/uploads/2026/01/Vegan-Potato-Skins0566.jpg",
+    "date": "2026-01-19T19:02:09+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "Nora Cooks",
@@ -416,6 +464,14 @@
     "is_disruptor": true
   },
   {
+    "blog_name": "Okonomi Kitchen",
+    "title": "Chocolate Salt Bread",
+    "link": "https://www.okonomikitchen.com/chocolate-salt-bread/",
+    "image": "https://www.okonomikitchen.com/wp-content/uploads/2026/01/chocolate-salt-bread-3.jpg",
+    "date": "2026-01-15T00:03:13+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Nora Cooks",
     "title": "Creamy Vegetable Soup",
     "link": "https://www.noracooks.com/creamy-vegetable-soup/",
@@ -478,6 +534,14 @@
     "image": "https://cdn.loveandlemons.com/wp-content/uploads/2026/01/energy-bites-recipe.jpg",
     "date": "2026-01-13T13:00:29+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Okonomi Kitchen",
+    "title": "2-Ingredient Yogurt Cheesecake (Japan\u2019s Viral Recipe)",
+    "link": "https://www.okonomikitchen.com/2-ingredient-yogurt-cheesecake/",
+    "image": "https://www.okonomikitchen.com/wp-content/uploads/2026/01/2-ingredient-yogurt-cheesecake.jpg",
+    "date": "2026-01-13T12:46:19+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "My Darling Vegan",
@@ -560,6 +624,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "From My Bowl",
+    "title": "Kale and Chickpea Salad",
+    "link": "https://frommybowl.com/kale-chickpea-salad/?utm_source=rss&utm_medium=rss&utm_campaign=kale-chickpea-salad",
+    "image": "https://frommybowl.com/wp-content/uploads/2026/01/Kale_Chickpea_Salad_Vegan_GlutenFree_FromMyBowl-11.jpg",
+    "date": "2026-01-09T11:00:00+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Love and Lemons",
     "title": "Chickpea Curry",
     "link": "https://www.loveandlemons.com/chickpea-curry/",
@@ -616,6 +688,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Okonomi Kitchen",
+    "title": "Japanese Salted Butter Rolls (Soft Crust Shio Pan)",
+    "link": "https://www.okonomikitchen.com/japanese-salted-butter-rolls-soft-crust-shio-pan/",
+    "image": "https://www.okonomikitchen.com/wp-content/uploads/2026/01/japanese-salted-butter-rolls-soft-crust-shio-pan-salt-bread_.jpg",
+    "date": "2026-01-06T17:39:18+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Love and Lemons",
     "title": "35 Vegan Meal Prep Ideas",
     "link": "https://www.loveandlemons.com/vegan-meal-prep-ideas/",
@@ -630,6 +710,14 @@
     "image": "https://thefoodietakesflight.com/wp-content/uploads/2026/01/All-Around-Dipping-Sauce-66-of-198-768x1024.jpg",
     "date": "2026-01-06T10:49:48+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Okonomi Kitchen",
+    "title": "Miso Butter Pasta",
+    "link": "https://www.okonomikitchen.com/miso-butter-pasta/",
+    "image": "https://www.okonomikitchen.com/wp-content/uploads/2026/01/miso-butter-pasta-4.jpg",
+    "date": "2026-01-06T00:37:46+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "My Darling Vegan",
@@ -654,6 +742,14 @@
     "image": "https://cdn.loveandlemons.com/wp-content/uploads/2025/12/white-bean-soup-1.jpg",
     "date": "2026-01-05T16:32:44+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Rabbit and Wolves",
+    "title": "The Best Vegan Homity Pie",
+    "link": "https://www.rabbitandwolves.com/the-best-vegan-homity-pie/?utm_source=rss&utm_medium=rss&utm_campaign=the-best-vegan-homity-pie",
+    "image": "https://www.rabbitandwolves.com/wp-content/uploads/2025/12/Vegan-Homity-Pie0655.jpg",
+    "date": "2026-01-04T19:24:17+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "Elavegan",
@@ -712,6 +808,14 @@
     "is_disruptor": true
   },
   {
+    "blog_name": "Rabbit and Wolves",
+    "title": "The Best & Easy Vegan Pie Crust",
+    "link": "https://www.rabbitandwolves.com/the-best-vegan-pie-crust/?utm_source=rss&utm_medium=rss&utm_campaign=the-best-vegan-pie-crust",
+    "image": "https://www.rabbitandwolves.com/wp-content/uploads/2025/12/A-vegan-pie-crust.jpg",
+    "date": "2026-01-02T18:45:12+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "The Burger Dude",
     "title": "Vegan Chili",
     "link": "https://theeburgerdude.com/vegan-chili/",
@@ -728,6 +832,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "From My Bowl",
+    "title": "20 Easy & Healthy Vegan Recipes",
+    "link": "https://frommybowl.com/20-easy-vegan-recipes/?utm_source=rss&utm_medium=rss&utm_campaign=20-easy-vegan-recipes",
+    "image": "https://frommybowl.com/wp-content/uploads/2026/01/20_easy_vegan_recipes_frommybowl.png",
+    "date": "2026-01-02T09:50:00+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "The Burger Dude",
     "title": "Easy Vegan Nacho Cheese",
     "link": "https://theeburgerdude.com/easy-vegan-nacho-cheese/",
@@ -741,6 +853,14 @@
     "link": "https://theeburgerdude.com/vegan-quesarito/",
     "image": "https://theeburgerdude.com/wp-content/uploads/2025/12/Quesarito-2-scaled.jpg",
     "date": "2026-01-01T22:46:13+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "Rabbit and Wolves",
+    "title": "The Best Vegan Game Day Recipes for 2026",
+    "link": "https://www.rabbitandwolves.com/vegan-game-day-recipes/?utm_source=rss&utm_medium=rss&utm_campaign=vegan-game-day-recipes",
+    "image": "https://www.rabbitandwolves.com/wp-content/uploads/2023/02/Black-and-White-Travel-Influencer-Pinterest-Pin-3.png",
+    "date": "2025-12-31T17:09:53+00:00",
     "is_disruptor": true
   },
   {
@@ -814,6 +934,14 @@
     "image": "https://thefoodietakesflight.com/wp-content/uploads/2025/12/Stir-Fried-Tofu-with-Oyster-Sauce-33-of-73-576x1024.jpg",
     "date": "2025-12-26T15:27:12+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "From My Bowl",
+    "title": "Farro Soup with White Beans",
+    "link": "https://frommybowl.com/farro-soup-white-beans/?utm_source=rss&utm_medium=rss&utm_campaign=farro-soup-white-beans",
+    "image": "https://frommybowl.com/wp-content/uploads/2025/10/White_Bean_Farro_Soup_Italian_Inspired_Vegan_FromMyBowl-14.jpg",
+    "date": "2025-12-26T11:00:00+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "Namely Marly",
@@ -896,6 +1024,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Okonomi Kitchen",
+    "title": "Caramel Walnut Sandwich Cookies",
+    "link": "https://www.okonomikitchen.com/caramel-walnut-sandwich-cookies/",
+    "image": "https://www.okonomikitchen.com/wp-content/uploads/2025/12/nama-caramel-walnut-sandwich-cookies-4.jpg",
+    "date": "2025-12-20T12:21:55+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Elavegan",
     "title": "Creamy Chocolate Pudding Cake (Loaf)",
     "link": "https://elavegan.com/chocolate-pudding-cake/",
@@ -920,6 +1056,22 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Okonomi Kitchen",
+    "title": "Honey Butter Salt Bread",
+    "link": "https://www.okonomikitchen.com/honey-butter-salt-bread/",
+    "image": "https://www.okonomikitchen.com/wp-content/uploads/2025/12/honey-butter-salt-bread-salted-honey-butter-rolls-recipe.jpg",
+    "date": "2025-12-18T19:40:14+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "Okonomi Kitchen",
+    "title": "Maple Butter Salt Bread",
+    "link": "https://www.okonomikitchen.com/maple-butter-salt-bread/",
+    "image": "https://www.okonomikitchen.com/wp-content/uploads/2025/12/maple-salt-bread-salted-maple-butter-rolls-5.jpg",
+    "date": "2025-12-18T13:31:13+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "The First Mess",
     "title": "No-Bake Vegan Cranberry Tart with White Chocolate and Biscoff Cookie Crust",
     "link": "https://thefirstmess.com/2025/12/18/no-bake-vegan-cranberry-tart-white-chocolate/",
@@ -933,6 +1085,14 @@
     "link": "https://thekoreanvegan.com/the-best-vegan-chocolate-cake-recipe/",
     "image": "https://thekoreanvegan.com/wp-content/uploads/2025/12/20251215-Screenshot-2025-12-15-at-11.36.32-AM.jpg",
     "date": "2025-12-18T01:13:04+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "Okonomi Kitchen",
+    "title": "Earl Grey Snowball Cookies",
+    "link": "https://www.okonomikitchen.com/earl-grey-snowball-cookies/",
+    "image": "https://www.okonomikitchen.com/wp-content/uploads/2025/12/earl-grey-snowball-cookies-2.jpg",
+    "date": "2025-12-17T23:50:55+00:00",
     "is_disruptor": true
   },
   {
@@ -1024,6 +1184,22 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Rabbit and Wolves",
+    "title": "Amazing Plant-Based Hot Chocolate Puppy Chow",
+    "link": "https://www.rabbitandwolves.com/amazing-plant-based-hot-chocolate-puppy-chow/?utm_source=rss&utm_medium=rss&utm_campaign=amazing-plant-based-hot-chocolate-puppy-chow",
+    "image": "https://www.rabbitandwolves.com/wp-content/uploads/2025/12/Vegan-puppy-chow0677.jpg",
+    "date": "2025-12-12T17:45:51+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "From My Bowl",
+    "title": "Vegan Sticky Toffee Pudding",
+    "link": "https://frommybowl.com/vegan-sticky-toffee-pudding/?utm_source=rss&utm_medium=rss&utm_campaign=vegan-sticky-toffee-pudding",
+    "image": "https://frommybowl.com/wp-content/uploads/2025/10/Vegan_Sticky_Toffee_Pudding_FromMyBowl-16.jpg",
+    "date": "2025-12-12T11:00:00+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "PlantYou",
     "title": "Brothy Rice with Ginger and Garlic",
     "link": "https://plantyou.com/brothy-rice-with-ginger-and-garlic/",
@@ -1101,6 +1277,14 @@
     "link": "https://thekoreanvegan.com/10-delicious-and-easy-recipes-using-kimchi-today/",
     "image": "https://thekoreanvegan.com/wp-content/uploads/2025/12/Kimchi-Recipes.png",
     "date": "2025-12-07T20:19:22+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "Rabbit and Wolves",
+    "title": "The Best Vegan Christmas Cookies for 2025",
+    "link": "https://www.rabbitandwolves.com/the-best-vegan-christmas-cookies/?utm_source=rss&utm_medium=rss&utm_campaign=the-best-vegan-christmas-cookies",
+    "image": "https://www.rabbitandwolves.com/wp-content/uploads/2022/11/Black-and-White-Travel-Influencer-Pinterest-Pin-1.png",
+    "date": "2025-12-07T18:36:24+00:00",
     "is_disruptor": true
   },
   {
@@ -1184,6 +1368,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "From My Bowl",
+    "title": "Chewy Pistachio Cookies",
+    "link": "https://frommybowl.com/chewy-pistachio-cookies/?utm_source=rss&utm_medium=rss&utm_campaign=chewy-pistachio-cookies",
+    "image": "https://frommybowl.com/wp-content/uploads/2025/10/Pistachio_Cookies_Vegan_FromMyBowl-20.jpg",
+    "date": "2025-12-02T11:00:00+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Namely Marly",
     "title": "Peanut Butter Oat Cups",
     "link": "https://namelymarly.com/peanut-butter-oat-cups/",
@@ -1248,6 +1440,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Rabbit and Wolves",
+    "title": "The Best Vegan Panettone Cookies",
+    "link": "https://www.rabbitandwolves.com/vegan-panettone-cookies/?utm_source=rss&utm_medium=rss&utm_campaign=vegan-panettone-cookies",
+    "image": "https://www.rabbitandwolves.com/wp-content/uploads/2025/11/Panttone-Cookies0125.jpg",
+    "date": "2025-11-26T21:15:23+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Vegan Richa",
     "title": "30-Minute Breakfast Taquitos",
     "link": "https://www.veganricha.com/breakfast-taquitos/",
@@ -1262,6 +1462,14 @@
     "image": "https://itdoesnttastelikechicken.com/wp-content/uploads/2025/11/Pecan-Crunch-Oat-Latte-starbucks-dupe-oatmilk-ingredients-vegan-recipe-facebook.jpg",
     "date": "2025-11-26T10:00:00+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Rabbit and Wolves",
+    "title": "The Best Candied Orange Slices",
+    "link": "https://www.rabbitandwolves.com/the-best-candied-orange-slices/?utm_source=rss&utm_medium=rss&utm_campaign=the-best-candied-orange-slices",
+    "image": "https://www.rabbitandwolves.com/wp-content/uploads/2025/11/Candied-Orange-Slices0154.jpg",
+    "date": "2025-11-25T21:34:37+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "PlantYou",
@@ -1318,6 +1526,14 @@
     "image": "https://cdn77-s3.lazycatkitchen.com/wp-content/uploads/2025/11/cranberry-cheesecake-bars-stack.jpg",
     "date": "2025-11-23T17:43:20+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "From My Bowl",
+    "title": "Cranberry Smoothie",
+    "link": "https://frommybowl.com/cranberry-smoothie/?utm_source=rss&utm_medium=rss&utm_campaign=cranberry-smoothie",
+    "image": "https://frommybowl.com/wp-content/uploads/2025/10/Cranberry_Smoothie_Vegan_FromMyBowl-8.jpg",
+    "date": "2025-11-23T16:02:45+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "Sweet Potato Soul",
@@ -1438,6 +1654,14 @@
     "image": "https://www.mydarlingvegan.com/wp-content/uploads/2025/11/vegetable-gratin-2.jpg",
     "date": "2025-11-14T20:46:21+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Rabbit and Wolves",
+    "title": "Amazing Vegan Cinnamon Swirl Banana Bread",
+    "link": "https://www.rabbitandwolves.com/vegan-cinnamon-swirl-banana-bread/?utm_source=rss&utm_medium=rss&utm_campaign=vegan-cinnamon-swirl-banana-bread",
+    "image": "https://www.rabbitandwolves.com/wp-content/uploads/2025/11/Cinnamon-Swirl-Banana-Bread0705.jpg",
+    "date": "2025-11-14T16:37:19+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "Simple Vegan Blog",
@@ -1606,6 +1830,22 @@
     "image": "https://namelymarly.com/wp-content/uploads/2025/10/Vegan-No-Bake-Cheesecake-0768-edit-sq-web.jpg",
     "date": "2025-11-01T12:13:00+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Rabbit and Wolves",
+    "title": "The 16 Best Vegan Thanksgiving Recipes",
+    "link": "https://www.rabbitandwolves.com/the-16-best-vegan-thanksgiving-recipes/?utm_source=rss&utm_medium=rss&utm_campaign=the-16-best-vegan-thanksgiving-recipes",
+    "image": "https://www.rabbitandwolves.com/wp-content/uploads/2025/10/Black-and-White-Travel-Influencer-Pinterest-Pin-46.png",
+    "date": "2025-10-31T15:45:33+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "From My Bowl",
+    "title": "45+ Freezer-Friendly Recipes for Vegan Meal Prep",
+    "link": "https://frommybowl.com/45-freezer-friendly-recipes-vegan-meal-prep/?utm_source=rss&utm_medium=rss&utm_campaign=45-freezer-friendly-recipes-vegan-meal-prep",
+    "image": "https://frommybowl.com/wp-content/uploads/2025/10/Vegan_Freezer_Friendly_Recipes_Vegan_Meal_Prep_FromMyBowl_FeaturedImage.png",
+    "date": "2025-10-31T10:00:00+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "Namely Marly",
