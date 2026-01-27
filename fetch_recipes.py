@@ -12,7 +12,6 @@ TOP_BLOGGERS = [
     ("Simple Vegan Blog", "https://simpleveganblog.com/feed/"),
     ("Vegan Richa", "https://www.veganricha.com/feed/"),
     ("It Doesn't Taste Like Chicken", "https://itdoesnttastelikechicken.com/feed/"),
-    # Pick Up Limes REMOVED (No RSS)
     ("Sweet Potato Soul", "https://sweetpotatosoul.com/feed/"),
     ("Connoisseurus Veg", "https://www.connoisseurusveg.com/feed/"),
     ("VegNews", "https://vegnews.com/feed"), 
@@ -24,7 +23,6 @@ TOP_BLOGGERS = [
     ("Rainbow Plant Life", "https://rainbowplantlife.com/feed/"),
     ("Elavegan", "https://elavegan.com/feed/"),
     ("Running on Real Food", "https://runningonrealfood.com/feed/"),
-    # Vegconomist REMOVED (Blocked)
     ("Namely Marly", "https://namelymarly.com/feed/"),
     ("The First Mess", "https://thefirstmess.com/feed/"),
     ("My Darling Vegan", "https://www.mydarlingvegan.com/feed/"),
@@ -35,32 +33,34 @@ DISRUPTORS = [
     ("School Night Vegan", "https://schoolnightvegan.com/feed/"),
     ("The Korean Vegan", "https://thekoreanvegan.com/feed/"),
     ("The Burger Dude", "https://theeburgerdude.com/feed/"),
-    ("FitGreenMind", "https://fit-green-mind.com/recipes/feed/"), 
     ("PlantYou", "https://plantyou.com/feed/"),
-    ("Chez Jorge", "https://chejorge.com/feed/"),
-    ("The Canadian African", "http://thecanadianafrican.com/feed/"), 
-    ("Zacchary Bird", "https://zaccharybird.com/recipes/feed/") 
+    ("Chez Jorge", "https://chejorge.com/feed/")
 ]
 
 ALL_FEEDS = TOP_BLOGGERS + DISRUPTORS
-MAX_RECIPES_PER_BLOG = 100  # <--- LIMIT SETTING
-
-# Keeping 360 days of history check, but the 100 limit will override this if they post often
+MAX_RECIPES_PER_BLOG = 100 
 cutoff_date = datetime.now().astimezone() - timedelta(days=360)
 
-# --- LOAD EXISTING DATA (ACCUMULATIVE MEMORY) ---
+# --- LOAD EXISTING DATA ---
 try:
     with open('data.json', 'r') as f:
         recipes = json.load(f)
-        print(f"Loaded {len(recipes)} existing recipes from database.")
+        print(f"Loaded {len(recipes)} existing recipes.")
 except (FileNotFoundError, json.JSONDecodeError):
     recipes = []
     print("No existing database found. Starting fresh.")
 
-# Create a set of existing links to prevent duplicates
+# --- CLEANSE DATABASE (VegNews Fix) ---
+# Remove existing VegNews items that do not have '/recipes/' in the URL
+initial_count = len(recipes)
+recipes = [r for r in recipes if not (r['blog_name'] == "VegNews" and "/recipes/" not in r['link'])]
+if len(recipes) < initial_count:
+    print(f"Cleaned {initial_count - len(recipes)} non-recipe VegNews articles from database.")
+
+# Create set for deduplication
 existing_links = {r['link'] for r in recipes}
 
-feed_stats = [] 
+feed_stats = {} # Dictionary for easy lookup: {'BlogName': {'new': 0, 'status': 'OK'}}
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
@@ -72,13 +72,8 @@ HEADERS = {
 
 def is_pet_recipe(title):
     t = title.lower()
-    pet_phrases = [
-        'dog treat', 'cat treat', 'dog biscuit', 'cat biscuit',
-        'dog food', 'cat food', 'for dogs', 'for cats',
-        'pup treat', 'kitty treat', 'dog cookie'
-    ]
-    if any(phrase in t for phrase in pet_phrases):
-        return True
+    pet_phrases = ['dog treat', 'cat treat', 'dog biscuit', 'cat biscuit', 'dog food', 'cat food', 'pup treat', 'kitty treat', 'dog cookie']
+    if any(phrase in t for phrase in pet_phrases): return True
     return False
 
 def fetch_og_image(link):
@@ -87,58 +82,39 @@ def fetch_og_image(link):
         r = requests.get(link, headers=HEADERS, timeout=10)
         soup = BeautifulSoup(r.content, 'lxml')
         og_image = soup.find('meta', property='og:image')
-        if og_image and og_image.get('content'):
-            return og_image['content']
-    except:
-        return None
+        if og_image and og_image.get('content'): return og_image['content']
+    except: return None
     return None
 
 def extract_image(entry, blog_name):
     image_candidate = None
-
     if 'media_content' in entry:
         for media in entry.media_content:
-            if 'url' in media:
-                return media['url']
-    
-    if 'media_thumbnail' in entry:
-        return entry.media_thumbnail[0]['url']
-
+            if 'url' in media: return media['url']
+    if 'media_thumbnail' in entry: return entry.media_thumbnail[0]['url']
     content = entry.get('content', [{}])[0].get('value', '') or entry.get('summary', '')
-    
     if content:
         soup = BeautifulSoup(content, 'lxml')
         images = soup.find_all('img')
-        
         for img in images:
             src = (img.get('data-src') or img.get('data-lazy-src') or img.get('data-original') or img.get('src'))
             srcset = img.get('srcset') or img.get('data-srcset')
-            if srcset:
-                src = srcset.split(',')[0].split(' ')[0]
-
+            if srcset: src = srcset.split(',')[0].split(' ')[0]
             if not src: continue
-            
             src_lower = src.lower()
-            if any(x in src_lower for x in ['pixel', 'emoji', 'icon', 'logo', 'gravatar', 'gif', 'facebook', 'pinterest', 'share']):
-                continue
-            
+            if any(x in src_lower for x in ['pixel', 'emoji', 'icon', 'logo', 'gravatar', 'gif', 'facebook', 'pinterest', 'share']): continue
             width = img.get('width')
-            if width and width.isdigit() and int(width) < 200:
-                continue
-            
+            if width and width.isdigit() and int(width) < 200: continue
             image_candidate = src
             break
-
-    if not image_candidate:
-        image_candidate = fetch_og_image(entry.link)
-
+    if not image_candidate: image_candidate = fetch_og_image(entry.link)
     return image_candidate if image_candidate else "default.jpg"
 
 print(f"Fetching recipes from {len(ALL_FEEDS)} blogs...")
 
 # --- MAIN LOOP ---
 for name, url in ALL_FEEDS:
-    blog_recipe_count = 0
+    new_count = 0
     status = "✅ OK"
     
     try:
@@ -146,108 +122,103 @@ for name, url in ALL_FEEDS:
         response = requests.get(url, headers=HEADERS, timeout=15)
         
         if response.status_code != 200 and name == "VegNews":
-             print("   -> Retrying VegNews with fallback RSS...")
              response = requests.get("https://vegnews.com/rss", headers=HEADERS, timeout=15)
 
         if response.status_code != 200:
             status = f"❌ Error {response.status_code}"
-            feed_stats.append({"name": name, "count": 0, "status": status})
+            feed_stats[name] = {'new': 0, 'status': status}
             continue
 
         feed = feedparser.parse(response.content)
         
         if not feed.entries:
-            if len(response.content) > 0:
-                 status = "⚠️ Parsed 0 items (Cloudflare?)"
-            else:
-                 status = "⚠️ Empty Feed"
+            if len(response.content) > 0: status = "⚠️ Parsed 0 items"
+            else: status = "⚠️ Empty Feed"
         
         for entry in feed.entries:
             try:
+                # VegNews FILTER: Skip if not a recipe URL
+                if name == "VegNews" and "/recipes/" not in entry.link:
+                    continue
+
                 dt = entry.get('published', entry.get('updated', None))
                 if not dt: continue
-                
                 published_time = parser.parse(dt)
                 if published_time.tzinfo is None:
                     published_time = published_time.replace(tzinfo=datetime.now().astimezone().tzinfo)
                 
-                # Filter by date
                 if published_time > cutoff_date:
-                    # Deduplication Check
-                    if entry.link in existing_links:
-                        continue
-
+                    if entry.link in existing_links: continue
                     if is_pet_recipe(entry.title): continue
 
                     image_url = extract_image(entry, name)
-                    
                     if image_url and image_url.startswith('/'):
                         base = feed.feed.get('link', '')
                         if base: image_url = base.rstrip('/') + image_url
                     
-                    new_recipe = {
+                    recipes.append({
                         "blog_name": name,
                         "title": entry.title,
                         "link": entry.link,
                         "image": image_url,
                         "date": published_time.isoformat(),
                         "is_disruptor": name in [d[0] for d in DISRUPTORS]
-                    }
-                    
-                    recipes.append(new_recipe)
-                    existing_links.add(entry.link) # Add to set to prevent duplicate in same run
-                    blog_recipe_count += 1
+                    })
+                    existing_links.add(entry.link)
+                    new_count += 1
             except Exception as e:
                 continue
         
-        feed_stats.append({"name": name, "count": blog_recipe_count, "status": status})
+        feed_stats[name] = {'new': new_count, 'status': status}
 
     except Exception as e:
         print(f"Failed to parse {name}: {e}")
-        feed_stats.append({"name": name, "count": 0, "status": f"❌ Crash: {str(e)[:20]}"})
+        feed_stats[name] = {'new': 0, 'status': f"❌ Crash: {str(e)[:20]}"}
 
-
-# --- PRUNING STEP: LIMIT 100 PER BLOG ---
-print("Pruning database to max 100 recipes per blog...")
-
+# --- PRUNING STEP ---
+print("Pruning database...")
 recipes_by_blog = {}
 for r in recipes:
     bname = r['blog_name']
-    if bname not in recipes_by_blog:
-        recipes_by_blog[bname] = []
+    if bname not in recipes_by_blog: recipes_by_blog[bname] = []
     recipes_by_blog[bname].append(r)
 
 final_pruned_list = []
+total_counts = {} # For report
 
 for bname, blog_recipes in recipes_by_blog.items():
-    # Sort descending by date (newest first)
     blog_recipes.sort(key=lambda x: x['date'], reverse=True)
-    
-    # Keep only the top 100
     kept_recipes = blog_recipes[:MAX_RECIPES_PER_BLOG]
     final_pruned_list.extend(kept_recipes)
-    
-    if len(blog_recipes) > MAX_RECIPES_PER_BLOG:
-        print(f"   Trimmed {bname}: Removed {len(blog_recipes) - MAX_RECIPES_PER_BLOG} old recipes.")
+    total_counts[bname] = len(kept_recipes) # Track total for report
 
-# Final Sort of the master list
 final_pruned_list.sort(key=lambda x: x['date'], reverse=True)
 
-# Save JSON
 with open('data.json', 'w') as f:
     json.dump(final_pruned_list, f, indent=2)
 
-# --- GENERATE REPORT (FEED_HEALTH.md) ---
+# --- GENERATE REPORT ---
 with open('FEED_HEALTH.md', 'w') as f:
     f.write(f"# Feed Health Report\n")
     f.write(f"**Last Run:** {datetime.now().isoformat()}\n")
     f.write(f"**Total Database Size:** {len(final_pruned_list)}\n\n")
-    f.write("| Blog Name | New Items Found Today | Status |\n")
-    f.write("|-----------|-----------------------|--------|\n")
+    f.write("| Blog Name | New Today | Total in DB | Status |\n")
+    f.write("|-----------|-----------|-------------|--------|\n")
     
-    feed_stats.sort(key=lambda x: (x['status'] == '✅ OK', x['count']), reverse=False)
+    # Merge stats lists to handle blogs that might have failed today but exist in DB
+    all_names = set(list(feed_stats.keys()) + list(total_counts.keys()))
     
-    for stat in feed_stats:
-        f.write(f"| {stat['name']} | {stat['count']} | {stat['status']} |\n")
+    report_rows = []
+    for name in all_names:
+        new = feed_stats.get(name, {}).get('new', 0)
+        status = feed_stats.get(name, {}).get('status', 'Skipped/DB Only')
+        total = total_counts.get(name, 0)
+        report_rows.append((name, new, total, status))
+        
+    # Sort by Status (Errors top), then Name
+    report_rows.sort(key=lambda x: (x[3].startswith('✅'), x[0]))
+    
+    for row in report_rows:
+        f.write(f"| {row[0]} | {row[1]} | {row[2]} | {row[3]} |\n")
 
-print(f"Successfully scraped. Database size: {len(final_pruned_list)}")
+print("Done.")
