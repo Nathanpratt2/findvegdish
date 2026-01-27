@@ -1,6 +1,6 @@
 # Feed Health Report
-**Last Run:** 2026-01-26T13:37:50.232144
-**Total Database Size:** 288
+**Last Run:** 2026-01-27T09:57:37.656579
+**Total Database Size:** 297
 
 | Blog Name | New Items Found Today | Status |
 |-----------|-----------------------|--------|
@@ -12,7 +12,6 @@
 | It Doesn't Taste Like Chicken | 0 | ✅ OK |
 | Sweet Potato Soul | 0 | ✅ OK |
 | Connoisseurus Veg | 0 | ✅ OK |
-| VegNews | 0 | ✅ OK |
 | Lazy Cat Kitchen | 0 | ✅ OK |
 | The Full Helping | 0 | ✅ OK |
 | Love and Lemons | 0 | ✅ OK |
@@ -26,7 +25,8 @@
 | My Darling Vegan | 0 | ✅ OK |
 | The Foodie Takes Flight | 0 | ✅ OK |
 | School Night Vegan | 0 | ✅ OK |
-| The Korean Vegan | 0 | ✅ OK |
 | The Burger Dude | 0 | ✅ OK |
 | PlantYou | 0 | ✅ OK |
 | Chez Jorge | 0 | ✅ OK |
+| The Korean Vegan | 1 | ✅ OK |
+| VegNews | 8 | ✅ OK |
