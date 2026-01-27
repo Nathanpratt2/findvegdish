@@ -373,8 +373,23 @@
         card.target = "_blank"; 
 
         const img = document.createElement('img');
-        img.src = recipe.image;
-        img.onerror = function() { this.src = 'icon.jpg'; };
+        
+        // --- NEW: IMAGE OPTIMIZATION ---
+        // We use images.weserv.nl to resize the image on the fly.
+        // w=400: Resize to 400px width (perfect for grid)
+        // q=80: Quality 80% (saves data)
+        // output=webp: Modern fast format
+        // url=: The original blogger's image URL
+        const optimizedImage = `https://images.weserv.nl/?url=${encodeURIComponent(recipe.image)}&w=400&q=80&output=webp`;
+        
+        img.src = optimizedImage;
+        
+        // Fallback: If the proxy fails or image is broken, use your icon
+        img.onerror = function() { 
+            this.onerror = null; // Prevent infinite loop
+            this.src = 'icon.jpg'; 
+        };
+        
         img.loading = "lazy"; 
 
         const info = document.createElement('div');
@@ -392,12 +407,10 @@
         const daysOld = (now - recipeDate) / (1000 * 3600 * 24);
         
         let newBadge = '';
-        // UPDATED: Increased to 2 days so you can see them during testing
         if(daysOld < 2) {
             newBadge = '<span class="fresh-badge">NEW!</span>';
         }
 
-        // UPDATED: Added meta-row wrapper to keep Tag and Badge aligned
         info.innerHTML = `
             <div class="meta-row">
                 <span class="${tagClass}">${tagText}</span> ${newBadge}
