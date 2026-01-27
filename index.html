@@ -14,8 +14,6 @@
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- Browser Icons -->
-    <!-- Use Full URLs here too for maximum compatibility -->
     <link rel="icon" href="https://findvegdish.com/icon.jpg" type="image/jpeg"> 
     <link rel="apple-touch-icon" href="https://findvegdish.com/icon.jpg">
 
@@ -134,7 +132,7 @@
             border: none;
         }
 
-        /* --- UPDATED GRID LAYOUT --- */
+        /* Grid Layout */
         .gallery {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -205,11 +203,9 @@
             display: flex;
             flex-direction: column;
             flex-grow: 1; 
-            /* Fixes stretched items */
             align-items: flex-start; 
         }
         
-        /* NEW: Wrapper for Tag and Badge */
         .meta-row {
             display: flex;
             align-items: center;
@@ -228,9 +224,8 @@
         }
         .disruptor-tag { color: #e67e22; }
         
-        /* UPDATED: Green Badge */
         .fresh-badge {
-            background-color: #27ae60; /* Changed to Green */
+            background-color: #27ae60; 
             color: white;
             font-size: 0.7em;
             padding: 2px 8px;
@@ -238,7 +233,7 @@
             font-weight: bold;
             text-transform: uppercase;
             animation: pulse 2s infinite;
-            white-space: nowrap; /* Prevents text squishing */
+            white-space: nowrap; 
         }
         @keyframes pulse {
             0% { opacity: 1; }
@@ -274,7 +269,7 @@
 <body>
 
 <header>
-    <img src="default.jpg" alt="Find Vegan Recipes Fast" class="logo-img">
+    <img src="default.jpg" alt="Daily Vegan Recipes" class="logo-img">
     
     <div class="search-wrapper">
         <input type="text" id="searchInput" placeholder="Search pasta, tofu, soup...">
@@ -284,6 +279,8 @@
     <div class="controls">
         <button class="btn" id="mealsBtn" onclick="toggleCategory('meal')">🍝 Meals Only</button>
         <button class="btn" id="sweetsBtn" onclick="toggleCategory('sweet')">🍪 Sweets Only</button>
+        <!-- NEW BUTTON -->
+        <button class="btn" id="proteinBtn" onclick="toggleCategory('protein')">💪 High Protein</button>
         <button class="btn" onclick="shuffleRecipes()">🔀 Shuffle</button>
 
         <a href="shop.html" class="btn" style="text-decoration:none; color:#555;">🔪 Top 10 Vegan Kitchen Tools</a>
@@ -324,6 +321,13 @@
         'lunch', 'roast', 'chili', 'shepherd', 'risotto', 'gnocchi', 'quiche', 
         'enchilada', 'burrito', 'quesadilla', 'mac and cheese', 'dumpling', 
         'meatball', 'loaf', 'skillet', 'gratin', 'pad thai', 'ramen'
+    ];
+
+    // NEW PROTEIN KEYWORDS
+    const PROTEIN_KEYWORDS = [
+        'tofu', 'tempeh', 'seitan', 'tvp', 'lentil', 'bean', 'chickpea',
+        'edamame', 'soy', 'quinoa', 'peanut', 'meatball', 'burger',
+        'sausage', 'protein', 'falafel', 'hummus', 'nut roast'
     ];
 
     // --- INITIALIZATION ---
@@ -392,7 +396,6 @@
         const daysOld = (now - recipeDate) / (1000 * 3600 * 24);
         
         let newBadge = '';
-        // UPDATED: Logic set to 2 days
         if(daysOld < 2) {
             newBadge = '<span class="fresh-badge">NEW!</span>';
         }
@@ -449,6 +452,7 @@
         activeCategory = null;
         document.getElementById('mealsBtn').classList.remove('active-filter');
         document.getElementById('sweetsBtn').classList.remove('active-filter');
+        document.getElementById('proteinBtn').classList.remove('active-filter'); // Clear protein
         resetView(allRecipes);
     }
 
@@ -479,6 +483,11 @@
                 const isSide = t.includes('sauce') || t.includes('dressing') || t.includes('side');
                 return hasKeyword && !isSide;
             });
+        } else if (activeCategory === 'protein') {
+            filtered = filtered.filter(recipe => {
+                const t = recipe.title.toLowerCase();
+                return PROTEIN_KEYWORDS.some(k => t.includes(k));
+            });
         }
 
         currentContext = filtered;
@@ -491,20 +500,25 @@
     function toggleCategory(category) {
         const mealsBtn = document.getElementById('mealsBtn');
         const sweetsBtn = document.getElementById('sweetsBtn');
+        const proteinBtn = document.getElementById('proteinBtn');
 
         if (activeCategory === category) {
             activeCategory = null;
             mealsBtn.classList.remove('active-filter');
             sweetsBtn.classList.remove('active-filter');
+            proteinBtn.classList.remove('active-filter');
         } else {
             activeCategory = category;
-            if(category === 'meal') {
-                mealsBtn.classList.add('active-filter');
-                sweetsBtn.classList.remove('active-filter');
-            } else {
-                sweetsBtn.classList.add('active-filter');
-                mealsBtn.classList.remove('active-filter');
-            }
+            
+            // Clear all
+            mealsBtn.classList.remove('active-filter');
+            sweetsBtn.classList.remove('active-filter');
+            proteinBtn.classList.remove('active-filter');
+
+            // Set active
+            if(category === 'meal') mealsBtn.classList.add('active-filter');
+            else if(category === 'sweet') sweetsBtn.classList.add('active-filter');
+            else if(category === 'protein') proteinBtn.classList.add('active-filter');
         }
         applyFilters();
     }
