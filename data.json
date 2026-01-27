@@ -1,27 +1,19 @@
 [
   {
+    "blog_name": "Elavegan",
+    "title": "Date Brownies (No Flour, No Added Sugar)",
+    "link": "https://elavegan.com/date-brownies/",
+    "image": "https://elavegan.com/wp-content/uploads/2026/01/Stack-of-rich-moist-chocolate-brownies-topped-with-glossy-chocolate-chips-on-a-white-plate.-Nearby-are-whole-dates.jpg",
+    "date": "2026-01-27T12:53:04+00:00",
+    "is_disruptor": false
+  },
+  {
     "blog_name": "The Korean Vegan",
     "title": "Won\u2019t You Be My Neighbor?",
     "link": "https://thekoreanvegan.com/wont-you-be-my-neighbor/",
     "image": "https://thekoreanvegan.com/wp-content/uploads/2026/01/Myer-Lemons.jpg",
     "date": "2026-01-27T01:21:37+00:00",
     "is_disruptor": true
-  },
-  {
-    "blog_name": "VegNews",
-    "title": "Why Plant City, One of New England\u2019s Most Ambitious Vegan Projects, Is Closing",
-    "link": "https://vegnews.com/plant-city-providence-closing",
-    "image": "https://vegnews.com/media/W1siZiIsIjU1ODU5L3BsYW50LWNpdHkucG5nIl0sWyJwIiwidGh1bWIiLCIxNjAweDk0NiMiLHsiZm9ybWF0IjoianBnIn1dLFsicCIsIm9wdGltaXplIl1d/plant-city.jpg?sha=8cdc35e7c30c0ad0",
-    "date": "2026-01-26T17:00:00-08:00",
-    "is_disruptor": false
-  },
-  {
-    "blog_name": "VegNews",
-    "title": "Jack Black\u2019s Boxed Mac and Cheese Hacks Are Simple and Brilliant",
-    "link": "https://vegnews.com/jack-black-boxed-mac-and-cheese-hacks",
-    "image": "https://vegnews.com/media/W1siZiIsIjU2NTUxL1JCIGFydGljbGUgaW1hZ2VzLnBuZyJdLFsicCIsInRodW1iIiwiMTYwMHg5NDYjIix7ImZvcm1hdCI6ImpwZyJ9XSxbInAiLCJvcHRpbWl6ZSJdXQ/RB%20article%20images.jpg?sha=999f9fbc1a6f79cb",
-    "date": "2026-01-26T15:00:00-08:00",
-    "is_disruptor": false
   },
   {
     "blog_name": "VegNews",
@@ -45,30 +37,6 @@
     "link": "https://vegnews.com/recipes/vegan-chocolate-chip-banana-bread-breakfast-cookies",
     "image": "https://vegnews.com/media/W1siZiIsIjM0NzU4L1ZlZ05ld3MuQ2hvY29sYXRlQ2hpcEJhbmFuYUJyZWFkLmpwZyJdLFsicCIsInRodW1iIiwiMTYwMHg5NDYjIix7ImZvcm1hdCI6ImpwZyJ9XSxbInAiLCJvcHRpbWl6ZSJdXQ/VegNews.ChocolateChipBananaBread.jpg?sha=624c04d5e108a9a0",
     "date": "2026-01-26T14:00:00-08:00",
-    "is_disruptor": false
-  },
-  {
-    "blog_name": "VegNews",
-    "title": "Purple Carrot's Vegan Meals Are a Game-Changer Whether You Love or Hate Cooking. Here\u2019s Why.",
-    "link": "https://vegnews.com/purple-carrots-vegan-meals-game-changer",
-    "image": "https://vegnews.com/media/W1siZiIsIjU2NTUwL1B1cnBsZSBDYXJyb3QgUXVlc2FiaXJyaWEgVGFjb3MuanBnIl0sWyJwIiwidGh1bWIiLCIxNjAweDk0NiMiLHsiZm9ybWF0IjoianBnIn1dLFsicCIsIm9wdGltaXplIl1d/Purple%20Carrot%20Quesabirria%20Tacos.jpg?sha=33ab08d7feeab723",
-    "date": "2026-01-26T13:52:00-08:00",
-    "is_disruptor": false
-  },
-  {
-    "blog_name": "VegNews",
-    "title": "Remembering 2016, the Year That Changed Vegan Food Forever",
-    "link": "https://vegnews.com/2016-vegan-food",
-    "image": "https://vegnews.com/media/W1siZiIsIjU2NTQ5L1VudGl0bGVkIGRlc2lnbiAtIDIwMjYtMDEtMjJUMTIwOTI0LjE3NiAoMSkucG5nIl0sWyJwIiwidGh1bWIiLCIxNjAweDk0NiMiLHsiZm9ybWF0IjoianBnIn1dLFsicCIsIm9wdGltaXplIl1d/Untitled%20design%20-%202026-01-22T120924.176%20%281%29.jpg?sha=e070e4ad20a36f83",
-    "date": "2026-01-26T09:55:00-08:00",
-    "is_disruptor": false
-  },
-  {
-    "blog_name": "VegNews",
-    "title": "Make the Perfect Vegan Grilled Cheese With These Must-Try Hacks",
-    "link": "https://vegnews.com/vegan-grilled-cheese",
-    "image": "https://vegnews.com/media/W1siZiIsIjM4ODYxL1ZlZ05ld3MuR3JpbGxlZENoZWVzZS5WaW9saWZlLnBuZyJdLFsicCIsInRodW1iIiwiMTYwMHg5NDYjIix7ImZvcm1hdCI6ImpwZyJ9XSxbInAiLCJvcHRpbWl6ZSJdXQ/VegNews.GrilledCheese.Violife.jpg?sha=1266ea3108dab504",
-    "date": "2026-01-26T05:00:00-08:00",
     "is_disruptor": false
   },
   {
@@ -97,14 +65,6 @@
   },
   {
     "blog_name": "VegNews",
-    "title": "Eat Like a Blue Zoner With These Staples From the Okinawan Diet",
-    "link": "https://vegnews.com/blue-zone-okinawan-diet-foods",
-    "image": "https://vegnews.com/media/W1siZiIsIjQ2MTg2L1dvbWFuIExhdWdoaW5nIEVhdGluZyBGb29kLmpwZyJdLFsicCIsInRodW1iIiwiMTYwMHg5NDYjIix7ImZvcm1hdCI6ImpwZyJ9XSxbInAiLCJvcHRpbWl6ZSJdXQ/Woman%20Laughing%20Eating%20Food.jpg?sha=4d6f9b6e8871bc83",
-    "date": "2026-01-25T08:20:00-08:00",
-    "is_disruptor": false
-  },
-  {
-    "blog_name": "VegNews",
     "title": "Creamy Herbed Almond Cheese Wheel",
     "link": "https://vegnews.com/recipes/herbed-vegan-almond-cheese-wheels",
     "image": "https://vegnews.com/media/W1siZiIsIjE4NDY2L1ZlZ05ld3MuQWxtb25kQ2hlZXNlLmpwZyJdLFsicCIsInRodW1iIiwiMTYwMHg5NDYjIix7ImZvcm1hdCI6ImpwZyJ9XSxbInAiLCJvcHRpbWl6ZSJdXQ/VegNews.AlmondCheese.jpg?sha=85eeb75fd7bae82c",
@@ -117,14 +77,6 @@
     "link": "https://vegnews.com/recipes/gluten-free-granola-bars",
     "image": "https://vegnews.com/media/W1siZiIsIjQ1MDAvVmVnTmV3cy5HRkdyYW5vbGFCYXJzLmpwZyJdLFsicCIsInRodW1iIiwiMTYwMHg5NDYjIix7ImZvcm1hdCI6ImpwZyJ9XSxbInAiLCJvcHRpbWl6ZSJdXQ/VegNews.GFGranolaBars.jpg?sha=71d12634b6da5258",
     "date": "2026-01-25T08:15:00-08:00",
-    "is_disruptor": false
-  },
-  {
-    "blog_name": "VegNews",
-    "title": "Yes, You Can Make Vegan Popcorn Chicken That\u2019s Crispy and Juicy",
-    "link": "https://vegnews.com/vegan-popcorn-chicken-recipes",
-    "image": "https://vegnews.com/media/W1siZiIsIjIxNzYyL1ZlZ05ld3MuUG9wY29ybkNoaWsnaW4uanBnIl0sWyJwIiwidGh1bWIiLCIxNjAweDk0NiMiLHsiZm9ybWF0IjoianBnIn1dLFsicCIsIm9wdGltaXplIl1d/VegNews.PopcornChik%27in.jpg?sha=70d3fe9fb7a58f94",
-    "date": "2026-01-25T08:00:00-08:00",
     "is_disruptor": false
   },
   {
@@ -153,34 +105,10 @@
   },
   {
     "blog_name": "VegNews",
-    "title": "Think You Know Protein? These Meat-Free Foods Might Surprise You",
-    "link": "https://vegnews.com/vegan-protein-sources",
-    "image": "https://vegnews.com/media/W1siZiIsIjUzNzIyL3BleGVscy1rcGF1a3NodGl0ZS03MDE3NzQuanBnIl0sWyJwIiwidGh1bWIiLCIxNjAweDk0NiMiLHsiZm9ybWF0IjoianBnIn1dLFsicCIsIm9wdGltaXplIl1d/pexels-kpaukshtite-701774.jpg?sha=62430733cdd2b598",
-    "date": "2026-01-24T11:00:00-08:00",
-    "is_disruptor": false
-  },
-  {
-    "blog_name": "VegNews",
-    "title": "Garlic Lovers, These 20 Delicious Vegan Recipes Are For You",
-    "link": "https://vegnews.com/garlic-vegan-recipes",
-    "image": "https://vegnews.com/media/W1siZiIsIjQxOTg5L1ZlZ2FuR2FybGljQnJlYWQuanBnIl0sWyJwIiwidGh1bWIiLCIxNjAweDk0NiMiLHsiZm9ybWF0IjoianBnIn1dLFsicCIsIm9wdGltaXplIl1d/VeganGarlicBread.jpg?sha=038b893ad885faa8",
-    "date": "2026-01-24T10:55:00-08:00",
-    "is_disruptor": false
-  },
-  {
-    "blog_name": "VegNews",
     "title": "Crispy Flamin\u2019 Roasted Chickpeas",
     "link": "https://vegnews.com/recipes/vegan-crunchy-flamin-chickpeas",
     "image": "https://vegnews.com/media/W1siZiIsIjE5NDU0L1ZlZ05ld3Muc3BpY2VkY2hpY2twZWFzLmpwZy5wbmciXSxbInAiLCJ0aHVtYiIsIjE2MDB4OTQ2IyIseyJmb3JtYXQiOiJqcGcifV0sWyJwIiwib3B0aW1pemUiXV0/VegNews.spicedchickpeas.jpg.jpg?sha=fef091ffcc814857",
     "date": "2026-01-24T10:55:00-08:00",
-    "is_disruptor": false
-  },
-  {
-    "blog_name": "VegNews",
-    "title": "You Don't Need to Eat Fish to Get the Benefits of Heart-Healthy Omega-3s",
-    "link": "https://vegnews.com/vegan-guide-omega-3-products",
-    "image": "https://vegnews.com/media/W1siZiIsIjQ1NDcwL1ZlZ05ld3MuQ2hpYVB1ZGRpbmcuQnJlbmRhR29kaW5lei5VbnNwbGFzaC5qcGciXSxbInAiLCJ0aHVtYiIsIjE2MDB4OTQ2IyIseyJmb3JtYXQiOiJqcGcifV0sWyJwIiwib3B0aW1pemUiXV0/VegNews.ChiaPudding.BrendaGodinez.Unsplash.jpg?sha=266f97bdac8053dd",
-    "date": "2026-01-24T10:50:00-08:00",
     "is_disruptor": false
   },
   {
@@ -225,38 +153,6 @@
   },
   {
     "blog_name": "VegNews",
-    "title": "As Trump Pushes Whole Milk, Vegan Milk Goes Old School",
-    "link": "https://vegnews.com/ripple-dairy-free-milk-organic",
-    "image": "https://vegnews.com/media/W1siZiIsIjU2Mzc0L1JpcHBsZV9PcmdhbmljX05ld19NaWxrLmpwZyJdLFsicCIsInRodW1iIiwiMTYwMHg5NDYjIix7ImZvcm1hdCI6ImpwZyJ9XSxbInAiLCJvcHRpbWl6ZSJdXQ/Ripple_Organic_New_Milk.jpg?sha=67e75b0bb9cf9163",
-    "date": "2026-01-23T14:27:00-08:00",
-    "is_disruptor": false
-  },
-  {
-    "blog_name": "VegNews",
-    "title": "Hungryroot Is Grocery Shopping With the Convenience of a Meal Delivery Service\u2014But Is It Worth the Hype?",
-    "link": "https://vegnews.com/hungryroot-lazy-vegan-shoppers-paradise",
-    "image": "https://vegnews.com/media/W1siZiIsIjU2NDk0L1VudGl0bGVkIGRlc2lnbiAtIDIwMjYtMDEtMTlUMTgwMjIzLjY2NC5wbmciXSxbInAiLCJ0aHVtYiIsIjE2MDB4OTQ2IyIseyJmb3JtYXQiOiJqcGcifV0sWyJwIiwib3B0aW1pemUiXV0/Untitled%20design%20-%202026-01-19T180223.664.jpg?sha=349c45b9cb8a0392",
-    "date": "2026-01-23T12:32:00-08:00",
-    "is_disruptor": false
-  },
-  {
-    "blog_name": "VegNews",
-    "title": "Make a Delicious Quiche Without Using Any Eggs",
-    "link": "https://vegnews.com/how-to-make-vegan-quiche",
-    "image": "https://vegnews.com/media/W1siZiIsIjQ2NzU3L1ZlZ2FuIHF1aWNoZSBhc3BhcmFndXMuanBlZyJdLFsicCIsInRodW1iIiwiMTYwMHg5NDYjIix7ImZvcm1hdCI6ImpwZyJ9XSxbInAiLCJvcHRpbWl6ZSJdXQ/Vegan%20quiche%20asparagus.jpg?sha=50919c62d38b400f",
-    "date": "2026-01-23T11:00:00-08:00",
-    "is_disruptor": false
-  },
-  {
-    "blog_name": "VegNews",
-    "title": "Trader Joe\u2019s Vegan Onion Flowers, Taco Bell\u2019s New Mini Salad, and a Crunchwrap Dupe: This Week in Vegan Food",
-    "link": "https://vegnews.com/trader-joes-onion-flower-taco-bell-crunchwrap-dupe",
-    "image": "https://vegnews.com/media/W1siZiIsIjU2NDk1L0ZOT1RXICgxKS5wbmciXSxbInAiLCJ0aHVtYiIsIjE2MDB4OTQ2IyIseyJmb3JtYXQiOiJqcGcifV0sWyJwIiwib3B0aW1pemUiXV0/FNOTW%20%281%29.jpg?sha=2bbd28cdf4cbb4e9",
-    "date": "2026-01-23T10:37:00-08:00",
-    "is_disruptor": false
-  },
-  {
-    "blog_name": "VegNews",
     "title": "Supreme Vegan Nacho Fries With Tofu Bacon Crumbles",
     "link": "https://vegnews.com/recipes/vegan-loaded-fries-supreme",
     "image": "https://vegnews.com/media/W1siZiIsIjExOTg5L1ZlZ05ld3MuTG9hZGVkRnJpZXNTdXByZW1lLnBuZyJdLFsicCIsInRodW1iIiwiMTYwMHg5NDYjIix7ImZvcm1hdCI6ImpwZyJ9XSxbInAiLCJvcHRpbWl6ZSJdXQ/VegNews.LoadedFriesSupreme.jpg?sha=6ed9c0f03f5289fe",
@@ -280,27 +176,11 @@
     "is_disruptor": false
   },
   {
-    "blog_name": "VegNews",
-    "title": "Just a Half Tablespoon of Olive Oil a Day Cuts Dementia Risk By 28 Percent, Study Finds",
-    "link": "https://vegnews.com/olive-oil-dementia-study",
-    "image": "https://vegnews.com/media/W1siZiIsIjM5ODUzL1ZlZ05ld3MuT2xpdmVPaWxTYWxhZC5BZG9iZS5qcGciXSxbInAiLCJ0aHVtYiIsIjE2MDB4OTQ2IyIseyJmb3JtYXQiOiJqcGcifV0sWyJwIiwib3B0aW1pemUiXV0/VegNews.OliveOilSalad.Adobe.jpg?sha=93686b1a585b6db2",
-    "date": "2026-01-23T00:30:00-08:00",
-    "is_disruptor": false
-  },
-  {
     "blog_name": "Running on Real Food",
     "title": "Marry Me Chickpeas",
     "link": "https://runningonrealfood.com/marry-me-chickpeas/",
     "image": "https://runningonrealfood.com/wp-content/uploads/2026/01/creamy-marry-me-chickpeas-recipe-12.jpg",
     "date": "2026-01-22T18:20:39+00:00",
-    "is_disruptor": false
-  },
-  {
-    "blog_name": "VegNews",
-    "title": "Store-Bought Salad Dressing Just Doesn\u2019t Cut It Anymore, Make These Easy Vegan Dressings Instead",
-    "link": "https://vegnews.com/make-salad-dressing-home-vegan-recipes",
-    "image": "https://vegnews.com/media/W1siZiIsIjQzNjYzL3ZlZ25ld3Mud2VkZ2VzYWxhZCAoMSkuanBnIl0sWyJwIiwidGh1bWIiLCIxNjAweDk0NiMiLHsiZm9ybWF0IjoianBnIn1dLFsicCIsIm9wdGltaXplIl1d/vegnews.wedgesalad%20%281%29.jpg?sha=ad47c51ba9a3d784",
-    "date": "2026-01-22T17:00:00-08:00",
     "is_disruptor": false
   },
   {
@@ -317,38 +197,6 @@
     "link": "https://simpleveganblog.com/lentil-soup/",
     "image": "https://simpleveganblog.com/wp-content/uploads/2026/01/vegan-lentil-soup-social.jpg",
     "date": "2026-01-22T14:00:00+00:00",
-    "is_disruptor": false
-  },
-  {
-    "blog_name": "VegNews",
-    "title": "In an Era of Closures, This New York Restaurateur Can't Stop Opening Vegan Businesses",
-    "link": "https://vegnews.com/ravi-derossi-vegan-restaurants",
-    "image": "https://vegnews.com/media/W1siZiIsIjU2NDgwL09IX0FBX0p1bmUyMDI1X0Z1bGwtMjYud2VicCJdLFsicCIsInRodW1iIiwiMTYwMHg5NDYjIix7ImZvcm1hdCI6ImpwZyJ9XSxbInAiLCJvcHRpbWl6ZSJdXQ/OH_AA_June2025_Full-26.jpg?sha=0be00e026c3b5159",
-    "date": "2026-01-22T13:36:00-08:00",
-    "is_disruptor": false
-  },
-  {
-    "blog_name": "VegNews",
-    "title": "Plant-Based Diets Linked to Lower Mortality and Environmental Impact, Research Finds",
-    "link": "https://vegnews.com/plant-based-diets-lower-mortality-environmental-impact",
-    "image": "https://vegnews.com/media/W1siZiIsIjQ2MzYxL1dvbWFuIFBhc3NpbmcgU2FsYWQuanBnIl0sWyJwIiwidGh1bWIiLCIxNjAweDk0NiMiLHsiZm9ybWF0IjoianBnIn1dLFsicCIsIm9wdGltaXplIl1d/Woman%20Passing%20Salad.jpg?sha=701f959a96192b33",
-    "date": "2026-01-22T12:49:00-08:00",
-    "is_disruptor": false
-  },
-  {
-    "blog_name": "VegNews",
-    "title": "These Are the 16 Best Ways We\u2019ve Used Nutritional Yeast (So Far!)",
-    "link": "https://vegnews.com/how-to-nutritional-yeast-recipes",
-    "image": "https://vegnews.com/media/W1siZiIsIjM2MDM3L1ZlZ05ld3MuS2FsZUNhZXNhci5Bc2hsZXlNYWRkZW4uanBnIl0sWyJwIiwidGh1bWIiLCIxNjAweDk0NiMiLHsiZm9ybWF0IjoianBnIn1dLFsicCIsIm9wdGltaXplIl1d/VegNews.KaleCaesar.AshleyMadden.jpg?sha=903cd07173412355",
-    "date": "2026-01-22T12:00:00-08:00",
-    "is_disruptor": false
-  },
-  {
-    "blog_name": "VegNews",
-    "title": "The Plant-Based Market Is Resetting, Not Collapsing, Says New Report",
-    "link": "https://vegnews.com/spins-report-plant-based-market-resetting",
-    "image": "https://vegnews.com/media/W1siZiIsIjU2NDY5L1VudGl0bGVkIGRlc2lnbiAtIDIwMjYtMDEtMTZUMTA1NzA0Ljc4OS5wbmciXSxbInAiLCJ0aHVtYiIsIjE2MDB4OTQ2IyIseyJmb3JtYXQiOiJqcGcifV0sWyJwIiwib3B0aW1pemUiXV0/Untitled%20design%20-%202026-01-16T105704.789.jpg?sha=f5c28346e21ffba8",
-    "date": "2026-01-22T09:58:00-08:00",
     "is_disruptor": false
   },
   {
@@ -390,14 +238,6 @@
     "image": "https://plantyou.com/wp-content/uploads/2026/01/DSC03712-scaled.jpg",
     "date": "2026-01-21T20:16:17+00:00",
     "is_disruptor": true
-  },
-  {
-    "blog_name": "VegNews",
-    "title": "These Frozen Vegan Pizzas Rival Delivery",
-    "link": "https://vegnews.com/frozen-vegan-pizzas",
-    "image": "https://vegnews.com/media/W1siZiIsIjUxNTY0L0RhaXlhLUZsYXRicmVhZC1QaXp6YS5wbmciXSxbInAiLCJ0aHVtYiIsIjE2MDB4OTQ2IyIseyJmb3JtYXQiOiJqcGcifV0sWyJwIiwib3B0aW1pemUiXV0/Daiya-Flatbread-Pizza.jpg?sha=6968d09c0acc606e",
-    "date": "2026-01-21T12:38:00-08:00",
-    "is_disruptor": false
   },
   {
     "blog_name": "Vegan Richa",

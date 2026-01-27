@@ -1,32 +1,29 @@
 # Feed Health Report
-**Last Run:** 2026-01-27T09:57:37.656579
-**Total Database Size:** 297
+**Last Run:** 2026-01-27T13:34:43.288131
+**Total Database Size:** 277
 
-| Blog Name | New Items Found Today | Status |
-|-----------|-----------------------|--------|
-| FitGreenMind | 0 | ❌ Error 404 |
-| The Canadian African | 0 | ❌ Error 404 |
-| Zacchary Bird | 0 | ❌ Error 404 |
-| Simple Vegan Blog | 0 | ✅ OK |
-| Vegan Richa | 0 | ✅ OK |
-| It Doesn't Taste Like Chicken | 0 | ✅ OK |
-| Sweet Potato Soul | 0 | ✅ OK |
-| Connoisseurus Veg | 0 | ✅ OK |
-| Lazy Cat Kitchen | 0 | ✅ OK |
-| The Full Helping | 0 | ✅ OK |
-| Love and Lemons | 0 | ✅ OK |
-| Minimalist Baker | 0 | ✅ OK |
-| Nora Cooks | 0 | ✅ OK |
-| Rainbow Plant Life | 0 | ✅ OK |
-| Elavegan | 0 | ✅ OK |
-| Running on Real Food | 0 | ✅ OK |
-| Namely Marly | 0 | ✅ OK |
-| The First Mess | 0 | ✅ OK |
-| My Darling Vegan | 0 | ✅ OK |
-| The Foodie Takes Flight | 0 | ✅ OK |
-| School Night Vegan | 0 | ✅ OK |
-| The Burger Dude | 0 | ✅ OK |
-| PlantYou | 0 | ✅ OK |
-| Chez Jorge | 0 | ✅ OK |
-| The Korean Vegan | 1 | ✅ OK |
-| VegNews | 8 | ✅ OK |
+| Blog Name | New Today | Total in DB | Status |
+|-----------|-----------|-------------|--------|
+| Chez Jorge | 0 | 0 | ✅ OK |
+| Connoisseurus Veg | 0 | 10 | ✅ OK |
+| Elavegan | 1 | 11 | ✅ OK |
+| It Doesn't Taste Like Chicken | 0 | 31 | ✅ OK |
+| Lazy Cat Kitchen | 0 | 10 | ✅ OK |
+| Love and Lemons | 0 | 10 | ✅ OK |
+| Minimalist Baker | 0 | 4 | ✅ OK |
+| My Darling Vegan | 0 | 11 | ✅ OK |
+| Namely Marly | 0 | 57 | ✅ OK |
+| Nora Cooks | 0 | 10 | ✅ OK |
+| PlantYou | 0 | 10 | ✅ OK |
+| Rainbow Plant Life | 0 | 10 | ✅ OK |
+| Running on Real Food | 0 | 10 | ✅ OK |
+| School Night Vegan | 0 | 0 | ✅ OK |
+| Simple Vegan Blog | 0 | 5 | ✅ OK |
+| Sweet Potato Soul | 0 | 10 | ✅ OK |
+| The Burger Dude | 0 | 12 | ✅ OK |
+| The First Mess | 0 | 12 | ✅ OK |
+| The Foodie Takes Flight | 0 | 10 | ✅ OK |
+| The Full Helping | 0 | 6 | ✅ OK |
+| The Korean Vegan | 0 | 11 | ✅ OK |
+| VegNews | 0 | 17 | ✅ OK |
+| Vegan Richa | 0 | 10 | ✅ OK |
