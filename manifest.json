@@ -1,20 +1,22 @@
 {
   "name": "Daily Vegan Recipes",
   "short_name": "Daily Vegan",
-  "start_url": "./index.html",
+  "start_url": "https://findvegdish.com/index.html",
   "display": "standalone",
   "background_color": "#f8f9fa",
   "theme_color": "#ffffff",
   "icons": [
     {
-      "src": "icon.jpg",
+      "src": "https://findvegdish.com/icon.jpg",
       "sizes": "192x192",
-      "type": "image/jpeg"
+      "type": "image/jpeg",
+      "purpose": "any maskable"
     },
     {
-      "src": "icon.jpg",
+      "src": "https://findvegdish.com/icon.jpg",
       "sizes": "512x512",
-      "type": "image/jpeg"
+      "type": "image/jpeg",
+      "purpose": "any maskable"
     }
   ]
 }
