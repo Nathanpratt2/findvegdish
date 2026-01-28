@@ -48,14 +48,6 @@
     "is_disruptor": true
   },
   {
-    "blog_name": "Love and Lemons",
-    "title": "Homemade Blue Cheese Dressing",
-    "link": "https://www.loveandlemons.com/blue-cheese-dressing/",
-    "image": "https://cdn.loveandlemons.com/wp-content/uploads/2026/01/blue-cheese-dressing.jpg",
-    "date": "2026-01-27T14:35:34+00:00",
-    "is_disruptor": false
-  },
-  {
     "blog_name": "Simple Vegan Blog",
     "title": "Vegan Baked Oatmeal",
     "link": "https://simpleveganblog.com/vegan-baked-oatmeal/",
@@ -149,14 +141,6 @@
     "link": "https://vegnews.com/recipes/vegan-chocolate-chip-banana-bread-breakfast-cookies",
     "image": "https://vegnews.com/media/W1siZiIsIjM0NzU4L1ZlZ05ld3MuQ2hvY29sYXRlQ2hpcEJhbmFuYUJyZWFkLmpwZyJdLFsicCIsInRodW1iIiwiMTYwMHg5NDYjIix7ImZvcm1hdCI6ImpwZyJ9XSxbInAiLCJvcHRpbWl6ZSJdXQ/VegNews.ChocolateChipBananaBread.jpg?sha=624c04d5e108a9a0",
     "date": "2026-01-26T14:00:00-08:00",
-    "is_disruptor": false
-  },
-  {
-    "blog_name": "Love and Lemons",
-    "title": "White Bean Chili",
-    "link": "https://www.loveandlemons.com/white-bean-chili/",
-    "image": "https://cdn.loveandlemons.com/wp-content/uploads/2022/02/white-bean-soup-1.jpg",
-    "date": "2026-01-25T14:00:49+00:00",
     "is_disruptor": false
   },
   {
@@ -304,14 +288,6 @@
     "is_disruptor": false
   },
   {
-    "blog_name": "Love and Lemons",
-    "title": "Baked Japanese Sweet Potato",
-    "link": "https://www.loveandlemons.com/japanese-sweet-potato/",
-    "image": "https://cdn.loveandlemons.com/wp-content/uploads/2026/01/japanese-sweet-potato-recipe.jpg",
-    "date": "2026-01-22T15:38:22+00:00",
-    "is_disruptor": false
-  },
-  {
     "blog_name": "Simple Vegan Blog",
     "title": "Vegan Lentil Soup",
     "link": "https://simpleveganblog.com/lentil-soup/",
@@ -373,14 +349,6 @@
     "link": "https://itdoesnttastelikechicken.com/vegan-fettuccine-alfredo/",
     "image": "https://itdoesnttastelikechicken.com/wp-content/uploads/2025/12/Easy-Vegan-Fettuccine-Alfredo-recipe-no-cashews-sauce-no-nuts-pasta-facebook.jpg",
     "date": "2026-01-21T10:00:00+00:00",
-    "is_disruptor": false
-  },
-  {
-    "blog_name": "Love and Lemons",
-    "title": "Miso Butter",
-    "link": "https://www.loveandlemons.com/miso-butter/",
-    "image": "https://cdn.loveandlemons.com/wp-content/uploads/2026/01/miso-butter-recipes.jpg",
-    "date": "2026-01-20T15:58:48+00:00",
     "is_disruptor": false
   },
   {
@@ -456,14 +424,6 @@
     "is_disruptor": false
   },
   {
-    "blog_name": "Love and Lemons",
-    "title": "Vegetable Soup",
-    "link": "https://www.loveandlemons.com/vegetable-soup/",
-    "image": "https://cdn.loveandlemons.com/wp-content/uploads/2014/10/vegetable-soup.jpg",
-    "date": "2026-01-18T14:00:33+00:00",
-    "is_disruptor": false
-  },
-  {
     "blog_name": "It Doesn't Taste Like Chicken",
     "title": "Bakery-Style Vegan Blueberry Muffins (1 Bowl!)",
     "link": "https://itdoesnttastelikechicken.com/vegan-blueberry-muffins/",
@@ -525,14 +485,6 @@
     "link": "https://runningonrealfood.com/tofu-soba-noodles/",
     "image": "https://runningonrealfood.com/wp-content/uploads/2026/01/tofu-soba-noodles-recipe-10.jpg",
     "date": "2026-01-15T22:08:04+00:00",
-    "is_disruptor": false
-  },
-  {
-    "blog_name": "Love and Lemons",
-    "title": "Healthy Banana Bread",
-    "link": "https://www.loveandlemons.com/healthy-banana-bread-recipe/",
-    "image": "https://cdn.loveandlemons.com/wp-content/uploads/2026/01/healthy-banana-bread.jpg",
-    "date": "2026-01-15T15:17:56+00:00",
     "is_disruptor": false
   },
   {
@@ -616,14 +568,6 @@
     "is_disruptor": false
   },
   {
-    "blog_name": "Love and Lemons",
-    "title": "No-Bake Energy Balls",
-    "link": "https://www.loveandlemons.com/energy-balls/",
-    "image": "https://cdn.loveandlemons.com/wp-content/uploads/2026/01/energy-bites-recipe.jpg",
-    "date": "2026-01-13T13:00:29+00:00",
-    "is_disruptor": false
-  },
-  {
     "blog_name": "Okonomi Kitchen",
     "title": "2-Ingredient Yogurt Cheesecake (Japan\u2019s Viral Recipe)",
     "link": "https://www.okonomikitchen.com/2-ingredient-yogurt-cheesecake/",
@@ -654,14 +598,6 @@
     "image": "https://plantyou.com/wp-content/uploads/2025/12/DSC02662-scaled.jpg",
     "date": "2026-01-11T19:23:15+00:00",
     "is_disruptor": true
-  },
-  {
-    "blog_name": "Love and Lemons",
-    "title": "Vegan Pho",
-    "link": "https://www.loveandlemons.com/vegan-pho/",
-    "image": "https://cdn.loveandlemons.com/wp-content/uploads/2026/01/vegan-pho-recipe.jpg",
-    "date": "2026-01-11T12:00:08+00:00",
-    "is_disruptor": false
   },
   {
     "blog_name": "It Doesn't Taste Like Chicken",
@@ -720,14 +656,6 @@
     "is_disruptor": true
   },
   {
-    "blog_name": "Love and Lemons",
-    "title": "Chickpea Curry",
-    "link": "https://www.loveandlemons.com/chickpea-curry/",
-    "image": "https://cdn.loveandlemons.com/wp-content/uploads/2026/01/chickpea-curry-recipe.jpg",
-    "date": "2026-01-08T15:02:43+00:00",
-    "is_disruptor": false
-  },
-  {
     "blog_name": "Running on Real Food",
     "title": "Warm Farro Salad",
     "link": "https://runningonrealfood.com/warm-farro-salad/",
@@ -784,14 +712,6 @@
     "is_disruptor": true
   },
   {
-    "blog_name": "Love and Lemons",
-    "title": "35 Vegan Meal Prep Ideas",
-    "link": "https://www.loveandlemons.com/vegan-meal-prep-ideas/",
-    "image": "https://cdn.loveandlemons.com/wp-content/uploads/2026/01/vegan-meal-prep-ideas.jpg",
-    "date": "2026-01-06T14:40:39+00:00",
-    "is_disruptor": false
-  },
-  {
     "blog_name": "The Foodie Takes Flight",
     "title": "Easy All-Around Sauce",
     "link": "https://thefoodietakesflight.com/easy-all-around-sauce/",
@@ -821,14 +741,6 @@
     "link": "https://www.noracooks.com/golden-orzo-soup-with-chickpeas/",
     "image": "https://www.noracooks.com/wp-content/uploads/2025/12/golden-orzo-soup-1-2-1200x1200.jpg",
     "date": "2026-01-05T16:49:07+00:00",
-    "is_disruptor": false
-  },
-  {
-    "blog_name": "Love and Lemons",
-    "title": "Love & Lemons Cooking Club \u2013 January!",
-    "link": "https://www.loveandlemons.com/love-lemons-cooking-club-january-6/",
-    "image": "https://cdn.loveandlemons.com/wp-content/uploads/2025/12/white-bean-soup-1.jpg",
-    "date": "2026-01-05T16:32:44+00:00",
     "is_disruptor": false
   },
   {
@@ -2328,14 +2240,6 @@
     "is_disruptor": false
   },
   {
-    "blog_name": "Love and Lemons",
-    "title": "By: Vicky Marks",
-    "link": "https://www.loveandlemons.com/vegan-recipes/comment-page-2/#comment-719175",
-    "image": "https://cdn.loveandlemons.com/wp-content/uploads/opengraph/2019/12/vegan-recipes.jpg",
-    "date": "2025-08-19T07:26:35+00:00",
-    "is_disruptor": false
-  },
-  {
     "blog_name": "My Darling Vegan",
     "title": "13 Vegan lunchbox ideas for back to school",
     "link": "https://www.mydarlingvegan.com/13-vegan-lunchbox-ideas-for-back-to-school/",
@@ -2373,30 +2277,6 @@
     "link": "https://www.thefullhelping.com/baked-curried-tofu-cubes/",
     "image": "https://www.thefullhelping.com/wp-content/uploads/2025/06/baked-curried-tofu-cubes-6-1024x1536.jpg",
     "date": "2025-07-07T11:56:46+00:00",
-    "is_disruptor": false
-  },
-  {
-    "blog_name": "Love and Lemons",
-    "title": "By: Jeanine Donofrio",
-    "link": "https://www.loveandlemons.com/vegan-recipes/comment-page-2/#comment-705831",
-    "image": "https://cdn.loveandlemons.com/wp-content/uploads/opengraph/2019/12/vegan-recipes.jpg",
-    "date": "2025-07-02T14:37:46+00:00",
-    "is_disruptor": false
-  },
-  {
-    "blog_name": "Love and Lemons",
-    "title": "By: Phoebe Moore (L&L Recipe Developer)",
-    "link": "https://www.loveandlemons.com/vegan-recipes/comment-page-2/#comment-705814",
-    "image": "https://cdn.loveandlemons.com/wp-content/uploads/opengraph/2019/12/vegan-recipes.jpg",
-    "date": "2025-07-02T14:25:15+00:00",
-    "is_disruptor": false
-  },
-  {
-    "blog_name": "Love and Lemons",
-    "title": "By: Bobbie Halvorson",
-    "link": "https://www.loveandlemons.com/vegan-recipes/comment-page-2/#comment-705796",
-    "image": "https://cdn.loveandlemons.com/wp-content/uploads/opengraph/2019/12/vegan-recipes.jpg",
-    "date": "2025-07-02T13:39:26+00:00",
     "is_disruptor": false
   },
   {
@@ -2496,22 +2376,6 @@
     "is_disruptor": false
   },
   {
-    "blog_name": "Love and Lemons",
-    "title": "By: Sally Witting",
-    "link": "https://www.loveandlemons.com/vegan-recipes/comment-page-1/#comment-684822",
-    "image": "https://cdn.loveandlemons.com/wp-content/uploads/opengraph/2019/12/vegan-recipes.jpg",
-    "date": "2025-03-15T01:01:23+00:00",
-    "is_disruptor": false
-  },
-  {
-    "blog_name": "Love and Lemons",
-    "title": "By: Sally Witting",
-    "link": "https://www.loveandlemons.com/vegan-recipes/comment-page-1/#comment-684821",
-    "image": "https://cdn.loveandlemons.com/wp-content/uploads/opengraph/2019/12/vegan-recipes.jpg",
-    "date": "2025-03-15T00:59:00+00:00",
-    "is_disruptor": false
-  },
-  {
     "blog_name": "Namely Marly",
     "title": "30 High-Protein Vegan Dinners",
     "link": "https://namelymarly.com/vegan-protein-dinners/",
@@ -2541,22 +2405,6 @@
     "link": "https://namelymarly.com/chickpea-brownies/",
     "image": "https://namelymarly.com/wp-content/uploads/2025/01/Chickpea-Brownies-0149-3x2-web.jpg",
     "date": "2025-02-26T12:51:00+00:00",
-    "is_disruptor": false
-  },
-  {
-    "blog_name": "Love and Lemons",
-    "title": "By: Phoebe Moore (L&L Recipe Developer)",
-    "link": "https://www.loveandlemons.com/vegan-recipes/comment-page-1/#comment-682576",
-    "image": "https://cdn.loveandlemons.com/wp-content/uploads/opengraph/2019/12/vegan-recipes.jpg",
-    "date": "2025-02-21T23:01:01+00:00",
-    "is_disruptor": false
-  },
-  {
-    "blog_name": "Love and Lemons",
-    "title": "By: Larry Jenkins",
-    "link": "https://www.loveandlemons.com/vegan-recipes/comment-page-1/#comment-682553",
-    "image": "https://cdn.loveandlemons.com/wp-content/uploads/opengraph/2019/12/vegan-recipes.jpg",
-    "date": "2025-02-21T22:48:12+00:00",
     "is_disruptor": false
   },
   {

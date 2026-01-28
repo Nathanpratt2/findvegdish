@@ -1,12 +1,10 @@
 # Feed Health Report
-**Last Run:** 2026-01-28T13:16:12.479609
-**Total Database Size:** 326
+**Last Run:** 2026-01-28T13:27:24.498224
+**Total Database Size:** 307
 
 | Blog Name | New Today | Total in DB | Status |
 |-----------|-----------|-------------|--------|
-| Love and Lemons | 0 | 19 | Skipped/DB Only |
-| The Full Helping | 0 | 6 | ❌ Crash: HTTPSConnectionPool( |
-| Connoisseurus Veg | 1 | 11 | ✅ OK |
+| Connoisseurus Veg | 0 | 11 | ✅ OK |
 | Elavegan | 0 | 11 | ✅ OK |
 | From My Bowl | 0 | 10 | ✅ OK |
 | It Doesn't Taste Like Chicken | 0 | 32 | ✅ OK |
@@ -25,7 +23,8 @@
 | Sweet Potato Soul | 0 | 10 | ✅ OK |
 | The Burger Dude | 0 | 12 | ✅ OK |
 | The First Mess | 0 | 13 | ✅ OK |
-| The Foodie Takes Flight | 1 | 11 | ✅ OK |
+| The Foodie Takes Flight | 0 | 11 | ✅ OK |
+| The Full Helping | 0 | 6 | ✅ OK |
 | The Korean Vegan | 0 | 11 | ✅ OK |
 | VegNews | 0 | 20 | ✅ OK |
-| Vegan Richa | 1 | 11 | ✅ OK |
+| Vegan Richa | 0 | 11 | ✅ OK |
