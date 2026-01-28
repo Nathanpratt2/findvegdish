@@ -58,6 +58,13 @@ recipes = [r for r in recipes if not (r['blog_name'] == "VegNews" and "/recipes/
 if len(recipes) < initial_count:
     print(f"Cleaned {initial_count - len(recipes)} non-recipe VegNews articles from database.")
 
+# --- CLEANSE DATABASE: REMOVE LOVE AND LEMONS entirely ---
+initial_count = len(recipes)
+recipes = [r for r in recipes if r['blog_name'] != "Love and Lemons"]
+
+if len(recipes) < initial_count:
+    print(f"Cleaned {initial_count - len(recipes)} Love and Lemons recipes from database.")
+
 # Create set for deduplication
 existing_links = {r['link'] for r in recipes}
 
