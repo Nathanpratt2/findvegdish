@@ -17,7 +17,7 @@ TOP_BLOGGERS = [
     ("VegNews", "https://vegnews.com/feed"), 
     ("Lazy Cat Kitchen", "https://www.lazycatkitchen.com/feed/"),
     ("The Full Helping", "https://thefullhelping.com/feed/"),
-    ("Love and Lemons", "https://www.loveandlemons.com/feed/"),
+    ("Love and Lemons", "https://www.loveandlemons.com/vegan-recipes/feed/"),
     ("Minimalist Baker", "https://minimalistbaker.com/recipes/vegan/feed/"), 
     ("Nora Cooks", "https://www.noracooks.com/feed/"),
     ("Rainbow Plant Life", "https://rainbowplantlife.com/feed/"),
