@@ -1,5 +1,21 @@
 [
   {
+    "blog_name": "Vegan Richa",
+    "title": "Spinach Mushroom Beans (1-pan, 30 minutes)",
+    "link": "https://www.veganricha.com/spinach-mushroom-beans/",
+    "image": "https://www.veganricha.com/wp-content/uploads/2025/10/Spinach-Mushroom-Beans-1542.jpg",
+    "date": "2026-01-28T12:00:00+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "Connoisseurus Veg",
+    "title": "Slow Cooker Baked Beans",
+    "link": "https://www.connoisseurusveg.com/slow-cooker-baked-beans/",
+    "image": "https://www.connoisseurusveg.com/wp-content/uploads/2026/01/slow-cooke-baked-beans-sq-2.jpg",
+    "date": "2026-01-28T12:00:00+00:00",
+    "is_disruptor": false
+  },
+  {
     "blog_name": "It Doesn't Taste Like Chicken",
     "title": "Easy Vegan Chocolate Cupcakes (Moist & Fluffy!)",
     "link": "https://itdoesnttastelikechicken.com/vegan-chocolate-cupcakes/",
@@ -13,6 +29,14 @@
     "link": "https://thefirstmess.com/2026/01/28/vegan-hamburger-helper-lentils/",
     "image": "https://thefirstmess.com/wp-content/uploads/2026/01/vegan-hamburger-helper-lentils-03.jpg",
     "date": "2026-01-28T06:59:00+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "The Foodie Takes Flight",
+    "title": "Sweet Chili Calamansi Udon",
+    "link": "https://thefoodietakesflight.com/sweet-chili-calamansi-udon/",
+    "image": "https://thefoodietakesflight.com/wp-content/uploads/2026/01/Sweet-Chili-Calamansi-Udon-16-of-42-768x1024.jpg",
+    "date": "2026-01-28T04:50:00+00:00",
     "is_disruptor": false
   },
   {
