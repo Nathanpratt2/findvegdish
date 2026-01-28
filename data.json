@@ -1,5 +1,37 @@
 [
   {
+    "blog_name": "The First Mess",
+    "title": "Vegan Hamburger Helper with Lentils",
+    "link": "https://thefirstmess.com/2026/01/28/vegan-hamburger-helper-lentils/",
+    "image": "https://thefirstmess.com/wp-content/uploads/2026/01/vegan-hamburger-helper-lentils-03.jpg",
+    "date": "2026-01-28T06:59:00+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "PlantYou",
+    "title": "One Pot Creamy Pasta",
+    "link": "https://plantyou.com/one-pot-creamy-pasta/",
+    "image": "https://plantyou.com/wp-content/uploads/2026/01/DSC03633-scaled.jpg",
+    "date": "2026-01-27T17:26:09+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "Love and Lemons",
+    "title": "Homemade Blue Cheese Dressing",
+    "link": "https://www.loveandlemons.com/blue-cheese-dressing/",
+    "image": "https://cdn.loveandlemons.com/wp-content/uploads/2026/01/blue-cheese-dressing.jpg",
+    "date": "2026-01-27T14:35:34+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "Simple Vegan Blog",
+    "title": "Vegan Baked Oatmeal",
+    "link": "https://simpleveganblog.com/vegan-baked-oatmeal/",
+    "image": "https://simpleveganblog.com/wp-content/uploads/2026/01/vegan-baked-oatmeal-social.jpg",
+    "date": "2026-01-27T14:00:00+00:00",
+    "is_disruptor": false
+  },
+  {
     "blog_name": "Okonomi Kitchen",
     "title": "Cinnamon Roll Salt Bread",
     "link": "https://www.okonomikitchen.com/cinnamon-roll-salt-bread/",
@@ -30,6 +62,30 @@
     "image": "https://frommybowl.com/wp-content/uploads/2026/01/Crispy_Lentil_Wraps_Vegan_FromMyBowl-10.jpg",
     "date": "2026-01-27T11:00:00+00:00",
     "is_disruptor": true
+  },
+  {
+    "blog_name": "VegNews",
+    "title": "Fishless Baja Tacos With Fresh Mango Salsa",
+    "link": "https://vegnews.com/recipes/fishless-baja-tacos",
+    "image": "https://vegnews.com/media/W1siZiIsIjEwNTU0L1ZlZ05ld3MuRmlzaGxlc3NCYWphVGFjb3MucG5nIl0sWyJwIiwidGh1bWIiLCIxNjAweDk0NiMiLHsiZm9ybWF0IjoianBnIn1dLFsicCIsIm9wdGltaXplIl1d/VegNews.FishlessBajaTacos.jpg?sha=1ec979ceb858a7d8",
+    "date": "2026-01-27T09:08:00-08:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "VegNews",
+    "title": "Black and White Plant-Based Sushi Rolls",
+    "link": "https://vegnews.com/recipes/vegan-black-andamp-white-sushi-rolls",
+    "image": "https://vegnews.com/media/W1siZiIsIjExOTY3L1ZlZ05ld3MuQmxhY2tSaWNlU3VzaGlSb2xscy5GZWF0dXJlLnBuZyJdLFsicCIsInRodW1iIiwiMTYwMHg5NDYjIix7ImZvcm1hdCI6ImpwZyJ9XSxbInAiLCJvcHRpbWl6ZSJdXQ/VegNews.BlackRiceSushiRolls.Feature.jpg?sha=01b8f1ce567eab43",
+    "date": "2026-01-27T09:05:00-08:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "VegNews",
+    "title": "Creamy Maple Matcha Pudding",
+    "link": "https://vegnews.com/recipes/vegan-matcha-pudding",
+    "image": "https://vegnews.com/media/W1siZiIsIjExODg2L1ZlZ05ld3MuTWF0Y2hhUHVkZGluZy5wbmciXSxbInAiLCJ0aHVtYiIsIjE2MDB4OTQ2IyIseyJmb3JtYXQiOiJqcGcifV0sWyJwIiwib3B0aW1pemUiXV0/VegNews.MatchaPudding.jpg?sha=afbd1903729dbe24",
+    "date": "2026-01-27T09:00:00-08:00",
+    "is_disruptor": false
   },
   {
     "blog_name": "The Korean Vegan",
