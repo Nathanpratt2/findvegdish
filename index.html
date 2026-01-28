@@ -264,6 +264,36 @@
             font-style: italic;
             display: none;
         }
+
+        /* --- Scroll to Top Button --- */
+        #scrollTopBtn {
+            display: none; /* Hidden by default */
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #27ae60;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: background-color 0.3s, transform 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #scrollTopBtn:hover {
+            background-color: #219150;
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 400px) {
+            #scrollTopBtn { bottom: 20px; right: 20px; padding: 12px; }
+        }
     </style>
 </head>
 <body>
@@ -279,7 +309,6 @@
     <div class="controls">
         <button class="btn" id="mealsBtn" onclick="toggleCategory('meal')">🍝 Meals Only</button>
         <button class="btn" id="sweetsBtn" onclick="toggleCategory('sweet')">🍪 Sweets Only</button>
-        <!-- NEW BUTTON -->
         <button class="btn" id="proteinBtn" onclick="toggleCategory('protein')">💪 High Protein</button>
         <button class="btn" onclick="shuffleRecipes()">🔀 Shuffle</button>
 
@@ -293,6 +322,13 @@
     <!-- Recipes load here -->
 </div>
 <div id="loader">Loading more recipes...</div>
+
+<!-- Scroll to Top Button -->
+<button id="scrollTopBtn" title="Go to top">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="white">
+        <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+    </svg>
+</button>
 
 <footer>
     <p>Updated daily. Images belong to respective authors.</p>
@@ -323,7 +359,6 @@
         'meatball', 'loaf', 'skillet', 'gratin', 'pad thai', 'ramen'
     ];
 
-    // NEW PROTEIN KEYWORDS
     const PROTEIN_KEYWORDS = [
         'tofu', 'tempeh', 'seitan', 'tvp', 'lentil', 'bean', 'chickpea',
         'edamame', 'soy', 'quinoa', 'peanut', 'meatball', 'burger',
@@ -425,11 +460,25 @@
     // --- INFINITE SCROLL HANDLER ---
     function setupInfiniteScroll() {
         window.addEventListener('scroll', () => {
+            // Check for scroll to top button visibility
+            const scrollBtn = document.getElementById("scrollTopBtn");
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                scrollBtn.style.display = "flex";
+            } else {
+                scrollBtn.style.display = "none";
+            }
+
+            // Check if near bottom to load more
             if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 500) {
                 if (renderedCount < currentContext.length) {
                     renderNextBatch();
                 }
             }
+        });
+        
+        // Scroll To Top Click Event
+        document.getElementById("scrollTopBtn").addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     }
 
@@ -452,7 +501,7 @@
         activeCategory = null;
         document.getElementById('mealsBtn').classList.remove('active-filter');
         document.getElementById('sweetsBtn').classList.remove('active-filter');
-        document.getElementById('proteinBtn').classList.remove('active-filter'); // Clear protein
+        document.getElementById('proteinBtn').classList.remove('active-filter');
         resetView(allRecipes);
     }
 
