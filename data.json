@@ -1,5 +1,13 @@
 [
   {
+    "blog_name": "It Doesn't Taste Like Chicken",
+    "title": "Easy Vegan Chocolate Cupcakes (Moist & Fluffy!)",
+    "link": "https://itdoesnttastelikechicken.com/vegan-chocolate-cupcakes/",
+    "image": "https://itdoesnttastelikechicken.com/wp-content/uploads/2025/12/Easy-Vegan-Chocolate-Cupcakes-recipe-no-applesauce-with-oil-gluten-free-facebook.jpg",
+    "date": "2026-01-28T10:00:00+00:00",
+    "is_disruptor": false
+  },
+  {
     "blog_name": "The First Mess",
     "title": "Vegan Hamburger Helper with Lentils",
     "link": "https://thefirstmess.com/2026/01/28/vegan-hamburger-helper-lentils/",
@@ -2296,6 +2304,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Love and Lemons",
+    "title": "By: Vicky Marks",
+    "link": "https://www.loveandlemons.com/vegan-recipes/comment-page-2/#comment-719175",
+    "image": "https://cdn.loveandlemons.com/wp-content/uploads/opengraph/2019/12/vegan-recipes.jpg",
+    "date": "2025-08-19T07:26:35+00:00",
+    "is_disruptor": false
+  },
+  {
     "blog_name": "My Darling Vegan",
     "title": "13 Vegan lunchbox ideas for back to school",
     "link": "https://www.mydarlingvegan.com/13-vegan-lunchbox-ideas-for-back-to-school/",
@@ -2333,6 +2349,30 @@
     "link": "https://www.thefullhelping.com/baked-curried-tofu-cubes/",
     "image": "https://www.thefullhelping.com/wp-content/uploads/2025/06/baked-curried-tofu-cubes-6-1024x1536.jpg",
     "date": "2025-07-07T11:56:46+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "Love and Lemons",
+    "title": "By: Jeanine Donofrio",
+    "link": "https://www.loveandlemons.com/vegan-recipes/comment-page-2/#comment-705831",
+    "image": "https://cdn.loveandlemons.com/wp-content/uploads/opengraph/2019/12/vegan-recipes.jpg",
+    "date": "2025-07-02T14:37:46+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "Love and Lemons",
+    "title": "By: Phoebe Moore (L&L Recipe Developer)",
+    "link": "https://www.loveandlemons.com/vegan-recipes/comment-page-2/#comment-705814",
+    "image": "https://cdn.loveandlemons.com/wp-content/uploads/opengraph/2019/12/vegan-recipes.jpg",
+    "date": "2025-07-02T14:25:15+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "Love and Lemons",
+    "title": "By: Bobbie Halvorson",
+    "link": "https://www.loveandlemons.com/vegan-recipes/comment-page-2/#comment-705796",
+    "image": "https://cdn.loveandlemons.com/wp-content/uploads/opengraph/2019/12/vegan-recipes.jpg",
+    "date": "2025-07-02T13:39:26+00:00",
     "is_disruptor": false
   },
   {
@@ -2432,6 +2472,22 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Love and Lemons",
+    "title": "By: Sally Witting",
+    "link": "https://www.loveandlemons.com/vegan-recipes/comment-page-1/#comment-684822",
+    "image": "https://cdn.loveandlemons.com/wp-content/uploads/opengraph/2019/12/vegan-recipes.jpg",
+    "date": "2025-03-15T01:01:23+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "Love and Lemons",
+    "title": "By: Sally Witting",
+    "link": "https://www.loveandlemons.com/vegan-recipes/comment-page-1/#comment-684821",
+    "image": "https://cdn.loveandlemons.com/wp-content/uploads/opengraph/2019/12/vegan-recipes.jpg",
+    "date": "2025-03-15T00:59:00+00:00",
+    "is_disruptor": false
+  },
+  {
     "blog_name": "Namely Marly",
     "title": "30 High-Protein Vegan Dinners",
     "link": "https://namelymarly.com/vegan-protein-dinners/",
@@ -2461,6 +2517,22 @@
     "link": "https://namelymarly.com/chickpea-brownies/",
     "image": "https://namelymarly.com/wp-content/uploads/2025/01/Chickpea-Brownies-0149-3x2-web.jpg",
     "date": "2025-02-26T12:51:00+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "Love and Lemons",
+    "title": "By: Phoebe Moore (L&L Recipe Developer)",
+    "link": "https://www.loveandlemons.com/vegan-recipes/comment-page-1/#comment-682576",
+    "image": "https://cdn.loveandlemons.com/wp-content/uploads/opengraph/2019/12/vegan-recipes.jpg",
+    "date": "2025-02-21T23:01:01+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "Love and Lemons",
+    "title": "By: Larry Jenkins",
+    "link": "https://www.loveandlemons.com/vegan-recipes/comment-page-1/#comment-682553",
+    "image": "https://cdn.loveandlemons.com/wp-content/uploads/opengraph/2019/12/vegan-recipes.jpg",
+    "date": "2025-02-21T22:48:12+00:00",
     "is_disruptor": false
   },
   {
