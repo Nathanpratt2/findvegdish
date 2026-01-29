@@ -1,6 +1,6 @@
 # Feed Health Report
-**Last Run:** 2026-01-28T13:27:24.498224
-**Total Database Size:** 307
+**Last Run:** 2026-01-29T09:36:21.769282
+**Total Database Size:** 312
 
 | Blog Name | New Today | Total in DB | Status |
 |-----------|-----------|-------------|--------|
@@ -10,7 +10,7 @@
 | It Doesn't Taste Like Chicken | 0 | 32 | ✅ OK |
 | Lazy Cat Kitchen | 0 | 10 | ✅ OK |
 | Minimalist Baker | 0 | 4 | ✅ OK |
-| My Darling Vegan | 0 | 11 | ✅ OK |
+| My Darling Vegan | 1 | 12 | ✅ OK |
 | Namely Marly | 0 | 57 | ✅ OK |
 | Nora Cooks | 0 | 10 | ✅ OK |
 | Okonomi Kitchen | 0 | 10 | ✅ OK |
@@ -25,6 +25,6 @@
 | The First Mess | 0 | 13 | ✅ OK |
 | The Foodie Takes Flight | 0 | 11 | ✅ OK |
 | The Full Helping | 0 | 6 | ✅ OK |
-| The Korean Vegan | 0 | 11 | ✅ OK |
-| VegNews | 0 | 20 | ✅ OK |
+| The Korean Vegan | 1 | 12 | ✅ OK |
+| VegNews | 3 | 23 | ✅ OK |
 | Vegan Richa | 0 | 11 | ✅ OK |

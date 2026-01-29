@@ -1,5 +1,21 @@
 [
   {
+    "blog_name": "The Korean Vegan",
+    "title": "8-ingredient Easy and Delicious Lemon Pepper Pasta.",
+    "link": "https://thekoreanvegan.com/easy-and-delicious-lemon-pepper-pasta/",
+    "image": "https://thekoreanvegan.com/wp-content/uploads/2026/01/20260128-Screenshot-2026-01-27-at-4.17.59-PM.jpg",
+    "date": "2026-01-28T23:44:02+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "My Darling Vegan",
+    "title": "Vegan Cabbage Soup (Easy, Hearty & One-pot)",
+    "link": "https://www.mydarlingvegan.com/vegan-cabbage-soup-easy-hearty-one-pot/",
+    "image": "https://www.mydarlingvegan.com/wp-content/uploads/2026/01/vegan_caggage_soup_topview.jpg",
+    "date": "2026-01-28T21:43:11+00:00",
+    "is_disruptor": false
+  },
+  {
     "blog_name": "Vegan Richa",
     "title": "Spinach Mushroom Beans (1-pan, 30 minutes)",
     "link": "https://www.veganricha.com/spinach-mushroom-beans/",
@@ -21,6 +37,30 @@
     "link": "https://itdoesnttastelikechicken.com/vegan-chocolate-cupcakes/",
     "image": "https://itdoesnttastelikechicken.com/wp-content/uploads/2025/12/Easy-Vegan-Chocolate-Cupcakes-recipe-no-applesauce-with-oil-gluten-free-facebook.jpg",
     "date": "2026-01-28T10:00:00+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "VegNews",
+    "title": "Plant-Based Cajun-Fried Shrimp With R\u00e9moulade Sauce",
+    "link": "https://vegnews.com/recipes/vegan-cajun-fried-shrimp-with-remoulade",
+    "image": "https://vegnews.com/media/W1siZiIsIjM5MDExL1ZlZ05ld3MuQ2FqdW5TaHJpbXAuanBnIl0sWyJwIiwidGh1bWIiLCIxNjAweDk0NiMiLHsiZm9ybWF0IjoianBnIn1dLFsicCIsIm9wdGltaXplIl1d/VegNews.CajunShrimp.jpg?sha=2b7b7ff1685da2a1",
+    "date": "2026-01-28T09:05:00-08:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "VegNews",
+    "title": "Red Lentil Marinara Spaghetti",
+    "link": "https://vegnews.com/recipes/vegan-red-lentil-marinara-spaghetti",
+    "image": "https://vegnews.com/media/W1siZiIsIjIyMTE4L1ZlZ05ld3MuUmVkIExlbnRpbCBNYXJpbmFyYSBTcGFnaGV0dGkuanBnIl0sWyJwIiwidGh1bWIiLCIxNjAweDk0NiMiLHsiZm9ybWF0IjoianBnIn1dLFsicCIsIm9wdGltaXplIl1d/VegNews.Red%20Lentil%20Marinara%20Spaghetti.jpg?sha=feb503e92cb2cfce",
+    "date": "2026-01-28T09:00:00-08:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "VegNews",
+    "title": "Chocolate-Covered Hemp Rice Crispy Treats",
+    "link": "https://vegnews.com/recipes/chocolate-covered-hemp-rice-crispy-treats",
+    "image": "https://vegnews.com/media/W1siZiIsIjIwMDk1L1ZlZ05ld3MuSGVtcGllcy5qcGcucG5nIl0sWyJwIiwidGh1bWIiLCIxNjAweDk0NiMiLHsiZm9ybWF0IjoianBnIn1dLFsicCIsIm9wdGltaXplIl1d/VegNews.Hempies.jpg.jpg?sha=30a24f3532465cb9",
+    "date": "2026-01-28T08:55:00-08:00",
     "is_disruptor": false
   },
   {
