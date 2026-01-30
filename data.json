@@ -1,5 +1,85 @@
 [
   {
+    "blog_name": "The Burger Dude",
+    "title": "Flying Dutchman Burger",
+    "link": "https://theeburgerdude.com/flying-dutchman-burger/",
+    "image": "https://theeburgerdude.com/wp-content/uploads/2026/01/Flying-Dutchman-Feature-02-1024x1024.jpg",
+    "date": "2026-01-29T21:52:15+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "The Burger Dude",
+    "title": "In-N-Out Sauce",
+    "link": "https://theeburgerdude.com/in-n-out-sauce/",
+    "image": "https://theeburgerdude.com/wp-content/uploads/2026/01/In-N-Out-Sauce-1-1024x1024.jpg",
+    "date": "2026-01-29T20:51:36+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "The Burger Dude",
+    "title": "Vegan In-N-Out Burgers",
+    "link": "https://theeburgerdude.com/vegan-in-out-burgers/",
+    "image": "https://theeburgerdude.com/wp-content/uploads/2026/01/Double-Double-New-02-scaled.jpg",
+    "date": "2026-01-29T20:42:12+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "The Burger Dude",
+    "title": "Animal Fries",
+    "link": "https://theeburgerdude.com/animal-fries/",
+    "image": "https://theeburgerdude.com/wp-content/uploads/2026/01/Animal-Fries-Feature-3-1024x1024.jpg",
+    "date": "2026-01-29T20:39:04+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "Rainbow Plant Life",
+    "title": "Gremolata",
+    "link": "https://rainbowplantlife.com/gremolata/",
+    "image": "https://rainbowplantlife.com/wp-content/uploads/2026/01/Gremolata-hero-2.jpg",
+    "date": "2026-01-29T20:15:35+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "Running on Real Food",
+    "title": "Spinach Lentil Curry",
+    "link": "https://runningonrealfood.com/spinach-lentil-curry/",
+    "image": "https://runningonrealfood.com/wp-content/uploads/2026/01/easy-spinach-red-lentil-curry-recipe-6.jpg",
+    "date": "2026-01-29T15:19:42+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "Simple Vegan Blog",
+    "title": "Vegan Breakfast Casserole",
+    "link": "https://simpleveganblog.com/vegan-breakfast-casserole/",
+    "image": "https://simpleveganblog.com/wp-content/uploads/2026/01/vegan-breakfast-casserole-social.jpg",
+    "date": "2026-01-29T14:00:00+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "VegNews",
+    "title": "Riced Cauliflower Bowl With Chickpeas and Pistachio Dukkah",
+    "link": "https://vegnews.com/recipes/vegan-riced-cauliflower-bowl-with-chickpeas-and-pistachio-dukkah",
+    "image": "https://vegnews.com/media/W1siZiIsIjE4NzAwL1ZlZ05ld3MuUmljZWRDYXVsaWZsb3dlckJvd2x3aXRoQ2hpY2twZWFzJlBpc3RhY2hpb0R1a2thaC5qcGciXSxbInAiLCJ0aHVtYiIsIjE2MDB4OTQ2IyIseyJmb3JtYXQiOiJqcGcifV0sWyJwIiwib3B0aW1pemUiXV0/VegNews.RicedCauliflowerBowlwithChickpeas%26PistachioDukkah.jpg?sha=c93299aa4eb9c4c4",
+    "date": "2026-01-29T08:04:00-08:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "VegNews",
+    "title": "Coconut Lemon Ube Cheesecake",
+    "link": "https://vegnews.com/recipes/vegan-lemon-ube-cheesecake",
+    "image": "https://vegnews.com/media/W1siZiIsIjQwNDQyL1ZlZ05ld3MuTGVtb251YmVjaGVlc2VjYWtlLmRlYm9yYWggZ2xlYXNvbi5qcGciXSxbInAiLCJ0aHVtYiIsIjE2MDB4OTQ2IyIseyJmb3JtYXQiOiJqcGcifV0sWyJwIiwib3B0aW1pemUiXV0/VegNews.Lemonubecheesecake.deborah%20gleason.jpg?sha=124995b3cc769875",
+    "date": "2026-01-29T08:00:00-08:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "VegNews",
+    "title": "Easy Homemade Root Vegetable Crisps",
+    "link": "https://vegnews.com/recipes/root-vegetable-chips",
+    "image": "https://vegnews.com/media/W1siZiIsIjE5NDI2L1ZlZ05ld3MuUm9vdFZlZ0NoaXBzLmpwZyJdLFsicCIsInRodW1iIiwiMTYwMHg5NDYjIix7ImZvcm1hdCI6ImpwZyJ9XSxbInAiLCJvcHRpbWl6ZSJdXQ/VegNews.RootVegChips.jpg?sha=3b94b90b35cc7859",
+    "date": "2026-01-29T07:55:00-08:00",
+    "is_disruptor": false
+  },
+  {
     "blog_name": "The Korean Vegan",
     "title": "8-ingredient Easy and Delicious Lemon Pepper Pasta.",
     "link": "https://thekoreanvegan.com/easy-and-delicious-lemon-pepper-pasta/",
