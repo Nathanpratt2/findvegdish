@@ -35,7 +35,11 @@ DISRUPTORS = [
     ("PlantYou", "https://plantyou.com/feed/"),
     ("From My Bowl", "https://frommybowl.com/feed/"),
     ("Rabbit and Wolves", "https://www.rabbitandwolves.com/feed/"),
-    ("Okonomi Kitchen", "https://okonomikitchen.com/feed/")
+    ("Okonomi Kitchen", "https://okonomikitchen.com/feed/"),
+    ("Vegan Scratch Kitchen", "https://veganscratchkitchen.com/feed/"),
+    ("Turnip Vegan", "https://turnipvegan.com/feed/"),
+    ("Addicted to Dates", "https://addictedtodates.com/feed/"),
+    ("Flora & Vino", "https://www.floraandvino.com/feed/"),
 ]
 
 ALL_FEEDS = TOP_BLOGGERS + DISRUPTORS
