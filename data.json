@@ -2704,6 +2704,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Turnip Vegan",
+    "title": "My Top 5 Kitchen Appliances for Plant-Based Cooking",
+    "link": "https://turnipvegan.com/blogs/news/my-top-5-kitchen-appliances-for-plant-based-cooking",
+    "image": "http://turnipvegan.com/cdn/shop/articles/Top_5_Cooking_Appliances_for_Plant-base_cooking.png?v=1744403672",
+    "date": "2025-04-11T13:01:00-07:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "The Full Helping",
     "title": "Savory Vegan Risotto with Mixed Mushrooms",
     "link": "https://www.thefullhelping.com/savory-vegan-risotto-with-mixed-mushrooms/",
@@ -2744,12 +2752,28 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Turnip Vegan",
+    "title": "Jerk-Spiced Walnut Bombs",
+    "link": "https://turnipvegan.com/blogs/news/jerk-spiced-walnut-bombs",
+    "image": "http://turnipvegan.com/cdn/shop/articles/DSC00302_9b52d6a4-4c67-4717-8966-1ea4a393e581.jpg?v=1742584531",
+    "date": "2025-03-21T12:15:28-07:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Namely Marly",
     "title": "30 High-Protein Vegan Dinners",
     "link": "https://namelymarly.com/vegan-protein-dinners/",
     "image": "https://namelymarly.com/wp-content/uploads/2025/03/high-protein-dinners-promo-2x3-1.jpg",
     "date": "2025-03-13T19:50:35+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Turnip Vegan",
+    "title": "Cookie Crisp Cereal - Homemade Cereal Part 3",
+    "link": "https://turnipvegan.com/blogs/news/cookie-crisp-cereal-homemade-cereal-part-3",
+    "image": "http://turnipvegan.com/cdn/shop/articles/DSC00272-2.jpg?v=1741707095",
+    "date": "2025-03-11T08:31:30-07:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "Namely Marly",
@@ -2768,12 +2792,28 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Turnip Vegan",
+    "title": "Shiitake Mushroom Bacon",
+    "link": "https://turnipvegan.com/blogs/news/shiitake-mushroom-bacon",
+    "image": "http://turnipvegan.com/cdn/shop/articles/Screen_Shot_2022-11-28_at_4.45.06_PM.png?v=1740680507",
+    "date": "2025-02-27T10:21:40-08:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Namely Marly",
     "title": "Chickpea Brownies",
     "link": "https://namelymarly.com/chickpea-brownies/",
     "image": "https://namelymarly.com/wp-content/uploads/2025/01/Chickpea-Brownies-0149-3x2-web.jpg",
     "date": "2025-02-26T12:51:00+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Turnip Vegan",
+    "title": "Pineapple Lemon Drop Pepper Stuffed Cucumbers",
+    "link": "https://turnipvegan.com/blogs/news/pineapple-lemon-drop-pepper-stuffed-cucumbers",
+    "image": "http://turnipvegan.com/cdn/shop/articles/DSC00211-2.jpg?v=1740333464",
+    "date": "2025-02-23T09:57:39-08:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "The Full Helping",
@@ -2792,6 +2832,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Turnip Vegan",
+    "title": "Jackfruit Chimichanga Burrito",
+    "link": "https://turnipvegan.com/blogs/news/jackfruit-chimichanga-burrito",
+    "image": "http://turnipvegan.com/cdn/shop/articles/DSC00150.jpg?v=1739380943",
+    "date": "2025-02-12T09:14:04-08:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Namely Marly",
     "title": "Raspberry Overnight Oats",
     "link": "https://namelymarly.com/raspberry-overnight-oats/",
@@ -2806,6 +2854,14 @@
     "image": "https://namelymarly.com/wp-content/uploads/2025/02/valentine-recipes-promo-2x3-web.jpg",
     "date": "2025-02-09T21:19:55+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Turnip Vegan",
+    "title": "Dragon Fruit Rolls (Cinnamon Roll Style)",
+    "link": "https://turnipvegan.com/blogs/news/dragon-fruit-rolls-cinnamon-roll-style",
+    "image": "http://turnipvegan.com/cdn/shop/articles/DSC00146-2.jpg?v=1739029858",
+    "date": "2025-02-08T07:50:09-08:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "The Full Helping",
