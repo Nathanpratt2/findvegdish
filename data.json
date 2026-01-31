@@ -1,5 +1,45 @@
 [
   {
+    "blog_name": "Namely Marly",
+    "title": "Date Brownies",
+    "link": "https://namelymarly.com/date-brownies/",
+    "image": "https://namelymarly.com/wp-content/uploads/2026/01/Chocolate-Date-Brownies-1037-3x2-web.jpg",
+    "date": "2026-01-30T20:22:12+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "Connoisseurus Veg",
+    "title": "Vegan Cheesecake Dip",
+    "link": "https://www.connoisseurusveg.com/vegan-cheesecake-dip/",
+    "image": "https://www.connoisseurusveg.com/wp-content/uploads/2026/01/vegan-cheesecake-dip-sq-1.jpg",
+    "date": "2026-01-30T15:25:36+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "VegNews",
+    "title": "No-Bake Oatmeal Peanut Butter Chocolate Chip Cookies",
+    "link": "https://vegnews.com/recipes/no-bake-oatmeal-peanut-butter-chocolate-chip-cookies",
+    "image": "https://vegnews.com/media/W1siZiIsIjIwMTI5L1ZlZ05ld3MuTm9CYWtlQ29va2llcy5qcGciXSxbInAiLCJ0aHVtYiIsIjE2MDB4OTQ2IyIseyJmb3JtYXQiOiJqcGcifV0sWyJwIiwib3B0aW1pemUiXV0/VegNews.NoBakeCookies.jpg?sha=3e86fe3de0fc08db",
+    "date": "2026-01-30T08:05:00-08:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "VegNews",
+    "title": "Meaty Vegan Jackfruit Pasta With Olives and Capers",
+    "link": "https://vegnews.com/recipes/vegan-jackfruit-tuna-pasta",
+    "image": "https://vegnews.com/media/W1siZiIsIjE5NjE3L1ZlZ05ld3MuSnVuYVBhc3RhLmpwZyJdLFsicCIsInRodW1iIiwiMTYwMHg5NDYjIix7ImZvcm1hdCI6ImpwZyJ9XSxbInAiLCJvcHRpbWl6ZSJdXQ/VegNews.JunaPasta.jpg?sha=e7221e95a6743a62",
+    "date": "2026-01-30T08:00:00-08:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "VegNews",
+    "title": "Quick Pickled Rainbow Vegetables",
+    "link": "https://vegnews.com/recipes/quick-pickled-rainbow-vegetables",
+    "image": "https://vegnews.com/media/W1siZiIsIjE5NDI4L1ZlZ05ld3MuUGlja2xlcy5qcGciXSxbInAiLCJ0aHVtYiIsIjE2MDB4OTQ2IyIseyJmb3JtYXQiOiJqcGcifV0sWyJwIiwib3B0aW1pemUiXV0/VegNews.Pickles.jpg?sha=0a21e977c7ef971a",
+    "date": "2026-01-30T07:55:00-08:00",
+    "is_disruptor": false
+  },
+  {
     "blog_name": "The Burger Dude",
     "title": "Flying Dutchman Burger",
     "link": "https://theeburgerdude.com/flying-dutchman-burger/",
@@ -261,6 +301,14 @@
     "link": "https://vegnews.com/recipes/vegan-chocolate-chip-banana-bread-breakfast-cookies",
     "image": "https://vegnews.com/media/W1siZiIsIjM0NzU4L1ZlZ05ld3MuQ2hvY29sYXRlQ2hpcEJhbmFuYUJyZWFkLmpwZyJdLFsicCIsInRodW1iIiwiMTYwMHg5NDYjIix7ImZvcm1hdCI6ImpwZyJ9XSxbInAiLCJvcHRpbWl6ZSJdXQ/VegNews.ChocolateChipBananaBread.jpg?sha=624c04d5e108a9a0",
     "date": "2026-01-26T14:00:00-08:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "Rainbow Plant Life",
+    "title": "RPL at Home: January 2026",
+    "link": "https://rainbowplantlife.com/rpl-at-home-january-2026/",
+    "image": "https://rainbowplantlife.com/wp-content/uploads/2026/01/meal-plans-2.0-feedback-sample.jpg",
+    "date": "2026-01-25T23:43:18+00:00",
     "is_disruptor": false
   },
   {
