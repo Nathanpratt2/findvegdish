@@ -1,5 +1,45 @@
 [
   {
+    "blog_name": "VegNews",
+    "title": "Easy Strawberries and Coconut Cream Overnight Oats",
+    "link": "https://vegnews.com/recipes/vegan-strawberries-and-cream-overnight-oats",
+    "image": "https://vegnews.com/media/W1siZiIsIjM2MzA2L1ZlZ05ld3MuU3RyYXdiZXJyeU9hdHMuanBnIl0sWyJwIiwidGh1bWIiLCIxNjAweDk0NiMiLHsiZm9ybWF0IjoianBnIn1dLFsicCIsIm9wdGltaXplIl1d/VegNews.StrawberryOats.jpg?sha=bd5826af9db453f7",
+    "date": "2026-01-31T11:30:00-08:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "VegNews",
+    "title": "Baked Vegan White Mac and Cheese",
+    "link": "https://vegnews.com/recipes/vegan-baked-white-mac-and-cheese",
+    "image": "https://vegnews.com/media/W1siZiIsIjE4NTk0L1ZlZ05ld3MuQmFrZWRXaGl0ZU1hY2FuZENoZWVzZS5qcGciXSxbInAiLCJ0aHVtYiIsIjE2MDB4OTQ2IyIseyJmb3JtYXQiOiJqcGcifV0sWyJwIiwib3B0aW1pemUiXV0/VegNews.BakedWhiteMacandCheese.jpg?sha=f8fe8ebe4384bdd7",
+    "date": "2026-01-31T11:20:00-08:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "Flora & Vino",
+    "title": "Sweet & Spicy SunButter Spinach Wrap",
+    "link": "https://www.floraandvino.com/sweet-spicy-sunbutter-spinach-wrap/",
+    "image": "https://www.floraandvino.com/wp-content/uploads/2026/01/Sweet-Spicy-SunButter-Wrap-12-560x840.jpg",
+    "date": "2026-01-31T11:00:03+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "VegNews",
+    "title": "Smothered Plant-Based Cabbage Rolls",
+    "link": "https://vegnews.com/recipes/russian-cabbage-rolls",
+    "image": "https://vegnews.com/media/W1siZiIsIjExMzY1L1ZlZ05ld3MuU3R1ZmZlZENhYmJhZ2VSb2xscy5wbmciXSxbInAiLCJ0aHVtYiIsIjE2MDB4OTQ2IyIseyJmb3JtYXQiOiJqcGcifV0sWyJwIiwib3B0aW1pemUiXV0/VegNews.StuffedCabbageRolls.jpg?sha=7f83b99ceafc144f",
+    "date": "2026-01-31T11:00:00-08:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "It Doesn't Taste Like Chicken",
+    "title": "How to Press Tofu (And When You Don\u2019t Need To)",
+    "link": "https://itdoesnttastelikechicken.com/ultimate-guide-pressing-tofu/",
+    "image": "https://itdoesnttastelikechicken.com/wp-content/uploads/2017/04/how-to-press-tofu-and-when-you-dont-need-to.jpg",
+    "date": "2026-01-31T10:00:00+00:00",
+    "is_disruptor": false
+  },
+  {
     "blog_name": "Namely Marly",
     "title": "Date Brownies",
     "link": "https://namelymarly.com/date-brownies/",
@@ -136,18 +176,18 @@
     "is_disruptor": false
   },
   {
-    "blog_name": "Vegan Richa",
-    "title": "Spinach Mushroom Beans (1-pan, 30 minutes)",
-    "link": "https://www.veganricha.com/spinach-mushroom-beans/",
-    "image": "https://www.veganricha.com/wp-content/uploads/2025/10/Spinach-Mushroom-Beans-1542.jpg",
-    "date": "2026-01-28T12:00:00+00:00",
-    "is_disruptor": false
-  },
-  {
     "blog_name": "Connoisseurus Veg",
     "title": "Slow Cooker Baked Beans",
     "link": "https://www.connoisseurusveg.com/slow-cooker-baked-beans/",
     "image": "https://www.connoisseurusveg.com/wp-content/uploads/2026/01/slow-cooke-baked-beans-sq-2.jpg",
+    "date": "2026-01-28T12:00:00+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "Vegan Richa",
+    "title": "Spinach Mushroom Beans (1-pan, 30 minutes)",
+    "link": "https://www.veganricha.com/spinach-mushroom-beans/",
+    "image": "https://www.veganricha.com/wp-content/uploads/2025/10/Spinach-Mushroom-Beans-1542.jpg",
     "date": "2026-01-28T12:00:00+00:00",
     "is_disruptor": false
   },
@@ -688,18 +728,18 @@
     "is_disruptor": false
   },
   {
-    "blog_name": "Vegan Richa",
-    "title": "Harrissa Roasted Vegetables with Bean Puree and Baharat Walnut Crumble",
-    "link": "https://www.veganricha.com/harrissa-bean-puree-with-walnut-crumble/",
-    "image": "https://www.veganricha.com/wp-content/uploads/2025/09/Harissa-Bean-Puree-Roasted-Veggies-Baharat-Walnuts-7630.jpg",
-    "date": "2026-01-14T12:00:00+00:00",
-    "is_disruptor": false
-  },
-  {
     "blog_name": "Connoisseurus Veg",
     "title": "Vegan Nihari",
     "link": "https://www.connoisseurusveg.com/vegan-nihari/",
     "image": "https://www.connoisseurusveg.com/wp-content/uploads/2025/12/vegan-nihari-sq.jpg",
+    "date": "2026-01-14T12:00:00+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "Vegan Richa",
+    "title": "Harrissa Roasted Vegetables with Bean Puree and Baharat Walnut Crumble",
+    "link": "https://www.veganricha.com/harrissa-bean-puree-with-walnut-crumble/",
+    "image": "https://www.veganricha.com/wp-content/uploads/2025/09/Harissa-Bean-Puree-Roasted-Veggies-Baharat-Walnuts-7630.jpg",
     "date": "2026-01-14T12:00:00+00:00",
     "is_disruptor": false
   },
@@ -1032,18 +1072,18 @@
     "is_disruptor": true
   },
   {
-    "blog_name": "Vegan Richa",
-    "title": "Moong Egg Muffins, 3 Ways",
-    "link": "https://www.veganricha.com/moong-egg-muffins/",
-    "image": "https://www.veganricha.com/wp-content/uploads/2025/08/Egg-Muffins-5868.jpg",
-    "date": "2025-12-31T12:00:00+00:00",
-    "is_disruptor": false
-  },
-  {
     "blog_name": "Connoisseurus Veg",
     "title": "Roasted Garlic Soup",
     "link": "https://www.connoisseurusveg.com/roasted-garlic-soup/",
     "image": "https://www.connoisseurusveg.com/wp-content/uploads/2025/12/roasted-garlic-soup-sq-r.jpg",
+    "date": "2025-12-31T12:00:00+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "Vegan Richa",
+    "title": "Moong Egg Muffins, 3 Ways",
+    "link": "https://www.veganricha.com/moong-egg-muffins/",
+    "image": "https://www.veganricha.com/wp-content/uploads/2025/08/Egg-Muffins-5868.jpg",
     "date": "2025-12-31T12:00:00+00:00",
     "is_disruptor": false
   },
@@ -1288,6 +1328,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Flora & Vino",
+    "title": "Apple Butter Truffles",
+    "link": "https://www.floraandvino.com/apple-butter-truffles/",
+    "image": "https://www.floraandvino.com/wp-content/uploads/2025/12/Apple-Butter-Truffles-560x840.jpg",
+    "date": "2025-12-17T11:00:24+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "It Doesn't Taste Like Chicken",
     "title": "Vegan Rum Balls (Easy No-Bake Holiday Treat)",
     "link": "https://itdoesnttastelikechicken.com/vegan-rum-balls/",
@@ -1390,6 +1438,14 @@
     "image": "https://www.veganricha.com/wp-content/uploads/2025/11/Sundried-Tomato-Bean-Roast-9150.jpg",
     "date": "2025-12-10T18:49:51+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Flora & Vino",
+    "title": "SunButter Chocolate Chip Cookies",
+    "link": "https://www.floraandvino.com/sunbutter-chocolate-chip-cookies/",
+    "image": "https://www.floraandvino.com/wp-content/uploads/2025/12/SunButter-Chocolate-Chip-Cookies-560x840.jpg",
+    "date": "2025-12-10T13:00:46+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "Sweet Potato Soul",
@@ -1600,6 +1656,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Flora & Vino",
+    "title": "Flora & Vino 2025 Holiday Gift Guide",
+    "link": "https://www.floraandvino.com/flora-vino-2025-holiday-gift-guide/",
+    "image": "https://www.floraandvino.com/wp-content/uploads/2025/11/FV-Holiday-Gift-Guide-2025.jpg",
+    "date": "2025-11-28T21:36:25+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "The First Mess",
     "title": "Vegan Orange Cranberry Biscotti with White Chocolate",
     "link": "https://thefirstmess.com/2025/11/27/vegan-orange-cranberry-biscotti/",
@@ -1622,6 +1686,14 @@
     "image": "https://www.veganricha.com/wp-content/uploads/2025/09/Breakfast-Taquitos-6808.jpg",
     "date": "2025-11-26T13:25:35+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Flora & Vino",
+    "title": "Applesauce Gingerbread Loaf",
+    "link": "https://www.floraandvino.com/applesauce-gingerbread-loaf/",
+    "image": "https://www.floraandvino.com/wp-content/uploads/2025/11/Applesauce-Gingerbread-Loaf-560x840.jpg",
+    "date": "2025-11-26T11:00:22+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "It Doesn't Taste Like Chicken",
@@ -1728,6 +1800,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Flora & Vino",
+    "title": "Rainbow Roasted Carrots with SunButter Sauce",
+    "link": "https://www.floraandvino.com/rainbow-roasted-carrots-with-sunbutter-sauce/",
+    "image": "https://www.floraandvino.com/wp-content/uploads/2025/11/Rainbow-Roasted-Carrots-with-SunButter-Sauce-8-560x840.jpg",
+    "date": "2025-11-22T13:00:35+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Elavegan",
     "title": "Crispy Chickpea Crackers",
     "link": "https://elavegan.com/chickpea-crackers/",
@@ -1774,6 +1854,14 @@
     "image": "https://thefirstmess.com/wp-content/uploads/2025/11/roasted-honeynut-squash-14.jpg",
     "date": "2025-11-19T06:59:00+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Flora & Vino",
+    "title": "Cranberry Chickpea Salad Sandwich",
+    "link": "https://www.floraandvino.com/cranberry-chickpea-salad-sandwich/",
+    "image": "https://www.floraandvino.com/wp-content/uploads/2025/11/Cranberry-Chickpea-Salad-Sandwich-12-560x840.jpg",
+    "date": "2025-11-18T19:56:57+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "The Foodie Takes Flight",
@@ -1920,6 +2008,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Flora & Vino",
+    "title": "Cinnamon Raisin Cookie Baked Oatmeal",
+    "link": "https://www.floraandvino.com/cinnamon-raisin-cookie-baked-oatmeal/",
+    "image": "https://www.floraandvino.com/wp-content/uploads/2025/11/Cinnamon-Raisin-Cookie-Baked-Oatmeal-11-560x840.jpg",
+    "date": "2025-11-08T11:00:15+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Running on Real Food",
     "title": "Edamame Bean Salad",
     "link": "https://runningonrealfood.com/edamame-bean-salad/",
@@ -2032,6 +2128,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Flora & Vino",
+    "title": "Black Sesame Noodle Bowl",
+    "link": "https://www.floraandvino.com/black-sesame-noodle-bowl/",
+    "image": "https://www.floraandvino.com/wp-content/uploads/2025/10/Black-Sesame-Noodle-Bowl-19-560x840.jpg",
+    "date": "2025-10-30T13:30:47+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "It Doesn't Taste Like Chicken",
     "title": "Chocolate Mug Cake (Quick & Easy + Vegan)",
     "link": "https://itdoesnttastelikechicken.com/chocolate-mug-cake/",
@@ -2126,6 +2230,14 @@
     "image": "https://itdoesnttastelikechicken.com/wp-content/uploads/2025/10/Dubai-Chocolate-Bar-Recipe-Vegan-Easy-Homemade-ingredients-from-scratch-dark-chocolate-facebook.jpg",
     "date": "2025-10-19T09:00:00+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Flora & Vino",
+    "title": "Pumpkin Pie Cheesecake with SunButter Frosting",
+    "link": "https://www.floraandvino.com/pumpkin-pie-cheesecake-with-sunbutter-frosting/",
+    "image": "https://www.floraandvino.com/wp-content/uploads/2025/10/Vegan-Pumpkin-Pie-Cheesecake-14-560x840.jpg",
+    "date": "2025-10-18T10:00:02+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "My Darling Vegan",
