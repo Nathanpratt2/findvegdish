@@ -39,7 +39,7 @@ DISRUPTORS = [
 ]
 
 ALL_FEEDS = TOP_BLOGGERS + DISRUPTORS
-MAX_RECIPES_PER_BLOG = 100 
+MAX_RECIPES_PER_BLOG = 250 
 cutoff_date = datetime.now().astimezone() - timedelta(days=360)
 
 # --- LOAD EXISTING DATA ---
