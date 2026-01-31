@@ -37,7 +37,7 @@ DISRUPTORS = [
     ("Rabbit and Wolves", "https://www.rabbitandwolves.com/feed/"),
     ("Okonomi Kitchen", "https://okonomikitchen.com/feed/"),
     ("Vegan Scratch Kitchen", "https://veganscratchkitchen.com/feed/"),
-    ("Turnip Vegan", "https://turnipvegan.com/blogs/recipes.atom"),
+    ("Turnip Vegan", "https://turnipvegan.com/blogs/news.atom"),
     ("Addicted to Dates", "https://addictedtodates.com/category/recipes/feed/"),
     ("Flora & Vino", "https://www.floraandvino.com/feed/"),
 ]
