@@ -72,11 +72,27 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Addicted to Dates",
+    "title": "Vegan Ube Leche Flan",
+    "link": "https://addictedtodates.com/vegan-ube-flan/",
+    "image": "https://addictedtodates.com/wp-content/uploads/2026/01/ube-flan-ingredients-ingredients.jpg",
+    "date": "2026-01-30T07:56:38+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "VegNews",
     "title": "Quick Pickled Rainbow Vegetables",
     "link": "https://vegnews.com/recipes/quick-pickled-rainbow-vegetables",
     "image": "https://vegnews.com/media/W1siZiIsIjE5NDI4L1ZlZ05ld3MuUGlja2xlcy5qcGciXSxbInAiLCJ0aHVtYiIsIjE2MDB4OTQ2IyIseyJmb3JtYXQiOiJqcGcifV0sWyJwIiwib3B0aW1pemUiXV0/VegNews.Pickles.jpg?sha=0a21e977c7ef971a",
     "date": "2026-01-30T07:55:00-08:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "VegNews",
+    "title": "Vietnamese Pho-Inspired Zucchini Noodles",
+    "link": "https://vegnews.com/recipes/vegan-pho-inspired-zucchini-noodles",
+    "image": "https://vegnews.com/media/W1siZiIsIjE4Nzc5L1ZlZ05ld3MuVmVnZ2llUGhvLmpwZyJdLFsicCIsInRodW1iIiwiMTYwMHg5NDYjIix7ImZvcm1hdCI6ImpwZyJ9XSxbInAiLCJvcHRpbWl6ZSJdXQ/VegNews.VeggiePho.jpg?sha=fc572a6f5ed6631c",
+    "date": "2026-01-30T07:00:00-08:00",
     "is_disruptor": false
   },
   {
@@ -1344,6 +1360,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Addicted to Dates",
+    "title": "Pistachio Fudge",
+    "link": "https://addictedtodates.com/pistachio-fudge/",
+    "image": "https://addictedtodates.com/wp-content/uploads/2025/12/pistachio-fudge-ingredients.jpg",
+    "date": "2025-12-16T14:25:03+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Minimalist Baker",
     "title": "40 Easy Giftable Recipes for the Holidays",
     "link": "https://minimalistbaker.com/easy-giftable-recipes/",
@@ -1784,6 +1808,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Addicted to Dates",
+    "title": "Vegan Biscoff Coffee Cake",
+    "link": "https://addictedtodates.com/biscoff-coffee-cake/",
+    "image": "https://addictedtodates.com/wp-content/uploads/2025/11/biscoff-coffee-cake-ingredients.jpg",
+    "date": "2025-11-23T10:24:51+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "It Doesn't Taste Like Chicken",
     "title": "Maple-Tahini Mashed Sweet Potatoes (Vegan & Creamy)",
     "link": "https://itdoesnttastelikechicken.com/maple-tahini-mashed-sweet-potatoes/",
@@ -1894,6 +1926,14 @@
     "image": "https://itdoesnttastelikechicken.com/wp-content/uploads/2025/10/Vegan-Chocolate-Cream-Pie-recipe-no-tofu-dairy-free-easy-best-old-fashioned-homemade-facebook.jpg",
     "date": "2025-11-16T10:00:00+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Addicted to Dates",
+    "title": "Vegan Pumpkin Tiramisu",
+    "link": "https://addictedtodates.com/vegan-pumpkin-tiramisu/",
+    "image": "https://addictedtodates.com/wp-content/uploads/2025/11/pumpkin-tiramisu-ingredients.jpg",
+    "date": "2025-11-16T08:10:13+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "The First Mess",
@@ -2078,6 +2118,14 @@
     "image": "https://thefirstmess.com/wp-content/uploads/2025/11/celery-root-salad-peanut-vinaigrette-2.jpg",
     "date": "2025-11-05T06:59:00+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Addicted to Dates",
+    "title": "Vegan Pumpkin Flan",
+    "link": "https://addictedtodates.com/vegan-pumpkin-flan/",
+    "image": "https://addictedtodates.com/wp-content/uploads/2025/11/pumpkin-flan-ingredients.jpg",
+    "date": "2025-11-04T14:15:18+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "It Doesn't Taste Like Chicken",
@@ -2360,6 +2408,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Addicted to Dates",
+    "title": "No-Bake Chocolate Sweet Potato Pie",
+    "link": "https://addictedtodates.com/no-bake-chocolate-sweet-potato-pie/",
+    "image": "https://addictedtodates.com/wp-content/uploads/2025/09/sweet-potato-chocolate-pie-ingredients.jpg",
+    "date": "2025-10-01T13:45:03+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "The First Mess",
     "title": "Smoky Butternut Squash Tacos with Smashed Pinto Beans (Vegan)",
     "link": "https://thefirstmess.com/2025/10/01/butternut-squash-tacos-smoky-pinto-beans/",
@@ -2408,6 +2464,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Addicted to Dates",
+    "title": "Vegan Sweet Potato Coffee Cake",
+    "link": "https://addictedtodates.com/vegan-sweet-potato-coffee-cake/",
+    "image": "https://addictedtodates.com/wp-content/uploads/2025/09/vegan-sweet-potato-crumb-cake-ingredients.jpg",
+    "date": "2025-09-21T06:08:21+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Namely Marly",
     "title": "Vegan Magic Bars",
     "link": "https://namelymarly.com/vegan-magic-bars/",
@@ -2430,6 +2494,14 @@
     "image": "https://runningonrealfood.com/wp-content/uploads/2025/09/chickpea-lentil-salad-recipe-6-2.jpg",
     "date": "2025-09-15T20:00:17+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Addicted to Dates",
+    "title": "Vegan Chocolate Tres Leches",
+    "link": "https://addictedtodates.com/vegan-chocolate-tres-leches/",
+    "image": "https://addictedtodates.com/wp-content/uploads/2025/09/chocolate-tres-leches-ingredients.jpg",
+    "date": "2025-09-14T05:09:28+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "Namely Marly",
@@ -2464,6 +2536,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Addicted to Dates",
+    "title": "Vegan Pumpkin Coffee Cake",
+    "link": "https://addictedtodates.com/vegan-pumpkin-coffee-cake/",
+    "image": "https://addictedtodates.com/wp-content/uploads/2025/09/vegan-pumpkin-crumb-cake-ingredients.jpg",
+    "date": "2025-09-07T06:45:34+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "My Darling Vegan",
     "title": "18 Cozy Vegan Dinner Recipes for Fall",
     "link": "https://www.mydarlingvegan.com/18-cozy-vegan-dinner-recipes-for-fall/",
@@ -2478,6 +2558,14 @@
     "image": "https://namelymarly.com/wp-content/uploads/2025/08/Protein-Pasta-Salad-0493-sq-web-2.jpg",
     "date": "2025-09-04T23:10:55+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Addicted to Dates",
+    "title": "Vegan Banoffee Pie",
+    "link": "https://addictedtodates.com/vegan-banoffee-pie/",
+    "image": "https://addictedtodates.com/wp-content/uploads/2025/08/vegan-banoffee-pie-ingredients.jpg",
+    "date": "2025-09-02T12:51:02+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "Namely Marly",
