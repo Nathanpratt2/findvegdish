@@ -27,7 +27,7 @@
             background-color: #f8f9fa;
             margin: 0;
             padding: 20px;
-            padding-bottom: 60px;
+            padding-bottom: 80px; /* Increased padding so content doesn't hide behind buttons */
         }
         header {
             text-align: center;
@@ -265,34 +265,52 @@
             display: none;
         }
 
-        /* --- Scroll to Top Button --- */
-        #scrollTopBtn {
-            display: none; /* Hidden by default */
+        /* --- FLOATING BUTTONS (Stacking Logic) --- */
+        
+        /* Shared styles for both buttons */
+        .float-btn {
             position: fixed;
-            bottom: 30px;
-            right: 30px;
-            z-index: 99;
-            border: none;
-            outline: none;
-            background-color: #27ae60;
-            color: white;
-            cursor: pointer;
-            padding: 15px;
+            right: 25px; /* Aligned to right */
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            transition: background-color 0.3s, transform 0.3s;
             display: flex;
             align-items: center;
             justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+            transition: transform 0.2s, background-color 0.2s;
+            z-index: 99;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            text-decoration: none; /* For the <a> tag */
         }
-
-        #scrollTopBtn:hover {
-            background-color: #219150;
+        
+        .float-btn:hover {
             transform: translateY(-3px);
         }
 
+        /* 1. Buy Me Coffee (Always Visible at Bottom) */
+        #coffeeBtn {
+            bottom: 25px; /* Anchored at bottom */
+            background-color: white;
+            font-size: 22px; /* Emoji size */
+        }
+        #coffeeBtn:hover { background-color: #f9f9f9; }
+
+        /* 2. Scroll to Top (Hidden until scroll) */
+        #scrollTopBtn {
+            display: none; /* Hidden by default */
+            bottom: 90px; /* Sits ABOVE the coffee button (25px + 50px height + 15px gap) */
+            background-color: #27ae60;
+            color: white;
+        }
+        #scrollTopBtn:hover { background-color: #219150; }
+
         @media (max-width: 400px) {
-            #scrollTopBtn { bottom: 20px; right: 20px; padding: 12px; }
+            .float-btn { right: 20px; width: 45px; height: 45px; }
+            #coffeeBtn { bottom: 20px; }
+            #scrollTopBtn { bottom: 80px; }
         }
     </style>
 </head>
@@ -323,8 +341,15 @@
 </div>
 <div id="loader">Loading more recipes...</div>
 
-<!-- Scroll to Top Button -->
-<button id="scrollTopBtn" title="Go to top">
+<!-- FLOATING BUTTONS -->
+
+<!-- 1. Buy Me A Coffee (Always Visible) -->
+<a href="https://buymeacoffee.com/natethevegan" target="_blank" id="coffeeBtn" class="float-btn" title="Buy me a coffee">
+    ☕
+</a>
+
+<!-- 2. Scroll to Top (Appears on Scroll) -->
+<button id="scrollTopBtn" class="float-btn" title="Go to top">
     <svg viewBox="0 0 24 24" width="24" height="24" fill="white">
         <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
     </svg>
@@ -462,13 +487,15 @@
         window.addEventListener('scroll', () => {
             // Check for scroll to top button visibility
             const scrollBtn = document.getElementById("scrollTopBtn");
+            
+            // Logic: Show Scroll Top if scrolled down > 300px
             if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
                 scrollBtn.style.display = "flex";
             } else {
                 scrollBtn.style.display = "none";
             }
 
-            // Check if near bottom to load more
+            // Check if near bottom to load more recipes
             if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 500) {
                 if (renderedCount < currentContext.length) {
                     renderNextBatch();
