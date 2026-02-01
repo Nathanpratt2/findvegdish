@@ -40,7 +40,7 @@ TOP_BLOGGERS = [
     ("Sarah's Vegan Kitchen", "https://sarahsvegankitchen.com/feed/"),
     ("Pick Up Limes", "https://www.pickuplimes.com/recipe/feed"), 
     ("Bianca Zapatka", "https://biancazapatka.com/en/feed/"),
-    ("Holy Cow Vegan", "https://holycowvegan.net/feed/"),
+    ("Holy Cow Vegan", "https://holycowvegan.net/category/vegan-recipes/feed/"),
     ("Six Vegan Sisters", "https://sixvegansisters.com/feed/"),
     ("Sweet Simple Vegan", "https://sweetsimplevegan.com/feed/"),
     ("Make It Dairy Free", "https://makeitdairyfree.com/feed/"),
@@ -53,7 +53,6 @@ TOP_BLOGGERS = [
 
 DISRUPTORS = [
     # The Specialists: Niche focus, cultural heritage, or unique constraints
-    ("Zucker & Jagdwurst", "https://www.zuckerjagdwurst.com/en/feed"),
         ("Full of Plants", "https://fullofplants.com/feed/"),
         ("Good Eatings", "https://goodeatings.com/feed/"),
         ("My Berry Forest", "https://myberryforest.com/feed/"),
@@ -64,7 +63,7 @@ DISRUPTORS = [
         ("One Arab Vegan", "https://www.onearabvegan.com/feed/"),
         ("Tuulia", "http://tuulia.co/feed/"),     ("Mary's Test Kitchen", "https://www.marystestkitchen.com/feed/"),
         ("Unconventional Baker", "https://www.unconventionalbaker.com/feed/"),
-        ("86 Eats", "https://www.86eats.com/feed/"),
+        ("86 Eats", "https://www.86eats.com/recipes?format=rss"),
         ("The Gentle Chef", "https://thegentlechef.com/feed/"),
         ("Fragrant Vanilla Cake", "https://www.fragrantvanilla.com/feed/"),
         ("Wholehearted Eats", "https://www.wholeheartedeats.com/feed/"),
