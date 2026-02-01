@@ -1,34 +1,48 @@
 # Feed Health Report
-**Last Run:** 2026-01-31T23:26:51.831054
-**Total Database Size:** 360
+**Last Run:** 2026-02-01T01:48:50.930208
+**Total Database Size:** 432
 
 | Blog Name | New Today | Total in DB | Status |
 |-----------|-----------|-------------|--------|
-| PlantYou | 0 | 11 | ❌ Error 520 |
-| Running on Real Food | 0 | 11 | ❌ Error 520 |
-| VegNews | 0 | 33 | ❌ Crash: HTTPSConnectionPool( |
+| Love and Lemons | 0 | 0 | ⚠️ Parsed 0 items |
+| My Darling Vegan | 0 | 12 | Skipped/DB Only |
+| Short Girl Tall Order | 0 | 0 | ❌ Error 500 |
+| Six Vegan Sisters | 0 | 0 | ❌ Error 403 |
+| The Foodie Takes Flight | 0 | 11 | Skipped/DB Only |
 | Addicted to Dates | 0 | 10 | ✅ OK |
+| Choosing Chia | 10 | 10 | ✅ OK |
 | Connoisseurus Veg | 0 | 12 | ✅ OK |
 | Elavegan | 0 | 11 | ✅ OK |
 | Flora & Vino | 0 | 10 | ✅ OK |
 | From My Bowl | 0 | 10 | ✅ OK |
+| Hot for Food | 3 | 3 | ✅ OK |
 | It Doesn't Taste Like Chicken | 0 | 33 | ✅ OK |
+| Jessica in the Kitchen | 10 | 10 | ✅ OK |
 | Lazy Cat Kitchen | 0 | 10 | ✅ OK |
+| Make It Dairy Free | 10 | 10 | ✅ OK |
 | Minimalist Baker | 0 | 4 | ✅ OK |
-| My Darling Vegan | 0 | 12 | ✅ OK |
 | Namely Marly | 0 | 58 | ✅ OK |
 | Nora Cooks | 0 | 10 | ✅ OK |
+| Oh She Glows | 1 | 1 | ✅ OK |
 | Okonomi Kitchen | 0 | 10 | ✅ OK |
+| PlantYou | 0 | 11 | ✅ OK |
 | Rabbit and Wolves | 0 | 10 | ✅ OK |
 | Rainbow Plant Life | 0 | 12 | ✅ OK |
-| School Night Vegan | 0 | 0 | ✅ OK |
+| Running on Real Food | 0 | 11 | ✅ OK |
 | Simple Vegan Blog | 0 | 7 | ✅ OK |
 | Sweet Potato Soul | 0 | 10 | ✅ OK |
+| Sweet Simple Vegan | 5 | 5 | ✅ OK |
 | The Burger Dude | 0 | 16 | ✅ OK |
+| The Conscious Plant Kitchen | 9 | 9 | ✅ OK |
 | The First Mess | 0 | 13 | ✅ OK |
-| The Foodie Takes Flight | 0 | 11 | ✅ OK |
 | The Full Helping | 0 | 6 | ✅ OK |
 | The Korean Vegan | 0 | 12 | ✅ OK |
+| The Post-Punk Kitchen | 7 | 7 | ✅ OK |
+| The Simple Veganista | 0 | 0 | ✅ OK |
+| The Vegan 8 | 10 | 10 | ✅ OK |
+| The Viet Vegan | 2 | 2 | ✅ OK |
 | Turnip Vegan | 0 | 7 | ✅ OK |
+| VegNews | 0 | 33 | ✅ OK |
 | Vegan Richa | 0 | 11 | ✅ OK |
 | Vegan Scratch Kitchen | 0 | 0 | ✅ OK |
+| Vegan Yack Attack | 5 | 5 | ✅ OK |
