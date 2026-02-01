@@ -56,12 +56,28 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Plantifully Based",
+    "title": "High Protein Vegan Vanilla Ninja Creami",
+    "link": "https://plantifullybasedblog.com/high-protein-vegan-vanilla-ninja-creami/?utm_source=rss&utm_medium=rss&utm_campaign=high-protein-vegan-vanilla-ninja-creami",
+    "image": "https://plantifullybasedblog.com/wp-content/uploads/2026/01/A5E9BCDA-F07A-48E1-98A5-98907C56000F-819x1024.jpeg",
+    "date": "2026-01-31T15:59:26+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Sarah's Vegan Kitchen",
     "title": "Beefy Vegan Chili",
     "link": "https://sarahsvegankitchen.com/recipes/beefy-chili/",
     "image": "https://sarahsvegankitchen.com/wp-content/uploads/2025/02/Vegan-Chili-5.jpg",
     "date": "2026-01-31T15:53:17+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Plantifully Based",
+    "title": "Delicious High Protein Cranberry Bread",
+    "link": "https://plantifullybasedblog.com/delicious-high-protein-cranberry-bread/?utm_source=rss&utm_medium=rss&utm_campaign=delicious-high-protein-cranberry-bread",
+    "image": "https://plantifullybasedblog.com/wp-content/uploads/2026/01/0CC721DA-F5FC-4599-9A7D-DAC3A6EDD37C-1-819x1024.jpeg",
+    "date": "2026-01-31T14:35:35+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "VegNews",
@@ -94,6 +110,14 @@
     "image": "https://vegnews.com/media/W1siZiIsIjExMzY1L1ZlZ05ld3MuU3R1ZmZlZENhYmJhZ2VSb2xscy5wbmciXSxbInAiLCJ0aHVtYiIsIjE2MDB4OTQ2IyIseyJmb3JtYXQiOiJqcGcifV0sWyJwIiwib3B0aW1pemUiXV0/VegNews.StuffedCabbageRolls.jpg?sha=7f83b99ceafc144f",
     "date": "2026-01-31T11:00:00-08:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Full of Plants",
+    "title": "Sticky Orange Tofu",
+    "link": "https://fullofplants.com/sticky-orange-tofu/?adt_ei={$email}",
+    "image": "https://fullofplants.com/wp-content/uploads/2026/02/easy-sticky-orange-tofu-with-baked-tofu-21-720x900.jpg",
+    "date": "2026-01-31T11:00:00+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "It Doesn't Taste Like Chicken",
@@ -280,6 +304,14 @@
     "is_disruptor": true
   },
   {
+    "blog_name": "Plantifully Based",
+    "title": "High Protein Vegan Brownies with Frosting (Vegan)",
+    "link": "https://plantifullybasedblog.com/high-protein-vegan-brownies-with-frosting-vegan/?utm_source=rss&utm_medium=rss&utm_campaign=high-protein-vegan-brownies-with-frosting-vegan",
+    "image": "https://plantifullybasedblog.com/wp-content/uploads/2026/01/IMG_4735-819x1024.jpg",
+    "date": "2026-01-29T19:06:55+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Eat Figs, Not Pigs",
     "title": "One Pot French Onion Pasta",
     "link": "https://www.eatfigsnotpigs.com/one-pot-french-onion-pasta/?utm_source=rss&utm_medium=rss&utm_campaign=one-pot-french-onion-pasta",
@@ -406,6 +438,14 @@
     "image": "https://www.veganricha.com/wp-content/uploads/2025/10/Spinach-Mushroom-Beans-1542.jpg",
     "date": "2026-01-28T12:00:00+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Full of Plants",
+    "title": "Buckwheat Cr\u00eapes with Hummus Mushrooms",
+    "link": "https://fullofplants.com/buckwheat-crepes-with-hummus-mushrooms/?adt_ei={$email}",
+    "image": "https://fullofplants.com/wp-content/uploads/2026/01/homemade-buckwheat-crepes-with-saucy-hummus-mushrooms-1-720x900.jpg",
+    "date": "2026-01-28T11:00:00+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "It Doesn't Taste Like Chicken",
@@ -888,6 +928,14 @@
     "is_disruptor": true
   },
   {
+    "blog_name": "Full of Plants",
+    "title": "Sweet Peanut Soup",
+    "link": "https://fullofplants.com/sweet-peanut-soup/?adt_ei={$email}",
+    "image": "https://fullofplants.com/wp-content/uploads/2026/01/creamy-sweet-peanut-soup-naturally-sweetened-8-720x900.jpg",
+    "date": "2026-01-23T11:00:00+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "VegNews",
     "title": "Supreme Vegan Nacho Fries With Tofu Bacon Crumbles",
     "link": "https://vegnews.com/recipes/vegan-loaded-fries-supreme",
@@ -1112,6 +1160,14 @@
     "is_disruptor": true
   },
   {
+    "blog_name": "Full of Plants",
+    "title": "Vegan Mini Chocolate Chip Loaf Cakes",
+    "link": "https://fullofplants.com/vegan-mini-chocolate-chip-loaf-cakes/?adt_ei={$email}",
+    "image": "https://fullofplants.com/wp-content/uploads/2026/01/vegan-chocolate-chip-mini-loaf-cakes-36-720x900.jpg",
+    "date": "2026-01-20T11:00:00+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Minimalist Baker",
     "title": "Vegan Gluten-Free Morning Glory Muffins",
     "link": "https://minimalistbaker.com/vegan-gluten-free-morning-glory-muffins/",
@@ -1168,6 +1224,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Mary's Test Kitchen",
+    "title": "How to Make Silken Tofu EASIER (firmer with GDL, pour-over VS steaming methods)",
+    "link": "https://www.marystestkitchen.com/how-to-make-silken-tofu-easier-firmer-with-gdl-pour-over-vs-steaming-methods/",
+    "image": "https://www.marystestkitchen.com/wp-content/uploads/2026/01/ft-diy-silken-tofu-guide-with-gdl-pour-or-steam.jpg",
+    "date": "2026-01-19T17:00:42+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "The Foodie Takes Flight",
     "title": "Charred Cabbage with Gochujang Butter Sauce and Caramelised Onions",
     "link": "https://thefoodietakesflight.com/charred-cabbage-with-gochujang-butter/",
@@ -1205,6 +1269,14 @@
     "link": "https://domesticgothess.com/blog/2026/01/19/easy-bubbly-focaccia/",
     "image": "https://domesticgothess.com/wp-content/uploads/2026/01/easy-bubbly-focaccia.jpg",
     "date": "2026-01-19T08:09:40+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "Fragrant Vanilla Cake",
+    "title": "Vegan Raspberry Shortbread Sandwich Cookies",
+    "link": "https://www.fragrantvanilla.com/vegan-raspberry-shortbread-sandwich-cookies/?utm_source=rss&utm_medium=rss&utm_campaign=vegan-raspberry-shortbread-sandwich-cookies",
+    "image": "https://www.fragrantvanilla.com/wp-content/uploads/2026/01/Edited-Raspberry-Shortbread-Sandwiches.jpg",
+    "date": "2026-01-19T03:15:56+00:00",
     "is_disruptor": true
   },
   {
@@ -1262,6 +1334,14 @@
     "image": "https://itdoesnttastelikechicken.com/wp-content/uploads/2026/01/HIGH-PROTEIN-VEGAN-SNACKS-AND-SMOOTHIES-Socials-Image-1200-x-630-px.jpg",
     "date": "2026-01-17T10:00:00+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Full of Plants",
+    "title": "Vegan Swedish Meatballs",
+    "link": "https://fullofplants.com/vegan-swedish-meatballs/?adt_ei={$email}",
+    "image": "https://fullofplants.com/wp-content/uploads/2026/01/vegan-swedish-meatballs-in-rich-buttery-sauce-34-720x900.jpg",
+    "date": "2026-01-17T10:00:00+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "The Burger Dude",
@@ -1376,6 +1456,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Plantifully Based",
+    "title": "Easy Vegan Crumbled Tofu \u201cSausage\u201d",
+    "link": "https://plantifullybasedblog.com/easy-vegan-crumbled-tofu-sausage/?utm_source=rss&utm_medium=rss&utm_campaign=easy-vegan-crumbled-tofu-sausage",
+    "image": "https://plantifullybasedblog.com/wp-content/uploads/2026/01/44B551C5-4B58-48E5-B436-B828EA901F42-819x1024.jpeg",
+    "date": "2026-01-15T16:42:09+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Jessica in the Kitchen",
     "title": "Rainbow Fruit Salad with Maple Lime Dressing",
     "link": "https://jessicainthekitchen.com/rainbow-fruit-salad-maple-lime-dressing/",
@@ -1400,6 +1488,14 @@
     "is_disruptor": true
   },
   {
+    "blog_name": "Full of Plants",
+    "title": "Valentine\u2019s Day Gummy Hearts",
+    "link": "https://fullofplants.com/valentines-day-gummy-hearts/?adt_ei={$email}",
+    "image": "https://fullofplants.com/wp-content/uploads/2026/01/vegan-valentines-day-heart-gummies-25-720x900.jpg",
+    "date": "2026-01-15T11:00:00+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Eat Figs, Not Pigs",
     "title": "The Best Vegan Menudo",
     "link": "https://www.eatfigsnotpigs.com/vegan-menudo/?utm_source=rss&utm_medium=rss&utm_campaign=vegan-menudo",
@@ -1413,6 +1509,14 @@
     "link": "https://thekoreanvegan.com/vegan-ponytail-kimchi-chonggak-kimchi-recipe/",
     "image": "https://thekoreanvegan.com/wp-content/uploads/2026/01/20260115-Screenshot-2026-01-14-at-4.23.06-PM.jpg",
     "date": "2026-01-15T02:29:59+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "Plantifully Based",
+    "title": "Tofu Chocolate Chip Cookies made with Silken Tofu",
+    "link": "https://plantifullybasedblog.com/tofu-chocolate-chip-cookies-made-with-silken-tofu/?utm_source=rss&utm_medium=rss&utm_campaign=tofu-chocolate-chip-cookies-made-with-silken-tofu",
+    "image": "https://plantifullybasedblog.com/wp-content/uploads/2026/01/A021456D-5C91-4B85-9AA4-685178547743-819x1024.jpeg",
+    "date": "2026-01-15T00:56:54+00:00",
     "is_disruptor": true
   },
   {
@@ -1501,6 +1605,14 @@
     "link": "https://www.theconsciousplantkitchen.com/3-ingredient-date-scones/",
     "image": "https://www.theconsciousplantkitchen.com/wp-content/uploads/2025/10/3-Ingredient-Date-Scones-2.jpg",
     "date": "2026-01-13T22:17:30+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "Plantifully Based",
+    "title": "Easy Dairy Free Tofu Ranch",
+    "link": "https://plantifullybasedblog.com/easy-dairy-free-tofu-ranch/?utm_source=rss&utm_medium=rss&utm_campaign=easy-dairy-free-tofu-ranch",
+    "image": "https://plantifullybasedblog.com/wp-content/uploads/2026/01/785045B2-D946-4E81-8538-A4A050A50498-1-819x1024.jpeg",
+    "date": "2026-01-13T20:09:03+00:00",
     "is_disruptor": true
   },
   {
@@ -1664,6 +1776,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Mary's Test Kitchen",
+    "title": "What I Eat VEGAN on a Very\u2744\ufe0f Chill \u2744\ufe0fWeekend",
+    "link": "https://www.marystestkitchen.com/what-i-eat-vegan-on-a-very%e2%9d%84%ef%b8%8f-chill-%e2%9d%84%ef%b8%8fweekend/",
+    "image": "https://www.marystestkitchen.com/wp-content/uploads/2026/01/yt-thumb-wiaweekend-dec102025-v1.jpg",
+    "date": "2026-01-09T15:25:36+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Connoisseurus Veg",
     "title": "Peanut Butter Ramen",
     "link": "https://www.connoisseurusveg.com/peanut-butter-ramen/",
@@ -1733,6 +1853,14 @@
     "link": "https://monkeyandmekitchenadventures.com/longevity-soup-aka-blue-zones/",
     "image": "https://monkeyandmekitchenadventures.com/wp-content/uploads/2026/01/Longevity-Soup-aka-Blue-Zones_01.jpg",
     "date": "2026-01-07T15:45:27+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "Mary's Test Kitchen",
+    "title": "I tried Miyoko\u2019s new 3-ingredient Vegan Butter Recipe\u2026should you?",
+    "link": "https://www.marystestkitchen.com/i-tried-miyokos-new-3-ingredient-vegan-butter-recipe-should-you/",
+    "image": "https://www.marystestkitchen.com/wp-content/uploads/2026/01/yt-thumb-miyoko-3-ingredient-butterv2.jpg",
+    "date": "2026-01-07T15:16:44+00:00",
     "is_disruptor": true
   },
   {
@@ -1856,6 +1984,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Mary's Test Kitchen",
+    "title": "Will Cashews Tofu?",
+    "link": "https://www.marystestkitchen.com/will-cashews-tofu/",
+    "image": "https://www.marystestkitchen.com/wp-content/uploads/2026/01/yt-thumb-willcashewstofu.jpg",
+    "date": "2026-01-05T15:16:07+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Domestic Gothess",
     "title": "Baked Tofu Crumbles",
     "link": "https://domesticgothess.com/blog/2026/01/05/baked-tofu-crumbles/",
@@ -1869,6 +2005,14 @@
     "link": "https://www.plantpowercouple.com/recipes/vegan-mashed-potato-bowls/",
     "image": "https://www.plantpowercouple.com/wp-content/uploads/2025/12/vegan-mashed-potato-bowl-05-683x1024.jpg",
     "date": "2026-01-05T09:04:00+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "Fragrant Vanilla Cake",
+    "title": "Vegan Dark Chocolate Orange Short Bread",
+    "link": "https://www.fragrantvanilla.com/vegan-dark-chocolate-orange-short-bread/?utm_source=rss&utm_medium=rss&utm_campaign=vegan-dark-chocolate-orange-short-bread",
+    "image": "https://www.fragrantvanilla.com/wp-content/uploads/2026/01/Chocolate-Orange-Short-Bread-1.jpg",
+    "date": "2026-01-05T02:32:04+00:00",
     "is_disruptor": true
   },
   {
@@ -1934,6 +2078,14 @@
     "image": "https://rainbowplantlife.com/wp-content/uploads/2023/11/Crispy-tofu-pan-fried-on-parchment-paper-on-red-plate1-scaled.jpg",
     "date": "2026-01-03T01:02:14+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Plantifully Based",
+    "title": "15+ Vegan Cheeses to Try Right Now!",
+    "link": "https://plantifullybasedblog.com/15-vegan-cheeses-to-try-right-now/?utm_source=rss&utm_medium=rss&utm_campaign=15-vegan-cheeses-to-try-right-now",
+    "image": "https://plantifullybasedblog.com/wp-content/uploads/2025/01/IMG_1824-819x1024.jpg",
+    "date": "2026-01-02T22:31:32+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "The Burger Dude",
@@ -2576,6 +2728,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Fragrant Vanilla Cake",
+    "title": "Vegan Cherry Almond Pie",
+    "link": "https://www.fragrantvanilla.com/vegan-cherry-almond-pie/?utm_source=rss&utm_medium=rss&utm_campaign=vegan-cherry-almond-pie",
+    "image": "https://www.fragrantvanilla.com/wp-content/uploads/2025/12/Cherry-Almond-Pie.jpg",
+    "date": "2025-12-15T02:45:59+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Lazy Cat Kitchen",
     "title": "Vegan mince pie tart",
     "link": "https://www.lazycatkitchen.com/vegan-mince-pie-tart/",
@@ -2792,6 +2952,14 @@
     "is_disruptor": true
   },
   {
+    "blog_name": "Fragrant Vanilla Cake",
+    "title": "Vegan Peanut Butter Chocolate Layer Cake",
+    "link": "https://www.fragrantvanilla.com/vegan-peanut-butter-chocolate-layer-cake/?utm_source=rss&utm_medium=rss&utm_campaign=vegan-peanut-butter-chocolate-layer-cake",
+    "image": "https://www.fragrantvanilla.com/wp-content/uploads/2025/12/Chocolate-PB-Cake-61.jpg",
+    "date": "2025-12-08T03:37:23+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Sarah's Vegan Kitchen",
     "title": "Vegan Chocolate Crinkle Cookies",
     "link": "https://sarahsvegankitchen.com/recipes/chocolate-crinkle-cookies/",
@@ -2872,6 +3040,22 @@
     "is_disruptor": true
   },
   {
+    "blog_name": "Plantifully Based",
+    "title": "Adorable Kale Orange Wreath Salad (Perfect for the Holidays)",
+    "link": "https://plantifullybasedblog.com/adorable-kale-orange-wreath-salad-perfect-for-the-holidays/?utm_source=rss&utm_medium=rss&utm_campaign=adorable-kale-orange-wreath-salad-perfect-for-the-holidays",
+    "image": "https://plantifullybasedblog.com/wp-content/uploads/2025/12/DDA3E271-BB54-4C84-B0C4-D293812DB539-819x1024.jpeg",
+    "date": "2025-12-05T14:06:41+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "Plantifully Based",
+    "title": "Delicious Baked Vegan Eggplant Rollatini",
+    "link": "https://plantifullybasedblog.com/delicious-baked-vegan-eggplant-rollatini/?utm_source=rss&utm_medium=rss&utm_campaign=delicious-baked-vegan-eggplant-rollatini",
+    "image": "https://plantifullybasedblog.com/wp-content/uploads/2025/12/CC3C4AC6-8458-4669-9720-A04F71052782-819x1024.jpeg",
+    "date": "2025-12-05T00:08:57+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "The First Mess",
     "title": "Vegan Lasagna with Tofu Cashew Ricotta & Extra Veggies",
     "link": "https://thefirstmess.com/2025/12/04/vegan-lasagna-tofu-cashew-ricotta/",
@@ -2909,6 +3093,14 @@
     "link": "https://thestingyvegan.com/udon-noodle-stir-fry/",
     "image": "https://thestingyvegan.com/wp-content/uploads/2025/12/udon-noodle-stir-fry-photo.jpg",
     "date": "2025-12-04T14:06:21+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "One Arab Vegan",
+    "title": "Creamy Sweet Potato Lentil and Spinach Stew",
+    "link": "https://www.onearabvegan.com/2025/12/creamy-sweet-potato-and-lentil-spinach-stew/",
+    "image": "https://www.onearabvegan.com/wp-content/uploads/2025/11/sweet-potato-lentil-stew-vegan-03-682x1024.png",
+    "date": "2025-12-04T10:58:50+00:00",
     "is_disruptor": true
   },
   {
@@ -3176,6 +3368,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Fragrant Vanilla Cake",
+    "title": "Vegan Pumpkin Apple Pie",
+    "link": "https://www.fragrantvanilla.com/vegan-pumpkin-apple-pie/?utm_source=rss&utm_medium=rss&utm_campaign=vegan-pumpkin-apple-pie",
+    "image": "https://www.fragrantvanilla.com/wp-content/uploads/2025/11/Apple-Pumpkin-Pie.jpg",
+    "date": "2025-11-24T03:18:34+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "The Korean Vegan",
     "title": "The Korean Vegan\u2019s 2025 VEGAN Holiday Gift GUIDE.",
     "link": "https://thekoreanvegan.com/the-korean-vegans-2025-vegan-holiday-gift-guide/",
@@ -3272,6 +3472,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Mary's Test Kitchen",
+    "title": "How to Make No Knead Banh Mi | Easier Vietnamese Baguettes",
+    "link": "https://www.marystestkitchen.com/how-to-make-no-knead-banh-mi/",
+    "image": "https://www.marystestkitchen.com/wp-content/uploads/2025/11/ft-no-knead-banh-mi.jpg",
+    "date": "2025-11-21T19:59:36+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Elavegan",
     "title": "Crispy Chickpea Crackers",
     "link": "https://elavegan.com/chickpea-crackers/",
@@ -3360,6 +3568,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "One Arab Vegan",
+    "title": "She\u2019s back!",
+    "link": "https://www.onearabvegan.com/2025/11/shes-back/",
+    "image": "https://www.onearabvegan.com/wp-content/uploads/2025/11/nada-headshot-09-copy.jpg",
+    "date": "2025-11-19T09:48:57+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "The First Mess",
     "title": "Roasted Honeynut Squash Wedges with Apple Cider",
     "link": "https://thefirstmess.com/2025/11/19/roasted-honeynut-squash-apple-cider/",
@@ -3429,6 +3645,14 @@
     "link": "https://choosingchia.com/protein-banana-muffins/",
     "image": "https://choosingchia.com/jessh-jessh/uploads/2025/11/Protein-banana-muffins-13.jpg",
     "date": "2025-11-17T14:43:24+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "Fragrant Vanilla Cake",
+    "title": "Vegan Maple Pecan Baklava",
+    "link": "https://www.fragrantvanilla.com/vegan-maple-pecan-baklava/?utm_source=rss&utm_medium=rss&utm_campaign=vegan-maple-pecan-baklava",
+    "image": "https://www.fragrantvanilla.com/wp-content/uploads/2025/11/Pecan-Baklava.jpg",
+    "date": "2025-11-17T02:53:06+00:00",
     "is_disruptor": true
   },
   {
@@ -3784,6 +4008,14 @@
     "is_disruptor": true
   },
   {
+    "blog_name": "Fragrant Vanilla Cake",
+    "title": "Cinnamon Vanilla Body Butter",
+    "link": "https://www.fragrantvanilla.com/cinnamon-vanilla-body-butter/?utm_source=rss&utm_medium=rss&utm_campaign=cinnamon-vanilla-body-butter",
+    "image": "https://www.fragrantvanilla.com/wp-content/uploads/2025/11/Body-Butter.jpg",
+    "date": "2025-11-03T02:14:46+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "The Hidden Veggies",
     "title": "Grilled Tofu Sandwich",
     "link": "https://thehiddenveggies.com/grilled-tofu-sandwich/",
@@ -3806,6 +4038,14 @@
     "image": "https://namelymarly.com/wp-content/uploads/2025/10/Vegan-No-Bake-Cheesecake-0768-edit-sq-web.jpg",
     "date": "2025-11-01T12:13:00+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Unconventional Baker",
+    "title": "Rustic Plum Tart",
+    "link": "https://www.unconventionalbaker.com/rustic-plum-tart/",
+    "image": "https://www.unconventionalbaker.com/wp-content/uploads/2025/10/Plum-Tart-SQ.jpg",
+    "date": "2025-11-01T01:27:13+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "Shane & Simple",
@@ -3848,6 +4088,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "The Green Creator",
+    "title": "Nama M1 Review: My Honest Experience",
+    "link": "https://thegreencreator.com/nama-m1-review/",
+    "image": "https://thegreencreator.com/wp-content/uploads/Name-M1-Review-MilkMaker-TheGreenCreator-7.jpg",
+    "date": "2025-10-30T20:15:59+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Shane & Simple",
     "title": "Air Fryer Butternut Squash (Vegan + Oil-free)",
     "link": "https://shaneandsimple.com/air-fryer-butternut-squash-vegan-oil-free/",
@@ -3869,6 +4117,14 @@
     "link": "https://www.floraandvino.com/black-sesame-noodle-bowl/",
     "image": "https://www.floraandvino.com/wp-content/uploads/2025/10/Black-Sesame-Noodle-Bowl-19-560x840.jpg",
     "date": "2025-10-30T13:30:47+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "Mary's Test Kitchen",
+    "title": "Mozzarella from Sesame?! Will it Tofu has gone 2 far!",
+    "link": "https://www.marystestkitchen.com/sesame-mozzarella-stretchy-vegan-cheese/",
+    "image": "https://www.marystestkitchen.com/wp-content/uploads/2025/10/ft-sesame-mozzarella.jpg",
+    "date": "2025-10-29T13:59:45+00:00",
     "is_disruptor": true
   },
   {
@@ -3901,6 +4157,14 @@
     "link": "https://zardyplants.com/recipes/snacks-and-apps/easy-dairy-free-vegan-garlic-toast-recipe/",
     "image": "https://zardyplants.com/wp-content/uploads/2025/10/Vegan-Garlic-Toast-09-683x1024.jpg",
     "date": "2025-10-28T17:13:41+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "Fragrant Vanilla Cake",
+    "title": "Vegan Apple Filo Hand Pies",
+    "link": "https://www.fragrantvanilla.com/vegan-apple-filo-hand-pies/?utm_source=rss&utm_medium=rss&utm_campaign=vegan-apple-filo-hand-pies",
+    "image": "https://www.fragrantvanilla.com/wp-content/uploads/2025/10/Apple-Filo-Hand-Pies-1.jpg",
+    "date": "2025-10-27T02:17:40+00:00",
     "is_disruptor": true
   },
   {
@@ -4304,6 +4568,14 @@
     "is_disruptor": true
   },
   {
+    "blog_name": "Unconventional Baker",
+    "title": "Kumquat Rose Marmalade",
+    "link": "https://www.unconventionalbaker.com/kumquat-rose-marmalade/",
+    "image": "https://www.unconventionalbaker.com/wp-content/uploads/2025/10/kumquat-marmalade-sq.jpg",
+    "date": "2025-10-03T01:26:04+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Namely Marly",
     "title": "Vegan Chicken Alfredo",
     "link": "https://namelymarly.com/vegan-chicken-alfredo/",
@@ -4344,6 +4616,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Fragrant Vanilla Cake",
+    "title": "Vegan Pumpkin Cinnamon Rolls",
+    "link": "https://www.fragrantvanilla.com/vegan-pumpkin-cinnamon-rolls/?utm_source=rss&utm_medium=rss&utm_campaign=vegan-pumpkin-cinnamon-rolls",
+    "image": "https://www.fragrantvanilla.com/wp-content/uploads/2025/09/Pumpkin-Sweet-Rolls-1.jpg",
+    "date": "2025-09-29T01:33:47+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Namely Marly",
     "title": "Vegan Pumpkin Recipes",
     "link": "https://namelymarly.com/vegan-pumkpin-recipes/",
@@ -4366,6 +4646,14 @@
     "image": "https://namelymarly.com/wp-content/uploads/2025/08/Vegan-Raspberry-Banana-Muffins-0541-sq-web.jpg",
     "date": "2025-09-26T17:17:42+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "The Green Creator",
+    "title": "The Perfect Matcha Affogato Recipe",
+    "link": "https://thegreencreator.com/matcha-affogato/",
+    "image": "https://thegreencreator.com/wp-content/uploads/Matcha-Affogato-TheGreenCreator-1.jpg",
+    "date": "2025-09-26T15:22:56+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "ZardyPlants",
@@ -4438,6 +4726,14 @@
     "image": "https://runningonrealfood.com/wp-content/uploads/2025/09/chickpea-lentil-salad-recipe-6-2.jpg",
     "date": "2025-09-15T20:00:17+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Fragrant Vanilla Cake",
+    "title": "Vegan Blueberry Maple Pie",
+    "link": "https://www.fragrantvanilla.com/vegan-blueberry-maple-pie/?utm_source=rss&utm_medium=rss&utm_campaign=vegan-blueberry-maple-pie",
+    "image": "https://www.fragrantvanilla.com/wp-content/uploads/2025/09/Blueberry-Pie.jpg",
+    "date": "2025-09-15T02:14:45+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "ZardyPlants",
@@ -4544,6 +4840,14 @@
     "is_disruptor": true
   },
   {
+    "blog_name": "Unconventional Baker",
+    "title": "Tahini Raspberry Cake",
+    "link": "https://www.unconventionalbaker.com/tahini-raspberry-cake/",
+    "image": "https://www.unconventionalbaker.com/wp-content/uploads/2025/09/tahini-raspberry-cake-sq1.jpg",
+    "date": "2025-09-06T03:00:22+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "My Darling Vegan",
     "title": "18 Cozy Vegan Dinner Recipes for Fall",
     "link": "https://www.mydarlingvegan.com/18-cozy-vegan-dinner-recipes-for-fall/",
@@ -4589,6 +4893,14 @@
     "link": "https://addictedtodates.com/vegan-banoffee-pie/",
     "image": "https://addictedtodates.com/wp-content/uploads/2025/08/vegan-banoffee-pie-ingredients.jpg",
     "date": "2025-09-02T12:51:02+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "Unconventional Baker",
+    "title": "Blueberry Cake",
+    "link": "https://www.unconventionalbaker.com/blueberry-cake/",
+    "image": "https://www.unconventionalbaker.com/wp-content/uploads/2025/09/blueberry-cake-sq.jpg",
+    "date": "2025-09-02T10:37:28+00:00",
     "is_disruptor": true
   },
   {
@@ -4638,6 +4950,14 @@
     "image": "https://namelymarly.com/wp-content/uploads/2025/05/Mediterranean-Chickpeas-0381-16x9-web.jpg",
     "date": "2025-08-28T12:27:00+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Unconventional Baker",
+    "title": "Blueberry Pie",
+    "link": "https://www.unconventionalbaker.com/blueberry-pie/",
+    "image": "https://www.unconventionalbaker.com/wp-content/uploads/2025/08/mini-blueberry-pie-sq2.jpg",
+    "date": "2025-08-27T01:09:53+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "Choosing Chia",
@@ -4704,6 +5024,14 @@
     "is_disruptor": true
   },
   {
+    "blog_name": "Unconventional Baker",
+    "title": "Macadamia Espresso Ice Cream",
+    "link": "https://www.unconventionalbaker.com/macadamia-espresso-ice-cream/",
+    "image": "https://www.unconventionalbaker.com/wp-content/uploads/2025/08/macadamia-espresso-ice-cream-sq2.jpg",
+    "date": "2025-08-18T00:37:23+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Namely Marly",
     "title": "No-Cook Vegan Meals",
     "link": "https://namelymarly.com/no-cook-vegan-meals/",
@@ -4749,6 +5077,14 @@
     "link": "https://strengthandsunshine.com/cold-middle-eastern-lentil-salad/",
     "image": "https://strengthandsunshine.com/wp-content/uploads/2025/07/Middle-Eastern-Lentil-Salad-1.jpg",
     "date": "2025-07-31T18:00:11+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "Unconventional Baker",
+    "title": "Garlic Scape Pesto",
+    "link": "https://www.unconventionalbaker.com/garlic-scape-pesto/",
+    "image": "https://www.unconventionalbaker.com/wp-content/uploads/2025/07/garlic-scape-pesto-sq2.jpg",
+    "date": "2025-07-30T02:04:32+00:00",
     "is_disruptor": true
   },
   {
@@ -4832,6 +5168,14 @@
     "is_disruptor": true
   },
   {
+    "blog_name": "Mary's Test Kitchen",
+    "title": "Will Sesame Tofu? Can tofu be made from Sesame Seeds?",
+    "link": "https://www.marystestkitchen.com/will-sesame-tofu-can-tofu-be-made-from-sesame-seeds/",
+    "image": "https://www.marystestkitchen.com/wp-content/uploads/2025/07/yt-thumb-willsesametofu.jpg",
+    "date": "2025-07-02T22:41:56+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "The Stingy Vegan",
     "title": "White Beans and Spinach",
     "link": "https://thestingyvegan.com/white-beans-and-spinach/",
@@ -4853,6 +5197,14 @@
     "link": "https://thevegan8.com/homemade-pineapple-dole-whip/",
     "image": "https://thevegan8.com/wp-content/uploads/2025/06/homemade-pineapple-dole-whip-vegan-dairy-free.jpg",
     "date": "2025-06-30T00:35:16+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "Unconventional Baker",
+    "title": "Pandan Coconut Chocolates",
+    "link": "https://www.unconventionalbaker.com/pandan-coconut-chocolates/",
+    "image": "https://www.unconventionalbaker.com/wp-content/uploads/2025/06/pandan-chocolates-sq.jpg",
+    "date": "2025-06-25T08:11:17+00:00",
     "is_disruptor": true
   },
   {
@@ -4904,6 +5256,22 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Mary's Test Kitchen",
+    "title": "Will Pistachios Tofu?",
+    "link": "https://www.marystestkitchen.com/will-pistachios-tofu/",
+    "image": "https://www.marystestkitchen.com/wp-content/uploads/2025/06/yt-thumb-will_pistachios_tofu_v1.jpg",
+    "date": "2025-06-10T14:00:47+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "Unconventional Baker",
+    "title": "Father's Day Desserts",
+    "link": "https://www.unconventionalbaker.com/fathers-day-desserts/",
+    "image": "default.jpg",
+    "date": "2025-06-09T07:12:44+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "V Nutrition",
     "title": "5 Best Probiotics for Women, Dietitian-Approved (2026)",
     "link": "https://www.vnutritionandwellness.com/best-probiotics-for-women/",
@@ -4920,12 +5288,36 @@
     "is_disruptor": true
   },
   {
+    "blog_name": "Mary's Test Kitchen",
+    "title": "Will It Tofu? Store-Bought Vegan Milks",
+    "link": "https://www.marystestkitchen.com/will-it-tofu-store-bought-vegan-milks/",
+    "image": "https://www.marystestkitchen.com/wp-content/uploads/2025/05/ft-willittofu-cartonmilks-1.jpg",
+    "date": "2025-05-31T13:07:02+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Namely Marly",
     "title": "Fresh Strawberry Reduction Cake",
     "link": "https://namelymarly.com/fresh-strawberry-reduction-cake/",
     "image": "https://namelymarly.com/wp-content/uploads/2020/07/Strawberry_Cake_08-edit-web.jpg",
     "date": "2025-05-30T17:48:46+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Mary's Test Kitchen",
+    "title": "Vegan Keto Reset \u2013 What I Eat In A Day to Defeat Self-Sabotage",
+    "link": "https://www.marystestkitchen.com/vegan-keto-reset-what-i-eat-in-a-day-to-defeat-self-sabotage/",
+    "image": "https://www.marystestkitchen.com/wp-content/uploads/2025/05/ft-vegan-keto-reset.jpg",
+    "date": "2025-05-30T13:06:28+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "Unconventional Baker",
+    "title": "Tahini Chocolate Fudge",
+    "link": "https://www.unconventionalbaker.com/tahini-chocolate-fudge/",
+    "image": "https://www.unconventionalbaker.com/wp-content/uploads/2025/05/tahini-chocolate-fudge-sq.jpg",
+    "date": "2025-05-30T05:05:38+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "Hot for Food",
