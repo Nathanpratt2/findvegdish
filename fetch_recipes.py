@@ -9,7 +9,7 @@ import os
 
 # --- CONFIGURATION ---
 TOP_BLOGGERS = [
-    # The Titans: Established, high-authority sources
+    # The Titans: Established, high-authority sources. Love and Lemons cannot be used.
     ("Simple Vegan Blog", "https://simpleveganblog.com/feed/"),
     ("Vegan Richa", "https://www.veganricha.com/feed/"),
     ("Nora Cooks", "https://www.noracooks.com/feed/"),
@@ -22,7 +22,6 @@ TOP_BLOGGERS = [
     ("Connoisseurus Veg", "https://www.connoisseurusveg.com/feed/"),
     ("Jessica in the Kitchen", "https://jessicainthekitchen.com/feed/"),
     ("The First Mess", "https://thefirstmess.com/feed/"),
-    ("Love and Lemons", "https://www.loveandlemons.com/recipes/vegan-recipes/feed/"),
     ("Lazy Cat Kitchen", "https://www.lazycatkitchen.com/feed/"),
     ("The Full Helping", "https://thefullhelping.com/feed/"),
     ("Elavegan", "https://elavegan.com/feed/"),
