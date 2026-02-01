@@ -9,41 +9,55 @@ import os
 
 # --- CONFIGURATION ---
 TOP_BLOGGERS = [
+    # The Titans: Established, high-authority sources
     ("Simple Vegan Blog", "https://simpleveganblog.com/feed/"),
     ("Vegan Richa", "https://www.veganricha.com/feed/"),
+    ("Nora Cooks", "https://www.noracooks.com/feed/"),
+    ("Rainbow Plant Life", "https://rainbowplantlife.com/feed/"),
+    ("Minimalist Baker", "https://minimalistbaker.com/recipes/vegan/feed/"), 
+    ("VegNews", "https://vegnews.com/feed"), 
+    ("Oh She Glows", "https://ohsheglows.com/feed/"),
     ("It Doesn't Taste Like Chicken", "https://itdoesnttastelikechicken.com/feed/"),
     ("Sweet Potato Soul", "https://sweetpotatosoul.com/feed/"),
     ("Connoisseurus Veg", "https://www.connoisseurusveg.com/feed/"),
-    ("VegNews", "https://vegnews.com/feed"), 
+    ("Jessica in the Kitchen", "https://jessicainthekitchen.com/feed/"),
+    ("The First Mess", "https://thefirstmess.com/feed/"),
+    ("Love and Lemons", "https://www.loveandlemons.com/recipes/vegan-recipes/feed/"),
     ("Lazy Cat Kitchen", "https://www.lazycatkitchen.com/feed/"),
     ("The Full Helping", "https://thefullhelping.com/feed/"),
-    ("Minimalist Baker", "https://minimalistbaker.com/recipes/vegan/feed/"), 
-    ("Nora Cooks", "https://www.noracooks.com/feed/"),
-    ("Rainbow Plant Life", "https://rainbowplantlife.com/feed/"),
     ("Elavegan", "https://elavegan.com/feed/"),
     ("Running on Real Food", "https://runningonrealfood.com/feed/"),
+    ("The Simple Veganista", "https://www.thesimpleveganista.com/feed/"),
     ("Namely Marly", "https://namelymarly.com/feed/"),
-    ("The First Mess", "https://thefirstmess.com/feed/"),
-    ("My Darling Vegan", "https://www.mydarlingvegan.com/feed/"),
-    ("The Foodie Takes Flight", "https://thefoodietakesflight.com/feed/")
+    ("The Post-Punk Kitchen", "https://www.theppk.com/feed/")
 ]
 
 DISRUPTORS = [
-    ("School Night Vegan", "https://schoolnightvegan.com/feed/"), # (Keep checking or remove if still 0)
-    ("The Korean Vegan", "https://thekoreanvegan.com/feed/"),
-    ("The Burger Dude", "https://theeburgerdude.com/feed/"),
-    ("PlantYou", "https://plantyou.com/feed/"),
-    ("From My Bowl", "https://frommybowl.com/feed/"),
-    ("Rabbit and Wolves", "https://www.rabbitandwolves.com/feed/"),
-    ("Okonomi Kitchen", "https://okonomikitchen.com/feed/"),
-    ("Vegan Scratch Kitchen", "https://veganscratchkitchen.com/feed/"),
-    ("Turnip Vegan", "https://turnipvegan.com/blogs/news.atom"),
-    ("Addicted to Dates", "https://addictedtodates.com/category/recipes/feed/"),
-    ("Flora & Vino", "https://www.floraandvino.com/feed/"),
+    # The Specialists: Niche focus, cultural heritage, or unique constraints
+    ("The Korean Vegan", "https://thekoreanvegan.com/feed/"),      # Cultural/Storytelling
+    ("The Burger Dude", "https://theeburgerdude.com/feed/"),       # Vegan Fast Food
+    ("PlantYou", "https://plantyou.com/feed/"),                    # "Scrap" cooking/No-oil
+    ("Turnip Vegan", "https://turnipvegan.com/blogs/news.atom"),   # Mushroom expert
+    ("Vegan Scratch Kitchen", "https://veganscratchkitchen.com/feed/"), # Culinary technique
+    ("From My Bowl", "https://frommybowl.com/feed/"),              # Budget/Fast
+    ("Okonomi Kitchen", "https://okonomikitchen.com/feed/"),       # Japanese fusion
+    ("Rabbit and Wolves", "https://www.rabbitandwolves.com/feed/"), # Decadent Comfort
+    ("Addicted to Dates", "https://addictedtodates.com/category/recipes/feed/"), # Dessert specialist
+    ("The Vegan 8", "https://thevegan8.com/feed/"),                # 8 ingredients or less
+    ("Make It Dairy Free", "https://makeitdairyfree.com/feed/"),   # Allergy-friendly focus
+    ("Hot for Food", "https://www.hotforfoodblog.com/feed/"),      # Modern Indulgence
+    ("The Viet Vegan", "https://thevietvegan.com/feed/"),          # Vietnamese heritage
+    ("Flora & Vino", "https://www.floraandvino.com/feed/"),        # WFPB / Wellness
+    ("Sweet Simple Vegan", "https://sweetsimplevegan.com/feed/"),  # Approachable/Pop-culture
+    ("Vegan Yack Attack", "https://veganyackattack.com/feed/"),    # Eclectic/Creative
+    ("Six Vegan Sisters", "https://sixvegansisters.com/feed/"),    # Family-style comfort
+    ("Choosing Chia", "https://choosingchia.com/feed/"),           # Wellness/Aesthetic
+    ("The Conscious Plant Kitchen", "https://www.theconsciousplantkitchen.com/feed/"), # Nutrition/WFPB
+    ("Short Girl Tall Order", "https://shortgirltallorder.com/feed/") # Modern Baking
 ]
 
 ALL_FEEDS = TOP_BLOGGERS + DISRUPTORS
-MAX_RECIPES_PER_BLOG = 250 
+MAX_RECIPES_PER_BLOG = 150 
 cutoff_date = datetime.now().astimezone() - timedelta(days=360)
 
 # --- LOAD EXISTING DATA ---
