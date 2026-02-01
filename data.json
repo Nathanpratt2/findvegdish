@@ -200,6 +200,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Veggiekins",
+    "title": "Easy Persimmon Tart",
+    "link": "https://veggiekinsblog.com/2026/01/28/easy-persimmon-tart/",
+    "image": "https://veggiekinsblog.com/wp-content/uploads/2026/01/CZ5A9565.jpg",
+    "date": "2026-01-29T01:58:31+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "The Korean Vegan",
     "title": "8-ingredient Easy and Delicious Lemon Pepper Pasta.",
     "link": "https://thekoreanvegan.com/easy-and-delicious-lemon-pepper-pasta/",
@@ -576,6 +584,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Veggiekins",
+    "title": "Persimmon Matcha Latte",
+    "link": "https://veggiekinsblog.com/2026/01/22/persimmon-matcha-latte/",
+    "image": "https://veggiekinsblog.com/wp-content/uploads/2026/01/CZ5A9710-1200x1800.jpg",
+    "date": "2026-01-23T03:14:19+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "The Conscious Plant Kitchen",
     "title": "Corn Biscuits (5 Ingredients, No Eggs, No Dairy)",
     "link": "https://www.theconsciousplantkitchen.com/corn-biscuits/",
@@ -774,6 +790,14 @@
     "image": "https://www.connoisseurusveg.com/wp-content/uploads/2026/01/cabbage-soup-sq.jpg",
     "date": "2026-01-19T12:00:00+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Domestic Gothess",
+    "title": "Easy Bubbly Focaccia",
+    "link": "https://domesticgothess.com/blog/2026/01/19/easy-bubbly-focaccia/",
+    "image": "https://domesticgothess.com/wp-content/uploads/2026/01/easy-bubbly-focaccia.jpg",
+    "date": "2026-01-19T08:09:40+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "It Doesn't Taste Like Chicken",
@@ -1176,6 +1200,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Domestic Gothess",
+    "title": "Baked Tofu Crumbles",
+    "link": "https://domesticgothess.com/blog/2026/01/05/baked-tofu-crumbles/",
+    "image": "https://domesticgothess.com/wp-content/uploads/2026/01/baked-tofu-crumbles.jpg",
+    "date": "2026-01-05T13:01:36+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Rabbit and Wolves",
     "title": "The Best Vegan Homity Pie",
     "link": "https://www.rabbitandwolves.com/the-best-vegan-homity-pie/?utm_source=rss&utm_medium=rss&utm_campaign=the-best-vegan-homity-pie",
@@ -1214,6 +1246,14 @@
     "image": "https://itdoesnttastelikechicken.com/wp-content/uploads/2025/12/Easy-Protein-Pancakes-recipe-healthy-vegan-protein-powder-banana-high-gluten-free-oat-facebook.jpg",
     "date": "2026-01-04T10:00:00+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Domestic Gothess",
+    "title": "Vegan Yogurt Flatbreads",
+    "link": "https://domesticgothess.com/blog/2026/01/04/vegan-yogurt-flatbreads/",
+    "image": "https://domesticgothess.com/wp-content/uploads/2026/01/vegan-yogurt-flatbreads.jpg",
+    "date": "2026-01-04T08:32:44+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "Lazy Cat Kitchen",
@@ -1456,6 +1496,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Veggiekins",
+    "title": "Birthday Cake Matcha Latte",
+    "link": "https://veggiekinsblog.com/2025/12/21/birthday-cake-matcha-latte/",
+    "image": "https://veggiekinsblog.com/wp-content/uploads/2025/12/CZ5A9457.jpg",
+    "date": "2025-12-21T18:34:48+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Make It Dairy Free",
     "title": "Vegan Sweet Potato Cornbread",
     "link": "https://makeitdairyfree.com/vegan-sweet-potato-cornbread/",
@@ -1470,6 +1518,14 @@
     "image": "https://sweetpotatosoul.com/wp-content/uploads/2024/12/vegan-gingerbread-cookies.jpg",
     "date": "2025-12-21T13:00:00+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Domestic Gothess",
+    "title": "Gingerbread Crumb Cake (vegan)",
+    "link": "https://domesticgothess.com/blog/2025/12/21/gingerbread-crumb-cake/",
+    "image": "https://domesticgothess.com/wp-content/uploads/2025/12/gingerbread-crumb-cake.jpg",
+    "date": "2025-12-21T12:19:31+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "Connoisseurus Veg",
@@ -1552,6 +1608,14 @@
     "is_disruptor": true
   },
   {
+    "blog_name": "Domestic Gothess",
+    "title": "Chocolate Gingerbread Sandwich Cookies (vegan)",
+    "link": "https://domesticgothess.com/blog/2025/12/18/chocolate-gingerbread-sandwich-cookies-vegan/",
+    "image": "https://domesticgothess.com/wp-content/uploads/2025/12/vegan-gingerbread-sandwich-cookies.jpg",
+    "date": "2025-12-18T09:20:51+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "The First Mess",
     "title": "No-Bake Vegan Cranberry Tart with White Chocolate and Biscoff Cookie Crust",
     "link": "https://thefirstmess.com/2025/12/18/no-bake-vegan-cranberry-tart-white-chocolate/",
@@ -1573,6 +1637,14 @@
     "link": "https://www.okonomikitchen.com/earl-grey-snowball-cookies/",
     "image": "https://www.okonomikitchen.com/wp-content/uploads/2025/12/earl-grey-snowball-cookies-2.jpg",
     "date": "2025-12-17T23:50:55+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "Veggiekins",
+    "title": "Pumpkin Pie Matcha Latte (with pie crust topping!)",
+    "link": "https://veggiekinsblog.com/2025/12/17/pumpkin-pie-matcha-latte-with-pie-crust-topping/",
+    "image": "https://veggiekinsblog.com/wp-content/uploads/2025/12/CZ5A9498.jpg",
+    "date": "2025-12-17T22:11:31+00:00",
     "is_disruptor": true
   },
   {
@@ -1648,6 +1720,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Domestic Gothess",
+    "title": "Mincemeat Cookies (vegan)",
+    "link": "https://domesticgothess.com/blog/2025/12/16/mincemeat-cookies/",
+    "image": "https://domesticgothess.com/wp-content/uploads/2025/12/vegan-mincemeat-cookies.jpg",
+    "date": "2025-12-16T08:47:17+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Nora Cooks",
     "title": "Vegan Yule Log Cake (B\u00fbche De No\u00ebl)",
     "link": "https://www.noracooks.com/vegan-yule-log-cake/",
@@ -1704,11 +1784,27 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Domestic Gothess",
+    "title": "Vegan Panettone",
+    "link": "https://domesticgothess.com/blog/2025/12/13/vegan-panettone/",
+    "image": "https://domesticgothess.com/wp-content/uploads/2025/12/vegan-panettone.jpg",
+    "date": "2025-12-13T14:26:24+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Rabbit and Wolves",
     "title": "Amazing Plant-Based Hot Chocolate Puppy Chow",
     "link": "https://www.rabbitandwolves.com/amazing-plant-based-hot-chocolate-puppy-chow/?utm_source=rss&utm_medium=rss&utm_campaign=amazing-plant-based-hot-chocolate-puppy-chow",
     "image": "https://www.rabbitandwolves.com/wp-content/uploads/2025/12/Vegan-puppy-chow0677.jpg",
     "date": "2025-12-12T17:45:51+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "The Stingy Vegan",
+    "title": "Stir Fry Snow Peas",
+    "link": "https://thestingyvegan.com/stir-fry-snow-peas/",
+    "image": "https://thestingyvegan.com/wp-content/uploads/2025/12/stir-fry-snow-peas-image.jpg",
+    "date": "2025-12-12T13:18:20+00:00",
     "is_disruptor": true
   },
   {
@@ -1734,6 +1830,14 @@
     "image": "https://www.mydarlingvegan.com/wp-content/uploads/2025/12/peppermint-cupcake-closeup.jpg",
     "date": "2025-12-11T21:40:56+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Bianca Zapatka",
+    "title": "Applesauce Speculoos Dessert | Vegan Apple Tiramisu",
+    "link": "https://biancazapatka.com/en/applesauce-speculoos-dessert/?adt_ei={$email}",
+    "image": "https://biancazapatka.com/wp-content/uploads/2025/12/Apfelmus-Spekulatius-Dessert-728x900.jpg",
+    "date": "2025-12-11T13:38:20+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "Make It Dairy Free",
@@ -1790,6 +1894,14 @@
     "image": "https://www.noracooks.com/wp-content/uploads/2025/11/warm-brussels-sprouts-salad-1-2-1200x1200.jpg",
     "date": "2025-12-09T15:48:27+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Domestic Gothess",
+    "title": "Gingerbread Crinkle Cookies (vegan)",
+    "link": "https://domesticgothess.com/blog/2025/12/09/gingerbread-crinkle-cookies/",
+    "image": "https://domesticgothess.com/wp-content/uploads/2025/12/vegan-gingerbread-crinkle-cookies.jpg",
+    "date": "2025-12-09T15:05:35+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "Minimalist Baker",
@@ -1888,12 +2000,28 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "The Stingy Vegan",
+    "title": "Udon Noodle Stir Fry",
+    "link": "https://thestingyvegan.com/udon-noodle-stir-fry/",
+    "image": "https://thestingyvegan.com/wp-content/uploads/2025/12/udon-noodle-stir-fry-photo.jpg",
+    "date": "2025-12-04T14:06:21+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Sweet Potato Soul",
     "title": "Vegan Hot Chocolate",
     "link": "https://sweetpotatosoul.com/vegan-hot-chocolate/",
     "image": "https://sweetpotatosoul.com/wp-content/uploads/2025/11/easy-vegan-hot-chocolate.jpg",
     "date": "2025-12-03T22:38:52+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Bianca Zapatka",
+    "title": "Vegan Thumbprint Cookies with Jam \u2013 Easy + Video",
+    "link": "https://biancazapatka.com/en/vegan-thumbprint-cookies/?adt_ei={$email}",
+    "image": "https://biancazapatka.com/wp-content/uploads/2025/12/engelsaugen-plaetzchen-728x900.jpg",
+    "date": "2025-12-03T14:21:59+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "Vegan Richa",
@@ -1952,6 +2080,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Domestic Gothess",
+    "title": "Vegan Glazed Gingerbread Cookies",
+    "link": "https://domesticgothess.com/blog/2025/11/30/vegan-glazed-gingerbread-cookies/",
+    "image": "https://domesticgothess.com/wp-content/uploads/2025/11/vegan-glazed-gingerbread-cookies.jpg",
+    "date": "2025-11-30T17:52:04+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Sweet Potato Soul",
     "title": "Holiday Gift Guide",
     "link": "https://sweetpotatosoul.com/holiday-gift-guide/",
@@ -1992,12 +2128,36 @@
     "is_disruptor": true
   },
   {
+    "blog_name": "The Stingy Vegan",
+    "title": "Greek Chickpea Soup",
+    "link": "https://thestingyvegan.com/greek-chickpea-soup/",
+    "image": "https://thestingyvegan.com/wp-content/uploads/2025/11/Greek-Chickpea-Soup-photo.jpg",
+    "date": "2025-11-28T13:08:20+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "The First Mess",
     "title": "Vegan Orange Cranberry Biscotti with White Chocolate",
     "link": "https://thefirstmess.com/2025/11/27/vegan-orange-cranberry-biscotti/",
     "image": "https://thefirstmess.com/wp-content/uploads/2025/11/vegan-orange-cranberry-biscotti-02.jpg",
     "date": "2025-11-27T22:04:25+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Domestic Gothess",
+    "title": "Vegan Cinnamon Star Bread",
+    "link": "https://domesticgothess.com/blog/2025/11/27/vegan-cinnamon-star-bread/",
+    "image": "https://domesticgothess.com/wp-content/uploads/2025/11/vegan-cinnamon-star-bread.jpg",
+    "date": "2025-11-27T17:29:51+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "Bianca Zapatka",
+    "title": "Vegan Poppy Seed Cake (German Mohnkuchen)",
+    "link": "https://biancazapatka.com/en/vegan-poppy-seed-cake/?adt_ei={$email}",
+    "image": "https://biancazapatka.com/wp-content/uploads/2025/11/poppy-seed-crumble-cake-728x900.jpg",
+    "date": "2025-11-27T14:32:39+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "Rabbit and Wolves",
@@ -2045,6 +2205,14 @@
     "link": "https://plantyou.com/hasselback-butternut-squash/",
     "image": "https://plantyou.com/wp-content/uploads/2025/11/DSC02117-scaled.jpg",
     "date": "2025-11-25T14:32:01+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "The Stingy Vegan",
+    "title": "Moroccan Vegetables",
+    "link": "https://thestingyvegan.com/moroccan-vegetables/",
+    "image": "https://thestingyvegan.com/wp-content/uploads/2025/11/moroccan-vegetables-picture.jpg",
+    "date": "2025-11-25T11:53:03+00:00",
     "is_disruptor": true
   },
   {
@@ -2216,6 +2384,22 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Veggiekins",
+    "title": "Horchata Matcha Latte",
+    "link": "https://veggiekinsblog.com/2025/11/17/horchata-matcha-latte/",
+    "image": "https://veggiekinsblog.com/wp-content/uploads/2025/11/IMG_2754-1200x1600.jpg",
+    "date": "2025-11-17T23:40:42+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "Veggiekins",
+    "title": "Black Sesame Matcha Latte",
+    "link": "https://veggiekinsblog.com/2025/11/17/black-sesame-matcha-latte/",
+    "image": "https://veggiekinsblog.com/wp-content/uploads/2025/10/CZ5A9533-1200x1799.jpg",
+    "date": "2025-11-17T23:34:21+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "My Darling Vegan",
     "title": "21 Vegan Holiday Recipes for Christmas and Thanksgiving",
     "link": "https://www.mydarlingvegan.com/21-vegan-holiday-recipes-for-christmas-and-thanksgiving/",
@@ -2302,6 +2486,14 @@
     "image": "https://rainbowplantlife.com/wp-content/uploads/2025/11/Chickpea-Salad-Sandwich-hero-1.jpg",
     "date": "2025-11-13T14:25:39+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Bianca Zapatka",
+    "title": "Scissor Cut Pumpkin Noodles \u2013 Easy Homemade Pasta",
+    "link": "https://biancazapatka.com/en/scissor-cut-pumpkin-noodles/?adt_ei={$email}",
+    "image": "https://biancazapatka.com/wp-content/uploads/2025/11/kuerbis-scherennudeln-728x900.jpg",
+    "date": "2025-11-13T13:40:05+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "Vegan Richa",
@@ -2408,6 +2600,22 @@
     "is_disruptor": true
   },
   {
+    "blog_name": "Bianca Zapatka",
+    "title": "Vegan Hazelnut Cookies Recipe \u2013 Quick & Easy",
+    "link": "https://biancazapatka.com/en/vegan-hazelnut-cookies/?adt_ei={$email}",
+    "image": "https://biancazapatka.com/wp-content/uploads/2025/11/haselnussplaetzchen-728x900.jpg",
+    "date": "2025-11-07T13:50:07+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "Veggiekins",
+    "title": "Matcha Flan (no eggs, no dairy)",
+    "link": "https://veggiekinsblog.com/2025/11/06/matcha-flan-no-eggs-no-dairy/",
+    "image": "default.jpg",
+    "date": "2025-11-07T01:32:58+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Running on Real Food",
     "title": "Edamame Bean Salad",
     "link": "https://runningonrealfood.com/edamame-bean-salad/",
@@ -2470,6 +2678,14 @@
     "image": "https://thefirstmess.com/wp-content/uploads/2025/11/celery-root-salad-peanut-vinaigrette-2.jpg",
     "date": "2025-11-05T06:59:00+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Veggiekins",
+    "title": "2-Ingredient Chocolate Mousse Cake",
+    "link": "https://veggiekinsblog.com/2025/11/04/2-ingredient-chocolate-mousse-cake/",
+    "image": "https://veggiekinsblog.com/wp-content/uploads/2025/11/CZ5A9850.jpg",
+    "date": "2025-11-05T02:26:15+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "Addicted to Dates",
@@ -2560,6 +2776,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "The Stingy Vegan",
+    "title": "Marry Me Chickpeas",
+    "link": "https://thestingyvegan.com/marry-me-chickpeas/",
+    "image": "https://thestingyvegan.com/wp-content/uploads/2025/10/marry-me-chickpeas-image.jpg",
+    "date": "2025-10-25T13:30:45+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "The Vegan 8",
     "title": "5 Ingredient Vegan Chocolate Pumpkin Pie",
     "link": "https://thevegan8.com/5-ingredient-vegan-chocolate-pumpkin-pie/",
@@ -2590,6 +2814,14 @@
     "image": "https://namelymarly.com/wp-content/uploads/2024/05/20230511-Biscoff-Overnight-Oats-1930-16x9-web.jpg",
     "date": "2025-10-22T21:47:52+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Veggiekins",
+    "title": "2 Ingredient Gnocchi (No Eggs)",
+    "link": "https://veggiekinsblog.com/2025/10/22/2-ingredient-gnocchi-no-eggs/",
+    "image": "https://veggiekinsblog.com/wp-content/uploads/2025/10/CZ5A8181.jpg",
+    "date": "2025-10-22T16:33:15+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "Namely Marly",
@@ -2744,6 +2976,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Bianca Zapatka",
+    "title": "Vegan Germkn\u00f6del Recipe \u2013 Steamed Yeast Dumplings",
+    "link": "https://biancazapatka.com/en/vegan-germknoedel/?adt_ei={$email}",
+    "image": "https://biancazapatka.com/wp-content/uploads/2025/10/germknoedel-728x900.jpg",
+    "date": "2025-10-10T11:57:12+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Rainbow Plant Life",
     "title": "Mediterranean Lentil Soup",
     "link": "https://rainbowplantlife.com/lentil-soup/",
@@ -2790,6 +3030,14 @@
     "image": "https://elavegan.com/wp-content/uploads/2025/10/A-bowl-of-chocolate-mousse-with-a-spoonful-taken-out-placed-on-a-gray-surface-with-two-dates-nearby.jpg",
     "date": "2025-10-04T09:03:35+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "The Stingy Vegan",
+    "title": "Spinach Tortellini Soup",
+    "link": "https://thestingyvegan.com/spinach-tortellini-soup/",
+    "image": "https://thestingyvegan.com/wp-content/uploads/2025/10/spinach-tortellini-soup-ingredients-photo.jpg",
+    "date": "2025-10-03T09:15:11+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "Namely Marly",
@@ -2848,6 +3096,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "Bianca Zapatka",
+    "title": "Easy Vegan Pizza Recipe \u2013 Crispy Crust & Italian Flavor",
+    "link": "https://biancazapatka.com/en/vegan-pizza/?adt_ei={$email}",
+    "image": "https://biancazapatka.com/wp-content/uploads/2025/09/pizza-rezept-728x900.jpg",
+    "date": "2025-09-25T12:44:07+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Elavegan",
     "title": "Yellow Lentil Dal (One-Pot)",
     "link": "https://elavegan.com/yellow-lentil-dal/",
@@ -2904,6 +3160,14 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "The Stingy Vegan",
+    "title": "Creamy Vegan Tortellini Pasta",
+    "link": "https://thestingyvegan.com/creamy-vegan-tortellini-pasta/",
+    "image": "https://thestingyvegan.com/wp-content/uploads/2025/09/creamy-vegan-tortellini-pasta-photo.jpg",
+    "date": "2025-09-12T14:21:09+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Running on Real Food",
     "title": "Mediterranean Barley Salad",
     "link": "https://runningonrealfood.com/mediterranean-barley-salad/",
@@ -2918,6 +3182,14 @@
     "image": "https://www.mydarlingvegan.com/wp-content/uploads/2025/08/bibimbap-bowl-1.jpg",
     "date": "2025-09-08T23:01:15+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Bianca Zapatka",
+    "title": "Sweet Potato Wrap Recipe | easy, vegan, gluten-free",
+    "link": "https://biancazapatka.com/en/sweet-potato-wrap/?adt_ei={$email}",
+    "image": "https://biancazapatka.com/wp-content/uploads/2025/09/sweet-potato-wrap-recipe-728x900.jpg",
+    "date": "2025-09-08T13:10:19+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "Elavegan",
@@ -2958,6 +3230,14 @@
     "image": "https://namelymarly.com/wp-content/uploads/2025/08/Protein-Pasta-Salad-0493-sq-web-2.jpg",
     "date": "2025-09-04T23:10:55+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "The Stingy Vegan",
+    "title": "Smoky Tofu Wraps",
+    "link": "https://thestingyvegan.com/smoky-tofu-wraps/",
+    "image": "https://thestingyvegan.com/wp-content/uploads/2025/09/smoky-tofu-wraps-image.jpg",
+    "date": "2025-09-04T07:44:32+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "Oh She Glows",
@@ -3024,6 +3304,14 @@
     "is_disruptor": true
   },
   {
+    "blog_name": "Bianca Zapatka",
+    "title": "Crispy Rice Salad (Nam Khao)",
+    "link": "https://biancazapatka.com/en/crispy-rice-salad/?adt_ei={$email}",
+    "image": "https://biancazapatka.com/wp-content/uploads/2025/08/crispy-rice-salad-nam-khao-728x900.jpg",
+    "date": "2025-08-25T12:56:12+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Namely Marly",
     "title": "Coconut Granola",
     "link": "https://namelymarly.com/coconut-granola/",
@@ -3072,6 +3360,14 @@
     "is_disruptor": true
   },
   {
+    "blog_name": "Bianca Zapatka",
+    "title": "Watermelon Shaved Ice Recipe",
+    "link": "https://biancazapatka.com/en/watermelon-shaved-ice/?adt_ei={$email}",
+    "image": "https://biancazapatka.com/wp-content/uploads/2025/08/watermelon-shaved-ice-728x900.jpg",
+    "date": "2025-08-12T12:05:29+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "Vegan Yack Attack",
     "title": "Grilled Buffalo White Bean Walnut Burger",
     "link": "https://veganyackattack.com/2025/07/27/grilled-buffalo-white-bean-walnut-burger/",
@@ -3104,11 +3400,35 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "The Stingy Vegan",
+    "title": "White Beans and Spinach",
+    "link": "https://thestingyvegan.com/white-beans-and-spinach/",
+    "image": "https://thestingyvegan.com/wp-content/uploads/2025/07/white-beans-and-spinach-photo.jpg",
+    "date": "2025-07-02T11:33:50+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "Veggiekins",
+    "title": "Cheezy Broccoli Orzo (vegan, high protein)",
+    "link": "https://veggiekinsblog.com/2025/06/30/cheezy-broccoli-orzo/",
+    "image": "https://veggiekinsblog.com/wp-content/uploads/2025/06/CZ5A8498-scaled.jpg",
+    "date": "2025-06-30T21:34:37+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "The Vegan 8",
     "title": "Homemade Pineapple Dole Whip",
     "link": "https://thevegan8.com/homemade-pineapple-dole-whip/",
     "image": "https://thevegan8.com/wp-content/uploads/2025/06/homemade-pineapple-dole-whip-vegan-dairy-free.jpg",
     "date": "2025-06-30T00:35:16+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "The Stingy Vegan",
+    "title": "Tofu Tacos",
+    "link": "https://thestingyvegan.com/tofu-tacos/",
+    "image": "https://thestingyvegan.com/wp-content/uploads/2025/06/tofu-tacos-image.jpg",
+    "date": "2025-06-20T09:28:12+00:00",
     "is_disruptor": true
   },
   {
