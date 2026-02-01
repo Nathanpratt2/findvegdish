@@ -54,6 +54,11 @@ DISRUPTORS = [
     ("Choosing Chia", "https://choosingchia.com/feed/"),           # Wellness/Aesthetic
     ("The Conscious Plant Kitchen", "https://www.theconsciousplantkitchen.com/feed/"), # Nutrition/WFPB
     ("Short Girl Tall Order", "https://shortgirltallorder.com/feed/") # Modern Baking
+    ("Bianca Zapatka", "https://biancazapatka.com/en/feed/"),
+    ("The Stingy Vegan", "https://thestingyvegan.com/feed/"),
+    ("Veggiekins", "https://veggiekinsblog.com/feed/"),
+    ("Domestic Gothess", "https://domesticgothess.com/feed/"),
+    ("Wicked Healthy", "https://wickedhealthyfood.com/feed/")
 ]
 
 ALL_FEEDS = TOP_BLOGGERS + DISRUPTORS
