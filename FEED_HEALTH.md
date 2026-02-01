@@ -1,5 +1,5 @@
 # Feed Health Report
-**Last Run:** 2026-02-01T03:35:10.901876
+**Last Run:** 2026-02-01T07:53:44.596981
 **Total Database Size:** 725
 
 | Blog Name | New Today | Total in DB | Status |
@@ -9,6 +9,7 @@
 | Emilie Eats | 0 | 0 | ⚠️ Parsed 0 items |
 | Exceedingly Vegan | 0 | 0 | ⚠️ Parsed 0 items |
 | Holy Cow Vegan | 0 | 0 | ⚠️ Parsed 0 items |
+| Hot for Food | 0 | 3 | ❌ Crash: Response ended prema |
 | Pick Up Limes | 0 | 0 | ❌ Error 404 |
 | Project Vegan Baking | 0 | 0 | ⚠️ Parsed 0 items |
 | Short Girl Tall Order | 0 | 0 | ❌ Error 500 |
@@ -31,19 +32,18 @@
 | Elavegan | 0 | 11 | ✅ OK |
 | Elephantastic Vegan | 0 | 0 | ✅ OK |
 | Flora & Vino | 0 | 10 | ✅ OK |
-| Fragrant Vanilla Cake | 10 | 10 | ✅ OK |
+| Fragrant Vanilla Cake | 0 | 10 | ✅ OK |
 | Fried Dandelions | 0 | 0 | ✅ OK |
 | From My Bowl | 0 | 10 | ✅ OK |
-| Full of Plants | 6 | 6 | ✅ OK |
+| Full of Plants | 0 | 6 | ✅ OK |
 | Good Eatings | 0 | 0 | ✅ OK |
 | Gretchen's Vegan Bakery | 0 | 10 | ✅ OK |
-| Hot for Food | 0 | 3 | ✅ OK |
 | It Doesn't Taste Like Chicken | 0 | 33 | ✅ OK |
 | Jessica in the Kitchen | 0 | 10 | ✅ OK |
 | Lazy Cat Kitchen | 0 | 10 | ✅ OK |
 | Loving It Vegan | 0 | 4 | ✅ OK |
 | Make It Dairy Free | 0 | 10 | ✅ OK |
-| Mary's Test Kitchen | 10 | 10 | ✅ OK |
+| Mary's Test Kitchen | 0 | 10 | ✅ OK |
 | Minimalist Baker | 0 | 4 | ✅ OK |
 | Monkey & Me Kitchen Adventures | 0 | 10 | ✅ OK |
 | My Berry Forest | 0 | 0 | ✅ OK |
@@ -55,10 +55,10 @@
 | Nutriciously | 0 | 2 | ✅ OK |
 | Oh She Glows | 0 | 1 | ✅ OK |
 | Okonomi Kitchen | 0 | 10 | ✅ OK |
-| One Arab Vegan | 2 | 2 | ✅ OK |
+| One Arab Vegan | 0 | 2 | ✅ OK |
 | Plant Power Couple | 0 | 10 | ✅ OK |
 | PlantYou | 0 | 11 | ✅ OK |
-| Plantifully Based | 9 | 9 | ✅ OK |
+| Plantifully Based | 0 | 9 | ✅ OK |
 | Rabbit and Wolves | 0 | 10 | ✅ OK |
 | Rainbow Nourishments | 0 | 10 | ✅ OK |
 | Rainbow Plant Life | 0 | 12 | ✅ OK |
@@ -77,7 +77,7 @@
 | The Foodie Takes Flight | 0 | 11 | ✅ OK |
 | The Full Helping | 0 | 6 | ✅ OK |
 | The Gentle Chef | 0 | 0 | ✅ OK |
-| The Green Creator | 2 | 2 | ✅ OK |
+| The Green Creator | 0 | 2 | ✅ OK |
 | The Hidden Veggies | 0 | 10 | ✅ OK |
 | The Korean Vegan | 0 | 12 | ✅ OK |
 | The Little Blog of Vegan | 0 | 10 | ✅ OK |
@@ -90,7 +90,7 @@
 | This Rawsome Vegan Life | 0 | 0 | ✅ OK |
 | Turnip Vegan | 0 | 7 | ✅ OK |
 | Tuulia | 0 | 0 | ✅ OK |
-| Unconventional Baker | 10 | 10 | ✅ OK |
+| Unconventional Baker | 0 | 10 | ✅ OK |
 | V Nutrition | 0 | 10 | ✅ OK |
 | Vegan Heaven | 0 | 10 | ✅ OK |
 | Vegan Punks | 0 | 0 | ✅ OK |
