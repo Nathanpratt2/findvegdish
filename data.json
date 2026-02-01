@@ -1,5 +1,21 @@
 [
   {
+    "blog_name": "It Doesn't Taste Like Chicken",
+    "title": "Vegan Blondies (Soft, Chewy & Buttery!)",
+    "link": "https://itdoesnttastelikechicken.com/vegan-blondies/",
+    "image": "https://itdoesnttastelikechicken.com/wp-content/uploads/2026/01/Vegan-Blondies-recipe-soft-chewy-buttery-facebook.jpg",
+    "date": "2026-02-01T10:00:00+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "Make It Dairy Free",
+    "title": "Roasted Sweet Potato and Apple Bisque",
+    "link": "https://makeitdairyfree.com/roasted-sweet-potato-and-apple-bisque/",
+    "image": "https://makeitdairyfree.com/wp-content/uploads/2026/02/roasted-apple-and-sweet-potato-soup-6.jpg",
+    "date": "2026-02-01T07:52:59+00:00",
+    "is_disruptor": false
+  },
+  {
     "blog_name": "The Conscious Plant Kitchen",
     "title": "Almond Flour Banana Muffins (11g Protein, No Added Sugar)",
     "link": "https://www.theconsciousplantkitchen.com/almond-flour-banana-muffins/",
@@ -78,6 +94,14 @@
     "image": "https://plantifullybasedblog.com/wp-content/uploads/2026/01/0CC721DA-F5FC-4599-9A7D-DAC3A6EDD37C-1-819x1024.jpeg",
     "date": "2026-01-31T14:35:35+00:00",
     "is_disruptor": true
+  },
+  {
+    "blog_name": "Gretchen's Vegan Bakery",
+    "title": "Vegan Strawberry Shortcake Snack Cake",
+    "link": "https://www.gretchensveganbakery.com/vegan-strawberry-shortcake/",
+    "image": "https://www.gretchensveganbakery.com/wp-content/uploads/2023/06/strawb-short-resized-4.jpg",
+    "date": "2026-01-31T11:34:37+00:00",
+    "is_disruptor": false
   },
   {
     "blog_name": "VegNews",
@@ -734,6 +758,14 @@
     "image": "https://monkeyandmekitchenadventures.com/wp-content/uploads/2026/01/Lebanese-Roasted-Cabbage-and-Onions_01.jpg",
     "date": "2026-01-25T14:10:38+00:00",
     "is_disruptor": true
+  },
+  {
+    "blog_name": "Gretchen's Vegan Bakery",
+    "title": "Banana Cupcakes with Cream Cheese Frosting",
+    "link": "https://www.gretchensveganbakery.com/banana-cupcakes/",
+    "image": "https://www.gretchensveganbakery.com/wp-content/uploads/2018/04/banana-cupcake-resized-1-1.jpg",
+    "date": "2026-01-25T13:40:05+00:00",
+    "is_disruptor": false
   },
   {
     "blog_name": "Gretchen's Vegan Bakery",

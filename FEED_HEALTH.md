@@ -1,15 +1,13 @@
 # Feed Health Report
-**Last Run:** 2026-02-01T07:53:44.596981
-**Total Database Size:** 725
+**Last Run:** 2026-02-01T13:43:28.171375
+**Total Database Size:** 729
 
 | Blog Name | New Today | Total in DB | Status |
 |-----------|-----------|-------------|--------|
-| 86 Eats | 0 | 0 | ❌ Error 404 |
 | Domestic Gothess | 0 | 10 | Skipped/DB Only |
 | Emilie Eats | 0 | 0 | ⚠️ Parsed 0 items |
 | Exceedingly Vegan | 0 | 0 | ⚠️ Parsed 0 items |
-| Holy Cow Vegan | 0 | 0 | ⚠️ Parsed 0 items |
-| Hot for Food | 0 | 3 | ❌ Crash: Response ended prema |
+| Holy Cow Vegan | 0 | 0 | ❌ Error 404 |
 | Pick Up Limes | 0 | 0 | ❌ Error 404 |
 | Project Vegan Baking | 0 | 0 | ⚠️ Parsed 0 items |
 | Short Girl Tall Order | 0 | 0 | ❌ Error 500 |
@@ -17,7 +15,7 @@
 | VegNews | 0 | 33 | Skipped/DB Only |
 | Vegan Huggs | 0 | 0 | ❌ Error 403 |
 | Veggie Rose | 0 | 0 | ⚠️ Parsed 0 items |
-| Zucker & Jagdwurst | 0 | 0 | ❌ Error 404 |
+| 86 Eats | 0 | 0 | ✅ OK |
 | A Virtual Vegan | 0 | 9 | ✅ OK |
 | Addicted to Dates | 0 | 10 | ✅ OK |
 | Avocados and Ales | 0 | 0 | ✅ OK |
@@ -37,12 +35,13 @@
 | From My Bowl | 0 | 10 | ✅ OK |
 | Full of Plants | 0 | 6 | ✅ OK |
 | Good Eatings | 0 | 0 | ✅ OK |
-| Gretchen's Vegan Bakery | 0 | 10 | ✅ OK |
-| It Doesn't Taste Like Chicken | 0 | 33 | ✅ OK |
+| Gretchen's Vegan Bakery | 2 | 12 | ✅ OK |
+| Hot for Food | 0 | 3 | ✅ OK |
+| It Doesn't Taste Like Chicken | 1 | 34 | ✅ OK |
 | Jessica in the Kitchen | 0 | 10 | ✅ OK |
 | Lazy Cat Kitchen | 0 | 10 | ✅ OK |
 | Loving It Vegan | 0 | 4 | ✅ OK |
-| Make It Dairy Free | 0 | 10 | ✅ OK |
+| Make It Dairy Free | 1 | 11 | ✅ OK |
 | Mary's Test Kitchen | 0 | 10 | ✅ OK |
 | Minimalist Baker | 0 | 4 | ✅ OK |
 | Monkey & Me Kitchen Adventures | 0 | 10 | ✅ OK |
