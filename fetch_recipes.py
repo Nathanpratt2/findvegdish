@@ -190,7 +190,7 @@ def extract_image(entry, blog_name):
             image_candidate = src
             break
     if not image_candidate: image_candidate = fetch_og_image(entry.link)
-    return image_candidate if image_candidate else "default.jpg"
+    return image_candidate if image_candidate else "icon.jpg"
 
 print(f"Fetching recipes from {len(ALL_FEEDS)} blogs...")
 
