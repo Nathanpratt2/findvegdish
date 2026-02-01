@@ -10,54 +10,93 @@ import os
 # --- CONFIGURATION ---
 TOP_BLOGGERS = [
     # The Titans: Established, high-authority sources. Love and Lemons cannot be used.
-    ("Simple Vegan Blog", "https://simpleveganblog.com/feed/"),
-    ("Vegan Richa", "https://www.veganricha.com/feed/"),
+    ("Minimalist Baker", "https://minimalistbaker.com/recipes/vegan/feed/"),
     ("Nora Cooks", "https://www.noracooks.com/feed/"),
+    ("PlantYou", "https://plantyou.com/feed/"),
+    ("The Korean Vegan", "https://thekoreanvegan.com/feed/"),
     ("Rainbow Plant Life", "https://rainbowplantlife.com/feed/"),
-    ("Minimalist Baker", "https://minimalistbaker.com/recipes/vegan/feed/"), 
-    ("VegNews", "https://vegnews.com/feed"), 
-    ("Oh She Glows", "https://ohsheglows.com/feed/"),
+    ("Vegan Richa", "https://www.veganricha.com/feed/"),
     ("It Doesn't Taste Like Chicken", "https://itdoesnttastelikechicken.com/feed/"),
+    ("Loving It Vegan", "https://lovingitvegan.com/feed/"),
+    ("Elavegan", "https://elavegan.com/feed/"),
+    ("Oh She Glows", "https://ohsheglows.com/feed/"),
+    ("The First Mess", "https://thefirstmess.com/feed/"),
     ("Sweet Potato Soul", "https://sweetpotatosoul.com/feed/"),
+    ("Simple Vegan Blog", "https://simpleveganblog.com/feed/"),
     ("Connoisseurus Veg", "https://www.connoisseurusveg.com/feed/"),
     ("Jessica in the Kitchen", "https://jessicainthekitchen.com/feed/"),
-    ("The First Mess", "https://thefirstmess.com/feed/"),
-    ("Lazy Cat Kitchen", "https://www.lazycatkitchen.com/feed/"),
-    ("The Full Helping", "https://thefullhelping.com/feed/"),
-    ("Elavegan", "https://elavegan.com/feed/"),
-    ("Running on Real Food", "https://runningonrealfood.com/feed/"),
     ("The Simple Veganista", "https://www.thesimpleveganista.com/feed/"),
-    ("Namely Marly", "https://namelymarly.com/feed/"),
-    ("The Post-Punk Kitchen", "https://www.theppk.com/feed/")
+    ("Lazy Cat Kitchen", "https://www.lazycatkitchen.com/feed/"),
+    ("My Darling Vegan", "https://www.mydarlingvegan.com/feed/"),
+    ("The Burger Dude", "https://theeburgerdude.com/feed/"),
+    ("Hot for Food", "https://www.hotforfoodblog.com/feed/"),
+    ("The Vegan 8", "https://thevegan8.com/feed/"),
+    ("From My Bowl", "https://frommybowl.com/feed/"),
+    ("Rabbit and Wolves", "https://www.rabbitandwolves.com/feed/"),
+    ("Vegan Heaven", "https://veganheaven.org/feed/"),
+    ("The Hidden Veggies", "https://thehiddenveggies.com/feed/"),
+    ("Vegan in the Freezer", "https://veganinthefreezer.com/feed/"),
+    ("A Virtual Vegan", "https://avirtualvegan.com/feed/"),
+    ("Sarah's Vegan Kitchen", "https://sarahsvegankitchen.com/feed/"),
+    ("Pick Up Limes", "https://www.pickuplimes.com/recipe/feed"), 
+    ("Bianca Zapatka", "https://biancazapatka.com/en/feed/"),
+    ("Holy Cow Vegan", "https://holycowvegan.net/feed/"),
+    ("Six Vegan Sisters", "https://sixvegansisters.com/feed/"),
+    ("Sweet Simple Vegan", "https://sweetsimplevegan.com/feed/"),
+    ("Make It Dairy Free", "https://makeitdairyfree.com/feed/"),
+    ("Addicted to Dates", "https://addictedtodates.com/category/recipes/feed/"),
+    ("Gretchen's Vegan Bakery", "https://www.gretchensveganbakery.com/feed/"),
+    ("Running on Real Food", "https://runningonrealfood.com/feed/"),
+    ("The Full Helping", "https://thefullhelping.com/feed/"),
+    ("Turnip Vegan", "https://turnipvegan.com/blogs/news.atom")
 ]
 
 DISRUPTORS = [
     # The Specialists: Niche focus, cultural heritage, or unique constraints
-    ("The Korean Vegan", "https://thekoreanvegan.com/feed/"),      # Cultural/Storytelling
-    ("The Burger Dude", "https://theeburgerdude.com/feed/"),       # Vegan Fast Food
-    ("PlantYou", "https://plantyou.com/feed/"),                    # "Scrap" cooking/No-oil
-    ("Turnip Vegan", "https://turnipvegan.com/blogs/news.atom"),   # Mushroom expert
-    ("Vegan Scratch Kitchen", "https://veganscratchkitchen.com/feed/"), # Culinary technique
-    ("From My Bowl", "https://frommybowl.com/feed/"),              # Budget/Fast
-    ("Okonomi Kitchen", "https://okonomikitchen.com/feed/"),       # Japanese fusion
-    ("Rabbit and Wolves", "https://www.rabbitandwolves.com/feed/"), # Decadent Comfort
-    ("Addicted to Dates", "https://addictedtodates.com/category/recipes/feed/"), # Dessert specialist
-    ("The Vegan 8", "https://thevegan8.com/feed/"),                # 8 ingredients or less
-    ("Make It Dairy Free", "https://makeitdairyfree.com/feed/"),   # Allergy-friendly focus
-    ("Hot for Food", "https://www.hotforfoodblog.com/feed/"),      # Modern Indulgence
-    ("The Viet Vegan", "https://thevietvegan.com/feed/"),          # Vietnamese heritage
-    ("Flora & Vino", "https://www.floraandvino.com/feed/"),        # WFPB / Wellness
-    ("Sweet Simple Vegan", "https://sweetsimplevegan.com/feed/"),  # Approachable/Pop-culture
-    ("Vegan Yack Attack", "https://veganyackattack.com/feed/"),    # Eclectic/Creative
-    ("Six Vegan Sisters", "https://sixvegansisters.com/feed/"),    # Family-style comfort
-    ("Choosing Chia", "https://choosingchia.com/feed/"),           # Wellness/Aesthetic
-    ("The Conscious Plant Kitchen", "https://www.theconsciousplantkitchen.com/feed/"), # Nutrition/WFPB
-    ("Short Girl Tall Order", "https://shortgirltallorder.com/feed/"), # Modern Baking
-    ("Bianca Zapatka", "https://biancazapatka.com/en/feed/"),
+    ("Cadry's Kitchen", "https://cadryskitchen.com/feed/"),
+    ("Vegan on Board", "https://veganonboard.com/feed/"),
+    ("Veggies Don't Bite", "https://veggiesdontbite.com/feed/"),
+    ("Watch Learn Eat", "https://watchlearneat.com/feed/"),
+    ("Strength and Sunshine", "https://strengthandsunshine.com/feed/"),
     ("The Stingy Vegan", "https://thestingyvegan.com/feed/"),
+    ("Okonomi Kitchen", "https://okonomikitchen.com/feed/"),
+    ("The Foodie Takes Flight", "https://thefoodietakesflight.com/feed/"),
+    ("The Viet Vegan", "https://thevietvegan.com/feed/"),
+    ("Vegan Yack Attack", "https://veganyackattack.com/feed/"),
+    ("Vegan Scratch Kitchen", "https://veganscratchkitchen.com/feed/"),
+    ("The Conscious Plant Kitchen", "https://www.theconsciousplantkitchen.com/feed/"),
+    ("Shane & Simple", "https://shaneandsimple.com/feed/"),
+    ("Choosing Chia", "https://choosingchia.com/feed/"),
+    ("Flora & Vino", "https://www.floraandvino.com/feed/"),
+    ("Emilie Eats", "https://emilieeats.com/feed/"),
+    ("Dianne's Vegan Kitchen", "https://diannesvegankitchen.com/feed/"),
+    ("Namely Marly", "https://namelymarly.com/feed/"),
+    ("The Post-Punk Kitchen", "https://www.theppk.com/feed/"),
+    ("Veganosity", "https://veganosity.com/feed/"),
+    ("Short Girl Tall Order", "https://shortgirltallorder.com/feed/"),
+    ("Vegan Huggs", "https://veganhuggs.com/feed/"),
+    ("The Little Blog of Vegan", "https://www.thelittleblogofvegan.com/feed/"),
+    ("Eat Figs, Not Pigs", "https://www.eatfigsnotpigs.com/feed/"),
+    ("The Banana Diaries", "https://thebananadiaries.com/feed/"),
+    ("Project Vegan Baking", "https://projectveganbaking.com/feed/"),
+    ("Vegan Punks", "https://veganpunks.com/feed/"),
+    ("Plant Power Couple", "https://www.plantpowercouple.com/feed/"),
+    ("Exceedingly Vegan", "https://www.exceedinglyvegan.com/feed"),
+    ("Wallflower Kitchen", "https://wallflowerkitchen.com/feed/"),
+    ("Rainbow Nourishments", "https://www.rainbownourishments.com/feed/"),
+    ("Nutriciously", "https://nutriciously.com/feed/"),
+    ("The Minimalist Vegan", "https://theminimalistvegan.com/feed/"),
+    ("Monkey & Me Kitchen Adventures", "https://monkeyandmekitchenadventures.com/feed/"),
     ("Veggiekins", "https://veggiekinsblog.com/feed/"),
-    ("Domestic Gothess", "https://domesticgothess.com/feed/"),
-    ("Wicked Healthy", "https://wickedhealthyfood.com/feed/")
+    ("This Rawsome Vegan Life", "https://www.thisrawsomeveganlife.com/feeds/posts/default"),
+    ("Fried Dandelions", "https://frieddandelions.com/feed/"),
+    ("My Pure Plants", "https://mypureplants.com/feed/"),
+    ("The Cheeky Chickpea", "https://thecheekychickpea.com/feed/"),
+    ("ZardyPlants", "https://zardyplants.com/feed/"),
+    ("Veggie Rose", "https://veggierose.com/feed/"),
+    ("Bo's Kitchen", "https://www.boskitchen.com/feed/"),
+    ("Elephantastic Vegan", "https://www.elephantasticvegan.com/feed/"),
+    ("V Nutrition", "https://www.vnutritionandwellness.com/feed/")
 ]
 
 ALL_FEEDS = TOP_BLOGGERS + DISRUPTORS
