@@ -1,5 +1,13 @@
 [
   {
+    "blog_name": "Monkey & Me Kitchen Adventures",
+    "title": "Healthy Raisin Bran Muffins",
+    "link": "https://monkeyandmekitchenadventures.com/healthy-raisin-bran-muffins/",
+    "image": "https://monkeyandmekitchenadventures.com/wp-content/uploads/2026/01/Healthy-Raisin-Bran-Muffins_03.jpg",
+    "date": "2026-02-01T15:40:55+00:00",
+    "is_disruptor": true
+  },
+  {
     "blog_name": "It Doesn't Taste Like Chicken",
     "title": "Vegan Blondies (Soft, Chewy & Buttery!)",
     "link": "https://itdoesnttastelikechicken.com/vegan-blondies/",
@@ -1360,20 +1368,20 @@
     "is_disruptor": false
   },
   {
-    "blog_name": "Full of Plants",
-    "title": "Vegan Swedish Meatballs",
-    "link": "https://fullofplants.com/vegan-swedish-meatballs/?adt_ei={$email}",
-    "image": "https://fullofplants.com/wp-content/uploads/2026/01/vegan-swedish-meatballs-in-rich-buttery-sauce-34-720x900.jpg",
-    "date": "2026-01-17T10:00:00+00:00",
-    "is_disruptor": true
-  },
-  {
     "blog_name": "It Doesn't Taste Like Chicken",
     "title": "High-Protein Vegan Snacks & Smoothies",
     "link": "https://itdoesnttastelikechicken.com/high-protein-vegan-snacks-smoothies/",
     "image": "https://itdoesnttastelikechicken.com/wp-content/uploads/2026/01/HIGH-PROTEIN-VEGAN-SNACKS-AND-SMOOTHIES-Socials-Image-1200-x-630-px.jpg",
     "date": "2026-01-17T10:00:00+00:00",
     "is_disruptor": false
+  },
+  {
+    "blog_name": "Full of Plants",
+    "title": "Vegan Swedish Meatballs",
+    "link": "https://fullofplants.com/vegan-swedish-meatballs/?adt_ei={$email}",
+    "image": "https://fullofplants.com/wp-content/uploads/2026/01/vegan-swedish-meatballs-in-rich-buttery-sauce-34-720x900.jpg",
+    "date": "2026-01-17T10:00:00+00:00",
+    "is_disruptor": true
   },
   {
     "blog_name": "The Burger Dude",
