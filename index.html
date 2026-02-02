@@ -34,7 +34,6 @@
             margin-bottom: 30px;
         }
         
-        /* UPDATED: Logo is now a clickable link wrapper */
         .logo-link {
             display: inline-block;
             cursor: pointer;
@@ -52,10 +51,9 @@
         }
         
         .logo-link:active .logo-img {
-            transform: scale(0.98); /* Subtle press effect on logo */
+            transform: scale(0.98); 
         }
 
-        /* Search Bar Wrapper */
         .search-wrapper {
             position: relative;
             width: 100%;
@@ -74,13 +72,11 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
             outline: none;
             transition: all 0.3s ease;
-            /* UPDATED COLOR */
             color: #769F37; 
             font-weight: 600;
         }
         #searchInput:focus {
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            /* UPDATED COLOR */
             border-color: #769F37;
         }
         #searchInput::placeholder {
@@ -103,7 +99,6 @@
         }
         #clearBtn:hover { color: #555; }
 
-        /* Controls Container */
         .controls {
             display: flex;
             justify-content: center;
@@ -113,7 +108,6 @@
             margin-top: 20px;
         }
 
-        /* General Button Style */
         .btn {
             padding: 10px 20px;
             border-radius: 25px;
@@ -129,22 +123,18 @@
             color: #555;
             background-color: white;
             border: 1px solid #ddd;
-            /* Removes the blue highlight on mobile when tapping */
             -webkit-tap-highlight-color: transparent; 
         }
         @media (hover: hover) {
                .btn:hover { background-color: #f0f0f0; }
         }
-        /* Pressed state for non-active buttons (like Shuffle) */
         .btn:active { 
             transform: scale(0.95); 
             background-color: #e0e0e0;
         }
 
-        /* Active State for Filter Buttons (Stays Green) */
-        /* IMPORTANT: This uses !important to override hover states when active */
         .btn.active-filter {
-            background-color: #769F37 !important; /* UPDATED COLOR */
+            background-color: #769F37 !important; 
             color: white !important;
             border-color: #769F37 !important;
         }
@@ -156,7 +146,6 @@
             border: none;
         }
 
-        /* Grid Layout */
         .gallery {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -233,39 +222,49 @@
         .meta-row {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px; /* Slightly increased gap for more badges */
             margin-bottom: 5px;
             width: 100%;
+            flex-wrap: wrap; /* Allow badges to wrap on small cards */
         }
         
         .tag {
             font-size: 0.75em;
             text-transform: uppercase;
             letter-spacing: 1px;
-            /* UPDATED COLOR */
             color: #769F37; 
             font-weight: 600;
             display: inline-block;
         }
         .disruptor-tag { color: #e67e22; }
         
-        .fresh-badge {
-            /* UPDATED COLOR */
-            background-color: #769F37; 
+        /* --- BADGE STYLES --- */
+        .fresh-badge, .wfpb-badge, .easy-badge {
             color: white;
             font-size: 0.7em;
             padding: 2px 8px;
             border-radius: 10px;
             font-weight: bold;
             text-transform: uppercase;
+            white-space: nowrap;
+        }
+        
+        .fresh-badge {
+            background-color: #769F37; 
             animation: pulse 2s infinite;
-            white-space: nowrap; 
         }
         @keyframes pulse {
-            0% { opacity: 1; }
-            50% { opacity: 0.7; }
-            100% { opacity: 1; }
+            0% { opacity: 1; } 50% { opacity: 0.7; } 100% { opacity: 1; }
         }
+
+        .wfpb-badge {
+            background-color: #16a085; /* Darker Green/Teal */
+        }
+        
+        .easy-badge {
+            background-color: #2980b9; /* Blue */
+        }
+        /* --- END BADGE STYLES --- */
 
         .title {
             font-size: 1.1em;
@@ -276,24 +275,11 @@
         }
         .blogger { font-size: 0.9em; color: #888; margin-top: auto; padding-top: 10px; }
         
-        footer {
-            text-align: center;
-            margin-top: 50px;
-            color: #aaa;
-            font-size: 0.9em;
-        }
-        
-        #loader {
-            text-align: center;
-            padding: 20px;
-            color: #888;
-            font-style: italic;
-            display: none;
-        }
+        footer { text-align: center; margin-top: 50px; color: #aaa; font-size: 0.9em; }
+        #loader { text-align: center; padding: 20px; color: #888; font-style: italic; display: none; }
 
-        /* --- SCROLL TO TOP BUTTON --- */
         #scrollTopBtn {
-            display: none; /* Hidden by default */
+            display: none; 
             position: fixed;
             bottom: 100px;
             right: 25px;
@@ -302,7 +288,6 @@
             height: 50px;
             border: none;
             outline: none;
-            /* UPDATED COLOR */
             background-color: #769F37;
             color: white;
             cursor: pointer;
@@ -312,12 +297,10 @@
             align-items: center;
             justify-content: center;
         }
-
         #scrollTopBtn:hover {
-            background-color: #5d822b; /* Slightly darker shade for hover */
+            background-color: #5d822b; 
             transform: translateY(-3px);
         }
-
         @media (max-width: 400px) {
             #scrollTopBtn { bottom: 90px; right: 20px; width: 45px; height: 45px; }
         }
@@ -326,7 +309,6 @@
 <body>
 
 <header>
-    <!-- UPDATED: Wrapped in link for refresh -->
     <a href="index.html" class="logo-link" title="Refresh">
         <img src="default.jpg" alt="Daily Vegan Recipes" class="logo-img">
     </a>
@@ -340,28 +322,21 @@
         <button class="btn" id="mealsBtn" onclick="toggleCategory('meal')">🍝 Meals Only</button>
         <button class="btn" id="sweetsBtn" onclick="toggleCategory('sweet')">🍪 Sweets Only</button>
         <button class="btn" id="proteinBtn" onclick="toggleCategory('protein')">💪 High Protein</button>
-        <!-- Shuffle button works via the generic .btn:active CSS now -->
         <button class="btn" onclick="shuffleRecipes()">🔀 Shuffle</button>
-
         <a href="shop.html" class="btn" style="text-decoration:none; color:#555;">🔪 Top 10 Vegan Kitchen Tools</a>
-                
         <button class="btn" id="installBtn">📲 Install App</button>
     </div>
 </header>
 
-<div id="gallery" class="gallery">
-    <!-- Recipes load here -->
-</div>
+<div id="gallery" class="gallery"></div>
 <div id="loader">Loading more recipes...</div>
 
-<!-- Scroll to Top Button -->
 <button id="scrollTopBtn" title="Go to top">
     <svg viewBox="0 0 24 24" width="24" height="24" fill="white">
         <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
     </svg>
 </button>
 
-<!-- Buy Me A Coffee Widget (UPDATED COLOR) -->
 <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="natethevegan" data-description="Support me on Buy me a coffee!" data-message="" data-color="#769F37" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 
 <footer>
@@ -377,27 +352,9 @@
     const BATCH_SIZE = 48;        
 
     // --- KEYWORDS ---
-    const SWEET_KEYWORDS = [
-        'cookie', 'cake', 'brownie', 'chocolate', 'dessert', 'pie', 'tart', 
-        'muffin', 'donut', 'doughnut', 'ice cream', 'pudding', 'cheesecake', 
-        'sweet', 'fudge', 'truffle', 'bar', 'cupcake', 'blondie', 'galette',
-        'cobbler', 'mousse', 'cinnamon roll', 'scone', 'waffle', 'pancake'
-    ];
-
-    const MEAL_KEYWORDS = [
-        'pasta', 'burger', 'curry', 'soup', 'stew', 'taco', 'pizza', 'sandwich', 
-        'wrap', 'salad', 'bowl', 'rice', 'noodle', 'stir fry', 'lasagna', 
-        'casserole', 'tofu', 'tempeh', 'lentil', 'chickpea', 'potato', 'dinner', 
-        'lunch', 'roast', 'chili', 'shepherd', 'risotto', 'gnocchi', 'quiche', 
-        'enchilada', 'burrito', 'quesadilla', 'mac and cheese', 'dumpling', 
-        'meatball', 'loaf', 'skillet', 'gratin', 'pad thai', 'ramen'
-    ];
-
-    const PROTEIN_KEYWORDS = [
-        'tofu', 'tempeh', 'seitan', 'tvp', 'lentil', 'bean', 'chickpea',
-        'edamame', 'soy', 'quinoa', 'peanut', 'meatball', 'burger',
-        'sausage', 'protein', 'falafel', 'hummus', 'nut roast'
-    ];
+    const SWEET_KEYWORDS = ['cookie', 'cake', 'brownie', 'chocolate', 'dessert', 'pie', 'tart', 'muffin', 'donut', 'doughnut', 'ice cream', 'pudding', 'cheesecake', 'sweet', 'fudge', 'truffle', 'bar', 'cupcake', 'blondie', 'galette', 'cobbler', 'mousse', 'cinnamon roll', 'scone', 'waffle', 'pancake'];
+    const MEAL_KEYWORDS = ['pasta', 'burger', 'curry', 'soup', 'stew', 'taco', 'pizza', 'sandwich', 'wrap', 'salad', 'bowl', 'rice', 'noodle', 'stir fry', 'lasagna', 'casserole', 'tofu', 'tempeh', 'lentil', 'chickpea', 'potato', 'dinner', 'lunch', 'roast', 'chili', 'shepherd', 'risotto', 'gnocchi', 'quiche', 'enchilada', 'burrito', 'quesadilla', 'mac and cheese', 'dumpling', 'meatball', 'loaf', 'skillet', 'gratin', 'pad thai', 'ramen'];
+    const PROTEIN_KEYWORDS = ['tofu', 'tempeh', 'seitan', 'tvp', 'lentil', 'bean', 'chickpea', 'edamame', 'soy', 'quinoa', 'peanut', 'meatball', 'burger', 'sausage', 'protein', 'falafel', 'hummus', 'nut roast'];
 
     // --- INITIALIZATION ---
     fetch('data.json')
@@ -464,25 +421,38 @@
         const now = new Date();
         const daysOld = (now - recipeDate) / (1000 * 3600 * 24);
         
-        let newBadge = '';
-        if(daysOld < 2) {
-            newBadge = '<span class="fresh-badge">New Today</span>';
+        // --- UPDATED BADGE LOGIC ---
+        let badgeHTML = '';
+
+        // 1. New Today badge
+        if (daysOld < 2) {
+            badgeHTML += '<span class="fresh-badge">New Today</span>';
         }
 
+        // 2. Special Tags badges (WFPB, Easy)
+        if (recipe.special_tags && Array.isArray(recipe.special_tags)) {
+            recipe.special_tags.forEach(tag => {
+                if (tag === 'WFPB') {
+                    badgeHTML += '<span class="wfpb-badge">WFPB</span>';
+                } else if (tag === 'Easy') {
+                    badgeHTML += '<span class="easy-badge">Easy</span>';
+                }
+            });
+        }
+        
         info.innerHTML = `
             <div class="meta-row">
-                <span class="${tagClass}">${tagText}</span> ${newBadge}
+                <span class="${tagClass}">${tagText}</span>
+                ${badgeHTML}
             </div>
             <div class="title">${recipe.title}</div>
             <div class="blogger">by ${recipe.blog_name}</div>
         `;
+        // --- END OF BADGE LOGIC ---
 
         const shareBtn = document.createElement('div');
         shareBtn.className = 'share-btn';
-        shareBtn.innerHTML = `
-        <svg viewBox="0 0 24 24">
-            <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
-        </svg>`;
+        shareBtn.innerHTML = `<svg viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/></svg>`;
         shareBtn.onclick = (e) => shareRecipe(e, recipe.title, recipe.link);
 
         card.appendChild(shareBtn);
@@ -494,25 +464,18 @@
     // --- INFINITE SCROLL HANDLER ---
     function setupInfiniteScroll() {
         window.addEventListener('scroll', () => {
-            // Check for scroll to top button visibility
             const scrollBtn = document.getElementById("scrollTopBtn");
-            
-            // Logic: Show Scroll Top if scrolled down > 300px
             if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
                 scrollBtn.style.display = "flex";
             } else {
                 scrollBtn.style.display = "none";
             }
-
-            // Check if near bottom to load more recipes
             if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 500) {
                 if (renderedCount < currentContext.length) {
                     renderNextBatch();
                 }
             }
         });
-        
-        // Scroll To Top Click Event
         document.getElementById("scrollTopBtn").addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
@@ -531,7 +494,6 @@
     // --- SHUFFLE FUNCTION ---
     function shuffleRecipes() {
         document.activeElement.blur(); 
-
         for (let i = allRecipes.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [allRecipes[i], allRecipes[j]] = [allRecipes[j], allRecipes[i]];
@@ -585,27 +547,21 @@
     // --- CATEGORY TOGGLE ---
     function toggleCategory(category) {
         document.activeElement.blur(); 
-
         const mealsBtn = document.getElementById('mealsBtn');
         const sweetsBtn = document.getElementById('sweetsBtn');
         const proteinBtn = document.getElementById('proteinBtn');
 
         if (activeCategory === category) {
-            // TURNING OFF
             activeCategory = null;
             mealsBtn.classList.remove('active-filter');
             sweetsBtn.classList.remove('active-filter');
             proteinBtn.classList.remove('active-filter');
         } else {
-            // TURNING ON
             activeCategory = category;
-            
-            // Clear all first
             mealsBtn.classList.remove('active-filter');
             sweetsBtn.classList.remove('active-filter');
             proteinBtn.classList.remove('active-filter');
 
-            // Set active one
             if(category === 'meal') mealsBtn.classList.add('active-filter');
             else if(category === 'sweet') sweetsBtn.classList.add('active-filter');
             else if(category === 'protein') proteinBtn.classList.add('active-filter');
