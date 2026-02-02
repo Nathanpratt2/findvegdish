@@ -9,7 +9,6 @@ import os
 
 # --- CONFIGURATION ---
 TOP_BLOGGERS = [
-    # The Titans: Established, high-authority sources. Love and Lemons cannot be used.
     ("Minimalist Baker", "https://minimalistbaker.com/recipes/vegan/feed/"),
     ("Nora Cooks", "https://www.noracooks.com/feed/"),
     ("PlantYou", "https://plantyou.com/feed/"),
@@ -52,24 +51,25 @@ TOP_BLOGGERS = [
 ]
 
 DISRUPTORS = [
-    # The Specialists: Niche focus, cultural heritage, or unique constraints
-        ("Full of Plants", "https://fullofplants.com/feed/"),
-        ("Good Eatings", "https://goodeatings.com/feed/"),
-        ("My Berry Forest", "https://myberryforest.com/feed/"),
-        ("The Green Creator", "https://thegreencreator.com/feed/"),
-        ("Nordic Delicious", "https://nordicdelicious.com/feed/"),
-        ("Earth of Maria", "https://earthofmaria.com/feed/"),
-        ("Elephantastic Vegan", "https://www.elephantasticvegan.com/feed/"),
-        ("One Arab Vegan", "https://www.onearabvegan.com/feed/"),
-        ("Tuulia", "http://tuulia.co/feed/"),     ("Mary's Test Kitchen", "https://www.marystestkitchen.com/feed/"),
-        ("Unconventional Baker", "https://www.unconventionalbaker.com/feed/"),
-        ("86 Eats", "https://www.86eats.com/recipes?format=rss"),
-        ("The Gentle Chef", "https://thegentlechef.com/feed/"),
-        ("Fragrant Vanilla Cake", "https://www.fragrantvanilla.com/feed/"),
-        ("Wholehearted Eats", "https://www.wholeheartedeats.com/feed/"),
-        ("Avocados and Ales", "https://avocadosandales.com/feed/"),
-        ("Plantifully Based", "https://plantifullybasedblog.com/feed/"),
-        ("Nutriciously", "https://nutriciously.com/feed/"),       ("Cadry's Kitchen", "https://cadryskitchen.com/feed/"),
+    ("Full of Plants", "https://fullofplants.com/feed/"),
+    ("Good Eatings", "https://goodeatings.com/feed/"),
+    ("My Berry Forest", "https://myberryforest.com/feed/"),
+    ("The Green Creator", "https://thegreencreator.com/feed/"),
+    ("Nordic Delicious", "https://nordicdelicious.com/feed/"),
+    ("Earth of Maria", "https://earthofmaria.com/feed/"),
+    ("Elephantastic Vegan", "https://www.elephantasticvegan.com/feed/"),
+    ("One Arab Vegan", "https://www.onearabvegan.com/feed/"),
+    ("Tuulia", "http://tuulia.co/feed/"),     
+    ("Mary's Test Kitchen", "https://www.marystestkitchen.com/feed/"),
+    ("Unconventional Baker", "https://www.unconventionalbaker.com/feed/"),
+    ("86 Eats", "https://www.86eats.com/recipes?format=rss"),
+    ("The Gentle Chef", "https://thegentlechef.com/feed/"),
+    ("Fragrant Vanilla Cake", "https://www.fragrantvanilla.com/feed/"),
+    ("Wholehearted Eats", "https://www.wholeheartedeats.com/feed/"),
+    ("Avocados and Ales", "https://avocadosandales.com/feed/"),
+    ("Plantifully Based", "https://plantifullybasedblog.com/feed/"),
+    ("Nutriciously", "https://nutriciously.com/feed/"),       
+    ("Cadry's Kitchen", "https://cadryskitchen.com/feed/"),
     ("Vegan on Board", "https://veganonboard.com/feed/"),
     ("Veggies Don't Bite", "https://veggiesdontbite.com/feed/"),
     ("Watch Learn Eat", "https://watchlearneat.com/feed/"),
@@ -116,6 +116,9 @@ DISRUPTORS = [
 ]
 
 ALL_FEEDS = TOP_BLOGGERS + DISRUPTORS
+# Create a URL map for the report
+URL_MAP = dict(ALL_FEEDS)
+
 MAX_RECIPES_PER_BLOG = 150 
 cutoff_date = datetime.now().astimezone() - timedelta(days=360)
 
@@ -128,20 +131,21 @@ except (FileNotFoundError, json.JSONDecodeError):
     recipes = []
     print("No existing database found. Starting fresh.")
 
-# --- CLEANSE DATABASE (VegNews Fix) ---
-# Remove existing VegNews items that do not have '/recipes/' in the URL
+# --- CLEANSE DATABASE ---
 initial_count = len(recipes)
-recipes = [r for r in recipes if not (r['blog_name'] == "VegNews" and "/recipes/" not in r['link'])]
-if len(recipes) < initial_count:
-    print(f"Cleaned {initial_count - len(recipes)} non-recipe VegNews articles from database.")
+recipes = [
+    r for r in recipes 
+    if not (r['blog_name'] == "VegNews" and "/recipes/" not in r['link'])
+    and r['blog_name'] != "Love and Lemons"
+]
 
 if len(recipes) < initial_count:
-    print(f"Cleaned {initial_count - len(recipes)} Love and Lemons recipes from database.")
+    print(f"Cleaned {initial_count - len(recipes)} items from database.")
 
 # Create set for deduplication
 existing_links = {r['link'] for r in recipes}
 
-feed_stats = {} # Dictionary for easy lookup: {'BlogName': {'new': 0, 'status': 'OK'}}
+feed_stats = {} 
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
@@ -218,9 +222,8 @@ for name, url in ALL_FEEDS:
         
         for entry in feed.entries:
             try:
-                # VegNews FILTER: Skip if not a recipe URL
-                if name == "VegNews" and "/recipes/" not in entry.link:
-                    continue
+                # VegNews FILTER
+                if name == "VegNews" and "/recipes/" not in entry.link: continue
 
                 dt = entry.get('published', entry.get('updated', None))
                 if not dt: continue
@@ -265,13 +268,20 @@ for r in recipes:
     recipes_by_blog[bname].append(r)
 
 final_pruned_list = []
-total_counts = {} # For report
+total_counts = {} # Tracks total count per blog
+latest_dates = {} # Tracks latest date per blog
 
 for bname, blog_recipes in recipes_by_blog.items():
     blog_recipes.sort(key=lambda x: x['date'], reverse=True)
+    
+    # Store latest date for report
+    if len(blog_recipes) > 0:
+        # Convert ISO date to YYYY-MM-DD
+        latest_dates[bname] = blog_recipes[0]['date'][:10] 
+    
     kept_recipes = blog_recipes[:MAX_RECIPES_PER_BLOG]
     final_pruned_list.extend(kept_recipes)
-    total_counts[bname] = len(kept_recipes) # Track total for report
+    total_counts[bname] = len(kept_recipes)
 
 final_pruned_list.sort(key=lambda x: x['date'], reverse=True)
 
@@ -283,23 +293,40 @@ with open('FEED_HEALTH.md', 'w') as f:
     f.write(f"# Feed Health Report\n")
     f.write(f"**Last Run:** {datetime.now().isoformat()}\n")
     f.write(f"**Total Database Size:** {len(final_pruned_list)}\n\n")
-    f.write("| Blog Name | New Today | Total in DB | Status |\n")
-    f.write("|-----------|-----------|-------------|--------|\n")
+    f.write("| Blog Name | URL | New Today | Total in DB | Latest Post | Status |\n")
+    f.write("|-----------|-----|-----------|-------------|-------------|--------|\n")
     
-    # Merge stats lists to handle blogs that might have failed today but exist in DB
     all_names = set(list(feed_stats.keys()) + list(total_counts.keys()))
     
     report_rows = []
     for name in all_names:
+        url = URL_MAP.get(name, "Unknown")
         new = feed_stats.get(name, {}).get('new', 0)
         status = feed_stats.get(name, {}).get('status', 'Skipped/DB Only')
         total = total_counts.get(name, 0)
-        report_rows.append((name, new, total, status))
+        latest = latest_dates.get(name, "N/A")
         
-    # Sort by Status (Errors top), then Name
-    report_rows.sort(key=lambda x: (x[3].startswith('✅'), x[0]))
+        # Logic: If 0 total in DB, force status to Red Error
+        if total == 0 and "✅" in status:
+            status = "❌ No Recipes"
+            
+        report_rows.append((name, url, new, total, latest, status))
+    
+    # SORTING PRIORITY:
+    # 1. Status contains '❌' (Top)
+    # 2. Status contains '⚠️' (Middle)
+    # 3. Status contains '✅' (Bottom)
+    # 4. Alphabetical by Name
+    def sort_key(row):
+        stat = row[5]
+        priority = 2 # Default Green
+        if '❌' in stat: priority = 0
+        elif '⚠️' in stat: priority = 1
+        return (priority, row[0])
+
+    report_rows.sort(key=sort_key)
     
     for row in report_rows:
-        f.write(f"| {row[0]} | {row[1]} | {row[2]} | {row[3]} |\n")
+        f.write(f"| {row[0]} | {row[1]} | {row[2]} | {row[3]} | {row[4]} | {row[5]} |\n")
 
-print("Done.")
+print(f"Successfully scraped. Database size: {len(final_pruned_list)}")
