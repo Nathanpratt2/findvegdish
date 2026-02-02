@@ -8,86 +8,86 @@ import time
 import os
 
 # --- CONFIGURATION ---
+# Format: ("Blog Name", "Feed URL", ["SPECIAL_TAGS"])
+# Tags can be "WFPB" for Whole Food Plant-Based or "Easy" for simple/quick recipes.
 TOP_BLOGGERS = [
-    ("Minimalist Baker", "https://minimalistbaker.com/recipes/vegan/feed/"),
-    ("Nora Cooks", "https://www.noracooks.com/feed/"),
-    ("PlantYou", "https://plantyou.com/feed/"),
-    ("The Korean Vegan", "https://thekoreanvegan.com/feed/"),
-    ("Rainbow Plant Life", "https://rainbowplantlife.com/feed/"),
-    ("Vegan Richa", "https://www.veganricha.com/feed/"),
-    ("It Doesn't Taste Like Chicken", "https://itdoesnttastelikechicken.com/feed/"),
-    ("Loving It Vegan", "https://lovingitvegan.com/feed/"),
-    ("Elavegan", "https://elavegan.com/feed/"),
-    ("Oh She Glows", "https://ohsheglows.com/feed/"),
-    ("The First Mess", "https://thefirstmess.com/feed/"),
-    ("Sweet Potato Soul", "https://sweetpotatosoul.com/feed/"),
-    ("Simple Vegan Blog", "https://simpleveganblog.com/feed/"),
-    ("Connoisseurus Veg", "https://www.connoisseurusveg.com/feed/"),
-    ("Jessica in the Kitchen", "https://jessicainthekitchen.com/feed/"),
-    ("Lazy Cat Kitchen", "https://www.lazycatkitchen.com/feed/"),
-    ("My Darling Vegan", "https://www.mydarlingvegan.com/feed/"),
-    ("The Burger Dude", "https://theeburgerdude.com/feed/"),
-    ("Hot for Food", "https://www.hotforfoodblog.com/feed/"),
-    ("The Vegan 8", "https://thevegan8.com/feed/"),
-    ("From My Bowl", "https://frommybowl.com/feed/"),
-    ("Rabbit and Wolves", "https://www.rabbitandwolves.com/feed/"),
-    ("Vegan Heaven", "https://veganheaven.org/feed/"),
-    ("The Hidden Veggies", "https://thehiddenveggies.com/feed/"),
-    ("Vegan in the Freezer", "https://veganinthefreezer.com/feed/"),
-    ("A Virtual Vegan", "https://avirtualvegan.com/feed/"),
-    ("Sarah's Vegan Kitchen", "https://sarahsvegankitchen.com/feed/"),
-    ("Bianca Zapatka", "https://biancazapatka.com/en/feed/"),
-    ("Sweet Simple Vegan", "https://sweetsimplevegan.com/feed/"),
-    ("Make It Dairy Free", "https://makeitdairyfree.com/feed/"),
-    ("Addicted to Dates", "https://addictedtodates.com/category/recipes/feed/"),
-    ("Gretchen's Vegan Bakery", "https://www.gretchensveganbakery.com/feed/"),
-    ("Running on Real Food", "https://runningonrealfood.com/feed/"),
-    ("The Full Helping", "https://thefullhelping.com/feed/"),
-    ("Turnip Vegan", "https://turnipvegan.com/blogs/news.atom"),
-    ("VegNews", "https://vegnews.com/feed")
+    ("Minimalist Baker", "https://minimalistbaker.com/recipes/vegan/feed/", ["Easy"]),
+    ("Nora Cooks", "https://www.noracooks.com/feed/", ["Easy"]),
+    ("PlantYou", "https://plantyou.com/feed/", ["WFPB"]),
+    ("The Korean Vegan", "https://thekoreanvegan.com/feed/", []),
+    ("Rainbow Plant Life", "https://rainbowplantlife.com/feed/", []),
+    ("Vegan Richa", "https://www.veganricha.com/feed/", []),
+    ("It Doesn't Taste Like Chicken", "https://itdoesnttastelikechicken.com/feed/", ["Easy"]),
+    ("Loving It Vegan", "https://lovingitvegan.com/feed/", []),
+    ("Elavegan", "https://elavegan.com/feed/", []),
+    ("Oh She Glows", "https://ohsheglows.com/feed/", []),
+    ("The First Mess", "https://thefirstmess.com/feed/", []),
+    ("Sweet Potato Soul", "https://sweetpotatosoul.com/feed/", ["Easy"]),
+    ("Simple Vegan Blog", "https://simpleveganblog.com/feed/", ["Easy"]),
+    ("Connoisseurus Veg", "https://www.connoisseurusveg.com/feed/", []),
+    ("Jessica in the Kitchen", "https://jessicainthekitchen.com/feed/", ["Easy"]),
+    ("Lazy Cat Kitchen", "https://www.lazycatkitchen.com/feed/", []),
+    ("My Darling Vegan", "https://www.mydarlingvegan.com/feed/", ["Easy"]),
+    ("The Burger Dude", "https://theeburgerdude.com/feed/", []),
+    ("Hot for Food", "https://www.hotforfoodblog.com/feed/", []),
+    ("The Vegan 8", "https://thevegan8.com/feed/", ["WFPB", "Easy"]),
+    ("From My Bowl", "https://frommybowl.com/feed/", ["Easy"]),
+    ("Rabbit and Wolves", "https://www.rabbitandwolves.com/feed/", []),
+    ("Vegan Heaven", "https://veganheaven.org/feed/", ["Easy"]),
+    ("The Hidden Veggies", "https://thehiddenveggies.com/feed/", ["Easy"]),
+    ("Vegan in the Freezer", "https://veganinthefreezer.com/feed/", ["Easy"]),
+    ("A Virtual Vegan", "https://avirtualvegan.com/feed/", ["Easy"]),
+    ("Sarah's Vegan Kitchen", "https://sarahsvegankitchen.com/feed/", []),
+    ("Bianca Zapatka", "https://biancazapatka.com/en/feed/", []),
+    ("Sweet Simple Vegan", "https://sweetsimplevegan.com/feed/", ["Easy"]),
+    ("Make It Dairy Free", "https://makeitdairyfree.com/feed/", []),
+    ("Addicted to Dates", "https://addictedtodates.com/category/recipes/feed/", []),
+    ("Gretchen's Vegan Bakery", "https://www.gretchensveganbakery.com/feed/", []),
+    ("Running on Real Food", "https://runningonrealfood.com/feed/", ["WFPB", "Easy"]),
+    ("The Full Helping", "https://thefullhelping.com/feed/", []),
+    ("Turnip Vegan", "https://turnipvegan.com/blogs/news.atom", []),
+    ("VegNews", "https://vegnews.com/feed", [])
 ]
 
 DISRUPTORS = [
-    ("Full of Plants", "https://fullofplants.com/feed/"),
-    ("The Green Creator", "https://thegreencreator.com/feed/"),
-    ("One Arab Vegan", "https://www.onearabvegan.com/feed/"),
-    ("Mary's Test Kitchen", "https://www.marystestkitchen.com/feed/"),
-    ("Unconventional Baker", "https://www.unconventionalbaker.com/feed/"),
-    ("Fragrant Vanilla Cake", "https://www.fragrantvanilla.com/feed/"),
-    ("Plantifully Based", "https://plantifullybasedblog.com/feed/"),
-    ("Nutriciously", "https://nutriciously.com/feed/"),       
-    ("Cadry's Kitchen", "https://cadryskitchen.com/feed/"),
-    ("Veggies Don't Bite", "https://veggiesdontbite.com/feed/"),
-    ("Watch Learn Eat", "https://watchlearneat.com/feed/"),
-    ("Strength and Sunshine", "https://strengthandsunshine.com/feed/"),
-    ("The Stingy Vegan", "https://thestingyvegan.com/feed/"),
-    ("Okonomi Kitchen", "https://okonomikitchen.com/feed/"),
-    ("The Foodie Takes Flight", "https://thefoodietakesflight.com/feed/"),
-    ("The Viet Vegan", "https://thevietvegan.com/feed/"),
-    ("Vegan Yack Attack", "https://veganyackattack.com/feed/"),
-    ("The Conscious Plant Kitchen", "https://www.theconsciousplantkitchen.com/feed/"),
-    ("Shane & Simple", "https://shaneandsimple.com/feed/"),
-    ("Choosing Chia", "https://choosingchia.com/feed/"),
-    ("Flora & Vino", "https://www.floraandvino.com/feed/"),
-    ("Namely Marly", "https://namelymarly.com/feed/"),
-    ("The Post-Punk Kitchen", "https://www.theppk.com/feed/"),
-    ("Short Girl Tall Order", "https://shortgirltallorder.com/feed/"),
-    ("The Little Blog of Vegan", "https://www.thelittleblogofvegan.com/feed/"),
-    ("Eat Figs, Not Pigs", "https://www.eatfigsnotpigs.com/feed/"),
-    ("The Banana Diaries", "https://thebananadiaries.com/feed/"),
-    ("Project Vegan Baking", "https://projectveganbaking.com/recipes/feed/"),
-    ("Plant Power Couple", "https://www.plantpowercouple.com/feed/"),
-    ("Rainbow Nourishments", "https://www.rainbownourishments.com/feed/"),
-    ("Monkey & Me Kitchen Adventures", "https://monkeyandmekitchenadventures.com/feed/"),
-    ("Veggiekins", "https://veggiekinsblog.com/feed/"),
-    ("My Pure Plants", "https://mypureplants.com/feed/"),
-    ("The Cheeky Chickpea", "https://thecheekychickpea.com/feed/"),
-    ("ZardyPlants", "https://zardyplants.com/feed/"),
+    ("Full of Plants", "https://fullofplants.com/feed/", []),
+    ("The Green Creator", "https://thegreencreator.com/feed/", ["WFPB"]),
+    ("One Arab Vegan", "https://www.onearabvegan.com/feed/", []),
+    ("Mary's Test Kitchen", "https://www.marystestkitchen.com/feed/", []),
+    ("Unconventional Baker", "https://www.unconventionalbaker.com/feed/", []),
+    ("Fragrant Vanilla Cake", "https://www.fragrantvanilla.com/feed/", []),
+    ("Plantifully Based", "https://plantifullybasedblog.com/feed/", ["WFPB"]),
+    ("Nutriciously", "https://nutriciously.com/feed/", ["WFPB", "Easy"]),
+    ("Cadry's Kitchen", "https://cadryskitchen.com/feed/", ["Easy"]),
+    ("Veggies Don't Bite", "https://veggiesdontbite.com/feed/", ["WFPB", "Easy"]),
+    ("Watch Learn Eat", "https://watchlearneat.com/feed/", ["Easy"]),
+    ("Strength and Sunshine", "https://strengthandsunshine.com/feed/", ["Easy"]),
+    ("The Stingy Vegan", "https://thestingyvegan.com/feed/", ["Easy"]),
+    ("Okonomi Kitchen", "https://okonomikitchen.com/feed/", ["Easy"]),
+    ("The Foodie Takes Flight", "https://thefoodietakesflight.com/feed/", ["Easy"]),
+    ("The Viet Vegan", "https://thevietvegan.com/feed/", []),
+    ("Vegan Yack Attack", "https://veganyackattack.com/feed/", []),
+    ("The Conscious Plant Kitchen", "https://www.theconsciousplantkitchen.com/feed/", ["WFPB"]),
+    ("Shane & Simple", "https://shaneandsimple.com/feed/", ["WFPB", "Easy"]),
+    ("Choosing Chia", "https://choosingchia.com/feed/", ["Easy"]),
+    ("Flora & Vino", "https://www.floraandvino.com/feed/", ["Easy"]),
+    ("Namely Marly", "https://namelymarly.com/feed/", []),
+    ("The Post-Punk Kitchen", "https://www.theppk.com/feed/", []),
+    ("The Little Blog of Vegan", "https://www.thelittleblogofvegan.com/feed/", []),
+    ("Eat Figs, Not Pigs", "https://www.eatfigsnotpigs.com/feed/", []),
+    ("The Banana Diaries", "https://thebananadiaries.com/feed/", []),
+    ("Plant Power Couple", "https://www.plantpowercouple.com/feed/", ["Easy"]),
+    ("Rainbow Nourishments", "https://www.rainbownourishments.com/feed/", []),
+    ("Monkey & Me Kitchen Adventures", "https://monkeyandmekitchenadventures.com/feed/", ["WFPB", "Easy"]),
+    ("Veggiekins", "https://veggiekinsblog.com/feed/", ["Easy"]),
+    ("My Pure Plants", "https://mypureplants.com/feed/", ["Easy"]),
+    ("The Cheeky Chickpea", "https://thecheekychickpea.com/feed/", ["Easy"]),
+    ("ZardyPlants", "https://zardyplants.com/feed/", ["Easy"]),
 ]
 
+
 ALL_FEEDS = TOP_BLOGGERS + DISRUPTORS
-# Create a URL map for the report
-URL_MAP = dict(ALL_FEEDS)
+URL_MAP = dict((name, url) for name, url, tags in ALL_FEEDS)
 
 MAX_RECIPES_PER_BLOG = 150 
 cutoff_date = datetime.now().astimezone() - timedelta(days=360)
@@ -103,18 +103,14 @@ except (FileNotFoundError, json.JSONDecodeError):
 
 # --- CLEANSE DATABASE ---
 initial_count = len(recipes)
-# 1. Remove VegNews non-recipes
-# 2. Remove Love and Lemons (User requested removal)
 recipes = [
     r for r in recipes 
     if not (r['blog_name'] == "VegNews" and "/recipes/" not in r['link'])
-    and r['blog_name'] != "Love and Lemons"
 ]
 
 if len(recipes) < initial_count:
     print(f"Cleaned {initial_count - len(recipes)} items from database.")
 
-# Create set for deduplication
 existing_links = {r['link'] for r in recipes}
 
 feed_stats = {} 
@@ -170,7 +166,8 @@ def extract_image(entry, blog_name):
 print(f"Fetching recipes from {len(ALL_FEEDS)} blogs...")
 
 # --- MAIN LOOP ---
-for name, url in ALL_FEEDS:
+# UPDATED: Loop now unpacks name, url, and the new tags list
+for name, url, special_tags in ALL_FEEDS:
     new_count = 0
     status = "✅ OK"
     
@@ -194,7 +191,6 @@ for name, url in ALL_FEEDS:
         
         for entry in feed.entries:
             try:
-                # VegNews FILTER
                 if name == "VegNews" and "/recipes/" not in entry.link: continue
 
                 dt = entry.get('published', entry.get('updated', None))
@@ -212,13 +208,15 @@ for name, url in ALL_FEEDS:
                         base = feed.feed.get('link', '')
                         if base: image_url = base.rstrip('/') + image_url
                     
+                    # UPDATED: New `special_tags` key added to the recipe object
                     recipes.append({
                         "blog_name": name,
                         "title": entry.title,
                         "link": entry.link,
                         "image": image_url,
                         "date": published_time.isoformat(),
-                        "is_disruptor": name in [d[0] for d in DISRUPTORS]
+                        "is_disruptor": name in [d[0] for d in DISRUPTORS],
+                        "special_tags": special_tags 
                     })
                     existing_links.add(entry.link)
                     new_count += 1
@@ -240,13 +238,12 @@ for r in recipes:
     recipes_by_blog[bname].append(r)
 
 final_pruned_list = []
-total_counts = {} # Tracks total count per blog
-latest_dates = {} # Tracks latest date per blog
+total_counts = {} 
+latest_dates = {} 
 
 for bname, blog_recipes in recipes_by_blog.items():
     blog_recipes.sort(key=lambda x: x['date'], reverse=True)
     
-    # Store latest date for report
     if len(blog_recipes) > 0:
         latest_dates[bname] = blog_recipes[0]['date'][:10] 
     
@@ -277,16 +274,14 @@ with open('FEED_HEALTH.md', 'w') as f:
         total = total_counts.get(name, 0)
         latest = latest_dates.get(name, "N/A")
         
-        # Logic: If 0 total in DB, force status to Red Error
         if total == 0 and "✅" in status:
             status = "❌ No Recipes"
             
         report_rows.append((name, url, new, total, latest, status))
     
-    # SORTING PRIORITY: Red -> Yellow -> Green -> Alphabetical
     def sort_key(row):
         stat = row[5]
-        priority = 2 # Default Green
+        priority = 2 
         if '❌' in stat: priority = 0
         elif '⚠️' in stat: priority = 1
         return (priority, row[0])
