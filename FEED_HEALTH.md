@@ -1,47 +1,22 @@
 # Feed Health Report
-**Last Run:** 2026-02-02T17:57:33.561846
-**Total Database Size:** 737
+**Last Run:** 2026-02-02T18:29:06.743840
+**Total Database Size:** 744
 
 | Blog Name | URL | New Today | Total in DB | Latest Post | Status |
 |-----------|-----|-----------|-------------|-------------|--------|
-| 86 Eats | https://www.86eats.com/recipes?format=rss | 0 | 0 | N/A | ❌ No Recipes |
-| Avocados and Ales | https://avocadosandales.com/feed/ | 0 | 0 | N/A | ❌ No Recipes |
-| Bo's Kitchen | https://www.boskitchen.com/feed/ | 0 | 0 | N/A | ❌ No Recipes |
-| Dianne's Vegan Kitchen | https://diannesvegankitchen.com/feed/ | 0 | 0 | N/A | ❌ No Recipes |
-| Earth of Maria | https://earthofmaria.com/feed/ | 0 | 0 | N/A | ❌ No Recipes |
-| Elephantastic Vegan | https://www.elephantasticvegan.com/feed/ | 0 | 0 | N/A | ❌ No Recipes |
-| Fried Dandelions | https://frieddandelions.com/feed/ | 0 | 0 | N/A | ❌ No Recipes |
-| Good Eatings | https://goodeatings.com/feed/ | 0 | 0 | N/A | ❌ No Recipes |
-| Holy Cow Vegan | https://holycowvegan.net/category/vegan-recipes/feed/ | 0 | 0 | N/A | ❌ Error 404 |
-| My Berry Forest | https://myberryforest.com/feed/ | 0 | 0 | N/A | ❌ No Recipes |
-| Nordic Delicious | https://nordicdelicious.com/feed/ | 0 | 0 | N/A | ❌ No Recipes |
-| Pick Up Limes | https://www.pickuplimes.com/recipe/feed | 0 | 0 | N/A | ❌ Error 404 |
+| PlantYou | https://plantyou.com/feed/ | 0 | 12 | 2026-02-02 | ❌ Error 520 |
+| Project Vegan Baking | https://projectveganbaking.com/recipes/feed/ | 0 | 0 | N/A | ❌ Error 404 |
+| Running on Real Food | https://runningonrealfood.com/feed/ | 0 | 11 | 2026-01-29 | ❌ Error 520 |
 | Short Girl Tall Order | https://shortgirltallorder.com/feed/ | 0 | 0 | N/A | ❌ Error 500 |
-| Six Vegan Sisters | https://sixvegansisters.com/feed/ | 0 | 0 | N/A | ❌ Error 403 |
-| The Gentle Chef | https://thegentlechef.com/feed/ | 0 | 0 | N/A | ❌ No Recipes |
-| The Minimalist Vegan | https://theminimalistvegan.com/feed/ | 0 | 0 | N/A | ❌ No Recipes |
-| The Simple Veganista | https://www.thesimpleveganista.com/feed/ | 0 | 0 | N/A | ❌ No Recipes |
-| This Rawsome Vegan Life | https://www.thisrawsomeveganlife.com/feeds/posts/default | 0 | 0 | N/A | ❌ No Recipes |
-| Tuulia | http://tuulia.co/feed/ | 0 | 0 | N/A | ❌ No Recipes |
-| Vegan Huggs | https://veganhuggs.com/feed/ | 0 | 0 | N/A | ❌ Error 403 |
-| Vegan Punks | https://veganpunks.com/feed/ | 0 | 0 | N/A | ❌ No Recipes |
-| Vegan Scratch Kitchen | https://veganscratchkitchen.com/feed/ | 0 | 0 | N/A | ❌ No Recipes |
-| Vegan on Board | https://veganonboard.com/feed/ | 0 | 0 | N/A | ❌ No Recipes |
-| Veganosity | https://veganosity.com/feed/ | 0 | 0 | N/A | ❌ No Recipes |
-| Wallflower Kitchen | https://wallflowerkitchen.com/feed/ | 0 | 0 | N/A | ❌ No Recipes |
-| Wholehearted Eats | https://www.wholeheartedeats.com/feed/ | 0 | 0 | N/A | ❌ No Recipes |
-| Emilie Eats | https://emilieeats.com/feed/ | 0 | 0 | N/A | ⚠️ Parsed 0 items |
-| Exceedingly Vegan | https://www.exceedinglyvegan.com/feed | 0 | 0 | N/A | ⚠️ Parsed 0 items |
-| Project Vegan Baking | https://projectveganbaking.com/feed/ | 0 | 0 | N/A | ⚠️ Parsed 0 items |
-| Veggie Rose | https://veggierose.com/feed/ | 0 | 0 | N/A | ⚠️ Parsed 0 items |
+| ZardyPlants | https://zardyplants.com/feed/ | 0 | 10 | 2025-11-08 | ❌ Error 520 |
 | A Virtual Vegan | https://avirtualvegan.com/feed/ | 0 | 9 | 2026-01-15 | ✅ OK |
 | Addicted to Dates | https://addictedtodates.com/category/recipes/feed/ | 0 | 10 | 2026-01-30 | ✅ OK |
 | Bianca Zapatka | https://biancazapatka.com/en/feed/ | 0 | 10 | 2025-12-11 | ✅ OK |
 | Cadry's Kitchen | https://cadryskitchen.com/feed/ | 0 | 10 | 2026-01-28 | ✅ OK |
 | Choosing Chia | https://choosingchia.com/feed/ | 0 | 10 | 2026-01-06 | ✅ OK |
-| Connoisseurus Veg | https://www.connoisseurusveg.com/feed/ | 1 | 13 | 2026-02-02 | ✅ OK |
+| Connoisseurus Veg | https://www.connoisseurusveg.com/feed/ | 0 | 13 | 2026-02-02 | ✅ OK |
 | Domestic Gothess | Unknown | 0 | 10 | 2026-01-19 | Skipped/DB Only |
-| Eat Figs, Not Pigs | https://www.eatfigsnotpigs.com/feed/ | 1 | 11 | 2026-02-02 | ✅ OK |
+| Eat Figs, Not Pigs | https://www.eatfigsnotpigs.com/feed/ | 0 | 11 | 2026-02-02 | ✅ OK |
 | Elavegan | https://elavegan.com/feed/ | 0 | 11 | 2026-01-27 | ✅ OK |
 | Flora & Vino | https://www.floraandvino.com/feed/ | 0 | 10 | 2026-01-31 | ✅ OK |
 | Fragrant Vanilla Cake | https://www.fragrantvanilla.com/feed/ | 0 | 10 | 2026-01-19 | ✅ OK |
@@ -60,25 +35,23 @@
 | My Darling Vegan | https://www.mydarlingvegan.com/feed/ | 0 | 12 | 2026-01-28 | ✅ OK |
 | My Pure Plants | https://mypureplants.com/feed/ | 0 | 12 | 2025-11-20 | ✅ OK |
 | Namely Marly | https://namelymarly.com/feed/ | 0 | 58 | 2026-01-30 | ✅ OK |
-| Nora Cooks | https://www.noracooks.com/feed/ | 1 | 11 | 2026-02-02 | ✅ OK |
+| Nora Cooks | https://www.noracooks.com/feed/ | 0 | 11 | 2026-02-02 | ✅ OK |
 | Nutriciously | https://nutriciously.com/feed/ | 0 | 2 | 2025-05-16 | ✅ OK |
 | Oh She Glows | https://ohsheglows.com/feed/ | 0 | 1 | 2025-09-03 | ✅ OK |
 | Okonomi Kitchen | https://okonomikitchen.com/feed/ | 0 | 10 | 2026-01-27 | ✅ OK |
 | One Arab Vegan | https://www.onearabvegan.com/feed/ | 0 | 2 | 2025-12-04 | ✅ OK |
 | Plant Power Couple | https://www.plantpowercouple.com/feed/ | 0 | 10 | 2026-01-27 | ✅ OK |
-| PlantYou | https://plantyou.com/feed/ | 1 | 12 | 2026-02-02 | ✅ OK |
 | Plantifully Based | https://plantifullybasedblog.com/feed/ | 0 | 9 | 2026-01-31 | ✅ OK |
 | Rabbit and Wolves | https://www.rabbitandwolves.com/feed/ | 0 | 10 | 2026-01-19 | ✅ OK |
 | Rainbow Nourishments | https://www.rainbownourishments.com/feed/ | 0 | 10 | 2025-11-23 | ✅ OK |
 | Rainbow Plant Life | https://rainbowplantlife.com/feed/ | 0 | 12 | 2026-01-29 | ✅ OK |
-| Running on Real Food | https://runningonrealfood.com/feed/ | 0 | 11 | 2026-01-29 | ✅ OK |
 | Sarah's Vegan Kitchen | https://sarahsvegankitchen.com/feed/ | 0 | 15 | 2026-01-31 | ✅ OK |
 | Shane & Simple | https://shaneandsimple.com/feed/ | 0 | 10 | 2026-01-28 | ✅ OK |
 | Simple Vegan Blog | https://simpleveganblog.com/feed/ | 0 | 7 | 2026-01-29 | ✅ OK |
 | Strength and Sunshine | https://strengthandsunshine.com/feed/ | 0 | 10 | 2026-01-22 | ✅ OK |
 | Sweet Potato Soul | https://sweetpotatosoul.com/feed/ | 0 | 10 | 2026-01-04 | ✅ OK |
 | Sweet Simple Vegan | https://sweetsimplevegan.com/feed/ | 0 | 5 | 2026-01-21 | ✅ OK |
-| The Banana Diaries | https://thebananadiaries.com/feed/ | 2 | 12 | 2026-02-02 | ✅ OK |
+| The Banana Diaries | https://thebananadiaries.com/feed/ | 0 | 12 | 2026-02-02 | ✅ OK |
 | The Burger Dude | https://theeburgerdude.com/feed/ | 0 | 16 | 2026-01-29 | ✅ OK |
 | The Cheeky Chickpea | https://thecheekychickpea.com/feed/ | 0 | 1 | 2025-05-13 | ✅ OK |
 | The Conscious Plant Kitchen | https://www.theconsciousplantkitchen.com/feed/ | 0 | 9 | 2026-02-01 | ✅ OK |
@@ -95,8 +68,8 @@
 | The Viet Vegan | https://thevietvegan.com/feed/ | 0 | 2 | 2025-04-01 | ✅ OK |
 | Turnip Vegan | https://turnipvegan.com/blogs/news.atom | 0 | 7 | 2025-04-11 | ✅ OK |
 | Unconventional Baker | https://www.unconventionalbaker.com/feed/ | 0 | 10 | 2025-11-01 | ✅ OK |
-| V Nutrition | https://www.vnutritionandwellness.com/feed/ | 0 | 10 | 2026-01-20 | ✅ OK |
-| VegNews | Unknown | 0 | 33 | 2026-01-31 | Skipped/DB Only |
+| V Nutrition | Unknown | 0 | 10 | 2026-01-20 | Skipped/DB Only |
+| VegNews | https://vegnews.com/feed | 7 | 40 | 2026-02-02 | ✅ OK |
 | Vegan Heaven | https://veganheaven.org/feed/ | 0 | 10 | 2026-01-06 | ✅ OK |
 | Vegan Richa | https://www.veganricha.com/feed/ | 0 | 11 | 2026-01-28 | ✅ OK |
 | Vegan Yack Attack | https://veganyackattack.com/feed/ | 0 | 5 | 2025-07-27 | ✅ OK |
@@ -104,4 +77,3 @@
 | Veggiekins | https://veggiekinsblog.com/feed/ | 0 | 10 | 2026-01-29 | ✅ OK |
 | Veggies Don't Bite | https://veggiesdontbite.com/feed/ | 0 | 10 | 2026-01-31 | ✅ OK |
 | Watch Learn Eat | https://watchlearneat.com/feed/ | 0 | 10 | 2026-01-24 | ✅ OK |
-| ZardyPlants | https://zardyplants.com/feed/ | 0 | 10 | 2025-11-08 | ✅ OK |

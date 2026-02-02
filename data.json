@@ -48,6 +48,30 @@
     "is_disruptor": false
   },
   {
+    "blog_name": "VegNews",
+    "title": "Mini Vegan Banana Chocolate Chip Muffins",
+    "link": "https://vegnews.com/recipes/mini-vegan-banana-chocolate-chip-muffins",
+    "image": "https://vegnews.com/media/W1siZiIsIjE3NjcxL1ZlZ05ld3MuTWluaUJhbmFuYUNoaXBNdWZmaW5zLmpwZyJdLFsicCIsInRodW1iIiwiMTYwMHg5NDYjIix7ImZvcm1hdCI6ImpwZyJ9XSxbInAiLCJvcHRpbWl6ZSJdXQ/VegNews.MiniBananaChipMuffins.jpg?sha=17732ed45270c226",
+    "date": "2026-02-02T08:45:00-08:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "VegNews",
+    "title": "Vegan Pandan Buns With Sweet Bean Filling",
+    "link": "https://vegnews.com/recipes/vegan-pandan-buns-with-sweet-bean-filling",
+    "image": "https://vegnews.com/media/W1siZiIsIjI0Nzk0L1ZlZ05ld3MuUGFuZGFuQnVucy5qcGVnIl0sWyJwIiwidGh1bWIiLCIxNjAweDk0NiMiLHsiZm9ybWF0IjoianBnIn1dLFsicCIsIm9wdGltaXplIl1d/VegNews.PandanBuns.jpg?sha=fa726e23969361fa",
+    "date": "2026-02-02T08:30:00-08:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "VegNews",
+    "title": "Vegan Hawaiian Kahlua Jackfruit Pork Sliders",
+    "link": "https://vegnews.com/recipes/vegan-hawaiian-kahlua-jackfruit-pork",
+    "image": "https://vegnews.com/media/W1siZiIsIjM1ODQxL1ZlZ05ld3MuUG9yay5qcGciXSxbInAiLCJ0aHVtYiIsIjE2MDB4OTQ2IyIseyJmb3JtYXQiOiJqcGcifV0sWyJwIiwib3B0aW1pemUiXV0/VegNews.Pork.jpg?sha=87bc530b3307a002",
+    "date": "2026-02-02T08:15:00-08:00",
+    "is_disruptor": false
+  },
+  {
     "blog_name": "Lazy Cat Kitchen",
     "title": "Sweet potato fries",
     "link": "https://www.lazycatkitchen.com/sweet-potato-fries/",
@@ -62,6 +86,38 @@
     "image": "https://monkeyandmekitchenadventures.com/wp-content/uploads/2026/01/Healthy-Raisin-Bran-Muffins_03.jpg",
     "date": "2026-02-01T15:40:55+00:00",
     "is_disruptor": true
+  },
+  {
+    "blog_name": "VegNews",
+    "title": "Vegan Copycat Taco Bell Mexican Pizza",
+    "link": "https://vegnews.com/recipes/vegan-copycat-taco-bell-mexican-pizza",
+    "image": "https://vegnews.com/media/W1siZiIsIjM0NTk1L1ZlZ05ld3MuUmVjaXBlcy4yLmpwZyJdLFsicCIsInRodW1iIiwiMTYwMHg5NDYjIix7ImZvcm1hdCI6ImpwZyJ9XSxbInAiLCJvcHRpbWl6ZSJdXQ/VegNews.Recipes.2.jpg?sha=f4cc3e0352e8536d",
+    "date": "2026-02-01T10:35:00-08:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "VegNews",
+    "title": "Two-Step Oil-Free Vegan Kale Pesto Pasta",
+    "link": "https://vegnews.com/recipes/oil-free-vegan-kale-pesto-pasta",
+    "image": "https://vegnews.com/media/W1siZiIsIjI5MzY4L1ZlZ05ld3MuS2FsZVBlc3RvLmpwZWciXSxbInAiLCJ0aHVtYiIsIjE2MDB4OTQ2IyIseyJmb3JtYXQiOiJqcGcifV0sWyJwIiwib3B0aW1pemUiXV0/VegNews.KalePesto.jpg?sha=3e7d7e05f469e7d7",
+    "date": "2026-02-01T10:30:00-08:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "VegNews",
+    "title": "Chunky Vegan Chocolate Chip Pretzel Cookies",
+    "link": "https://vegnews.com/recipes/vegan-chocolate-chip-pretzel-cookies",
+    "image": "https://vegnews.com/media/W1siZiIsIjI2NzQ0L1ZlZ25ld3MuVmVnYW5DaG9jb2xhdGVDaGlwUHJldHplbC5qcGVnIl0sWyJwIiwidGh1bWIiLCIxNjAweDk0NiMiLHsiZm9ybWF0IjoianBnIn1dLFsicCIsIm9wdGltaXplIl1d/Vegnews.VeganChocolateChipPretzel.jpg?sha=c95b00bd697a3d57",
+    "date": "2026-02-01T10:20:00-08:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "VegNews",
+    "title": "Vegan Griddled Flaky Welsh Cakes",
+    "link": "https://vegnews.com/recipes/vegan-griddled-flaky-welsh-cakes",
+    "image": "https://vegnews.com/media/W1siZiIsIjIxNzc5L1ZlZ05ld3MuV2Vsc2hjYWtlcy5qcGciXSxbInAiLCJ0aHVtYiIsIjE2MDB4OTQ2IyIseyJmb3JtYXQiOiJqcGcifV0sWyJwIiwib3B0aW1pemUiXV0/VegNews.Welshcakes.jpg?sha=7647260fc845364c",
+    "date": "2026-02-01T10:15:00-08:00",
+    "is_disruptor": false
   },
   {
     "blog_name": "It Doesn't Taste Like Chicken",
