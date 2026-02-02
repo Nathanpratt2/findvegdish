@@ -34,12 +34,25 @@
             margin-bottom: 30px;
         }
         
+        /* UPDATED: Logo is now a clickable link wrapper */
+        .logo-link {
+            display: inline-block;
+            cursor: pointer;
+            text-decoration: none;
+            border: none;
+        }
+
         .logo-img {
             max-width: 90%;
             width: 350px;
             height: auto;
             display: block;
             margin: 0 auto 15px auto;
+            transition: transform 0.2s;
+        }
+        
+        .logo-link:active .logo-img {
+            transform: scale(0.98); /* Subtle press effect on logo */
         }
 
         /* Search Bar Wrapper */
@@ -61,12 +74,14 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
             outline: none;
             transition: all 0.3s ease;
-            color: #27ae60; 
+            /* UPDATED COLOR */
+            color: #769F37; 
             font-weight: 600;
         }
         #searchInput:focus {
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            border-color: #27ae60;
+            /* UPDATED COLOR */
+            border-color: #769F37;
         }
         #searchInput::placeholder {
             color: #aaa;
@@ -107,22 +122,31 @@
             font-weight: 600;
             cursor: pointer;
             font-size: 14px;
-            transition: transform 0.2s, background 0.2s;
+            transition: transform 0.1s, background 0.2s, color 0.2s;
             display: flex;
             align-items: center;
             gap: 5px;
             color: #555;
             background-color: white;
             border: 1px solid #ddd;
+            /* Removes the blue highlight on mobile when tapping */
+            -webkit-tap-highlight-color: transparent; 
         }
-        .btn:active { transform: scale(0.95); }
+        
         .btn:hover { background-color: #f0f0f0; }
+        
+        /* Pressed state for non-active buttons (like Shuffle) */
+        .btn:active { 
+            transform: scale(0.95); 
+            background-color: #e0e0e0;
+        }
 
-        /* Active State for Filter Buttons */
+        /* Active State for Filter Buttons (Stays Green) */
+        /* IMPORTANT: This uses !important to override hover states when active */
         .btn.active-filter {
-            background-color: #2c3e50;
-            color: white;
-            border-color: #2c3e50;
+            background-color: #769F37 !important; /* UPDATED COLOR */
+            color: white !important;
+            border-color: #769F37 !important;
         }
 
         #installBtn {
@@ -218,14 +242,16 @@
             font-size: 0.75em;
             text-transform: uppercase;
             letter-spacing: 1px;
-            color: #27ae60; 
-            font-weight: bold;
+            /* UPDATED COLOR */
+            color: #769F37; 
+            font-weight: 600;
             display: inline-block;
         }
         .disruptor-tag { color: #e67e22; }
         
         .fresh-badge {
-            background-color: #27ae60; 
+            /* UPDATED COLOR */
+            background-color: #769F37; 
             color: white;
             font-size: 0.7em;
             padding: 2px 8px;
@@ -276,19 +302,19 @@
             height: 50px;
             border: none;
             outline: none;
-            background-color: #27ae60;
+            /* UPDATED COLOR */
+            background-color: #769F37;
             color: white;
             cursor: pointer;
             border-radius: 50%;
             box-shadow: 0 4px 10px rgba(0,0,0,0.3);
             transition: background-color 0.3s, transform 0.3s;
-            /* 'display: flex' is now ONLY controlled by JavaScript */
             align-items: center;
             justify-content: center;
         }
 
         #scrollTopBtn:hover {
-            background-color: #219150;
+            background-color: #5d822b; /* Slightly darker shade for hover */
             transform: translateY(-3px);
         }
 
@@ -300,10 +326,13 @@
 <body>
 
 <header>
-    <img src="default.jpg" alt="Daily Vegan Recipes" class="logo-img">
+    <!-- UPDATED: Wrapped in link for refresh -->
+    <a href="index.html" class="logo-link" title="Refresh">
+        <img src="default.jpg" alt="Daily Vegan Recipes" class="logo-img">
+    </a>
     
     <div class="search-wrapper">
-        <input type="text" id="searchInput" placeholder="Search tofu, cake, blog name...">
+        <input type="text" id="searchInput" placeholder="Search pasta, tofu, soup...">
         <button id="clearBtn" title="Clear Search">✕</button>
     </div>
 
@@ -311,6 +340,7 @@
         <button class="btn" id="mealsBtn" onclick="toggleCategory('meal')">🍝 Meals Only</button>
         <button class="btn" id="sweetsBtn" onclick="toggleCategory('sweet')">🍪 Sweets Only</button>
         <button class="btn" id="proteinBtn" onclick="toggleCategory('protein')">💪 High Protein</button>
+        <!-- Shuffle button works via the generic .btn:active CSS now -->
         <button class="btn" onclick="shuffleRecipes()">🔀 Shuffle</button>
 
         <a href="shop.html" class="btn" style="text-decoration:none; color:#555;">🔪 Top 10 Vegan Kitchen Tools</a>
@@ -331,11 +361,11 @@
     </svg>
 </button>
 
-<!-- Buy Me A Coffee Widget (UPDATED) -->
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="natethevegan" data-description="Support me on Buy me a coffee!" data-message="" data-color="#27ae60" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+<!-- Buy Me A Coffee Widget (UPDATED COLOR) -->
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="natethevegan" data-description="Support me on Buy me a coffee!" data-message="" data-color="#769F37" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 
 <footer>
-    <p>Recipes and images belong to their respective authors.</p>
+    <p>Updated daily. Images belong to respective authors.</p>
 </footer>
 
 <script>
@@ -424,10 +454,10 @@
         info.className = 'info';
 
         let tagClass = 'tag';
-        let tagText = 'Top Site';
+        let tagText = 'Top Blog';
         if(recipe.is_disruptor) {
             tagClass += ' disruptor-tag';
-            tagText = 'Innovator';
+            tagText = 'Rising Blog';
         }
 
         const recipeDate = new Date(recipe.date);
@@ -558,19 +588,21 @@
         const proteinBtn = document.getElementById('proteinBtn');
 
         if (activeCategory === category) {
+            // TURNING OFF
             activeCategory = null;
             mealsBtn.classList.remove('active-filter');
             sweetsBtn.classList.remove('active-filter');
             proteinBtn.classList.remove('active-filter');
         } else {
+            // TURNING ON
             activeCategory = category;
             
-            // Clear all
+            // Clear all first
             mealsBtn.classList.remove('active-filter');
             sweetsBtn.classList.remove('active-filter');
             proteinBtn.classList.remove('active-filter');
 
-            // Set active
+            // Set active one
             if(category === 'meal') mealsBtn.classList.add('active-filter');
             else if(category === 'sweet') sweetsBtn.classList.add('active-filter');
             else if(category === 'protein') proteinBtn.classList.add('active-filter');
