@@ -332,7 +332,7 @@
     </a>
     
     <div class="search-wrapper">
-        <input type="text" id="searchInput" placeholder="Search pasta, tofu, soup...">
+        <input type="text" id="searchInput" placeholder="Search Easy, Soup, Cake, Tofu, blog name...">
         <button id="clearBtn" title="Clear Search">✕</button>
     </div>
 
@@ -530,6 +530,8 @@
 
     // --- SHUFFLE FUNCTION ---
     function shuffleRecipes() {
+        document.activeElement.blur(); 
+
         for (let i = allRecipes.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [allRecipes[i], allRecipes[j]] = [allRecipes[j], allRecipes[i]];
@@ -540,7 +542,6 @@
         document.getElementById('proteinBtn').classList.remove('active-filter');
         resetView(allRecipes);
     }
-
     // --- FILTER/SEARCH LOGIC ---
     function applyFilters() {
         const term = document.getElementById('searchInput').value.toLowerCase();
@@ -583,6 +584,8 @@
 
     // --- CATEGORY TOGGLE ---
     function toggleCategory(category) {
+        document.activeElement.blur(); 
+
         const mealsBtn = document.getElementById('mealsBtn');
         const sweetsBtn = document.getElementById('sweetsBtn');
         const proteinBtn = document.getElementById('proteinBtn');
