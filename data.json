@@ -1,5 +1,53 @@
 [
   {
+    "blog_name": "Eat Figs, Not Pigs",
+    "title": "One Pan Cajun-Inspired Tofu and Alfredo Orzo",
+    "link": "https://www.eatfigsnotpigs.com/one-pan-cajun-inspired-tofu-and-alfredo-orzo/?utm_source=rss&utm_medium=rss&utm_campaign=one-pan-cajun-inspired-tofu-and-alfredo-orzo",
+    "image": "https://www.eatfigsnotpigs.com/wp-content/uploads/2026/01/One-Pan-Cajun-Tofu-and-Alfredo_0822.jpg",
+    "date": "2026-02-02T17:46:31+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "The Banana Diaries",
+    "title": "20 Minute Creamy Chickpea Broccoli Alfredo Skillet \u2013 Dairy Free & Vegan",
+    "link": "https://thebananadiaries.com/vegan-chickpea-broccoli-alfredo-skillet/",
+    "image": "https://thebananadiaries.com/wp-content/uploads/2023/10/chickpea-broccoli-alfredo-skillet_9565.jpg",
+    "date": "2026-02-02T17:42:38+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "Nora Cooks",
+    "title": "Chili Cornbread Casserole (Vegan)",
+    "link": "https://www.noracooks.com/chili-cornbread-casserole/",
+    "image": "https://www.noracooks.com/wp-content/uploads/2026/01/chili-cornbread-casserole-1-2-1200x1200.jpg",
+    "date": "2026-02-02T17:21:27+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "PlantYou",
+    "title": "Lentil Patties",
+    "link": "https://plantyou.com/lentil-patties/",
+    "image": "https://plantyou.com/wp-content/uploads/2026/01/DSC04272-scaled.jpg",
+    "date": "2026-02-02T15:41:04+00:00",
+    "is_disruptor": false
+  },
+  {
+    "blog_name": "The Banana Diaries",
+    "title": "Small Batch MOIST Vanilla Cupcakes for Two \u2013 No eggs, no dairy!",
+    "link": "https://thebananadiaries.com/small-batch-vanilla-cupcakes-for-two/",
+    "image": "https://thebananadiaries.com/wp-content/uploads/2023/10/small-batch-vanilla-cupcakes-for-two-vegan_9505.jpg",
+    "date": "2026-02-02T12:07:02+00:00",
+    "is_disruptor": true
+  },
+  {
+    "blog_name": "Connoisseurus Veg",
+    "title": "Vegan Caldo Verde",
+    "link": "https://www.connoisseurusveg.com/vegan-caldo-verde/",
+    "image": "https://www.connoisseurusveg.com/wp-content/uploads/2026/01/vegan-caldo-verde-sq-1.jpg",
+    "date": "2026-02-02T12:00:00+00:00",
+    "is_disruptor": false
+  },
+  {
     "blog_name": "Lazy Cat Kitchen",
     "title": "Sweet potato fries",
     "link": "https://www.lazycatkitchen.com/sweet-potato-fries/",
