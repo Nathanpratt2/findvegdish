@@ -83,7 +83,6 @@ DISRUPTORS = [
     ("My Pure Plants", "https://mypureplants.com/feed/"),
     ("The Cheeky Chickpea", "https://thecheekychickpea.com/feed/"),
     ("ZardyPlants", "https://zardyplants.com/feed/"),
-    ("V Nutrition", "https://www.vnutritionandwellness.com/feed/")
 ]
 
 ALL_FEEDS = TOP_BLOGGERS + DISRUPTORS
