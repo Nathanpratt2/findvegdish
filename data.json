@@ -1,5 +1,13 @@
 [
   {
+    "blog_name": "Lazy Cat Kitchen",
+    "title": "Sweet potato fries",
+    "link": "https://www.lazycatkitchen.com/sweet-potato-fries/",
+    "image": "https://cdn77-s3.lazycatkitchen.com/wp-content/uploads/2026/02/sweet-potato-fries.jpg",
+    "date": "2026-02-01T19:18:58+00:00",
+    "is_disruptor": false
+  },
+  {
     "blog_name": "Monkey & Me Kitchen Adventures",
     "title": "Healthy Raisin Bran Muffins",
     "link": "https://monkeyandmekitchenadventures.com/healthy-raisin-bran-muffins/",
