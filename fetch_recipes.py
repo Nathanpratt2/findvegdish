@@ -24,7 +24,6 @@ TOP_BLOGGERS = [
     ("Simple Vegan Blog", "https://simpleveganblog.com/feed/"),
     ("Connoisseurus Veg", "https://www.connoisseurusveg.com/feed/"),
     ("Jessica in the Kitchen", "https://jessicainthekitchen.com/feed/"),
-    ("The Simple Veganista", "https://www.thesimpleveganista.com/feed/"),
     ("Lazy Cat Kitchen", "https://www.lazycatkitchen.com/feed/"),
     ("My Darling Vegan", "https://www.mydarlingvegan.com/feed/"),
     ("The Burger Dude", "https://theeburgerdude.com/feed/"),
@@ -37,40 +36,27 @@ TOP_BLOGGERS = [
     ("Vegan in the Freezer", "https://veganinthefreezer.com/feed/"),
     ("A Virtual Vegan", "https://avirtualvegan.com/feed/"),
     ("Sarah's Vegan Kitchen", "https://sarahsvegankitchen.com/feed/"),
-    ("Pick Up Limes", "https://www.pickuplimes.com/recipe/feed"), 
     ("Bianca Zapatka", "https://biancazapatka.com/en/feed/"),
-    ("Holy Cow Vegan", "https://holycowvegan.net/category/vegan-recipes/feed/"),
-    ("Six Vegan Sisters", "https://sixvegansisters.com/feed/"),
     ("Sweet Simple Vegan", "https://sweetsimplevegan.com/feed/"),
     ("Make It Dairy Free", "https://makeitdairyfree.com/feed/"),
     ("Addicted to Dates", "https://addictedtodates.com/category/recipes/feed/"),
     ("Gretchen's Vegan Bakery", "https://www.gretchensveganbakery.com/feed/"),
     ("Running on Real Food", "https://runningonrealfood.com/feed/"),
     ("The Full Helping", "https://thefullhelping.com/feed/"),
-    ("Turnip Vegan", "https://turnipvegan.com/blogs/news.atom")
+    ("Turnip Vegan", "https://turnipvegan.com/blogs/news.atom"),
+    ("VegNews", "https://vegnews.com/feed")
 ]
 
 DISRUPTORS = [
     ("Full of Plants", "https://fullofplants.com/feed/"),
-    ("Good Eatings", "https://goodeatings.com/feed/"),
-    ("My Berry Forest", "https://myberryforest.com/feed/"),
     ("The Green Creator", "https://thegreencreator.com/feed/"),
-    ("Nordic Delicious", "https://nordicdelicious.com/feed/"),
-    ("Earth of Maria", "https://earthofmaria.com/feed/"),
-    ("Elephantastic Vegan", "https://www.elephantasticvegan.com/feed/"),
     ("One Arab Vegan", "https://www.onearabvegan.com/feed/"),
-    ("Tuulia", "http://tuulia.co/feed/"),     
     ("Mary's Test Kitchen", "https://www.marystestkitchen.com/feed/"),
     ("Unconventional Baker", "https://www.unconventionalbaker.com/feed/"),
-    ("86 Eats", "https://www.86eats.com/recipes?format=rss"),
-    ("The Gentle Chef", "https://thegentlechef.com/feed/"),
     ("Fragrant Vanilla Cake", "https://www.fragrantvanilla.com/feed/"),
-    ("Wholehearted Eats", "https://www.wholeheartedeats.com/feed/"),
-    ("Avocados and Ales", "https://avocadosandales.com/feed/"),
     ("Plantifully Based", "https://plantifullybasedblog.com/feed/"),
     ("Nutriciously", "https://nutriciously.com/feed/"),       
     ("Cadry's Kitchen", "https://cadryskitchen.com/feed/"),
-    ("Vegan on Board", "https://veganonboard.com/feed/"),
     ("Veggies Don't Bite", "https://veggiesdontbite.com/feed/"),
     ("Watch Learn Eat", "https://watchlearneat.com/feed/"),
     ("Strength and Sunshine", "https://strengthandsunshine.com/feed/"),
@@ -79,39 +65,24 @@ DISRUPTORS = [
     ("The Foodie Takes Flight", "https://thefoodietakesflight.com/feed/"),
     ("The Viet Vegan", "https://thevietvegan.com/feed/"),
     ("Vegan Yack Attack", "https://veganyackattack.com/feed/"),
-    ("Vegan Scratch Kitchen", "https://veganscratchkitchen.com/feed/"),
     ("The Conscious Plant Kitchen", "https://www.theconsciousplantkitchen.com/feed/"),
     ("Shane & Simple", "https://shaneandsimple.com/feed/"),
     ("Choosing Chia", "https://choosingchia.com/feed/"),
     ("Flora & Vino", "https://www.floraandvino.com/feed/"),
-    ("Emilie Eats", "https://emilieeats.com/feed/"),
-    ("Dianne's Vegan Kitchen", "https://diannesvegankitchen.com/feed/"),
     ("Namely Marly", "https://namelymarly.com/feed/"),
     ("The Post-Punk Kitchen", "https://www.theppk.com/feed/"),
-    ("Veganosity", "https://veganosity.com/feed/"),
     ("Short Girl Tall Order", "https://shortgirltallorder.com/feed/"),
-    ("Vegan Huggs", "https://veganhuggs.com/feed/"),
     ("The Little Blog of Vegan", "https://www.thelittleblogofvegan.com/feed/"),
     ("Eat Figs, Not Pigs", "https://www.eatfigsnotpigs.com/feed/"),
     ("The Banana Diaries", "https://thebananadiaries.com/feed/"),
-    ("Project Vegan Baking", "https://projectveganbaking.com/feed/"),
-    ("Vegan Punks", "https://veganpunks.com/feed/"),
+    ("Project Vegan Baking", "https://projectveganbaking.com/recipes/feed/"),
     ("Plant Power Couple", "https://www.plantpowercouple.com/feed/"),
-    ("Exceedingly Vegan", "https://www.exceedinglyvegan.com/feed"),
-    ("Wallflower Kitchen", "https://wallflowerkitchen.com/feed/"),
     ("Rainbow Nourishments", "https://www.rainbownourishments.com/feed/"),
-    ("Nutriciously", "https://nutriciously.com/feed/"),
-    ("The Minimalist Vegan", "https://theminimalistvegan.com/feed/"),
     ("Monkey & Me Kitchen Adventures", "https://monkeyandmekitchenadventures.com/feed/"),
     ("Veggiekins", "https://veggiekinsblog.com/feed/"),
-    ("This Rawsome Vegan Life", "https://www.thisrawsomeveganlife.com/feeds/posts/default"),
-    ("Fried Dandelions", "https://frieddandelions.com/feed/"),
     ("My Pure Plants", "https://mypureplants.com/feed/"),
     ("The Cheeky Chickpea", "https://thecheekychickpea.com/feed/"),
     ("ZardyPlants", "https://zardyplants.com/feed/"),
-    ("Veggie Rose", "https://veggierose.com/feed/"),
-    ("Bo's Kitchen", "https://www.boskitchen.com/feed/"),
-    ("Elephantastic Vegan", "https://www.elephantasticvegan.com/feed/"),
     ("V Nutrition", "https://www.vnutritionandwellness.com/feed/")
 ]
 
@@ -133,6 +104,8 @@ except (FileNotFoundError, json.JSONDecodeError):
 
 # --- CLEANSE DATABASE ---
 initial_count = len(recipes)
+# 1. Remove VegNews non-recipes
+# 2. Remove Love and Lemons (User requested removal)
 recipes = [
     r for r in recipes 
     if not (r['blog_name'] == "VegNews" and "/recipes/" not in r['link'])
@@ -276,7 +249,6 @@ for bname, blog_recipes in recipes_by_blog.items():
     
     # Store latest date for report
     if len(blog_recipes) > 0:
-        # Convert ISO date to YYYY-MM-DD
         latest_dates[bname] = blog_recipes[0]['date'][:10] 
     
     kept_recipes = blog_recipes[:MAX_RECIPES_PER_BLOG]
@@ -312,11 +284,7 @@ with open('FEED_HEALTH.md', 'w') as f:
             
         report_rows.append((name, url, new, total, latest, status))
     
-    # SORTING PRIORITY:
-    # 1. Status contains '❌' (Top)
-    # 2. Status contains '⚠️' (Middle)
-    # 3. Status contains '✅' (Bottom)
-    # 4. Alphabetical by Name
+    # SORTING PRIORITY: Red -> Yellow -> Green -> Alphabetical
     def sort_key(row):
         stat = row[5]
         priority = 2 # Default Green
