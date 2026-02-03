@@ -34,7 +34,13 @@ jobs:
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
-          # CRITICAL CHANGE: We now add the health report to the commit
+          # Add the files you want to commit
           git add data.json FEED_HEALTH.md
+          # Commit only if there are changes; prevent failure if clean
           git commit -m "Daily recipe & health refresh" || echo "No changes to commit"
-          git push
+          
+          # FIX: Pull latest changes from remote and rebase local changes on top
+          git pull --rebase origin main
+          
+          # Push the reconciled history
+          git push origin main
