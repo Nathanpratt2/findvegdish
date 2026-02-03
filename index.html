@@ -138,6 +138,12 @@
             color: white !important;
             border-color: #769F37 !important;
         }
+        #shuffleBtn {
+            border: 2px solid #769F37; /* Green border */
+            font-weight: 700; /* Make text a little bolder */
+            color: #769F37; /* Make text green to match */
+            background-color: white;
+        }
 
         #installBtn {
             display: none;
@@ -322,7 +328,7 @@
         <button class="btn" id="mealsBtn" onclick="toggleCategory('meal')">🍝 Meals</button>
         <button class="btn" id="sweetsBtn" onclick="toggleCategory('sweet')">🍪 Sweets</button>
         <button class="btn" id="proteinBtn" onclick="toggleCategory('protein')">⬆️ Protein</button>
-        <button class="btn" onclick="shuffleRecipes()">🔀 Shuffle</button>
+        <button class="btn" id="shuffleBtn" onclick="shuffleRecipes()">🔀 Shuffle</button>
     </div>
 </header>
 
