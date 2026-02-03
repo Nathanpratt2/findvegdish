@@ -51,7 +51,6 @@ TOP_BLOGGERS = [
 
 DISRUPTORS = [
     ("Full of Plants", "https://fullofplants.com/feed/", []),
-    ("The Green Creator", "https://thegreencreator.com/feed/", ["WFPB"]),
     ("One Arab Vegan", "https://www.onearabvegan.com/feed/", []),
     ("Mary's Test Kitchen", "https://www.marystestkitchen.com/feed/", []),
     ("Unconventional Baker", "https://www.unconventionalbaker.com/feed/", []),
@@ -68,7 +67,6 @@ DISRUPTORS = [
     ("The Viet Vegan", "https://thevietvegan.com/feed/", []),
     ("Vegan Yack Attack", "https://veganyackattack.com/feed/", []),
     ("The Conscious Plant Kitchen", "https://www.theconsciousplantkitchen.com/feed/", ["WFPB"]),
-    ("Shane & Simple", "https://shaneandsimple.com/feed/", ["WFPB", "Easy"]),
     ("Choosing Chia", "https://choosingchia.com/feed/", ["Easy"]),
     ("Flora & Vino", "https://www.floraandvino.com/feed/", ["Easy"]),
     ("Namely Marly", "https://namelymarly.com/feed/", []),
