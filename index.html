@@ -104,8 +104,17 @@
             justify-content: center;
             align-items: center;
             gap: 10px;
-            flex-wrap: wrap;
+            flex-wrap: nowrap; /* <--- THIS FORCES SINGLE LINE */
             margin-top: 20px;
+        }
+
+        /* Shrink buttons on smaller screens to fit */
+        @media (max-width: 500px) {
+            .controls .btn {
+                padding: 8px 12px; /* Reduced padding */
+                font-size: 12px;   /* Smaller font */
+                gap: 3px;          /* Less space between emoji and text */
+            }
         }
 
         .btn {
