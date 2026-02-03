@@ -53,7 +53,29 @@
         .logo-link:active .logo-img {
             transform: scale(0.98); 
         }
+        .site-intro {
+        text-align: center;
+        color: #555;
+        font-size: 1.1em;
+        font-weight: 600;
+        margin: -5px 0 15px 0; /* Pulls it closer to logo */
+        line-height: 1.3;
+        }
 
+        .sub-intro {
+        font-size: 0.8em;
+        font-weight: 400;
+        color: #888;
+        display: block; /* Forces a new line */
+        margin-top: 2px;
+        }
+
+        /* Mobile adjustment to save space */
+        @media (max-width: 400px) {
+        .site-intro { font-size: 1em; }
+        .sub-intro { font-size: 0.85em; }
+        }
+        
         .search-wrapper {
             position: relative;
             width: 100%;
@@ -324,10 +346,18 @@
 <body>
 
 <header>
+    <!-- Logo -->
     <a href="index.html" class="logo-link" title="Refresh">
         <img src="default.jpg" alt="Daily Vegan Recipes" class="logo-img">
     </a>
     
+    <!-- NEW: Purpose Statement -->
+    <p class="site-intro">
+        New recipes every day<br>
+        <span class="sub-intro">The latest from over 50 top blogs</span>
+    </p>
+    
+    <!-- Search Bar -->
     <div class="search-wrapper">
         <input type="text" id="searchInput" placeholder="Search: Easy, Soup, Cake, Tofu...">
         <button id="clearBtn" title="Clear Search">✕</button>
