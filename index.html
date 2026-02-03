@@ -511,7 +511,8 @@
             filtered = filtered.filter(recipe => {
                 const title = recipe.title.toLowerCase();
                 const blogger = recipe.blog_name.toLowerCase();
-                return title.includes(term) || blogger.includes(term);
+                const tag = recipe.special_tag ? recipe.special_tag.toLowerCase() : '';
+                return title.includes(term) || blogger.includes(term) || tag.includes(term);
             });
         }
 
