@@ -1,5 +1,73 @@
 [
   {
+    "blog_name": "Jessica in the Kitchen",
+    "title": "Fluffy Oat Flour Pancakes",
+    "link": "https://jessicainthekitchen.com/oat-flour-pancakes/",
+    "image": "https://jessicainthekitchen.com/wp-content/uploads/2026/01/Vegan-Oat-Flour-Pancakes_15-267x400.jpg",
+    "date": "2026-02-03T15:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Simple Vegan Blog",
+    "title": "Vegan Buffalo Sauce",
+    "link": "https://simpleveganblog.com/vegan-buffalo-sauce/",
+    "image": "https://simpleveganblog.com/wp-content/uploads/2026/01/vegan-buffalo-sauce-social.jpg",
+    "date": "2026-02-03T14:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "The Little Blog of Vegan",
+    "title": "Vegan Banoffee Pie Cookies",
+    "link": "https://www.thelittleblogofvegan.com/2026/02/vegan-banoffee-pie-cookies.html",
+    "image": "https://www.thelittleblogofvegan.com/wp-content/uploads/2026/01/banoffee-cookies-vegan-1440x2160.jpg",
+    "date": "2026-02-03T13:21:51+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
+    "blog_name": "From My Bowl",
+    "title": "Raspberry Heart-Shaped Cinnamon Rolls (2 Ingredients!)",
+    "link": "https://frommybowl.com/raspberry-heart-shaped-cinnamon-rolls-2-ingredients/?utm_source=rss&utm_medium=rss&utm_campaign=raspberry-heart-shaped-cinnamon-rolls-2-ingredients",
+    "image": "https://frommybowl.com/wp-content/uploads/2026/01/Raspberry_Heart_Cinnamon_Rolls_FromMyBowl-14.jpg",
+    "date": "2026-02-03T11:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "VegNews",
+    "title": "Charred Mediterranean Falafel Burger",
+    "link": "https://vegnews.com/recipes/charred-falafel-burger",
+    "image": "https://vegnews.com/media/W1siZiIsIjk5MjIvVmVnTmV3cy5DaGFycmVkRmFsYWZlbEJ1cmdlci5wbmciXSxbInAiLCJ0aHVtYiIsIjE2MDB4OTQ2IyIseyJmb3JtYXQiOiJqcGcifV0sWyJwIiwib3B0aW1pemUiXV0/VegNews.CharredFalafelBurger.jpg?sha=a6c8078ac76a867c",
+    "date": "2026-02-03T08:25:00-08:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "VegNews",
+    "title": "Simple Fresh Lemon Pudding",
+    "link": "https://vegnews.com/recipes/summery-vegan-lemon-pudding",
+    "image": "https://vegnews.com/media/W1siZiIsIjIyMTk5L1ZlZ05ld3MuVmVnYW5MZW1vblB1ZGRpbmcuanBlZyJdLFsicCIsInRodW1iIiwiMTYwMHg5NDYjIix7ImZvcm1hdCI6ImpwZyJ9XSxbInAiLCJvcHRpbWl6ZSJdXQ/VegNews.VeganLemonPudding.jpg?sha=7219adaf5b070f20",
+    "date": "2026-02-03T08:20:00-08:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "VegNews",
+    "title": "Vegan Carrot-Jicama Lumpia With Garlic Soy Dipping Sauce",
+    "link": "https://vegnews.com/recipes/vegan-lumpia-with-garlic-soy-dipping-sauce",
+    "image": "https://vegnews.com/media/W1siZiIsIjIzMTM0L1ZlZ05ld3MuTHVtcGlhbmdHdWxheS5qcGciXSxbInAiLCJ0aHVtYiIsIjE2MDB4OTQ2IyIseyJmb3JtYXQiOiJqcGcifV0sWyJwIiwib3B0aW1pemUiXV0/VegNews.LumpiangGulay.jpg?sha=e049dc0d9c6ad894",
+    "date": "2026-02-03T08:00:00-08:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Mary's Test Kitchen",
     "title": "Will PEANUTS Cheese?",
     "link": "https://www.marystestkitchen.com/will-peanuts-cheese/",
@@ -55,6 +123,15 @@
       "WFPB",
       "Easy"
     ]
+  },
+  {
+    "blog_name": "Jessica in the Kitchen",
+    "title": "Spicy Potato Soft Tacos (Taco Bell Copycat)",
+    "link": "https://jessicainthekitchen.com/spicy-potato-soft-taco/",
+    "image": "https://jessicainthekitchen.com/wp-content/uploads/2025/12/Spicy-Potato-Soft-Tacos_10-267x400.jpg",
+    "date": "2026-02-02T15:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "The Banana Diaries",
@@ -172,6 +249,15 @@
     "link": "https://makeitdairyfree.com/roasted-sweet-potato-and-apple-bisque/",
     "image": "https://makeitdairyfree.com/wp-content/uploads/2026/02/roasted-apple-and-sweet-potato-soup-6.jpg",
     "date": "2026-02-01T07:52:59+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gretchen's Vegan Bakery",
+    "title": "Vegan Ferrero Rocher Mousse Cake",
+    "link": "https://www.gretchensveganbakery.com/vegan-ferrero-rocher-mousse-cake/",
+    "image": "https://www.gretchensveganbakery.com/wp-content/uploads/2023/04/ferrero-rocher-cake-2024-resized.jpg",
+    "date": "2026-02-01T00:22:30+00:00",
     "is_disruptor": false,
     "special_tags": []
   },
