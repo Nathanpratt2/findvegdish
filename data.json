@@ -1,5 +1,16 @@
 [
   {
+    "blog_name": "Plant Power Couple",
+    "title": "Crispy Pineapple Tofu Wings",
+    "link": "https://www.plantpowercouple.com/recipes/vegan-pineapple-wings/",
+    "image": "https://www.plantpowercouple.com/wp-content/uploads/2026/02/pineapple-tofu-wings-5-683x1024.jpg",
+    "date": "2026-02-03T18:09:43+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "Jessica in the Kitchen",
     "title": "Fluffy Oat Flour Pancakes",
     "link": "https://jessicainthekitchen.com/oat-flour-pancakes/",
@@ -1404,15 +1415,6 @@
     ]
   },
   {
-    "blog_name": "Full of Plants",
-    "title": "Vegan Mini Chocolate Chip Loaf Cakes",
-    "link": "https://fullofplants.com/vegan-mini-chocolate-chip-loaf-cakes/?adt_ei={$email}",
-    "image": "https://fullofplants.com/wp-content/uploads/2026/01/vegan-chocolate-chip-mini-loaf-cakes-36-720x900.jpg",
-    "date": "2026-01-20T11:00:00+00:00",
-    "is_disruptor": true,
-    "special_tags": []
-  },
-  {
     "blog_name": "From My Bowl",
     "title": "Black Bean Stew",
     "link": "https://frommybowl.com/black-bean-stew/?utm_source=rss&utm_medium=rss&utm_campaign=black-bean-stew",
@@ -1423,6 +1425,15 @@
       "WFPB",
       "Easy"
     ]
+  },
+  {
+    "blog_name": "Full of Plants",
+    "title": "Vegan Mini Chocolate Chip Loaf Cakes",
+    "link": "https://fullofplants.com/vegan-mini-chocolate-chip-loaf-cakes/?adt_ei={$email}",
+    "image": "https://fullofplants.com/wp-content/uploads/2026/01/vegan-chocolate-chip-mini-loaf-cakes-36-720x900.jpg",
+    "date": "2026-01-20T11:00:00+00:00",
+    "is_disruptor": true,
+    "special_tags": []
   },
   {
     "blog_name": "Minimalist Baker",
