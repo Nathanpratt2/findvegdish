@@ -1,7 +1,7 @@
 # Feed Health Report
-**Last Run:** 2026-02-04T19:35:58.276561
+**Last Run:** 2026-02-04T19:55:55.416264
 **Total Database Size:** 682
-**New Today:** 10
+**New Today:** 7
 **WFPB:** 130 (19%)
 **Easy:** 228 (33%)
 **Budget:** 136 (19%)
@@ -68,7 +68,7 @@
 | The Viet Vegan | https://thevietvegan.com/feed/ | 0 | 2 | 1 | 0 | 0 | 2025-04-01 | ✅ OK |
 | Turnip Vegan | https://turnipvegan.com/blogs/news.atom | 0 | 7 | 0 | 0 | 0 | 2025-04-11 | ✅ OK |
 | Unconventional Baker | https://www.unconventionalbaker.com/feed/ | 0 | 10 | 0 | 0 | 0 | 2025-11-01 | ✅ OK |
-| VegNews | https://vegnews.com/feed | 3 | 21 | 1 | 4 | 1 | 2026-02-04 | ✅ OK |
+| VegNews | https://vegnews.com/feed | 0 | 21 | 1 | 4 | 1 | 2026-02-04 | ✅ OK |
 | Vegan Heaven | https://veganheaven.org/feed/ | 0 | 10 | 0 | 0 | 1 | 2026-01-06 | ✅ OK |
 | Vegan Richa | https://www.veganricha.com/feed/ | 0 | 11 | 0 | 2 | 2 | 2026-02-04 | ✅ OK |
 | Vegan Yack Attack | https://veganyackattack.com/feed/ | 0 | 5 | 0 | 2 | 0 | 2025-07-27 | ✅ OK |
