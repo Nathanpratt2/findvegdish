@@ -54,3 +54,10 @@ The search and category logic uses "Smart Exclusion" to maintain high accuracy w
 - **Hosting:** GitHub Pages + Cloudflare.
 - **Updates:** Content updates are handled by pushing a new `data.json` file.
 - **Maintenance:** Near-zero. Since there are no external APIs or frameworks, the site will continue to function as long as the domain and hosting are active.
+
+## 🛠 Maintenance Items
+- Monitor Health report for any broken sites and reasonable tagging counts
+- Ensure Actions have run recently to refresh json
+- Everyone all blogs are still 100% vegan
+- Add new blogs as desired
+- Review for any non-recipes to remove those blogs as needed
