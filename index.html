@@ -323,31 +323,35 @@
         #loader { text-align: center; padding: 20px; color: #888; font-style: italic; display: none; }
 
         #scrollTopBtn {
-            display: none; 
-            position: fixed;
-            bottom: 100px;
-            right: 25px;
-            z-index: 99;
-            width: 75px;
-            height: 75px;
-            border: none;
-            outline: none;
-            background-color: #769F37;
-            color: white;
-            cursor: pointer;
-            border-radius: 50%;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            transition: background-color 0.3s, transform 0.3s;
-            align-items: center;
-            justify-content: center;
-        }
-        #scrollTopBtn:hover {
-            background-color: #5d822b; 
-            transform: translateY(-3px);
-        }
-        @media (max-width: 400px) {
-            #scrollTopBtn { bottom: 90px; right: 20px; width: 68px; height: 68px; }
-        }
+    display: none; 
+    position: fixed;
+    /* Adjusted bottom to sit nicely above the coffee button */
+    bottom: 95px;
+    /* Changed from 25px to 18px to align vertically with the coffee button */
+    right: 18px;
+    z-index: 99;
+    /* Standard BuyMeACoffee widget size is 60px */
+    width: 60px;
+    height: 60px;
+    border: none;
+    outline: none;
+    background-color: #769F37;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: background-color 0.3s, transform 0.3s;
+    align-items: center;
+    justify-content: center;
+}
+#scrollTopBtn:hover {
+    background-color: #5d822b; 
+    transform: translateY(-3px);
+}
+@media (max-width: 400px) {
+    /* Slightly smaller on mobile to match mobile widget scaling */
+    #scrollTopBtn { bottom: 90px; right: 18px; width: 50px; height: 50px; }
+}
     </style>
 </head>
 <body>
@@ -379,7 +383,8 @@
 <div id="loader">Loading more recipes...</div>
 
 <button id="scrollTopBtn" title="Go to top" aria-label="Scroll to top">
-    <svg viewBox="0 0 24 24" width="36" height="36" fill="white">
+    <!-- Changed width/height to 30 for perfect proportion in a 60px button -->
+    <svg viewBox="0 0 24 24" width="30" height="30" fill="white">
         <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
     </svg>
 </button>
