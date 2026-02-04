@@ -57,6 +57,7 @@ DISRUPTORS = [
     ("Plantifully Based", "https://plantifullybasedblog.com/feed/", []),
     ("Nutriciously", "https://nutriciously.com/feed/", ["WFPB", "Easy"]),
     ("Cadry's Kitchen", "https://cadryskitchen.com/feed/", ["Easy"]),
+    ("Dr. Vegan", "https://drveganblog.com/feed/", ["Easy"]),
     ("Veggies Don't Bite", "https://veggiesdontbite.com/feed/", ["WFPB"]),
     ("Watch Learn Eat", "https://watchlearneat.com/feed/", ["Easy"]),
     ("Strength and Sunshine", "https://strengthandsunshine.com/feed/", ["Easy"]),
