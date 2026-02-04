@@ -91,9 +91,10 @@ MAX_RECIPES_PER_BLOG = 50
 cutoff_date = datetime.now().astimezone() - timedelta(days=360)
 
 # --- KEYWORDS FOR AUTO TAGGING ---
-WFPB_KEYWORDS = ['oil-free', 'oil free', 'no oil', 'wfpb', 'whole food', 'clean', 'refined sugar free']
-EASY_KEYWORDS = ['easy', 'quick', 'simple', 'fast', '1-pot', 'one-pot', 'one pot', '30-minute', '30 minute', '15-minute', '5-ingredient', 'sheet pan', 'skillet']
-BUDGET_KEYWORDS = ['budget', 'cheap', 'frugal', 'economical', 'pantry', 'low cost', 'money saving', '$', 'affordable']
+# Expanded keywords to catch more recipes based on user feedback
+WFPB_KEYWORDS = ['oil-free', 'oil free', 'no oil', 'wfpb', 'whole food', 'clean', 'refined sugar free', 'detox', 'healthy']
+EASY_KEYWORDS = ['easy', 'quick', 'simple', 'fast', '1-pot', 'one-pot', 'one pot', '30-minute', '30 minute', '15-minute', '20-minute', '5-ingredient', 'sheet pan', 'skillet', 'mug', 'blender', 'no-bake', 'no bake']
+BUDGET_KEYWORDS = ['budget', 'cheap', 'frugal', 'economical', 'pantry', 'low cost', 'money saving', '$', 'affordable', 'leftover', 'scraps']
 
 # --- HEADERS ---
 HEADERS = {
