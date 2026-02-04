@@ -1,5 +1,14 @@
 [
   {
+    "blog_name": "It Doesn't Taste Like Chicken",
+    "title": "Marinated Tofu (Smoky Soy-Garlic)",
+    "link": "https://itdoesnttastelikechicken.com/marinated-tofu/",
+    "image": "https://itdoesnttastelikechicken.com/wp-content/uploads/2026/01/Marinated-Tofu-recipe-smoky-soy-garlic-for-salad-stir-fry-sandwich-sushi-steaks-skewers-poke-bowl-facebook.jpg",
+    "date": "2026-02-04T10:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Cadry's Kitchen",
     "title": "Trader Joe\u2019s Valentine\u2019s Day finds (Cards, candy, and vegan treats)",
     "link": "https://cadryskitchen.com/trader-joes-valentines-day/",
@@ -6286,15 +6295,6 @@
     ]
   },
   {
-    "blog_name": "Namely Marly",
-    "title": "30 High-Protein Vegan Dinners",
-    "link": "https://namelymarly.com/vegan-protein-dinners/",
-    "image": "https://namelymarly.com/wp-content/uploads/2025/03/high-protein-dinners-promo-2x3-1.jpg",
-    "date": "2025-03-13T19:50:35+00:00",
-    "is_disruptor": true,
-    "special_tags": []
-  },
-  {
     "blog_name": "Turnip Vegan",
     "title": "Cookie Crisp Cereal - Homemade Cereal Part 3",
     "link": "https://turnipvegan.com/blogs/news/cookie-crisp-cereal-homemade-cereal-part-3",
@@ -6309,15 +6309,6 @@
     "link": "https://veganyackattack.com/2025/03/09/lemon-blueberry-yogurt-loaf/",
     "image": "https://veganyackattack.com/wp-content/uploads/2025/03/lemonblueberryyogurtloaf-header-775x1024.jpg",
     "date": "2025-03-09T08:58:37+00:00",
-    "is_disruptor": true,
-    "special_tags": []
-  },
-  {
-    "blog_name": "Namely Marly",
-    "title": "Nutella Energy Balls",
-    "link": "https://namelymarly.com/nutella-energy-balls/",
-    "image": "https://namelymarly.com/wp-content/uploads/2024/12/Nutella-Energy-Balls-3683-16x9-web.jpg",
-    "date": "2025-03-08T17:39:09+00:00",
     "is_disruptor": true,
     "special_tags": []
   },
@@ -6364,30 +6355,12 @@
     "special_tags": []
   },
   {
-    "blog_name": "Namely Marly",
-    "title": "Vegan No-Bake Desserts",
-    "link": "https://namelymarly.com/vegan-no-bake-desserts/",
-    "image": "https://namelymarly.com/wp-content/uploads/2024/05/Vegan-Pudding-08-16x9-web.jpg",
-    "date": "2025-02-27T19:46:35+00:00",
-    "is_disruptor": true,
-    "special_tags": []
-  },
-  {
     "blog_name": "Turnip Vegan",
     "title": "Shiitake Mushroom Bacon",
     "link": "https://turnipvegan.com/blogs/news/shiitake-mushroom-bacon",
     "image": "http://turnipvegan.com/cdn/shop/articles/Screen_Shot_2022-11-28_at_4.45.06_PM.png?v=1740680507",
     "date": "2025-02-27T10:21:40-08:00",
     "is_disruptor": false,
-    "special_tags": []
-  },
-  {
-    "blog_name": "Namely Marly",
-    "title": "Chickpea Brownies",
-    "link": "https://namelymarly.com/chickpea-brownies/",
-    "image": "https://namelymarly.com/wp-content/uploads/2025/01/Chickpea-Brownies-0149-3x2-web.jpg",
-    "date": "2025-02-26T12:51:00+00:00",
-    "is_disruptor": true,
     "special_tags": []
   },
   {
@@ -6421,15 +6394,6 @@
     "special_tags": []
   },
   {
-    "blog_name": "Namely Marly",
-    "title": "Lentil Bolognese",
-    "link": "https://namelymarly.com/lentil-bolognese/",
-    "image": "https://namelymarly.com/wp-content/uploads/2025/01/Lentil-Bolognese-0171-16x9-web.jpg",
-    "date": "2025-02-13T22:16:05+00:00",
-    "is_disruptor": true,
-    "special_tags": []
-  },
-  {
     "blog_name": "Turnip Vegan",
     "title": "Jackfruit Chimichanga Burrito",
     "link": "https://turnipvegan.com/blogs/news/jackfruit-chimichanga-burrito",
@@ -6439,30 +6403,12 @@
     "special_tags": []
   },
   {
-    "blog_name": "Namely Marly",
-    "title": "Raspberry Overnight Oats",
-    "link": "https://namelymarly.com/raspberry-overnight-oats/",
-    "image": "https://namelymarly.com/wp-content/uploads/2025/01/Raspberry-Overnight-Oats-0157-16x9-web.jpg",
-    "date": "2025-02-10T19:00:59+00:00",
-    "is_disruptor": true,
-    "special_tags": []
-  },
-  {
     "blog_name": "Vegan Heaven",
     "title": "Ginger Turmeric Energy Balls",
     "link": "https://veganheaven.org/recipe/turmeric-energy-balls/",
     "image": "https://veganheaven.org/wp-content/uploads/2022/12/Ginger-Turmeric-Energy-Balls-7.jpg",
     "date": "2025-02-10T18:51:36+00:00",
     "is_disruptor": false,
-    "special_tags": []
-  },
-  {
-    "blog_name": "Namely Marly",
-    "title": "Vegan Valentines Recipes",
-    "link": "https://namelymarly.com/vegan-valentines-recipes/",
-    "image": "https://namelymarly.com/wp-content/uploads/2025/02/valentine-recipes-promo-2x3-web.jpg",
-    "date": "2025-02-09T21:19:55+00:00",
-    "is_disruptor": true,
     "special_tags": []
   },
   {
