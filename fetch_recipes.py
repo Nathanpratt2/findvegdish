@@ -30,7 +30,7 @@ TOP_BLOGGERS = [
     ("Lazy Cat Kitchen", "https://www.lazycatkitchen.com/feed/", []),
     ("My Darling Vegan", "https://www.mydarlingvegan.com/feed/", []),
     ("The Burger Dude", "https://theeburgerdude.com/feed/", []),
-    ("The Vegan 8", "https://thevegan8.com/feed/", ["WFPB", "Easy", "Budget"]), 
+    ("The Vegan 8", "https://thevegan8.com/feed/", ["Easy", "Budget"]), 
     ("From My Bowl", "https://frommybowl.com/feed/", ["WFPB", "Easy"]),
     ("Rabbit and Wolves", "https://www.rabbitandwolves.com/feed/", []),
     ("Vegan Heaven", "https://veganheaven.org/feed/", []),
