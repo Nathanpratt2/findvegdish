@@ -18,7 +18,7 @@ TOP_BLOGGERS = [
     ("The Korean Vegan", "https://thekoreanvegan.com/feed/", []),
     ("Rainbow Plant Life", "https://rainbowplantlife.com/feed/", []),
     ("Vegan Richa", "https://www.veganricha.com/feed/", []),
-    ("It Doesn't Taste Like Chicken", "https://itdoesnttastelikechicken.com/feed/", ["Budget"]), # Updated
+    ("It Doesn't Taste Like Chicken", "https://itdoesnttastelikechicken.com/feed/", ["Budget"]), 
     ("Loving It Vegan", "https://lovingitvegan.com/feed/", []),
     ("Elavegan", "https://elavegan.com/feed/", []),
     ("Oh She Glows", "https://ohsheglows.com/feed/", []),
@@ -30,11 +30,11 @@ TOP_BLOGGERS = [
     ("Lazy Cat Kitchen", "https://www.lazycatkitchen.com/feed/", []),
     ("My Darling Vegan", "https://www.mydarlingvegan.com/feed/", []),
     ("The Burger Dude", "https://theeburgerdude.com/feed/", []),
-    ("The Vegan 8", "https://thevegan8.com/feed/", ["WFPB", "Easy", "Budget"]), # Updated
+    ("The Vegan 8", "https://thevegan8.com/feed/", ["WFPB", "Easy", "Budget"]), 
     ("From My Bowl", "https://frommybowl.com/feed/", ["WFPB", "Easy"]),
     ("Rabbit and Wolves", "https://www.rabbitandwolves.com/feed/", []),
     ("Vegan Heaven", "https://veganheaven.org/feed/", []),
-    ("The Hidden Veggies", "https://thehiddenveggies.com/feed/", ["Budget"]), # Updated
+    ("The Hidden Veggies", "https://thehiddenveggies.com/feed/", ["Budget"]), 
     ("Vegan in the Freezer", "https://veganinthefreezer.com/feed/", []),
     ("A Virtual Vegan", "https://avirtualvegan.com/feed/", []),
     ("Sarah's Vegan Kitchen", "https://sarahsvegankitchen.com/feed/", []),
@@ -62,7 +62,7 @@ DISRUPTORS = [
     ("Veggies Don't Bite", "https://veggiesdontbite.com/feed/", ["WFPB"]),
     ("Watch Learn Eat", "https://watchlearneat.com/feed/", ["Easy"]),
     ("Strength and Sunshine", "https://strengthandsunshine.com/feed/", ["Easy"]),
-    ("The Stingy Vegan", "https://thestingyvegan.com/feed/", ["Easy", "Budget"]), # Updated
+    ("The Stingy Vegan", "https://thestingyvegan.com/feed/", ["Easy", "Budget"]), 
     ("Okonomi Kitchen", "https://okonomikitchen.com/feed/", []),
     ("The Foodie Takes Flight", "https://thefoodietakesflight.com/feed/", ["Easy"]),
     ("The Viet Vegan", "https://thevietvegan.com/feed/", []),
@@ -87,9 +87,7 @@ DISRUPTORS = [
 ALL_FEEDS = TOP_BLOGGERS + DISRUPTORS
 
 # --- MAPS ---
-# Used for reporting in the Markdown file
 URL_MAP = dict((name, url) for name, url, tags in ALL_FEEDS)
-# Used for quick tag lookup during backfill
 BLOG_TAG_MAP = dict((name, tags) for name, url, tags in ALL_FEEDS)
 
 MAX_RECIPES_PER_BLOG = 50 
@@ -112,24 +110,11 @@ HEADERS = {
 # --- FUNCTIONS ---
 
 def get_auto_tags(title):
-    """
-    Analyzes title for keywords and returns a list of additional tags.
-    """
     tags = []
     t_lower = title.lower()
-    
-    # Check WFPB
-    if any(k in t_lower for k in WFPB_KEYWORDS):
-        tags.append("WFPB")
-        
-    # Check Easy
-    if any(k in t_lower for k in EASY_KEYWORDS):
-        tags.append("Easy")
-        
-    # Check Budget
-    if any(k in t_lower for k in BUDGET_KEYWORDS):
-        tags.append("Budget")
-        
+    if any(k in t_lower for k in WFPB_KEYWORDS): tags.append("WFPB")
+    if any(k in t_lower for k in EASY_KEYWORDS): tags.append("Easy")
+    if any(k in t_lower for k in BUDGET_KEYWORDS): tags.append("Budget")
     return tags
 
 def is_pet_recipe(title):
@@ -185,11 +170,7 @@ except (FileNotFoundError, json.JSONDecodeError):
 
 # 2. Cleanse Database
 initial_count = len(recipes)
-recipes = [
-    r for r in recipes 
-    if not (r['blog_name'] == "VegNews" and "/recipes/" not in r['link'])
-]
-
+recipes = [r for r in recipes if not (r['blog_name'] == "VegNews" and "/recipes/" not in r['link'])]
 if len(recipes) < initial_count:
     print(f"Cleaned {initial_count - len(recipes)} items from database.")
 
@@ -218,8 +199,7 @@ for name, url, special_tags in ALL_FEEDS:
         feed = feedparser.parse(response.content)
         
         if not feed.entries:
-            if len(response.content) > 0: status = "⚠️ Parsed 0 items"
-            else: status = "⚠️ Empty Feed"
+            status = "⚠️ Parsed 0 items" if len(response.content) > 0 else "⚠️ Empty Feed"
         
         for entry in feed.entries:
             try:
@@ -232,7 +212,6 @@ for name, url, special_tags in ALL_FEEDS:
                     published_time = published_time.replace(tzinfo=datetime.now().astimezone().tzinfo)
                 
                 if published_time > cutoff_date:
-                    # Logic for NEW entries
                     if entry.link not in existing_links:
                         if is_pet_recipe(entry.title): continue
 
@@ -248,11 +227,11 @@ for name, url, special_tags in ALL_FEEDS:
                             "image": image_url,
                             "date": published_time.isoformat(),
                             "is_disruptor": name in [d[0] for d in DISRUPTORS],
-                            "special_tags": [] # Tags calculated in Step 4
+                            "special_tags": [] 
                         })
                         existing_links.add(entry.link)
                         new_count += 1
-            except Exception as e:
+            except Exception:
                 continue
         
         feed_stats[name] = {'new': new_count, 'status': status}
@@ -262,23 +241,15 @@ for name, url, special_tags in ALL_FEEDS:
         feed_stats[name] = {'new': 0, 'status': f"❌ Crash: {str(e)[:20]}"}
 
 # 4. Backfill Tags for Existing Recipes
-# This ensures old recipes in the database get updated tags based on new logic
 print("Updating tags for all recipes...")
 for recipe in recipes:
-    # 1. Get base tags from the current blog configuration
     base_tags = list(BLOG_TAG_MAP.get(recipe['blog_name'], []))
-    
-    # 2. Get smart tags based on the title
     auto_tags = get_auto_tags(recipe['title'])
-    
-    # 3. Merge and deduplicate
     combined_tags = list(set(base_tags + auto_tags))
-    
-    # 4. Update the record
     recipe['special_tags'] = combined_tags
 
-# 5. Prune Database
-print("Pruning database...")
+# 5. Prune Database and Calculate Stats
+print("Pruning database and calculating stats...")
 recipes_by_blog = {}
 for r in recipes:
     bname = r['blog_name']
@@ -288,6 +259,7 @@ for r in recipes:
 final_pruned_list = []
 total_counts = {} 
 latest_dates = {} 
+tagged_counts = {} # Stores count of recipes with WFPB/Easy/Budget tags
 
 for bname, blog_recipes in recipes_by_blog.items():
     blog_recipes.sort(key=lambda x: x['date'], reverse=True)
@@ -298,6 +270,13 @@ for bname, blog_recipes in recipes_by_blog.items():
     kept_recipes = blog_recipes[:MAX_RECIPES_PER_BLOG]
     final_pruned_list.extend(kept_recipes)
     total_counts[bname] = len(kept_recipes)
+    
+    # Calculate how many recipes have at least one of the target tags
+    tagged_count_for_blog = 0
+    for r in kept_recipes:
+        if any(t in r['special_tags'] for t in ["WFPB", "Budget", "Easy"]):
+            tagged_count_for_blog += 1
+    tagged_counts[bname] = tagged_count_for_blog
 
 final_pruned_list.sort(key=lambda x: x['date'], reverse=True)
 
@@ -309,8 +288,8 @@ with open('FEED_HEALTH.md', 'w') as f:
     f.write(f"# Feed Health Report\n")
     f.write(f"**Last Run:** {datetime.now().isoformat()}\n")
     f.write(f"**Total Database Size:** {len(final_pruned_list)}\n\n")
-    f.write("| Blog Name | URL | New Today | Total in DB | Latest Post | Status |\n")
-    f.write("|-----------|-----|-----------|-------------|-------------|--------|\n")
+    f.write("| Blog Name | URL | New Today | Total in DB | Tagged (W/E/B) | Latest Post | Status |\n")
+    f.write("|-----------|-----|-----------|-------------|----------------|-------------|--------|\n")
     
     all_names = set(list(feed_stats.keys()) + list(total_counts.keys()))
     
@@ -322,13 +301,20 @@ with open('FEED_HEALTH.md', 'w') as f:
         total = total_counts.get(name, 0)
         latest = latest_dates.get(name, "N/A")
         
+        # Calculate Percentage
+        tagged_val = tagged_counts.get(name, 0)
+        pct = 0
+        if total > 0:
+            pct = int((tagged_val / total) * 100)
+        tagged_str = f"{tagged_val} ({pct}%)"
+        
         if total == 0 and "✅" in status:
             status = "❌ No Recipes"
             
-        report_rows.append((name, url, new, total, latest, status))
+        report_rows.append((name, url, new, total, tagged_str, latest, status))
     
     def sort_key(row):
-        stat = row[5]
+        stat = row[6] # status is now index 6
         priority = 2 
         if '❌' in stat: priority = 0
         elif '⚠️' in stat: priority = 1
@@ -337,6 +323,6 @@ with open('FEED_HEALTH.md', 'w') as f:
     report_rows.sort(key=sort_key)
     
     for row in report_rows:
-        f.write(f"| {row[0]} | {row[1]} | {row[2]} | {row[3]} | {row[4]} | {row[5]} |\n")
+        f.write(f"| {row[0]} | {row[1]} | {row[2]} | {row[3]} | {row[4]} | {row[5]} | {row[6]} |\n")
 
 print(f"Successfully scraped. Database size: {len(final_pruned_list)}")
