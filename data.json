@@ -1,5 +1,78 @@
 [
   {
+    "blog_name": "Cadry's Kitchen",
+    "title": "Trader Joe\u2019s Valentine\u2019s Day finds (Cards, candy, and vegan treats)",
+    "link": "https://cadryskitchen.com/trader-joes-valentines-day/",
+    "image": "https://cadryskitchen.com/wp-content/uploads/2026/02/hor-valentines-day-trader-joes.jpg",
+    "date": "2026-02-04T04:32:26+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Veggies Don't Bite",
+    "title": "Beet Brownies",
+    "link": "https://pickyeaterblog.com/beet-brownies/",
+    "image": "https://pickyeaterblog.com/wp-content/uploads/2022/11/healthy-beet-brownies-recipe.jpg",
+    "date": "2026-02-04T01:46:00+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Veggies Don't Bite",
+    "title": "Vegan Rice Krispie Treats",
+    "link": "https://pickyeaterblog.com/vegan-rice-krispie-treats-with-pumpkin-spice/",
+    "image": "https://pickyeaterblog.com/wp-content/uploads/2022/06/healthy-vegan-rice-krispie-treats-recipe.jpg",
+    "date": "2026-02-04T01:45:36+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Veggies Don't Bite",
+    "title": "Black Bean Casserole with Quinoa",
+    "link": "https://pickyeaterblog.com/cheesy-quinoa-and-black-bean-casserole/",
+    "image": "https://pickyeaterblog.com/wp-content/uploads/2021/02/quinoa-casserole-12.jpg",
+    "date": "2026-02-04T01:45:00+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "The Conscious Plant Kitchen",
+    "title": "Chickpea Blended Oat Bars (9.5g Protein, Egg-Free, Dairy-Free)",
+    "link": "https://www.theconsciousplantkitchen.com/chickpea-blended-oat-bars/",
+    "image": "https://www.theconsciousplantkitchen.com/wp-content/uploads/2025/11/Chickpea-Blended-Oat-Bars-1.jpg",
+    "date": "2026-02-03T21:54:20+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "My Darling Vegan",
+    "title": "16 Vegan Date Night Recipes to Seriously impress",
+    "link": "https://www.mydarlingvegan.com/16-vegan-date-night-recipes-to-seriously-impress/",
+    "image": "https://www.mydarlingvegan.com/wp-content/uploads/2026/02/16-vegan-date-night-recipes-.jpg",
+    "date": "2026-02-03T21:46:12+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "Vegan Garlic Butter (Easy Dairy-Free Garlic Butter Spread)",
+    "link": "https://sweetsimplevegan.com/vegan-garlic-butter/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2026/01/Vegan-Garlic-Butter-Dairy-Free-Spread-recipe-sweet-simple-vegan-2-1200x1799.jpg",
+    "date": "2026-02-03T20:09:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Plant Power Couple",
     "title": "Crispy Pineapple Tofu Wings",
     "link": "https://www.plantpowercouple.com/recipes/vegan-pineapple-wings/",
