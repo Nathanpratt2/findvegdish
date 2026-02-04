@@ -85,16 +85,16 @@ DISRUPTORS = [
 ]
 
 ALL_FEEDS = TOP_BLOGGERS + DISRUPTORS
-URL_MAP = dict((name, url) for name, url, tags in ALL_FEEDS)
+# Map for quick lookup during backfill
+BLOG_TAG_MAP = dict((name, tags) for name, url, tags in ALL_FEEDS)
 
 MAX_RECIPES_PER_BLOG = 50 
 cutoff_date = datetime.now().astimezone() - timedelta(days=360)
 
 # --- KEYWORDS FOR AUTO TAGGING ---
-# Expanded keywords to catch more recipes based on user feedback
-WFPB_KEYWORDS = ['oil-free', 'oil free', 'no oil', 'wfpb', 'whole food', 'clean', 'refined sugar free', 'detox', 'healthy']
-EASY_KEYWORDS = ['easy', 'quick', 'simple', 'fast', '1-pot', 'one-pot', 'one pot', '30-minute', '30 minute', '15-minute', '20-minute', '5-ingredient', 'sheet pan', 'skillet', 'mug', 'blender', 'no-bake', 'no bake']
-BUDGET_KEYWORDS = ['budget', 'cheap', 'frugal', 'economical', 'pantry', 'low cost', 'money saving', '$', 'affordable', 'leftover', 'scraps']
+WFPB_KEYWORDS = ['oil-free', 'oil free', 'no oil', 'wfpb', 'whole food', 'clean', 'refined sugar free', 'detox', 'healthy', 'salad', 'steamed']
+EASY_KEYWORDS = ['easy', 'quick', 'simple', 'fast', '1-pot', 'one-pot', 'one pot', '30-minute', '30 minute', '15-minute', '20-minute', '5-ingredient', 'sheet pan', 'skillet', 'mug', 'blender', 'no-bake', 'no bake', 'air fryer']
+BUDGET_KEYWORDS = ['budget', 'cheap', 'frugal', 'economical', 'pantry', 'low cost', 'money saving', '$', 'affordable', 'leftover', 'scraps', 'beans', 'rice', 'lentil', 'potato']
 
 # --- HEADERS ---
 HEADERS = {
@@ -228,37 +228,26 @@ for name, url, special_tags in ALL_FEEDS:
                     published_time = published_time.replace(tzinfo=datetime.now().astimezone().tzinfo)
                 
                 if published_time > cutoff_date:
-                    if entry.link in existing_links: continue
-                    if is_pet_recipe(entry.title): continue
+                    # Logic for NEW entries
+                    if entry.link not in existing_links:
+                        if is_pet_recipe(entry.title): continue
 
-                    image_url = extract_image(entry, name)
-                    if image_url and image_url.startswith('/'):
-                        base = feed.feed.get('link', '')
-                        if base: image_url = base.rstrip('/') + image_url
-                    
-                    # --- TAGGING LOGIC ---
-                    # 1. Start with hardcoded tags for this blog
-                    final_tags = list(special_tags)
-                    
-                    # 2. Generate tags based on title keywords
-                    auto_tags = get_auto_tags(entry.title)
-                    
-                    # 3. Merge without duplicates
-                    for tag in auto_tags:
-                        if tag not in final_tags:
-                            final_tags.append(tag)
-
-                    recipes.append({
-                        "blog_name": name,
-                        "title": entry.title,
-                        "link": entry.link,
-                        "image": image_url,
-                        "date": published_time.isoformat(),
-                        "is_disruptor": name in [d[0] for d in DISRUPTORS],
-                        "special_tags": final_tags 
-                    })
-                    existing_links.add(entry.link)
-                    new_count += 1
+                        image_url = extract_image(entry, name)
+                        if image_url and image_url.startswith('/'):
+                            base = feed.feed.get('link', '')
+                            if base: image_url = base.rstrip('/') + image_url
+                        
+                        recipes.append({
+                            "blog_name": name,
+                            "title": entry.title,
+                            "link": entry.link,
+                            "image": image_url,
+                            "date": published_time.isoformat(),
+                            "is_disruptor": name in [d[0] for d in DISRUPTORS],
+                            "special_tags": [] # Tags calculated in Step 4
+                        })
+                        existing_links.add(entry.link)
+                        new_count += 1
             except Exception as e:
                 continue
         
@@ -268,7 +257,23 @@ for name, url, special_tags in ALL_FEEDS:
         print(f"Failed to parse {name}: {e}")
         feed_stats[name] = {'new': 0, 'status': f"❌ Crash: {str(e)[:20]}"}
 
-# 4. Prune Database
+# 4. Backfill Tags for Existing Recipes
+# This ensures old recipes in the database get updated tags based on new logic
+print("Updating tags for all recipes...")
+for recipe in recipes:
+    # 1. Get base tags from the current blog configuration
+    base_tags = list(BLOG_TAG_MAP.get(recipe['blog_name'], []))
+    
+    # 2. Get smart tags based on the title
+    auto_tags = get_auto_tags(recipe['title'])
+    
+    # 3. Merge and deduplicate
+    combined_tags = list(set(base_tags + auto_tags))
+    
+    # 4. Update the record
+    recipe['special_tags'] = combined_tags
+
+# 5. Prune Database
 print("Pruning database...")
 recipes_by_blog = {}
 for r in recipes:
@@ -295,7 +300,7 @@ final_pruned_list.sort(key=lambda x: x['date'], reverse=True)
 with open('data.json', 'w') as f:
     json.dump(final_pruned_list, f, indent=2)
 
-# 5. Generate Report
+# 6. Generate Report
 with open('FEED_HEALTH.md', 'w') as f:
     f.write(f"# Feed Health Report\n")
     f.write(f"**Last Run:** {datetime.now().isoformat()}\n")
