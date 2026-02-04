@@ -1,5 +1,5 @@
 # Feed Health Report
-**Last Run:** 2026-02-04T18:42:31.600058
+**Last Run:** 2026-02-04T18:56:29.818413
 **Total Database Size:** 679
 
 | Blog Name | URL | New Today | Total in DB | Latest Post | Status |
@@ -10,14 +10,14 @@
 | Bianca Zapatka | https://biancazapatka.com/en/feed/ | 0 | 10 | 2025-12-11 | ✅ OK |
 | Cadry's Kitchen | https://cadryskitchen.com/feed/ | 0 | 11 | 2026-02-04 | ✅ OK |
 | Choosing Chia | https://choosingchia.com/feed/ | 0 | 10 | 2026-01-06 | ✅ OK |
-| Connoisseurus Veg | https://www.connoisseurusveg.com/feed/ | 1 | 11 | 2026-02-04 | ✅ OK |
-| Dr. Vegan | https://drveganblog.com/feed/ | 10 | 10 | 2026-01-28 | ✅ OK |
-| Eat Figs, Not Pigs | https://www.eatfigsnotpigs.com/feed/ | 1 | 11 | 2026-02-04 | ✅ OK |
+| Connoisseurus Veg | https://www.connoisseurusveg.com/feed/ | 0 | 11 | 2026-02-04 | ✅ OK |
+| Dr. Vegan | https://drveganblog.com/feed/ | 0 | 10 | 2026-01-28 | ✅ OK |
+| Eat Figs, Not Pigs | https://www.eatfigsnotpigs.com/feed/ | 0 | 11 | 2026-02-04 | ✅ OK |
 | Elavegan | https://elavegan.com/feed/ | 0 | 10 | 2026-01-27 | ✅ OK |
 | Flora & Vino | https://www.floraandvino.com/feed/ | 0 | 10 | 2026-01-31 | ✅ OK |
 | From My Bowl | https://frommybowl.com/feed/ | 0 | 11 | 2026-02-03 | ✅ OK |
 | Full of Plants | https://fullofplants.com/feed/ | 0 | 6 | 2026-01-31 | ✅ OK |
-| Gretchen's Vegan Bakery | https://www.gretchensveganbakery.com/feed/ | 1 | 12 | 2026-02-03 | ✅ OK |
+| Gretchen's Vegan Bakery | https://www.gretchensveganbakery.com/feed/ | 0 | 12 | 2026-02-03 | ✅ OK |
 | Hot for Food | Unknown | 0 | 3 | 2025-05-28 | Skipped/DB Only |
 | It Doesn't Taste Like Chicken | https://itdoesnttastelikechicken.com/feed/ | 0 | 32 | 2026-02-04 | ✅ OK |
 | Jessica in the Kitchen | https://jessicainthekitchen.com/feed/ | 0 | 12 | 2026-02-03 | ✅ OK |
@@ -33,7 +33,7 @@
 | Nora Cooks | https://www.noracooks.com/feed/ | 0 | 10 | 2026-02-02 | ✅ OK |
 | Nutriciously | https://nutriciously.com/feed/ | 0 | 2 | 2025-05-16 | ✅ OK |
 | Oh She Glows | https://ohsheglows.com/feed/ | 0 | 1 | 2025-09-03 | ✅ OK |
-| Okonomi Kitchen | https://okonomikitchen.com/feed/ | 1 | 11 | 2026-02-04 | ✅ OK |
+| Okonomi Kitchen | https://okonomikitchen.com/feed/ | 0 | 11 | 2026-02-04 | ✅ OK |
 | One Arab Vegan | https://www.onearabvegan.com/feed/ | 0 | 2 | 2025-12-04 | ✅ OK |
 | Plant Power Couple | https://www.plantpowercouple.com/feed/ | 0 | 11 | 2026-02-03 | ✅ OK |
 | PlantYou | https://plantyou.com/feed/ | 0 | 10 | 2026-02-02 | ✅ OK |
@@ -65,7 +65,7 @@
 | Unconventional Baker | https://www.unconventionalbaker.com/feed/ | 0 | 10 | 2025-11-01 | ✅ OK |
 | VegNews | https://vegnews.com/feed | 0 | 18 | 2026-02-03 | ✅ OK |
 | Vegan Heaven | https://veganheaven.org/feed/ | 0 | 10 | 2026-01-06 | ✅ OK |
-| Vegan Richa | https://www.veganricha.com/feed/ | 1 | 11 | 2026-02-04 | ✅ OK |
+| Vegan Richa | https://www.veganricha.com/feed/ | 0 | 11 | 2026-02-04 | ✅ OK |
 | Vegan Yack Attack | https://veganyackattack.com/feed/ | 0 | 5 | 2025-07-27 | ✅ OK |
 | Vegan in the Freezer | https://veganinthefreezer.com/feed/ | 0 | 1 | 2026-01-25 | ✅ OK |
 | Veggiekins | https://veggiekinsblog.com/feed/ | 0 | 10 | 2026-01-29 | ✅ OK |
