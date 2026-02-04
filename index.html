@@ -6,7 +6,7 @@
     <title>Daily Vegan Recipes</title>
 
     <!-- SEO & Social Meta Tags -->
-    <meta name="description" content="Find fresh daily vegan recipes from top bloggers. Filter by meals, sweets, and protein. Updated every day.">
+    <meta name="description" content="Find fresh daily vegan recipes from top bloggers. Filter by meals, sweets, protein, and budget. Updated every day.">
     <meta property="og:title" content="Daily Vegan Recipes">
     <meta property="og:description" content="Daily recipes from the top bloggers">
     <meta property="og:image" content="https://findvegdish.com/default.jpg"> 
@@ -120,6 +120,8 @@
             gap: 10px;
             flex-wrap: nowrap; 
             margin-top: 20px;
+            overflow-x: auto; /* Allow scrolling on very small screens if needed */
+            padding-bottom: 5px;
         }
 
         @media (max-width: 500px) {
@@ -146,6 +148,7 @@
             background-color: white;
             border: 1px solid #ddd;
             -webkit-tap-highlight-color: transparent; 
+            white-space: nowrap;
         }
         @media (hover: hover) {
                .btn:hover { background-color: #f0f0f0; }
@@ -161,10 +164,10 @@
             border-color: #769F37 !important;
         }
         #shuffleBtn {
-            border: 1px solid #769F37; 
+            border: 1px solid #d2e3b8; 
             font-weight: 600;
-            color: #555;
-            background-color: #ecf7da;
+            color: #d2e3b8;
+            background-color: white;
         }
 
         #installBtn {
@@ -270,7 +273,7 @@
         }
         .disruptor-tag { color: #e67e22; }
         
-        .fresh-badge, .wfpb-badge, .easy-badge {
+        .fresh-badge, .wfpb-badge, .easy-badge, .budget-badge {
             color: white;
             font-size: 0.7em;
             padding: 2px 8px;
@@ -360,7 +363,7 @@
     <!-- Search Bar -->
     <div class="search-wrapper">
         <label for="searchInput" style="display:none;">Search Recipes</label>
-        <input type="text" id="searchInput" placeholder="Search: Easy, Budget, Soup, Cake, Blog...">
+        <input type="text" id="searchInput" placeholder="Search: Easy, Budget, Soup, Cake, Tofu...">
         <button id="clearBtn" title="Clear Search">✕</button>
     </div>
 
@@ -500,6 +503,8 @@
                     badgeHTML += '<span class="wfpb-badge">WFPB</span>';
                 } else if (tag === 'Easy') {
                     badgeHTML += '<span class="easy-badge">Easy</span>';
+                } else if (tag === 'Budget') {
+                    badgeHTML += '<span class="budget-badge">Budget</span>';
                 }
             });
         }
@@ -557,18 +562,15 @@
 
     // --- SHUFFLE FUNCTION ---
     function shuffleRecipes() {
-        document.activeElement.blur(); // Removes focus from the button
+        document.activeElement.blur(); 
         
-        // 1. Shuffle the master list in place
-        // Since applyFilters() derives its data from allRecipes, 
-        // shuffling this ensures the order changes for all future filter applications too.
+        // Shuffle the master list in place so filters persist on random order
         for (let i = allRecipes.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [allRecipes[i], allRecipes[j]] = [allRecipes[j], allRecipes[i]];
         }
 
-        // 2. Instead of resetting activeCategory to null, 
-        // simply re-apply the current filters to the newly shuffled master list.
+        // Re-apply filters to the shuffled list
         applyFilters();
     }
 
@@ -609,6 +611,10 @@
                 const t = recipe.title.toLowerCase();
                 return PROTEIN_KEYWORDS.some(k => t.includes(k));
             });
+        } else if (activeCategory === 'budget') {
+            filtered = filtered.filter(recipe => {
+                return recipe.special_tags && recipe.special_tags.includes('Budget');
+            });
         }
 
         resetView(filtered); // Reuse resetView to handle scroll and clearing
@@ -621,96 +627,30 @@
 
     // --- CATEGORY TOGGLE ---
     function toggleCategory(category) {
-        document.activeElement.blur();
+        document.activeElement.blur(); 
         const mealsBtn = document.getElementById('mealsBtn');
         const sweetsBtn = document.getElementById('sweetsBtn');
         const proteinBtn = document.getElementById('proteinBtn');
-        const budgetBtn = document.getElementById('budgetBtn'); // New
+        const budgetBtn = document.getElementById('budgetBtn');
 
-        // Clear all active classes first
+        // Clear active classes
         mealsBtn.classList.remove('active-filter');
         sweetsBtn.classList.remove('active-filter');
         proteinBtn.classList.remove('active-filter');
-        budgetBtn.classList.remove('active-filter'); // New
+        budgetBtn.classList.remove('active-filter');
 
         if (activeCategory === category) {
-            activeCategory = null; // Toggle off if clicking same button
+            activeCategory = null;
         } else {
             activeCategory = category;
-            
-            // Re-add active class to the correct button
             if(category === 'meal') mealsBtn.classList.add('active-filter');
             else if(category === 'sweet') sweetsBtn.classList.add('active-filter');
             else if(category === 'protein') proteinBtn.classList.add('active-filter');
-            else if(category === 'budget') budgetBtn.classList.add('active-filter'); // New
+            else if(category === 'budget') budgetBtn.classList.add('active-filter');
         }
         applyFilters();
     }
 
-    // Update applyFilters to check tags for Budget
-    function applyFilters() {
-        const term = document.getElementById('searchInput').value.toLowerCase();
-        let filtered = allRecipes;
-
-        if (term.length > 0) {
-            filtered = filtered.filter(recipe => {
-                const title = recipe.title.toLowerCase();
-                const blogger = recipe.blog_name.toLowerCase();
-                let hasMatchingTag = false;
-                if (recipe.special_tags && Array.isArray(recipe.special_tags)) {
-                    hasMatchingTag = recipe.special_tags.some(tag => tag.toLowerCase().includes(term));
-                }
-                return title.includes(term) || blogger.includes(term) || hasMatchingTag;
-            });
-        }
-
-        if (activeCategory === 'sweet') {
-            filtered = filtered.filter(recipe => {
-                const t = recipe.title.toLowerCase();
-                const hasKeyword = SWEET_KEYWORDS.some(k => t.includes(k));
-                const isSavory = t.includes('sweet potato') || t.includes('sweet and sour');
-                return hasKeyword && !isSavory;
-            });
-        } else if (activeCategory === 'meal') {
-            filtered = filtered.filter(recipe => {
-                const t = recipe.title.toLowerCase();
-                const hasKeyword = MEAL_KEYWORDS.some(k => t.includes(k));
-                const isSide = t.includes('sauce') || t.includes('dressing') || t.includes('side');
-                return hasKeyword && !isSide;
-            });
-        } else if (activeCategory === 'protein') {
-            filtered = filtered.filter(recipe => {
-                const t = recipe.title.toLowerCase();
-                return PROTEIN_KEYWORDS.some(k => t.includes(k));
-            });
-        } else if (activeCategory === 'budget') {
-            // NEW LOGIC: Filter by special_tags array
-            filtered = filtered.filter(recipe => {
-                return recipe.special_tags && recipe.special_tags.includes('Budget');
-            });
-        }
-
-        resetView(filtered);
-    }
-
-    // Update createCard to render the Budget Badge
-    function createCard(recipe) {
-        // ... (existing code for card creation, img, etc) ...
-
-        // Inside the badgeHTML logic block:
-        if (recipe.special_tags && Array.isArray(recipe.special_tags)) {
-            recipe.special_tags.forEach(tag => {
-                if (tag === 'WFPB') {
-                    badgeHTML += '<span class="wfpb-badge">WFPB</span>';
-                } else if (tag === 'Easy') {
-                    badgeHTML += '<span class="easy-badge">Easy</span>';
-                } else if (tag === 'Budget') {
-                    // NEW BADGE RENDER
-                    badgeHTML += '<span class="budget-badge">Budget</span>';
-                }
-            });
-        }
-        
     // --- SEARCH INPUT LISTENERS ---
     const searchInput = document.getElementById('searchInput');
     const clearBtn = document.getElementById('clearBtn');
@@ -733,13 +673,15 @@
     window.addEventListener('beforeinstallprompt', (e) => {
         e.preventDefault();
         deferredPrompt = e;
-        installBtn.style.display = 'inline-block';
+        if(installBtn) installBtn.style.display = 'inline-block';
     });
-    installBtn.addEventListener('click', (e) => {
-        installBtn.style.display = 'none';
-        deferredPrompt.prompt();
-        deferredPrompt = null;
-    });
+    if(installBtn) {
+        installBtn.addEventListener('click', (e) => {
+            installBtn.style.display = 'none';
+            deferredPrompt.prompt();
+            deferredPrompt = null;
+        });
+    }
 
     function shareRecipe(e, title, link) {
         e.preventDefault(); 
