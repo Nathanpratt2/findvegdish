@@ -259,7 +259,9 @@ for r in recipes:
 final_pruned_list = []
 total_counts = {} 
 latest_dates = {} 
-tagged_counts = {} # Stores count of recipes with WFPB/Easy/Budget tags
+wfpb_counts = {}
+easy_counts = {}
+budget_counts = {}
 
 for bname, blog_recipes in recipes_by_blog.items():
     blog_recipes.sort(key=lambda x: x['date'], reverse=True)
@@ -271,12 +273,9 @@ for bname, blog_recipes in recipes_by_blog.items():
     final_pruned_list.extend(kept_recipes)
     total_counts[bname] = len(kept_recipes)
     
-    # Calculate how many recipes have at least one of the target tags
-    tagged_count_for_blog = 0
-    for r in kept_recipes:
-        if any(t in r['special_tags'] for t in ["WFPB", "Budget", "Easy"]):
-            tagged_count_for_blog += 1
-    tagged_counts[bname] = tagged_count_for_blog
+    wfpb_counts[bname] = sum(1 for r in kept_recipes if "WFPB" in r['special_tags'])
+    easy_counts[bname] = sum(1 for r in kept_recipes if "Easy" in r['special_tags'])
+    budget_counts[bname] = sum(1 for r in kept_recipes if "Budget" in r['special_tags'])
 
 final_pruned_list.sort(key=lambda x: x['date'], reverse=True)
 
