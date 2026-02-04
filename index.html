@@ -596,14 +596,14 @@
             filtered = filtered.filter(recipe => {
                 const t = recipe.title.toLowerCase();
                 const hasKeyword = SWEET_KEYWORDS.some(k => t.includes(k));
-                const isSavory = t.includes('sweet potato') || t.includes('sweet and sour');
+                const isSavory = t.includes('sweet potato') || t.includes('sweet and sour') || t.includes('spicy') || t.includes('chili') || t.includes("shepherd's") || t.includes('egg') || t.includes('pot');
                 return hasKeyword && !isSavory;
             });
         } else if (activeCategory === 'meal') {
             filtered = filtered.filter(recipe => {
                 const t = recipe.title.toLowerCase();
                 const hasKeyword = MEAL_KEYWORDS.some(k => t.includes(k));
-                const isSide = t.includes('sauce') || t.includes('dressing') || t.includes('side');
+                const isSide = t.includes('sauce') || t.includes('dressing') || t.includes('side') || t.includes('treats');
                 return hasKeyword && !isSide;
             });
         } else if (activeCategory === 'protein') {
