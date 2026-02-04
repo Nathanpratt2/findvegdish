@@ -86,7 +86,7 @@ DISRUPTORS = [
 ALL_FEEDS = TOP_BLOGGERS + DISRUPTORS
 URL_MAP = dict((name, url) for name, url, tags in ALL_FEEDS)
 
-MAX_RECIPES_PER_BLOG = 150 
+MAX_RECIPES_PER_BLOG = 50 
 cutoff_date = datetime.now().astimezone() - timedelta(days=360)
 
 # --- LOAD EXISTING DATA ---
