@@ -121,6 +121,33 @@ HEADERS = {
     'Upgrade-Insecure-Requests': '1'
 }
 
+# --- "DUMB LOGIC" KEYWORDS ---
+WFPB_KEYWORDS = ['oil-free', 'oil free', 'no oil', 'wfpb', 'whole food', 'clean eating', 'refined sugar free']
+EASY_KEYWORDS = ['easy', 'quick', 'simple', 'fast', '1-pot', 'one-pot', 'one pot', '30-minute', '30 minute', '15-minute', '5-ingredient', 'sheet pan', 'skillet']
+BUDGET_KEYWORDS = ['budget', 'cheap', 'frugal', 'economical', 'pantry', 'low cost', 'money saving', '$', 'affordable']
+
+def get_auto_tags(title):
+    """
+    Analyzes title for keywords and returns a list of additional tags.
+    """
+    tags = []
+    t_lower = title.lower()
+    
+    # Check WFPB
+    if any(k in t_lower for k in WFPB_KEYWORDS):
+        tags.append("WFPB")
+        
+    # Check Easy
+    if any(k in t_lower for k in EASY_KEYWORDS):
+        tags.append("Easy")
+        
+    # Check Budget
+    if any(k in t_lower for k in BUDGET_KEYWORDS):
+        tags.append("Budget")
+        
+    return tags
+
+# --- "Pet recipe" check ---
 def is_pet_recipe(title):
     t = title.lower()
     pet_phrases = ['dog treat', 'cat treat', 'dog biscuit', 'cat biscuit', 'dog food', 'cat food', 'pup treat', 'kitty treat', 'dog cookie']
