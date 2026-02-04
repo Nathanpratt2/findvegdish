@@ -287,9 +287,33 @@ with open('data.json', 'w') as f:
 with open('FEED_HEALTH.md', 'w') as f:
     f.write(f"# Feed Health Report\n")
     f.write(f"**Last Run:** {datetime.now().isoformat()}\n")
-    f.write(f"**Total Database Size:** {len(final_pruned_list)}\n\n")
-    f.write("| Blog Name | URL | New Today | Total in DB | Tagged (W/E/B) | Latest Post | Status |\n")
-    f.write("|-----------|-----|-----------|-------------|----------------|-------------|--------|\n")
+
+    total_new_today = sum(stats.get('new', 0) for stats in feed_stats.values())
+    total_in_db = len(final_pruned_list)
+    total_wfpb = sum(wfpb_counts.values())
+    total_easy = sum(easy_counts.values())
+    total_budget = sum(budget_counts.values())
+
+    wfpb_percent = int((total_wfpb / total_in_db) * 100) if total_in_db > 0 else 0
+    easy_percent = int((total_easy / total_in_db) * 100) if total_in_db > 0 else 0
+    budget_percent = int((total_budget / total_in_db) * 100) if total_in_db > 0 else 0
+    
+    all_dates = [parser.parse(d) for d in latest_dates.values() if d != "N/A"]
+    if all_dates:
+        avg_date_timestamp = sum(d.timestamp() for d in all_dates) / len(all_dates)
+        avg_date = datetime.fromtimestamp(avg_date_timestamp).strftime('%Y-%m-%d')
+    else:
+        avg_date = "N/A"
+
+    f.write(f"**Total Database Size:** {total_in_db}\n")
+    f.write(f"**New Today:** {total_new_today}\n")
+    f.write(f"**WFPB:** {total_wfpb} ({wfpb_percent}%)\n")
+    f.write(f"**Easy:** {total_easy} ({easy_percent}%)\n")
+    f.write(f"**Budget:** {total_budget} ({budget_percent}%)\n")
+    f.write(f"**Average Latest Post:** {avg_date}\n\n")
+
+    f.write("| Blog Name | URL | New | Total | WFPB | Easy | Budget | Latest | Status |\n")
+    f.write("|-----------|-----|-----|-------|------|------|--------|--------|--------|\n")
     
     all_names = set(list(feed_stats.keys()) + list(total_counts.keys()))
     
@@ -301,20 +325,17 @@ with open('FEED_HEALTH.md', 'w') as f:
         total = total_counts.get(name, 0)
         latest = latest_dates.get(name, "N/A")
         
-        # Calculate Percentage
-        tagged_val = tagged_counts.get(name, 0)
-        pct = 0
-        if total > 0:
-            pct = int((tagged_val / total) * 100)
-        tagged_str = f"{tagged_val} ({pct}%)"
+        wfpb_val = wfpb_counts.get(name, 0)
+        easy_val = easy_counts.get(name, 0)
+        budget_val = budget_counts.get(name, 0)
         
         if total == 0 and "✅" in status:
             status = "❌ No Recipes"
             
-        report_rows.append((name, url, new, total, tagged_str, latest, status))
+        report_rows.append((name, url, new, total, wfpb_val, easy_val, budget_val, latest, status))
     
     def sort_key(row):
-        stat = row[6] # status is now index 6
+        stat = row[8] 
         priority = 2 
         if '❌' in stat: priority = 0
         elif '⚠️' in stat: priority = 1
@@ -323,6 +344,6 @@ with open('FEED_HEALTH.md', 'w') as f:
     report_rows.sort(key=sort_key)
     
     for row in report_rows:
-        f.write(f"| {row[0]} | {row[1]} | {row[2]} | {row[3]} | {row[4]} | {row[5]} | {row[6]} |\n")
+        f.write(f"| {row[0]} | {row[1]} | {row[2]} | {row[3]} | {row[4]} | {row[5]} | {row[6]} | {row[7]} | {row[8]} |\n")
 
 print(f"Successfully scraped. Database size: {len(final_pruned_list)}")
