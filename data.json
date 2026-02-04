@@ -1,5 +1,41 @@
 [
   {
+    "blog_name": "Eat Figs, Not Pigs",
+    "title": "Mini Chili Cheese Dogs",
+    "link": "https://www.eatfigsnotpigs.com/mini-chili-cheese-dogs/?utm_source=rss&utm_medium=rss&utm_campaign=mini-chili-cheese-dogs",
+    "image": "https://www.eatfigsnotpigs.com/wp-content/uploads/2023/02/IMG_1605-1024x768.jpg",
+    "date": "2026-02-04T18:19:53+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Okonomi Kitchen",
+    "title": "Dubai Chocolate Salt Bread",
+    "link": "https://www.okonomikitchen.com/dubai-chocolate-salt-bread/",
+    "image": "https://www.okonomikitchen.com/wp-content/uploads/2026/02/dubai-chocolate-salt-bread-5.jpg",
+    "date": "2026-02-04T13:42:29+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Connoisseurus Veg",
+    "title": "Nashville Hot Tofu",
+    "link": "https://www.connoisseurusveg.com/nashville-hot-tofu/",
+    "image": "https://www.connoisseurusveg.com/wp-content/uploads/2026/01/nashville-hot-tofu-sq.jpg",
+    "date": "2026-02-04T12:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Richa",
+    "title": "The BEST Strawberry Chia Pudding",
+    "link": "https://www.veganricha.com/strawberry-chia-pudding/",
+    "image": "https://www.veganricha.com/wp-content/uploads/2025/10/Strawberry-Chia-Pudding-5382.jpg",
+    "date": "2026-02-04T12:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "It Doesn't Taste Like Chicken",
     "title": "Marinated Tofu (Smoky Soy-Garlic)",
     "link": "https://itdoesnttastelikechicken.com/marinated-tofu/",
@@ -51,6 +87,15 @@
     "special_tags": [
       "WFPB"
     ]
+  },
+  {
+    "blog_name": "Gretchen's Vegan Bakery",
+    "title": "Carrot Apple Cake Bread",
+    "link": "https://www.gretchensveganbakery.com/carrot-bread/",
+    "image": "https://www.gretchensveganbakery.com/wp-content/uploads/2021/10/bread-resized.jpg",
+    "date": "2026-02-03T22:02:20+00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "The Conscious Plant Kitchen",
@@ -845,6 +890,17 @@
     "special_tags": []
   },
   {
+    "blog_name": "Dr. Vegan",
+    "title": "Spicy Korean-Style Cucumber Salad",
+    "link": "https://drveganblog.com/spicy-korean-style-cucumber-salad/",
+    "image": "https://drveganblog.com/wp-content/uploads/2026/01/cucumber-salad1-576x1024.jpg",
+    "date": "2026-01-28T12:13:15+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "Connoisseurus Veg",
     "title": "Slow Cooker Baked Beans",
     "link": "https://www.connoisseurusveg.com/slow-cooker-baked-beans/",
@@ -861,6 +917,17 @@
     "date": "2026-01-28T12:00:00+00:00",
     "is_disruptor": false,
     "special_tags": []
+  },
+  {
+    "blog_name": "Dr. Vegan",
+    "title": "Creamy Roasted Veggie Potato Salad",
+    "link": "https://drveganblog.com/creamy-roasted-veggie-potato-salad/",
+    "image": "https://drveganblog.com/wp-content/uploads/2026/01/Potato-Salad1-scaled-e1769600570468-835x1024.jpg",
+    "date": "2026-01-28T11:45:05+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "Easy"
+    ]
   },
   {
     "blog_name": "Full of Plants",
@@ -1108,6 +1175,17 @@
     "date": "2026-01-26T15:00:00+00:00",
     "is_disruptor": false,
     "special_tags": []
+  },
+  {
+    "blog_name": "Dr. Vegan",
+    "title": "Creamy One Pot Tomato Gnocchi Soup",
+    "link": "https://drveganblog.com/creamy-one-pot-tomato-gnocchi-soup/",
+    "image": "https://drveganblog.com/wp-content/uploads/2026/01/gnocchi-soup1-576x1024.jpg",
+    "date": "2026-01-26T13:20:18+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "Easy"
+    ]
   },
   {
     "blog_name": "Rainbow Plant Life",
@@ -1374,6 +1452,17 @@
     "date": "2026-01-22T13:47:11+00:00",
     "is_disruptor": true,
     "special_tags": []
+  },
+  {
+    "blog_name": "Dr. Vegan",
+    "title": "Crispy Baked Accordion Potatoes with Smoky Chipotle Mayo",
+    "link": "https://drveganblog.com/crispy-baked-accordion-potatoes/",
+    "image": "https://drveganblog.com/wp-content/uploads/2026/01/accordion-potatoes5-576x1024.jpg",
+    "date": "2026-01-22T13:11:31+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "Easy"
+    ]
   },
   {
     "blog_name": "Monkey & Me Kitchen Adventures",
@@ -1796,6 +1885,17 @@
     "special_tags": []
   },
   {
+    "blog_name": "Dr. Vegan",
+    "title": "Stuffed Vegan Cabbage Rolls (Lentil & Rice, Oven-Baked)",
+    "link": "https://drveganblog.com/stuffed-vegan-cabbage-rolls-lentil-rice-oven-baked/",
+    "image": "https://drveganblog.com/wp-content/uploads/2026/01/stuffed-cabbage1-576x1024.jpg",
+    "date": "2026-01-16T09:37:53+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "Plant Power Couple",
     "title": "Vegan Buffalo Sauce Recipe",
     "link": "https://www.plantpowercouple.com/recipes/vegan-buffalo-sauce/",
@@ -1946,6 +2046,17 @@
     "date": "2026-01-14T15:45:59+00:00",
     "is_disruptor": false,
     "special_tags": []
+  },
+  {
+    "blog_name": "Dr. Vegan",
+    "title": "Quick & Easy Breakfast Potato Waffle",
+    "link": "https://drveganblog.com/crispy-potato-waffle/",
+    "image": "https://drveganblog.com/wp-content/uploads/2026/01/potato-waffle1-576x1024.jpg",
+    "date": "2026-01-14T14:40:33+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "Easy"
+    ]
   },
   {
     "blog_name": "Monkey & Me Kitchen Adventures",
@@ -2129,6 +2240,17 @@
     ]
   },
   {
+    "blog_name": "Dr. Vegan",
+    "title": "Garlic Chili Oil with Peanuts",
+    "link": "https://drveganblog.com/garlic-chili-oil-with-peanuts/",
+    "image": "https://drveganblog.com/wp-content/uploads/2026/01/garlic-chili-oil1-576x1024.jpg",
+    "date": "2026-01-12T06:09:38+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "PlantYou",
     "title": "Winter Kale Salad",
     "link": "https://plantyou.com/winter-kale-salad/",
@@ -2224,6 +2346,17 @@
     "date": "2026-01-09T17:49:51+00:00",
     "is_disruptor": true,
     "special_tags": []
+  },
+  {
+    "blog_name": "Dr. Vegan",
+    "title": "2 Ingredient Red Lentil Wraps",
+    "link": "https://drveganblog.com/2-ingredient-red-lentil-wraps/",
+    "image": "https://drveganblog.com/wp-content/uploads/2026/01/Untitled-Project2-576x1024.jpg",
+    "date": "2026-01-09T17:15:12+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "Easy"
+    ]
   },
   {
     "blog_name": "Mary's Test Kitchen",
@@ -3134,6 +3267,17 @@
     "special_tags": []
   },
   {
+    "blog_name": "Dr. Vegan",
+    "title": "Creamy Olive & Feta Dip",
+    "link": "https://drveganblog.com/creamy-olive-and-vegan-feta-dip/",
+    "image": "https://drveganblog.com/wp-content/uploads/2025/12/olive-dips1-1-1024x1020.jpg",
+    "date": "2025-12-17T16:09:03+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "Vegan Richa",
     "title": "Italian Cream Cake (Italian Wedding Cake)",
     "link": "https://www.veganricha.com/italian-cream-cake/",
@@ -3209,6 +3353,17 @@
     "date": "2025-12-15T16:59:04+00:00",
     "is_disruptor": false,
     "special_tags": []
+  },
+  {
+    "blog_name": "Dr. Vegan",
+    "title": "Pan-Fried Garlic Focaccia",
+    "link": "https://drveganblog.com/pan-fried-garlic-focaccia/",
+    "image": "https://drveganblog.com/wp-content/uploads/2025/12/focaccia1-576x1024.jpg",
+    "date": "2025-12-15T15:48:14+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "Easy"
+    ]
   },
   {
     "blog_name": "Fragrant Vanilla Cake",
