@@ -85,7 +85,11 @@ DISRUPTORS = [
 ]
 
 ALL_FEEDS = TOP_BLOGGERS + DISRUPTORS
-# Map for quick lookup during backfill
+
+# --- MAPS ---
+# Used for reporting in the Markdown file
+URL_MAP = dict((name, url) for name, url, tags in ALL_FEEDS)
+# Used for quick tag lookup during backfill
 BLOG_TAG_MAP = dict((name, tags) for name, url, tags in ALL_FEEDS)
 
 MAX_RECIPES_PER_BLOG = 50 
