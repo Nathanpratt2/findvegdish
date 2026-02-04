@@ -36,6 +36,42 @@ We avoid complex, subjective ranking systems. Creators are categorized simply:
 
 ## 🛠 Technical Implementation
 
+The site uses a Python-based worker to refresh content. This script acts as a "Static Site Generator" for our data, transforming dozens of fragmented RSS feeds into a single, clean `data.json` file.
+
+### 1. The Fetching Pipeline
+- **RSS Parsing:** Uses `feedparser` to grab the latest entries from over 60+ curated vegan blogs.
+- **Smart Image Extraction:** Since RSS feeds are inconsistent, the script uses a multi-step fallback logic:
+    1. Check RSS media tags.
+    2. Scrape the post content for high-res images (ignoring icons/trackers).
+    3. Fetch OpenGraph (`og:image`) tags as a final fallback.
+- **Bot Defense:** Uses custom headers to mimic a browser, ensuring feeds aren't blocked by standard security firewalls.
+
+### 2. Automated Tagging (Logic-Based)
+To avoid the complexity of a manual database or an LLM, the script auto-tags recipes using keyword matching:
+- **WFPB:** Looks for "oil-free," "whole food," "no oil."
+- **Easy:** Looks for "1-pot," "30-minute," "simple," "air fryer."
+- **Budget:** Looks for "cheap," "pantry," "beans," "leftovers."
+
+### 3. Database Hygiene & Pruning
+To keep the site fast and the content fresh, the script enforces our "Seasonal Rotation" rules every time it runs:
+- **Date Filtering:** Removes any recipes older than ~1 year.
+- **The "50 Cap":** Sorts recipes by date and keeps only the 50 most recent posts per blog.
+- **Content Cleaning:** Specifically filters out non-recipe content (like news articles) and pet-related treats to keep the feed 100% human-food focused.
+
+### 4. Feed Health Reporting
+Every run generates a `FEED_HEALTH.md` report. This allows us to monitor the ecosystem at a glance:
+- **Success/Failure Rates:** Identifies if a blog has changed its URL or blocked our scraper.
+- **Diversity Metrics:** Shows the percentage of the database that is WFPB, Easy, or Budget.
+- **Freshness Tracking:** Notes the "Latest Post" date for every blog to identify inactive creators.
+
+## 🛠 How to Run
+
+# Install dependencies
+pip install feedparser beautifulsoup4 requests python-dateutil lxml
+
+# Execute the refresh
+python fetch_recipes.py
+
 ### Smart Filtering & Exclusion Logic
 The search and category logic uses "Smart Exclusion" to maintain high accuracy without needing complex tagging or AI:
 - **Meals Filter:** Targets savory keywords but strictly **excludes** things like `treats`, `sauce`, or `dressing`.
@@ -54,10 +90,8 @@ The search and category logic uses "Smart Exclusion" to maintain high accuracy w
 - **Hosting:** GitHub Pages + Cloudflare.
 - **Updates:** Content updates are handled by pushing a new `data.json` file.
 - **Maintenance:** Near-zero. Since there are no external APIs or frameworks, the site will continue to function as long as the domain and hosting are active.
-
-## 🛠 Maintenance Items
-- Monitor Health report for any broken sites and reasonable tagging counts
-- Ensure Actions have run recently to refresh json
-- Everyone all blogs are still 100% vegan
-- Add new blogs as desired
-- Review for any non-recipes to remove those blogs as needed
+    - Monitor Health report for any broken sites and reasonable tagging counts
+    - Ensure Actions have run recently to refresh json
+    - Everyone all blogs are still 100% vegan
+    - Add new blogs as desired
+    - Review for any non-recipes to remove those blogs as needed
