@@ -556,16 +556,19 @@
 
     // --- SHUFFLE FUNCTION ---
     function shuffleRecipes() {
-        document.activeElement.blur(); 
+        document.activeElement.blur(); // Removes focus from the button
+        
+        // 1. Shuffle the master list in place
+        // Since applyFilters() derives its data from allRecipes, 
+        // shuffling this ensures the order changes for all future filter applications too.
         for (let i = allRecipes.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [allRecipes[i], allRecipes[j]] = [allRecipes[j], allRecipes[i]];
         }
-        activeCategory = null;
-        document.getElementById('mealsBtn').classList.remove('active-filter');
-        document.getElementById('sweetsBtn').classList.remove('active-filter');
-        document.getElementById('proteinBtn').classList.remove('active-filter');
-        resetView(allRecipes);
+
+        // 2. Instead of resetting activeCategory to null, 
+        // simply re-apply the current filters to the newly shuffled master list.
+        applyFilters();
     }
 
     // --- FILTER/SEARCH LOGIC ---
