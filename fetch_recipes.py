@@ -14,7 +14,7 @@ import os
 TOP_BLOGGERS = [
     ("Minimalist Baker", "https://minimalistbaker.com/recipes/vegan/feed/", ["Easy"]),
     ("Nora Cooks", "https://www.noracooks.com/feed/", []),
-    ("PlantYou", "https://plantyou.com/feed/", ["WFPB", "Easy"]),
+    ("PlantYou", "https://plantyou.com/feed/", ["WFPB"]),
     ("The Korean Vegan", "https://thekoreanvegan.com/feed/", []),
     ("Rainbow Plant Life", "https://rainbowplantlife.com/feed/", []),
     ("Vegan Richa", "https://www.veganricha.com/feed/", []),
