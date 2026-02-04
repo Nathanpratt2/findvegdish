@@ -9,7 +9,8 @@ import os
 
 # --- CONFIGURATION ---
 # Format: ("Blog Name", "Feed URL", ["SPECIAL_TAGS"])
-# Tags can be "WFPB" for Whole Food Plant-Based or "Easy" for simple/quick recipes.
+# Tags: "WFPB", "Easy", "Budget"
+
 TOP_BLOGGERS = [
     ("Minimalist Baker", "https://minimalistbaker.com/recipes/vegan/feed/", ["Easy"]),
     ("Nora Cooks", "https://www.noracooks.com/feed/", []),
@@ -17,7 +18,7 @@ TOP_BLOGGERS = [
     ("The Korean Vegan", "https://thekoreanvegan.com/feed/", []),
     ("Rainbow Plant Life", "https://rainbowplantlife.com/feed/", []),
     ("Vegan Richa", "https://www.veganricha.com/feed/", []),
-    ("It Doesn't Taste Like Chicken", "https://itdoesnttastelikechicken.com/feed/", ["Budget"]),
+    ("It Doesn't Taste Like Chicken", "https://itdoesnttastelikechicken.com/feed/", ["Budget"]), # Updated
     ("Loving It Vegan", "https://lovingitvegan.com/feed/", []),
     ("Elavegan", "https://elavegan.com/feed/", []),
     ("Oh She Glows", "https://ohsheglows.com/feed/", []),
@@ -61,7 +62,7 @@ DISRUPTORS = [
     ("Veggies Don't Bite", "https://veggiesdontbite.com/feed/", ["WFPB"]),
     ("Watch Learn Eat", "https://watchlearneat.com/feed/", ["Easy"]),
     ("Strength and Sunshine", "https://strengthandsunshine.com/feed/", ["Easy"]),
-    ("The Stingy Vegan", "https://thestingyvegan.com/feed/", ["Easy", "Budget"]),
+    ("The Stingy Vegan", "https://thestingyvegan.com/feed/", ["Easy", "Budget"]), # Updated
     ("Okonomi Kitchen", "https://okonomikitchen.com/feed/", []),
     ("The Foodie Takes Flight", "https://thefoodietakesflight.com/feed/", ["Easy"]),
     ("The Viet Vegan", "https://thevietvegan.com/feed/", []),
@@ -83,36 +84,18 @@ DISRUPTORS = [
     ("ZardyPlants", "https://zardyplants.com/feed/", ["WFPB"]),
 ]
 
-
 ALL_FEEDS = TOP_BLOGGERS + DISRUPTORS
 URL_MAP = dict((name, url) for name, url, tags in ALL_FEEDS)
 
 MAX_RECIPES_PER_BLOG = 50 
 cutoff_date = datetime.now().astimezone() - timedelta(days=360)
 
-# --- LOAD EXISTING DATA ---
-try:
-    with open('data.json', 'r') as f:
-        recipes = json.load(f)
-        print(f"Loaded {len(recipes)} existing recipes.")
-except (FileNotFoundError, json.JSONDecodeError):
-    recipes = []
-    print("No existing database found. Starting fresh.")
+# --- KEYWORDS FOR AUTO TAGGING ---
+WFPB_KEYWORDS = ['oil-free', 'oil free', 'no oil', 'wfpb', 'whole food', 'clean', 'refined sugar free']
+EASY_KEYWORDS = ['easy', 'quick', 'simple', 'fast', '1-pot', 'one-pot', 'one pot', '30-minute', '30 minute', '15-minute', '5-ingredient', 'sheet pan', 'skillet']
+BUDGET_KEYWORDS = ['budget', 'cheap', 'frugal', 'economical', 'pantry', 'low cost', 'money saving', '$', 'affordable']
 
-# --- CLEANSE DATABASE ---
-initial_count = len(recipes)
-recipes = [
-    r for r in recipes 
-    if not (r['blog_name'] == "VegNews" and "/recipes/" not in r['link'])
-]
-
-if len(recipes) < initial_count:
-    print(f"Cleaned {initial_count - len(recipes)} items from database.")
-
-existing_links = {r['link'] for r in recipes}
-
-feed_stats = {} 
-
+# --- HEADERS ---
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
@@ -121,10 +104,7 @@ HEADERS = {
     'Upgrade-Insecure-Requests': '1'
 }
 
-# --- "DUMB LOGIC" KEYWORDS ---
-WFPB_KEYWORDS = ['oil-free', 'oil free', 'no oil', 'wfpb', 'whole food', 'clean eating', 'refined sugar free']
-EASY_KEYWORDS = ['easy', 'quick', 'simple', 'fast', '1-pot', 'one-pot', 'one pot', '30-minute', '30 minute', '15-minute', '5-ingredient', 'sheet pan', 'skillet']
-BUDGET_KEYWORDS = ['budget', 'cheap', 'frugal', 'economical', 'pantry', 'low cost', 'money saving', '$', 'affordable']
+# --- FUNCTIONS ---
 
 def get_auto_tags(title):
     """
@@ -147,7 +127,6 @@ def get_auto_tags(title):
         
     return tags
 
-# --- "Pet recipe" check ---
 def is_pet_recipe(title):
     t = title.lower()
     pet_phrases = ['dog treat', 'cat treat', 'dog biscuit', 'cat biscuit', 'dog food', 'cat food', 'pup treat', 'kitty treat', 'dog cookie']
@@ -188,10 +167,33 @@ def extract_image(entry, blog_name):
     if not image_candidate: image_candidate = fetch_og_image(entry.link)
     return image_candidate if image_candidate else "icon.jpg"
 
+# --- MAIN EXECUTION ---
+
+# 1. Load Existing Data
+try:
+    with open('data.json', 'r') as f:
+        recipes = json.load(f)
+        print(f"Loaded {len(recipes)} existing recipes.")
+except (FileNotFoundError, json.JSONDecodeError):
+    recipes = []
+    print("No existing database found. Starting fresh.")
+
+# 2. Cleanse Database
+initial_count = len(recipes)
+recipes = [
+    r for r in recipes 
+    if not (r['blog_name'] == "VegNews" and "/recipes/" not in r['link'])
+]
+
+if len(recipes) < initial_count:
+    print(f"Cleaned {initial_count - len(recipes)} items from database.")
+
+existing_links = {r['link'] for r in recipes}
+feed_stats = {} 
+
 print(f"Fetching recipes from {len(ALL_FEEDS)} blogs...")
 
-# --- MAIN LOOP ---
-# UPDATED: Loop now unpacks name, url, and the new tags list
+# 3. Scrape Feeds
 for name, url, special_tags in ALL_FEEDS:
     new_count = 0
     status = "✅ OK"
@@ -233,7 +235,18 @@ for name, url, special_tags in ALL_FEEDS:
                         base = feed.feed.get('link', '')
                         if base: image_url = base.rstrip('/') + image_url
                     
-                    # UPDATED: New `special_tags` key added to the recipe object
+                    # --- TAGGING LOGIC ---
+                    # 1. Start with hardcoded tags for this blog
+                    final_tags = list(special_tags)
+                    
+                    # 2. Generate tags based on title keywords
+                    auto_tags = get_auto_tags(entry.title)
+                    
+                    # 3. Merge without duplicates
+                    for tag in auto_tags:
+                        if tag not in final_tags:
+                            final_tags.append(tag)
+
                     recipes.append({
                         "blog_name": name,
                         "title": entry.title,
@@ -241,7 +254,7 @@ for name, url, special_tags in ALL_FEEDS:
                         "image": image_url,
                         "date": published_time.isoformat(),
                         "is_disruptor": name in [d[0] for d in DISRUPTORS],
-                        "special_tags": special_tags 
+                        "special_tags": final_tags 
                     })
                     existing_links.add(entry.link)
                     new_count += 1
@@ -254,7 +267,7 @@ for name, url, special_tags in ALL_FEEDS:
         print(f"Failed to parse {name}: {e}")
         feed_stats[name] = {'new': 0, 'status': f"❌ Crash: {str(e)[:20]}"}
 
-# --- PRUNING STEP ---
+# 4. Prune Database
 print("Pruning database...")
 recipes_by_blog = {}
 for r in recipes:
@@ -281,7 +294,7 @@ final_pruned_list.sort(key=lambda x: x['date'], reverse=True)
 with open('data.json', 'w') as f:
     json.dump(final_pruned_list, f, indent=2)
 
-# --- GENERATE REPORT ---
+# 5. Generate Report
 with open('FEED_HEALTH.md', 'w') as f:
     f.write(f"# Feed Health Report\n")
     f.write(f"**Last Run:** {datetime.now().isoformat()}\n")
