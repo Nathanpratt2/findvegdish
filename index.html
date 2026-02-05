@@ -31,6 +31,20 @@
             padding: 20px;
             padding-bottom: 60px;
         }
+        
+        /* SEO #4: Screen Reader Only class for H1 */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            white-space: nowrap;
+            border: 0;
+        }
+
         header {
             text-align: center;
             margin-bottom: 30px;
@@ -191,6 +205,7 @@
         @media (max-width: 800px) { .gallery { grid-template-columns: repeat(2, 1fr); } }
         @media (max-width: 500px) { .gallery { grid-template-columns: 1fr; } }
 
+        /* SEO #1: Updated .card styles for <article> tag compatibility */
         .card {
             background: white;
             border-radius: 12px;
@@ -199,13 +214,21 @@
             overflow: hidden;
             display: flex;
             flex-direction: column; 
-            text-decoration: none;
-            color: inherit;
             position: relative;
             animation: fadeIn 0.5s ease-in;
             height: 100%;
         }
         
+        /* New class for the inner anchor tag to fill the card */
+        .card-link {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            height: 100%;
+        }
+
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
@@ -323,40 +346,39 @@
         #loader { text-align: center; padding: 20px; color: #888; font-style: italic; display: none; }
 
         #scrollTopBtn {
-    display: none; 
-    position: fixed;
-    /* Adjusted bottom to sit nicely above the coffee button */
-    bottom: 95px;
-    /* Changed from 25px to 18px to align vertically with the coffee button */
-    right: 18px;
-    z-index: 99;
-    /* Standard BuyMeACoffee widget size is 60px */
-    width: 60px;
-    height: 60px;
-    border: none;
-    outline: none;
-    background-color: #769F37;
-    color: white;
-    cursor: pointer;
-    border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    transition: background-color 0.3s, transform 0.3s;
-    align-items: center;
-    justify-content: center;
-}
-#scrollTopBtn:hover {
-    background-color: #5d822b; 
-    transform: translateY(-3px);
-}
-@media (max-width: 400px) {
-    /* Slightly smaller on mobile to match mobile widget scaling */
-    #scrollTopBtn { bottom: 90px; right: 18px; width: 50px; height: 50px; }
-}
+            display: none; 
+            position: fixed;
+            bottom: 95px;
+            right: 18px;
+            z-index: 99;
+            width: 60px;
+            height: 60px;
+            border: none;
+            outline: none;
+            background-color: #769F37;
+            color: white;
+            cursor: pointer;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: background-color 0.3s, transform 0.3s;
+            align-items: center;
+            justify-content: center;
+        }
+        #scrollTopBtn:hover {
+            background-color: #5d822b; 
+            transform: translateY(-3px);
+        }
+        @media (max-width: 400px) {
+            #scrollTopBtn { bottom: 90px; right: 18px; width: 50px; height: 50px; }
+        }
     </style>
 </head>
 <body>
 
 <header>
+    <!-- SEO #4: Hidden H1 for Structure -->
+    <h1 class="sr-only">Daily Vegan Recipes</h1>
+
     <!-- Logo -->
     <a href="index.html" class="logo-link" title="Refresh">
         <img src="default.jpg" alt="Daily Vegan Recipes" class="logo-img">
@@ -379,11 +401,10 @@
     </div>
 </header>
 
-<div id="gallery" class="gallery"></div>
+<main id="gallery" class="gallery"></main>
 <div id="loader">Loading more recipes...</div>
 
 <button id="scrollTopBtn" title="Go to top" aria-label="Scroll to top">
-    <!-- Changed width/height to 30 for perfect proportion in a 60px button -->
     <svg viewBox="0 0 24 24" width="30" height="30" fill="white">
         <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
     </svg>
@@ -409,7 +430,6 @@
     const PROTEIN_KEYWORDS = ['tofu', 'tempeh', 'seitan', 'tvp', 'lentil', 'bean', 'chickpea', 'edamame', 'soy', 'quinoa', 'peanut', 'meatball', 'burger', 'sausage', 'protein', 'falafel', 'hummus', 'nut roast'];
 
     // --- UTILS ---
-    // Debounce function to limit how often search runs
     function debounce(func, wait) {
         let timeout;
         return function(...args) {
@@ -419,11 +439,18 @@
     }
 
     // --- INITIALIZATION ---
-    fetch('data.json')
+    // Risk #1: Add timestamp to prevent browser caching
+    fetch('data.json?v=' + new Date().getTime())
         .then(response => response.json())
         .then(data => {
             allRecipes = data;
             currentContext = allRecipes; 
+            
+            // SEO #3: Dynamic Title
+            updatePageTitle();
+            // SEO #5: Inject JSON-LD
+            injectJSONLD(allRecipes);
+
             renderNextBatch();           
             setupInfiniteScroll();       
         })
@@ -431,6 +458,38 @@
             console.error('Error loading data:', error);
             document.getElementById('gallery').innerHTML = '<p style="text-align:center">Could not load recipes.</p>';
         });
+
+    // --- SEO FUNCTIONS ---
+    function updatePageTitle() {
+        const now = new Date();
+        const newCount = allRecipes.filter(r => (now - new Date(r.date)) / (1000 * 3600) < 28).length;
+        if (newCount > 0) {
+            document.title = `(${newCount} New) Daily Vegan Recipes`;
+        }
+    }
+
+    function injectJSONLD(recipes) {
+        const schema = {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "Daily Vegan Recipes",
+            "description": "Daily recipes from the top vegan bloggers.",
+            "url": "https://findvegdish.com",
+            "mainEntity": {
+                "@type": "ItemList",
+                "itemListElement": recipes.slice(0, 20).map((r, i) => ({
+                    "@type": "ListItem",
+                    "position": i + 1,
+                    "url": r.link,
+                    "name": r.title
+                }))
+            }
+        };
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.text = JSON.stringify(schema);
+        document.head.appendChild(script);
+    }
 
     // --- RENDER LOGIC (BATCHED) ---
     function renderNextBatch() {
@@ -466,21 +525,30 @@
     }
 
     function createCard(recipe) {
-        const card = document.createElement('a');
+        // SEO #1: Use <article> for the card wrapper
+        const card = document.createElement('article');
         card.className = 'card';
-        card.href = recipe.link;
-        card.target = "_blank"; 
-        card.rel = "noopener noreferrer"; // Security best practice
+
+        // Inner anchor for linking content
+        const link = document.createElement('a');
+        link.className = 'card-link';
+        link.href = recipe.link;
+        link.target = "_blank"; 
+        link.rel = "noopener noreferrer"; // Security best practice
 
         const img = document.createElement('img');
         img.src = recipe.image;
         img.alt = recipe.title; // Accessibility
+        img.loading = "lazy"; 
+        
+        // Risk #3: Prevent Image Hotlink Blocking
+        img.referrerPolicy = "no-referrer";
+
         // Fix infinite loop if icon.jpg also fails
         img.onerror = function() { 
             this.onerror = null; 
             this.src = 'icon.jpg'; 
         };
-        img.loading = "lazy"; 
 
         const info = document.createElement('div');
         info.className = 'info';
@@ -494,13 +562,9 @@
 
         const recipeDate = new Date(recipe.date);
         const now = new Date();
-        
-        // Calculate hours instead of days (1000ms * 3600s = 1 hour)
         const hoursOld = (now - recipeDate) / (1000 * 3600);
         
         let badgeHTML = '';
-
-        // Trigger the badge if the recipe is less than 26 hours old
         if (hoursOld < 28) {
             badgeHTML += '<span class="fresh-badge">New Today</span>';
         }
@@ -526,16 +590,19 @@
             <div class="blogger">by ${recipe.blog_name}</div>
         `;
 
-        // Changed div to button for accessibility
+        // Share Button (Outside the <a> tag but inside <article>)
         const shareBtn = document.createElement('button');
         shareBtn.className = 'share-btn';
         shareBtn.ariaLabel = "Share Recipe";
         shareBtn.innerHTML = `<svg viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/></svg>`;
         shareBtn.onclick = (e) => shareRecipe(e, recipe.title, recipe.link);
 
+        // Assembly
+        link.appendChild(img);
+        link.appendChild(info);
         card.appendChild(shareBtn);
-        card.appendChild(img);
-        card.appendChild(info);
+        card.appendChild(link);
+        
         return card;
     }
 
@@ -564,21 +631,17 @@
         currentContext = newContext;
         renderedCount = 0;
         document.getElementById('gallery').innerHTML = '';
-        window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top on filter change
+        window.scrollTo({ top: 0, behavior: 'smooth' });
         renderNextBatch();
     }
 
     // --- SHUFFLE FUNCTION ---
     function shuffleRecipes() {
         document.activeElement.blur(); 
-        
-        // Shuffle the master list in place so filters persist on random order
         for (let i = allRecipes.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [allRecipes[i], allRecipes[j]] = [allRecipes[j], allRecipes[i]];
         }
-
-        // Re-apply filters to the shuffled list
         applyFilters();
     }
 
@@ -586,17 +649,11 @@
     function applyFilters() {
         const term = document.getElementById('searchInput').value.toLowerCase();
         
-        // 1. SAVORY PHRASES containing "Sweet" 
-        // These are allowed in MEALS but strictly blocked in SWEETS
         const SAVORY_EXCEPTIONS = ['sweet potato', 'sweet and sour', 'sweet corn', 'sweet pea', 'sweet chili', 'sweet pepper'];
-        
-        // 2. MEAL WORDS allowed in Sweets
-        // We use "instant pot" instead of just "pot" to avoid matching "potato". Also rice krispies allowed
         const SWEET_EXCEPTIONS = ['rice', 'instant pot', 'crock pot', 'one pot', 'cup', 'butter', 'nut']; 
 
         let filtered = allRecipes;
 
-        // --- STEP 1: Search Bar ---
         if (term.length > 0) {
             filtered = filtered.filter(recipe => {
                 const title = recipe.title.toLowerCase();
@@ -609,48 +666,24 @@
             });
         }
 
-        // --- STEP 2: Category Logic ---
         if (activeCategory === 'meal') {
             filtered = filtered.filter(recipe => {
                 const t = recipe.title.toLowerCase();
-                
                 const hasMealKeyword = MEAL_KEYWORDS.some(k => t.includes(k));
                 const hasSweetKeyword = SWEET_KEYWORDS.some(k => t.includes(k));
-                
-                // Allow it if it's a known savory phrase (e.g. "Sweet Potato")
                 const isSavoryException = SAVORY_EXCEPTIONS.some(k => t.includes(k));
-                
-                // Exclude generic side dishes
                 const isSide = t.includes('sauce') || t.includes('dressing') || t.includes('side') || t.includes('treats');
-
-                // Logic: 
-                // 1. Must have Meal Keyword
-                // 2. If it has a Sweet Keyword, it MUST be in the Savory Exception list
-                // 3. Cannot be a Side
                 return hasMealKeyword && (!hasSweetKeyword || isSavoryException) && !isSide;
             });
 
         } else if (activeCategory === 'sweet') {
             filtered = filtered.filter(recipe => {
                 const t = recipe.title.toLowerCase();
-                
                 const hasSweetKeyword = SWEET_KEYWORDS.some(k => t.includes(k));
                 const hasMealKeyword = MEAL_KEYWORDS.some(k => t.includes(k));
-                
-                // Allow specific overlaps (like "Peanut Butter Cup")
                 const isSweetException = SWEET_EXCEPTIONS.some(k => t.includes(k));
-
-                // BLOCKERS:
-                // 1. Hard Savory Keywords (Spicy, Chili)
                 const isSavory = t.includes('spicy') || t.includes('chili') || t.includes("shepherd's") || t.includes('egg') || t.includes('burger');
-                // 2. Explicit Savory Phrases (Sweet Potato) - This fixes your issue
                 const isExplicitlySavory = SAVORY_EXCEPTIONS.some(k => t.includes(k));
-
-                // Logic:
-                // 1. Must have Sweet Keyword
-                // 2. If it has a Meal Keyword, it MUST be a Sweet Exception
-                // 3. CANNOT be explicitly savory (Sweet Potato)
-                // 4. CANNOT be generic savory (Spicy)
                 return hasSweetKeyword && (!hasMealKeyword || isSweetException) && !isExplicitlySavory && !isSavory;
             });
 
@@ -669,19 +702,16 @@
         resetView(filtered);
     }
 
-    // --- SEARCH DEBOUNCE ---
     const processSearchChange = debounce(() => {
         applyFilters();
     }, 300);
 
-    // --- CATEGORY TOGGLE ---
     function toggleCategory(category) {
         document.activeElement.blur(); 
         const mealsBtn = document.getElementById('mealsBtn');
         const sweetsBtn = document.getElementById('sweetsBtn');
         const proteinBtn = document.getElementById('proteinBtn');
 
-        // Clear active classes
         mealsBtn.classList.remove('active-filter');
         sweetsBtn.classList.remove('active-filter');
         proteinBtn.classList.remove('active-filter');
@@ -697,23 +727,21 @@
         applyFilters();
     }
 
-    // --- SEARCH INPUT LISTENERS ---
     const searchInput = document.getElementById('searchInput');
     const clearBtn = document.getElementById('clearBtn');
 
     searchInput.addEventListener('keyup', () => {
         clearBtn.style.display = searchInput.value.length > 0 ? 'block' : 'none';
-        processSearchChange(); // Using Debounce
+        processSearchChange();
     });
 
     clearBtn.addEventListener('click', () => {
         searchInput.value = '';
         searchInput.focus();
         clearBtn.style.display = 'none';
-        applyFilters(); // Instant clear (no debounce needed)
+        applyFilters();
     });
 
-    // --- INSTALL & SHARE ---
     let deferredPrompt;
     const installBtn = document.getElementById('installBtn');
     window.addEventListener('beforeinstallprompt', (e) => {
