@@ -1,15 +1,15 @@
 # Feed Health Report
-**Last Run:** 2026-02-05T10:22:03.498558
+**Last Run:** 2026-02-05T10:28:42.139708
 **Total Database Size:** 697
 **New Today:** 6
-**WFPB:** 133 (19%)
+**WFPB:** 119 (17%)
 **Easy:** 236 (33%)
 **Budget:** 141 (20%)
 **Average Latest Post:** 2025-12-19
 
 | Blog Name | URL | New | Total | WFPB | Easy | Budget | Latest | Status |
 |-----------|-----|-----|-------|------|------|--------|--------|--------|
-| Vegan Huggs | https://veganhuggs.com/?feed=rss2 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Error 403 |
+| Picky Eater | https://veggiesdontbite.com/feed/ | 0 | 0 | 0 | 0 | 0 | N/A | ❌ No Recipes |
 | A Virtual Vegan | https://avirtualvegan.com/feed/ | 0 | 9 | 0 | 1 | 0 | 2026-01-15 | ✅ OK |
 | Addicted to Dates | https://addictedtodates.com/category/recipes/feed/ | 0 | 10 | 0 | 1 | 2 | 2026-01-30 | ✅ OK |
 | Bianca Zapatka | https://biancazapatka.com/en/feed/ | 0 | 10 | 2 | 5 | 2 | 2025-12-11 | ✅ OK |
@@ -77,6 +77,6 @@
 | Vegan Yack Attack | https://veganyackattack.com/feed/ | 0 | 5 | 0 | 2 | 0 | 2025-07-27 | ✅ OK |
 | Vegan in the Freezer | https://veganinthefreezer.com/feed/ | 0 | 1 | 0 | 0 | 0 | 2026-01-25 | ✅ OK |
 | Veggiekins | https://veggiekinsblog.com/feed/ | 0 | 10 | 0 | 10 | 0 | 2026-01-29 | ✅ OK |
-| Veggies Don't Bite | https://veggiesdontbite.com/feed/ | 0 | 15 | 15 | 1 | 3 | 2026-02-05 | ✅ OK |
+| Veggies Don't Bite | Unknown | 0 | 15 | 1 | 1 | 3 | 2026-02-05 | Skipped/DB Only |
 | Watch Learn Eat | https://watchlearneat.com/feed/ | 0 | 10 | 1 | 10 | 2 | 2026-01-24 | ✅ OK |
 | ZardyPlants | https://zardyplants.com/feed/ | 0 | 10 | 10 | 7 | 3 | 2025-11-08 | ✅ OK |
