@@ -129,21 +129,19 @@
 
         .controls {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; 
     align-items: center;
     gap: 10px;
     flex-wrap: nowrap; 
     margin-top: 20px;
     overflow-x: auto;
-    padding: 0 20px 5px 20px; /* UPDATE PADDING */
-    box-sizing: border-box; /* ADD THIS */
-    width: 100%; /* ADD THIS to make box-sizing work as expected */
+    padding-bottom: 5px;
 }
-
-        @media (max-width: 500px) {
-    .controls { /* ADD THIS NEW RULE */
-        justify-content: flex-start;
+        @media (min-width: 501px) {
+    .controls {
+        justify-content: center;
     }
+}
     .controls .btn {
         padding: 8px 12px; 
         font-size: 12px;   
