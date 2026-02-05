@@ -128,26 +128,36 @@
         #clearBtn:hover { color: #555; }
 
         .controls {
-    display: flex;
-    justify-content: flex-start; 
-    align-items: center;
-    gap: 10px;
-    flex-wrap: nowrap; 
-    margin-top: 20px;
-    overflow-x: auto;
-    padding-bottom: 5px;
-}
+            display: flex;
+            justify-content: flex-start; /* FIX: Align left for mobile scrolling */
+            align-items: center;
+            gap: 10px;
+            flex-wrap: nowrap; 
+            margin-top: 20px;
+            overflow-x: auto;
+            padding: 0 20px 5px 20px; /* Add padding for aesthetics */
+            box-sizing: border-box;
+            width: 100%;
+        }
+        
+        /* FIX: Re-center on larger screens */
         @media (min-width: 501px) {
-    .controls {
-        justify-content: center;
-    }
-}
-    .controls .btn {
-        padding: 8px 12px; 
-        font-size: 12px;   
-        gap: 3px;          
-    }
-}
+            .controls {
+                justify-content: center;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .controls .btn {
+                padding: 8px 12px; 
+                font-size: 12px;   
+                gap: 3px;          
+            }
+        }
+
+        /* RESTORED: Your original button styles */
         .btn {
             padding: 10px 20px;
             border-radius: 25px;
