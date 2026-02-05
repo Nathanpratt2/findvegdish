@@ -32,7 +32,7 @@ TOP_BLOGGERS = [
     ("The Burger Dude", "https://theeburgerdude.com/feed/", []),
     ("The Vegan 8", "https://thevegan8.com/feed/", ["Easy", "Budget"]), 
     ("From My Bowl", "https://frommybowl.com/feed/", ["WFPB", "Easy"]),
-    ("Forks Over Knives", "https://www.forksoverknives.com/feed/", ["WFPB"]),
+    ("Forks Over Knives", "https://www.forksoverknives.com/recipes/feed/", ["WFPB"]),
     ("Rabbit and Wolves", "https://www.rabbitandwolves.com/feed/", []),
     ("Vegan Heaven", "https://veganheaven.org/feed/", []),
     ("The Hidden Veggies", "https://thehiddenveggies.com/feed/", ["Budget"]), 
