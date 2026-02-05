@@ -1,5 +1,27 @@
 [
   {
+    "blog_name": "Simple Vegan Blog",
+    "title": "Vegan Buffalo Wings",
+    "link": "https://simpleveganblog.com/vegan-buffalo-wings/",
+    "image": "https://simpleveganblog.com/wp-content/uploads/2026/01/vegan-buffalo-wings-social.jpg",
+    "date": "2026-02-05T14:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Monkey & Me Kitchen Adventures",
+    "title": "Vegan Portuguese Bean Soup",
+    "link": "https://monkeyandmekitchenadventures.com/vegan-portuguese-bean-soup/",
+    "image": "https://monkeyandmekitchenadventures.com/wp-content/uploads/2026/02/Vegan-Portuguese-Bean-Soup_01.jpg",
+    "date": "2026-02-05T13:50:50+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
     "blog_name": "The Foodie Takes Flight",
     "title": "Stir-Fried Rice Noodles with Gravy (Hor Fun)",
     "link": "https://thefoodietakesflight.com/stir-fried-rice-noodles-with-gravy/",
@@ -57,6 +79,15 @@
     "link": "https://www.gretchensveganbakery.com/butter-pecan-pound-cake/",
     "image": "https://www.gretchensveganbakery.com/wp-content/uploads/2025/07/Butter-Pecan-Pound-Cake-resized-2-cropped.jpg",
     "date": "2026-02-04T16:08:37+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gretchen's Vegan Bakery",
+    "title": "Chocolate Covered Cherry Cake",
+    "link": "https://www.gretchensveganbakery.com/chocolate-covered-cherry-cake/",
+    "image": "https://www.gretchensveganbakery.com/wp-content/uploads/2023/02/choco-cherries-reszied-2.jpg",
+    "date": "2026-02-04T14:05:10+00:00",
     "is_disruptor": false,
     "special_tags": []
   },
