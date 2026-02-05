@@ -1,15 +1,14 @@
 # Feed Health Report
-**Last Run:** 2026-02-04T19:55:55.416264
-**Total Database Size:** 682
-**New Today:** 7
-**WFPB:** 130 (19%)
-**Easy:** 228 (33%)
-**Budget:** 136 (19%)
+**Last Run:** 2026-02-05T08:05:51.876758
+**Total Database Size:** 685
+**New Today:** 9
+**WFPB:** 123 (17%)
+**Easy:** 233 (34%)
+**Budget:** 137 (20%)
 **Average Latest Post:** 2025-12-23
 
 | Blog Name | URL | New | Total | WFPB | Easy | Budget | Latest | Status |
 |-----------|-----|-----|-------|------|------|--------|--------|--------|
-| Fragrant Vanilla Cake | https://www.fragrantvanilla.com/feed/ | 0 | 10 | 0 | 0 | 0 | 2026-01-19 | ⚠️ Parsed 0 items |
 | A Virtual Vegan | https://avirtualvegan.com/feed/ | 0 | 9 | 0 | 1 | 0 | 2026-01-15 | ✅ OK |
 | Addicted to Dates | https://addictedtodates.com/category/recipes/feed/ | 0 | 10 | 0 | 1 | 2 | 2026-01-30 | ✅ OK |
 | Bianca Zapatka | https://biancazapatka.com/en/feed/ | 0 | 10 | 2 | 5 | 2 | 2025-12-11 | ✅ OK |
@@ -20,9 +19,10 @@
 | Eat Figs, Not Pigs | https://www.eatfigsnotpigs.com/feed/ | 0 | 11 | 1 | 2 | 1 | 2026-02-04 | ✅ OK |
 | Elavegan | https://elavegan.com/feed/ | 0 | 10 | 1 | 2 | 2 | 2026-01-27 | ✅ OK |
 | Flora & Vino | https://www.floraandvino.com/feed/ | 0 | 10 | 10 | 10 | 0 | 2026-01-31 | ✅ OK |
+| Fragrant Vanilla Cake | https://www.fragrantvanilla.com/feed/ | 0 | 10 | 0 | 0 | 0 | 2026-01-19 | ✅ OK |
 | From My Bowl | https://frommybowl.com/feed/ | 0 | 11 | 11 | 11 | 2 | 2026-02-03 | ✅ OK |
 | Full of Plants | https://fullofplants.com/feed/ | 0 | 6 | 0 | 0 | 0 | 2026-01-31 | ✅ OK |
-| Gretchen's Vegan Bakery | https://www.gretchensveganbakery.com/feed/ | 0 | 12 | 0 | 0 | 0 | 2026-02-03 | ✅ OK |
+| Gretchen's Vegan Bakery | https://www.gretchensveganbakery.com/feed/ | 0 | 12 | 0 | 1 | 0 | 2026-02-03 | ✅ OK |
 | Hot for Food | Unknown | 0 | 3 | 0 | 2 | 0 | 2025-05-28 | Skipped/DB Only |
 | It Doesn't Taste Like Chicken | https://itdoesnttastelikechicken.com/feed/ | 0 | 32 | 2 | 13 | 32 | 2026-02-04 | ✅ OK |
 | Jessica in the Kitchen | https://jessicainthekitchen.com/feed/ | 0 | 12 | 2 | 0 | 2 | 2026-02-03 | ✅ OK |
@@ -34,7 +34,7 @@
 | Monkey & Me Kitchen Adventures | https://monkeyandmekitchenadventures.com/feed/ | 0 | 10 | 10 | 0 | 2 | 2026-02-01 | ✅ OK |
 | My Darling Vegan | https://www.mydarlingvegan.com/feed/ | 0 | 13 | 1 | 3 | 2 | 2026-02-03 | ✅ OK |
 | My Pure Plants | https://mypureplants.com/feed/ | 0 | 12 | 1 | 12 | 4 | 2025-11-20 | ✅ OK |
-| Namely Marly | https://namelymarly.com/feed/ | 7 | 50 | 4 | 5 | 4 | 2026-01-30 | ✅ OK |
+| Namely Marly | https://namelymarly.com/feed/ | 6 | 50 | 4 | 6 | 4 | 2026-01-30 | ✅ OK |
 | Nora Cooks | https://www.noracooks.com/feed/ | 0 | 10 | 1 | 0 | 0 | 2026-02-02 | ✅ OK |
 | Nutriciously | https://nutriciously.com/feed/ | 0 | 2 | 2 | 2 | 0 | 2025-05-16 | ✅ OK |
 | Oh She Glows | https://ohsheglows.com/feed/ | 0 | 1 | 0 | 0 | 0 | 2025-09-03 | ✅ OK |
@@ -44,10 +44,10 @@
 | PlantYou | https://plantyou.com/feed/ | 0 | 10 | 10 | 2 | 2 | 2026-02-02 | ✅ OK |
 | Plantifully Based | https://plantifullybasedblog.com/feed/ | 0 | 9 | 1 | 2 | 0 | 2026-01-31 | ✅ OK |
 | Rabbit and Wolves | https://www.rabbitandwolves.com/feed/ | 0 | 10 | 0 | 1 | 1 | 2026-01-19 | ✅ OK |
-| Rainbow Nourishments | https://www.rainbownourishments.com/feed/ | 0 | 10 | 0 | 1 | 1 | 2025-11-23 | ✅ OK |
+| Rainbow Nourishments | https://www.rainbownourishments.com/feed/ | 0 | 10 | 0 | 2 | 1 | 2025-11-23 | ✅ OK |
 | Rainbow Plant Life | https://rainbowplantlife.com/feed/ | 0 | 10 | 2 | 0 | 2 | 2026-01-29 | ✅ OK |
 | Running on Real Food | https://runningonrealfood.com/feed/ | 0 | 10 | 10 | 0 | 2 | 2026-01-29 | ✅ OK |
-| Sarah's Vegan Kitchen | https://sarahsvegankitchen.com/feed/ | 0 | 15 | 0 | 0 | 3 | 2026-01-31 | ✅ OK |
+| Sarah's Vegan Kitchen | https://sarahsvegankitchen.com/feed/ | 1 | 16 | 0 | 0 | 3 | 2026-02-04 | ✅ OK |
 | Simple Vegan Blog | https://simpleveganblog.com/feed/ | 0 | 6 | 0 | 6 | 1 | 2026-02-03 | ✅ OK |
 | Strength and Sunshine | https://strengthandsunshine.com/feed/ | 0 | 10 | 2 | 10 | 2 | 2026-01-22 | ✅ OK |
 | Sweet Potato Soul | https://sweetpotatosoul.com/feed/ | 0 | 10 | 0 | 1 | 2 | 2026-01-04 | ✅ OK |
@@ -64,16 +64,16 @@
 | The Little Blog of Vegan | https://www.thelittleblogofvegan.com/feed/ | 0 | 11 | 0 | 5 | 0 | 2026-02-03 | ✅ OK |
 | The Post-Punk Kitchen | https://www.theppk.com/feed/ | 0 | 7 | 1 | 0 | 1 | 2026-01-16 | ✅ OK |
 | The Stingy Vegan | https://thestingyvegan.com/feed/ | 0 | 10 | 0 | 10 | 10 | 2025-12-12 | ✅ OK |
-| The Vegan 8 | https://thevegan8.com/feed/ | 0 | 10 | 10 | 10 | 10 | 2025-10-25 | ✅ OK |
+| The Vegan 8 | https://thevegan8.com/feed/ | 0 | 10 | 1 | 10 | 10 | 2025-10-25 | ✅ OK |
 | The Viet Vegan | https://thevietvegan.com/feed/ | 0 | 2 | 1 | 0 | 0 | 2025-04-01 | ✅ OK |
 | Turnip Vegan | https://turnipvegan.com/blogs/news.atom | 0 | 7 | 0 | 0 | 0 | 2025-04-11 | ✅ OK |
 | Unconventional Baker | https://www.unconventionalbaker.com/feed/ | 0 | 10 | 0 | 0 | 0 | 2025-11-01 | ✅ OK |
 | VegNews | https://vegnews.com/feed | 0 | 21 | 1 | 4 | 1 | 2026-02-04 | ✅ OK |
 | Vegan Heaven | https://veganheaven.org/feed/ | 0 | 10 | 0 | 0 | 1 | 2026-01-06 | ✅ OK |
-| Vegan Richa | https://www.veganricha.com/feed/ | 0 | 11 | 0 | 2 | 2 | 2026-02-04 | ✅ OK |
+| Vegan Richa | https://www.veganricha.com/feed/ | 0 | 11 | 0 | 3 | 2 | 2026-02-04 | ✅ OK |
 | Vegan Yack Attack | https://veganyackattack.com/feed/ | 0 | 5 | 0 | 2 | 0 | 2025-07-27 | ✅ OK |
 | Vegan in the Freezer | https://veganinthefreezer.com/feed/ | 0 | 1 | 0 | 0 | 0 | 2026-01-25 | ✅ OK |
 | Veggiekins | https://veggiekinsblog.com/feed/ | 0 | 10 | 0 | 10 | 0 | 2026-01-29 | ✅ OK |
-| Veggies Don't Bite | https://veggiesdontbite.com/feed/ | 0 | 13 | 13 | 0 | 2 | 2026-02-04 | ✅ OK |
+| Veggies Don't Bite | https://veggiesdontbite.com/feed/ | 2 | 15 | 15 | 1 | 3 | 2026-02-05 | ✅ OK |
 | Watch Learn Eat | https://watchlearneat.com/feed/ | 0 | 10 | 1 | 10 | 2 | 2026-01-24 | ✅ OK |
 | ZardyPlants | https://zardyplants.com/feed/ | 0 | 10 | 10 | 7 | 3 | 2025-11-08 | ✅ OK |

@@ -1,5 +1,38 @@
 [
   {
+    "blog_name": "Veggies Don't Bite",
+    "title": "Chickpea And Potato Curry",
+    "link": "https://pickyeaterblog.com/chickpea-and-potato-curry/",
+    "image": "https://pickyeaterblog.com/wp-content/uploads/2019/10/vegetarian-chickpea-and-potato-curry.jpg",
+    "date": "2026-02-05T04:54:00+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "Budget",
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Sarah's Vegan Kitchen",
+    "title": "Garlic Herb Milk Bread Rolls",
+    "link": "https://sarahsvegankitchen.com/recipes/garlic-herb-rolls/",
+    "image": "https://sarahsvegankitchen.com/wp-content/uploads/2026/02/Garlic-Herb-Rolls-Still-1-scaled.jpg",
+    "date": "2026-02-04T23:35:12+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Veggies Don't Bite",
+    "title": "Easy Black Bean Tostadas",
+    "link": "https://pickyeaterblog.com/zucchini-black-bean-and-corn-tostadas/",
+    "image": "https://pickyeaterblog.com/wp-content/uploads/2021/04/black-bean-tostadas.jpg",
+    "date": "2026-02-04T20:00:00+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "Easy",
+      "WFPB"
+    ]
+  },
+  {
     "blog_name": "Eat Figs, Not Pigs",
     "title": "Mini Chili Cheese Dogs",
     "link": "https://www.eatfigsnotpigs.com/mini-chili-cheese-dogs/?utm_source=rss&utm_medium=rss&utm_campaign=mini-chili-cheese-dogs",
@@ -33,7 +66,9 @@
     "image": "https://www.veganricha.com/wp-content/uploads/2025/10/Strawberry-Chia-Pudding-5382.jpg",
     "date": "2026-02-04T12:00:00+00:00",
     "is_disruptor": false,
-    "special_tags": []
+    "special_tags": [
+      "Easy"
+    ]
   },
   {
     "blog_name": "VegNews",
@@ -554,7 +589,9 @@
     "image": "https://www.gretchensveganbakery.com/wp-content/uploads/2023/06/strawb-short-resized-4.jpg",
     "date": "2026-01-31T11:34:37+00:00",
     "is_disruptor": false,
-    "special_tags": []
+    "special_tags": [
+      "Easy"
+    ]
   },
   {
     "blog_name": "VegNews",
@@ -1007,8 +1044,8 @@
     "is_disruptor": true,
     "special_tags": [
       "Easy",
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -1177,8 +1214,8 @@
     "is_disruptor": false,
     "special_tags": [
       "Easy",
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -3100,8 +3137,8 @@
     "is_disruptor": false,
     "special_tags": [
       "Easy",
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -3463,8 +3500,8 @@
     "is_disruptor": true,
     "special_tags": [
       "Easy",
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -5005,8 +5042,8 @@
     "is_disruptor": true,
     "special_tags": [
       "Easy",
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -5259,8 +5296,7 @@
     "is_disruptor": false,
     "special_tags": [
       "Easy",
-      "Budget",
-      "WFPB"
+      "Budget"
     ]
   },
   {
@@ -5359,8 +5395,8 @@
     "is_disruptor": true,
     "special_tags": [
       "Easy",
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -5480,8 +5516,8 @@
     "is_disruptor": false,
     "special_tags": [
       "Easy",
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -5740,8 +5776,8 @@
     "is_disruptor": true,
     "special_tags": [
       "Easy",
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -5947,8 +5983,7 @@
     "is_disruptor": false,
     "special_tags": [
       "Easy",
-      "Budget",
-      "WFPB"
+      "Budget"
     ]
   },
   {
@@ -6246,8 +6281,8 @@
     "is_disruptor": true,
     "special_tags": [
       "Easy",
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -6275,7 +6310,9 @@
     "image": "https://www.rainbownourishments.com/wp-content/uploads/2025/07/vegan-strawberry-ice-cream-1.jpg",
     "date": "2025-07-25T04:53:12+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "Easy"
+    ]
   },
   {
     "blog_name": "Namely Marly",
@@ -6401,8 +6438,7 @@
     "is_disruptor": false,
     "special_tags": [
       "Easy",
-      "Budget",
-      "WFPB"
+      "Budget"
     ]
   },
   {
@@ -6489,7 +6525,9 @@
     "image": "https://namelymarly.com/wp-content/uploads/2020/07/Strawberry_Cake_08-edit-web.jpg",
     "date": "2025-05-30T17:48:46+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "Easy"
+    ]
   },
   {
     "blog_name": "Unconventional Baker",
@@ -6531,8 +6569,7 @@
     "is_disruptor": false,
     "special_tags": [
       "Easy",
-      "Budget",
-      "WFPB"
+      "Budget"
     ]
   },
   {
@@ -6714,8 +6751,7 @@
     "is_disruptor": false,
     "special_tags": [
       "Easy",
-      "Budget",
-      "WFPB"
+      "Budget"
     ]
   },
   {
@@ -6857,8 +6893,7 @@
     "is_disruptor": false,
     "special_tags": [
       "Easy",
-      "Budget",
-      "WFPB"
+      "Budget"
     ]
   },
   {
@@ -6890,8 +6925,7 @@
     "is_disruptor": false,
     "special_tags": [
       "Easy",
-      "Budget",
-      "WFPB"
+      "Budget"
     ]
   },
   {
@@ -6903,8 +6937,7 @@
     "is_disruptor": false,
     "special_tags": [
       "Easy",
-      "Budget",
-      "WFPB"
+      "Budget"
     ]
   },
   {
@@ -6952,8 +6985,7 @@
     "is_disruptor": false,
     "special_tags": [
       "Easy",
-      "Budget",
-      "WFPB"
+      "Budget"
     ]
   },
   {
