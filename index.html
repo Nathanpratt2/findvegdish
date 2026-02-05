@@ -134,18 +134,22 @@
     gap: 10px;
     flex-wrap: nowrap; 
     margin-top: 20px;
-    overflow-x: auto; /* ADD THIS LINE: Allows horizontal scrolling when needed */
-    padding-bottom: 5px; /* ADD THIS LINE: Adds a little space for the scrollbar if visible */
+    overflow-x: auto;
+    padding: 0 20px 5px 20px; /* UPDATE PADDING */
+    box-sizing: border-box; /* ADD THIS */
+    width: 100%; /* ADD THIS to make box-sizing work as expected */
 }
 
         @media (max-width: 500px) {
-            .controls .btn {
-                padding: 8px 12px; 
-                font-size: 12px;   
-                gap: 3px;          
-            }
-        }
-
+    .controls { /* ADD THIS NEW RULE */
+        justify-content: flex-start;
+    }
+    .controls .btn {
+        padding: 8px 12px; 
+        font-size: 12px;   
+        gap: 3px;          
+    }
+}
         .btn {
             padding: 10px 20px;
             border-radius: 25px;
