@@ -46,7 +46,7 @@
 
         header {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
         
         .logo-link {
@@ -78,14 +78,14 @@
             margin: -5px 0 15px 0; 
         }
 
-        /* Container for Shuffle + Search */
+        /* --- SEARCH ROW STYLES --- */
         .search-row {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 10px;
             width: 100%;
-            max-width: 460px;
+            max-width: 480px;
             margin: 10px auto;
         }
 
@@ -132,52 +132,70 @@
         }
         #clearBtn:hover { color: #555; }
 
-        /* Shuffle Icon Button */
+        /* --- DESIGN UPDATE: SHUFFLE BUTTON --- */
         #shuffleIconBtn {
             width: 48px;
             height: 48px;
-            border-radius: 50%; /* Circle */
-            border: 1px solid #ddd;
-            background-color: #ecf7da;
-            color: #555;
+            border-radius: 50%;
+            background-color: white; /* Clean white background */
+            border: 2px solid #769F37; /* Nice solid brand border */
+            color: #769F37; /* Brand green icon */
             display: flex;
             justify-content: center;
             align-items: center;
             cursor: pointer;
-            font-size: 20px;
-            transition: transform 0.2s, background-color 0.2s;
+            font-size: 22px;
+            transition: all 0.2s ease;
             flex-shrink: 0;
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
         #shuffleIconBtn:active {
             transform: scale(0.95);
         }
-        #shuffleIconBtn:hover {
-            background-color: #dceec0;
+        /* Hover State: Invert colors for impact */
+        @media (hover: hover) {
+            #shuffleIconBtn:hover {
+                background-color: #769F37;
+                color: white;
+                box-shadow: 0 4px 8px rgba(118, 159, 55, 0.3);
+            }
         }
 
+        /* --- DESIGN UPDATE: ONE LINE SCROLLING CONTROLS --- */
         .controls {
             display: flex;
-            justify-content: center; 
             align-items: center;
-            gap: 10px;
-            flex-wrap: wrap; 
+            gap: 10px; /* Tighter gap to help fit on one line */
             margin-top: 15px;
             width: 100%;
+            
+            /* Critical for "Squeeze" and Mobile Scroll */
+            flex-wrap: nowrap; 
+            overflow-x: auto; 
+            -webkit-overflow-scrolling: touch; /* Smooth scroll on iOS */
+            
+            /* Visual polish for scrolling */
+            padding-bottom: 5px; /* Space for scrollbar if visible */
+            scrollbar-width: none; /* Hide scrollbar Firefox */
+            
+            /* Default to start so scrolling works on small screens */
+            justify-content: flex-start;
+            padding-left: 5px; /* Tiny buffer on left */
+            padding-right: 5px;
         }
         
-        /* Mobile horizontal scroll for controls if screen is very small */
-        @media (max-width: 380px) {
+        /* Hide scrollbar Webkit */
+        .controls::-webkit-scrollbar { display: none; }
+
+        /* On larger screens, re-center them since they will fit */
+        @media (min-width: 550px) {
             .controls {
-                justify-content: flex-start;
-                overflow-x: auto;
-                padding-bottom: 5px;
-                flex-wrap: nowrap;
+                justify-content: center;
             }
         }
 
         .btn {
-            padding: 10px 20px;
+            padding: 10px 18px; /* Slightly reduced side padding for fit */
             border-radius: 25px;
             border: none;
             font-family: 'Poppins', sans-serif;
@@ -187,12 +205,15 @@
             transition: transform 0.1s, background 0.2s, color 0.2s;
             display: flex;
             align-items: center;
-            gap: 5px;
+            gap: 6px;
             color: #555;
             background-color: white;
             border: 1px solid #ddd;
             -webkit-tap-highlight-color: transparent; 
-            white-space: nowrap;
+            
+            /* Prevent buttons from squishing or wrapping text */
+            white-space: nowrap; 
+            flex-shrink: 0; 
         }
         @media (hover: hover) {
                .btn:hover { background-color: #f0f0f0; }
@@ -221,7 +242,7 @@
             gap: 20px;
             max-width: 1400px;
             margin: 0 auto;
-            margin-top: 30px;
+            margin-top: 25px;
             grid-auto-flow: row; 
         }
         
@@ -407,7 +428,16 @@
     
     <!-- Search Row: Shuffle Left, Search Right -->
     <div class="search-row">
-        <button id="shuffleIconBtn" onclick="shuffleRecipes()" title="Shuffle Recipes">🔀</button>
+        <!-- New Design: White background, green border/icon -->
+        <button id="shuffleIconBtn" onclick="shuffleRecipes()" title="Shuffle Recipes">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 3 21 3 21 8"></polyline>
+                <line x1="4" y1="20" x2="21" y2="3"></line>
+                <polyline points="21 16 21 21 16 21"></polyline>
+                <line x1="15" y1="15" x2="21" y2="21"></line>
+                <line x1="4" y1="4" x2="9" y2="9"></line>
+            </svg>
+        </button>
         
         <div class="search-wrapper">
             <label for="searchInput" style="display:none;">Search Recipes</label>
@@ -416,7 +446,7 @@
         </div>
     </div>
 
-    <!-- Filter Buttons -->
+    <!-- Filter Buttons (Now optimized for one-line squeeze) -->
     <div class="controls">
         <button class="btn" id="mealsBtn" onclick="toggleType('meal')">🍝 Meals</button>
         <button class="btn" id="sweetsBtn" onclick="toggleType('sweet')">🍪 Sweets</button>
