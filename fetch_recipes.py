@@ -19,9 +19,7 @@ TOP_BLOGGERS = [
     ("Rainbow Plant Life", "https://rainbowplantlife.com/feed/", []),
     ("Vegan Richa", "https://www.veganricha.com/feed/", []),
     ("It Doesn't Taste Like Chicken", "https://itdoesnttastelikechicken.com/feed/", ["Budget"]), 
-    ("Loving It Vegan", "https://lovingitvegan.com/feed/", []),
     ("Elavegan", "https://elavegan.com/feed/", []),
-    ("Oh She Glows", "https://ohsheglows.com/feed/", []),
     ("The First Mess", "https://thefirstmess.com/feed/", []),
     ("Sweet Potato Soul", "https://sweetpotatosoul.com/feed/", []),
     ("Simple Vegan Blog", "https://simpleveganblog.com/feed/", ["Easy"]),
@@ -57,7 +55,6 @@ DISRUPTORS = [
     ("Unconventional Baker", "https://www.unconventionalbaker.com/feed/", []),
     ("Fragrant Vanilla Cake", "https://www.fragrantvanilla.com/feed/", []),
     ("Plantifully Based", "https://plantifullybasedblog.com/feed/", []),
-    ("Nutriciously", "https://nutriciously.com/feed/", ["WFPB", "Easy"]),
     ("Cadry's Kitchen", "https://cadryskitchen.com/feed/", ["Easy"]),
     ("Dr. Vegan", "https://drveganblog.com/feed/", ["Easy"]),
     ("Veggies Don't Bite", "https://veggiesdontbite.com/feed/", []),
@@ -66,7 +63,6 @@ DISRUPTORS = [
     ("The Stingy Vegan", "https://thestingyvegan.com/feed/", ["Easy", "Budget"]), 
     ("Okonomi Kitchen", "https://okonomikitchen.com/feed/", []),
     ("The Foodie Takes Flight", "https://thefoodietakesflight.com/feed/", ["Easy"]),
-    ("The Viet Vegan", "https://thevietvegan.com/feed/", []),
     ("Vegan Yack Attack", "https://veganyackattack.com/feed/", []),
     ("The Conscious Plant Kitchen", "https://www.theconsciousplantkitchen.com/feed/", ["WFPB"]),
     ("Choosing Chia", "https://choosingchia.com/feed/", ["Easy"]),
@@ -74,7 +70,6 @@ DISRUPTORS = [
     ("Namely Marly", "https://namelymarly.com/feed/", []),
     ("The Post-Punk Kitchen", "https://www.theppk.com/feed/", []),
     ("The Little Blog of Vegan", "https://www.thelittleblogofvegan.com/feed/", []),
-    ("Let's Be Vegan", "https://letsbevegan.com/blog-feed.xml", []),
     ("Eat Figs, Not Pigs", "https://www.eatfigsnotpigs.com/feed/", []),
     ("The Banana Diaries", "https://thebananadiaries.com/feed/", []),
     ("Plant Power Couple", "https://www.plantpowercouple.com/feed/", ["Easy"]),
@@ -82,9 +77,10 @@ DISRUPTORS = [
     ("Monkey & Me Kitchen Adventures", "https://monkeyandmekitchenadventures.com/feed/", ["WFPB"]),
     ("Veggiekins", "https://veggiekinsblog.com/feed/", ["Easy"]),
     ("My Pure Plants", "https://mypureplants.com/feed/", ["Easy"]),
-    ("The Cheeky Chickpea", "https://thecheekychickpea.com/feed/", ["Easy"]),
     ("ZardyPlants", "https://zardyplants.com/feed/", ["WFPB"]),
 ]
+
+# Blogs excluded due to stale (stopped posting) content: Hot for Food, Let's Be Vegan, Loving It Vegan, Nutriciously, Oh She Glows, Cheeky Chickpea, Viet Vegan
 
 ALL_FEEDS = TOP_BLOGGERS + DISRUPTORS
 
