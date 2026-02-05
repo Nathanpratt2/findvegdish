@@ -756,7 +756,9 @@
 
     // 3. Master Filter Function
     function applyFilters() {
-        const term = document.getElementById('searchInput').value.toLowerCase();
+        // UPDATE 1: Normalize input (lowercase + replace dashes with spaces)
+        const rawInput = document.getElementById('searchInput').value;
+        const term = rawInput.toLowerCase().replace(/-/g, ' '); 
         
         // Keyword lists for logic
         const SAVORY_EXCEPTIONS = ['sweet potato', 'sweet and sour', 'sweet corn', 'sweet pea', 'sweet chili', 'sweet pepper'];
@@ -767,19 +769,25 @@
         // A. Search Bar Logic (Text or Protein Mode)
         if (term.length > 0) {
             filtered = filtered.filter(recipe => {
-                // SPECIAL CASE: "Protein" search
+                // SPECIAL CASE: "Protein" search (keep looking at raw title for specific keywords if needed, or normalized)
                 if (term === 'protein') {
                     const t = recipe.title.toLowerCase();
                     return PROTEIN_KEYWORDS.some(k => t.includes(k));
                 }
 
-                // Standard Search
-                const title = recipe.title.toLowerCase();
-                const blogger = recipe.blog_name.toLowerCase();
+                // UPDATE 2: Normalize the data fields (replace dashes with spaces)
+                const title = recipe.title.toLowerCase().replace(/-/g, ' ');
+                const blogger = recipe.blog_name.toLowerCase().replace(/-/g, ' ');
+                
                 let hasMatchingTag = false;
                 if (recipe.special_tags && Array.isArray(recipe.special_tags)) {
-                    hasMatchingTag = recipe.special_tags.some(tag => tag.toLowerCase().includes(term));
+                    // UPDATE 3: Normalize tags as well
+                    hasMatchingTag = recipe.special_tags.some(tag => 
+                        tag.toLowerCase().replace(/-/g, ' ').includes(term)
+                    );
                 }
+                
+                // Now "one pot" matches "one-pot", "gluten free" matches "gluten-free", etc.
                 return title.includes(term) || blogger.includes(term) || hasMatchingTag;
             });
         }
@@ -822,7 +830,7 @@
                         if (!isGF) return false;
                     } 
                     else {
-                        // Standard tag check (WFPB, Budget, Easy) These are the tags that are actually tagged when you scroll through
+                        // Standard tag check
                         if (!recipe.special_tags || !recipe.special_tags.includes(tag)) return false;
                     }
                 }
