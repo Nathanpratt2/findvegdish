@@ -1,18 +1,17 @@
 # Feed Health Report
-**Last Run:** 2026-02-05T10:39:49.658293
+**Last Run:** 2026-02-05T11:05:01.131452
 **Total Blogs:** 69
 **Avg Recipes per Blog:** 10.1
 **Active Blogs (Last 90d):** 58 / 69
-**Total Database Size:** 697
-**New Today:** 6
-**WFPB:** 119 (17%)
+**Total Database Size:** 700
+**New Today:** 9
+**WFPB:** 122 (17%)
 **Easy:** 236 (33%)
 **Budget:** 141 (20%)
 **Average Latest Post:** 2025-12-19
 
 | Blog Name | URL | New | Total | WFPB | Easy | Budget | Latest | Status |
 |-----------|-----|-----|-------|------|------|--------|--------|--------|
-| Picky Eater | https://veggiesdontbite.com/feed/ | 0 | 0 | 0 | 0 | 0 | N/A | ❌ No Recipes |
 | Hot for Food | Unknown | 0 | 3 | 0 | 2 | 0 | 2025-05-28 | ⚠️ Stale (>90d) Skipped/DB Only |
 | Let's Be Vegan | https://letsbevegan.com/blog-feed.xml | 0 | 1 | 0 | 0 | 0 | 2025-03-02 | ⚠️ Stale (>90d)  |
 | Loving It Vegan | https://lovingitvegan.com/feed/ | 0 | 4 | 0 | 0 | 0 | 2025-06-12 | ⚠️ Stale (>90d)  |
@@ -34,7 +33,7 @@
 | Eat Figs, Not Pigs | https://www.eatfigsnotpigs.com/feed/ | 0 | 11 | 1 | 2 | 1 | 2026-02-04 | ✅ OK |
 | Elavegan | https://elavegan.com/feed/ | 0 | 10 | 1 | 2 | 2 | 2026-01-27 | ✅ OK |
 | Flora & Vino | https://www.floraandvino.com/feed/ | 0 | 10 | 10 | 10 | 0 | 2026-01-31 | ✅ OK |
-| Forks Over Knives | https://www.forksoverknives.com/feed/ | 0 | 10 | 10 | 2 | 3 | 2026-02-04 | ✅ OK |
+| Forks Over Knives | https://www.forksoverknives.com/recipes/feed/ | 3 | 13 | 13 | 2 | 3 | 2026-02-04 | ✅ OK |
 | Fragrant Vanilla Cake | https://www.fragrantvanilla.com/feed/ | 0 | 10 | 0 | 0 | 0 | 2026-01-19 | ✅ OK |
 | From My Bowl | https://frommybowl.com/feed/ | 0 | 11 | 11 | 11 | 2 | 2026-02-03 | ✅ OK |
 | Full of Plants | https://fullofplants.com/feed/ | 0 | 6 | 0 | 0 | 0 | 2026-01-31 | ✅ OK |
@@ -80,6 +79,6 @@
 | Vegan Richa | https://www.veganricha.com/feed/ | 0 | 11 | 0 | 3 | 2 | 2026-02-04 | ✅ OK |
 | Vegan in the Freezer | https://veganinthefreezer.com/feed/ | 0 | 1 | 0 | 0 | 0 | 2026-01-25 | ✅ OK |
 | Veggiekins | https://veggiekinsblog.com/feed/ | 0 | 10 | 0 | 10 | 0 | 2026-01-29 | ✅ OK |
-| Veggies Don't Bite | Unknown | 0 | 15 | 1 | 1 | 3 | 2026-02-05 | Skipped/DB Only |
+| Veggies Don't Bite | https://veggiesdontbite.com/feed/ | 0 | 15 | 1 | 1 | 3 | 2026-02-05 | ✅ OK |
 | Watch Learn Eat | https://watchlearneat.com/feed/ | 0 | 10 | 1 | 10 | 2 | 2026-01-24 | ✅ OK |
 | ZardyPlants | https://zardyplants.com/feed/ | 0 | 10 | 10 | 7 | 3 | 2025-11-08 | ✅ OK |
