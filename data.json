@@ -1,5 +1,17 @@
 [
   {
+    "blog_name": "The Foodie Takes Flight",
+    "title": "Stir-Fried Rice Noodles with Gravy (Hor Fun)",
+    "link": "https://thefoodietakesflight.com/stir-fried-rice-noodles-with-gravy/",
+    "image": "https://thefoodietakesflight.com/wp-content/uploads/2026/01/Hofan-Rice-Noodles-with-Vegetables-and-Gravy-2-of-18-768x1024.jpg",
+    "date": "2026-02-05T06:59:28+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "Easy",
+      "Budget"
+    ]
+  },
+  {
     "blog_name": "Veggies Don't Bite",
     "title": "Chickpea And Potato Curry",
     "link": "https://pickyeaterblog.com/chickpea-and-potato-curry/",
@@ -29,6 +41,17 @@
     "is_disruptor": true,
     "special_tags": [
       "Easy",
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Forks Over Knives",
+    "title": "Eating Plant-Based for Your Heart? These Are the Best Lab Tests to Track Your Progress",
+    "link": "https://www.forksoverknives.com/wellness/best-blood-tests-for-heart-disease-plant-based-diet/",
+    "image": "https://www.forksoverknives.com/uploads/2026/02/doctor-reviews-lab-tests-with-heart-disease-patient.jpg?auto=webp",
+    "date": "2026-02-04T19:58:46+00:00",
+    "is_disruptor": false,
+    "special_tags": [
       "WFPB"
     ]
   },
@@ -191,6 +214,17 @@
     "is_disruptor": false,
     "special_tags": [
       "Easy"
+    ]
+  },
+  {
+    "blog_name": "Forks Over Knives",
+    "title": "Jammy Blueberry Quinoa Pancakes",
+    "link": "https://www.forksoverknives.com/recipes/vegan-breakfast/jammy-blueberry-quinoa-pancakes/",
+    "image": "https://www.forksoverknives.com/uploads/2026/01/Jammy-Blueberry-Quinoa-Pancakes.webp?auto=webp",
+    "date": "2026-02-03T18:17:44+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
     ]
   },
   {
@@ -859,6 +893,17 @@
     "special_tags": []
   },
   {
+    "blog_name": "Forks Over Knives",
+    "title": "Tempeh BLT with Vegan Mayo",
+    "link": "https://www.forksoverknives.com/recipes/vegan-burgers-wraps/tempeh-blt-with-vegan-mayo/",
+    "image": "https://www.forksoverknives.com/uploads/2026/01/TEmpeh-BLT.webp?auto=webp",
+    "date": "2026-01-29T20:06:49+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
     "blog_name": "The Conscious Plant Kitchen",
     "title": "Protein Cookies Without Protein Powder (8g Protein)",
     "link": "https://www.theconsciousplantkitchen.com/protein-cookies-without-protein-powder/",
@@ -1044,8 +1089,8 @@
     "is_disruptor": true,
     "special_tags": [
       "Easy",
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -1065,8 +1110,8 @@
     "date": "2026-01-28T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -1214,8 +1259,8 @@
     "is_disruptor": false,
     "special_tags": [
       "Easy",
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -1275,6 +1320,17 @@
     "date": "2026-01-26T20:39:24+00:00",
     "is_disruptor": false,
     "special_tags": []
+  },
+  {
+    "blog_name": "Forks Over Knives",
+    "title": "Gluten-Free Vegan Pizza",
+    "link": "https://www.forksoverknives.com/recipes/vegan-baked-stuffed/gluten-free-vegan-pizza/",
+    "image": "https://www.forksoverknives.com/uploads/2026/01/heart-shaped-pizza-wordpress.webp?auto=webp",
+    "date": "2026-01-26T19:54:47+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
   },
   {
     "blog_name": "Eat Figs, Not Pigs",
@@ -1413,8 +1469,8 @@
     "date": "2026-01-24T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -1523,6 +1579,17 @@
     "image": "https://www.theconsciousplantkitchen.com/wp-content/uploads/2025/12/Corn-Biscuits-1.jpg",
     "date": "2026-01-22T20:36:28+00:00",
     "is_disruptor": true,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Forks Over Knives",
+    "title": "At 28 Years Old, I Was on Nearly 10 Medications. Then I Changed My Diet",
+    "link": "https://www.forksoverknives.com/success-stories/i-was-on-nearly-10-medications-at-28-then-went-wfpb/",
+    "image": "https://www.forksoverknives.com/uploads/2026/01/Sawani-Soman-before-and-after-adopting-a-wfpb-lifestyle.webp?auto=webp",
+    "date": "2026-01-22T20:02:00+00:00",
+    "is_disruptor": false,
     "special_tags": [
       "WFPB"
     ]
@@ -1638,6 +1705,17 @@
     ]
   },
   {
+    "blog_name": "Forks Over Knives",
+    "title": "Whole Grain French Toast",
+    "link": "https://www.forksoverknives.com/recipes/vegan-breakfast/whole-grain-french-toast/",
+    "image": "https://www.forksoverknives.com/uploads/2025/12/whole-grain-french-toast.webp?auto=webp",
+    "date": "2026-01-21T20:36:55+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
     "blog_name": "PlantYou",
     "title": "Tofu Cream",
     "link": "https://plantyou.com/tofu-cream/",
@@ -1687,8 +1765,8 @@
     "date": "2026-01-21T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -1732,6 +1810,19 @@
     "is_disruptor": false,
     "special_tags": [
       "Easy"
+    ]
+  },
+  {
+    "blog_name": "Forks Over Knives",
+    "title": "Quick Curried Chickpeas and Potatoes",
+    "link": "https://www.forksoverknives.com/recipes/quick-curried-chickpeas-and-potatoes/",
+    "image": "https://www.forksoverknives.com/uploads/2025/12/Chicks-Spuds.webp?auto=webp",
+    "date": "2026-01-20T13:29:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy",
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -2010,6 +2101,19 @@
     ]
   },
   {
+    "blog_name": "Forks Over Knives",
+    "title": "Easy Coleslaw with Red Beans and Rosemary",
+    "link": "https://www.forksoverknives.com/recipes/vegan-salads-sides/easy-coleslaw-with-red-bean-and-rosemary/",
+    "image": "https://www.forksoverknives.com/uploads/2026/01/Rosemary-and-Red-Bean-Slaw.webp?auto=webp",
+    "date": "2026-01-16T20:07:56+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy",
+      "Budget",
+      "WFPB"
+    ]
+  },
+  {
     "blog_name": "Eat Figs, Not Pigs",
     "title": "Black Bean Taquitos",
     "link": "https://www.eatfigsnotpigs.com/black-bean-taquitos/?utm_source=rss&utm_medium=rss&utm_campaign=black-bean-taquitos",
@@ -2282,8 +2386,8 @@
     "date": "2026-01-14T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -2338,6 +2442,18 @@
     ]
   },
   {
+    "blog_name": "Forks Over Knives",
+    "title": "Are Beans and Whole Grains Inflammatory Foods?",
+    "link": "https://www.forksoverknives.com/nutrition/are-beans-and-whole-grains-inflammatory-foods-excerpt-from-plant-powered-plus/",
+    "image": "https://www.forksoverknives.com/uploads/2026/01/Dr-Will-Bulsiewicz-and-his-new-book.webp?auto=webp",
+    "date": "2026-01-13T18:12:15+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget",
+      "WFPB"
+    ]
+  },
+  {
     "blog_name": "Namely Marly",
     "title": "Healthy Desserts and Treats",
     "link": "https://namelymarly.com/healthy-desserts-and-treats/",
@@ -2367,6 +2483,17 @@
     "date": "2026-01-13T12:46:19+00:00",
     "is_disruptor": true,
     "special_tags": []
+  },
+  {
+    "blog_name": "Forks Over Knives",
+    "title": "White Bean and Shaved Cabbage Salad with Orange Dressing",
+    "link": "https://www.forksoverknives.com/recipes/vegan-salads-sides/white-bean-and-shaved-cabbage-salad/",
+    "image": "https://www.forksoverknives.com/uploads/2025/12/Citrus-and-Shaved-Cabbage-Salad-Wordpress.jpg?auto=webp",
+    "date": "2026-01-12T22:00:05+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
   },
   {
     "blog_name": "My Darling Vegan",
@@ -2487,8 +2614,8 @@
     "date": "2026-01-11T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -2686,8 +2813,8 @@
     "date": "2026-01-07T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -2877,9 +3004,9 @@
     "date": "2026-01-04T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
+      "Easy",
       "Budget",
-      "WFPB",
-      "Easy"
+      "WFPB"
     ]
   },
   {
@@ -3137,8 +3264,8 @@
     "is_disruptor": false,
     "special_tags": [
       "Easy",
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -3218,8 +3345,8 @@
     "date": "2025-12-21T14:29:08+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -3500,8 +3627,8 @@
     "is_disruptor": true,
     "special_tags": [
       "Easy",
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -3553,8 +3680,8 @@
     "date": "2025-12-17T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -3927,8 +4054,8 @@
     "date": "2025-12-07T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -4819,8 +4946,8 @@
     "date": "2025-11-12T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -5018,8 +5145,8 @@
     "date": "2025-11-05T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -5042,8 +5169,8 @@
     "is_disruptor": true,
     "special_tags": [
       "Easy",
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -5117,8 +5244,8 @@
     "date": "2025-11-02T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -5218,8 +5345,8 @@
     "date": "2025-10-29T09:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -5395,8 +5522,8 @@
     "is_disruptor": true,
     "special_tags": [
       "Easy",
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -5516,8 +5643,8 @@
     "is_disruptor": false,
     "special_tags": [
       "Easy",
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -5776,8 +5903,8 @@
     "is_disruptor": true,
     "special_tags": [
       "Easy",
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -6281,8 +6408,8 @@
     "is_disruptor": true,
     "special_tags": [
       "Easy",
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -6939,6 +7066,15 @@
       "Easy",
       "Budget"
     ]
+  },
+  {
+    "blog_name": "Let's Be Vegan",
+    "title": "Where the hell have I been?",
+    "link": "https://www.letsbevegan.com/single-post/where-the-hell-have-i-been",
+    "image": "https://static.wixstatic.com/media/d1813e_72aa19a7e46043cc96e08eb91bbc63be~mv2.jpeg/v1/fill/w_1000,h_1000,al_c,q_85,usm_0.66_1.00_0.01/d1813e_72aa19a7e46043cc96e08eb91bbc63be~mv2.jpeg",
+    "date": "2025-03-02T22:20:17+00:00",
+    "is_disruptor": true,
+    "special_tags": []
   },
   {
     "blog_name": "Loving It Vegan",
