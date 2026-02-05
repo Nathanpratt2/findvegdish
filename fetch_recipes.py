@@ -291,6 +291,11 @@ with open('FEED_HEALTH.md', 'w') as f:
 
     total_new_today = sum(stats.get('new', 0) for stats in feed_stats.values())
     total_in_db = len(final_pruned_list)
+    
+    # New Stats
+    total_blogs_monitored = len(ALL_FEEDS)
+    avg_recipes_per_blog = round(total_in_db / total_blogs_monitored, 1) if total_blogs_monitored > 0 else 0
+    
     total_wfpb = sum(wfpb_counts.values())
     total_easy = sum(easy_counts.values())
     total_budget = sum(budget_counts.values())
@@ -306,6 +311,46 @@ with open('FEED_HEALTH.md', 'w') as f:
     else:
         avg_date = "N/A"
 
+    # Prepare rows first to calculate active blogs count
+    all_names = set(list(feed_stats.keys()) + list(total_counts.keys()))
+    report_rows = []
+    
+    three_months_ago = datetime.now() - timedelta(days=90)
+    stale_count = 0
+    
+    for name in all_names:
+        url = URL_MAP.get(name, "Unknown")
+        new = feed_stats.get(name, {}).get('new', 0)
+        status = feed_stats.get(name, {}).get('status', 'Skipped/DB Only')
+        total = total_counts.get(name, 0)
+        latest = latest_dates.get(name, "N/A")
+        
+        # Stale Check (Yellow Warning)
+        if latest != "N/A":
+            try:
+                latest_dt = parser.parse(latest)
+                if latest_dt.replace(tzinfo=None) < three_months_ago.replace(tzinfo=None):
+                    stale_count += 1
+                    # Only add Stale warning if it's not already broken
+                    if "❌" not in status:
+                        status = f"⚠️ Stale (>90d) {status.replace('✅ OK', '')}"
+            except:
+                pass
+        
+        wfpb_val = wfpb_counts.get(name, 0)
+        easy_val = easy_counts.get(name, 0)
+        budget_val = budget_counts.get(name, 0)
+        
+        if total == 0 and "✅" in status:
+            status = "❌ No Recipes"
+            
+        report_rows.append((name, url, new, total, wfpb_val, easy_val, budget_val, latest, status))
+
+    active_blogs_count = total_blogs_monitored - stale_count
+
+    f.write(f"**Total Blogs:** {total_blogs_monitored}\n")
+    f.write(f"**Avg Recipes per Blog:** {avg_recipes_per_blog}\n")
+    f.write(f"**Active Blogs (Last 90d):** {active_blogs_count} / {total_blogs_monitored}\n") # The useful stat
     f.write(f"**Total Database Size:** {total_in_db}\n")
     f.write(f"**New Today:** {total_new_today}\n")
     f.write(f"**WFPB:** {total_wfpb} ({wfpb_percent}%)\n")
@@ -316,30 +361,12 @@ with open('FEED_HEALTH.md', 'w') as f:
     f.write("| Blog Name | URL | New | Total | WFPB | Easy | Budget | Latest | Status |\n")
     f.write("|-----------|-----|-----|-------|------|------|--------|--------|--------|\n")
     
-    all_names = set(list(feed_stats.keys()) + list(total_counts.keys()))
-    
-    report_rows = []
-    for name in all_names:
-        url = URL_MAP.get(name, "Unknown")
-        new = feed_stats.get(name, {}).get('new', 0)
-        status = feed_stats.get(name, {}).get('status', 'Skipped/DB Only')
-        total = total_counts.get(name, 0)
-        latest = latest_dates.get(name, "N/A")
-        
-        wfpb_val = wfpb_counts.get(name, 0)
-        easy_val = easy_counts.get(name, 0)
-        budget_val = budget_counts.get(name, 0)
-        
-        if total == 0 and "✅" in status:
-            status = "❌ No Recipes"
-            
-        report_rows.append((name, url, new, total, wfpb_val, easy_val, budget_val, latest, status))
-    
     def sort_key(row):
         stat = row[8] 
-        priority = 2 
+        priority = 3 
         if '❌' in stat: priority = 0
-        elif '⚠️' in stat: priority = 1
+        elif 'Stale' in stat: priority = 1
+        elif '⚠️' in stat: priority = 2
         return (priority, row[0])
 
     report_rows.sort(key=sort_key)
