@@ -76,7 +76,6 @@ DISRUPTORS = [
     ("Rainbow Nourishments", "https://www.rainbownourishments.com/feed/", []),
     ("Monkey & Me Kitchen Adventures", "https://monkeyandmekitchenadventures.com/feed/", ["WFPB"]),
     ("Veggiekins", "https://veggiekinsblog.com/feed/", ["Easy"]),
-    ("My Pure Plants", "https://mypureplants.com/feed/", ["Easy"]),
     ("ZardyPlants", "https://zardyplants.com/feed/", ["WFPB"]),
 ]
 
