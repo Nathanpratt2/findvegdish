@@ -60,7 +60,7 @@ DISRUPTORS = [
     ("Nutriciously", "https://nutriciously.com/feed/", ["WFPB", "Easy"]),
     ("Cadry's Kitchen", "https://cadryskitchen.com/feed/", ["Easy"]),
     ("Dr. Vegan", "https://drveganblog.com/feed/", ["Easy"]),
-    ("Picky Eater", "https://veggiesdontbite.com/feed/", []),
+    ("Veggies Don't Bite", "https://veggiesdontbite.com/feed/", []),
     ("Watch Learn Eat", "https://watchlearneat.com/feed/", ["Easy"]),
     ("Strength and Sunshine", "https://strengthandsunshine.com/feed/", ["Easy"]),
     ("The Stingy Vegan", "https://thestingyvegan.com/feed/", ["Easy", "Budget"]), 
