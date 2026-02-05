@@ -1,10 +1,10 @@
 # Feed Health Report
-**Last Run:** 2026-02-05T12:04:42.920187
+**Last Run:** 2026-02-05T12:23:25.234901
 **Total Blogs:** 69
 **Avg Recipes per Blog:** 10.2
 **Active Blogs (Last 90d):** 58 / 69
 **Total Database Size:** 701
-**New Today:** 7
+**New Today:** 6
 **WFPB:** 122 (17%)
 **Easy:** 236 (33%)
 **Budget:** 141 (20%)
@@ -12,7 +12,6 @@
 
 | Blog Name | URL | New | Total | WFPB | Easy | Budget | Latest | Status |
 |-----------|-----|-----|-------|------|------|--------|--------|--------|
-| Fragrant Vanilla Cake | https://www.fragrantvanilla.com/feed/ | 0 | 10 | 0 | 0 | 0 | 2026-01-19 | ❌ Crash: ('Connection aborted |
 | Hot for Food | Unknown | 0 | 3 | 0 | 2 | 0 | 2025-05-28 | ⚠️ Stale (>90d) Skipped/DB Only |
 | Let's Be Vegan | https://letsbevegan.com/blog-feed.xml | 0 | 1 | 0 | 0 | 0 | 2025-03-02 | ⚠️ Stale (>90d)  |
 | Loving It Vegan | https://lovingitvegan.com/feed/ | 0 | 4 | 0 | 0 | 0 | 2025-06-12 | ⚠️ Stale (>90d)  |
@@ -34,10 +33,11 @@
 | Eat Figs, Not Pigs | https://www.eatfigsnotpigs.com/feed/ | 0 | 11 | 1 | 2 | 1 | 2026-02-04 | ✅ OK |
 | Elavegan | https://elavegan.com/feed/ | 0 | 10 | 1 | 2 | 2 | 2026-01-27 | ✅ OK |
 | Flora & Vino | https://www.floraandvino.com/feed/ | 0 | 10 | 10 | 10 | 0 | 2026-01-31 | ✅ OK |
-| Forks Over Knives | https://www.forksoverknives.com/recipes/feed/ | 0 | 13 | 13 | 2 | 3 | 2026-02-04 | ✅ OK |
+| Forks Over Knives | https://www.forksoverknives.com/all-recipes/feed/ | 0 | 13 | 13 | 2 | 3 | 2026-02-04 | ✅ OK |
+| Fragrant Vanilla Cake | https://www.fragrantvanilla.com/feed/ | 0 | 10 | 0 | 0 | 0 | 2026-01-19 | ✅ OK |
 | From My Bowl | https://frommybowl.com/feed/ | 0 | 11 | 11 | 11 | 2 | 2026-02-03 | ✅ OK |
 | Full of Plants | https://fullofplants.com/feed/ | 0 | 6 | 0 | 0 | 0 | 2026-01-31 | ✅ OK |
-| Gretchen's Vegan Bakery | https://www.gretchensveganbakery.com/feed/ | 1 | 13 | 0 | 1 | 0 | 2026-02-04 | ✅ OK |
+| Gretchen's Vegan Bakery | https://www.gretchensveganbakery.com/feed/ | 0 | 13 | 0 | 1 | 0 | 2026-02-04 | ✅ OK |
 | It Doesn't Taste Like Chicken | https://itdoesnttastelikechicken.com/feed/ | 0 | 32 | 2 | 13 | 32 | 2026-02-04 | ✅ OK |
 | Jessica in the Kitchen | https://jessicainthekitchen.com/feed/ | 0 | 12 | 2 | 0 | 2 | 2026-02-03 | ✅ OK |
 | Lazy Cat Kitchen | https://www.lazycatkitchen.com/feed/ | 0 | 10 | 0 | 0 | 2 | 2026-02-01 | ✅ OK |
