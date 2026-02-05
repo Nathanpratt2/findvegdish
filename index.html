@@ -580,50 +580,82 @@
     }
 
     // --- FILTER/SEARCH LOGIC ---
-    function applyFilters() {
-        const term = document.getElementById('searchInput').value.toLowerCase();
-        let filtered = allRecipes;
+function applyFilters() {
+    const term = document.getElementById('searchInput').value.toLowerCase();
+    
+    // Define exceptions: Sweet words that are okay in Meals
+    const SAVORY_EXCEPTIONS = ['sweet potato', 'sweet and sour', 'sweet corn', 'sweet pea'];
+    
+    // Define exceptions: Meal words that are okay in Sweets
+    const SWEET_EXCEPTIONS = ['pot', 'cup']; // e.g., "Instant Pot Yogurt" or "Peanut Butter Cup"
 
-        if (term.length > 0) {
-            filtered = filtered.filter(recipe => {
-                const title = recipe.title.toLowerCase();
-                const blogger = recipe.blog_name.toLowerCase();
-                let hasMatchingTag = false;
-                if (recipe.special_tags && Array.isArray(recipe.special_tags)) {
-                    hasMatchingTag = recipe.special_tags.some(tag => tag.toLowerCase().includes(term));
-                }
-                
-                return title.includes(term) || blogger.includes(term) || hasMatchingTag;
-            });
-        }
+    let filtered = allRecipes;
 
-        if (activeCategory === 'sweet') {
-            filtered = filtered.filter(recipe => {
-                const t = recipe.title.toLowerCase();
-                const hasKeyword = SWEET_KEYWORDS.some(k => t.includes(k));
-                const isSavory = t.includes('sweet potato') || t.includes('sweet and sour') || t.includes('spicy') || t.includes('chili') || t.includes("shepherd's") || t.includes('egg') || t.includes('pot');
-                return hasKeyword && !isSavory;
-            });
-        } else if (activeCategory === 'meal') {
-            filtered = filtered.filter(recipe => {
-                const t = recipe.title.toLowerCase();
-                const hasKeyword = MEAL_KEYWORDS.some(k => t.includes(k));
-                const isSide = t.includes('sauce') || t.includes('dressing') || t.includes('side') || t.includes('treats');
-                return hasKeyword && !isSide;
-            });
-        } else if (activeCategory === 'protein') {
-            filtered = filtered.filter(recipe => {
-                const t = recipe.title.toLowerCase();
-                return PROTEIN_KEYWORDS.some(k => t.includes(k));
-            });
-        } else if (activeCategory === 'budget') {
-            filtered = filtered.filter(recipe => {
-                return recipe.special_tags && recipe.special_tags.includes('Budget');
-            });
-        }
-
-        resetView(filtered); // Reuse resetView to handle scroll and clearing
+    // 1. Apply Search Term
+    if (term.length > 0) {
+        filtered = filtered.filter(recipe => {
+            const title = recipe.title.toLowerCase();
+            const blogger = recipe.blog_name.toLowerCase();
+            let hasMatchingTag = false;
+            if (recipe.special_tags && Array.isArray(recipe.special_tags)) {
+                hasMatchingTag = recipe.special_tags.some(tag => tag.toLowerCase().includes(term));
+            }
+            return title.includes(term) || blogger.includes(term) || hasMatchingTag;
+        });
     }
+
+    // 2. Apply Category Filters with Cross-Exclusion
+    if (activeCategory === 'meal') {
+        filtered = filtered.filter(recipe => {
+            const t = recipe.title.toLowerCase();
+            
+            // Must have a Meal keyword
+            const hasMealKeyword = MEAL_KEYWORDS.some(k => t.includes(k));
+            
+            // Check against Sweet keywords (The "Cookie Skillet" fix)
+            const hasSweetKeyword = SWEET_KEYWORDS.some(k => t.includes(k));
+            
+            // If it has a sweet keyword, is it actually a savory exception?
+            const isSavoryException = SAVORY_EXCEPTIONS.some(k => t.includes(k));
+            
+            // Hard exclusions (Side dishes, etc)
+            const isSide = t.includes('sauce') || t.includes('dressing') || t.includes('side') || t.includes('treats');
+
+            // Logic: Is Meal AND (Not Sweet OR Is Savory Exception) AND Not Side
+            return hasMealKeyword && (!hasSweetKeyword || isSavoryException) && !isSide;
+        });
+
+    } else if (activeCategory === 'sweet') {
+        filtered = filtered.filter(recipe => {
+            const t = recipe.title.toLowerCase();
+            
+            // Must have Sweet Keyword
+            const hasSweetKeyword = SWEET_KEYWORDS.some(k => t.includes(k));
+            
+            // Check against Meal keywords (The "Sweet Potato Pie" vs "Shepherd's Pie" fix)
+            const hasMealKeyword = MEAL_KEYWORDS.some(k => t.includes(k));
+            const isSweetException = SWEET_EXCEPTIONS.some(k => t.includes(k));
+
+            // Explicit exclusions
+            const isSavory = t.includes('spicy') || t.includes('chili') || t.includes("shepherd's") || t.includes('egg');
+
+            return hasSweetKeyword && (!hasMealKeyword || isSweetException) && !isSavory;
+        });
+
+    } else if (activeCategory === 'protein') {
+        filtered = filtered.filter(recipe => {
+            const t = recipe.title.toLowerCase();
+            return PROTEIN_KEYWORDS.some(k => t.includes(k));
+        });
+
+    } else if (activeCategory === 'budget') {
+        filtered = filtered.filter(recipe => {
+            return recipe.special_tags && recipe.special_tags.includes('Budget');
+        });
+    }
+
+    resetView(filtered);
+}
 
     // --- SEARCH DEBOUNCE ---
     const processSearchChange = debounce(() => {
