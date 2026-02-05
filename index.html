@@ -494,11 +494,14 @@
 
         const recipeDate = new Date(recipe.date);
         const now = new Date();
-        const daysOld = (now - recipeDate) / (1000 * 3600 * 24);
+        
+        // Calculate hours instead of days (1000ms * 3600s = 1 hour)
+        const hoursOld = (now - recipeDate) / (1000 * 3600);
         
         let badgeHTML = '';
 
-        if (daysOld < 2) {
+        // Trigger the badge if the recipe is less than 26 hours old
+        if (hoursOld < 28) {
             badgeHTML += '<span class="fresh-badge">New Today</span>';
         }
 
