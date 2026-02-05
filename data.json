@@ -354,8 +354,8 @@
     "date": "2026-02-02T15:41:04+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -813,8 +813,8 @@
     "date": "2026-01-30T02:05:16+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -921,8 +921,8 @@
     "date": "2026-01-29T15:19:42+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -988,8 +988,8 @@
     "date": "2026-01-28T19:16:29+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -1068,8 +1068,8 @@
     "is_disruptor": true,
     "special_tags": [
       "Easy",
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -1232,8 +1232,8 @@
     "is_disruptor": false,
     "special_tags": [
       "Easy",
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -1642,8 +1642,8 @@
     "date": "2026-01-21T21:51:00+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -1783,8 +1783,8 @@
     "is_disruptor": false,
     "special_tags": [
       "Easy",
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -2071,8 +2071,8 @@
     "is_disruptor": false,
     "special_tags": [
       "Easy",
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -2411,8 +2411,8 @@
     "date": "2026-01-13T18:12:15+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -2999,9 +2999,9 @@
     "date": "2026-01-04T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
+      "Easy",
       "WFPB",
-      "Budget",
-      "Easy"
+      "Budget"
     ]
   },
   {
@@ -3259,8 +3259,8 @@
     "is_disruptor": false,
     "special_tags": [
       "Easy",
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -3622,8 +3622,8 @@
     "is_disruptor": true,
     "special_tags": [
       "Easy",
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -3792,8 +3792,8 @@
     "date": "2025-12-14T00:22:05+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -3864,8 +3864,8 @@
     "date": "2025-12-12T05:45:13+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -5164,8 +5164,8 @@
     "is_disruptor": true,
     "special_tags": [
       "Easy",
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -5517,8 +5517,8 @@
     "is_disruptor": true,
     "special_tags": [
       "Easy",
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -5638,8 +5638,8 @@
     "is_disruptor": false,
     "special_tags": [
       "Easy",
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -5898,8 +5898,8 @@
     "is_disruptor": true,
     "special_tags": [
       "Easy",
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -5985,8 +5985,8 @@
     "date": "2025-09-15T20:00:17+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -6274,8 +6274,8 @@
     "date": "2025-08-25T12:56:12+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -6403,8 +6403,8 @@
     "is_disruptor": true,
     "special_tags": [
       "Easy",
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -6731,10 +6731,7 @@
     "image": "https://nutriciously.com/wp-content/uploads/Member-Area-Nutriciously.jpg",
     "date": "2025-05-16T14:14:49+00:00",
     "is_disruptor": true,
-    "special_tags": [
-      "Easy",
-      "WFPB"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "My Pure Plants",
@@ -6755,7 +6752,6 @@
     "date": "2025-05-13T12:14:47+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
       "WFPB"
     ]
   },
@@ -6859,10 +6855,7 @@
     "image": "https://nutriciously.com/wp-content/uploads/Member-Area-Nutriciously.jpg",
     "date": "2025-04-17T14:04:22+00:00",
     "is_disruptor": true,
-    "special_tags": [
-      "Easy",
-      "WFPB"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "The Vegan 8",

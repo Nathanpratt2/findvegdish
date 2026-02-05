@@ -1,25 +1,25 @@
 # Feed Health Report
-**Last Run:** 2026-02-05T12:23:25.234901
-**Total Blogs:** 69
-**Avg Recipes per Blog:** 10.2
-**Active Blogs (Last 90d):** 58 / 69
-**Total Database Size:** 701
+**Last Run:** 2026-02-05T13:01:44.273514
+**Total Blogs:** 63
+**Avg Recipes per Blog:** 11.1
+**Active Blogs (Last 90d):** 52 / 63
+**Total Database Size:** 699
 **New Today:** 6
-**WFPB:** 122 (17%)
-**Easy:** 236 (33%)
+**WFPB:** 118 (16%)
+**Easy:** 233 (33%)
 **Budget:** 141 (20%)
 **Average Latest Post:** 2025-12-19
 
 | Blog Name | URL | New | Total | WFPB | Easy | Budget | Latest | Status |
 |-----------|-----|-----|-------|------|------|--------|--------|--------|
 | Hot for Food | Unknown | 0 | 3 | 0 | 2 | 0 | 2025-05-28 | ⚠️ Stale (>90d) Skipped/DB Only |
-| Let's Be Vegan | https://letsbevegan.com/blog-feed.xml | 0 | 1 | 0 | 0 | 0 | 2025-03-02 | ⚠️ Stale (>90d)  |
-| Loving It Vegan | https://lovingitvegan.com/feed/ | 0 | 4 | 0 | 0 | 0 | 2025-06-12 | ⚠️ Stale (>90d)  |
-| Nutriciously | https://nutriciously.com/feed/ | 0 | 2 | 2 | 2 | 0 | 2025-05-16 | ⚠️ Stale (>90d)  |
-| Oh She Glows | https://ohsheglows.com/feed/ | 0 | 1 | 0 | 0 | 0 | 2025-09-03 | ⚠️ Stale (>90d)  |
-| The Cheeky Chickpea | https://thecheekychickpea.com/feed/ | 0 | 1 | 1 | 1 | 0 | 2025-05-13 | ⚠️ Stale (>90d)  |
+| Let's Be Vegan | Unknown | 0 | 1 | 0 | 0 | 0 | 2025-03-02 | ⚠️ Stale (>90d) Skipped/DB Only |
+| Loving It Vegan | Unknown | 0 | 4 | 0 | 0 | 0 | 2025-06-12 | ⚠️ Stale (>90d) Skipped/DB Only |
+| Nutriciously | Unknown | 0 | 2 | 0 | 0 | 0 | 2025-05-16 | ⚠️ Stale (>90d) Skipped/DB Only |
+| Oh She Glows | Unknown | 0 | 1 | 0 | 0 | 0 | 2025-09-03 | ⚠️ Stale (>90d) Skipped/DB Only |
+| The Cheeky Chickpea | Unknown | 0 | 1 | 1 | 0 | 0 | 2025-05-13 | ⚠️ Stale (>90d) Skipped/DB Only |
 | The Vegan 8 | https://thevegan8.com/feed/ | 0 | 10 | 1 | 10 | 10 | 2025-10-25 | ⚠️ Stale (>90d)  |
-| The Viet Vegan | https://thevietvegan.com/feed/ | 0 | 2 | 1 | 0 | 0 | 2025-04-01 | ⚠️ Stale (>90d)  |
+| The Viet Vegan | Unknown | 0 | 2 | 1 | 0 | 0 | 2025-04-01 | ⚠️ Stale (>90d) Skipped/DB Only |
 | Turnip Vegan | https://turnipvegan.com/blogs/news.atom | 0 | 7 | 0 | 0 | 0 | 2025-04-11 | ⚠️ Stale (>90d)  |
 | Unconventional Baker | https://www.unconventionalbaker.com/feed/ | 0 | 10 | 0 | 0 | 0 | 2025-11-01 | ⚠️ Stale (>90d)  |
 | Vegan Yack Attack | https://veganyackattack.com/feed/ | 0 | 5 | 0 | 2 | 0 | 2025-07-27 | ⚠️ Stale (>90d)  |
@@ -33,7 +33,7 @@
 | Eat Figs, Not Pigs | https://www.eatfigsnotpigs.com/feed/ | 0 | 11 | 1 | 2 | 1 | 2026-02-04 | ✅ OK |
 | Elavegan | https://elavegan.com/feed/ | 0 | 10 | 1 | 2 | 2 | 2026-01-27 | ✅ OK |
 | Flora & Vino | https://www.floraandvino.com/feed/ | 0 | 10 | 10 | 10 | 0 | 2026-01-31 | ✅ OK |
-| Forks Over Knives | https://www.forksoverknives.com/all-recipes/feed/ | 0 | 13 | 13 | 2 | 3 | 2026-02-04 | ✅ OK |
+| Forks Over Knives | https://www.forksoverknives.com/all-recipes/feed/ | 0 | 11 | 11 | 2 | 3 | 2026-02-03 | ✅ OK |
 | Fragrant Vanilla Cake | https://www.fragrantvanilla.com/feed/ | 0 | 10 | 0 | 0 | 0 | 2026-01-19 | ✅ OK |
 | From My Bowl | https://frommybowl.com/feed/ | 0 | 11 | 11 | 11 | 2 | 2026-02-03 | ✅ OK |
 | Full of Plants | https://fullofplants.com/feed/ | 0 | 6 | 0 | 0 | 0 | 2026-01-31 | ✅ OK |
