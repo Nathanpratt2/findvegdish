@@ -1,5 +1,5 @@
 # Feed Health Report
-**Last Run:** 2026-02-05T13:01:44.273514
+**Last Run:** 2026-02-05T13:28:24.633558
 **Total Blogs:** 63
 **Avg Recipes per Blog:** 11.1
 **Active Blogs (Last 90d):** 52 / 63
