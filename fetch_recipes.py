@@ -80,8 +80,6 @@ DISRUPTORS = [
     ("ZardyPlants", "https://zardyplants.com/feed/", ["WFPB"]),
 ]
 
-# Blogs excluded due to stale (stopped posting) content: Hot for Food, Let's Be Vegan, Loving It Vegan, Nutriciously, Oh She Glows, Cheeky Chickpea, Viet Vegan
-
 ALL_FEEDS = TOP_BLOGGERS + DISRUPTORS
 
 # --- MAPS ---
@@ -96,9 +94,18 @@ WFPB_KEYWORDS = ['oil-free', 'oil free', 'no oil', 'wfpb', 'whole food', 'clean'
 EASY_KEYWORDS = ['easy', 'quick', 'simple', 'fast', '1-pot', 'one-pot', 'one pot', '30-minute', 'minute', '15-minute', '20-minute', '5-ingredient', 'sheet pan', 'skillet', 'mug', 'blender', 'no-bake', 'raw','no bake','no-bake', 'air fryer']
 BUDGET_KEYWORDS = ['budget', 'cheap', 'frugal', 'economical', 'pantry', 'low cost', 'money saving', '$', 'affordable', 'leftover', 'scraps', 'beans', 'rice', 'lentil', 'potato']
 
-# --- HEADERS ---
-HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+# --- HEADERS / USER AGENTS (Risk #5) ---
+# We try them in order. If the first fails, we move to the next.
+USER_AGENTS = [
+    # 1. Original (Your current one)
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+    # 2. Modern Chrome (Windows)
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36',
+    # 3. Modern Safari (Mac)
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Safari/605.1.15'
+]
+
+DEFAULT_HEADERS = {
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
     'Accept-Language': 'en-US,en;q=0.9',
     'Referer': 'https://www.google.com/',
@@ -121,10 +128,40 @@ def is_pet_recipe(title):
     if any(phrase in t for phrase in pet_phrases): return True
     return False
 
+def fetch_with_retry(url):
+    """
+    Tries to fetch the URL using user agents in order.
+    Returns the response object or None if all fail.
+    """
+    for agent in USER_AGENTS:
+        try:
+            headers = DEFAULT_HEADERS.copy()
+            headers['User-Agent'] = agent
+            
+            # Special handling for VegNews to use RSS fallback if needed is done in main loop, 
+            # this is just the raw request wrapper
+            response = requests.get(url, headers=headers, timeout=15)
+            
+            # If successful, return immediately
+            if response.status_code == 200:
+                return response
+            
+            # If 403/406/429, loop to next agent. If 404, break (link is dead).
+            if response.status_code == 404:
+                return response
+                
+        except Exception:
+            continue # Try next agent on network error
+            
+    return None # Return None if all agents failed
+
 def fetch_og_image(link):
     try:
         time.sleep(0.5) 
-        r = requests.get(link, headers=HEADERS, timeout=10)
+        # Use simple fetch here, default to first agent to save time
+        headers = DEFAULT_HEADERS.copy()
+        headers['User-Agent'] = USER_AGENTS[0]
+        r = requests.get(link, headers=headers, timeout=10)
         soup = BeautifulSoup(r.content, 'lxml')
         og_image = soup.find('meta', property='og:image')
         if og_image and og_image.get('content'): return og_image['content']
@@ -155,6 +192,25 @@ def extract_image(entry, blog_name):
     if not image_candidate: image_candidate = fetch_og_image(entry.link)
     return image_candidate if image_candidate else "icon.jpg"
 
+def generate_sitemap(recipes):
+    """Generates a simple sitemap.xml for SEO #2"""
+    # We only list the homepage because it's a SPA (Single Page App), 
+    # but we update the lastmod to tell Google content has changed.
+    now = datetime.now().strftime("%Y-%m-%d")
+    sitemap_content = f"""<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>https://findvegdish.com/</loc>
+      <lastmod>{now}</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>1.0</priority>
+   </url>
+</urlset>"""
+    
+    with open('sitemap.xml', 'w') as f:
+        f.write(sitemap_content)
+    print("Generated sitemap.xml")
+
 # --- MAIN EXECUTION ---
 
 # 1. Load Existing Data
@@ -184,13 +240,17 @@ for name, url, special_tags in ALL_FEEDS:
     
     try:
         print(f"Checking {name}...")
-        response = requests.get(url, headers=HEADERS, timeout=15)
         
-        if response.status_code != 200 and name == "VegNews":
-             response = requests.get("https://vegnews.com/rss", headers=HEADERS, timeout=15)
+        # Risk #5: User-Agent Rotation logic implemented in fetch_with_retry
+        response = fetch_with_retry(url)
+        
+        # VegNews Fallback Logic
+        if (not response or response.status_code != 200) and name == "VegNews":
+             response = fetch_with_retry("https://vegnews.com/rss")
 
-        if response.status_code != 200:
-            status = f"❌ Error {response.status_code}"
+        if not response or response.status_code != 200:
+            code = response.status_code if response else "ConnErr"
+            status = f"❌ Error {code}"
             feed_stats[name] = {'new': 0, 'status': status}
             continue
 
@@ -205,7 +265,14 @@ for name, url, special_tags in ALL_FEEDS:
 
                 dt = entry.get('published', entry.get('updated', None))
                 if not dt: continue
-                published_time = parser.parse(dt)
+                
+                # Risk #4: Robust Date Parsing
+                try:
+                    published_time = parser.parse(dt)
+                except Exception:
+                    # If date parsing fails, skip this entry to prevent crash
+                    continue
+
                 if published_time.tzinfo is None:
                     published_time = published_time.replace(tzinfo=datetime.now().astimezone().tzinfo)
                 
@@ -277,8 +344,15 @@ for bname, blog_recipes in recipes_by_blog.items():
 
 final_pruned_list.sort(key=lambda x: x['date'], reverse=True)
 
-with open('data.json', 'w') as f:
-    json.dump(final_pruned_list, f, indent=2)
+# Risk #2: Safety check to prevent database wipeout
+if len(final_pruned_list) > 50:
+    with open('data.json', 'w') as f:
+        json.dump(final_pruned_list, f, indent=2)
+    
+    # SEO #2: Generate Sitemap only if database is healthy
+    generate_sitemap(final_pruned_list)
+else:
+    print("⚠️ SAFETY ALERT: Database too small (<50 items). Skipping write to prevent wipeout.")
 
 # 6. Generate Report
 with open('FEED_HEALTH.md', 'w') as f:
