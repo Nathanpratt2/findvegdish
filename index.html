@@ -469,6 +469,9 @@
         <button class="btn" id="sweetsBtn" onclick="toggleType('sweet')">🍪 Sweets</button>
         <button class="btn" id="budgetBtn" onclick="toggleTag('Budget')">💸 Budget</button>
         <button class="btn" id="easyBtn" onclick="toggleTag('Easy')">⚡ Easy</button>
+        <button class="btn" id="proteinBtn" onclick="toggleTag('Protein')">⬆️ Protein</button>
+        <button class="btn" id="wfpbBtn" onclick="toggleTag('WFPB')">🥗 WFPB</button>
+        <button class="btn" id="gfBtn" onclick="toggleTag('GF')">🌾 GF</button>        
     </div>
 </header>
 
@@ -803,14 +806,24 @@
             });
         }
 
-        // C. Budget / Easy Tags Logic (Additive)
+        // C. Tag Logic (Special Tags + Title Searches)
         if (activeTags.size > 0) {
             filtered = filtered.filter(recipe => {
-                if (!recipe.special_tags) return false;
-                // Check if recipe has ALL selected tags
+                const title = recipe.title.toLowerCase();
+                
                 for (let tag of activeTags) {
-                    if (!recipe.special_tags.includes(tag)) {
-                        return false; 
+                    if (tag === 'Protein') {
+                        // Uses your existing PROTEIN_KEYWORDS list
+                        if (!PROTEIN_KEYWORDS.some(k => title.includes(k))) return false;
+                    } 
+                    else if (tag === 'GF') {
+                        // New Gluten Free Logic (3 varieties of GF in the title)
+                        const isGF = title.includes('gf') || title.includes('gluten free') || title.includes('gluten-free');
+                        if (!isGF) return false;
+                    } 
+                    else {
+                        // Standard tag check (WFPB, Budget, Easy) These are the tags that are actually tagged when you scroll through
+                        if (!recipe.special_tags || !recipe.special_tags.includes(tag)) return false;
                     }
                 }
                 return true;
