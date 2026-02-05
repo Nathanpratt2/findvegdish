@@ -1,10 +1,10 @@
 # Feed Health Report
-**Last Run:** 2026-02-05T11:05:01.131452
+**Last Run:** 2026-02-05T11:28:48.633306
 **Total Blogs:** 69
 **Avg Recipes per Blog:** 10.1
 **Active Blogs (Last 90d):** 58 / 69
 **Total Database Size:** 700
-**New Today:** 9
+**New Today:** 6
 **WFPB:** 122 (17%)
 **Easy:** 236 (33%)
 **Budget:** 141 (20%)
@@ -33,7 +33,7 @@
 | Eat Figs, Not Pigs | https://www.eatfigsnotpigs.com/feed/ | 0 | 11 | 1 | 2 | 1 | 2026-02-04 | ✅ OK |
 | Elavegan | https://elavegan.com/feed/ | 0 | 10 | 1 | 2 | 2 | 2026-01-27 | ✅ OK |
 | Flora & Vino | https://www.floraandvino.com/feed/ | 0 | 10 | 10 | 10 | 0 | 2026-01-31 | ✅ OK |
-| Forks Over Knives | https://www.forksoverknives.com/recipes/feed/ | 3 | 13 | 13 | 2 | 3 | 2026-02-04 | ✅ OK |
+| Forks Over Knives | https://www.forksoverknives.com/recipes/feed/ | 0 | 13 | 13 | 2 | 3 | 2026-02-04 | ✅ OK |
 | Fragrant Vanilla Cake | https://www.fragrantvanilla.com/feed/ | 0 | 10 | 0 | 0 | 0 | 2026-01-19 | ✅ OK |
 | From My Bowl | https://frommybowl.com/feed/ | 0 | 11 | 11 | 11 | 2 | 2026-02-03 | ✅ OK |
 | Full of Plants | https://fullofplants.com/feed/ | 0 | 6 | 0 | 0 | 0 | 2026-01-31 | ✅ OK |
