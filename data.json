@@ -1,5 +1,14 @@
 [
   {
+    "blog_name": "A Virtual Vegan",
+    "title": "Crispy Chickpea Nuggets",
+    "link": "https://avirtualvegan.com/crispy-chickpea-nuggets/",
+    "image": "https://avirtualvegan.com/wp-content/uploads/2026/01/Chickpea-Nuggetd-1.jpg",
+    "date": "2026-02-06T09:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "The Little Blog of Vegan",
     "title": "Vegan Baked Ube Cheesecake",
     "link": "https://www.thelittleblogofvegan.com/2026/02/vegan-baked-ube-cheesecake.html",
@@ -130,6 +139,18 @@
     ]
   },
   {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "Week 80 Meal Plan",
+    "link": "https://plantbasedonabudget.com/week-80-meal-plan/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2026/02/image.png",
+    "date": "2026-02-05T08:44:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy",
+      "Budget"
+    ]
+  },
+  {
     "blog_name": "VegNews",
     "title": "Heart-Shaped Tomato Tart With Spiced Red Pesto",
     "link": "https://vegnews.com/recipes/vegan-heart-shaped-tomato-tart-with-spiced-red-pesto",
@@ -155,8 +176,8 @@
     "date": "2026-02-05T07:00:00-08:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -444,8 +465,8 @@
     "date": "2026-02-03T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -478,6 +499,18 @@
     "special_tags": []
   },
   {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "Strawberry Banana Muffins (Egg-Free)",
+    "link": "https://plantbasedonabudget.com/strawberry-banana-muffins-egg-free/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2025/03/Strawberry-Banana-Muffins-PBOAB-16.jpg",
+    "date": "2026-02-03T05:14:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy",
+      "Budget"
+    ]
+  },
+  {
     "blog_name": "Mary's Test Kitchen",
     "title": "Will PEANUTS Cheese?",
     "link": "https://www.marystestkitchen.com/will-peanuts-cheese/",
@@ -485,6 +518,18 @@
     "date": "2026-02-03T03:01:59+00:00",
     "is_disruptor": true,
     "special_tags": []
+  },
+  {
+    "blog_name": "HealthyGirl Kitchen",
+    "title": "Protein Brownie Overnight Oats",
+    "link": "https://healthygirlkitchen.com/protein-brownie-overnight-oats/?utm_source=rss&utm_medium=rss&utm_campaign=protein-brownie-overnight-oats",
+    "image": "https://healthygirlkitchen.com/wp-content/uploads/2026/02/protein-brownie-overnight-oats-11-1200x1799.jpg",
+    "date": "2026-02-02T23:50:55+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Easy"
+    ]
   },
   {
     "blog_name": "Sweet Simple Vegan",
@@ -838,8 +883,8 @@
     "date": "2026-01-31T11:00:03+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -1124,6 +1169,18 @@
     ]
   },
   {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "Week 79 Meal Plan",
+    "link": "https://plantbasedonabudget.com/week-79-meal-plan/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2026/01/image-3.png",
+    "date": "2026-01-29T08:46:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy",
+      "Budget"
+    ]
+  },
+  {
     "blog_name": "VegNews",
     "title": "Riced Cauliflower Bowl With Chickpeas and Pistachio Dukkah",
     "link": "https://vegnews.com/recipes/vegan-riced-cauliflower-bowl-with-chickpeas-and-pistachio-dukkah",
@@ -1348,8 +1405,8 @@
     "date": "2026-01-27T17:26:09+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -1418,8 +1475,8 @@
     "date": "2026-01-27T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
       "Easy",
+      "WFPB",
       "Budget"
     ]
   },
@@ -1719,8 +1776,8 @@
     "date": "2026-01-23T11:33:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -1833,6 +1890,18 @@
     ]
   },
   {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "Week 78 Meal Plan",
+    "link": "https://plantbasedonabudget.com/week-78-meal-plan/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2026/01/image-2.png",
+    "date": "2026-01-22T08:34:29+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy",
+      "Budget"
+    ]
+  },
+  {
     "blog_name": "Monkey & Me Kitchen Adventures",
     "title": "Vegan Cheesy Pinto Beans",
     "link": "https://monkeyandmekitchenadventures.com/vegan-cheesy-pinto-beans/",
@@ -1937,8 +2006,19 @@
     "date": "2026-01-20T23:23:34+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Dreena Burton",
+    "title": "The Best Oil-Free Vegan Apple Crisp",
+    "link": "https://dreenaburton.com/oil-free-vegan-apple-crisp/",
+    "image": "https://dreenaburton.com/wp-content/uploads/2026/01/Apple-Crisp-3-1-scaled.jpg",
+    "date": "2026-01-20T20:54:54+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "WFPB"
     ]
   },
   {
@@ -1980,8 +2060,8 @@
     "date": "2026-01-20T13:29:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
       "Easy",
+      "WFPB",
       "Budget"
     ]
   },
@@ -1993,8 +2073,8 @@
     "date": "2026-01-20T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -2268,8 +2348,8 @@
     "date": "2026-01-16T20:07:56+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
       "Easy",
+      "WFPB",
       "Budget"
     ]
   },
@@ -2442,6 +2522,18 @@
     "special_tags": []
   },
   {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "Week 77 Meal Plan",
+    "link": "https://plantbasedonabudget.com/week-77-meal-plan/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2026/01/image-1.png",
+    "date": "2026-01-15T08:24:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy",
+      "Budget"
+    ]
+  },
+  {
     "blog_name": "Eat Figs, Not Pigs",
     "title": "The Best Vegan Menudo",
     "link": "https://www.eatfigsnotpigs.com/vegan-menudo/?utm_source=rss&utm_medium=rss&utm_campaign=vegan-menudo",
@@ -2569,6 +2661,19 @@
     "date": "2026-01-14T06:59:00+00:00",
     "is_disruptor": false,
     "special_tags": []
+  },
+  {
+    "blog_name": "Dreena Burton",
+    "title": "Easy Curried Carrot Lentil Soup",
+    "link": "https://dreenaburton.com/curried-carrot-lentil-soup/",
+    "image": "https://dreenaburton.com/wp-content/uploads/2026/01/Curry-Carrot-Lentil-Soup-8-3-scaled.jpg",
+    "date": "2026-01-14T01:52:22+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "Easy",
+      "WFPB",
+      "Budget"
+    ]
   },
   {
     "blog_name": "The Korean Vegan",
@@ -2711,6 +2816,18 @@
     "is_disruptor": true,
     "special_tags": [
       "Easy"
+    ]
+  },
+  {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "Lemongrass Tofu",
+    "link": "https://plantbasedonabudget.com/lemongrass-tofu/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2025/05/Lemongrass-Tofu-14.jpg",
+    "date": "2026-01-12T08:29:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -2861,8 +2978,8 @@
     "date": "2026-01-09T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -2896,6 +3013,18 @@
     "is_disruptor": false,
     "special_tags": [
       "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "Week 76 Meal Plan",
+    "link": "https://plantbasedonabudget.com/week-76-meal-plan/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2026/01/image.png",
+    "date": "2026-01-08T15:45:05+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -3124,6 +3253,18 @@
     "special_tags": []
   },
   {
+    "blog_name": "HealthyGirl Kitchen",
+    "title": "One Pot Puttanesca",
+    "link": "https://healthygirlkitchen.com/one-pot-puttanesca/?utm_source=rss&utm_medium=rss&utm_campaign=one-pot-puttanesca",
+    "image": "https://healthygirlkitchen.com/wp-content/uploads/2026/01/ONE-POT-PUTTANESCA-15-1200x1799.jpg",
+    "date": "2026-01-05T16:03:50+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "Mary's Test Kitchen",
     "title": "Will Cashews Tofu?",
     "link": "https://www.marystestkitchen.com/will-cashews-tofu/",
@@ -3197,8 +3338,8 @@
     "date": "2026-01-04T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
       "Easy",
+      "WFPB",
       "Budget"
     ]
   },
@@ -3272,8 +3413,8 @@
     "date": "2026-01-02T09:50:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -3355,6 +3496,18 @@
     "special_tags": []
   },
   {
+    "blog_name": "Dreena Burton",
+    "title": "Lucky New Year\u2019s Vegan Baked Beans: A Pressure Cooker Shortcut",
+    "link": "https://dreenaburton.com/vegan-baked-beans/",
+    "image": "https://dreenaburton.com/wp-content/uploads/2025/12/New-Years-Baked-Beans-12-min-scaled.jpg",
+    "date": "2025-12-29T15:35:13+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "WFPB",
+      "Budget"
+    ]
+  },
+  {
     "blog_name": "The Little Blog of Vegan",
     "title": "Vegan Christmas Tree Brownies",
     "link": "https://www.thelittleblogofvegan.com/2025/12/vegan-christmas-tree-brownies.html",
@@ -3371,6 +3524,18 @@
     "date": "2025-12-29T13:00:00+00:00",
     "is_disruptor": false,
     "special_tags": []
+  },
+  {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "Black Eyed Pea Soup (Vegan)",
+    "link": "https://plantbasedonabudget.com/black-eyed-pea-soup-vegan/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2025/12/Black-Eyed-Pea-Soup-PBOAB-10-scaled.jpg",
+    "date": "2025-12-29T11:22:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy",
+      "Budget"
+    ]
   },
   {
     "blog_name": "Rainbow Plant Life",
@@ -3456,8 +3621,8 @@
     "date": "2025-12-26T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
       "Easy",
+      "WFPB",
       "Budget"
     ]
   },
@@ -3518,6 +3683,18 @@
     "date": "2025-12-22T15:57:50+00:00",
     "is_disruptor": false,
     "special_tags": []
+  },
+  {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "Gingerbread Crinkle Cookies (Eggless!)",
+    "link": "https://plantbasedonabudget.com/gingerbread-crinkle-cookies-eggless/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2025/10/Ginger-Crinkle-Cookies-PBOAB-17.jpg",
+    "date": "2025-12-22T10:43:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy",
+      "Budget"
+    ]
   },
   {
     "blog_name": "Veggiekins",
@@ -3741,6 +3918,18 @@
     "special_tags": []
   },
   {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "Week 75 Meal Plan",
+    "link": "https://plantbasedonabudget.com/week-75-meal-plan/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2025/12/Week-75-Graphic.png",
+    "date": "2025-12-18T07:05:55+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy",
+      "Budget"
+    ]
+  },
+  {
     "blog_name": "The First Mess",
     "title": "No-Bake Vegan Cranberry Tart with White Chocolate and Biscoff Cookie Crust",
     "link": "https://thefirstmess.com/2025/12/18/no-bake-vegan-cranberry-tart-white-chocolate/",
@@ -3861,8 +4050,8 @@
     "date": "2025-12-17T11:00:24+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -3912,6 +4101,18 @@
     "date": "2025-12-16T09:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "HealthyGirl Kitchen",
+    "title": "2025 Holiday Recipe Roundup",
+    "link": "https://healthygirlkitchen.com/2025-holiday-recipe-roundup/?utm_source=rss&utm_medium=rss&utm_campaign=2025-holiday-recipe-roundup",
+    "image": "https://healthygirlkitchen.com/wp-content/uploads/2025/12/1.png",
+    "date": "2025-12-15T21:13:25+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
       "Easy"
     ]
   },
@@ -4050,8 +4251,8 @@
     "date": "2025-12-12T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -4112,8 +4313,8 @@
     "date": "2025-12-10T13:00:46+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -4157,6 +4358,18 @@
     "is_disruptor": false,
     "special_tags": [
       "Budget"
+    ]
+  },
+  {
+    "blog_name": "HealthyGirl Kitchen",
+    "title": "One Pot Enchilada (vegan!)",
+    "link": "https://healthygirlkitchen.com/one-pot-enchilada-vegan/?utm_source=rss&utm_medium=rss&utm_campaign=one-pot-enchilada-vegan",
+    "image": "https://healthygirlkitchen.com/wp-content/uploads/2025/12/one-pot-enchilada-17-1200x1799.jpg",
+    "date": "2025-12-09T15:54:51+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -4288,8 +4501,8 @@
     "date": "2025-12-05T19:52:47+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -4421,8 +4634,8 @@
     "date": "2025-12-02T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -4504,8 +4717,8 @@
     "date": "2025-11-28T21:36:25+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -4566,8 +4779,8 @@
     "date": "2025-11-26T11:00:22+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -4645,6 +4858,18 @@
     "special_tags": []
   },
   {
+    "blog_name": "HealthyGirl Kitchen",
+    "title": "Hidden Veggie Mac and Cheese (vegan!)",
+    "link": "https://healthygirlkitchen.com/hidden-veggie-mac-and-cheese-vegan/?utm_source=rss&utm_medium=rss&utm_campaign=hidden-veggie-mac-and-cheese-vegan",
+    "image": "https://healthygirlkitchen.com/wp-content/uploads/2025/11/mac-trees-13-1200x1799.jpg",
+    "date": "2025-11-24T17:07:31+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "Sarah's Vegan Kitchen",
     "title": "Vegan Pecan Pie",
     "link": "https://sarahsvegankitchen.com/recipes/pecan-pie/",
@@ -4709,8 +4934,8 @@
     "date": "2025-11-23T16:02:45+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -4783,8 +5008,8 @@
     "date": "2025-11-22T13:00:35+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -4934,8 +5159,8 @@
     "date": "2025-11-18T19:56:57+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -4988,6 +5213,18 @@
     "date": "2025-11-17T21:05:40+00:00",
     "is_disruptor": false,
     "special_tags": []
+  },
+  {
+    "blog_name": "HealthyGirl Kitchen",
+    "title": "Antioxidant Berry Muffin Baked Oatmeal",
+    "link": "https://healthygirlkitchen.com/antioxidant-berry-muffin-baked-oatmeal/?utm_source=rss&utm_medium=rss&utm_campaign=antioxidant-berry-muffin-baked-oatmeal",
+    "image": "https://healthygirlkitchen.com/wp-content/uploads/2025/11/ANTIOXIDANT-BERRY-MUFFIN-BAKED-OATMEAL-21-1200x1799.jpg",
+    "date": "2025-11-17T17:44:50+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Easy"
+    ]
   },
   {
     "blog_name": "Choosing Chia",
@@ -5162,6 +5399,18 @@
     ]
   },
   {
+    "blog_name": "HealthyGirl Kitchen",
+    "title": "Plant-Based Thanksgiving Recipe Roundup 2025",
+    "link": "https://healthygirlkitchen.com/plant-based-thanksgiving-recipe-roundup-2025/?utm_source=rss&utm_medium=rss&utm_campaign=plant-based-thanksgiving-recipe-roundup-2025",
+    "image": "https://healthygirlkitchen.com/wp-content/uploads/2025/11/HGK-thanksgiving-recipe-roundup.png",
+    "date": "2025-11-11T20:05:54+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "The Post-Punk Kitchen",
     "title": "Pink Grapefruit Cupcakes",
     "link": "https://www.theppk.com/2025/11/pink-grapefruit-cupcakes/",
@@ -5222,8 +5471,8 @@
     "date": "2025-11-08T11:00:15+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -5350,8 +5599,8 @@
     "date": "2025-11-05T03:20:51+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
       "Easy",
+      "WFPB",
       "Budget"
     ]
   },
@@ -5455,8 +5704,8 @@
     "date": "2025-10-31T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -5494,8 +5743,8 @@
     "date": "2025-10-30T13:30:47+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -5531,6 +5780,18 @@
     ]
   },
   {
+    "blog_name": "HealthyGirl Kitchen",
+    "title": "One Pot Pumpkin Orzo",
+    "link": "https://healthygirlkitchen.com/one-pot-pumpkin-orzo/?utm_source=rss&utm_medium=rss&utm_campaign=one-pot-pumpkin-orzo",
+    "image": "https://healthygirlkitchen.com/wp-content/uploads/2025/10/ONE-POT-PUMPKIN-ORZO-RISOTTO_-24-1200x1799.jpg",
+    "date": "2025-10-28T18:22:17+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "ZardyPlants",
     "title": "Easy Dairy Free Vegan Garlic Toast Recipe",
     "link": "https://zardyplants.com/recipes/snacks-and-apps/easy-dairy-free-vegan-garlic-toast-recipe/",
@@ -5538,8 +5799,8 @@
     "date": "2025-10-28T17:13:41+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -5605,6 +5866,18 @@
     "is_disruptor": true,
     "special_tags": [
       "Budget"
+    ]
+  },
+  {
+    "blog_name": "HealthyGirl Kitchen",
+    "title": "Berries and Cream Collagen Booster Smoothie",
+    "link": "https://healthygirlkitchen.com/berries-and-cream-collagen-booster-smoothie/?utm_source=rss&utm_medium=rss&utm_campaign=berries-and-cream-collagen-booster-smoothie",
+    "image": "https://healthygirlkitchen.com/wp-content/uploads/2025/10/berries-cream-COLLAGEN-BOOSTER-smoothie-10-1-1200x1799.jpg",
+    "date": "2025-10-24T18:07:58+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -5691,8 +5964,8 @@
     "date": "2025-10-21T16:43:44+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
       "Easy",
+      "WFPB",
       "Budget"
     ]
   },
@@ -5733,8 +6006,8 @@
     "date": "2025-10-18T10:00:02+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -5898,8 +6171,8 @@
     "date": "2025-10-08T15:47:23+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -5985,6 +6258,18 @@
     ]
   },
   {
+    "blog_name": "HealthyGirl Kitchen",
+    "title": "Vegan Caesar Salad Spring Rolls",
+    "link": "https://healthygirlkitchen.com/vegan-caesar-salad-spring-rolls/?utm_source=rss&utm_medium=rss&utm_campaign=vegan-caesar-salad-spring-rolls",
+    "image": "https://healthygirlkitchen.com/wp-content/uploads/2025/09/caesar-salad-spring-rolls-10-1200x1799.jpg",
+    "date": "2025-09-30T18:45:42+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "Namely Marly",
     "title": "Apple Monsters",
     "link": "https://namelymarly.com/apple-monsters/",
@@ -6037,8 +6322,8 @@
     "date": "2025-09-25T17:58:30+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
       "Easy",
+      "WFPB",
       "Budget"
     ]
   },
@@ -6084,8 +6369,8 @@
     "date": "2025-09-21T16:04:26+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -6177,8 +6462,8 @@
     "date": "2025-09-13T18:58:14+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
