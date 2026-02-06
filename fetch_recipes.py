@@ -3,8 +3,9 @@ import json
 import requests
 import cloudscraper
 from bs4 import BeautifulSoup
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from dateutil import parser
+from urllib.parse import urljoin
 import time
 import random
 import os
