@@ -102,25 +102,14 @@ WFPB_KEYWORDS = ['oil-free', 'oil free', 'no oil', 'wfpb', 'whole food', 'clean'
 EASY_KEYWORDS = ['easy', 'quick', 'simple', 'fast', '1-pot', 'one-pot', 'one pot', '30-minute', 'minute', '15-minute', '20-minute', '5-ingredient', 'sheet pan', 'skillet', 'mug', 'blender', 'no-bake', 'raw','no bake','no-bake', 'air fryer']
 BUDGET_KEYWORDS = ['budget', 'cheap', 'frugal', 'economical', 'pantry', 'low cost', 'money saving', '$', 'affordable', 'leftover', 'scraps', 'beans', 'rice', 'lentil', 'potato']
 
-# --- HEADERS / USER AGENTS (Risk #5) ---
-# We try them in order. If the first fails, we move to the next.
-USER_AGENTS = [
-    # 1. Original (Your current one)
-    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
-    # 2. Modern Chrome (Windows)
-    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36',
-    # 3. Modern Safari (Mac)
-    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Safari/605.1.15'
-]
-
-DEFAULT_HEADERS = {
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-    'Accept-Language': 'en-US,en;q=0.9',
-    'Referer': 'https://www.google.com/',
-    'Upgrade-Insecure-Requests': '1'
-}
-
-# --- FUNCTIONS ---
+# --- ADVANCED SCRAPER SETUP ---
+scraper = cloudscraper.create_scraper(
+    browser={
+        'browser': 'chrome',
+        'platform': 'windows',
+        'desktop': True
+    }
+)
 
 def get_auto_tags(title):
     tags = []
@@ -136,74 +125,97 @@ def is_pet_recipe(title):
     if any(phrase in t for phrase in pet_phrases): return True
     return False
 
-def fetch_with_retry(url):
+def robust_fetch(url, is_binary=False, is_scraping_page=False):
     """
-    Tries to fetch the URL using user agents in order.
-    Returns the response object or None if all fail.
+    WATERFALL TECHNIQUE with SMART SLEEP:
+    1. Only sleep if we are actively scraping a full page (deep scraping), not checking RSS.
+    2. Try Cloudscraper (best for Cloudflare/WP blocks).
+    3. Fallback to standard requests if Cloudscraper fails.
     """
-    for agent in USER_AGENTS:
-        try:
-            headers = DEFAULT_HEADERS.copy()
-            headers['User-Agent'] = agent
-            
-            # Special handling for VegNews to use RSS fallback if needed is done in main loop, 
-            # this is just the raw request wrapper
-            response = requests.get(url, headers=headers, timeout=15)
-            
-            # If successful, return immediately
-            if response.status_code == 200:
-                return response
-            
-            # If 403/406/429, loop to next agent. If 404, break (link is dead).
-            if response.status_code == 404:
-                return response
-                
-        except Exception:
-            continue # Try next agent on network error
-            
-    return None # Return None if all agents failed
-
-def fetch_og_image(link):
+    if is_scraping_page:
+        time.sleep(random.uniform(2, 4))
+    
     try:
-        time.sleep(0.5) 
-        # Use simple fetch here, default to first agent to save time
-        headers = DEFAULT_HEADERS.copy()
-        headers['User-Agent'] = USER_AGENTS[0]
-        r = requests.get(link, headers=headers, timeout=10)
-        soup = BeautifulSoup(r.content, 'lxml')
-        og_image = soup.find('meta', property='og:image')
-        if og_image and og_image.get('content'): return og_image['content']
-    except: return None
+        response = scraper.get(url, timeout=20)
+        if response.status_code == 200:
+            return response.content if is_binary else response.text
+    except Exception as e:
+        print(f"   [!] Cloudscraper error for {url}: {e}")
+    
+    # Fallback to standard requests
+    try:
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
+        response = requests.get(url, headers=headers, timeout=15)
+        if response.status_code == 200:
+            return response.content if is_binary else response.text
+    except Exception as e:
+        print(f"   [!] Requests error for {url}: {e}")
+        
     return None
 
-def extract_image(entry, blog_name):
+def fetch_og_image(link):
+    """
+    Fetches the article HTML to find the High-Res OpenGraph Image.
+    Flag is_scraping_page=True to trigger polite sleep delays.
+    """
+    try:
+        html = robust_fetch(link, is_scraping_page=True)
+        if not html: return None
+        
+        soup = BeautifulSoup(html, 'lxml')
+        
+        # Priority 1: Open Graph Image
+        og_image = soup.find('meta', property='og:image')
+        if og_image and og_image.get('content'): 
+            return og_image['content']
+            
+        # Priority 2: Twitter Image
+        twitter_image = soup.find('meta', name='twitter:image')
+        if twitter_image and twitter_image.get('content'):
+            return twitter_image['content']
+            
+    except Exception:
+        return None
+    return None
+
+def extract_image(entry, blog_name, link):
     image_candidate = None
+    
+    # 1. Try Media Content (RSS standard)
     if 'media_content' in entry:
         for media in entry.media_content:
             if 'url' in media: return media['url']
-    if 'media_thumbnail' in entry: return entry.media_thumbnail[0]['url']
+            
+    # 2. Try Media Thumbnail
+    if 'media_thumbnail' in entry: 
+        return entry.media_thumbnail[0]['url']
+        
+    # 3. Parse HTML Content in Feed
     content = entry.get('content', [{}])[0].get('value', '') or entry.get('summary', '')
     if content:
         soup = BeautifulSoup(content, 'lxml')
         images = soup.find_all('img')
         for img in images:
             src = (img.get('data-src') or img.get('data-lazy-src') or img.get('data-original') or img.get('src'))
-            srcset = img.get('srcset') or img.get('data-srcset')
-            if srcset: src = srcset.split(',')[0].split(' ')[0]
             if not src: continue
+            
             src_lower = src.lower()
-            if any(x in src_lower for x in ['pixel', 'emoji', 'icon', 'logo', 'gravatar', 'gif', 'facebook', 'pinterest', 'share']): continue
+            if any(x in src_lower for x in ['pixel', 'emoji', 'icon', 'logo', 'gravatar', 'gif', 'facebook', 'pinterest', 'share', 'button']): continue
+            
             width = img.get('width')
             if width and width.isdigit() and int(width) < 200: continue
+            
             image_candidate = src
             break
-    if not image_candidate: image_candidate = fetch_og_image(entry.link)
+    
+    # 4. Fallback: Waterfall to Scrape the specific page
+    if not image_candidate:
+        print(f"   ... No image in feed, scraping page: {link[:40]}...")
+        image_candidate = fetch_og_image(link)
+        
     return image_candidate if image_candidate else "icon.jpg"
 
 def generate_sitemap(recipes):
-    """Generates a simple sitemap.xml for SEO #2"""
-    # We only list the homepage because it's a SPA (Single Page App), 
-    # but we update the lastmod to tell Google content has changed.
     now = datetime.now().strftime("%Y-%m-%d")
     sitemap_content = f"""<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -214,7 +226,6 @@ def generate_sitemap(recipes):
       <priority>1.0</priority>
    </url>
 </urlset>"""
-    
     with open('sitemap.xml', 'w') as f:
         f.write(sitemap_content)
     print("Generated sitemap.xml")
@@ -232,14 +243,12 @@ except (FileNotFoundError, json.JSONDecodeError):
 
 # 2. Cleanse Database
 initial_count = len(recipes)
+# Cleanse old VegNews entries if they exist
 recipes = [r for r in recipes if not (r['blog_name'] == "VegNews" and "/recipes/" not in r['link'])]
-if len(recipes) < initial_count:
-    print(f"Cleaned {initial_count - len(recipes)} items from database.")
-
 existing_links = {r['link'] for r in recipes}
 feed_stats = {} 
 
-print(f"Fetching recipes from {len(ALL_FEEDS)} blogs...")
+print(f"Fetching recipes from {len(ALL_FEEDS)} blogs using Cloudscraper...")
 
 # 3. Scrape Feeds
 for name, url, special_tags in ALL_FEEDS:
@@ -249,49 +258,55 @@ for name, url, special_tags in ALL_FEEDS:
     try:
         print(f"Checking {name}...")
         
-        # Risk #5: User-Agent Rotation logic implemented in fetch_with_retry
-        response = fetch_with_retry(url)
+        # STEP 1: Fetch Raw XML string via Cloudscraper (is_scraping_page=False for speed)
+        xml_content = robust_fetch(url, is_scraping_page=False)
         
-        # VegNews Fallback Logic
-        if (not response or response.status_code != 200) and name == "VegNews":
-             response = fetch_with_retry("https://vegnews.com/rss")
+        # Fallback for VegNews specifically
+        if (not xml_content) and name == "VegNews":
+             xml_content = robust_fetch("https://vegnews.com/rss", is_scraping_page=False)
 
-        if not response or response.status_code != 200:
-            code = response.status_code if response else "ConnErr"
-            status = f"❌ Error {code}"
+        if not xml_content:
+            status = f"❌ Blocked/ConnErr"
             feed_stats[name] = {'new': 0, 'status': status}
             continue
 
-        feed = feedparser.parse(response.content)
+        # STEP 2: Parse the String
+        feed = feedparser.parse(xml_content)
         
         if not feed.entries:
-            status = "⚠️ Parsed 0 items" if len(response.content) > 0 else "⚠️ Empty Feed"
+            status = "⚠️ Parsed 0 items"
         
         for entry in feed.entries:
             try:
-                if name == "VegNews" and "/recipes/" not in entry.link: continue
+                # FIX: Improved VegNews Filter using Link
+                if "vegnews.com" in entry.link and "/recipes/" not in entry.link: continue
 
                 dt = entry.get('published', entry.get('updated', None))
                 if not dt: continue
                 
-                # Risk #4: Robust Date Parsing
                 try:
                     published_time = parser.parse(dt)
                 except Exception:
-                    # If date parsing fails, skip this entry to prevent crash
                     continue
 
+                # FIX: Standardize Timezone to UTC
                 if published_time.tzinfo is None:
-                    published_time = published_time.replace(tzinfo=datetime.now().astimezone().tzinfo)
+                    published_time = published_time.replace(tzinfo=timezone.utc)
+                else:
+                    published_time = published_time.astimezone(timezone.utc)
                 
                 if published_time > cutoff_date:
                     if entry.link not in existing_links:
                         if is_pet_recipe(entry.title): continue
 
-                        image_url = extract_image(entry, name)
+                        # Extract Image (includes Waterfall fallback)
+                        image_url = extract_image(entry, name, entry.link)
+                        
+                        # FIX: Robust URL Joining
                         if image_url and image_url.startswith('/'):
-                            base = feed.feed.get('link', '')
-                            if base: image_url = base.rstrip('/') + image_url
+                            # Try to get the base from the feed object, fallback to feed URL
+                            base = feed.feed.get('link') or url
+                            image_url = urljoin(base, image_url)
                         
                         recipes.append({
                             "blog_name": name,
@@ -304,7 +319,7 @@ for name, url, special_tags in ALL_FEEDS:
                         })
                         existing_links.add(entry.link)
                         new_count += 1
-            except Exception:
+            except Exception as e:
                 continue
         
         feed_stats[name] = {'new': new_count, 'status': status}
@@ -313,7 +328,7 @@ for name, url, special_tags in ALL_FEEDS:
         print(f"Failed to parse {name}: {e}")
         feed_stats[name] = {'new': 0, 'status': f"❌ Crash: {str(e)[:20]}"}
 
-# 4. Backfill Tags for Existing Recipes
+# 4. Backfill Tags
 print("Updating tags for all recipes...")
 for recipe in recipes:
     base_tags = list(BLOG_TAG_MAP.get(recipe['blog_name'], []))
@@ -321,7 +336,7 @@ for recipe in recipes:
     combined_tags = list(set(base_tags + auto_tags))
     recipe['special_tags'] = combined_tags
 
-# 5. Prune Database and Calculate Stats
+# 5. Prune & Stats
 print("Pruning database and calculating stats...")
 recipes_by_blog = {}
 for r in recipes:
@@ -352,15 +367,12 @@ for bname, blog_recipes in recipes_by_blog.items():
 
 final_pruned_list.sort(key=lambda x: x['date'], reverse=True)
 
-# Risk #2: Safety check to prevent database wipeout
 if len(final_pruned_list) > 50:
     with open('data.json', 'w') as f:
         json.dump(final_pruned_list, f, indent=2)
-    
-    # SEO #2: Generate Sitemap only if database is healthy
     generate_sitemap(final_pruned_list)
 else:
-    print("⚠️ SAFETY ALERT: Database too small (<50 items). Skipping write to prevent wipeout.")
+    print("⚠️ SAFETY ALERT: Database too small (<50 items). Skipping write.")
 
 # 6. Generate Report
 with open('FEED_HEALTH.md', 'w') as f:
@@ -369,18 +381,7 @@ with open('FEED_HEALTH.md', 'w') as f:
 
     total_new_today = sum(stats.get('new', 0) for stats in feed_stats.values())
     total_in_db = len(final_pruned_list)
-    
-    # New Stats
     total_blogs_monitored = len(ALL_FEEDS)
-    avg_recipes_per_blog = round(total_in_db / total_blogs_monitored, 1) if total_blogs_monitored > 0 else 0
-    
-    total_wfpb = sum(wfpb_counts.values())
-    total_easy = sum(easy_counts.values())
-    total_budget = sum(budget_counts.values())
-
-    wfpb_percent = int((total_wfpb / total_in_db) * 100) if total_in_db > 0 else 0
-    easy_percent = int((total_easy / total_in_db) * 100) if total_in_db > 0 else 0
-    budget_percent = int((total_budget / total_in_db) * 100) if total_in_db > 0 else 0
     
     all_dates = [parser.parse(d) for d in latest_dates.values() if d != "N/A"]
     if all_dates:
@@ -389,12 +390,11 @@ with open('FEED_HEALTH.md', 'w') as f:
     else:
         avg_date = "N/A"
 
-    # Prepare rows first to calculate active blogs count
-    all_names = set(list(feed_stats.keys()) + list(total_counts.keys()))
-    report_rows = []
-    
     three_months_ago = datetime.now() - timedelta(days=90)
     stale_count = 0
+    report_rows = []
+    
+    all_names = set(list(feed_stats.keys()) + list(total_counts.keys()))
     
     for name in all_names:
         url = URL_MAP.get(name, "Unknown")
@@ -403,53 +403,28 @@ with open('FEED_HEALTH.md', 'w') as f:
         total = total_counts.get(name, 0)
         latest = latest_dates.get(name, "N/A")
         
-        # Stale Check (Yellow Warning)
         if latest != "N/A":
             try:
                 latest_dt = parser.parse(latest)
                 if latest_dt.replace(tzinfo=None) < three_months_ago.replace(tzinfo=None):
                     stale_count += 1
-                    # Only add Stale warning if it's not already broken
-                    if "❌" not in status:
-                        status = f"⚠️ Stale (>90d) {status.replace('✅ OK', '')}"
-            except:
-                pass
+                    if "❌" not in status: status = f"⚠️ Stale (>90d) {status.replace('✅ OK', '')}"
+            except: pass
         
-        wfpb_val = wfpb_counts.get(name, 0)
-        easy_val = easy_counts.get(name, 0)
-        budget_val = budget_counts.get(name, 0)
-        
-        if total == 0 and "✅" in status:
-            status = "❌ No Recipes"
+        if total == 0 and "✅" in status: status = "❌ No Recipes"
             
-        report_rows.append((name, url, new, total, wfpb_val, easy_val, budget_val, latest, status))
+        report_rows.append((name, url, new, total, latest, status))
 
-    active_blogs_count = total_blogs_monitored - stale_count
-
-    f.write(f"**Total Blogs:** {total_blogs_monitored}\n")
-    f.write(f"**Avg Recipes per Blog:** {avg_recipes_per_blog}\n")
-    f.write(f"**Active Blogs (Last 90d):** {active_blogs_count} / {total_blogs_monitored}\n") # The useful stat
+    f.write(f"**Active Blogs (Last 90d):** {total_blogs_monitored - stale_count} / {total_blogs_monitored}\n")
     f.write(f"**Total Database Size:** {total_in_db}\n")
-    f.write(f"**New Today:** {total_new_today}\n")
-    f.write(f"**WFPB:** {total_wfpb} ({wfpb_percent}%)\n")
-    f.write(f"**Easy:** {total_easy} ({easy_percent}%)\n")
-    f.write(f"**Budget:** {total_budget} ({budget_percent}%)\n")
-    f.write(f"**Average Latest Post:** {avg_date}\n\n")
+    f.write(f"**New Today:** {total_new_today}\n\n")
 
-    f.write("| Blog Name | URL | New | Total | WFPB | Easy | Budget | Latest | Status |\n")
-    f.write("|-----------|-----|-----|-------|------|------|--------|--------|--------|\n")
+    f.write("| Blog Name | New | Total | Latest | Status |\n")
+    f.write("|-----------|-----|-------|--------|--------|\n")
     
-    def sort_key(row):
-        stat = row[8] 
-        priority = 3 
-        if '❌' in stat: priority = 0
-        elif 'Stale' in stat: priority = 1
-        elif '⚠️' in stat: priority = 2
-        return (priority, row[0])
-
-    report_rows.sort(key=sort_key)
+    report_rows.sort(key=lambda x: (0 if '❌' in x[5] else 1, x[0]))
     
     for row in report_rows:
-        f.write(f"| {row[0]} | {row[1]} | {row[2]} | {row[3]} | {row[4]} | {row[5]} | {row[6]} | {row[7]} | {row[8]} |\n")
+        f.write(f"| {row[0]} | {row[2]} | {row[3]} | {row[4]} | {row[5]} |\n")
 
-print(f"Successfully scraped. Database size: {len(final_pruned_list)}")
+print(f"Done. Database: {len(final_pruned_list)}")
