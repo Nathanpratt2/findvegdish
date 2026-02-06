@@ -6,9 +6,10 @@
     <title>Daily Vegan Recipes</title>
 
     <!-- SEO & Social Meta Tags -->
-    <meta name="description" content="Find fresh daily vegan recipes from top bloggers. Search by ingredients, diet types, or explore new plant-based dishes.">
+    <!-- Added IDs to these tags for JavaScript access -->
+    <meta id="metaDesc" name="description" content="Find fresh daily vegan recipes from top bloggers. Search by ingredients, diet types, or explore new plant-based dishes.">
     
-    <link rel="canonical" href="https://findvegdish.com/">
+    <link id="canonicalLink" rel="canonical" href="https://findvegdish.com/">
     <meta name="robots" content="index, follow, max-image-preview:large">
 
     <meta property="og:title" content="Daily Vegan Recipes">
@@ -77,7 +78,7 @@
             transform: scale(0.98); 
         }
         
-        /* SEO UPDATE: Turned into H1 via CSS to maintain look */
+        /* Static H1 as requested */
         h1.sub-intro {
             text-align: center;
             font-size: 0.9em;
@@ -398,7 +399,6 @@
 
         footer { text-align: center; margin-top: 50px; color: #aaa; font-size: 0.9em; padding: 0 20px;}
         
-        /* SEO UPDATE: Styles for the new topic cloud */
         .footer-topics {
             margin-top: 20px;
             padding-top: 20px;
@@ -451,17 +451,13 @@
 <body>
 
 <header>
-    <!-- SEO UPDATE: Promoted sub-intro to H1 for better crawlability, removed hidden h1 -->
-    <!-- The CSS class 'sub-intro' ensures it looks exactly like the old paragraph -->
-    
-    <!-- Logo -->
     <a href="index.html" class="logo-link" title="Refresh">
         <img src="default.jpg" alt="Daily Vegan Recipes" class="logo-img">
     </a>
     
+    <!-- Static H1 preserved -->
     <h1 class="sub-intro">Explore the newest recipes from over 50 top blogs</h1>
     
-    <!-- Search Row: Shuffle Left, Search Right -->
     <div class="search-row">
         <button id="shuffleIconBtn" onclick="shuffleRecipes()" title="Shuffle Recipes">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -479,7 +475,6 @@
         </div>
     </div>
 
-    <!-- Filter Buttons -->
     <div class="controls">
         <button class="btn" id="mealsBtn" onclick="toggleType('meal')">🍝 Meals</button>
         <button class="btn" id="sweetsBtn" onclick="toggleType('sweet')">🍪 Sweets</button>
@@ -505,8 +500,6 @@
 <footer>
     <p>Daily Vegan Recipes aggregates the best plant-based cooking from top bloggers. Discover easy vegan dinner ideas, high-protein plant-based meals, WFPB (Whole Food Plant Based) dishes, gluten-free sweets, and budget-friendly vegan food. Updated daily.</p>
     
-    <!-- SEO UPDATE: Topic Cloud / Internal Linking Structure -->
-    <!-- This allows Google to index these specific "Filtered Views" as pages -->
     <div class="footer-topics">
         <a href="?q=pasta">Best Vegan Pasta</a>
         <a href="?q=tofu">Tofu Recipes</a>
@@ -555,41 +548,149 @@
             allRecipes = data;
             currentContext = allRecipes; 
             
-            updatePageTitle();
-            injectJSONLD(allRecipes);
-
-            // SEO UPDATE: Check URL for search query (?q=tofu) on load
-            const urlParams = new URLSearchParams(window.location.search);
-            const query = urlParams.get('q');
+            injectStaticSchema(allRecipes);
+            setupInfiniteScroll();   
             
-            if (query) {
-                // Pre-fill search and filter
-                document.getElementById('searchInput').value = query;
-                document.getElementById('clearBtn').style.display = 'block';
-                // We call applyFilters immediately
-                applyFilters(); 
-            } else {
-                renderNextBatch();
-            }
-
-            setupInfiniteScroll();       
+            // Check URL for initial state (Deep Linking)
+            parseURLState();
         })
         .catch(error => {
             console.error('Error loading data:', error);
             document.getElementById('gallery').innerHTML = '<p style="text-align:center">Could not load recipes.</p>';
         });
 
-    // --- SEO FUNCTIONS ---
-    function updatePageTitle() {
-        const now = new Date();
-        const newCount = allRecipes.filter(r => (now - new Date(r.date)) / (1000 * 3600) < 28).length;
-        if (newCount > 0) {
-            document.title = `(${newCount} New) Daily Vegan Recipes`;
+    // Handle Browser Back Button
+    window.addEventListener('popstate', () => {
+        parseURLState();
+    });
+
+    // --- URL & SEO LOGIC (New) ---
+
+    // 1. Read URL params and set UI
+    function parseURLState() {
+        const params = new URLSearchParams(window.location.search);
+        
+        // Reset Logic
+        activeType = null;
+        activeTags.clear();
+        document.getElementById('mealsBtn').classList.remove('active-filter');
+        document.getElementById('sweetsBtn').classList.remove('active-filter');
+        document.querySelectorAll('.btn').forEach(b => b.classList.remove('active-filter'));
+        document.getElementById('searchInput').value = '';
+
+        // Apply URL Params
+        if (params.has('q')) {
+            document.getElementById('searchInput').value = params.get('q');
+            document.getElementById('clearBtn').style.display = 'block';
         }
+
+        if (params.has('type')) {
+            const type = params.get('type');
+            activeType = type;
+            if (type === 'meal') document.getElementById('mealsBtn').classList.add('active-filter');
+            if (type === 'sweet') document.getElementById('sweetsBtn').classList.add('active-filter');
+        }
+
+        if (params.has('tag')) {
+            const tags = params.get('tag').split(',');
+            tags.forEach(t => {
+                activeTags.add(t);
+                const btn = document.getElementById(t.toLowerCase() + 'Btn');
+                if (btn) btn.classList.add('active-filter');
+            });
+        }
+
+        // Apply filters but do NOT push new state (avoid loop)
+        applyFilters(false); 
     }
 
-    function injectJSONLD(recipes) {
-        // SEO UPDATE: Added "WebSite" Schema with SearchAction
+    // 2. Update URL History
+    function updateURL() {
+        const params = new URLSearchParams();
+        const searchVal = document.getElementById('searchInput').value;
+        
+        if (searchVal) params.set('q', searchVal);
+        if (activeType) params.set('type', activeType);
+        if (activeTags.size > 0) params.set('tag', Array.from(activeTags).join(','));
+
+        const newURL = params.toString() ? `?${params.toString()}` : window.location.pathname;
+        history.pushState({}, '', newURL);
+        
+        // Update Canonical Link dynamically
+        const canonical = document.getElementById('canonicalLink');
+        if (canonical) canonical.href = "https://findvegdish.com/" + newURL;
+    }
+
+    // 3. Update Title, Meta Description, and Breadcrumb Schema
+    function updateSEO() {
+        let title = "Daily Vegan Recipes";
+        let desc = "Find fresh daily vegan recipes from top bloggers.";
+        let breadcrumbName = "Home";
+        
+        const searchVal = document.getElementById('searchInput').value;
+        const tagsArr = Array.from(activeTags);
+
+        // Logic to build title
+        if (searchVal) {
+            title = `${searchVal} - Search | Daily Vegan Recipes`;
+            desc = `Best vegan recipes matching "${searchVal}".`;
+            breadcrumbName = `Search: ${searchVal}`;
+        } else if (activeType === 'meal') {
+            title = "Vegan Dinner & Meal Ideas | Daily Vegan Recipes";
+            desc = "Discover savory vegan meals, dinners, and lunch ideas from top plant-based blogs.";
+            breadcrumbName = "Meals";
+        } else if (activeType === 'sweet') {
+            title = "Vegan Sweets & Desserts | Daily Vegan Recipes";
+            desc = "Indulge in the best vegan desserts, cookies, cakes, and sweets.";
+            breadcrumbName = "Sweets";
+        } else if (tagsArr.length > 0) {
+            const primaryTag = tagsArr[0];
+            title = `${primaryTag} Vegan Recipes | Daily Vegan Recipes`;
+            desc = `Top rated ${primaryTag} vegan recipes updated daily.`;
+            breadcrumbName = primaryTag;
+        }
+
+        // Update DOM
+        document.title = title;
+        const metaDesc = document.getElementById('metaDesc');
+        if (metaDesc) metaDesc.content = desc;
+
+        // Dynamic Breadcrumb Schema
+        updateBreadcrumbSchema(breadcrumbName);
+    }
+
+    function updateBreadcrumbSchema(currentItemName) {
+        // Remove old dynamic schema
+        const oldScript = document.getElementById('dynamic-schema');
+        if (oldScript) oldScript.remove();
+
+        if (currentItemName === "Home") return;
+
+        const schema = {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://findvegdish.com/"
+            }, {
+                "@type": "ListItem",
+                "position": 2,
+                "name": currentItemName,
+                "item": window.location.href
+            }]
+        };
+
+        const script = document.createElement('script');
+        script.id = 'dynamic-schema';
+        script.type = 'application/ld+json';
+        script.text = JSON.stringify(schema);
+        document.head.appendChild(script);
+    }
+
+    function injectStaticSchema(recipes) {
+        // WebSite Schema
         const searchSchema = {
             "@context": "https://schema.org",
             "@type": "WebSite",
@@ -601,32 +702,10 @@
             }
         };
 
-        const listSchema = {
-            "@context": "https://schema.org",
-            "@type": "CollectionPage",
-            "name": "Daily Vegan Recipes",
-            "description": "Daily recipes from the top vegan bloggers.",
-            "url": "https://findvegdish.com",
-            "mainEntity": {
-                "@type": "ItemList",
-                "itemListElement": recipes.slice(0, 20).map((r, i) => ({
-                    "@type": "ListItem",
-                    "position": i + 1,
-                    "url": r.link,
-                    "name": r.title
-                }))
-            }
-        };
-
         const scriptSearch = document.createElement('script');
         scriptSearch.type = 'application/ld+json';
         scriptSearch.text = JSON.stringify(searchSchema);
         document.head.appendChild(scriptSearch);
-
-        const scriptList = document.createElement('script');
-        scriptList.type = 'application/ld+json';
-        scriptList.text = JSON.stringify(listSchema);
-        document.head.appendChild(scriptList);
     }
 
     // --- RENDER LOGIC (BATCHED) ---
@@ -674,9 +753,12 @@
         const img = document.createElement('img');
         img.src = recipe.image;
         
-        // SEO UPDATE: Enhanced Alt Text for Google Images (Long-tail keywords)
-        img.alt = `${recipe.title} - Vegan Recipe by ${recipe.blog_name}`;
+        // CLS IMPROVEMENT: Explicit width/height to reserve space
+        // CSS overrides width to 100%, but this aspect ratio helps the browser
+        img.width = 400;
+        img.height = 250; 
         
+        img.alt = `${recipe.title} - Vegan Recipe by ${recipe.blog_name}`;
         img.loading = "lazy"; 
         img.referrerPolicy = "no-referrer";
 
@@ -763,8 +845,6 @@
         currentContext = newContext;
         renderedCount = 0;
         document.getElementById('gallery').innerHTML = '';
-        // If not triggered by initial load (no scrollTop issues)
-        // window.scrollTo({ top: 0, behavior: 'smooth' });
         renderNextBatch();
     }
 
@@ -775,7 +855,7 @@
             const j = Math.floor(Math.random() * (i + 1));
             [allRecipes[i], allRecipes[j]] = [allRecipes[j], allRecipes[i]];
         }
-        applyFilters();
+        applyFilters(true);
     }
 
     // --- FILTER & LOGIC ---
@@ -799,7 +879,7 @@
                 mealsBtn.classList.remove('active-filter');
             }
         }
-        applyFilters();
+        applyFilters(true);
     }
 
     function toggleTag(tagName) {
@@ -814,10 +894,10 @@
             activeTags.add(tagName);
             btn.classList.add('active-filter');
         }
-        applyFilters();
+        applyFilters(true);
     }
 
-    function applyFilters() {
+    function applyFilters(pushState = true) {
         const rawInput = document.getElementById('searchInput').value;
         const term = rawInput.toLowerCase().replace(/-/g, ' '); 
         
@@ -891,11 +971,17 @@
             });
         }
 
+        // Apply SEO and URL changes
+        if (pushState) {
+            updateURL();
+        }
+        updateSEO();
+
         resetView(filtered);
     }
 
     const processSearchChange = debounce(() => {
-        applyFilters();
+        applyFilters(true);
     }, 300);
 
     const searchInput = document.getElementById('searchInput');
@@ -910,7 +996,7 @@
         searchInput.value = '';
         searchInput.focus();
         clearBtn.style.display = 'none';
-        applyFilters();
+        applyFilters(true);
     });
 
     let deferredPrompt;
