@@ -1,10 +1,12 @@
 import feedparser
 import json
 import requests
+import cloudscraper
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 from dateutil import parser
 import time
+import random
 import os
 
 # --- CONFIGURATION ---
