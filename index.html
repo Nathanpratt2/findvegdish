@@ -6,18 +6,17 @@
     <title>Daily Vegan Recipes</title>
 
     <!-- SEO & Social Meta Tags -->
-    <!-- Added IDs to these tags for JavaScript access -->
     <meta id="metaDesc" name="description" content="Find fresh daily vegan recipes from top bloggers. Search by ingredients, diet types, or explore new plant-based dishes.">
     
     <link id="canonicalLink" rel="canonical" href="https://findvegdish.com/">
     <meta name="robots" content="index, follow, max-image-preview:large">
 
+    <!-- Open Graph Tags (Now Dynamic via JS) -->
     <meta property="og:title" content="Daily Vegan Recipes">
     <meta property="og:description" content="Daily recipes from the top bloggers">
     <meta property="og:image" content="https://findvegdish.com/default.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    
     <meta property="og:url" content="https://findvegdish.com">
     <meta property="og:type" content="website">
     
@@ -78,7 +77,6 @@
             transform: scale(0.98); 
         }
         
-        /* Static H1 as requested */
         h1.sub-intro {
             text-align: center;
             font-size: 0.9em;
@@ -118,6 +116,12 @@
             color: #769F37; 
             font-weight: 600;
         }
+        
+        /* UI REQUEST: Hover Border */
+        #searchInput:hover {
+            border-color: #769F37;
+        }
+
         #searchInput:focus {
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
             border-color: #769F37;
@@ -385,7 +389,8 @@
             overflow: hidden;
             text-overflow: ellipsis;
         }
-        h3.title { margin: 5px 0; }
+        /* RECO B: Changed to match H2 tag */
+        h2.title { margin: 5px 0; }
         
         .blogger { font-size: 0.9em; color: #888; margin-top: auto; padding-top: 10px; }
         
@@ -564,7 +569,7 @@
         parseURLState();
     });
 
-    // --- URL & SEO LOGIC (New) ---
+    // --- URL & SEO LOGIC (Updated) ---
 
     // 1. Read URL params and set UI
     function parseURLState() {
@@ -621,8 +626,8 @@
         if (canonical) canonical.href = "https://findvegdish.com/" + newURL;
     }
 
-    // 3. Update Title, Meta Description, and Breadcrumb Schema
-    function updateSEO() {
+    // 3. Update Title, Meta Description, Breadcrumb, and Open Graph
+    function updateSEO(currentRecipes = []) {
         let title = "Daily Vegan Recipes";
         let desc = "Find fresh daily vegan recipes from top bloggers.";
         let breadcrumbName = "Home";
@@ -650,13 +655,25 @@
             breadcrumbName = primaryTag;
         }
 
-        // Update DOM
+        // Update DOM Title and Meta Desc
         document.title = title;
         const metaDesc = document.getElementById('metaDesc');
         if (metaDesc) metaDesc.content = desc;
 
+        // RECO C: Update Open Graph Tags
+        const ogTitle = document.querySelector('meta[property="og:title"]');
+        const ogDesc = document.querySelector('meta[property="og:description"]');
+        const ogUrl = document.querySelector('meta[property="og:url"]');
+        
+        if (ogTitle) ogTitle.content = title;
+        if (ogDesc) ogDesc.content = desc;
+        if (ogUrl) ogUrl.content = window.location.href;
+
         // Dynamic Breadcrumb Schema
         updateBreadcrumbSchema(breadcrumbName);
+        
+        // RECO A: Update ItemList Schema (Structured Data)
+        updateItemListSchema(currentRecipes);
     }
 
     function updateBreadcrumbSchema(currentItemName) {
@@ -684,6 +701,35 @@
 
         const script = document.createElement('script');
         script.id = 'dynamic-schema';
+        script.type = 'application/ld+json';
+        script.text = JSON.stringify(schema);
+        document.head.appendChild(script);
+    }
+
+    // RECO A: Generate ItemList Schema for the filtered results
+    function updateItemListSchema(recipes) {
+        const oldScript = document.getElementById('item-list-schema');
+        if (oldScript) oldScript.remove();
+
+        if (!recipes || recipes.length === 0) return;
+
+        // SEO Constraint: Limit to top 20 items to avoid excessive payload
+        const topRecipes = recipes.slice(0, 20);
+
+        const schema = {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "itemListElement": topRecipes.map((recipe, index) => ({
+                "@type": "ListItem",
+                "position": index + 1,
+                "url": recipe.link,
+                "name": recipe.title,
+                "image": recipe.image
+            }))
+        };
+
+        const script = document.createElement('script');
+        script.id = 'item-list-schema';
         script.type = 'application/ld+json';
         script.text = JSON.stringify(schema);
         document.head.appendChild(script);
@@ -754,7 +800,6 @@
         img.src = recipe.image;
         
         // CLS IMPROVEMENT: Explicit width/height to reserve space
-        // CSS overrides width to 100%, but this aspect ratio helps the browser
         img.width = 400;
         img.height = 250; 
         
@@ -798,12 +843,13 @@
             });
         }
         
+        // RECO B: Changed h3.title to h2.title for better SEO Hierarchy (H1 -> H2)
         info.innerHTML = `
             <div class="meta-row">
                 <span class="${tagClass}">${tagText}</span>
                 ${badgeHTML}
             </div>
-            <h3 class="title" title="${recipe.title}">${recipe.title}</h3>
+            <h2 class="title" title="${recipe.title}">${recipe.title}</h2>
             <div class="blogger">by ${recipe.blog_name}</div>
         `;
 
@@ -975,7 +1021,9 @@
         if (pushState) {
             updateURL();
         }
-        updateSEO();
+        
+        // Pass the filtered list to updateSEO so it can generate ItemList schema
+        updateSEO(filtered);
 
         resetView(filtered);
     }
