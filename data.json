@@ -1,5 +1,54 @@
 [
   {
+    "blog_name": "Rainbow Nourishments",
+    "title": "Vegan Chocolate Chip Cookie Bars",
+    "link": "https://www.rainbownourishments.com/vegan-chocolate-chip-cookie-bars/",
+    "image": "https://www.rainbownourishments.com/wp-content/uploads/2026/02/vegan-chocolate-chip-cookie-bars-1.0.jpg",
+    "date": "2026-02-06T17:25:54+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Eat Figs, Not Pigs",
+    "title": "Bloomin\u2019 Onion Petals",
+    "link": "https://www.eatfigsnotpigs.com/bloomin-onion-petals/?utm_source=rss&utm_medium=rss&utm_campaign=bloomin-onion-petals",
+    "image": "https://www.eatfigsnotpigs.com/wp-content/uploads/2024/09/Bloomin-Onion-Petals_0001-1024x683.jpg",
+    "date": "2026-02-06T17:17:37+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
+    "blog_name": "HealthyGirl Kitchen",
+    "title": "Greek Caesar Pasta Salad",
+    "link": "https://healthygirlkitchen.com/greek-caesar-pasta-salad/?utm_source=rss&utm_medium=rss&utm_campaign=greek-caesar-pasta-salad",
+    "image": "https://healthygirlkitchen.com/wp-content/uploads/2026/02/Greek-Caesar-Pasta-Salad-20-1200x1799.jpg",
+    "date": "2026-02-06T15:54:54+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "PlantYou",
+    "title": "Matcha Chia Pudding",
+    "link": "https://plantyou.com/matcha-chia-pudding/",
+    "image": "https://plantyou.com/wp-content/uploads/2026/01/DSC03587-scaled.jpg",
+    "date": "2026-02-06T15:16:41+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Jessica in the Kitchen",
+    "title": "Cozy Spiced Chai",
+    "link": "https://jessicainthekitchen.com/spiced-chai/",
+    "image": "https://jessicainthekitchen.com/wp-content/uploads/2026/01/Vegan-Masala-Chai-Tea-11-267x400.jpg",
+    "date": "2026-02-06T15:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "The Banana Diaries",
     "title": "No Bake Mini Oreo Cheesecakes for Two \u2013 Dairy Free!",
     "link": "https://thebananadiaries.com/no-bake-mini-oreo-cheesecakes/",
@@ -114,8 +163,8 @@
     "date": "2026-02-05T20:13:12+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -177,8 +226,7 @@
     "date": "2026-02-05T08:44:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Budget"
     ]
   },
   {
@@ -537,8 +585,8 @@
     "date": "2026-02-03T05:14:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -557,10 +605,7 @@
     "image": "https://healthygirlkitchen.com/wp-content/uploads/2026/02/protein-brownie-overnight-oats-11-1200x1799.jpg",
     "date": "2026-02-02T23:50:55+00:00",
     "is_disruptor": false,
-    "special_tags": [
-      "WFPB",
-      "Easy"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "Sweet Simple Vegan",
@@ -608,8 +653,8 @@
     "date": "2026-02-02T15:41:04+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -1076,8 +1121,8 @@
     "date": "2026-01-30T02:05:16+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -1184,8 +1229,8 @@
     "date": "2026-01-29T15:19:42+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -1207,8 +1252,7 @@
     "date": "2026-01-29T08:46:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Budget"
     ]
   },
   {
@@ -1263,8 +1307,8 @@
     "date": "2026-01-28T19:16:29+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -1342,8 +1386,8 @@
     "date": "2026-01-28T11:45:05+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
       "WFPB",
+      "Budget",
       "Easy"
     ]
   },
@@ -1364,8 +1408,8 @@
     "date": "2026-01-28T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -1506,8 +1550,8 @@
     "date": "2026-01-27T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
       "WFPB",
+      "Budget",
       "Easy"
     ]
   },
@@ -1728,8 +1772,8 @@
     "date": "2026-01-24T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -1928,8 +1972,7 @@
     "date": "2026-01-22T08:34:29+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Budget"
     ]
   },
   {
@@ -1940,8 +1983,8 @@
     "date": "2026-01-21T21:51:00+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -2025,8 +2068,8 @@
     "date": "2026-01-21T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -2091,8 +2134,8 @@
     "date": "2026-01-20T13:29:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
       "WFPB",
+      "Budget",
       "Easy"
     ]
   },
@@ -2379,8 +2422,8 @@
     "date": "2026-01-16T20:07:56+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
       "WFPB",
+      "Budget",
       "Easy"
     ]
   },
@@ -2560,8 +2603,7 @@
     "date": "2026-01-15T08:24:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Budget"
     ]
   },
   {
@@ -2669,8 +2711,8 @@
     "date": "2026-01-14T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -2701,8 +2743,8 @@
     "date": "2026-01-14T01:52:22+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
       "WFPB",
+      "Budget",
       "Easy"
     ]
   },
@@ -2745,8 +2787,8 @@
     "date": "2026-01-13T18:12:15+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -2857,8 +2899,7 @@
     "date": "2026-01-12T08:29:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Budget"
     ]
   },
   {
@@ -2922,8 +2963,8 @@
     "date": "2026-01-11T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -3054,8 +3095,7 @@
     "date": "2026-01-08T15:45:05+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Budget"
     ]
   },
   {
@@ -3155,8 +3195,8 @@
     "date": "2026-01-07T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -3291,7 +3331,6 @@
     "date": "2026-01-05T16:03:50+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
       "Easy"
     ]
   },
@@ -3369,9 +3408,9 @@
     "date": "2026-01-04T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
       "WFPB",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -3534,8 +3573,8 @@
     "date": "2025-12-29T15:35:13+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -3564,8 +3603,7 @@
     "date": "2025-12-29T11:22:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Budget"
     ]
   },
   {
@@ -3652,8 +3690,8 @@
     "date": "2025-12-26T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
       "WFPB",
+      "Budget",
       "Easy"
     ]
   },
@@ -3723,8 +3761,7 @@
     "date": "2025-12-22T10:43:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Budget"
     ]
   },
   {
@@ -3746,8 +3783,8 @@
     "date": "2025-12-21T14:29:08+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -3956,8 +3993,7 @@
     "date": "2025-12-18T07:05:55+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Budget"
     ]
   },
   {
@@ -4039,8 +4075,8 @@
     "date": "2025-12-17T20:30:26+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
       "WFPB",
+      "Budget",
       "Easy"
     ]
   },
@@ -4093,8 +4129,8 @@
     "date": "2025-12-17T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -4142,10 +4178,7 @@
     "image": "https://healthygirlkitchen.com/wp-content/uploads/2025/12/1.png",
     "date": "2025-12-15T21:13:25+00:00",
     "is_disruptor": false,
-    "special_tags": [
-      "WFPB",
-      "Easy"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "Nora Cooks",
@@ -4222,8 +4255,8 @@
     "date": "2025-12-14T00:22:05+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -4294,8 +4327,8 @@
     "date": "2025-12-12T05:45:13+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -4399,7 +4432,6 @@
     "date": "2025-12-09T15:54:51+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
       "Easy"
     ]
   },
@@ -4491,8 +4523,8 @@
     "date": "2025-12-07T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -4895,10 +4927,7 @@
     "image": "https://healthygirlkitchen.com/wp-content/uploads/2025/11/mac-trees-13-1200x1799.jpg",
     "date": "2025-11-24T17:07:31+00:00",
     "is_disruptor": false,
-    "special_tags": [
-      "WFPB",
-      "Easy"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "Sarah's Vegan Kitchen",
@@ -5140,8 +5169,8 @@
     "date": "2025-11-19T22:54:08+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -5252,10 +5281,7 @@
     "image": "https://healthygirlkitchen.com/wp-content/uploads/2025/11/ANTIOXIDANT-BERRY-MUFFIN-BAKED-OATMEAL-21-1200x1799.jpg",
     "date": "2025-11-17T17:44:50+00:00",
     "is_disruptor": false,
-    "special_tags": [
-      "WFPB",
-      "Easy"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "Choosing Chia",
@@ -5396,8 +5422,8 @@
     "date": "2025-11-12T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -5436,10 +5462,7 @@
     "image": "https://healthygirlkitchen.com/wp-content/uploads/2025/11/HGK-thanksgiving-recipe-roundup.png",
     "date": "2025-11-11T20:05:54+00:00",
     "is_disruptor": false,
-    "special_tags": [
-      "WFPB",
-      "Easy"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "The Post-Punk Kitchen",
@@ -5607,8 +5630,8 @@
     "date": "2025-11-05T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -5630,8 +5653,8 @@
     "date": "2025-11-05T03:20:51+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
       "WFPB",
+      "Budget",
       "Easy"
     ]
   },
@@ -5694,8 +5717,8 @@
     "date": "2025-11-02T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -5795,8 +5818,8 @@
     "date": "2025-10-29T09:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -5818,7 +5841,6 @@
     "date": "2025-10-28T18:22:17+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
       "Easy"
     ]
   },
@@ -5860,8 +5882,8 @@
     "date": "2025-10-26T09:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -5906,10 +5928,7 @@
     "image": "https://healthygirlkitchen.com/wp-content/uploads/2025/10/berries-cream-COLLAGEN-BOOSTER-smoothie-10-1-1200x1799.jpg",
     "date": "2025-10-24T18:07:58+00:00",
     "is_disruptor": false,
-    "special_tags": [
-      "WFPB",
-      "Easy"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "Choosing Chia",
@@ -5995,8 +6014,8 @@
     "date": "2025-10-21T16:43:44+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
       "WFPB",
+      "Budget",
       "Easy"
     ]
   },
@@ -6081,8 +6100,8 @@
     "date": "2025-10-16T10:10:53+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
       "WFPB",
+      "Budget",
       "Easy"
     ]
   },
@@ -6296,8 +6315,7 @@
     "date": "2025-09-30T18:45:42+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "WFPB"
     ]
   },
   {
@@ -6353,8 +6371,8 @@
     "date": "2025-09-25T17:58:30+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
       "WFPB",
+      "Budget",
       "Easy"
     ]
   },
@@ -6441,8 +6459,8 @@
     "date": "2025-09-15T20:00:17+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -6721,8 +6739,8 @@
     "date": "2025-08-25T12:56:12+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -6849,8 +6867,8 @@
     "date": "2025-07-31T18:00:11+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
       "WFPB",
+      "Budget",
       "Easy"
     ]
   },
