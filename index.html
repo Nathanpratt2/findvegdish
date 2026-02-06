@@ -7,9 +7,21 @@
 
     <!-- SEO & Social Meta Tags -->
     <meta name="description" content="Find fresh daily vegan recipes from top bloggers.">
+    
+    <!-- IMPROVEMENT 1: Canonical Tag -->
+    <link rel="canonical" href="https://findvegdish.com/">
+    
+    <!-- IMPROVEMENT 2: Max Image Preview for Google Discover -->
+    <meta name="robots" content="index, follow, max-image-preview:large">
+
     <meta property="og:title" content="Daily Vegan Recipes">
     <meta property="og:description" content="Daily recipes from the top bloggers">
-    <meta property="og:image" content="https://findvegdish.com/default.jpg"> 
+    <meta property="og:image" content="https://findvegdish.com/default.jpg">
+    
+    <!-- IMPROVEMENT 3: Explicit Image Dimensions for Social Sharing -->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
     <meta property="og:url" content="https://findvegdish.com">
     <meta property="og:type" content="website">
     
@@ -137,9 +149,9 @@
             width: 48px;
             height: 48px;
             border-radius: 50%;
-            background-color: white; /* Clean white background */
-            border: 2px solid #769F37; /* Nice solid brand border */
-            color: #769F37; /* Brand green icon */
+            background-color: white; 
+            border: 2px solid #769F37; 
+            color: #769F37; 
             display: flex;
             justify-content: center;
             align-items: center;
@@ -152,7 +164,6 @@
         #shuffleIconBtn:active {
             transform: scale(0.95);
         }
-        /* Hover State: Invert colors for impact */
         @media (hover: hover) {
             #shuffleIconBtn:hover {
                 background-color: #769F37;
@@ -165,36 +176,27 @@
         .controls {
             display: flex;
             align-items: center;
-            gap: 10px; /* Tighter gap to help fit on one line */
+            gap: 10px; 
             margin-top: 15px;
             width: 100%;
-            
-            /* Critical for "Squeeze" and Mobile Scroll */
             flex-wrap: nowrap; 
             overflow-x: auto; 
-            -webkit-overflow-scrolling: touch; /* Smooth scroll on iOS */
-            
-            /* Visual polish for scrolling */
-            padding-bottom: 5px; /* Space for scrollbar if visible */
-            scrollbar-width: none; /* Hide scrollbar Firefox */
-            
-            /* Default to start so scrolling works on small screens */
+            -webkit-overflow-scrolling: touch; 
+            padding-bottom: 5px; 
+            scrollbar-width: none; 
             justify-content: flex-start;
-            padding-left: 5px; /* Tiny buffer on left */
+            padding-left: 5px; 
             padding-right: 5px;
         }
         
-        /* Hide scrollbar Webkit */
         .controls::-webkit-scrollbar { display: none; }
 
-        /* On larger screens, re-center them since they will fit */
         @media (min-width: 550px) {
             .controls {
                 justify-content: center;
             }
         }
         
-        /* DESIGN UPDATE: Mobile Scroll Hint */
         @media (max-width: 549px) {
             .controls::after {
                 content: '';
@@ -204,12 +206,12 @@
                 bottom: 0;
                 width: 30px;
                 background: linear-gradient(to right, rgba(248, 249, 250, 0), rgba(248, 249, 250, 1) 80%);
-                pointer-events: none; /* Allows clicking through the gradient */
+                pointer-events: none; 
             }
         }
 
         .btn {
-            padding: 10px 18px; /* Slightly reduced side padding for fit */
+            padding: 10px 18px; 
             border-radius: 25px;
             border: none;
             font-family: 'Poppins', sans-serif;
@@ -224,12 +226,8 @@
             background-color: white;
             border: 1px solid #ddd;
             -webkit-tap-highlight-color: transparent; 
-            
-            /* Prevent buttons from squishing or wrapping text */
             white-space: nowrap; 
             flex-shrink: 0; 
-            
-            /* DESIGN UPDATE: Added shadow for depth */
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
         @media (hover: hover) {
@@ -389,6 +387,9 @@
             overflow: hidden;
             text-overflow: ellipsis;
         }
+        /* Ensure H3 doesn't introduce unwanted browser margin */
+        h3.title { margin: 5px 0; }
+        
         .blogger { font-size: 0.9em; color: #888; margin-top: auto; padding-top: 10px; }
         
         .no-results {
@@ -399,7 +400,7 @@
             margin-top: 40px;
         }
 
-        footer { text-align: center; margin-top: 50px; color: #aaa; font-size: 0.9em; }
+        footer { text-align: center; margin-top: 50px; color: #aaa; font-size: 0.9em; padding: 0 20px;}
         #loader { text-align: center; padding: 20px; color: #888; font-style: italic; display: none; }
 
         #scrollTopBtn {
@@ -486,7 +487,8 @@
 <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="natethevegan" data-description="Support me on Buy me a coffee!" data-message="" data-color="#769F37" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 
 <footer>
-    <p></p>
+    <!-- IMPROVEMENT 4: Static keyword rich footer for crawlers -->
+    <p>Daily Vegan Recipes aggregates the best plant-based cooking from top bloggers. Discover easy vegan dinner ideas, high-protein plant-based meals, WFPB (Whole Food Plant Based) dishes, gluten-free sweets, and budget-friendly vegan food. Updated daily.</p>
 </footer>
 
 <script>
@@ -649,12 +651,13 @@
             });
         }
         
+        // IMPROVEMENT 5: Semantic HTML - Changed div.title to h3.title
         info.innerHTML = `
             <div class="meta-row">
                 <span class="${tagClass}">${tagText}</span>
                 ${badgeHTML}
             </div>
-            <div class="title" title="${recipe.title}">${recipe.title}</div>
+            <h3 class="title" title="${recipe.title}">${recipe.title}</h3>
             <div class="blogger">by ${recipe.blog_name}</div>
         `;
 
