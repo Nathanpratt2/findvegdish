@@ -51,9 +51,8 @@ TOP_BLOGGERS = [
     ("The Full Helping", "https://thefullhelping.com/feed/", []),
     ("Turnip Vegan", "https://turnipvegan.com/blogs/news.atom", []),
     ("VegNews", "https://vegnews.com/feed", []),
-    ("Plant-Based on a Budget", "https://plantbasedonabudget.com/feed/", ["Budget", "Easy"]),
-    ("Woon Heng", "https://woonheng.com/feed/", ["Easy"]),
-    ("HealthyGirl Kitchen", "https://healthygirlkitchen.com/feed/", ["Easy", "WFPB"])
+    ("Plant-Based on a Budget", "https://plantbasedonabudget.com/feed/", ["Budget"]),
+    ("HealthyGirl Kitchen", "https://healthygirlkitchen.com/feed/", [])
 ]
 
 DISRUPTORS = [
