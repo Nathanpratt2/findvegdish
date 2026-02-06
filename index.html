@@ -14,7 +14,7 @@
     <!-- PERFORMANCE: Preload Critical Data Source -->
     <link rel="preload" href="data.json" as="fetch" crossorigin>
 
-    <!-- Open Graph Tags (Now Dynamic via JS) -->
+    <!-- Open Graph Tags (Dynamic via JS) -->
     <meta property="og:title" content="Daily Vegan Recipes">
     <meta property="og:description" content="Daily recipes from the top bloggers">
     <meta property="og:image" content="https://findvegdish.com/default.jpg">
@@ -26,8 +26,9 @@
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="icon" href="https://findvegdish.com/icon.jpg" type="image/jpeg"> 
-    <link rel="apple-touch-icon" href="https://findvegdish.com/icon.jpg">
+    <!-- UPDATED: Favicons pointing to logo.png -->
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="logo.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -80,7 +81,6 @@
             transform: scale(0.98); 
         }
         
-        /* Changed from H1 to P for semantic hierarchy */
         .sub-intro {
             text-align: center;
             font-size: 0.9em;
@@ -153,7 +153,7 @@
         #shuffleIconBtn {
             width: 48px;
             height: 48px;
-            border-radius: 50%;
+            border-radius: 50%; /* Keeps the button circle */
             background-color: white; 
             border: 2px solid #769F37; 
             color: #769F37; 
@@ -161,7 +161,6 @@
             justify-content: center;
             align-items: center;
             cursor: pointer;
-            font-size: 22px;
             transition: all 0.2s ease;
             flex-shrink: 0;
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
@@ -215,7 +214,6 @@
             }
         }
 
-        /* Updated for Anchor Links */
         .btn {
             padding: 10px 18px; 
             border-radius: 25px;
@@ -235,7 +233,7 @@
             white-space: nowrap; 
             flex-shrink: 0; 
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-            text-decoration: none; /* Removed underline for anchors */
+            text-decoration: none; 
         }
         @media (hover: hover) {
                .btn:hover { background-color: #f0f0f0; }
@@ -266,6 +264,7 @@
             margin: 0 auto;
             margin-top: 25px;
             grid-auto-flow: row; 
+            min-height: 500px; /* Prevent collapse before load */
         }
         
         @media (max-width: 1100px) { .gallery { grid-template-columns: repeat(3, 1fr); } }
@@ -406,6 +405,45 @@
             margin-top: 40px;
         }
 
+        /* --- SKELETON LOADING STYLES --- */
+        .skeleton-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+        }
+        .skeleton-img {
+            width: 100%;
+            height: 250px;
+            background-color: #eee;
+            animation: skeleton-pulse 1.5s infinite ease-in-out;
+        }
+        .skeleton-info {
+            padding: 15px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .skeleton-text {
+            height: 20px;
+            background-color: #eee;
+            border-radius: 4px;
+            animation: skeleton-pulse 1.5s infinite ease-in-out;
+        }
+        .w-60 { width: 60%; }
+        .w-80 { width: 80%; }
+        .w-40 { width: 40%; }
+        
+        @keyframes skeleton-pulse {
+            0% { opacity: 0.6; }
+            50% { opacity: 1; }
+            100% { opacity: 0.6; }
+        }
+
         footer { text-align: center; margin-top: 50px; color: #aaa; font-size: 0.9em; padding: 0 20px;}
         
         .footer-topics {
@@ -460,19 +498,18 @@
 <body>
 
 <header>
-    <!-- SEO FIX: Proper H1 for Screen Readers and Bots -->
     <h1 class="sr-only">Daily Vegan Recipes</h1>
 
     <a href="index.html" class="logo-link" title="Refresh">
         <img src="default.jpg" alt="Daily Vegan Recipes" class="logo-img">
     </a>
     
-    <!-- Changed to P -->
     <p class="sub-intro">Explore the newest recipes from over 50 top blogs</p>
     
     <div class="search-row">
+        <!-- SHUFFLE: Updated SVG dimensions to be 'rectangular' (28x18) while button is round -->
         <button id="shuffleIconBtn" onclick="shuffleRecipes()" title="Shuffle Recipes">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="16 3 21 3 21 8"></polyline>
                 <path d="M4 20c0-6 8-6 17-17"></path>
                 <polyline points="21 16 21 21 16 21"></polyline>
@@ -487,7 +524,6 @@
         </div>
     </div>
 
-    <!-- SEO FIX: Converted Buttons to Anchors for Crawlability -->
     <div class="controls">
         <a href="?type=meal" class="btn" id="mealsBtn" onclick="toggleType(event, 'meal')">🍝 Meals</a>
         <a href="?type=sweet" class="btn" id="sweetsBtn" onclick="toggleType(event, 'sweet')">🍪 Sweets</a>
@@ -500,7 +536,7 @@
 </header>
 
 <main id="gallery" class="gallery">
-    <!-- SEO FIX: Noscript Navigation -->
+    <!-- SEO & PERFORMANCE: Skeleton Screens for Layout Stability & Initial Crawl -->
     <noscript>
         <div style="grid-column: 1 / -1; text-align: center; padding: 20px;">
             <h3>Explore Categories:</h3>
@@ -508,11 +544,20 @@
                 <a href="?type=meal">Vegan Meals</a> | 
                 <a href="?type=sweet">Vegan Sweets</a> | 
                 <a href="?tag=Budget">Budget Recipes</a> | 
-                <a href="?tag=Easy">Easy Recipes</a> | 
-                <a href="?tag=Protein">High Protein</a>
+                <a href="?tag=Easy">Easy Recipes</a>
             </p>
         </div>
     </noscript>
+    
+    <!-- Skeleton Loaders (Removed by JS on load) -->
+    <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-text w-40"></div><div class="skeleton-text w-80"></div><div class="skeleton-text w-60"></div></div></div>
+    <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-text w-40"></div><div class="skeleton-text w-80"></div><div class="skeleton-text w-60"></div></div></div>
+    <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-text w-40"></div><div class="skeleton-text w-80"></div><div class="skeleton-text w-60"></div></div></div>
+    <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-text w-40"></div><div class="skeleton-text w-80"></div><div class="skeleton-text w-60"></div></div></div>
+    <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-text w-40"></div><div class="skeleton-text w-80"></div><div class="skeleton-text w-60"></div></div></div>
+    <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-text w-40"></div><div class="skeleton-text w-80"></div><div class="skeleton-text w-60"></div></div></div>
+    <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-text w-40"></div><div class="skeleton-text w-80"></div><div class="skeleton-text w-60"></div></div></div>
+    <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-text w-40"></div><div class="skeleton-text w-80"></div><div class="skeleton-text w-60"></div></div></div>
 </main>
 <div id="loader">Loading more recipes...</div>
 
@@ -549,8 +594,8 @@
     let renderedCount = 0;        
     
     // Filtering State
-    let activeType = null; // 'meal', 'sweet', or null
-    let activeTags = new Set(); // Stores 'Budget', 'Easy'
+    let activeType = null; 
+    let activeTags = new Set(); 
     
     const BATCH_SIZE = 48;        
 
@@ -576,9 +621,12 @@
             currentContext = allRecipes; 
             
             injectStaticSchema(allRecipes);
+            
+            // Note: setupInfiniteScroll stays the same
             setupInfiniteScroll();   
             
             // Check URL for initial state (Deep Linking)
+            // This will also trigger resetView, which clears the skeletons
             parseURLState();
         })
         .catch(error => {
@@ -586,18 +634,15 @@
             document.getElementById('gallery').innerHTML = '<p style="text-align:center">Could not load recipes.</p>';
         });
 
-    // Handle Browser Back Button
     window.addEventListener('popstate', () => {
         parseURLState();
     });
 
-    // --- URL & SEO LOGIC (Updated) ---
+    // --- URL & SEO LOGIC ---
 
-    // 1. Read URL params and set UI
     function parseURLState() {
         const params = new URLSearchParams(window.location.search);
         
-        // Reset Logic
         activeType = null;
         activeTags.clear();
         document.getElementById('mealsBtn').classList.remove('active-filter');
@@ -605,7 +650,6 @@
         document.querySelectorAll('.btn').forEach(b => b.classList.remove('active-filter'));
         document.getElementById('searchInput').value = '';
 
-        // Apply URL Params
         if (params.has('q')) {
             document.getElementById('searchInput').value = params.get('q');
             document.getElementById('clearBtn').style.display = 'block';
@@ -627,11 +671,9 @@
             });
         }
 
-        // Apply filters but do NOT push new state (avoid loop)
         applyFilters(false); 
     }
 
-    // 2. Update URL History
     function updateURL() {
         const params = new URLSearchParams();
         const searchVal = document.getElementById('searchInput').value;
@@ -643,12 +685,10 @@
         const newURL = params.toString() ? `?${params.toString()}` : window.location.pathname;
         history.pushState({}, '', newURL);
         
-        // Update Canonical Link dynamically
         const canonical = document.getElementById('canonicalLink');
         if (canonical) canonical.href = "https://findvegdish.com/" + newURL;
     }
 
-    // 3. Update Title, Meta Description, Breadcrumb, and Open Graph
     function updateSEO(currentRecipes = []) {
         let title = "Daily Vegan Recipes";
         let desc = "Find fresh daily vegan recipes from top bloggers. Search by ingredients, diet types, or explore new plant-based dishes. ";
@@ -657,7 +697,6 @@
         const searchVal = document.getElementById('searchInput').value;
         const tagsArr = Array.from(activeTags);
 
-        // Logic to build title
         if (searchVal) {
             title = `${searchVal} - Search | Daily Vegan Recipes`;
             desc = `Best vegan recipes matching "${searchVal}".`;
@@ -677,12 +716,10 @@
             breadcrumbName = primaryTag;
         }
 
-        // Update DOM Title and Meta Desc
         document.title = title;
         const metaDesc = document.getElementById('metaDesc');
         if (metaDesc) metaDesc.content = desc;
 
-        // Update Open Graph Tags
         const ogTitle = document.querySelector('meta[property="og:title"]');
         const ogDesc = document.querySelector('meta[property="og:description"]');
         const ogUrl = document.querySelector('meta[property="og:url"]');
@@ -691,15 +728,11 @@
         if (ogDesc) ogDesc.content = desc;
         if (ogUrl) ogUrl.content = window.location.href;
 
-        // Dynamic Breadcrumb Schema
         updateBreadcrumbSchema(breadcrumbName);
-        
-        // Update ItemList Schema (Structured Data)
         updateItemListSchema(currentRecipes);
     }
 
     function updateBreadcrumbSchema(currentItemName) {
-        // Remove old dynamic schema
         const oldScript = document.getElementById('dynamic-schema');
         if (oldScript) oldScript.remove();
 
@@ -728,14 +761,12 @@
         document.head.appendChild(script);
     }
 
-    // Generate ItemList Schema for the filtered results
     function updateItemListSchema(recipes) {
         const oldScript = document.getElementById('item-list-schema');
         if (oldScript) oldScript.remove();
 
         if (!recipes || recipes.length === 0) return;
 
-        // SEO Constraint: Limit to top 20 items to avoid excessive payload
         const topRecipes = recipes.slice(0, 20);
 
         const schema = {
@@ -757,8 +788,8 @@
         document.head.appendChild(script);
     }
 
+    // UPDATED: Added CollectionPage schema wrapper
     function injectStaticSchema(recipes) {
-        // WebSite Schema
         const searchSchema = {
             "@context": "https://schema.org",
             "@type": "WebSite",
@@ -770,13 +801,29 @@
             }
         };
 
+        const collectionSchema = {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "Daily Vegan Recipes",
+            "description": "A curated collection of daily plant-based recipes from top food bloggers.",
+            "url": "https://findvegdish.com/",
+            "mainEntity": {
+                "@type": "ItemList",
+                "itemListElement": recipes.slice(0, 10).map((r, i) => ({
+                    "@type": "ListItem",
+                    "position": i + 1,
+                    "url": r.link
+                }))
+            }
+        };
+
         const scriptSearch = document.createElement('script');
         scriptSearch.type = 'application/ld+json';
-        scriptSearch.text = JSON.stringify(searchSchema);
+        scriptSearch.text = JSON.stringify([searchSchema, collectionSchema]);
         document.head.appendChild(scriptSearch);
     }
 
-    // --- RENDER LOGIC (BATCHED) ---
+    // --- RENDER LOGIC ---
     function renderNextBatch() {
         const gallery = document.getElementById('gallery');
         const loader = document.getElementById('loader');
@@ -795,9 +842,6 @@
         const nextBatch = currentContext.slice(renderedCount, renderedCount + BATCH_SIZE);
         
         nextBatch.forEach((recipe, index) => {
-            // LCP FIX: Determine if this is one of the first few items
-            // If renderedCount is 0, we are on the first batch.
-            // Mark the first 4 images as eager.
             const isLcpCandidate = (renderedCount === 0 && index < 4);
             const card = createCard(recipe, isLcpCandidate);
             gallery.appendChild(card);
@@ -824,13 +868,10 @@
 
         const img = document.createElement('img');
         img.src = recipe.image;
-        
         img.width = 400;
         img.height = 250; 
-        
         img.alt = `${recipe.title} - Vegan Recipe by ${recipe.blog_name}`;
         
-        // LCP FIX: Eager load top items, lazy load rest
         if (isLcp) {
             img.loading = "eager";
             img.setAttribute("fetchpriority", "high");
@@ -839,7 +880,6 @@
         }
         
         img.referrerPolicy = "no-referrer";
-
         img.onerror = function() { 
             this.onerror = null; 
             this.src = 'icon.jpg'; 
@@ -899,7 +939,6 @@
         return card;
     }
 
-    // --- INFINITE SCROLL ---
     function setupInfiniteScroll() {
         window.addEventListener('scroll', () => {
             const scrollBtn = document.getElementById("scrollTopBtn");
@@ -922,11 +961,11 @@
     function resetView(newContext) {
         currentContext = newContext;
         renderedCount = 0;
+        // Clears the Skeleton Loaders or previous results
         document.getElementById('gallery').innerHTML = '';
         renderNextBatch();
     }
 
-    // --- SHUFFLE ---
     function shuffleRecipes() {
         document.activeElement.blur(); 
         for (let i = allRecipes.length - 1; i > 0; i--) {
@@ -936,11 +975,8 @@
         applyFilters(true);
     }
 
-    // --- FILTER & LOGIC ---
-    
-    // Updated to accept event for SPA handling
     function toggleType(e, type) {
-        if(e) e.preventDefault(); // Stop link navigation
+        if(e) e.preventDefault(); 
         document.activeElement.blur();
         const mealsBtn = document.getElementById('mealsBtn');
         const sweetsBtn = document.getElementById('sweetsBtn');
@@ -962,9 +998,8 @@
         applyFilters(true);
     }
 
-    // Updated to accept event for SPA handling
     function toggleTag(e, tagName) {
-        if(e) e.preventDefault(); // Stop link navigation
+        if(e) e.preventDefault(); 
         document.activeElement.blur();
         const btnId = tagName.toLowerCase() + 'Btn';
         const btn = document.getElementById(btnId);
@@ -988,7 +1023,6 @@
 
         let filtered = allRecipes;
 
-        // A. Search Bar Logic
         if (term.length > 0) {
             filtered = filtered.filter(recipe => {
                 if (term === 'protein') {
@@ -1010,7 +1044,6 @@
             });
         }
 
-        // B. Meal vs Sweet Logic
         if (activeType === 'meal') {
             filtered = filtered.filter(recipe => {
                 const t = recipe.title.toLowerCase();
@@ -1032,7 +1065,6 @@
             });
         }
 
-        // C. Tag Logic
         if (activeTags.size > 0) {
             filtered = filtered.filter(recipe => {
                 const title = recipe.title.toLowerCase();
@@ -1053,14 +1085,11 @@
             });
         }
 
-        // Apply SEO and URL changes
         if (pushState) {
             updateURL();
         }
         
-        // Pass the filtered list to updateSEO so it can generate ItemList schema
         updateSEO(filtered);
-
         resetView(filtered);
     }
 
@@ -1071,8 +1100,12 @@
     const searchInput = document.getElementById('searchInput');
     const clearBtn = document.getElementById('clearBtn');
 
-    searchInput.addEventListener('keyup', () => {
+    searchInput.addEventListener('keyup', (e) => {
         clearBtn.style.display = searchInput.value.length > 0 ? 'block' : 'none';
+        // UX: Enter key dismisses keyboard/blurs input
+        if (e.key === 'Enter') {
+            searchInput.blur();
+        }
         processSearchChange();
     });
 
