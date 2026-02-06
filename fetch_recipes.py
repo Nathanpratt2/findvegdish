@@ -10,6 +10,7 @@ import os
 # --- CONFIGURATION ---
 # Format: ("Blog Name", "Feed URL", ["SPECIAL_TAGS"])
 # Tags: "WFPB", "Easy", "Budget"
+#Blog notes: Oh She Glows and Avant-Garde Vegan posts to a closed app now - not accessible. 
 
 TOP_BLOGGERS = [
     ("Minimalist Baker", "https://minimalistbaker.com/recipes/vegan/feed/", ["Easy"]),
@@ -46,6 +47,10 @@ TOP_BLOGGERS = [
     ("The Full Helping", "https://thefullhelping.com/feed/", []),
     ("Turnip Vegan", "https://turnipvegan.com/blogs/news.atom", []),
     ("VegNews", "https://vegnews.com/feed", [])
+    ("Plant-Based on a Budget", "https://plantbasedonabudget.com/feed/", ["Budget", "Easy"]),
+    ("Woon Heng", "https://woonheng.com/feed/", ["Easy"]),
+    ("HealthyGirl Kitchen", "https://healthygirlkitchen.com/feed/", ["Easy", "WFPB"]),
+    ("School Night Vegan", "https://schoolnightvegan.com/feed/", []),
 ]
 
 DISRUPTORS = [
@@ -77,6 +82,7 @@ DISRUPTORS = [
     ("Monkey & Me Kitchen Adventures", "https://monkeyandmekitchenadventures.com/feed/", ["WFPB"]),
     ("Veggiekins", "https://veggiekinsblog.com/feed/", ["Easy"]),
     ("ZardyPlants", "https://zardyplants.com/feed/", ["WFPB"]),
+    ("Dreena Burton", "https://dreenaburton.com/feed/", ["WFPB"]),
 ]
 
 ALL_FEEDS = TOP_BLOGGERS + DISRUPTORS
