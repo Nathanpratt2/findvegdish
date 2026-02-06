@@ -381,7 +381,18 @@ with open('FEED_HEALTH.md', 'w') as f:
 
     total_new_today = sum(stats.get('new', 0) for stats in feed_stats.values())
     total_in_db = len(final_pruned_list)
+    
+    # New Stats
     total_blogs_monitored = len(ALL_FEEDS)
+    avg_recipes_per_blog = round(total_in_db / total_blogs_monitored, 1) if total_blogs_monitored > 0 else 0
+    
+    total_wfpb = sum(wfpb_counts.values())
+    total_easy = sum(easy_counts.values())
+    total_budget = sum(budget_counts.values())
+
+    wfpb_percent = int((total_wfpb / total_in_db) * 100) if total_in_db > 0 else 0
+    easy_percent = int((total_easy / total_in_db) * 100) if total_in_db > 0 else 0
+    budget_percent = int((total_budget / total_in_db) * 100) if total_in_db > 0 else 0
     
     all_dates = [parser.parse(d) for d in latest_dates.values() if d != "N/A"]
     if all_dates:
@@ -390,11 +401,12 @@ with open('FEED_HEALTH.md', 'w') as f:
     else:
         avg_date = "N/A"
 
-    three_months_ago = datetime.now() - timedelta(days=90)
-    stale_count = 0
+    # Prepare rows first to calculate active blogs count
+    all_names = set(list(feed_stats.keys()) + list(total_counts.keys()))
     report_rows = []
     
-    all_names = set(list(feed_stats.keys()) + list(total_counts.keys()))
+    three_months_ago = datetime.now() - timedelta(days=90)
+    stale_count = 0
     
     for name in all_names:
         url = URL_MAP.get(name, "Unknown")
@@ -403,28 +415,53 @@ with open('FEED_HEALTH.md', 'w') as f:
         total = total_counts.get(name, 0)
         latest = latest_dates.get(name, "N/A")
         
+        # Stale Check (Yellow Warning)
         if latest != "N/A":
             try:
                 latest_dt = parser.parse(latest)
                 if latest_dt.replace(tzinfo=None) < three_months_ago.replace(tzinfo=None):
                     stale_count += 1
-                    if "❌" not in status: status = f"⚠️ Stale (>90d) {status.replace('✅ OK', '')}"
-            except: pass
+                    # Only add Stale warning if it's not already broken
+                    if "❌" not in status:
+                        status = f"⚠️ Stale (>90d) {status.replace('✅ OK', '')}"
+            except:
+                pass
         
-        if total == 0 and "✅" in status: status = "❌ No Recipes"
+        wfpb_val = wfpb_counts.get(name, 0)
+        easy_val = easy_counts.get(name, 0)
+        budget_val = budget_counts.get(name, 0)
+        
+        if total == 0 and "✅" in status:
+            status = "❌ No Recipes"
             
-        report_rows.append((name, url, new, total, latest, status))
+        report_rows.append((name, url, new, total, wfpb_val, easy_val, budget_val, latest, status))
 
-    f.write(f"**Active Blogs (Last 90d):** {total_blogs_monitored - stale_count} / {total_blogs_monitored}\n")
+    active_blogs_count = total_blogs_monitored - stale_count
+
+    f.write(f"**Total Blogs:** {total_blogs_monitored}\n")
+    f.write(f"**Avg Recipes per Blog:** {avg_recipes_per_blog}\n")
+    f.write(f"**Active Blogs (Last 90d):** {active_blogs_count} / {total_blogs_monitored}\n") # The useful stat
     f.write(f"**Total Database Size:** {total_in_db}\n")
-    f.write(f"**New Today:** {total_new_today}\n\n")
+    f.write(f"**New Today:** {total_new_today}\n")
+    f.write(f"**WFPB:** {total_wfpb} ({wfpb_percent}%)\n")
+    f.write(f"**Easy:** {total_easy} ({easy_percent}%)\n")
+    f.write(f"**Budget:** {total_budget} ({budget_percent}%)\n")
+    f.write(f"**Average Latest Post:** {avg_date}\n\n")
 
-    f.write("| Blog Name | New | Total | Latest | Status |\n")
-    f.write("|-----------|-----|-------|--------|--------|\n")
+    f.write("| Blog Name | URL | New | Total | WFPB | Easy | Budget | Latest | Status |\n")
+    f.write("|-----------|-----|-----|-------|------|------|--------|--------|--------|\n")
     
-    report_rows.sort(key=lambda x: (0 if '❌' in x[5] else 1, x[0]))
+    def sort_key(row):
+        stat = row[8] 
+        priority = 3 
+        if '❌' in stat: priority = 0
+        elif 'Stale' in stat: priority = 1
+        elif '⚠️' in stat: priority = 2
+        return (priority, row[0])
+
+    report_rows.sort(key=sort_key)
     
     for row in report_rows:
-        f.write(f"| {row[0]} | {row[2]} | {row[3]} | {row[4]} | {row[5]} |\n")
+        f.write(f"| {row[0]} | {row[1]} | {row[2]} | {row[3]} | {row[4]} | {row[5]} | {row[6]} | {row[7]} | {row[8]} |\n")
 
-print(f"Done. Database: {len(final_pruned_list)}")
+print(f"Successfully scraped. Database size: {len(final_pruned_list)}")
