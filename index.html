@@ -6,19 +6,14 @@
     <title>Daily Vegan Recipes</title>
 
     <!-- SEO & Social Meta Tags -->
-    <meta name="description" content="Find fresh daily vegan recipes from top bloggers.">
+    <meta name="description" content="Find fresh daily vegan recipes from top bloggers. Search by ingredients, diet types, or explore new plant-based dishes.">
     
-    <!-- IMPROVEMENT 1: Canonical Tag -->
     <link rel="canonical" href="https://findvegdish.com/">
-    
-    <!-- IMPROVEMENT 2: Max Image Preview for Google Discover -->
     <meta name="robots" content="index, follow, max-image-preview:large">
 
     <meta property="og:title" content="Daily Vegan Recipes">
     <meta property="og:description" content="Daily recipes from the top bloggers">
     <meta property="og:image" content="https://findvegdish.com/default.jpg">
-    
-    <!-- IMPROVEMENT 3: Explicit Image Dimensions for Social Sharing -->
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     
@@ -82,12 +77,14 @@
             transform: scale(0.98); 
         }
         
-        .sub-intro {
+        /* SEO UPDATE: Turned into H1 via CSS to maintain look */
+        h1.sub-intro {
             text-align: center;
             font-size: 0.9em;
             font-weight: 400;
             color: #888; 
             margin: -5px 0 15px 0; 
+            line-height: 1.5;
         }
 
         /* --- SEARCH ROW STYLES --- */
@@ -144,7 +141,7 @@
         }
         #clearBtn:hover { color: #555; }
 
-        /* --- DESIGN UPDATE: SHUFFLE BUTTON --- */
+        /* --- SHUFFLE BUTTON --- */
         #shuffleIconBtn {
             width: 48px;
             height: 48px;
@@ -172,7 +169,7 @@
             }
         }
 
-        /* --- DESIGN UPDATE: ONE LINE SCROLLING CONTROLS --- */
+        /* --- SCROLLING CONTROLS --- */
         .controls {
             display: flex;
             align-items: center;
@@ -387,7 +384,6 @@
             overflow: hidden;
             text-overflow: ellipsis;
         }
-        /* Ensure H3 doesn't introduce unwanted browser margin */
         h3.title { margin: 5px 0; }
         
         .blogger { font-size: 0.9em; color: #888; margin-top: auto; padding-top: 10px; }
@@ -401,6 +397,27 @@
         }
 
         footer { text-align: center; margin-top: 50px; color: #aaa; font-size: 0.9em; padding: 0 20px;}
+        
+        /* SEO UPDATE: Styles for the new topic cloud */
+        .footer-topics {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .footer-topics a {
+            color: #888;
+            text-decoration: none;
+            font-size: 0.85em;
+        }
+        .footer-topics a:hover {
+            color: #769F37;
+            text-decoration: underline;
+        }
+
         #loader { text-align: center; padding: 20px; color: #888; font-style: italic; display: none; }
 
         #scrollTopBtn {
@@ -434,19 +451,18 @@
 <body>
 
 <header>
-    <!-- SEO: Hidden H1 for Structure -->
-    <h1 class="sr-only">Daily Vegan Recipes</h1>
-
+    <!-- SEO UPDATE: Promoted sub-intro to H1 for better crawlability, removed hidden h1 -->
+    <!-- The CSS class 'sub-intro' ensures it looks exactly like the old paragraph -->
+    
     <!-- Logo -->
     <a href="index.html" class="logo-link" title="Refresh">
         <img src="default.jpg" alt="Daily Vegan Recipes" class="logo-img">
     </a>
     
-    <p class="sub-intro">Explore the newest recipes from over 50 top blogs</p>
+    <h1 class="sub-intro">Explore the newest recipes from over 50 top blogs</h1>
     
     <!-- Search Row: Shuffle Left, Search Right -->
     <div class="search-row">
-        <!-- New Design: White background, green border/icon -->
         <button id="shuffleIconBtn" onclick="shuffleRecipes()" title="Shuffle Recipes">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="16 3 21 3 21 8"></polyline>
@@ -463,7 +479,7 @@
         </div>
     </div>
 
-    <!-- Filter Buttons (Now optimized for one-line squeeze) -->
+    <!-- Filter Buttons -->
     <div class="controls">
         <button class="btn" id="mealsBtn" onclick="toggleType('meal')">🍝 Meals</button>
         <button class="btn" id="sweetsBtn" onclick="toggleType('sweet')">🍪 Sweets</button>
@@ -487,8 +503,23 @@
 <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="natethevegan" data-description="Support me on Buy me a coffee!" data-message="" data-color="#769F37" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 
 <footer>
-    <!-- IMPROVEMENT 4: Static keyword rich footer for crawlers -->
     <p>Daily Vegan Recipes aggregates the best plant-based cooking from top bloggers. Discover easy vegan dinner ideas, high-protein plant-based meals, WFPB (Whole Food Plant Based) dishes, gluten-free sweets, and budget-friendly vegan food. Updated daily.</p>
+    
+    <!-- SEO UPDATE: Topic Cloud / Internal Linking Structure -->
+    <!-- This allows Google to index these specific "Filtered Views" as pages -->
+    <div class="footer-topics">
+        <a href="?q=pasta">Best Vegan Pasta</a>
+        <a href="?q=tofu">Tofu Recipes</a>
+        <a href="?q=soup">Vegan Soups</a>
+        <a href="?q=salad">Healthy Salads</a>
+        <a href="?q=curry">Plant-Based Curry</a>
+        <a href="?q=breakfast">Vegan Breakfast</a>
+        <a href="?q=protein">High Protein Vegan</a>
+        <a href="?q=wfpb">Whole Food Plant Based</a>
+        <a href="?q=gluten+free">Gluten Free Vegan</a>
+        <a href="?q=budget">Budget Friendly</a>
+        <a href="?q=dessert">Vegan Desserts</a>
+    </div>
 </footer>
 
 <script>
@@ -527,7 +558,20 @@
             updatePageTitle();
             injectJSONLD(allRecipes);
 
-            renderNextBatch();           
+            // SEO UPDATE: Check URL for search query (?q=tofu) on load
+            const urlParams = new URLSearchParams(window.location.search);
+            const query = urlParams.get('q');
+            
+            if (query) {
+                // Pre-fill search and filter
+                document.getElementById('searchInput').value = query;
+                document.getElementById('clearBtn').style.display = 'block';
+                // We call applyFilters immediately
+                applyFilters(); 
+            } else {
+                renderNextBatch();
+            }
+
             setupInfiniteScroll();       
         })
         .catch(error => {
@@ -545,7 +589,19 @@
     }
 
     function injectJSONLD(recipes) {
-        const schema = {
+        // SEO UPDATE: Added "WebSite" Schema with SearchAction
+        const searchSchema = {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "url": "https://findvegdish.com/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://findvegdish.com/?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        };
+
+        const listSchema = {
             "@context": "https://schema.org",
             "@type": "CollectionPage",
             "name": "Daily Vegan Recipes",
@@ -561,10 +617,16 @@
                 }))
             }
         };
-        const script = document.createElement('script');
-        script.type = 'application/ld+json';
-        script.text = JSON.stringify(schema);
-        document.head.appendChild(script);
+
+        const scriptSearch = document.createElement('script');
+        scriptSearch.type = 'application/ld+json';
+        scriptSearch.text = JSON.stringify(searchSchema);
+        document.head.appendChild(scriptSearch);
+
+        const scriptList = document.createElement('script');
+        scriptList.type = 'application/ld+json';
+        scriptList.text = JSON.stringify(listSchema);
+        document.head.appendChild(scriptList);
     }
 
     // --- RENDER LOGIC (BATCHED) ---
@@ -611,7 +673,10 @@
 
         const img = document.createElement('img');
         img.src = recipe.image;
-        img.alt = recipe.title; 
+        
+        // SEO UPDATE: Enhanced Alt Text for Google Images (Long-tail keywords)
+        img.alt = `${recipe.title} - Vegan Recipe by ${recipe.blog_name}`;
+        
         img.loading = "lazy"; 
         img.referrerPolicy = "no-referrer";
 
@@ -651,7 +716,6 @@
             });
         }
         
-        // IMPROVEMENT 5: Semantic HTML - Changed div.title to h3.title
         info.innerHTML = `
             <div class="meta-row">
                 <span class="${tagClass}">${tagText}</span>
@@ -699,7 +763,8 @@
         currentContext = newContext;
         renderedCount = 0;
         document.getElementById('gallery').innerHTML = '';
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        // If not triggered by initial load (no scrollTop issues)
+        // window.scrollTo({ top: 0, behavior: 'smooth' });
         renderNextBatch();
     }
 
@@ -715,19 +780,16 @@
 
     // --- FILTER & LOGIC ---
     
-    // 1. Mutually Exclusive Type Toggle (Meals vs Sweets)
     function toggleType(type) {
         document.activeElement.blur();
         const mealsBtn = document.getElementById('mealsBtn');
         const sweetsBtn = document.getElementById('sweetsBtn');
 
         if (activeType === type) {
-            // Deselect if already active
             activeType = null;
             mealsBtn.classList.remove('active-filter');
             sweetsBtn.classList.remove('active-filter');
         } else {
-            // Activate new type, deactivate old
             activeType = type;
             if (type === 'meal') {
                 mealsBtn.classList.add('active-filter');
@@ -740,7 +802,6 @@
         applyFilters();
     }
 
-    // 2. Additive Tag Toggle (Budget, Easy)
     function toggleTag(tagName) {
         document.activeElement.blur();
         const btnId = tagName.toLowerCase() + 'Btn';
@@ -756,40 +817,33 @@
         applyFilters();
     }
 
-    // 3. Master Filter Function
     function applyFilters() {
-        // UPDATE 1: Normalize input (lowercase + replace dashes with spaces)
         const rawInput = document.getElementById('searchInput').value;
         const term = rawInput.toLowerCase().replace(/-/g, ' '); 
         
-        // Keyword lists for logic
         const SAVORY_EXCEPTIONS = ['sweet potato', 'sweet and sour', 'sweet corn', 'sweet pea', 'sweet chili', 'sweet pepper'];
         const SWEET_EXCEPTIONS = ['rice', 'instant pot', 'crock pot', 'one pot', 'cup', 'butter', 'nut']; 
 
         let filtered = allRecipes;
 
-        // A. Search Bar Logic (Text or Protein Mode)
+        // A. Search Bar Logic
         if (term.length > 0) {
             filtered = filtered.filter(recipe => {
-                // SPECIAL CASE: "Protein" search (keep looking at raw title for specific keywords if needed, or normalized)
                 if (term === 'protein') {
                     const t = recipe.title.toLowerCase();
                     return PROTEIN_KEYWORDS.some(k => t.includes(k));
                 }
 
-                // UPDATE 2: Normalize the data fields (replace dashes with spaces)
                 const title = recipe.title.toLowerCase().replace(/-/g, ' ');
                 const blogger = recipe.blog_name.toLowerCase().replace(/-/g, ' ');
                 
                 let hasMatchingTag = false;
                 if (recipe.special_tags && Array.isArray(recipe.special_tags)) {
-                    // UPDATE 3: Normalize tags as well
                     hasMatchingTag = recipe.special_tags.some(tag => 
                         tag.toLowerCase().replace(/-/g, ' ').includes(term)
                     );
                 }
                 
-                // Now "one pot" matches "one-pot", "gluten free" matches "gluten-free", etc.
                 return title.includes(term) || blogger.includes(term) || hasMatchingTag;
             });
         }
@@ -816,23 +870,20 @@
             });
         }
 
-        // C. Tag Logic (Special Tags + Title Searches)
+        // C. Tag Logic
         if (activeTags.size > 0) {
             filtered = filtered.filter(recipe => {
                 const title = recipe.title.toLowerCase();
                 
                 for (let tag of activeTags) {
                     if (tag === 'Protein') {
-                        // Uses your existing PROTEIN_KEYWORDS list
                         if (!PROTEIN_KEYWORDS.some(k => title.includes(k))) return false;
                     } 
                     else if (tag === 'GF') {
-                        // New Gluten Free Logic (3 varieties of GF in the title)
                         const isGF = title.includes('gf') || title.includes('gluten free') || title.includes('gluten-free');
                         if (!isGF) return false;
                     } 
                     else {
-                        // Standard tag check
                         if (!recipe.special_tags || !recipe.special_tags.includes(tag)) return false;
                     }
                 }
