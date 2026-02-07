@@ -1,14 +1,14 @@
 # Feed Health Report
-**Last Run:** 2026-02-07T19:24:58.083794
+**Last Run:** 2026-02-07T19:37:38.064950
 **Total Blogs:** 78
 **Active Blogs (Last 90d):** 72 / 78
-**Total Database Size:** 846
-**New Today:** 18
+**Total Database Size:** 847
+**New Today:** 8
 **WFPB:** 134 (15%)
 **Easy:** 209 (24%)
 **Budget:** 166 (19%)
-**Gluten-Free:** 104 (12%)
-**Average Latest Post:** 2026-01-15
+**Gluten-Free:** 83 (9%)
+**Average Latest Post:** 2026-01-14
 
 | Blog Name | URL | New | Total | WFPB | Easy | Budget | GF | Latest | Status |
 |-----------|-----|-----|-------|------|------|--------|----|--------|--------|
@@ -21,9 +21,10 @@
 | Unconventional Baker | https://www.unconventionalbaker.com/feed/ | 0 | 10 | 0 | 0 | 0 | 10 | 2025-11-01 | ⚠️ Stale (>90d)  |
 | Vegan Yack Attack | https://veganyackattack.com/feed/ | 0 | 5 | 0 | 2 | 0 | 0 | 2025-07-27 | ⚠️ Stale (>90d)  |
 | ZardyPlants | https://zardyplants.com/feed/ | 0 | 10 | 10 | 7 | 3 | 0 | 2025-11-08 | ⚠️ Stale (>90d)  |
+| Love and Lemons | https://www.loveandlemons.com/category/recipes/vegan/ | 0 | 11 | 1 | 1 | 1 | 0 | 2026-02-07 | ⚠️ Scraped 0 |
 | Pick Up Limes | https://www.pickuplimes.com/recipe/ | 0 | 12 | 0 | 0 | 1 | 0 | 2026-02-07 | ⚠️ Scraped 0 |
-| Rainbow Plant Life GF (-> Rainbow Plant Life) | https://rainbowplantlife.com/diet/gluten-free/ | 0 | 13 | 3 | 1 | 2 | 13 | 2026-02-07 | ⚠️ Scraped 0 |
-| Vegan Richa GF (-> Vegan Richa) | https://www.veganricha.com/category/gluten-free/ | 0 | 9 | 0 | 2 | 3 | 9 | 2026-02-07 | ⚠️ Scraped 0 |
+| Rainbow Plant Life GF (-> Rainbow Plant Life) | https://rainbowplantlife.com/diet/gluten-free/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ⚠️ Scraped 0 |
+| Vegan Richa GF (-> Vegan Richa) | https://www.veganricha.com/category/gluten-free/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ⚠️ Scraped 0 |
 | A Virtual Vegan | https://avirtualvegan.com/feed/ | 0 | 10 | 0 | 1 | 0 | 0 | 2026-02-06 | ✅ OK |
 | Addicted to Dates | https://addictedtodates.com/category/recipes/feed/ | 0 | 10 | 0 | 1 | 2 | 0 | 2026-01-30 | ✅ OK |
 | Ann Arbor Vegan Kitchen | https://www.annarborvegankitchen.com/feed/ | 0 | 10 | 10 | 0 | 3 | 0 | 2026-02-04 | ✅ OK |
@@ -46,8 +47,7 @@
 | HealthyGirl Kitchen | https://healthygirlkitchen.com/feed/ | 0 | 11 | 2 | 3 | 0 | 0 | 2026-02-06 | ✅ OK |
 | It Doesn't Taste Like Chicken | https://itdoesnttastelikechicken.com/feed/ | 0 | 33 | 2 | 13 | 33 | 0 | 2026-02-07 | ✅ OK |
 | Jessica in the Kitchen | https://jessicainthekitchen.com/feed/ | 0 | 13 | 2 | 0 | 2 | 2 | 2026-02-06 | ✅ OK |
-| Lazy Cat Kitchen | https://www.lazycatkitchen.com/feed/ | 0 | 10 | 0 | 0 | 2 | 0 | 2026-02-01 | ✅ OK |
-| Love and Lemons | https://www.loveandlemons.com/category/recipes/vegan/ | 11 | 11 | 1 | 1 | 1 | 0 | 2026-02-07 | ✅ OK (11) |
+| Lazy Cat Kitchen | https://www.lazycatkitchen.com/feed/ | 1 | 11 | 0 | 0 | 2 | 0 | 2026-02-07 | ✅ OK |
 | Make It Dairy Free | https://makeitdairyfree.com/feed/ | 0 | 10 | 1 | 1 | 2 | 1 | 2026-02-01 | ✅ OK |
 | Mary's Test Kitchen | https://www.marystestkitchen.com/feed/ | 0 | 10 | 0 | 0 | 0 | 0 | 2026-02-03 | ✅ OK |
 | Minimalist Baker | https://minimalistbaker.com/recipes/vegan/feed/ | 0 | 4 | 0 | 4 | 0 | 1 | 2026-01-20 | ✅ OK |
@@ -63,7 +63,7 @@
 | Plantifully Based | https://plantifullybasedblog.com/feed/ | 0 | 10 | 1 | 2 | 0 | 0 | 2026-02-07 | ✅ OK |
 | Rabbit and Wolves | https://www.rabbitandwolves.com/feed/ | 0 | 10 | 0 | 1 | 1 | 0 | 2026-01-19 | ✅ OK |
 | Rainbow Nourishments | https://www.rainbownourishments.com/feed/ | 0 | 11 | 0 | 2 | 1 | 0 | 2026-02-06 | ✅ OK |
-| Rainbow Plant Life | https://rainbowplantlife.com/feed/ | 0 | 10 | 2 | 0 | 2 | 0 | 2026-01-29 | ✅ OK |
+| Rainbow Plant Life | https://rainbowplantlife.com/feed/ | 0 | 23 | 5 | 1 | 4 | 0 | 2026-02-07 | ✅ OK |
 | Rhian's Recipes | https://www.rhiansrecipes.com/feed/ | 0 | 24 | 0 | 0 | 0 | 24 | 2026-01-28 | ✅ OK |
 | Running on Real Food | https://runningonrealfood.com/feed/ | 0 | 10 | 10 | 0 | 2 | 0 | 2026-01-29 | ✅ OK |
 | Sarah's Vegan Kitchen | https://sarahsvegankitchen.com/feed/ | 0 | 16 | 0 | 0 | 3 | 0 | 2026-02-04 | ✅ OK |
@@ -85,7 +85,7 @@
 | The Stingy Vegan | https://thestingyvegan.com/feed/ | 0 | 10 | 0 | 10 | 10 | 0 | 2025-12-12 | ✅ OK |
 | VegNews | https://vegnews.com/feed | 0 | 29 | 3 | 5 | 1 | 0 | 2026-02-07 | ✅ OK |
 | Vegan Heaven | https://veganheaven.org/feed/ | 0 | 10 | 0 | 0 | 1 | 0 | 2026-01-06 | ✅ OK |
-| Vegan Richa | https://www.veganricha.com/feed/ | 0 | 12 | 0 | 3 | 3 | 0 | 2026-02-04 | ✅ OK |
+| Vegan Richa | https://www.veganricha.com/feed/ | 0 | 21 | 0 | 5 | 6 | 1 | 2026-02-07 | ✅ OK |
 | Vegan in the Freezer | https://veganinthefreezer.com/feed/ | 0 | 1 | 0 | 0 | 0 | 0 | 2026-01-25 | ✅ OK |
 | Veggiekins | Unknown | 0 | 10 | 0 | 1 | 0 | 0 | 2026-01-29 | Skipped/DB Only |
 | Veggies Don't Bite | https://veggiesdontbite.com/feed/ | 0 | 19 | 1 | 1 | 3 | 1 | 2026-02-06 | ✅ OK |
