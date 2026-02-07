@@ -85,6 +85,7 @@ DISRUPTORS = [
     ("Ann Arbor Vegan Kitchen", "https://www.annarborvegankitchen.com/feed/", ["WFPB"]),
     ("Veggiekins", "https://veggiekinsblog.com/feed/", ["Easy"]),
     ("ZardyPlants", "https://zardyplants.com/feed/", ["WFPB"]),
+    ("Fran Costigan", "https://www.francostigan.com/feed/", []),
     ("Dreena Burton", "https://dreenaburton.com/feed/", ["WFPB"])
 ]
 
