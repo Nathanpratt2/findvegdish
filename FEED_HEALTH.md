@@ -1,7 +1,7 @@
 # Feed Health Report
-**Last Run:** 2026-02-07T19:53:10.801614
-**Total Blogs:** 78
-**Active Blogs (Last 90d):** 72 / 78
+**Last Run:** 2026-02-07T20:27:20.095947
+**Total Blogs:** 80
+**Active Blogs (Last 90d):** 74 / 80
 **Total Database Size:** 847
 **New Today:** 7
 **WFPB:** 134 (15%)
@@ -12,22 +12,26 @@
 
 | Blog Name | URL | New | Total | WFPB | Easy | Budget | GF | Latest | Status |
 |-----------|-----|-----|-------|------|------|--------|----|--------|--------|
-| Ann Arbor Vegan Kitchen | https://www.annarborvegankitchen.com/feed/ | 0 | 10 | 10 | 0 | 3 | 0 | 2026-02-04 | ❌ Blocked/ConnErr |
 | Cookie and Kate | https://cookieandkate.com/category/vegan-recipes/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/HTML Fail |
+| Oh She Glows | https://www.ohsheglows.com/recipe-search/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/HTML Fail |
 | School Night Vegan | https://schoolnightvegan.com/category/recipes/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/HTML Fail |
 | The Loopy Whisk | https://theloopywhisk.com/diet/vegan/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/HTML Fail |
+| The Post-Punk Kitchen | https://www.theppk.com/feed/ | 0 | 8 | 1 | 1 | 1 | 0 | 2026-02-06 | ❌ Blocked/ConnErr |
 | Healthier Steps | https://healthiersteps.com/feed/ | 0 | 2 | 1 | 0 | 0 | 0 | 2025-05-18 | ⚠️ Stale (>90d)  |
 | The Vegan 8 | https://thevegan8.com/feed/ | 0 | 10 | 1 | 10 | 10 | 0 | 2025-10-25 | ⚠️ Stale (>90d)  |
 | Turnip Vegan | https://turnipvegan.com/blogs/news.atom | 0 | 7 | 0 | 0 | 0 | 0 | 2025-04-11 | ⚠️ Stale (>90d)  |
 | Unconventional Baker | https://www.unconventionalbaker.com/feed/ | 0 | 10 | 0 | 0 | 0 | 10 | 2025-11-01 | ⚠️ Stale (>90d)  |
 | Vegan Yack Attack | https://veganyackattack.com/feed/ | 0 | 5 | 0 | 2 | 0 | 0 | 2025-07-27 | ⚠️ Stale (>90d)  |
 | ZardyPlants | https://zardyplants.com/feed/ | 0 | 10 | 10 | 7 | 3 | 0 | 2025-11-08 | ⚠️ Stale (>90d)  |
+| Hot For Food | https://www.hotforfoodblog.com/recipe-index/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ⚠️ Scraped 0 |
 | Love and Lemons | https://www.loveandlemons.com/category/recipes/vegan/ | 0 | 11 | 1 | 1 | 1 | 0 | 2026-02-07 | ⚠️ Scraped 0 |
 | Pick Up Limes | https://www.pickuplimes.com/recipe/ | 0 | 12 | 0 | 0 | 1 | 0 | 2026-02-07 | ⚠️ Scraped 0 |
 | Rainbow Plant Life GF (-> Rainbow Plant Life) | https://rainbowplantlife.com/diet/gluten-free/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ⚠️ Scraped 0 |
+| The Full Helping | https://www.thefullhelping.com/dietary/vegan/ | 0 | 5 | 0 | 0 | 1 | 0 | 2026-01-19 | ⚠️ Scraped 0 |
 | Vegan Richa GF (-> Vegan Richa) | https://www.veganricha.com/category/gluten-free/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ⚠️ Scraped 0 |
 | A Virtual Vegan | https://avirtualvegan.com/feed/ | 0 | 10 | 0 | 1 | 0 | 0 | 2026-02-06 | ✅ OK |
 | Addicted to Dates | https://addictedtodates.com/category/recipes/feed/ | 0 | 10 | 0 | 1 | 2 | 0 | 2026-01-30 | ✅ OK |
+| Ann Arbor Vegan Kitchen | https://www.annarborvegankitchen.com/feed/ | 0 | 10 | 10 | 0 | 3 | 0 | 2026-02-04 | ✅ OK |
 | Bianca Zapatka | https://biancazapatka.com/en/feed/ | 0 | 10 | 2 | 5 | 2 | 1 | 2025-12-11 | ✅ OK |
 | Cadry's Kitchen | https://cadryskitchen.com/feed/ | 0 | 11 | 1 | 11 | 0 | 0 | 2026-02-04 | ✅ OK |
 | Choosing Chia | https://choosingchia.com/feed/ | 0 | 10 | 2 | 10 | 1 | 0 | 2026-01-06 | ✅ OK |
@@ -77,11 +81,9 @@
 | The Conscious Plant Kitchen | https://www.theconsciousplantkitchen.com/feed/ | 0 | 11 | 11 | 1 | 0 | 1 | 2026-02-05 | ✅ OK |
 | The First Mess | https://thefirstmess.com/feed/ | 0 | 13 | 1 | 2 | 2 | 1 | 2026-02-05 | ✅ OK |
 | The Foodie Takes Flight | https://thefoodietakesflight.com/feed/ | 0 | 11 | 0 | 11 | 2 | 0 | 2026-02-05 | ✅ OK |
-| The Full Helping | https://thefullhelping.com/feed/ | 0 | 5 | 0 | 0 | 1 | 0 | 2026-01-19 | ✅ OK |
 | The Hidden Veggies | https://thehiddenveggies.com/feed/ | 0 | 11 | 1 | 1 | 11 | 0 | 2026-02-05 | ✅ OK |
 | The Korean Vegan | https://thekoreanvegan.com/feed/ | 0 | 10 | 0 | 5 | 0 | 0 | 2026-01-28 | ✅ OK |
 | The Little Blog of Vegan | https://www.thelittleblogofvegan.com/feed/ | 0 | 12 | 0 | 5 | 0 | 0 | 2026-02-06 | ✅ OK |
-| The Post-Punk Kitchen | https://www.theppk.com/feed/ | 0 | 8 | 1 | 1 | 1 | 0 | 2026-02-06 | ✅ OK |
 | The Stingy Vegan | https://thestingyvegan.com/feed/ | 0 | 10 | 0 | 10 | 10 | 0 | 2025-12-12 | ✅ OK |
 | VegNews | https://vegnews.com/feed | 0 | 29 | 3 | 5 | 1 | 0 | 2026-02-07 | ✅ OK |
 | Vegan Heaven | https://veganheaven.org/feed/ | 0 | 10 | 0 | 0 | 1 | 0 | 2026-01-06 | ✅ OK |
