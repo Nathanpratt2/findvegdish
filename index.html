@@ -396,6 +396,7 @@
         .wfpb-badge { background-color: #16a085; }
         .easy-badge { background-color: #2980b9; }
         .budget-badge { background-color: #8e44ad; }
+        .gf-badge { background-color: #f39c12; }
 
         .title {
             font-size: 1.1em;
@@ -923,6 +924,8 @@
                     badgeHTML += '<span class="easy-badge">Easy</span>';
                 } else if (tag === 'Budget') {
                     badgeHTML += '<span class="budget-badge">Budget</span>';
+                } else if (tag === 'GF') {
+                    badgeHTML += '<span class="gf-badge">GF</span>';
                 }
             });
         }
@@ -1076,27 +1079,17 @@
             });
         }
 
-        if (activeTags.size > 0) {
+       if (activeTags.size > 0) {
             filtered = filtered.filter(recipe => {
                 const title = recipe.title.toLowerCase();
                 
                 for (let tag of activeTags) {
                     if (tag === 'Protein') {
+                        // Protein is still calculated via keywords in JS
                         if (!PROTEIN_KEYWORDS.some(k => title.includes(k))) return false;
                     } 
-                    else if (tag === 'GF') {
-                        const isGF = title.includes('gf') || 
-             title.includes('gluten free') || 
-             title.includes('gluten-free') || 
-             title.includes('Vittles') || 
-             title.includes('Sunshine') || 
-             title.includes('Vegan 8') || 
-             title.includes("Rhian's") || 
-             title.includes('Snixy') || 
-             title.includes('loopy whisk');
-                        if (!isGF) return false;
-                    } 
                     else {
+                        // WFPB, Easy, Budget, and GF are now all in special_tags from Python
                         if (!recipe.special_tags || !recipe.special_tags.includes(tag)) return false;
                     }
                 }
