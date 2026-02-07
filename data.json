@@ -277,6 +277,17 @@
     ]
   },
   {
+    "blog_name": "Healthy Little Vittles",
+    "title": "Peanut Butter & Jelly Chocolate Cups (With Easy Homemade Strawberry Chia Seed Jam)",
+    "link": "https://healthylittlevittles.com/peanut-butter-jelly-chocolate-cups/",
+    "image": "https://healthylittlevittles.com/wp-content/uploads/2025/12/Peanut-Butter-Jelly-Chocolate-Cups-2.jpg",
+    "date": "2026-02-05T12:00:00+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "Plant-Based on a Budget",
     "title": "Week 80 Meal Plan",
     "link": "https://plantbasedonabudget.com/week-80-meal-plan/",
@@ -313,8 +324,8 @@
     "date": "2026-02-05T07:00:00-08:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -325,8 +336,8 @@
     "date": "2026-02-05T06:59:28+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -613,8 +624,8 @@
     "date": "2026-02-03T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -654,8 +665,8 @@
     "date": "2026-02-03T05:14:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -1028,8 +1039,8 @@
     "date": "2026-01-31T11:00:03+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -1314,6 +1325,15 @@
     ]
   },
   {
+    "blog_name": "Healthy Little Vittles",
+    "title": "Vegan Cookie Dough Overnight Oats (gluten-free & naturally sweetened)",
+    "link": "https://healthylittlevittles.com/vegan-cookie-dough-overnight-oats/",
+    "image": "https://healthylittlevittles.com/wp-content/uploads/2026/01/vegan-cookie-dough-overnight-oats-5.jpg",
+    "date": "2026-01-29T12:00:00+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
     "blog_name": "Plant-Based on a Budget",
     "title": "Week 79 Meal Plan",
     "link": "https://plantbasedonabudget.com/week-79-meal-plan/",
@@ -1388,8 +1408,8 @@
     "date": "2026-01-28T18:39:31+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -1420,8 +1440,8 @@
     "date": "2026-01-28T12:13:15+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -1443,9 +1463,18 @@
     "date": "2026-01-28T12:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
+  },
+  {
+    "blog_name": "Healthy Little Vittles",
+    "title": "15 Cozy Vegan & Gluten-Free Soup Recipes to Try This Winter Season",
+    "link": "https://healthylittlevittles.com/15-cozy-vegan-gluten-free-soup-recipes/",
+    "image": "https://healthylittlevittles.com/wp-content/uploads/2026/01/soup-roundup-683x1024.png",
+    "date": "2026-01-28T12:00:00+00:00",
+    "is_disruptor": true,
+    "special_tags": []
   },
   {
     "blog_name": "Dr. Vegan",
@@ -1455,9 +1484,9 @@
     "date": "2026-01-28T11:45:05+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
       "WFPB",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -1477,8 +1506,8 @@
     "date": "2026-01-28T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -1549,8 +1578,8 @@
     "date": "2026-01-27T17:26:09+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -1619,9 +1648,9 @@
     "date": "2026-01-27T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
       "WFPB",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -1841,8 +1870,8 @@
     "date": "2026-01-24T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -1920,8 +1949,8 @@
     "date": "2026-01-23T11:33:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -1985,7 +2014,7 @@
     "date": "2026-01-22T18:00:48+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
+      "WFPB",
       "Budget"
     ]
   },
@@ -2008,8 +2037,8 @@
     "date": "2026-01-22T14:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -2029,7 +2058,18 @@
     "date": "2026-01-22T13:11:31+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
+      "Budget",
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Healthy Little Vittles",
+    "title": "Vegan Loaded Baked Potato Soup (made with gold potatoes)",
+    "link": "https://healthylittlevittles.com/vegan-loaded-baked-potato-soup/",
+    "image": "https://healthylittlevittles.com/wp-content/uploads/2026/01/Vegan-Loaded-Baked-Potato-Soup-2.jpg",
+    "date": "2026-01-22T12:00:00+00:00",
+    "is_disruptor": true,
+    "special_tags": [
       "Budget"
     ]
   },
@@ -2137,8 +2177,8 @@
     "date": "2026-01-21T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -2161,8 +2201,8 @@
     "date": "2026-01-20T23:23:34+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -2215,9 +2255,9 @@
     "date": "2026-01-20T13:29:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
       "WFPB",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -2228,8 +2268,8 @@
     "date": "2026-01-20T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -2462,8 +2502,8 @@
     "date": "2026-01-17T02:23:55+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -2503,9 +2543,9 @@
     "date": "2026-01-16T20:07:56+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
       "WFPB",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -2554,8 +2594,8 @@
     "date": "2026-01-16T09:37:53+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -2652,8 +2692,8 @@
     "date": "2026-01-15T13:09:27+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -2666,6 +2706,15 @@
     "special_tags": [
       "Easy"
     ]
+  },
+  {
+    "blog_name": "Healthy Little Vittles",
+    "title": "Vegan Peanut Butter Buckeyes Without Powdered Sugar (Maple Syrup Sweetened)",
+    "link": "https://healthylittlevittles.com/vegan-peanut-butter-buckeyes-without-powdered-sugar/",
+    "image": "https://healthylittlevittles.com/wp-content/uploads/2026/01/vegan-buckeyes-6.jpg",
+    "date": "2026-01-15T12:00:00+00:00",
+    "is_disruptor": true,
+    "special_tags": []
   },
   {
     "blog_name": "Full of Plants",
@@ -2740,8 +2789,8 @@
     "date": "2026-01-14T14:40:33+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -2792,8 +2841,8 @@
     "date": "2026-01-14T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -2824,9 +2873,9 @@
     "date": "2026-01-14T01:52:22+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
       "WFPB",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -3044,8 +3093,8 @@
     "date": "2026-01-11T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -3101,8 +3150,8 @@
     "date": "2026-01-09T17:15:12+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -3131,8 +3180,8 @@
     "date": "2026-01-09T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -3189,6 +3238,15 @@
     "special_tags": [
       "Budget"
     ]
+  },
+  {
+    "blog_name": "Healthy Little Vittles",
+    "title": "Cranberry Clementine Smoothie (Vegan, Naturally Sweetened)",
+    "link": "https://healthylittlevittles.com/cranberry-clementine-smoothie/",
+    "image": "https://healthylittlevittles.com/wp-content/uploads/2026/01/easy-cranberry-clementine-smoothie.jpg",
+    "date": "2026-01-08T12:00:00+00:00",
+    "is_disruptor": true,
+    "special_tags": []
   },
   {
     "blog_name": "A Virtual Vegan",
@@ -3276,8 +3334,8 @@
     "date": "2026-01-07T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -3444,8 +3502,8 @@
     "date": "2026-01-05T09:04:00+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -3501,9 +3559,9 @@
     "date": "2026-01-04T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
       "WFPB",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -3569,6 +3627,17 @@
     ]
   },
   {
+    "blog_name": "Healthy Little Vittles",
+    "title": "Quick & Easy Naturally Sweetened Strawberry Chia Seed Jam",
+    "link": "https://healthylittlevittles.com/strawberry-chia-seed-jam/",
+    "image": "https://healthylittlevittles.com/wp-content/uploads/2025/11/strawberry-chia-seed-jam-2.jpg",
+    "date": "2026-01-02T12:00:00+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "From My Bowl",
     "title": "20 Easy & Healthy Vegan Recipes",
     "link": "https://frommybowl.com/20-easy-vegan-recipes/?utm_source=rss&utm_medium=rss&utm_campaign=20-easy-vegan-recipes",
@@ -3576,8 +3645,8 @@
     "date": "2026-01-02T09:50:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -3716,8 +3785,8 @@
     "date": "2025-12-28T20:39:42+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -3754,6 +3823,15 @@
     ]
   },
   {
+    "blog_name": "Healthy Little Vittles",
+    "title": "Fudgy Flourless Peppermint Date Brownies (Vegan, Naturally Sweetened, Gluten-Free)",
+    "link": "https://healthylittlevittles.com/fudgy-flourless-peppermint-date-brownies/",
+    "image": "https://healthylittlevittles.com/wp-content/uploads/2025/12/Fudgy-Flourless-Peppermint-Date-Brownies-3.jpg",
+    "date": "2025-12-26T17:47:09+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
     "blog_name": "The Foodie Takes Flight",
     "title": "Quick Tofu Stir-Fry with Oyster Sauce",
     "link": "https://thefoodietakesflight.com/quick-tofu-stir-fry-with-oyster-sauce/",
@@ -3783,9 +3861,9 @@
     "date": "2025-12-26T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
       "WFPB",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -3876,8 +3954,8 @@
     "date": "2025-12-21T14:29:08+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -4057,7 +4135,7 @@
     "date": "2025-12-18T18:00:14+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy"
+      "WFPB"
     ]
   },
   {
@@ -4168,9 +4246,9 @@
     "date": "2025-12-17T20:30:26+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
       "WFPB",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -4210,8 +4288,8 @@
     "date": "2025-12-17T11:00:24+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -4222,8 +4300,8 @@
     "date": "2025-12-17T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -4261,6 +4339,15 @@
     "link": "https://www.thelittleblogofvegan.com/2025/12/mini-gingerbread-man-pop-tarts.html",
     "image": "https://www.thelittleblogofvegan.com/wp-content/uploads/2025/12/gingerbread-man-pop-tarts-mini-1440x2093.jpg",
     "date": "2025-12-16T13:50:26+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Healthy Little Vittles",
+    "title": "The Best Gluten-Free Vegan Cookies For Christmas (and Beyond)",
+    "link": "https://healthylittlevittles.com/the-best-gluten-free-vegan-cookies-for-christmas-and-beyond/",
+    "image": "https://healthylittlevittles.com/wp-content/uploads/2025/12/gf-vegan-apple-recipe-roudup-683x1024.png",
+    "date": "2025-12-16T12:00:00+00:00",
     "is_disruptor": true,
     "special_tags": []
   },
@@ -4373,6 +4460,15 @@
     "special_tags": []
   },
   {
+    "blog_name": "Healthy Little Vittles",
+    "title": "Soft & Chewy Almond Flour Date Gingerbread Cookies",
+    "link": "https://healthylittlevittles.com/soft-chewy-almond-flour-date-gingerbread-cookies/",
+    "image": "https://healthylittlevittles.com/wp-content/uploads/2025/12/Soft-Chewy-Date-Almond-Flour-Gingerbread-Cookies-5.jpg",
+    "date": "2025-12-12T19:51:29+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
     "blog_name": "Sarah's Vegan Kitchen",
     "title": "Vegan Sugar Cookies (Soft & Chewy)",
     "link": "https://sarahsvegankitchen.com/recipes/sugar-cookies/",
@@ -4407,8 +4503,8 @@
     "date": "2025-12-12T13:18:20+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -4419,8 +4515,8 @@
     "date": "2025-12-12T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -4463,6 +4559,17 @@
     "special_tags": []
   },
   {
+    "blog_name": "Healthy Little Vittles",
+    "title": "One-Pot Vegan Lemon Turmeric Chicken Noodle Soup (gluten-free)",
+    "link": "https://healthylittlevittles.com/one-pot-vegan-lemon-turmeric-chicken-noodle-soup/",
+    "image": "https://healthylittlevittles.com/wp-content/uploads/2025/12/Lemon-Turmeric-Chicken-Noodle-Soup-2.jpg",
+    "date": "2025-12-11T12:00:00+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "Vegan Richa",
     "title": "Sun Dried Tomato Holiday Roast with Mushroom-Potato Stuffing",
     "link": "https://www.veganricha.com/sun-dried-tomato-holiday-roast/",
@@ -4481,8 +4588,8 @@
     "date": "2025-12-10T13:00:46+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -4513,8 +4620,8 @@
     "date": "2025-12-10T04:03:38+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -4568,6 +4675,15 @@
     "image": "https://makeitdairyfree.com/wp-content/uploads/2020/08/vegan-tofu-scramble-6-500x500.jpg",
     "date": "2025-12-09T02:07:35+00:00",
     "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Healthy Little Vittles",
+    "title": "Vegan Peppermint Swirl Marshmallows (Dairy-Free, Egg-Free)",
+    "link": "https://healthylittlevittles.com/vegan-peppermint-swirl-marshmallows/",
+    "image": "https://healthylittlevittles.com/wp-content/uploads/2025/12/Vegan-Peppermint-Swirl-Marshmallows-3.jpg",
+    "date": "2025-12-08T12:00:00+00:00",
+    "is_disruptor": true,
     "special_tags": []
   },
   {
@@ -4627,8 +4743,8 @@
     "date": "2025-12-07T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -4668,8 +4784,8 @@
     "date": "2025-12-05T19:52:47+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -4709,7 +4825,7 @@
     "date": "2025-12-04T18:00:19+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy"
+      "WFPB"
     ]
   },
   {
@@ -4729,9 +4845,18 @@
     "date": "2025-12-04T14:06:21+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
+  },
+  {
+    "blog_name": "Healthy Little Vittles",
+    "title": "Creamy Vegan Hot Cocoa Dessert Dip",
+    "link": "https://healthylittlevittles.com/creamy-vegan-hot-cocoa-dessert-dip/",
+    "image": "https://healthylittlevittles.com/wp-content/uploads/2025/12/Hot-Cocoa-Dip-5.jpg",
+    "date": "2025-12-04T13:41:01+00:00",
+    "is_disruptor": true,
+    "special_tags": []
   },
   {
     "blog_name": "One Arab Vegan",
@@ -4813,8 +4938,8 @@
     "date": "2025-12-02T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -4896,8 +5021,8 @@
     "date": "2025-11-28T21:36:25+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -4908,9 +5033,18 @@
     "date": "2025-11-28T13:08:20+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
+  },
+  {
+    "blog_name": "Healthy Little Vittles",
+    "title": "Mini Chocolate Almond Flour Christmas Cookies",
+    "link": "https://healthylittlevittles.com/mini-chocolate-almond-flour-christmas-cookies/",
+    "image": "https://healthylittlevittles.com/wp-content/uploads/2025/11/mini-christmas-cookies.jpg",
+    "date": "2025-11-28T12:00:00+00:00",
+    "is_disruptor": true,
+    "special_tags": []
   },
   {
     "blog_name": "The First Mess",
@@ -4958,8 +5092,8 @@
     "date": "2025-11-26T11:00:22+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -5001,8 +5135,8 @@
     "date": "2025-11-25T11:53:03+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -5089,8 +5223,8 @@
     "date": "2025-11-23T20:44:19+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -5110,8 +5244,8 @@
     "date": "2025-11-23T16:02:45+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -5184,8 +5318,8 @@
     "date": "2025-11-22T13:00:35+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -5242,6 +5376,17 @@
     "is_disruptor": true,
     "special_tags": [
       "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Healthy Little Vittles",
+    "title": "No-Bake Chocolate Gingerbread Almond Flour Cookie Dough Bites",
+    "link": "https://healthylittlevittles.com/no-bake-chocolate-gingerbread-almond-flour-cookie-dough-bites/",
+    "image": "https://healthylittlevittles.com/wp-content/uploads/2025/11/No-Bake-Chocolate-Gingerbread-Almond-Flour-Cookie-Dough-Bites-3.jpg",
+    "date": "2025-11-20T12:00:00+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "Easy"
     ]
   },
   {
@@ -5346,8 +5491,8 @@
     "date": "2025-11-18T19:56:57+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -5516,7 +5661,7 @@
     "date": "2025-11-13T18:00:23+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy"
+      "WFPB"
     ]
   },
   {
@@ -5542,6 +5687,15 @@
     ]
   },
   {
+    "blog_name": "Healthy Little Vittles",
+    "title": "Vegan Garlic Parmesan Roasted Pumpkin Seeds",
+    "link": "https://healthylittlevittles.com/vegan-garlic-parmesan-roasted-pumpkin-seeds/",
+    "image": "https://healthylittlevittles.com/wp-content/uploads/2025/11/vegan-garlic-parmesan-roasted-pumpkin-seeds-2.jpg",
+    "date": "2025-11-13T12:00:00+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
     "blog_name": "It Doesn't Taste Like Chicken",
     "title": "Easy Vegan Spoon Bread",
     "link": "https://itdoesnttastelikechicken.com/easy-vegan-spoon-bread/",
@@ -5549,8 +5703,8 @@
     "date": "2025-11-12T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -5652,8 +5806,8 @@
     "date": "2025-11-08T11:00:15+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -5732,6 +5886,15 @@
     ]
   },
   {
+    "blog_name": "Healthy Little Vittles",
+    "title": "Gluten-Free Pumpkin Olive Oil Cake (vegan!)",
+    "link": "https://healthylittlevittles.com/gluten-free-pumpkin-olive-oil-cake-vegan/",
+    "image": "https://healthylittlevittles.com/wp-content/uploads/2025/11/olive-oil-pumpkin-cake-2.jpg",
+    "date": "2025-11-06T12:00:00+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
     "blog_name": "Elavegan",
     "title": "Creamy Onion Pasta With Tomatoes",
     "link": "https://elavegan.com/onion-tomato-pasta/",
@@ -5757,8 +5920,8 @@
     "date": "2025-11-05T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -5791,9 +5954,9 @@
     "date": "2025-11-05T03:20:51+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
       "WFPB",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -5855,8 +6018,8 @@
     "date": "2025-11-02T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -5896,8 +6059,8 @@
     "date": "2025-10-31T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -5935,9 +6098,18 @@
     "date": "2025-10-30T13:30:47+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
+  },
+  {
+    "blog_name": "Healthy Little Vittles",
+    "title": "Thick & Creamy Vegan Pumpkin Pie Smoothie",
+    "link": "https://healthylittlevittles.com/thick-creamy-vegan-pumpkin-pie-smoothie/",
+    "image": "https://healthylittlevittles.com/wp-content/uploads/2025/10/Pumpkin-Pie-Smoothie-2.jpg",
+    "date": "2025-10-30T11:00:00+00:00",
+    "is_disruptor": true,
+    "special_tags": []
   },
   {
     "blog_name": "Mary's Test Kitchen",
@@ -5956,8 +6128,8 @@
     "date": "2025-10-29T09:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -5990,8 +6162,8 @@
     "date": "2025-10-28T17:13:41+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -6032,8 +6204,8 @@
     "date": "2025-10-25T13:30:45+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -6044,8 +6216,8 @@
     "date": "2025-10-25T00:46:40+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -6118,9 +6290,18 @@
     "date": "2025-10-22T13:42:36+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
+  },
+  {
+    "blog_name": "Healthy Little Vittles",
+    "title": "Pumpkin Pie Stuffed Dates",
+    "link": "https://healthylittlevittles.com/pumpkin-pie-stuffed-dates/",
+    "image": "https://healthylittlevittles.com/wp-content/uploads/2025/10/Pumpkin-Pie-Dates-4.jpg",
+    "date": "2025-10-22T11:00:00+00:00",
+    "is_disruptor": true,
+    "special_tags": []
   },
   {
     "blog_name": "It Doesn't Taste Like Chicken",
@@ -6152,9 +6333,9 @@
     "date": "2025-10-21T16:43:44+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
       "WFPB",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -6194,8 +6375,8 @@
     "date": "2025-10-18T10:00:02+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -6206,8 +6387,8 @@
     "date": "2025-10-17T20:05:24+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -6227,8 +6408,17 @@
     "date": "2025-10-16T17:00:46+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy"
+      "WFPB"
     ]
+  },
+  {
+    "blog_name": "Healthy Little Vittles",
+    "title": "Everything Bagel Roasted Pumpkin Seeds",
+    "link": "https://healthylittlevittles.com/everything-bagel-roasted-pumpkin-seeds/",
+    "image": "https://healthylittlevittles.com/wp-content/uploads/2025/10/everything-bagel-roasted-pumpkin-seeds-6.jpg",
+    "date": "2025-10-16T11:00:00+00:00",
+    "is_disruptor": true,
+    "special_tags": []
   },
   {
     "blog_name": "The Vegan 8",
@@ -6238,9 +6428,9 @@
     "date": "2025-10-16T10:10:53+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
       "WFPB",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -6289,8 +6479,8 @@
     "date": "2025-10-12T20:32:47+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -6370,8 +6560,8 @@
     "date": "2025-10-08T15:47:23+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -6413,8 +6603,8 @@
     "date": "2025-10-03T09:15:11+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -6452,8 +6642,8 @@
     "date": "2025-10-01T13:45:03+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -6531,9 +6721,9 @@
     "date": "2025-09-25T17:58:30+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
       "WFPB",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -6544,7 +6734,7 @@
     "date": "2025-09-25T17:00:11+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy"
+      "WFPB"
     ]
   },
   {
@@ -6566,8 +6756,8 @@
     "date": "2025-09-22T07:58:32+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -6578,8 +6768,8 @@
     "date": "2025-09-21T16:04:26+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -6682,8 +6872,8 @@
     "date": "2025-09-13T18:58:14+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -6694,8 +6884,8 @@
     "date": "2025-09-12T14:21:09+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -6706,7 +6896,7 @@
     "date": "2025-09-09T17:00:03+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy"
+      "WFPB"
     ]
   },
   {
@@ -6728,8 +6918,8 @@
     "date": "2025-09-08T13:10:19+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -6749,8 +6939,8 @@
     "date": "2025-09-07T00:47:43+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -6790,8 +6980,8 @@
     "date": "2025-09-04T07:44:32+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -6802,8 +6992,8 @@
     "date": "2025-09-03T12:59:09+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -6931,7 +7121,7 @@
     "date": "2025-08-21T17:00:07+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy"
+      "WFPB"
     ]
   },
   {
@@ -7038,7 +7228,6 @@
     "date": "2025-07-31T18:00:11+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
       "WFPB",
       "Budget"
     ]
@@ -7129,7 +7318,6 @@
     "date": "2025-07-06T18:00:38+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
       "WFPB"
     ]
   },
@@ -7150,8 +7338,8 @@
     "date": "2025-07-02T11:33:50+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -7173,8 +7361,8 @@
     "date": "2025-06-30T00:35:16+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -7194,8 +7382,8 @@
     "date": "2025-06-20T09:28:12+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -7284,8 +7472,19 @@
     "date": "2025-05-24T21:52:33+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Healthier Steps",
+    "title": "Smashed Cucumber Salad",
+    "link": "https://healthiersteps.com/smashed-cucumber-salad/",
+    "image": "https://healthiersteps.com/wp-content/uploads/2025/05/cucumber-salad-recipe.jpg",
+    "date": "2025-05-18T22:16:29+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "WFPB"
     ]
   },
   {
@@ -7345,6 +7544,15 @@
     "special_tags": []
   },
   {
+    "blog_name": "Healthier Steps",
+    "title": "Vegan Achari Aloo",
+    "link": "https://healthiersteps.com/vegan-achari-aloo/",
+    "image": "https://healthiersteps.com/wp-content/uploads/2025/04/vegan-achari-aloo-recipe.jpg",
+    "date": "2025-04-21T19:40:13+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
     "blog_name": "Namely Marly",
     "title": "Sweet Potato Taco Skillet",
     "link": "https://namelymarly.com/sweet-potato-taco-skillet/",
@@ -7352,8 +7560,8 @@
     "date": "2025-04-17T17:49:25+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -7364,8 +7572,8 @@
     "date": "2025-04-15T06:54:41+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -7448,8 +7656,8 @@
     "date": "2025-03-15T02:42:28+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -7480,8 +7688,8 @@
     "date": "2025-03-06T23:49:46+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -7492,8 +7700,8 @@
     "date": "2025-03-04T09:56:21+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -7522,8 +7730,8 @@
     "date": "2025-02-22T22:46:59+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {

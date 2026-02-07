@@ -1,18 +1,19 @@
 # Feed Health Report
-**Last Run:** 2026-02-07T09:05:41.635014
-**Total Blogs:** 67
-**Avg Recipes per Blog:** 11.0
-**Active Blogs (Last 90d):** 62 / 67
-**Total Database Size:** 739
-**New Today:** 7
-**WFPB:** 135 (18%)
-**Easy:** 229 (30%)
-**Budget:** 157 (21%)
-**Average Latest Post:** 2026-01-17
+**Last Run:** 2026-02-07T09:15:12.764942
+**Total Blogs:** 70
+**Avg Recipes per Blog:** 10.9
+**Active Blogs (Last 90d):** 64 / 70
+**Total Database Size:** 761
+**New Today:** 29
+**WFPB:** 144 (18%)
+**Easy:** 223 (29%)
+**Budget:** 158 (20%)
+**Average Latest Post:** 2026-01-14
 
 | Blog Name | URL | New | Total | WFPB | Easy | Budget | Latest | Status |
 |-----------|-----|-----|-------|------|------|--------|--------|--------|
 | Fran Costigan | https://www.francostigan.com/feed/ | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/ConnErr |
+| Healthier Steps | https://healthiersteps.com/feed/ | 2 | 2 | 1 | 0 | 0 | 2025-05-18 | ⚠️ Stale (>90d)  |
 | The Vegan 8 | https://thevegan8.com/feed/ | 0 | 10 | 1 | 10 | 10 | 2025-10-25 | ⚠️ Stale (>90d)  |
 | Turnip Vegan | https://turnipvegan.com/blogs/news.atom | 0 | 7 | 0 | 0 | 0 | 2025-04-11 | ⚠️ Stale (>90d)  |
 | Unconventional Baker | https://www.unconventionalbaker.com/feed/ | 0 | 10 | 0 | 0 | 0 | 2025-11-01 | ⚠️ Stale (>90d)  |
@@ -35,6 +36,7 @@
 | From My Bowl | https://frommybowl.com/feed/ | 0 | 11 | 11 | 11 | 2 | 2026-02-03 | ✅ OK |
 | Full of Plants | https://fullofplants.com/feed/ | 0 | 6 | 0 | 0 | 0 | 2026-01-31 | ✅ OK |
 | Gretchen's Vegan Bakery | https://www.gretchensveganbakery.com/feed/ | 0 | 16 | 0 | 1 | 0 | 2026-02-05 | ✅ OK |
+| Healthy Little Vittles | https://healthylittlevittles.com/feed/ | 20 | 20 | 0 | 4 | 1 | 2026-02-05 | ✅ OK |
 | HealthyGirl Kitchen | https://healthygirlkitchen.com/feed/ | 0 | 11 | 2 | 3 | 0 | 2026-02-06 | ✅ OK |
 | It Doesn't Taste Like Chicken | https://itdoesnttastelikechicken.com/feed/ | 0 | 32 | 2 | 13 | 32 | 2026-02-04 | ✅ OK |
 | Jessica in the Kitchen | https://jessicainthekitchen.com/feed/ | 0 | 13 | 2 | 0 | 2 | 2026-02-06 | ✅ OK |
@@ -58,7 +60,7 @@
 | Running on Real Food | https://runningonrealfood.com/feed/ | 0 | 10 | 10 | 0 | 2 | 2026-01-29 | ✅ OK |
 | Sarah's Vegan Kitchen | https://sarahsvegankitchen.com/feed/ | 0 | 16 | 0 | 0 | 3 | 2026-02-04 | ✅ OK |
 | Simple Vegan Blog | https://simpleveganblog.com/feed/ | 0 | 7 | 0 | 7 | 1 | 2026-02-05 | ✅ OK |
-| Strength and Sunshine | https://strengthandsunshine.com/feed/ | 0 | 10 | 2 | 10 | 2 | 2026-01-22 | ✅ OK |
+| Strength and Sunshine | https://strengthandsunshine.com/feed/ | 0 | 10 | 10 | 0 | 2 | 2026-01-22 | ✅ OK |
 | Sweet Potato Soul | https://sweetpotatosoul.com/feed/ | 0 | 10 | 0 | 1 | 2 | 2026-01-04 | ✅ OK |
 | Sweet Simple Vegan | https://sweetsimplevegan.com/feed/ | 0 | 7 | 0 | 4 | 0 | 2026-02-06 | ✅ OK |
 | The Banana Diaries | https://thebananadiaries.com/feed/ | 0 | 11 | 0 | 5 | 2 | 2026-02-06 | ✅ OK |
