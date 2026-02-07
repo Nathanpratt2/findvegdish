@@ -56,7 +56,7 @@ TOP_BLOGGERS = [
     ("Turnip Vegan", "https://turnipvegan.com/blogs/news.atom", []),
     ("VegNews", "https://vegnews.com/feed", []),
     ("Plant-Based on a Budget", "https://plantbasedonabudget.com/feed/", ["Budget"]),
-    ("HealthyGirl Kitchen", "https://healthygirlkitchen.com/feed/", [])
+    ("HealthyGirl Kitchen", "https://healthygirlkitchen.com/feed/", []),
 ]
 
 DISRUPTORS = [
@@ -101,9 +101,12 @@ DISRUPTORS = [
 # --- NEW: DIRECT HTML SCRAPING SOURCES ---
 # Format: ("Blog Name", "HTML List URL", ["Tags"], "Mode")
 HTML_SOURCES = [
-    ("Pick Up Limes", "https://www.pickuplimes.com/recipe/", ["WFPB", "Easy"], "custom_pul"),
-    ("Rainbow Plant Life GF", "https://rainbowplantlife.com/diet/gluten-free/", ["WFPB"], "wordpress"),
-    ("Vegan Richa GF", "https://www.veganricha.com/category/gluten-free/", [], "wordpress")
+    ("Pick Up Limes", "https://www.pickuplimes.com/recipe/", [], "custom_pul"),
+    ("Rainbow Plant Life GF", "https://rainbowplantlife.com/diet/gluten-free/", [], "wordpress"),
+    ("Vegan Richa GF", "https://www.veganricha.com/category/gluten-free/", [], "wordpress"),
+    ("School Night Vegan", "https://schoolnightvegan.com/category/recipes/", [], "wordpress"),
+    ("Love and Lemons", "https://www.loveandlemons.com/category/recipes/vegan/", [], "wordpress"),
+    ("Cookie and Kate", "https://cookieandkate.com/category/vegan-recipes/", [], "wordpress")
 ]
 
 ALL_FEEDS = TOP_BLOGGERS + DISRUPTORS
