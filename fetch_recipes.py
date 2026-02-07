@@ -86,7 +86,10 @@ DISRUPTORS = [
     ("Veggiekins", "https://veggiekinsblog.com/feed/", ["Easy"]),
     ("ZardyPlants", "https://zardyplants.com/feed/", ["WFPB"]),
     ("Fran Costigan", "https://www.francostigan.com/feed/", []),
-    ("Dreena Burton", "https://dreenaburton.com/feed/", ["WFPB"])
+    ("Dreena Burton", "https://dreenaburton.com/feed/", ["WFPB"]),
+     ("Strength and Sunshine", "https://strengthandsunshine.com/feed/", [WFPB]),
+    ("Healthy Little Vittles", "https://healthylittlevittles.com/feed/", []),
+    ("Healthier Steps", "https://healthiersteps.com/feed/", [])
 ]
 
 ALL_FEEDS = TOP_BLOGGERS + DISRUPTORS
