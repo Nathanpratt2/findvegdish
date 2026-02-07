@@ -267,6 +267,14 @@ for name, url, special_tags in ALL_FEEDS:
     new_count = 0
     status = "✅ OK"
     
+    # DOMAIN POLITENESS CHECK
+    # If we are scraping the same domain as the previous iteration (e.g. Vegan Richa then Vegan Richa GF), sleep extra.
+    current_domain = urlparse(url).netloc
+    if current_domain == previous_domain:
+        print(f"   (Pausing 5s for same domain: {current_domain})")
+        time.sleep(5)
+    previous_domain = current_domain
+    
     try:
         print(f"Checking {name}...")
         
