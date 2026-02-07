@@ -14,6 +14,20 @@
     <!-- PERFORMANCE: Preload Critical Data Source -->
     <link rel="preload" href="data.json" as="fetch" crossorigin>
 
+    <!-- 1. STATIC SCHEMA MIGRATION: WebSite & SearchAction (Hardcoded for immediate availability) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "https://findvegdish.com/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://findvegdish.com/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+
     <!-- Open Graph Tags (Dynamic via JS) -->
     <meta property="og:title" content="Daily Vegan Recipes">
     <meta property="og:description" content="Daily recipes from the top bloggers">
@@ -26,7 +40,6 @@
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- UPDATED: Favicons pointing to logo.png -->
     <link rel="icon" href="logo.png" type="image/png">
     <link rel="apple-touch-icon" href="logo.png">
 
@@ -153,7 +166,7 @@
         #shuffleIconBtn {
             width: 48px;
             height: 48px;
-            border-radius: 50%; /* Keeps the button circle */
+            border-radius: 50%; 
             background-color: white; 
             border: 2px solid #769F37; 
             color: #769F37; 
@@ -264,7 +277,7 @@
             margin: 0 auto;
             margin-top: 25px;
             grid-auto-flow: row; 
-            min-height: 500px; /* Prevent collapse before load */
+            min-height: 500px; 
         }
         
         @media (max-width: 1100px) { .gallery { grid-template-columns: repeat(3, 1fr); } }
@@ -282,6 +295,9 @@
             position: relative;
             animation: fadeIn 0.5s ease-in;
             height: 100%;
+            /* 3. CSS content-visibility: Performance boost for rendering large lists */
+            content-visibility: auto;
+            contain-intrinsic-size: 400px; 
         }
         
         .card-link {
@@ -501,13 +517,13 @@
     <h1 class="sr-only">Daily Vegan Recipes</h1>
 
     <a href="index.html" class="logo-link" title="Refresh">
-        <img src="default.jpg" alt="Daily Vegan Recipes" class="logo-img">
+        <!-- 4. IMAGE OPTIMIZATION: FetchPriority High & Async Decoding for LCP -->
+        <img src="default.jpg" alt="Daily Vegan Recipes" class="logo-img" fetchpriority="high" decoding="async">
     </a>
     
     <p class="sub-intro">Explore the newest recipes from over 50 top blogs</p>
     
     <div class="search-row">
-        <!-- SHUFFLE: Updated SVG dimensions to be 'rectangular' (28x18) while button is round -->
         <button id="shuffleIconBtn" onclick="shuffleRecipes()" title="Shuffle Recipes">
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="16 3 21 3 21 8"></polyline>
@@ -519,7 +535,8 @@
         
         <div class="search-wrapper">
             <label for="searchInput" style="display:none;">Search Recipes</label>
-            <input type="text" id="searchInput" placeholder="Search: Soup, Blog, Protein...">
+            <!-- 5. INPUT UX: Input Mode and Enter Key Hint -->
+            <input type="text" id="searchInput" placeholder="Search: Soup, Blog, Protein..." inputmode="search" enterkeyhint="search">
             <button id="clearBtn" title="Clear Search">✕</button>
         </div>
     </div>
@@ -535,7 +552,8 @@
     </div>
 </header>
 
-<main id="gallery" class="gallery">
+<!-- 7. SEMANTIC OUTLINE: aria-busy indicates loading state -->
+<main id="gallery" class="gallery" aria-busy="true" aria-label="Recipe Gallery">
     <!-- SEO & PERFORMANCE: Skeleton Screens for Layout Stability & Initial Crawl -->
     <noscript>
         <div style="grid-column: 1 / -1; text-align: center; padding: 20px;">
@@ -549,15 +567,15 @@
         </div>
     </noscript>
     
-    <!-- Skeleton Loaders (Removed by JS on load) -->
-    <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-text w-40"></div><div class="skeleton-text w-80"></div><div class="skeleton-text w-60"></div></div></div>
-    <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-text w-40"></div><div class="skeleton-text w-80"></div><div class="skeleton-text w-60"></div></div></div>
-    <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-text w-40"></div><div class="skeleton-text w-80"></div><div class="skeleton-text w-60"></div></div></div>
-    <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-text w-40"></div><div class="skeleton-text w-80"></div><div class="skeleton-text w-60"></div></div></div>
-    <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-text w-40"></div><div class="skeleton-text w-80"></div><div class="skeleton-text w-60"></div></div></div>
-    <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-text w-40"></div><div class="skeleton-text w-80"></div><div class="skeleton-text w-60"></div></div></div>
-    <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-text w-40"></div><div class="skeleton-text w-80"></div><div class="skeleton-text w-60"></div></div></div>
-    <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-text w-40"></div><div class="skeleton-text w-80"></div><div class="skeleton-text w-60"></div></div></div>
+    <!-- 7. SEMANTIC OUTLINE: Skeletons as hidden articles -->
+    <article class="skeleton-card" aria-hidden="true"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-text w-40"></div><div class="skeleton-text w-80"></div><div class="skeleton-text w-60"></div></div></article>
+    <article class="skeleton-card" aria-hidden="true"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-text w-40"></div><div class="skeleton-text w-80"></div><div class="skeleton-text w-60"></div></div></article>
+    <article class="skeleton-card" aria-hidden="true"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-text w-40"></div><div class="skeleton-text w-80"></div><div class="skeleton-text w-60"></div></div></article>
+    <article class="skeleton-card" aria-hidden="true"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-text w-40"></div><div class="skeleton-text w-80"></div><div class="skeleton-text w-60"></div></div></article>
+    <article class="skeleton-card" aria-hidden="true"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-text w-40"></div><div class="skeleton-text w-80"></div><div class="skeleton-text w-60"></div></div></article>
+    <article class="skeleton-card" aria-hidden="true"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-text w-40"></div><div class="skeleton-text w-80"></div><div class="skeleton-text w-60"></div></div></article>
+    <article class="skeleton-card" aria-hidden="true"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-text w-40"></div><div class="skeleton-text w-80"></div><div class="skeleton-text w-60"></div></div></article>
+    <article class="skeleton-card" aria-hidden="true"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-text w-40"></div><div class="skeleton-text w-80"></div><div class="skeleton-text w-60"></div></div></article>
 </main>
 <div id="loader">Loading more recipes...</div>
 
@@ -620,18 +638,16 @@
             allRecipes = data;
             currentContext = allRecipes; 
             
-            injectStaticSchema(allRecipes);
+            // 1. Static Schema Migration: Function removed. Schema is now in <head>.
             
-            // Note: setupInfiniteScroll stays the same
             setupInfiniteScroll();   
-            
-            // Check URL for initial state (Deep Linking)
-            // This will also trigger resetView, which clears the skeletons
             parseURLState();
         })
         .catch(error => {
             console.error('Error loading data:', error);
             document.getElementById('gallery').innerHTML = '<p style="text-align:center">Could not load recipes.</p>';
+            // Remove busy state if error
+            document.getElementById('gallery').setAttribute('aria-busy', 'false');
         });
 
     window.addEventListener('popstate', () => {
@@ -689,6 +705,22 @@
         if (canonical) canonical.href = "https://findvegdish.com/" + newURL;
     }
 
+    // 2. DYNAMIC NOINDEX: Helps prevent Soft 404s on empty search results
+    function updateNoIndexState(isZeroResults) {
+        let meta = document.querySelector('meta[name="robots"]');
+        if (isZeroResults) {
+            if (!meta) {
+                meta = document.createElement('meta');
+                meta.name = 'robots';
+                document.head.appendChild(meta);
+            }
+            meta.content = "noindex, follow";
+        } else {
+            // Restore default if it exists or reset
+            if (meta) meta.content = "index, follow, max-image-preview:large";
+        }
+    }
+
     function updateSEO(currentRecipes = []) {
         let title = "Daily Vegan Recipes";
         let desc = "Find fresh daily vegan recipes from top bloggers. Search by ingredients, diet types, or explore new plant-based dishes. ";
@@ -730,6 +762,9 @@
 
         updateBreadcrumbSchema(breadcrumbName);
         updateItemListSchema(currentRecipes);
+        
+        // Trigger NoIndex check based on result count
+        updateNoIndexState(currentRecipes.length === 0);
     }
 
     function updateBreadcrumbSchema(currentItemName) {
@@ -788,46 +823,14 @@
         document.head.appendChild(script);
     }
 
-    // UPDATED: Added CollectionPage schema wrapper
-    function injectStaticSchema(recipes) {
-        const searchSchema = {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            "url": "https://findvegdish.com/",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://findvegdish.com/?q={search_term_string}",
-                "query-input": "required name=search_term_string"
-            }
-        };
-
-        const collectionSchema = {
-            "@context": "https://schema.org",
-            "@type": "CollectionPage",
-            "name": "Daily Vegan Recipes",
-            "description": "A curated collection of daily plant-based recipes from top food bloggers.",
-            "url": "https://findvegdish.com/",
-            "mainEntity": {
-                "@type": "ItemList",
-                "itemListElement": recipes.slice(0, 10).map((r, i) => ({
-                    "@type": "ListItem",
-                    "position": i + 1,
-                    "url": r.link
-                }))
-            }
-        };
-
-        const scriptSearch = document.createElement('script');
-        scriptSearch.type = 'application/ld+json';
-        scriptSearch.text = JSON.stringify([searchSchema, collectionSchema]);
-        document.head.appendChild(scriptSearch);
-    }
-
     // --- RENDER LOGIC ---
     function renderNextBatch() {
         const gallery = document.getElementById('gallery');
         const loader = document.getElementById('loader');
         
+        // 7. SEMANTIC OUTLINE: Remove busy state once we start rendering real content
+        gallery.setAttribute('aria-busy', 'false');
+
         if (currentContext.length === 0) {
             gallery.innerHTML = '<div class="no-results">No recipes found. Try a different combination!</div>';
             loader.style.display = 'none';
@@ -872,6 +875,9 @@
         img.height = 250; 
         img.alt = `${recipe.title} - Vegan Recipe by ${recipe.blog_name}`;
         
+        // 4. IMAGE OPTIMIZATION: Async decoding for list items
+        img.decoding = "async";
+
         if (isLcp) {
             img.loading = "eager";
             img.setAttribute("fetchpriority", "high");
