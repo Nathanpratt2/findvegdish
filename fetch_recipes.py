@@ -16,19 +16,17 @@ from requests.packages.urllib3.poolmanager import PoolManager
 
 # --- CONFIGURATION ---
 # Format: ("Blog Name", "Feed URL", ["SPECIAL_TAGS"])
-# Tags: "WFPB", "Easy", "Budget"
 
 TOP_BLOGGERS = [
     ("Minimalist Baker", "https://minimalistbaker.com/recipes/vegan/feed/", ["Easy"]),
     ("Nora Cooks", "https://www.noracooks.com/feed/", []),
     ("PlantYou", "https://plantyou.com/feed/", ["WFPB"]),
     ("The Korean Vegan", "https://thekoreanvegan.com/feed/", []),
-    ("Rainbow Plant Life", "https://rainbowplantlife.com/feed/", []),
-    ("Vegan Richa", "https://www.veganricha.com/feed/", []),
-    # Moved GF variants to HTML_SOURCES as requested
+    ("Rainbow Plant Life", "https://rainbowplantlife.com/feed/", []), # Main Feed
+    ("Vegan Richa", "https://www.veganricha.com/feed/", []), # Main Feed
     ("Forks Over Knives", "https://www.forksoverknives.com/feed/?post_type=recipe", []),
     ("It Doesn't Taste Like Chicken", "https://itdoesnttastelikechicken.com/feed/", ["Budget"]), 
-    ("Elavegan", "https://elavegan.com/feed/", []),
+    ("Elavegan", "https://elavegan.com/feed/", ["GF"]), # Will auto-tag GF
     ("The First Mess", "https://thefirstmess.com/feed/", []),
     ("Sweet Potato Soul", "https://sweetpotatosoul.com/feed/", []),
     ("Simple Vegan Blog", "https://simpleveganblog.com/feed/", ["Easy"]),
@@ -63,21 +61,21 @@ DISRUPTORS = [
     ("Full of Plants", "https://fullofplants.com/feed/", []),
     ("One Arab Vegan", "https://www.onearabvegan.com/feed/", []),
     ("Mary's Test Kitchen", "https://www.marystestkitchen.com/feed/", []),
-    ("Unconventional Baker", "https://www.unconventionalbaker.com/feed/", []),
+    ("Unconventional Baker", "https://www.unconventionalbaker.com/feed/", ["GF"]), # Will auto-tag GF
     ("Fragrant Vanilla Cake", "https://www.fragrantvanilla.com/feed/", []),
     ("Plantifully Based", "https://plantifullybasedblog.com/feed/", []),
     ("Cadry's Kitchen", "https://cadryskitchen.com/feed/", ["Easy"]),
     ("Dr. Vegan", "https://drveganblog.com/feed/", ["Easy"]),
     ("Veggies Don't Bite", "https://veggiesdontbite.com/feed/", []),
     ("Watch Learn Eat", "https://watchlearneat.com/feed/", ["Easy"]),
-    ("Strength and Sunshine", "https://strengthandsunshine.com/feed/", ["Easy"]),
+    ("Strength and Sunshine", "https://strengthandsunshine.com/feed/", ["Easy"],["GF"]), # Will auto-tag GF
     ("The Stingy Vegan", "https://thestingyvegan.com/feed/", ["Easy", "Budget"]), 
     ("Okonomi Kitchen", "https://okonomikitchen.com/feed/", []),
     ("The Foodie Takes Flight", "https://thefoodietakesflight.com/feed/", ["Easy"]),
     ("Vegan Yack Attack", "https://veganyackattack.com/feed/", []),
     ("The Conscious Plant Kitchen", "https://www.theconsciousplantkitchen.com/feed/", ["WFPB"]),
     ("Choosing Chia", "https://choosingchia.com/feed/", ["Easy"]),
-    ("Flora & Vino", "https://www.floraandvino.com/feed/", ["WFPB", "Easy"]),
+    ("Flora & Vino", "https://www.floraandvino.com/feed/", ["WFPB"], ["Easy"]),
     ("Namely Marly", "https://namelymarly.com/feed/", []),
     ("The Post-Punk Kitchen", "https://www.theppk.com/feed/", []),
     ("The Little Blog of Vegan", "https://www.thelittleblogofvegan.com/feed/", []),
@@ -85,35 +83,44 @@ DISRUPTORS = [
     ("The Banana Diaries", "https://thebananadiaries.com/feed/", []),
     ("Plant Power Couple", "https://www.plantpowercouple.com/feed/", ["Easy"]),
     ("Rainbow Nourishments", "https://www.rainbownourishments.com/feed/", []),
-    ("Rhian's Recipes", "https://www.rhiansrecipes.com/feed/", []),
+    ("Rhian's Recipes", "https://www.rhiansrecipes.com/feed/", ["GF"]), # Will auto-tag GF
     ("Snixy Kitchen", "https://www.snixykitchen.com/special-diet/vegan/feed/", []),
     ("Monkey & Me Kitchen Adventures", "https://monkeyandmekitchenadventures.com/feed/", ["WFPB"]),
     ("Ann Arbor Vegan Kitchen", "https://www.annarborvegankitchen.com/feed/", ["WFPB"]),
-    ("Veggiekins", "https://veggiekinsblog.com/feed/", ["Easy"]),
+    ("Veggiekins", "https://veggiekinsblog.com/feed/", ["Easy"],["GF"]), # Will auto-tag GF
     ("ZardyPlants", "https://zardyplants.com/feed/", ["WFPB"]),
     ("Dreena Burton", "https://dreenaburton.com/feed/", ["WFPB"]),
-    ("Strength and Sunshine", "https://strengthandsunshine.com/feed/", ["WFPB"]),
-    ("Healthy Little Vittles", "https://healthylittlevittles.com/feed/", []),
+    ("Healthy Little Vittles", "https://healthylittlevittles.com/feed/", ["GF"]), # Will auto-tag GF
     ("Healthier Steps", "https://healthiersteps.com/feed/", [])
 ]
 
-# --- NEW: DIRECT HTML SCRAPING SOURCES ---
-# Format: ("Blog Name", "HTML List URL", ["Tags"], "Mode")
+# --- DIRECT HTML SCRAPING SOURCES ---
+# Internal naming strategy: We use suffixes like " GF" to treat them as unique sources
+# during the pruning phase (allowing 50 recipes from main, 50 from GF).
+# We will merge them back to the display name at the very end.
 HTML_SOURCES = [
     ("Pick Up Limes", "https://www.pickuplimes.com/recipe/", [], "custom_pul"),
-    ("Rainbow Plant Life GF", "https://rainbowplantlife.com/diet/gluten-free/", [], "wordpress"),
-    ("Vegan Richa GF", "https://www.veganricha.com/category/gluten-free/", [], "wordpress"),
+    ("Rainbow Plant Life GF", "https://rainbowplantlife.com/diet/gluten-free/", ["GF"], "wordpress"),
+    ("Vegan Richa GF", "https://www.veganricha.com/category/gluten-free/", ["GF"], "wordpress"),
     ("School Night Vegan", "https://schoolnightvegan.com/category/recipes/", [], "wordpress"),
     ("Love and Lemons", "https://www.loveandlemons.com/category/recipes/vegan/", [], "wordpress"),
     ("Cookie and Kate", "https://cookieandkate.com/category/vegan-recipes/", [], "wordpress"),
-    ("The Loopy Whisk", "https://theloopywhisk.com/diet/vegan/", [], "wordpress")
+    ("The Loopy Whisk", "https://theloopywhisk.com/diet/vegan/", ["GF"], "wordpress")
+]
+
+# --- DISPLAY NAME MAPPING ---
+# Maps Internal Name -> Public Display Name
+DISPLAY_NAME_MAP = {
+    "Rainbow Plant Life GF": "Rainbow Plant Life",
+    "Vegan Richa GF": "Vegan Richa"
+}
+
 ]
 
 ALL_FEEDS = TOP_BLOGGERS + DISRUPTORS
 
 # --- MAPS ---
 URL_MAP = dict((name, url) for name, url, tags in ALL_FEEDS)
-# Add HTML sources to maps
 for name, url, tags, mode in HTML_SOURCES:
     URL_MAP[name] = url
 
@@ -128,6 +135,7 @@ cutoff_date = datetime.now().astimezone() - timedelta(days=360)
 WFPB_KEYWORDS = ['oil-free', 'oil free', 'no oil', 'wfpb', 'whole food', 'clean', 'refined sugar free', 'detox', 'healthy', 'salad', 'steamed']
 EASY_KEYWORDS = ['easy', 'quick', 'simple', 'fast', '1-pot', 'one-pot', 'one pot', '30-minute', 'minute', '15-minute', '20-minute', '5-ingredient', 'sheet pan', 'skillet', 'mug', 'blender', 'no-bake', 'raw','no bake','no-bake', 'air fryer']
 BUDGET_KEYWORDS = ['budget', 'cheap', 'frugal', 'economical', 'pantry', 'low cost', 'money saving', '$', 'affordable', 'leftover', 'scraps', 'beans', 'rice', 'lentil', 'potato']
+GF_KEYWORDS = ['gluten-free', 'gluten free', 'gf', 'wheat-free', 'flourless', 'almond flour', 'oat flour', 'rice flour']
 
 # --- ADVANCED SCRAPER SETUP & SSL FIX ---
 
@@ -147,7 +155,6 @@ scraper.mount('https://', LegacySSLAdapter())
 fallback_session = requests.Session()
 fallback_session.mount('https://', LegacySSLAdapter())
 
-# Rotating User Agents to mimick humans
 USER_AGENTS = [
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36',
@@ -167,6 +174,7 @@ def get_auto_tags(title):
     if any(k in t_lower for k in WFPB_KEYWORDS): tags.append("WFPB")
     if any(k in t_lower for k in EASY_KEYWORDS): tags.append("Easy")
     if any(k in t_lower for k in BUDGET_KEYWORDS): tags.append("Budget")
+    if any(k in t_lower for k in GF_KEYWORDS): tags.append("GF")
     return tags
 
 def is_pet_recipe(title):
@@ -177,7 +185,7 @@ def is_pet_recipe(title):
 
 def robust_fetch(url, is_binary=False, is_scraping_page=False):
     if is_scraping_page:
-        time.sleep(random.uniform(2, 5)) # Polite delay
+        time.sleep(random.uniform(2, 5)) 
     
     headers = get_headers(referer="https://www.google.com/")
 
@@ -252,16 +260,10 @@ def generate_sitemap(recipes):
         f.write(sitemap_content)
     print("Generated sitemap.xml")
 
-# --- NEW: HTML SCRAPING LOGIC ---
+# --- HTML SCRAPING LOGIC ---
 
 def scrape_html_feed(name, url, mode, existing_links):
-    """
-    Expert scraping logic for non-RSS pages.
-    Detects patterns based on 'mode' (wordpress or custom_pul).
-    """
     print(f"   🔎 HTML Scraping: {name} (Mode: {mode})...")
-    
-    # Expert anti-bot: longer initial sleep for HTML pages
     time.sleep(random.uniform(4, 7))
     
     html = robust_fetch(url, is_scraping_page=True)
@@ -270,24 +272,18 @@ def scrape_html_feed(name, url, mode, existing_links):
     
     soup = BeautifulSoup(html, 'lxml')
     found_items = []
-    
     articles = []
     
     if mode == "wordpress":
-        # Standard WordPress loop selectors
         articles = soup.select("article")
         if not articles:
-            # Fallback for grids that use divs instead of article tags
             articles = soup.select(".post, .type-post, .blog-entry")
             
     elif mode == "custom_pul":
-        # Pick Up Limes specific logic
-        # Look for anchor tags that link to /recipe/ and contain images
         links = soup.find_all('a')
         for a in links:
             href = a.get('href', '')
             if '/recipe/' in href and href != '/recipe/':
-                # Check if it has an image inside (likely a card)
                 if a.find('img'):
                     articles.append(a)
 
@@ -298,20 +294,16 @@ def scrape_html_feed(name, url, mode, existing_links):
             image = None
             date_obj = None
             
-            # --- EXTRACTION ---
             if mode == "wordpress":
-                # Title & Link
                 title_tag = art.select_one(".entry-title a, .post-title a, h2 a, h3 a")
                 if title_tag:
                     title = title_tag.get_text(strip=True)
                     link = title_tag['href']
                 
-                # Image
                 img_tag = art.select_one("img")
                 if img_tag:
                     image = img_tag.get('data-src') or img_tag.get('data-lazy-src') or img_tag.get('src')
                     
-                # Date
                 time_tag = art.select_one("time")
                 if time_tag and time_tag.has_attr('datetime'):
                     try:
@@ -323,12 +315,10 @@ def scrape_html_feed(name, url, mode, existing_links):
                 if link and not link.startswith('http'):
                     link = urljoin("https://www.pickuplimes.com", link)
                 
-                # Title usually in a specific class or h3 inside the anchor
                 t_tag = art.select_one("h3, h2, .article_title") 
                 if t_tag:
                     title = t_tag.get_text(strip=True)
                 else:
-                    # Fallback: Check for div with text
                     divs = art.select("div")
                     for d in divs:
                         if len(d.get_text(strip=True)) > 10:
@@ -339,38 +329,32 @@ def scrape_html_feed(name, url, mode, existing_links):
                 if img_tag:
                     image = img_tag.get('src') or img_tag.get('data-src')
 
-                # Date is hard on PUL index, we will default to "today" if missing
-                # or try to fetch detailed page if strictly necessary (skipped for speed/ban avoidance)
-                date_obj = datetime.now() # Assume found on index = recent enough
+                date_obj = datetime.now() 
 
-            # --- VALIDATION ---
             if not title or not link: continue
             if is_pet_recipe(title): continue
             
             if link in existing_links: continue
             
-            # Date Fallback
             if not date_obj:
                 date_obj = datetime.now() 
                 
-            # Timezone Fix
             if date_obj.tzinfo is None:
                 date_obj = date_obj.replace(tzinfo=timezone.utc)
             else:
                 date_obj = date_obj.astimezone(timezone.utc)
 
-            # Image Fix
             if image and not image.startswith('http'):
-                 image = urljoin(url, image) # Fix relative images
+                 image = urljoin(url, image) 
             
             if date_obj > cutoff_date:
                 found_items.append({
-                    "blog_name": name,
+                    "blog_name": name, # Uses Internal Name here
                     "title": title,
                     "link": link,
                     "image": image if image else "icon.jpg",
                     "date": date_obj.isoformat(),
-                    "is_disruptor": False, # HTML sources usually curated
+                    "is_disruptor": False,
                     "special_tags": []
                 })
                 existing_links.add(link)
@@ -470,7 +454,7 @@ for name, url, special_tags in ALL_FEEDS:
         print(f"Failed to parse {name}: {e}")
         feed_stats[name] = {'new': 0, 'status': f"❌ Crash: {str(e)[:20]}"}
 
-# 4. Scrape HTML Sources (The new technique)
+# 4. Scrape HTML Sources
 print("\n--- STARTING HTML SCRAPING ---")
 for name, url, tags, mode in HTML_SOURCES:
     try:
@@ -481,15 +465,27 @@ for name, url, tags, mode in HTML_SOURCES:
         print(f"   [!] Critical Error scraping {name}: {e}")
         feed_stats[name] = {'new': 0, 'status': "❌ HTML Crash"}
 
-# 5. Backfill Tags
+# 5. Backfill Tags (Including GF)
 print("\nUpdating tags for all recipes...")
 for recipe in recipes:
-    base_tags = list(BLOG_TAG_MAP.get(recipe['blog_name'], []))
+    bname = recipe['blog_name']
+    
+    # 1. Base tags
+    base_tags = list(BLOG_TAG_MAP.get(bname, []))
+    
+    # 2. Auto tags (WFPB, Easy, Budget, GF via Keywords)
     auto_tags = get_auto_tags(recipe['title'])
+    
+    # 3. Always GF check
+    if bname in ALWAYS_GF_BLOGS:
+        auto_tags.append("GF")
+        
     combined_tags = list(set(base_tags + auto_tags))
     recipe['special_tags'] = combined_tags
 
-# 6. Prune & Stats
+# 6. Prune & Stats (Using Internal Names)
+# This keeps "Rainbow Plant Life" and "Rainbow Plant Life GF" separate here
+# So they both get 50 recipes kept.
 print("Pruning database and calculating stats...")
 recipes_by_blog = {}
 for r in recipes:
@@ -503,6 +499,7 @@ latest_dates = {}
 wfpb_counts = {}
 easy_counts = {}
 budget_counts = {}
+gf_counts = {}
 
 for bname, blog_recipes in recipes_by_blog.items():
     blog_recipes.sort(key=lambda x: x['date'], reverse=True)
@@ -515,8 +512,16 @@ for bname, blog_recipes in recipes_by_blog.items():
     wfpb_counts[bname] = sum(1 for r in kept_recipes if "WFPB" in r['special_tags'])
     easy_counts[bname] = sum(1 for r in kept_recipes if "Easy" in r['special_tags'])
     budget_counts[bname] = sum(1 for r in kept_recipes if "Budget" in r['special_tags'])
+    gf_counts[bname] = sum(1 for r in kept_recipes if "GF" in r['special_tags'])
 
 final_pruned_list.sort(key=lambda x: x['date'], reverse=True)
+
+# 7. Normalize Display Names
+# Now that we've pruned, we merge the "GF" variants back to the main display name
+print("Normalizing display names...")
+for recipe in final_pruned_list:
+    if recipe['blog_name'] in DISPLAY_NAME_MAP:
+        recipe['blog_name'] = DISPLAY_NAME_MAP[recipe['blog_name']]
 
 if len(final_pruned_list) > 50:
     with open('data.json', 'w') as f:
@@ -525,7 +530,7 @@ if len(final_pruned_list) > 50:
 else:
     print("⚠️ SAFETY ALERT: Database too small (<50 items). Skipping write.")
 
-# 7. Generate Report
+# 8. Generate Report
 with open('FEED_HEALTH.md', 'w') as f:
     f.write(f"# Feed Health Report\n")
     f.write(f"**Last Run:** {datetime.now().isoformat()}\n")
@@ -539,10 +544,12 @@ with open('FEED_HEALTH.md', 'w') as f:
     total_wfpb = sum(wfpb_counts.values())
     total_easy = sum(easy_counts.values())
     total_budget = sum(budget_counts.values())
+    total_gf = sum(gf_counts.values())
 
     wfpb_percent = int((total_wfpb / total_in_db) * 100) if total_in_db > 0 else 0
     easy_percent = int((total_easy / total_in_db) * 100) if total_in_db > 0 else 0
     budget_percent = int((total_budget / total_in_db) * 100) if total_in_db > 0 else 0
+    gf_percent = int((total_gf / total_in_db) * 100) if total_in_db > 0 else 0
     
     all_dates = [parser.parse(d) for d in latest_dates.values() if d != "N/A"]
     if all_dates:
@@ -561,6 +568,12 @@ with open('FEED_HEALTH.md', 'w') as f:
         total = total_counts.get(name, 0)
         latest = latest_dates.get(name, "N/A")
         
+        # Note in report if this is a mapped source
+        if name in DISPLAY_NAME_MAP:
+            name_display = f"{name} (-> {DISPLAY_NAME_MAP[name]})"
+        else:
+            name_display = name
+
         if latest != "N/A":
             try:
                 latest_dt = parser.parse(latest)
@@ -573,7 +586,7 @@ with open('FEED_HEALTH.md', 'w') as f:
         if total == 0 and "✅" in status:
             status = "❌ No Recipes"
             
-        report_rows.append((name, url, new, total, wfpb_counts.get(name,0), easy_counts.get(name,0), budget_counts.get(name,0), latest, status))
+        report_rows.append((name_display, url, new, total, wfpb_counts.get(name,0), easy_counts.get(name,0), budget_counts.get(name,0), gf_counts.get(name,0), latest, status))
 
     f.write(f"**Total Blogs:** {total_blogs_monitored}\n")
     f.write(f"**Active Blogs (Last 90d):** {total_blogs_monitored - stale_count} / {total_blogs_monitored}\n")
@@ -582,13 +595,14 @@ with open('FEED_HEALTH.md', 'w') as f:
     f.write(f"**WFPB:** {total_wfpb} ({wfpb_percent}%)\n")
     f.write(f"**Easy:** {total_easy} ({easy_percent}%)\n")
     f.write(f"**Budget:** {total_budget} ({budget_percent}%)\n")
+    f.write(f"**Gluten-Free:** {total_gf} ({gf_percent}%)\n")
     f.write(f"**Average Latest Post:** {avg_date}\n\n")
 
-    f.write("| Blog Name | URL | New | Total | WFPB | Easy | Budget | Latest | Status |\n")
-    f.write("|-----------|-----|-----|-------|------|------|--------|--------|--------|\n")
+    f.write("| Blog Name | URL | New | Total | WFPB | Easy | Budget | GF | Latest | Status |\n")
+    f.write("|-----------|-----|-----|-------|------|------|--------|----|--------|--------|\n")
     
     def sort_key(row):
-        stat = row[8] 
+        stat = row[9] 
         priority = 3 
         if '❌' in stat: priority = 0
         elif 'Stale' in stat: priority = 1
@@ -597,6 +611,6 @@ with open('FEED_HEALTH.md', 'w') as f:
 
     report_rows.sort(key=sort_key)
     for row in report_rows:
-        f.write(f"| {row[0]} | {row[1]} | {row[2]} | {row[3]} | {row[4]} | {row[5]} | {row[6]} | {row[7]} | {row[8]} |\n")
+        f.write(f"| {row[0]} | {row[1]} | {row[2]} | {row[3]} | {row[4]} | {row[5]} | {row[6]} | {row[7]} | {row[8]} | {row[9]} |\n")
 
 print(f"Successfully scraped. Database size: {len(final_pruned_list)}")
