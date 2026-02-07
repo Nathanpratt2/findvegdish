@@ -202,7 +202,6 @@ def robust_fetch(url, is_binary=False, is_scraping_page=False):
     
     headers = get_headers(referer="https://www.google.com/")
 
-    # Attempt 1: Cloudscraper
     try:
         response = scraper.get(url, headers=headers, timeout=20)
         if response.status_code == 200:
@@ -210,7 +209,6 @@ def robust_fetch(url, is_binary=False, is_scraping_page=False):
     except Exception as e:
         print(f"   [!] Cloudscraper error for {url}: {e}")
     
-    # Attempt 2: Fallback Session
     try:
         fallback_session.headers.update(headers)
         response = fallback_session.get(url, timeout=15)
@@ -362,7 +360,7 @@ def scrape_html_feed(name, url, mode, existing_links):
             
             if date_obj > cutoff_date:
                 found_items.append({
-                    "blog_name": name, # Uses Internal Name here
+                    "blog_name": name,
                     "title": title,
                     "link": link,
                     "image": image if image else "icon.jpg",
@@ -399,7 +397,12 @@ previous_domain = ""
 print(f"Fetching recipes from {len(ALL_FEEDS)} RSS feeds & {len(HTML_SOURCES)} HTML sources...")
 
 # 3. Scrape RSS Feeds
-for name, url, special_tags in ALL_FEEDS:
+for item in ALL_FEEDS:
+    # Safe unpacking to avoid crashes if bad data slipped in
+    if len(item) != 3:
+        continue
+    name, url, special_tags = item
+
     new_count = 0
     status = "✅ OK"
     
@@ -469,7 +472,11 @@ for name, url, special_tags in ALL_FEEDS:
 
 # 4. Scrape HTML Sources
 print("\n--- STARTING HTML SCRAPING ---")
-for name, url, tags, mode in HTML_SOURCES:
+for item in HTML_SOURCES:
+    if len(item) != 4:
+        continue
+    name, url, tags, mode = item
+    
     try:
         new_items, status = scrape_html_feed(name, url, mode, existing_links)
         recipes.extend(new_items)
@@ -483,22 +490,16 @@ print("\nUpdating tags for all recipes...")
 for recipe in recipes:
     bname = recipe['blog_name']
     
-    # 1. Base tags
+    # 1. Base tags (from configuration)
     base_tags = list(BLOG_TAG_MAP.get(bname, []))
     
     # 2. Auto tags (WFPB, Easy, Budget, GF via Keywords)
     auto_tags = get_auto_tags(recipe['title'])
     
-    # 3. Always GF check
-    if bname in ALWAYS_GF_BLOGS:
-        auto_tags.append("GF")
-        
     combined_tags = list(set(base_tags + auto_tags))
     recipe['special_tags'] = combined_tags
 
 # 6. Prune & Stats (Using Internal Names)
-# This keeps "Rainbow Plant Life" and "Rainbow Plant Life GF" separate here
-# So they both get 50 recipes kept.
 print("Pruning database and calculating stats...")
 recipes_by_blog = {}
 for r in recipes:
@@ -530,7 +531,6 @@ for bname, blog_recipes in recipes_by_blog.items():
 final_pruned_list.sort(key=lambda x: x['date'], reverse=True)
 
 # 7. Normalize Display Names
-# Now that we've pruned, we merge the "GF" variants back to the main display name
 print("Normalizing display names...")
 for recipe in final_pruned_list:
     if recipe['blog_name'] in DISPLAY_NAME_MAP:
@@ -581,7 +581,6 @@ with open('FEED_HEALTH.md', 'w') as f:
         total = total_counts.get(name, 0)
         latest = latest_dates.get(name, "N/A")
         
-        # Note in report if this is a mapped source
         if name in DISPLAY_NAME_MAP:
             name_display = f"{name} (-> {DISPLAY_NAME_MAP[name]})"
         else:
