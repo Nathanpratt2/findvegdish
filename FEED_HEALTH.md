@@ -1,12 +1,12 @@
 # Feed Health Report
-**Last Run:** 2026-02-07T20:27:20.095947
+**Last Run:** 2026-02-07T21:02:19.204366
 **Total Blogs:** 80
 **Active Blogs (Last 90d):** 74 / 80
-**Total Database Size:** 847
-**New Today:** 7
+**Total Database Size:** 849
+**New Today:** 9
 **WFPB:** 134 (15%)
 **Easy:** 209 (24%)
-**Budget:** 166 (19%)
+**Budget:** 167 (19%)
 **Gluten-Free:** 122 (14%)
 **Average Latest Post:** 2026-01-14
 
@@ -16,7 +16,6 @@
 | Oh She Glows | https://www.ohsheglows.com/recipe-search/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/HTML Fail |
 | School Night Vegan | https://schoolnightvegan.com/category/recipes/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/HTML Fail |
 | The Loopy Whisk | https://theloopywhisk.com/diet/vegan/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/HTML Fail |
-| The Post-Punk Kitchen | https://www.theppk.com/feed/ | 0 | 8 | 1 | 1 | 1 | 0 | 2026-02-06 | ❌ Blocked/ConnErr |
 | Healthier Steps | https://healthiersteps.com/feed/ | 0 | 2 | 1 | 0 | 0 | 0 | 2025-05-18 | ⚠️ Stale (>90d)  |
 | The Vegan 8 | https://thevegan8.com/feed/ | 0 | 10 | 1 | 10 | 10 | 0 | 2025-10-25 | ⚠️ Stale (>90d)  |
 | Turnip Vegan | https://turnipvegan.com/blogs/news.atom | 0 | 7 | 0 | 0 | 0 | 0 | 2025-04-11 | ⚠️ Stale (>90d)  |
@@ -46,7 +45,7 @@
 | Fran Costigan | Unknown | 0 | 3 | 0 | 0 | 0 | 0 | 2026-01-20 | Skipped/DB Only |
 | From My Bowl | https://frommybowl.com/feed/ | 0 | 11 | 11 | 11 | 2 | 0 | 2026-02-03 | ✅ OK |
 | Full of Plants | https://fullofplants.com/feed/ | 0 | 7 | 0 | 0 | 0 | 0 | 2026-02-07 | ✅ OK |
-| Gretchen's Vegan Bakery | https://www.gretchensveganbakery.com/feed/ | 0 | 17 | 0 | 1 | 0 | 0 | 2026-02-07 | ✅ OK |
+| Gretchen's Vegan Bakery | https://www.gretchensveganbakery.com/feed/ | 1 | 18 | 0 | 1 | 0 | 0 | 2026-02-07 | ✅ OK |
 | Healthy Little Vittles | https://healthylittlevittles.com/feed/ | 0 | 20 | 0 | 4 | 1 | 20 | 2026-02-05 | ✅ OK |
 | HealthyGirl Kitchen | https://healthygirlkitchen.com/feed/ | 0 | 11 | 2 | 3 | 0 | 0 | 2026-02-06 | ✅ OK |
 | It Doesn't Taste Like Chicken | https://itdoesnttastelikechicken.com/feed/ | 0 | 33 | 2 | 13 | 33 | 0 | 2026-02-07 | ✅ OK |
@@ -84,11 +83,12 @@
 | The Hidden Veggies | https://thehiddenveggies.com/feed/ | 0 | 11 | 1 | 1 | 11 | 0 | 2026-02-05 | ✅ OK |
 | The Korean Vegan | https://thekoreanvegan.com/feed/ | 0 | 10 | 0 | 5 | 0 | 0 | 2026-01-28 | ✅ OK |
 | The Little Blog of Vegan | https://www.thelittleblogofvegan.com/feed/ | 0 | 12 | 0 | 5 | 0 | 0 | 2026-02-06 | ✅ OK |
+| The Post-Punk Kitchen | https://www.theppk.com/feed/ | 0 | 8 | 1 | 1 | 1 | 0 | 2026-02-06 | ✅ OK |
 | The Stingy Vegan | https://thestingyvegan.com/feed/ | 0 | 10 | 0 | 10 | 10 | 0 | 2025-12-12 | ✅ OK |
 | VegNews | https://vegnews.com/feed | 0 | 29 | 3 | 5 | 1 | 0 | 2026-02-07 | ✅ OK |
 | Vegan Heaven | https://veganheaven.org/feed/ | 0 | 10 | 0 | 0 | 1 | 0 | 2026-01-06 | ✅ OK |
 | Vegan Richa | https://www.veganricha.com/feed/ | 0 | 21 | 0 | 5 | 6 | 20 | 2026-02-07 | ✅ OK |
 | Vegan in the Freezer | https://veganinthefreezer.com/feed/ | 0 | 1 | 0 | 0 | 0 | 0 | 2026-01-25 | ✅ OK |
 | Veggiekins | Unknown | 0 | 10 | 0 | 1 | 0 | 0 | 2026-01-29 | Skipped/DB Only |
-| Veggies Don't Bite | https://veggiesdontbite.com/feed/ | 0 | 19 | 1 | 1 | 3 | 1 | 2026-02-06 | ✅ OK |
+| Veggies Don't Bite | https://veggiesdontbite.com/feed/ | 1 | 20 | 1 | 1 | 4 | 1 | 2026-02-06 | ✅ OK |
 | Watch Learn Eat | https://watchlearneat.com/feed/ | 0 | 11 | 1 | 11 | 2 | 2 | 2026-02-07 | ✅ OK |
