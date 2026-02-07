@@ -9,14 +9,14 @@ from urllib.parse import urljoin, urlparse
 import time
 import random
 import os
+import ssl
+from requests.adapters import HTTPAdapter
+from requests.packages.urllib3.util.ssl_ import create_urllib3_context
+from requests.packages.urllib3.poolmanager import PoolManager
 
 # --- CONFIGURATION ---
 # Format: ("Blog Name", "Feed URL", ["SPECIAL_TAGS"])
 # Tags: "WFPB", "Easy", "Budget"
-
-#OTHER BLOG NOTES: Oh She Glows and Avant-Garde Vegan posts to a closed app now - not accessible/ School Night Vegan confirmed in site map not posted in years
-
-#DUPLICATES - some are there to create a secondary cap to allow for more gluten free
 
 TOP_BLOGGERS = [
     ("Minimalist Baker", "https://minimalistbaker.com/recipes/vegan/feed/", ["Easy"]),
@@ -27,7 +27,7 @@ TOP_BLOGGERS = [
     ("Vegan Richa", "https://www.veganricha.com/feed/", []),
     ("Vegan Richa GF", "https://www.veganricha.com/category/gluten-free/feed/", []),
     ("Rainbow Plant Life GF", "https://rainbowplantlife.com/category/recipes/gluten-free/feed/", []),
-     ("Forks Over Knives", "https://www.forksoverknives.com/feed/?post_type=recipe", []),
+    ("Forks Over Knives", "https://www.forksoverknives.com/feed/?post_type=recipe", []),
     ("It Doesn't Taste Like Chicken", "https://itdoesnttastelikechicken.com/feed/", ["Budget"]), 
     ("Elavegan", "https://elavegan.com/feed/", []),
     ("The First Mess", "https://thefirstmess.com/feed/", []),
@@ -114,7 +114,29 @@ WFPB_KEYWORDS = ['oil-free', 'oil free', 'no oil', 'wfpb', 'whole food', 'clean'
 EASY_KEYWORDS = ['easy', 'quick', 'simple', 'fast', '1-pot', 'one-pot', 'one pot', '30-minute', 'minute', '15-minute', '20-minute', '5-ingredient', 'sheet pan', 'skillet', 'mug', 'blender', 'no-bake', 'raw','no bake','no-bake', 'air fryer']
 BUDGET_KEYWORDS = ['budget', 'cheap', 'frugal', 'economical', 'pantry', 'low cost', 'money saving', '$', 'affordable', 'leftover', 'scraps', 'beans', 'rice', 'lentil', 'potato']
 
-# --- ADVANCED SCRAPER SETUP ---
+# --- ADVANCED SCRAPER SETUP & SSL FIX ---
+
+# 1. Create a Custom SSL Adapter for Legacy Servers (Fixes SSLV3_ALERT_HANDSHAKE_FAILURE)
+class LegacySSLAdapter(HTTPAdapter):
+    def init_poolmanager(self, connections, maxsize, block=False):
+        # Create a context that allows legacy TLS versions
+        ctx = create_urllib3_context()
+        ctx.load_default_certs()
+        # SECLEVEL=1 allows SHA1 and older ciphers that some old WP sites still use
+        try:
+            ctx.set_ciphers('DEFAULT@SECLEVEL=1')
+        except Exception:
+            # Fallback for systems where SECLEVEL isn't supported in string
+            ctx.set_ciphers('DEFAULT')
+        
+        self.poolmanager = PoolManager(
+            num_pools=connections,
+            maxsize=maxsize,
+            block=block,
+            ssl_context=ctx
+        )
+
+# 2. Setup Cloudscraper with the Legacy Adapter
 scraper = cloudscraper.create_scraper(
     browser={
         'browser': 'chrome',
@@ -122,6 +144,14 @@ scraper = cloudscraper.create_scraper(
         'desktop': True
     }
 )
+scraper.mount('https://', LegacySSLAdapter())
+
+# 3. Setup Fallback Session with the Legacy Adapter
+fallback_session = requests.Session()
+fallback_session.mount('https://', LegacySSLAdapter())
+fallback_session.headers.update({
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+})
 
 def get_auto_tags(title):
     tags = []
@@ -142,11 +172,12 @@ def robust_fetch(url, is_binary=False, is_scraping_page=False):
     WATERFALL TECHNIQUE with SMART SLEEP:
     1. Only sleep if we are actively scraping a full page (deep scraping), not checking RSS.
     2. Try Cloudscraper (best for Cloudflare/WP blocks).
-    3. Fallback to standard requests if Cloudscraper fails.
+    3. Fallback to standard requests (using LegacySSLAdapter) if Cloudscraper fails.
     """
     if is_scraping_page:
         time.sleep(random.uniform(2, 4))
     
+    # Attempt 1: Cloudscraper (with Legacy Adapter mounted)
     try:
         response = scraper.get(url, timeout=20)
         if response.status_code == 200:
@@ -154,10 +185,9 @@ def robust_fetch(url, is_binary=False, is_scraping_page=False):
     except Exception as e:
         print(f"   [!] Cloudscraper error for {url}: {e}")
     
-    # Fallback to standard requests
+    # Attempt 2: Fallback Session (with Legacy Adapter mounted)
     try:
-        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
-        response = requests.get(url, headers=headers, timeout=15)
+        response = fallback_session.get(url, timeout=15)
         if response.status_code == 200:
             return response.content if is_binary else response.text
     except Exception as e:
