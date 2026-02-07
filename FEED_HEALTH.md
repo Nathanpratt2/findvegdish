@@ -1,10 +1,10 @@
 # Feed Health Report
-**Last Run:** 2026-02-07T11:51:07.707415
+**Last Run:** 2026-02-07T13:59:22.516690
 **Total Blogs:** 76
 **Avg Recipes per Blog:** 10.4
 **Active Blogs (Last 90d):** 70 / 76
-**Total Database Size:** 791
-**New Today:** 7
+**Total Database Size:** 793
+**New Today:** 9
 **WFPB:** 146 (18%)
 **Easy:** 224 (28%)
 **Budget:** 159 (20%)
@@ -38,7 +38,7 @@
 | Fragrant Vanilla Cake | https://www.fragrantvanilla.com/feed/ | 0 | 10 | 0 | 0 | 0 | 2026-01-19 | ✅ OK |
 | From My Bowl | https://frommybowl.com/feed/ | 0 | 11 | 11 | 11 | 2 | 2026-02-03 | ✅ OK |
 | Full of Plants | https://fullofplants.com/feed/ | 0 | 7 | 0 | 0 | 0 | 2026-02-07 | ✅ OK |
-| Gretchen's Vegan Bakery | https://www.gretchensveganbakery.com/feed/ | 0 | 16 | 0 | 1 | 0 | 2026-02-05 | ✅ OK |
+| Gretchen's Vegan Bakery | https://www.gretchensveganbakery.com/feed/ | 1 | 17 | 0 | 1 | 0 | 2026-02-07 | ✅ OK |
 | Healthy Little Vittles | https://healthylittlevittles.com/feed/ | 0 | 20 | 0 | 4 | 1 | 2026-02-05 | ✅ OK |
 | HealthyGirl Kitchen | https://healthygirlkitchen.com/feed/ | 0 | 11 | 2 | 3 | 0 | 2026-02-06 | ✅ OK |
 | It Doesn't Taste Like Chicken | https://itdoesnttastelikechicken.com/feed/ | 0 | 33 | 2 | 13 | 33 | 2026-02-07 | ✅ OK |
@@ -56,7 +56,7 @@
 | Plant Power Couple | https://www.plantpowercouple.com/feed/ | 0 | 11 | 0 | 11 | 1 | 2026-02-03 | ✅ OK |
 | Plant-Based on a Budget | https://plantbasedonabudget.com/feed/ | 0 | 10 | 0 | 1 | 10 | 2026-02-05 | ✅ OK |
 | PlantYou | https://plantyou.com/feed/ | 0 | 11 | 11 | 2 | 2 | 2026-02-06 | ✅ OK |
-| Plantifully Based | https://plantifullybasedblog.com/feed/ | 0 | 9 | 1 | 2 | 0 | 2026-01-31 | ✅ OK |
+| Plantifully Based | https://plantifullybasedblog.com/feed/ | 1 | 10 | 1 | 2 | 0 | 2026-02-07 | ✅ OK |
 | Rabbit and Wolves | https://www.rabbitandwolves.com/feed/ | 0 | 10 | 0 | 1 | 1 | 2026-01-19 | ✅ OK |
 | Rainbow Nourishments | https://www.rainbownourishments.com/feed/ | 0 | 11 | 0 | 2 | 1 | 2026-02-06 | ✅ OK |
 | Rainbow Plant Life | https://rainbowplantlife.com/feed/ | 0 | 10 | 2 | 0 | 2 | 2026-01-29 | ✅ OK |
