@@ -1,14 +1,14 @@
 # Feed Health Report
-**Last Run:** 2026-02-06T22:16:59.268702
-**Total Blogs:** 65
+**Last Run:** 2026-02-07T02:15:13.149645
+**Total Blogs:** 66
 **Avg Recipes per Blog:** 11.2
-**Active Blogs (Last 90d):** 60 / 65
-**Total Database Size:** 728
-**New Today:** 11
-**WFPB:** 125 (17%)
-**Easy:** 228 (31%)
-**Budget:** 154 (21%)
-**Average Latest Post:** 2026-01-16
+**Active Blogs (Last 90d):** 61 / 66
+**Total Database Size:** 738
+**New Today:** 17
+**WFPB:** 135 (18%)
+**Easy:** 228 (30%)
+**Budget:** 157 (21%)
+**Average Latest Post:** 2026-01-17
 
 | Blog Name | URL | New | Total | WFPB | Easy | Budget | Latest | Status |
 |-----------|-----|-----|-------|------|------|--------|--------|--------|
@@ -19,6 +19,7 @@
 | ZardyPlants | https://zardyplants.com/feed/ | 0 | 10 | 10 | 7 | 3 | 2025-11-08 | ⚠️ Stale (>90d)  |
 | A Virtual Vegan | https://avirtualvegan.com/feed/ | 0 | 10 | 0 | 1 | 0 | 2026-02-06 | ✅ OK |
 | Addicted to Dates | https://addictedtodates.com/category/recipes/feed/ | 0 | 10 | 0 | 1 | 2 | 2026-01-30 | ✅ OK |
+| Ann Arbor Vegan Kitchen | https://www.annarborvegankitchen.com/feed/ | 10 | 10 | 10 | 0 | 3 | 2026-02-04 | ✅ OK |
 | Bianca Zapatka | https://biancazapatka.com/en/feed/ | 0 | 10 | 2 | 5 | 2 | 2025-12-11 | ✅ OK |
 | Cadry's Kitchen | https://cadryskitchen.com/feed/ | 0 | 11 | 1 | 11 | 0 | 2026-02-04 | ✅ OK |
 | Choosing Chia | https://choosingchia.com/feed/ | 0 | 10 | 2 | 10 | 1 | 2026-01-06 | ✅ OK |
@@ -58,9 +59,9 @@
 | Simple Vegan Blog | https://simpleveganblog.com/feed/ | 0 | 7 | 0 | 7 | 1 | 2026-02-05 | ✅ OK |
 | Strength and Sunshine | https://strengthandsunshine.com/feed/ | 0 | 10 | 2 | 10 | 2 | 2026-01-22 | ✅ OK |
 | Sweet Potato Soul | https://sweetpotatosoul.com/feed/ | 0 | 10 | 0 | 1 | 2 | 2026-01-04 | ✅ OK |
-| Sweet Simple Vegan | https://sweetsimplevegan.com/feed/ | 1 | 7 | 0 | 4 | 0 | 2026-02-06 | ✅ OK |
+| Sweet Simple Vegan | https://sweetsimplevegan.com/feed/ | 0 | 7 | 0 | 4 | 0 | 2026-02-06 | ✅ OK |
 | The Banana Diaries | https://thebananadiaries.com/feed/ | 0 | 11 | 0 | 5 | 2 | 2026-02-06 | ✅ OK |
-| The Burger Dude | https://theeburgerdude.com/feed/ | 2 | 14 | 0 | 1 | 3 | 2026-02-06 | ✅ OK |
+| The Burger Dude | https://theeburgerdude.com/feed/ | 0 | 14 | 0 | 1 | 3 | 2026-02-06 | ✅ OK |
 | The Conscious Plant Kitchen | https://www.theconsciousplantkitchen.com/feed/ | 0 | 11 | 11 | 1 | 0 | 2026-02-05 | ✅ OK |
 | The First Mess | https://thefirstmess.com/feed/ | 0 | 13 | 1 | 2 | 2 | 2026-02-05 | ✅ OK |
 | The Foodie Takes Flight | https://thefoodietakesflight.com/feed/ | 0 | 11 | 0 | 11 | 2 | 2026-02-05 | ✅ OK |
@@ -68,7 +69,7 @@
 | The Hidden Veggies | https://thehiddenveggies.com/feed/ | 0 | 11 | 1 | 1 | 11 | 2026-02-05 | ✅ OK |
 | The Korean Vegan | https://thekoreanvegan.com/feed/ | 0 | 10 | 0 | 5 | 0 | 2026-01-28 | ✅ OK |
 | The Little Blog of Vegan | https://www.thelittleblogofvegan.com/feed/ | 0 | 12 | 0 | 5 | 0 | 2026-02-06 | ✅ OK |
-| The Post-Punk Kitchen | https://www.theppk.com/feed/ | 1 | 8 | 1 | 1 | 1 | 2026-02-06 | ✅ OK |
+| The Post-Punk Kitchen | https://www.theppk.com/feed/ | 0 | 8 | 1 | 1 | 1 | 2026-02-06 | ✅ OK |
 | The Stingy Vegan | https://thestingyvegan.com/feed/ | 0 | 10 | 0 | 10 | 10 | 2025-12-12 | ✅ OK |
 | VegNews | https://vegnews.com/feed | 0 | 24 | 2 | 5 | 1 | 2026-02-05 | ✅ OK |
 | Vegan Heaven | https://veganheaven.org/feed/ | 0 | 10 | 0 | 0 | 1 | 2026-01-06 | ✅ OK |
