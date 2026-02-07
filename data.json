@@ -1,5 +1,16 @@
 [
   {
+    "blog_name": "It Doesn't Taste Like Chicken",
+    "title": "How to Marinate Tofu (So That it Actually Tastes Good)",
+    "link": "https://itdoesnttastelikechicken.com/how-to-marinate-tofu/",
+    "image": "https://itdoesnttastelikechicken.com/wp-content/uploads/2026/01/How-to-Marinate-Tofu-So-That-it-Actually-Tastes-Good.jpg",
+    "date": "2026-02-07T10:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
     "blog_name": "Watch Learn Eat",
     "title": "Chocolate Brownie Baked Oatmeal (High Protein, Dairy Free)",
     "link": "https://watchlearneat.com/brownie-baked-oatmeal/",
@@ -221,8 +232,8 @@
     "date": "2026-02-05T20:13:12+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -369,6 +380,17 @@
     "is_disruptor": true,
     "special_tags": [
       "Easy"
+    ]
+  },
+  {
+    "blog_name": "Forks Over Knives",
+    "title": "Eating Plant-Based for Your Heart? These Are the Best Lab Tests to Track Your Progress",
+    "link": "https://www.forksoverknives.com/wellness/best-blood-tests-for-heart-disease-plant-based-diet/",
+    "image": "https://www.forksoverknives.com/uploads/2026/02/doctor-reviews-lab-tests-with-heart-disease-patient.jpg?auto=webp",
+    "date": "2026-02-04T19:58:46+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
     ]
   },
   {
@@ -733,8 +755,8 @@
     "date": "2026-02-02T15:41:04+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -1201,8 +1223,8 @@
     "date": "2026-01-30T02:05:16+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -1309,8 +1331,8 @@
     "date": "2026-01-29T15:19:42+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -1396,8 +1418,8 @@
     "date": "2026-01-28T19:16:29+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -1422,6 +1444,15 @@
     "special_tags": [
       "Easy"
     ]
+  },
+  {
+    "blog_name": "Rhian's Recipes",
+    "title": "Vegan Caramel Sauce (Gluten-Free)",
+    "link": "https://www.rhiansrecipes.com/caramel-sauce/",
+    "image": "https://www.rhiansrecipes.com/wp-content/uploads/2026/01/IMG_9846.jpg",
+    "date": "2026-01-28T15:13:01+00:00",
+    "is_disruptor": true,
+    "special_tags": []
   },
   {
     "blog_name": "Gretchen's Vegan Bakery",
@@ -1484,9 +1515,9 @@
     "date": "2026-01-28T11:45:05+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
       "WFPB",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -1648,9 +1679,9 @@
     "date": "2026-01-27T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
       "WFPB",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -1985,6 +2016,17 @@
     ]
   },
   {
+    "blog_name": "Forks Over Knives",
+    "title": "At 28 Years Old, I Was on Nearly 10 Medications. Then I Changed My Diet",
+    "link": "https://www.forksoverknives.com/success-stories/i-was-on-nearly-10-medications-at-28-then-went-wfpb/",
+    "image": "https://www.forksoverknives.com/uploads/2026/01/Sawani-Soman-before-and-after-adopting-a-wfpb-lifestyle.webp?auto=webp",
+    "date": "2026-01-22T20:02:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
     "blog_name": "Eat Figs, Not Pigs",
     "title": "Chick\u2019n Caesar Pasta Salad",
     "link": "https://www.eatfigsnotpigs.com/chickn-caesar-pasta-salad/?utm_source=rss&utm_medium=rss&utm_campaign=chickn-caesar-pasta-salad",
@@ -2014,8 +2056,8 @@
     "date": "2026-01-22T18:00:48+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -2092,8 +2134,8 @@
     "date": "2026-01-21T21:51:00+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -2189,8 +2231,8 @@
     "date": "2026-01-21T09:00:13+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -2255,9 +2297,9 @@
     "date": "2026-01-20T13:29:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
       "WFPB",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -2543,9 +2585,9 @@
     "date": "2026-01-16T20:07:56+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
       "WFPB",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -2873,9 +2915,9 @@
     "date": "2026-01-14T01:52:22+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
       "WFPB",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -2917,8 +2959,8 @@
     "date": "2026-01-13T18:12:15+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -3357,8 +3399,8 @@
     "date": "2026-01-07T09:00:11+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -3708,6 +3750,15 @@
     ]
   },
   {
+    "blog_name": "Rhian's Recipes",
+    "title": "Vegan Chocolate Fudge Pudding (Gluten-Free)",
+    "link": "https://www.rhiansrecipes.com/chocolate-fudge-pudding/",
+    "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/12/IMG_8855.jpg",
+    "date": "2025-12-30T08:03:11+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
     "blog_name": "Cadry's Kitchen",
     "title": "11 irresistible french fries dipping sauces you\u2019ll crave",
     "link": "https://cadryskitchen.com/french-fries-dipping-sauces/",
@@ -3735,8 +3786,8 @@
     "date": "2025-12-29T15:35:13+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -3861,10 +3912,19 @@
     "date": "2025-12-26T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
       "WFPB",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
+  },
+  {
+    "blog_name": "Rhian's Recipes",
+    "title": "Vegan Butter Mochi (Gluten-Free)",
+    "link": "https://www.rhiansrecipes.com/butter-mochi/",
+    "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/12/IMG_8317.jpg",
+    "date": "2025-12-26T07:28:42+00:00",
+    "is_disruptor": true,
+    "special_tags": []
   },
   {
     "blog_name": "Namely Marly",
@@ -3891,6 +3951,15 @@
     "image": "https://sweetsimplevegan.com/wp-content/uploads/2025/12/vegan-cannoli-tiramisu-sweet-simple-vegan-recipe-8.jpg",
     "date": "2025-12-23T19:36:05+00:00",
     "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Rhian's Recipes",
+    "title": "Vegan Chocolate Self-Saucing Pudding (Gluten-Free)",
+    "link": "https://www.rhiansrecipes.com/chocolate-self-saucing-pudding/",
+    "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/12/IMG_8505.jpg",
+    "date": "2025-12-23T16:13:57+00:00",
+    "is_disruptor": true,
     "special_tags": []
   },
   {
@@ -3945,6 +4014,15 @@
     "special_tags": [
       "Easy"
     ]
+  },
+  {
+    "blog_name": "Rhian's Recipes",
+    "title": "Gluten-Free Vegan Chocolate Baklava",
+    "link": "https://www.rhiansrecipes.com/chocolate-baklava/",
+    "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/12/IMG_9676-scaled.jpg",
+    "date": "2025-12-21T14:57:38+00:00",
+    "is_disruptor": true,
+    "special_tags": []
   },
   {
     "blog_name": "The Hidden Veggies",
@@ -4139,6 +4217,15 @@
     ]
   },
   {
+    "blog_name": "Rhian's Recipes",
+    "title": "Vegan Lemon Thumbprint Cookies (Gluten-Free)",
+    "link": "https://www.rhiansrecipes.com/lemon-thumbprint-cookies/",
+    "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/12/IMG_0140-scaled.jpg",
+    "date": "2025-12-18T16:02:15+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
     "blog_name": "The Little Blog of Vegan",
     "title": "Vegan Hot Chocolate Sheet Cake",
     "link": "https://www.thelittleblogofvegan.com/2025/12/vegan-hot-chocolate-sheet-cake.html",
@@ -4246,9 +4333,9 @@
     "date": "2025-12-17T20:30:26+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
       "WFPB",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -4392,6 +4479,15 @@
     ]
   },
   {
+    "blog_name": "Rhian's Recipes",
+    "title": "Vegan Chocolate Christmas Pudding (Gluten-Free)",
+    "link": "https://www.rhiansrecipes.com/chocolate-christmas-pudding/",
+    "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/12/IMG_9902-1.jpg",
+    "date": "2025-12-15T14:47:59+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
     "blog_name": "Fragrant Vanilla Cake",
     "title": "Vegan Cherry Almond Pie",
     "link": "https://www.fragrantvanilla.com/vegan-cherry-almond-pie/?utm_source=rss&utm_medium=rss&utm_campaign=vegan-cherry-almond-pie",
@@ -4446,8 +4542,8 @@
     "date": "2025-12-14T00:22:05+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -4484,6 +4580,15 @@
     "image": "https://www.rabbitandwolves.com/wp-content/uploads/2025/12/Vegan-puppy-chow0677.jpg",
     "date": "2025-12-12T17:45:51+00:00",
     "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Rhian's Recipes",
+    "title": "Vegan Sticky Toffee Pudding (Gluten-Free)",
+    "link": "https://www.rhiansrecipes.com/sticky-toffee-pudding/",
+    "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/12/IMG_9776-scaled.jpg",
+    "date": "2025-12-12T15:48:45+00:00",
+    "is_disruptor": true,
     "special_tags": []
   },
   {
@@ -4527,8 +4632,8 @@
     "date": "2025-12-12T05:45:13+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -4917,8 +5022,8 @@
     "date": "2025-12-03T09:00:59+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -4980,6 +5085,15 @@
     "image": "https://sweetpotatosoul.com/wp-content/uploads/2025/11/Sweet-Potato-Soul-holiday-gift-guide.png",
     "date": "2025-11-30T15:11:08+00:00",
     "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Rhian's Recipes",
+    "title": "Gluten-Free Vegan Chocolate Chip Scones",
+    "link": "https://www.rhiansrecipes.com/chocolate-chip-scones/",
+    "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/11/IMG_9543-scaled.jpg",
+    "date": "2025-11-30T15:02:07+00:00",
+    "is_disruptor": true,
     "special_tags": []
   },
   {
@@ -5350,6 +5464,15 @@
     "special_tags": []
   },
   {
+    "blog_name": "Snixy Kitchen",
+    "title": "Fluffy Coconut Whipped Cream",
+    "link": "https://www.snixykitchen.com/coconut-whipped-cream/",
+    "image": "https://www.snixykitchen.com/wp-content/uploads/2025/11/Coconut-Whipped-Cream-7-2.jpg",
+    "date": "2025-11-21T02:53:20+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
     "blog_name": "Sarah's Vegan Kitchen",
     "title": "The Ultimate Vegan Thanksgiving Guide",
     "link": "https://sarahsvegankitchen.com/guides/thanksgiving/",
@@ -5507,6 +5630,15 @@
     ]
   },
   {
+    "blog_name": "Rhian's Recipes",
+    "title": "Gluten-Free Vegan Yogurt Loaf Cake",
+    "link": "https://www.rhiansrecipes.com/yogurt-loaf-cake/",
+    "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/11/IMG_0219-scaled.jpg",
+    "date": "2025-11-18T11:18:57+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
     "blog_name": "Veggiekins",
     "title": "Horchata Matcha Latte",
     "link": "https://veggiekinsblog.com/2025/11/17/horchata-matcha-latte/",
@@ -5572,6 +5704,15 @@
     "link": "https://www.fragrantvanilla.com/vegan-maple-pecan-baklava/?utm_source=rss&utm_medium=rss&utm_campaign=vegan-maple-pecan-baklava",
     "image": "https://www.fragrantvanilla.com/wp-content/uploads/2025/11/Pecan-Baklava.jpg",
     "date": "2025-11-17T02:53:06+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Rhian's Recipes",
+    "title": "Vegan Lemon Cobbler (Gluten-Free)",
+    "link": "https://www.rhiansrecipes.com/lemon-cobbler/",
+    "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/11/IMG_9438.jpg",
+    "date": "2025-11-16T14:33:30+00:00",
     "is_disruptor": true,
     "special_tags": []
   },
@@ -5954,9 +6095,9 @@
     "date": "2025-11-05T03:20:51+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
       "WFPB",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -5989,6 +6130,15 @@
     "special_tags": [
       "Easy"
     ]
+  },
+  {
+    "blog_name": "Rhian's Recipes",
+    "title": "Gluten-Free Vegan Chocolate Chip Bread",
+    "link": "https://www.rhiansrecipes.com/chocolate-chip-bread/",
+    "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/11/IMG_9074.jpg",
+    "date": "2025-11-03T16:47:27+00:00",
+    "is_disruptor": true,
+    "special_tags": []
   },
   {
     "blog_name": "Fragrant Vanilla Cake",
@@ -6167,6 +6317,15 @@
     ]
   },
   {
+    "blog_name": "Rhian's Recipes",
+    "title": "Vegan Lemon Olive Oil Yogurt Cake (Gluten-Free)",
+    "link": "https://www.rhiansrecipes.com/lemon-olive-oil-yogurt-cake/",
+    "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/10/IMG_9347-scaled.jpg",
+    "date": "2025-10-27T11:23:30+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
     "blog_name": "Fragrant Vanilla Cake",
     "title": "Vegan Apple Filo Hand Pies",
     "link": "https://www.fragrantvanilla.com/vegan-apple-filo-hand-pies/?utm_source=rss&utm_medium=rss&utm_campaign=vegan-apple-filo-hand-pies",
@@ -6252,6 +6411,15 @@
     ]
   },
   {
+    "blog_name": "Rhian's Recipes",
+    "title": "Vegan Hojicha Latte Cake (Gluten-Free)",
+    "link": "https://www.rhiansrecipes.com/hojicha-latte-cake/",
+    "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/10/IMG_0042-scaled.jpg",
+    "date": "2025-10-23T07:12:16+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
     "blog_name": "Namely Marly",
     "title": "Oatmeal Breakfast Recipes",
     "link": "https://namelymarly.com/oatmeal-breakfast-recipes/",
@@ -6333,9 +6501,9 @@
     "date": "2025-10-21T16:43:44+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
       "WFPB",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -6401,6 +6569,15 @@
     "special_tags": []
   },
   {
+    "blog_name": "Rhian's Recipes",
+    "title": "16 Vegan Pumpkin Dessert Recipes (Gluten-Free)",
+    "link": "https://www.rhiansrecipes.com/pumpkin-desserts/",
+    "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/10/pumpkin-desserts.jpg",
+    "date": "2025-10-17T08:03:30+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
     "blog_name": "Strength and Sunshine",
     "title": "Stuffed Baked Apples (Gluten-Free, Vegan)",
     "link": "https://strengthandsunshine.com/stuffed-baked-apples/",
@@ -6429,8 +6606,8 @@
     "is_disruptor": false,
     "special_tags": [
       "Budget",
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -6472,6 +6649,15 @@
     "special_tags": []
   },
   {
+    "blog_name": "Rhian's Recipes",
+    "title": "14 Vegan Apple Dessert Recipes (Gluten-Free)",
+    "link": "https://www.rhiansrecipes.com/apple-desserts/",
+    "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/10/apple-desserts-roundup.jpg",
+    "date": "2025-10-13T14:54:46+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
     "blog_name": "Watch Learn Eat",
     "title": "Healthy Chocolate Banana Brownies (Vegan + Gluten Free Option)",
     "link": "https://watchlearneat.com/healthy-chocolate-banana-brownies-vegan-fudge/",
@@ -6509,6 +6695,15 @@
     "link": "https://namelymarly.com/fall-vegan-desserts/",
     "image": "https://namelymarly.com/wp-content/uploads/2023/04/Vegan-Pumpkin-Brownies-1760-web.jpg",
     "date": "2025-10-10T16:17:59+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Rhian's Recipes",
+    "title": "Gluten-Free Vegan Apple Cobbler",
+    "link": "https://www.rhiansrecipes.com/apple-cobbler/",
+    "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/10/IMG_9250-scaled.jpg",
+    "date": "2025-10-10T14:39:29+00:00",
     "is_disruptor": true,
     "special_tags": []
   },
@@ -6721,9 +6916,9 @@
     "date": "2025-09-25T17:58:30+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
       "WFPB",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -6820,9 +7015,18 @@
     "date": "2025-09-15T20:00:17+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
+  },
+  {
+    "blog_name": "Rhian's Recipes",
+    "title": "Gluten-Free Vegan Chocolate Chip Cake",
+    "link": "https://www.rhiansrecipes.com/chocolate-chip-cake/",
+    "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/09/IMG_9141-scaled.jpg",
+    "date": "2025-09-15T14:41:05+00:00",
+    "is_disruptor": true,
+    "special_tags": []
   },
   {
     "blog_name": "Fragrant Vanilla Cake",
@@ -7073,6 +7277,15 @@
     "special_tags": []
   },
   {
+    "blog_name": "Rhian's Recipes",
+    "title": "Gluten-Free Vegan Lemon Olive Oil Cake",
+    "link": "https://www.rhiansrecipes.com/lemon-olive-oil-cake/",
+    "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/08/IMG_8415-scaled.jpg",
+    "date": "2025-08-28T07:30:31+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
     "blog_name": "Unconventional Baker",
     "title": "Blueberry Pie",
     "link": "https://www.unconventionalbaker.com/blueberry-pie/",
@@ -7100,8 +7313,8 @@
     "date": "2025-08-25T12:56:12+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -7110,6 +7323,15 @@
     "link": "https://namelymarly.com/coconut-granola/",
     "image": "https://namelymarly.com/wp-content/uploads/2025/06/Coconut-Granola-0434-sq-web.jpg",
     "date": "2025-08-25T12:01:00+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Rhian's Recipes",
+    "title": "Gluten-Free Vegan Lemon Poppy Seed Layer Cake",
+    "link": "https://www.rhiansrecipes.com/lemon-poppy-seed-cake/",
+    "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/08/IMG_8681.jpg",
+    "date": "2025-08-22T15:10:48+00:00",
     "is_disruptor": true,
     "special_tags": []
   },
@@ -7161,6 +7383,15 @@
     "special_tags": [
       "Easy"
     ]
+  },
+  {
+    "blog_name": "Rhian's Recipes",
+    "title": "Vegan Olive Oil Yogurt Cake (Gluten-Free)",
+    "link": "https://www.rhiansrecipes.com/olive-oil-yogurt-cake/",
+    "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/08/IMG_8739-scaled.jpg",
+    "date": "2025-08-18T14:18:22+00:00",
+    "is_disruptor": true,
+    "special_tags": []
   },
   {
     "blog_name": "Unconventional Baker",
@@ -7228,8 +7459,8 @@
     "date": "2025-07-31T18:00:11+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -7366,11 +7597,29 @@
     ]
   },
   {
+    "blog_name": "Rhian's Recipes",
+    "title": "Gluten-Free Vegan Jam Marble Cake",
+    "link": "https://www.rhiansrecipes.com/jam-marble-cake/",
+    "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/06/IMG_8203-1.jpg",
+    "date": "2025-06-29T08:46:13+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
     "blog_name": "Unconventional Baker",
     "title": "Pandan Coconut Chocolates",
     "link": "https://www.unconventionalbaker.com/pandan-coconut-chocolates/",
     "image": "https://www.unconventionalbaker.com/wp-content/uploads/2025/06/pandan-chocolates-sq.jpg",
     "date": "2025-06-25T08:11:17+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Rhian's Recipes",
+    "title": "Gluten-Free Vegan Savoury Vegetable Muffins",
+    "link": "https://www.rhiansrecipes.com/vegetable-muffins/",
+    "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/06/IMG_8144-1.jpg",
+    "date": "2025-06-24T09:18:03+00:00",
     "is_disruptor": true,
     "special_tags": []
   },
@@ -7502,6 +7751,15 @@
     "link": "https://namelymarly.com/vegan-bbq-meatball-sandwich/",
     "image": "https://namelymarly.com/wp-content/uploads/2021/01/Vegan-BBQ-Meatball-Sandwich-02-sq-web.jpg",
     "date": "2025-05-16T20:48:12+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Rhian's Recipes",
+    "title": "Gluten-Free Vegan Yogurt Muffins",
+    "link": "https://www.rhiansrecipes.com/yogurt-muffins/",
+    "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/05/IMG_8072-1.jpg",
+    "date": "2025-05-14T14:37:23+00:00",
     "is_disruptor": true,
     "special_tags": []
   },
@@ -7701,6 +7959,17 @@
     "is_disruptor": false,
     "special_tags": [
       "Budget",
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Snixy Kitchen",
+    "title": "Chewy Chocolate Peanut Butter No-Bake Cookies",
+    "link": "https://www.snixykitchen.com/chewy-chocolate-peanut-butter-no-bake-cookies/",
+    "image": "https://www.snixykitchen.com/wp-content/uploads/2025/02/Chewy-Chocolate-Peanut-Butter-Gluten-Free-No-Bake-Cookies-13.jpg",
+    "date": "2025-02-27T23:07:50+00:00",
+    "is_disruptor": true,
+    "special_tags": [
       "Easy"
     ]
   },

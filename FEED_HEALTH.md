@@ -1,18 +1,19 @@
 # Feed Health Report
-**Last Run:** 2026-02-07T09:59:00.199144
-**Total Blogs:** 70
-**Avg Recipes per Blog:** 10.9
-**Active Blogs (Last 90d):** 64 / 70
-**Total Database Size:** 761
-**New Today:** 7
-**WFPB:** 144 (18%)
-**Easy:** 223 (29%)
-**Budget:** 158 (20%)
-**Average Latest Post:** 2026-01-14
+**Last Run:** 2026-02-07T10:08:55.083969
+**Total Blogs:** 76
+**Avg Recipes per Blog:** 10.4
+**Active Blogs (Last 90d):** 70 / 76
+**Total Database Size:** 790
+**New Today:** 34
+**WFPB:** 146 (18%)
+**Easy:** 224 (28%)
+**Budget:** 159 (20%)
+**Average Latest Post:** 2026-01-13
 
 | Blog Name | URL | New | Total | WFPB | Easy | Budget | Latest | Status |
 |-----------|-----|-----|-------|------|------|--------|--------|--------|
 | Fran Costigan | https://www.francostigan.com/feed/ | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/ConnErr |
+| The Loopy Whisk | https://theloopywhisk.com/diet/vegan/feed/ | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/ConnErr |
 | Healthier Steps | https://healthiersteps.com/feed/ | 0 | 2 | 1 | 0 | 0 | 2025-05-18 | ⚠️ Stale (>90d)  |
 | The Vegan 8 | https://thevegan8.com/feed/ | 0 | 10 | 1 | 10 | 10 | 2025-10-25 | ⚠️ Stale (>90d)  |
 | Turnip Vegan | https://turnipvegan.com/blogs/news.atom | 0 | 7 | 0 | 0 | 0 | 2025-04-11 | ⚠️ Stale (>90d)  |
@@ -31,14 +32,14 @@
 | Eat Figs, Not Pigs | https://www.eatfigsnotpigs.com/feed/ | 0 | 13 | 1 | 2 | 1 | 2026-02-06 | ✅ OK |
 | Elavegan | https://elavegan.com/feed/ | 0 | 11 | 1 | 2 | 3 | 2026-02-06 | ✅ OK |
 | Flora & Vino | https://www.floraandvino.com/feed/ | 0 | 10 | 10 | 10 | 0 | 2026-01-31 | ✅ OK |
-| Forks Over Knives | https://www.forksoverknives.com/all-recipes/feed/ | 0 | 12 | 12 | 2 | 4 | 2026-02-05 | ✅ OK |
+| Forks Over Knives | https://www.forksoverknives.com/all-recipes/feed/ | 0 | 14 | 14 | 2 | 4 | 2026-02-05 | ✅ OK |
 | Fragrant Vanilla Cake | https://www.fragrantvanilla.com/feed/ | 0 | 10 | 0 | 0 | 0 | 2026-01-19 | ✅ OK |
 | From My Bowl | https://frommybowl.com/feed/ | 0 | 11 | 11 | 11 | 2 | 2026-02-03 | ✅ OK |
 | Full of Plants | https://fullofplants.com/feed/ | 0 | 6 | 0 | 0 | 0 | 2026-01-31 | ✅ OK |
 | Gretchen's Vegan Bakery | https://www.gretchensveganbakery.com/feed/ | 0 | 16 | 0 | 1 | 0 | 2026-02-05 | ✅ OK |
 | Healthy Little Vittles | https://healthylittlevittles.com/feed/ | 0 | 20 | 0 | 4 | 1 | 2026-02-05 | ✅ OK |
 | HealthyGirl Kitchen | https://healthygirlkitchen.com/feed/ | 0 | 11 | 2 | 3 | 0 | 2026-02-06 | ✅ OK |
-| It Doesn't Taste Like Chicken | https://itdoesnttastelikechicken.com/feed/ | 0 | 32 | 2 | 13 | 32 | 2026-02-04 | ✅ OK |
+| It Doesn't Taste Like Chicken | https://itdoesnttastelikechicken.com/feed/ | 1 | 33 | 2 | 13 | 33 | 2026-02-07 | ✅ OK |
 | Jessica in the Kitchen | https://jessicainthekitchen.com/feed/ | 0 | 13 | 2 | 0 | 2 | 2026-02-06 | ✅ OK |
 | Lazy Cat Kitchen | https://www.lazycatkitchen.com/feed/ | 0 | 10 | 0 | 0 | 2 | 2026-02-01 | ✅ OK |
 | Make It Dairy Free | https://makeitdairyfree.com/feed/ | 0 | 10 | 1 | 1 | 2 | 2026-02-01 | ✅ OK |
@@ -56,10 +57,12 @@
 | Plantifully Based | https://plantifullybasedblog.com/feed/ | 0 | 9 | 1 | 2 | 0 | 2026-01-31 | ✅ OK |
 | Rabbit and Wolves | https://www.rabbitandwolves.com/feed/ | 0 | 10 | 0 | 1 | 1 | 2026-01-19 | ✅ OK |
 | Rainbow Nourishments | https://www.rainbownourishments.com/feed/ | 0 | 11 | 0 | 2 | 1 | 2026-02-06 | ✅ OK |
-| Rainbow Plant Life | https://rainbowplantlife.com/feed/ | 0 | 10 | 2 | 0 | 2 | 2026-01-29 | ✅ OK |
+| Rainbow Plant Life | https://rainbowplantlife.com/vegan-gluten-free-recipes/feed/ | 0 | 10 | 2 | 0 | 2 | 2026-01-29 | ✅ OK |
+| Rhian's Recipes | https://www.rhiansrecipes.com/feed/ | 24 | 24 | 0 | 0 | 0 | 2026-01-28 | ✅ OK |
 | Running on Real Food | https://runningonrealfood.com/feed/ | 0 | 10 | 10 | 0 | 2 | 2026-01-29 | ✅ OK |
 | Sarah's Vegan Kitchen | https://sarahsvegankitchen.com/feed/ | 0 | 16 | 0 | 0 | 3 | 2026-02-04 | ✅ OK |
 | Simple Vegan Blog | https://simpleveganblog.com/feed/ | 0 | 7 | 0 | 7 | 1 | 2026-02-05 | ✅ OK |
+| Snixy Kitchen | https://www.snixykitchen.com/special-diet/vegan/feed/ | 2 | 2 | 0 | 1 | 0 | 2025-11-21 | ✅ OK |
 | Strength and Sunshine | https://strengthandsunshine.com/feed/ | 0 | 10 | 10 | 0 | 2 | 2026-01-22 | ✅ OK |
 | Sweet Potato Soul | https://sweetpotatosoul.com/feed/ | 0 | 10 | 0 | 1 | 2 | 2026-01-04 | ✅ OK |
 | Sweet Simple Vegan | https://sweetsimplevegan.com/feed/ | 0 | 7 | 0 | 4 | 0 | 2026-02-06 | ✅ OK |
@@ -76,7 +79,7 @@
 | The Stingy Vegan | https://thestingyvegan.com/feed/ | 0 | 10 | 0 | 10 | 10 | 2025-12-12 | ✅ OK |
 | VegNews | https://vegnews.com/feed | 0 | 24 | 2 | 5 | 1 | 2026-02-05 | ✅ OK |
 | Vegan Heaven | https://veganheaven.org/feed/ | 0 | 10 | 0 | 0 | 1 | 2026-01-06 | ✅ OK |
-| Vegan Richa | https://www.veganricha.com/feed/ | 0 | 12 | 0 | 3 | 3 | 2026-02-04 | ✅ OK |
+| Vegan Richa | https://www.veganricha.com/category/gluten-free/feed/ | 0 | 12 | 0 | 3 | 3 | 2026-02-04 | ✅ OK |
 | Vegan in the Freezer | https://veganinthefreezer.com/feed/ | 0 | 1 | 0 | 0 | 0 | 2026-01-25 | ✅ OK |
 | Veggiekins | https://veggiekinsblog.com/feed/ | 0 | 10 | 0 | 10 | 0 | 2026-01-29 | ✅ OK |
 | Veggies Don't Bite | https://veggiesdontbite.com/feed/ | 0 | 19 | 1 | 1 | 3 | 2026-02-06 | ✅ OK |
