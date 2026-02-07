@@ -1,5 +1,3 @@
---- START OF FILE fetch_recipes (8).py ---
-
 import feedparser
 import json
 import requests
