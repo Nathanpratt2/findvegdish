@@ -1,239 +1,360 @@
 [
   {
-    "blog_name": "Vegan Richa GF",
+    "blog_name": "Love and Lemons",
+    "title": "10 Healthy Smoothie Recipes",
+    "link": "https://www.loveandlemons.com/healthy-smoothie-recipes/",
+    "image": "https://cdn.loveandlemons.com/wp-content/uploads/2025/12/healthy-smoothies.jpg",
+    "date": "2026-02-07T19:24:38.483778+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Love and Lemons",
+    "title": "White Bean Soup",
+    "link": "https://www.loveandlemons.com/white-bean-soup/",
+    "image": "https://cdn.loveandlemons.com/wp-content/uploads/2025/12/white-bean-soup-1.jpg",
+    "date": "2026-02-07T19:24:38.483595+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Love and Lemons",
+    "title": "35 Vegan Meal Prep Ideas",
+    "link": "https://www.loveandlemons.com/vegan-meal-prep-ideas/",
+    "image": "https://cdn.loveandlemons.com/wp-content/uploads/2026/01/vegan-meal-prep-ideas.jpg",
+    "date": "2026-02-07T19:24:38.483406+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Love and Lemons",
+    "title": "Chickpea Curry",
+    "link": "https://www.loveandlemons.com/chickpea-curry/",
+    "image": "https://cdn.loveandlemons.com/wp-content/uploads/2026/01/chickpea-curry-recipe.jpg",
+    "date": "2026-02-07T19:24:38.483223+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Love and Lemons",
+    "title": "Vegan Pho",
+    "link": "https://www.loveandlemons.com/vegan-pho/",
+    "image": "https://cdn.loveandlemons.com/wp-content/uploads/2026/01/vegan-pho-recipe.jpg",
+    "date": "2026-02-07T19:24:38.483037+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Love and Lemons",
+    "title": "Vegetable Soup",
+    "link": "https://www.loveandlemons.com/vegetable-soup/",
+    "image": "https://cdn.loveandlemons.com/wp-content/uploads/2014/10/vegetable-soup.jpg",
+    "date": "2026-02-07T19:24:38.482828+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Love and Lemons",
+    "title": "Baked Japanese Sweet Potato",
+    "link": "https://www.loveandlemons.com/japanese-sweet-potato/",
+    "image": "https://cdn.loveandlemons.com/wp-content/uploads/2026/01/japanese-sweet-potato-recipe.jpg",
+    "date": "2026-02-07T19:24:38.482632+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Love and Lemons",
+    "title": "White Bean Chili",
+    "link": "https://www.loveandlemons.com/white-bean-chili/",
+    "image": "https://cdn.loveandlemons.com/wp-content/uploads/2022/02/white-bean-soup-1.jpg",
+    "date": "2026-02-07T19:24:38.482441+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Love and Lemons",
+    "title": "Chocolate Covered Strawberries",
+    "link": "https://www.loveandlemons.com/chocolate-covered-strawberries/",
+    "image": "https://cdn.loveandlemons.com/wp-content/uploads/2026/01/chocolate-covered-strawberries-1.jpg",
+    "date": "2026-02-07T19:24:38.482247+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Love and Lemons",
+    "title": "35 Best Super Bowl Food Ideas",
+    "link": "https://www.loveandlemons.com/super-bowl-food-ideas/",
+    "image": "https://cdn.loveandlemons.com/wp-content/uploads/2022/02/super-bowl-food-ideas-1.jpg",
+    "date": "2026-02-07T19:24:38.482055+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Love and Lemons",
+    "title": "Best Guacamole Recipe",
+    "link": "https://www.loveandlemons.com/guacamole-recipe/",
+    "image": "https://cdn.loveandlemons.com/wp-content/uploads/2023/07/guacamole.jpg",
+    "date": "2026-02-07T19:24:38.481821+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Richa",
     "title": "Kheer Ladoo (Indian Rice Pudding Truffles)",
     "link": "https://www.veganricha.com/kheer-ladoo-rice-pudding-truffles/",
     "image": "https://www.veganricha.com/wp-content/uploads/2025/09/Rice-Truffles-0038-600x896.jpg",
     "date": "2026-02-07T18:33:37.511010+00:00",
     "is_disruptor": false,
     "special_tags": [
+      "GF",
       "Budget"
     ]
   },
   {
-    "blog_name": "Vegan Richa GF",
+    "blog_name": "Vegan Richa",
     "title": "1-Pan Mushroom Potato Casserole",
     "link": "https://www.veganricha.com/mushroom-potato-casserole/",
     "image": "https://www.veganricha.com/wp-content/uploads/2025/10/Potato-Mushroom-Bake-9624-600x896.jpg",
     "date": "2026-02-07T18:33:37.510264+00:00",
     "is_disruptor": false,
     "special_tags": [
+      "GF",
       "Budget"
     ]
   },
   {
-    "blog_name": "Vegan Richa GF",
+    "blog_name": "Vegan Richa",
     "title": "Chicken-Style Braised Tofu and  Vegetables (1 pan!)",
     "link": "https://www.veganricha.com/braised-tofu-vegetables/",
     "image": "https://www.veganricha.com/wp-content/uploads/2025/10/Braised-Veggies-n-Tofu-0160-600x896.jpg",
     "date": "2026-02-07T18:33:37.509475+00:00",
     "is_disruptor": false,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
-    "blog_name": "Vegan Richa GF",
+    "blog_name": "Vegan Richa",
     "title": "1-Pot Lemon White Bean Soup",
     "link": "https://www.veganricha.com/lemon-white-bean-soup/",
     "image": "https://www.veganricha.com/wp-content/uploads/2025/10/Lemony-White-Beans-9430-600x896.jpg",
     "date": "2026-02-07T18:33:37.508703+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy"
+      "Easy",
+      "GF"
     ]
   },
   {
-    "blog_name": "Vegan Richa GF",
+    "blog_name": "Vegan Richa",
     "title": "Caramelized Onion Mashed Potatoes",
     "link": "https://www.veganricha.com/caramelized-onion-mashed-potatoes/",
     "image": "https://www.veganricha.com/wp-content/uploads/2025/10/Caramelized-Onion-Mash-8443-600x896.jpg",
     "date": "2026-02-07T18:33:37.507913+00:00",
     "is_disruptor": false,
     "special_tags": [
+      "GF",
       "Budget"
     ]
   },
   {
-    "blog_name": "Vegan Richa GF",
+    "blog_name": "Vegan Richa",
     "title": "Vegan Pepperoni with Chickpea Flour \u2013 Glutenfree",
     "link": "https://www.veganricha.com/vegan-pepperoni-with-chickpea-flour-glutenfree/",
     "image": "https://www.veganricha.com/wp-content/uploads/2022/06/Chickpea-Flour-Pepperoni-3081-600x896.jpg",
     "date": "2026-02-07T18:33:37.498736+00:00",
     "is_disruptor": false,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
-    "blog_name": "Vegan Richa GF",
+    "blog_name": "Vegan Richa",
     "title": "Mini Apple Pie Cheesecake",
     "link": "https://www.veganricha.com/mini-apple-pie-cheesecake/",
     "image": "https://www.veganricha.com/wp-content/uploads/2022/12/Mini-Apple-Pie-Cheesecakes-6885-600x896.jpg",
     "date": "2026-02-07T18:33:37.497865+00:00",
     "is_disruptor": false,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
-    "blog_name": "Vegan Richa GF",
+    "blog_name": "Vegan Richa",
     "title": "Glutenfree Holiday Roast (Vegan)",
     "link": "https://www.veganricha.com/glutenfree-holiday-roast-vegan/",
     "image": "https://www.veganricha.com/wp-content/uploads/2021/10/Holiday-Roast-7135-600x896.jpg",
     "date": "2026-02-07T18:33:37.496975+00:00",
     "is_disruptor": false,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
-    "blog_name": "Vegan Richa GF",
+    "blog_name": "Vegan Richa",
     "title": "30 Amazing Vegan Gluten-Free Breakfast Recipes",
     "link": "https://www.veganricha.com/vegan-gluten-free-breakfast-recipes/",
     "image": "https://www.veganricha.com/wp-content/uploads/2024/03/Square-Collage-600x896.jpg",
     "date": "2026-02-07T18:33:37.496067+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy"
+      "Easy",
+      "GF"
     ]
   },
   {
-    "blog_name": "Rainbow Plant Life GF",
+    "blog_name": "Rainbow Plant Life",
     "title": "Ultimate Crispy Roasted Potatoes",
     "link": "https://rainbowplantlife.com/ultimate-crispy-roasted-potatoes/",
     "image": "https://rainbowplantlife.com/wp-content/uploads/2024/11/crispy-roasted-potatoes-hero-1-600x800.jpg",
     "date": "2026-02-07T18:33:28.887194+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
+      "GF",
       "Budget"
     ]
   },
   {
-    "blog_name": "Rainbow Plant Life GF",
+    "blog_name": "Rainbow Plant Life",
     "title": "Really Good White Bean Soup",
     "link": "https://rainbowplantlife.com/white-bean-soup/",
     "image": "https://rainbowplantlife.com/wp-content/uploads/2024/12/Cover-photo-600x800.jpg",
     "date": "2026-02-07T18:33:28.886517+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB"
+      "GF"
     ]
   },
   {
-    "blog_name": "Rainbow Plant Life GF",
+    "blog_name": "Rainbow Plant Life",
     "title": "Fennel Orange Salad",
     "link": "https://rainbowplantlife.com/fennel-orange-salad/",
     "image": "https://rainbowplantlife.com/wp-content/uploads/2025/02/Hero-Fennel-Orange-Salad-hero-1-600x800.jpg",
     "date": "2026-02-07T18:33:28.885843+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB"
+      "WFPB",
+      "GF"
     ]
   },
   {
-    "blog_name": "Rainbow Plant Life GF",
+    "blog_name": "Rainbow Plant Life",
     "title": "Napa Cabbage Salad with Sesame Dressing",
     "link": "https://rainbowplantlife.com/napa-cabbage-salad/",
     "image": "https://rainbowplantlife.com/wp-content/uploads/2025/03/Hero-1-napa-cabbage-salad-600x800.jpg",
     "date": "2026-02-07T18:33:28.885169+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB"
+      "WFPB",
+      "GF"
     ]
   },
   {
-    "blog_name": "Rainbow Plant Life GF",
+    "blog_name": "Rainbow Plant Life",
     "title": "Mediterranean Chickpea Salad",
     "link": "https://rainbowplantlife.com/chickpea-salad/",
     "image": "https://rainbowplantlife.com/wp-content/uploads/2025/05/Chickpea-Salad-cover-600x800.jpg",
     "date": "2026-02-07T18:33:28.884491+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB"
+      "WFPB",
+      "GF"
     ]
   },
   {
-    "blog_name": "Rainbow Plant Life GF",
+    "blog_name": "Rainbow Plant Life",
     "title": "Roasted Red Pepper Hummus",
     "link": "https://rainbowplantlife.com/roasted-red-pepper-hummus/",
     "image": "https://rainbowplantlife.com/wp-content/uploads/2025/05/Roasted-red-pepper-hummus-cover-photo-600x800.jpg",
     "date": "2026-02-07T18:33:28.883828+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB"
+      "GF"
     ]
   },
   {
-    "blog_name": "Rainbow Plant Life GF",
+    "blog_name": "Rainbow Plant Life",
     "title": "Ultimate Vegan Tacos",
     "link": "https://rainbowplantlife.com/vegan-tacos/",
     "image": "https://rainbowplantlife.com/wp-content/uploads/2025/06/Ultimate-vegan-tacos-cover-photo-1-600x800.jpg",
     "date": "2026-02-07T18:33:28.883150+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB"
+      "GF"
     ]
   },
   {
-    "blog_name": "Rainbow Plant Life GF",
+    "blog_name": "Rainbow Plant Life",
     "title": "Avocado Crema",
     "link": "https://rainbowplantlife.com/avocado-crema/",
     "image": "https://rainbowplantlife.com/wp-content/uploads/2025/07/Avocado-Crema-cover-photo-600x800.jpg",
     "date": "2026-02-07T18:33:28.882465+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB"
+      "GF"
     ]
   },
   {
-    "blog_name": "Rainbow Plant Life GF",
+    "blog_name": "Rainbow Plant Life",
     "title": "Spinach Pesto",
     "link": "https://rainbowplantlife.com/spinach-pesto/",
     "image": "https://rainbowplantlife.com/wp-content/uploads/2025/08/Spinach-Pesto-Nisha-edited-hero-4-600x800.jpg",
     "date": "2026-02-07T18:33:28.881791+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB"
+      "GF"
     ]
   },
   {
-    "blog_name": "Rainbow Plant Life GF",
+    "blog_name": "Rainbow Plant Life",
     "title": "Creamy Balsamic Vinaigrette",
     "link": "https://rainbowplantlife.com/balsamic-vinaigrette/",
     "image": "https://rainbowplantlife.com/wp-content/uploads/2025/08/Balsamic-Dressing_-6-600x800.jpg",
     "date": "2026-02-07T18:33:28.881102+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB"
+      "GF"
     ]
   },
   {
-    "blog_name": "Rainbow Plant Life GF",
+    "blog_name": "Rainbow Plant Life",
     "title": "Crispy Air Fryer Tofu",
     "link": "https://rainbowplantlife.com/air-fryer-tofu/",
     "image": "https://rainbowplantlife.com/wp-content/uploads/2025/09/Air-Fryer-Tofu-15-600x800.jpg",
     "date": "2026-02-07T18:33:28.880408+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "GF"
     ]
   },
   {
-    "blog_name": "Rainbow Plant Life GF",
+    "blog_name": "Rainbow Plant Life",
     "title": "Mediterranean Lentil Soup",
     "link": "https://rainbowplantlife.com/lentil-soup/",
     "image": "https://rainbowplantlife.com/wp-content/uploads/2025/10/Mediterranean-Lentil-Soup-cover-photo-600x800.jpg",
     "date": "2026-02-07T18:33:28.879721+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
+      "GF",
       "Budget"
     ]
   },
   {
-    "blog_name": "Rainbow Plant Life GF",
+    "blog_name": "Rainbow Plant Life",
     "title": "Creamy Cabbage Curry",
     "link": "https://rainbowplantlife.com/cabbage-curry/",
     "image": "https://rainbowplantlife.com/wp-content/uploads/2025/10/Cabbage-Curry-hero-1-600x800.jpg",
     "date": "2026-02-07T18:33:28.879009+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB"
+      "GF"
     ]
   },
   {
@@ -243,10 +364,7 @@
     "image": "https://cdn.pickuplimes.com/cache/f3/53/f353f362b6b973e64a1cc655440dc19a.jpg",
     "date": "2026-02-07T18:33:18.904428+00:00",
     "is_disruptor": false,
-    "special_tags": [
-      "WFPB",
-      "Easy"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "Pick Up Limes",
@@ -255,10 +373,7 @@
     "image": "https://cdn.pickuplimes.com/cache/c9/3f/c93f92cbb5db617d25176d878c7ad2b4.jpg",
     "date": "2026-02-07T18:33:18.904346+00:00",
     "is_disruptor": false,
-    "special_tags": [
-      "WFPB",
-      "Easy"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "Pick Up Limes",
@@ -267,10 +382,7 @@
     "image": "https://cdn.pickuplimes.com/cache/76/80/7680fa2623a2fe259504ab88b2ab5405.jpg",
     "date": "2026-02-07T18:33:18.904262+00:00",
     "is_disruptor": false,
-    "special_tags": [
-      "WFPB",
-      "Easy"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "Pick Up Limes",
@@ -279,10 +391,7 @@
     "image": "https://cdn.pickuplimes.com/cache/87/a3/87a3b048a5ca7ae8899a35f36058f501.jpg",
     "date": "2026-02-07T18:33:18.904180+00:00",
     "is_disruptor": false,
-    "special_tags": [
-      "WFPB",
-      "Easy"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "Pick Up Limes",
@@ -291,10 +400,7 @@
     "image": "https://cdn.pickuplimes.com/cache/dd/c4/ddc4a53e9f2289829da1d44150e019af.jpg",
     "date": "2026-02-07T18:33:18.904095+00:00",
     "is_disruptor": false,
-    "special_tags": [
-      "WFPB",
-      "Easy"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "Pick Up Limes",
@@ -304,8 +410,6 @@
     "date": "2026-02-07T18:33:18.904000+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy",
       "Budget"
     ]
   },
@@ -316,10 +420,7 @@
     "image": "https://cdn.pickuplimes.com/cache/b5/b2/b5b2a83da452b13547632afc219e9240.jpg",
     "date": "2026-02-07T18:33:18.903918+00:00",
     "is_disruptor": false,
-    "special_tags": [
-      "WFPB",
-      "Easy"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "Pick Up Limes",
@@ -328,10 +429,7 @@
     "image": "https://cdn.pickuplimes.com/cache/86/d5/86d5db6096c5feb0ccd05cc050dd099d.jpg",
     "date": "2026-02-07T18:33:18.903825+00:00",
     "is_disruptor": false,
-    "special_tags": [
-      "WFPB",
-      "Easy"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "Pick Up Limes",
@@ -340,10 +438,7 @@
     "image": "https://cdn.pickuplimes.com/cache/e8/96/e896208941d6949396be46f60eab323f.jpg",
     "date": "2026-02-07T18:33:18.903734+00:00",
     "is_disruptor": false,
-    "special_tags": [
-      "WFPB",
-      "Easy"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "Pick Up Limes",
@@ -352,10 +447,7 @@
     "image": "https://cdn.pickuplimes.com/cache/15/64/15647df28a77cf0d5897a562642aee31.jpg",
     "date": "2026-02-07T18:33:18.903632+00:00",
     "is_disruptor": false,
-    "special_tags": [
-      "WFPB",
-      "Easy"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "Pick Up Limes",
@@ -364,10 +456,7 @@
     "image": "https://cdn.pickuplimes.com/cache/ef/58/ef58b4f17dbdeed1137d32f23e72806c.jpg",
     "date": "2026-02-07T18:33:18.903538+00:00",
     "is_disruptor": false,
-    "special_tags": [
-      "WFPB",
-      "Easy"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "Pick Up Limes",
@@ -376,10 +465,7 @@
     "image": "https://cdn.pickuplimes.com/cache/8d/7c/8d7cf70c0915cda437b43b5f603f498f.jpg",
     "date": "2026-02-07T18:33:18.903396+00:00",
     "is_disruptor": false,
-    "special_tags": [
-      "WFPB",
-      "Easy"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "VegNews",
@@ -592,6 +678,7 @@
     "date": "2026-02-06T12:54:49+00:00",
     "is_disruptor": false,
     "special_tags": [
+      "GF",
       "Budget"
     ]
   },
@@ -751,7 +838,8 @@
     "date": "2026-02-05T12:00:00+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy"
+      "Easy",
+      "GF"
     ]
   },
   {
@@ -791,8 +879,8 @@
     "date": "2026-02-05T07:00:00-08:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -1072,7 +1160,9 @@
     "image": "https://jessicainthekitchen.com/wp-content/uploads/2026/01/Vegan-Oat-Flour-Pancakes_15-267x400.jpg",
     "date": "2026-02-03T15:00:00+00:00",
     "is_disruptor": false,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Simple Vegan Blog",
@@ -1102,8 +1192,8 @@
     "date": "2026-02-03T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -1379,7 +1469,8 @@
     "date": "2026-02-01T00:05:50+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB"
+      "WFPB",
+      "GF"
     ]
   },
   {
@@ -1516,10 +1607,7 @@
     "image": "https://www.floraandvino.com/wp-content/uploads/2026/01/Sweet-Spicy-SunButter-Wrap-12-560x840.jpg",
     "date": "2026-01-31T11:00:03+00:00",
     "is_disruptor": true,
-    "special_tags": [
-      "WFPB",
-      "Easy"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "VegNews",
@@ -1669,7 +1757,9 @@
     "image": "https://pickyeaterblog.com/wp-content/uploads/2023/09/vegan-gluten-free-chicken-nuggets.jpg",
     "date": "2026-01-30T02:05:22+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Veggies Don't Bite",
@@ -1809,7 +1899,9 @@
     "image": "https://healthylittlevittles.com/wp-content/uploads/2026/01/vegan-cookie-dough-overnight-oats-5.jpg",
     "date": "2026-01-29T12:00:00+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Plant-Based on a Budget",
@@ -1908,7 +2000,9 @@
     "image": "https://www.rhiansrecipes.com/wp-content/uploads/2026/01/IMG_9846.jpg",
     "date": "2026-01-28T15:13:01+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Gretchen's Vegan Bakery",
@@ -1938,7 +2032,9 @@
     "image": "https://healthylittlevittles.com/wp-content/uploads/2026/01/soup-roundup-683x1024.png",
     "date": "2026-01-28T12:00:00+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Connoisseurus Veg",
@@ -2065,8 +2161,8 @@
     "date": "2026-01-27T17:26:09+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -2114,7 +2210,9 @@
     "image": "https://elavegan.com/wp-content/uploads/2026/01/Stack-of-rich-moist-chocolate-brownies-topped-with-glossy-chocolate-chips-on-a-white-plate.-Nearby-are-whole-dates.jpg",
     "date": "2026-01-27T12:53:04+00:00",
     "is_disruptor": false,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Okonomi Kitchen",
@@ -2135,8 +2233,8 @@
     "date": "2026-01-27T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
       "Easy",
+      "WFPB",
       "Budget"
     ]
   },
@@ -2206,7 +2304,8 @@
     "date": "2026-01-26T19:54:47+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB"
+      "WFPB",
+      "GF"
     ]
   },
   {
@@ -2436,8 +2535,8 @@
     "date": "2026-01-23T11:33:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -2456,9 +2555,7 @@
     "image": "https://veggiekinsblog.com/wp-content/uploads/2026/01/CZ5A9710-1200x1800.jpg",
     "date": "2026-01-23T03:14:19+00:00",
     "is_disruptor": true,
-    "special_tags": [
-      "Easy"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "The Conscious Plant Kitchen",
@@ -2512,7 +2609,6 @@
     "date": "2026-01-22T18:00:48+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
       "Budget"
     ]
   },
@@ -2568,6 +2664,7 @@
     "date": "2026-01-22T12:00:00+00:00",
     "is_disruptor": true,
     "special_tags": [
+      "GF",
       "Budget"
     ]
   },
@@ -2699,8 +2796,8 @@
     "date": "2026-01-20T23:23:34+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -2732,7 +2829,9 @@
     "image": "https://jessicainthekitchen.com/wp-content/uploads/2016/06/Zucchini-Fritters7926-267x400.jpg",
     "date": "2026-01-20T15:00:00+00:00",
     "is_disruptor": false,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Simple Vegan Blog",
@@ -2753,8 +2852,8 @@
     "date": "2026-01-20T13:29:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
       "Easy",
+      "WFPB",
       "Budget"
     ]
   },
@@ -2775,8 +2874,8 @@
     "date": "2026-01-20T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -2796,7 +2895,8 @@
     "date": "2026-01-20T09:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy"
+      "Easy",
+      "GF"
     ]
   },
   {
@@ -3050,8 +3150,8 @@
     "date": "2026-01-16T20:07:56+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
       "Easy",
+      "WFPB",
       "Budget"
     ]
   },
@@ -3200,6 +3300,7 @@
     "is_disruptor": false,
     "special_tags": [
       "Easy",
+      "GF",
       "Budget"
     ]
   },
@@ -3221,7 +3322,9 @@
     "image": "https://healthylittlevittles.com/wp-content/uploads/2026/01/vegan-buckeyes-6.jpg",
     "date": "2026-01-15T12:00:00+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Full of Plants",
@@ -3380,8 +3483,8 @@
     "date": "2026-01-14T01:52:22+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
       "Easy",
+      "WFPB",
       "Budget"
     ]
   },
@@ -3687,8 +3790,8 @@
     "date": "2026-01-09T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -3753,7 +3856,9 @@
     "image": "https://healthylittlevittles.com/wp-content/uploads/2026/01/easy-cranberry-clementine-smoothie.jpg",
     "date": "2026-01-08T12:00:00+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "A Virtual Vegan",
@@ -4047,7 +4152,9 @@
     "image": "https://elavegan.com/wp-content/uploads/2026/01/A-loaf-of-homemade-chickpea-bread-on-a-wooden-board-with-two-slices-cut.jpg",
     "date": "2026-01-04T13:15:01+00:00",
     "is_disruptor": false,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Sweet Potato Soul",
@@ -4066,8 +4173,8 @@
     "date": "2026-01-04T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
       "Easy",
+      "WFPB",
       "Budget"
     ]
   },
@@ -4130,7 +4237,8 @@
     "date": "2026-01-02T12:00:00+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy"
+      "Easy",
+      "GF"
     ]
   },
   {
@@ -4152,8 +4260,8 @@
     "date": "2026-01-02T09:50:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -4221,7 +4329,9 @@
     "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/12/IMG_8855.jpg",
     "date": "2025-12-30T08:03:11+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Cadry's Kitchen",
@@ -4345,7 +4455,9 @@
     "image": "https://healthylittlevittles.com/wp-content/uploads/2025/12/Fudgy-Flourless-Peppermint-Date-Brownies-3.jpg",
     "date": "2025-12-26T17:47:09+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "The Foodie Takes Flight",
@@ -4377,8 +4489,8 @@
     "date": "2025-12-26T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
       "Easy",
+      "WFPB",
       "Budget"
     ]
   },
@@ -4389,7 +4501,9 @@
     "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/12/IMG_8317.jpg",
     "date": "2025-12-26T07:28:42+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Namely Marly",
@@ -4425,7 +4539,9 @@
     "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/12/IMG_8505.jpg",
     "date": "2025-12-23T16:13:57+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "PlantYou",
@@ -4476,9 +4592,7 @@
     "image": "https://veggiekinsblog.com/wp-content/uploads/2025/12/CZ5A9457.jpg",
     "date": "2025-12-21T18:34:48+00:00",
     "is_disruptor": true,
-    "special_tags": [
-      "Easy"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "Rhian's Recipes",
@@ -4487,7 +4601,9 @@
     "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/12/IMG_9676-scaled.jpg",
     "date": "2025-12-21T14:57:38+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "The Hidden Veggies",
@@ -4550,7 +4666,9 @@
     "image": "https://makeitdairyfree.com/wp-content/uploads/2021/09/gluten-free-vegan-dinner-roll-ingredients.png",
     "date": "2025-12-20T21:54:25+00:00",
     "is_disruptor": false,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Watch Learn Eat",
@@ -4588,7 +4706,9 @@
     "image": "https://elavegan.com/wp-content/uploads/2025/12/Chocolate-pudding-load-on-stone-board-dusted-with-cocoa-powder.-Sliced-to-reveal-creamy-texture.jpg",
     "date": "2025-12-20T11:27:35+00:00",
     "is_disruptor": false,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "A Virtual Vegan",
@@ -4678,7 +4798,7 @@
     "date": "2025-12-18T18:00:14+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB"
+      "GF"
     ]
   },
   {
@@ -4688,7 +4808,9 @@
     "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/12/IMG_0140-scaled.jpg",
     "date": "2025-12-18T16:02:15+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "The Little Blog of Vegan",
@@ -4764,9 +4886,7 @@
     "image": "https://veggiekinsblog.com/wp-content/uploads/2025/12/CZ5A9498.jpg",
     "date": "2025-12-17T22:11:31+00:00",
     "is_disruptor": true,
-    "special_tags": [
-      "Easy"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "Sweet Potato Soul",
@@ -4839,10 +4959,7 @@
     "image": "https://www.floraandvino.com/wp-content/uploads/2025/12/Apple-Butter-Truffles-560x840.jpg",
     "date": "2025-12-17T11:00:24+00:00",
     "is_disruptor": true,
-    "special_tags": [
-      "WFPB",
-      "Easy"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "It Doesn't Taste Like Chicken",
@@ -4901,7 +5018,9 @@
     "image": "https://healthylittlevittles.com/wp-content/uploads/2025/12/gf-vegan-apple-recipe-roudup-683x1024.png",
     "date": "2025-12-16T12:00:00+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Minimalist Baker",
@@ -4950,7 +5069,9 @@
     "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/12/IMG_9902-1.jpg",
     "date": "2025-12-15T14:47:59+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Fragrant Vanilla Cake",
@@ -5027,7 +5148,9 @@
     "image": "https://healthylittlevittles.com/wp-content/uploads/2025/12/Soft-Chewy-Date-Almond-Flour-Gingerbread-Cookies-5.jpg",
     "date": "2025-12-12T19:51:29+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Sarah's Vegan Kitchen",
@@ -5054,7 +5177,9 @@
     "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/12/IMG_9776-scaled.jpg",
     "date": "2025-12-12T15:48:45+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "The Little Blog of Vegan",
@@ -5085,8 +5210,8 @@
     "date": "2025-12-12T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -5136,7 +5261,8 @@
     "date": "2025-12-11T12:00:00+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy"
+      "Easy",
+      "GF"
     ]
   },
   {
@@ -5157,10 +5283,7 @@
     "image": "https://www.floraandvino.com/wp-content/uploads/2025/12/SunButter-Chocolate-Chip-Cookies-560x840.jpg",
     "date": "2025-12-10T13:00:46+00:00",
     "is_disruptor": true,
-    "special_tags": [
-      "WFPB",
-      "Easy"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "Sweet Potato Soul",
@@ -5254,7 +5377,9 @@
     "image": "https://healthylittlevittles.com/wp-content/uploads/2025/12/Vegan-Peppermint-Swirl-Marshmallows-3.jpg",
     "date": "2025-12-08T12:00:00+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Fragrant Vanilla Cake",
@@ -5344,7 +5469,9 @@
     "image": "https://elavegan.com/wp-content/uploads/2025/12/Close-up-of-hands-holding-a-crescent-shaped-cookie-coated-with-almond-slices-its-ends-dipped-in-melted-chocolate.jpg",
     "date": "2025-12-06T12:38:55+00:00",
     "is_disruptor": false,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "PlantYou",
@@ -5354,8 +5481,8 @@
     "date": "2025-12-05T19:52:47+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -5395,7 +5522,7 @@
     "date": "2025-12-04T18:00:19+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB"
+      "GF"
     ]
   },
   {
@@ -5426,7 +5553,9 @@
     "image": "https://healthylittlevittles.com/wp-content/uploads/2025/12/Hot-Cocoa-Dip-5.jpg",
     "date": "2025-12-04T13:41:01+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "One Arab Vegan",
@@ -5508,8 +5637,8 @@
     "date": "2025-12-02T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -5559,7 +5688,9 @@
     "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/11/IMG_9543-scaled.jpg",
     "date": "2025-11-30T15:02:07+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "It Doesn't Taste Like Chicken",
@@ -5599,10 +5730,7 @@
     "image": "https://www.floraandvino.com/wp-content/uploads/2025/11/FV-Holiday-Gift-Guide-2025.jpg",
     "date": "2025-11-28T21:36:25+00:00",
     "is_disruptor": true,
-    "special_tags": [
-      "WFPB",
-      "Easy"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "The Stingy Vegan",
@@ -5623,7 +5751,9 @@
     "image": "https://healthylittlevittles.com/wp-content/uploads/2025/11/mini-christmas-cookies.jpg",
     "date": "2025-11-28T12:00:00+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "The First Mess",
@@ -5670,10 +5800,7 @@
     "image": "https://www.floraandvino.com/wp-content/uploads/2025/11/Applesauce-Gingerbread-Loaf-560x840.jpg",
     "date": "2025-11-26T11:00:22+00:00",
     "is_disruptor": true,
-    "special_tags": [
-      "WFPB",
-      "Easy"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "It Doesn't Taste Like Chicken",
@@ -5823,8 +5950,8 @@
     "date": "2025-11-23T16:02:45+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -5896,10 +6023,7 @@
     "image": "https://www.floraandvino.com/wp-content/uploads/2025/11/Rainbow-Roasted-Carrots-with-SunButter-Sauce-8-560x840.jpg",
     "date": "2025-11-22T13:00:35+00:00",
     "is_disruptor": true,
-    "special_tags": [
-      "WFPB",
-      "Easy"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "Sarah's Vegan Kitchen",
@@ -5926,7 +6050,9 @@
     "image": "https://elavegan.com/wp-content/uploads/2025/11/A-hand-reaches-for-a-square-herb-seasoned-chickpea-cracker-on-a-white-plate-full-of-similar-crackers.jpg",
     "date": "2025-11-21T15:06:36+00:00",
     "is_disruptor": false,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Snixy Kitchen",
@@ -5974,7 +6100,8 @@
     "date": "2025-11-20T12:00:00+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy"
+      "Easy",
+      "GF"
     ]
   },
   {
@@ -6079,8 +6206,7 @@
     "date": "2025-11-18T19:56:57+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "WFPB"
     ]
   },
   {
@@ -6101,7 +6227,9 @@
     "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/11/IMG_0219-scaled.jpg",
     "date": "2025-11-18T11:18:57+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Veggiekins",
@@ -6110,9 +6238,7 @@
     "image": "https://veggiekinsblog.com/wp-content/uploads/2025/11/IMG_2754-1200x1600.jpg",
     "date": "2025-11-17T23:40:42+00:00",
     "is_disruptor": true,
-    "special_tags": [
-      "Easy"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "Veggiekins",
@@ -6121,9 +6247,7 @@
     "image": "https://veggiekinsblog.com/wp-content/uploads/2025/10/CZ5A9533-1200x1799.jpg",
     "date": "2025-11-17T23:34:21+00:00",
     "is_disruptor": true,
-    "special_tags": [
-      "Easy"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "Sarah's Vegan Kitchen",
@@ -6179,7 +6303,9 @@
     "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/11/IMG_9438.jpg",
     "date": "2025-11-16T14:33:30+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "It Doesn't Taste Like Chicken",
@@ -6230,7 +6356,9 @@
     "image": "https://thefirstmess.com/wp-content/uploads/2025/11/chocolate-pecan-pie-bars-vegan-gf-02.jpg",
     "date": "2025-11-14T21:43:53+00:00",
     "is_disruptor": false,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "My Darling Vegan",
@@ -6267,7 +6395,7 @@
     "date": "2025-11-13T18:00:23+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB"
+      "GF"
     ]
   },
   {
@@ -6299,7 +6427,9 @@
     "image": "https://healthylittlevittles.com/wp-content/uploads/2025/11/vegan-garlic-parmesan-roasted-pumpkin-seeds-2.jpg",
     "date": "2025-11-13T12:00:00+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "It Doesn't Taste Like Chicken",
@@ -6411,10 +6541,7 @@
     "image": "https://www.floraandvino.com/wp-content/uploads/2025/11/Cinnamon-Raisin-Cookie-Baked-Oatmeal-11-560x840.jpg",
     "date": "2025-11-08T11:00:15+00:00",
     "is_disruptor": true,
-    "special_tags": [
-      "WFPB",
-      "Easy"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "Bianca Zapatka",
@@ -6454,9 +6581,7 @@
     "image": "icon.jpg",
     "date": "2025-11-07T01:32:58+00:00",
     "is_disruptor": true,
-    "special_tags": [
-      "Easy"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "Running on Real Food",
@@ -6498,7 +6623,9 @@
     "image": "https://healthylittlevittles.com/wp-content/uploads/2025/11/olive-oil-pumpkin-cake-2.jpg",
     "date": "2025-11-06T12:00:00+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Elavegan",
@@ -6507,7 +6634,9 @@
     "image": "https://elavegan.com/wp-content/uploads/2025/11/A-pan-filled-with-creamy-onion-pasta-mixed-with-cherry-tomatoes-and-herbs-sits-on-a-gray-cloth-1.jpg",
     "date": "2025-11-06T11:11:11+00:00",
     "is_disruptor": false,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Rainbow Plant Life",
@@ -6560,8 +6689,8 @@
     "date": "2025-11-05T03:20:51+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
       "Easy",
+      "WFPB",
       "Budget"
     ]
   },
@@ -6572,9 +6701,7 @@
     "image": "https://veggiekinsblog.com/wp-content/uploads/2025/11/CZ5A9850.jpg",
     "date": "2025-11-05T02:26:15+00:00",
     "is_disruptor": true,
-    "special_tags": [
-      "Easy"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "Addicted to Dates",
@@ -6603,7 +6730,9 @@
     "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/11/IMG_9074.jpg",
     "date": "2025-11-03T16:47:27+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Fragrant Vanilla Cake",
@@ -6655,7 +6784,9 @@
     "image": "https://www.unconventionalbaker.com/wp-content/uploads/2025/10/Plum-Tart-SQ.jpg",
     "date": "2025-11-01T01:27:13+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Rabbit and Wolves",
@@ -6674,8 +6805,8 @@
     "date": "2025-10-31T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -6712,10 +6843,7 @@
     "image": "https://www.floraandvino.com/wp-content/uploads/2025/10/Black-Sesame-Noodle-Bowl-19-560x840.jpg",
     "date": "2025-10-30T13:30:47+00:00",
     "is_disruptor": true,
-    "special_tags": [
-      "WFPB",
-      "Easy"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "Healthy Little Vittles",
@@ -6724,7 +6852,9 @@
     "image": "https://healthylittlevittles.com/wp-content/uploads/2025/10/Pumpkin-Pie-Smoothie-2.jpg",
     "date": "2025-10-30T11:00:00+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Mary's Test Kitchen",
@@ -6755,7 +6885,8 @@
     "date": "2025-10-29T04:05:45+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy"
+      "Easy",
+      "GF"
     ]
   },
   {
@@ -6777,8 +6908,8 @@
     "date": "2025-10-28T17:13:41+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -6788,7 +6919,9 @@
     "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/10/IMG_9347-scaled.jpg",
     "date": "2025-10-27T11:23:30+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Fragrant Vanilla Cake",
@@ -6891,7 +7024,9 @@
     "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/10/IMG_0042-scaled.jpg",
     "date": "2025-10-23T07:12:16+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Namely Marly",
@@ -6911,9 +7046,7 @@
     "image": "https://veggiekinsblog.com/wp-content/uploads/2025/10/CZ5A8181.jpg",
     "date": "2025-10-22T16:33:15+00:00",
     "is_disruptor": true,
-    "special_tags": [
-      "Easy"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "Namely Marly",
@@ -6943,7 +7076,9 @@
     "image": "https://healthylittlevittles.com/wp-content/uploads/2025/10/Pumpkin-Pie-Dates-4.jpg",
     "date": "2025-10-22T11:00:00+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "It Doesn't Taste Like Chicken",
@@ -6975,8 +7110,8 @@
     "date": "2025-10-21T16:43:44+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
       "Easy",
+      "WFPB",
       "Budget"
     ]
   },
@@ -7016,10 +7151,7 @@
     "image": "https://www.floraandvino.com/wp-content/uploads/2025/10/Vegan-Pumpkin-Pie-Cheesecake-14-560x840.jpg",
     "date": "2025-10-18T10:00:02+00:00",
     "is_disruptor": true,
-    "special_tags": [
-      "WFPB",
-      "Easy"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "My Darling Vegan",
@@ -7040,7 +7172,9 @@
     "image": "https://elavegan.com/wp-content/uploads/2025/09/A-casserole-dish-with-pizza-baked-oats-featuring-diced-red-bell-peppers-sliced-black-olives-and-garnished-with-fresh-herbs.jpg",
     "date": "2025-10-17T10:21:03+00:00",
     "is_disruptor": false,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Rhian's Recipes",
@@ -7049,7 +7183,9 @@
     "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/10/pumpkin-desserts.jpg",
     "date": "2025-10-17T08:03:30+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Strength and Sunshine",
@@ -7059,7 +7195,7 @@
     "date": "2025-10-16T17:00:46+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB"
+      "GF"
     ]
   },
   {
@@ -7069,7 +7205,9 @@
     "image": "https://healthylittlevittles.com/wp-content/uploads/2025/10/everything-bagel-roasted-pumpkin-seeds-6.jpg",
     "date": "2025-10-16T11:00:00+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "The Vegan 8",
@@ -7129,7 +7267,9 @@
     "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/10/apple-desserts-roundup.jpg",
     "date": "2025-10-13T14:54:46+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Watch Learn Eat",
@@ -7140,7 +7280,8 @@
     "is_disruptor": true,
     "special_tags": [
       "Easy",
-      "WFPB"
+      "WFPB",
+      "GF"
     ]
   },
   {
@@ -7179,7 +7320,9 @@
     "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/10/IMG_9250-scaled.jpg",
     "date": "2025-10-10T14:39:29+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Namely Marly",
@@ -7229,8 +7372,8 @@
     "date": "2025-10-08T15:47:23+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -7261,7 +7404,8 @@
     "date": "2025-10-04T09:03:35+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB"
+      "WFPB",
+      "GF"
     ]
   },
   {
@@ -7283,7 +7427,9 @@
     "image": "https://www.unconventionalbaker.com/wp-content/uploads/2025/10/kumquat-marmalade-sq.jpg",
     "date": "2025-10-03T01:26:04+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Namely Marly",
@@ -7390,8 +7536,8 @@
     "date": "2025-09-25T17:58:30+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
       "Easy",
+      "WFPB",
       "Budget"
     ]
   },
@@ -7403,7 +7549,7 @@
     "date": "2025-09-25T17:00:11+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB"
+      "GF"
     ]
   },
   {
@@ -7426,6 +7572,7 @@
     "is_disruptor": false,
     "special_tags": [
       "Easy",
+      "GF",
       "Budget"
     ]
   },
@@ -7437,8 +7584,8 @@
     "date": "2025-09-21T16:04:26+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -7500,7 +7647,9 @@
     "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/09/IMG_9141-scaled.jpg",
     "date": "2025-09-15T14:41:05+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Fragrant Vanilla Cake",
@@ -7550,8 +7699,8 @@
     "date": "2025-09-13T18:58:14+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -7574,7 +7723,7 @@
     "date": "2025-09-09T17:00:03+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB"
+      "GF"
     ]
   },
   {
@@ -7597,6 +7746,7 @@
     "is_disruptor": false,
     "special_tags": [
       "Easy",
+      "GF",
       "Budget"
     ]
   },
@@ -7628,7 +7778,9 @@
     "image": "https://www.unconventionalbaker.com/wp-content/uploads/2025/09/tahini-raspberry-cake-sq1.jpg",
     "date": "2025-09-06T03:00:22+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "My Darling Vegan",
@@ -7690,7 +7842,9 @@
     "image": "https://www.unconventionalbaker.com/wp-content/uploads/2025/09/blueberry-cake-sq.jpg",
     "date": "2025-09-02T10:37:28+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Vegan Heaven",
@@ -7757,7 +7911,9 @@
     "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/08/IMG_8415-scaled.jpg",
     "date": "2025-08-28T07:30:31+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Unconventional Baker",
@@ -7766,7 +7922,9 @@
     "image": "https://www.unconventionalbaker.com/wp-content/uploads/2025/08/mini-blueberry-pie-sq2.jpg",
     "date": "2025-08-27T01:09:53+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Choosing Chia",
@@ -7807,7 +7965,9 @@
     "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/08/IMG_8681.jpg",
     "date": "2025-08-22T15:10:48+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Strength and Sunshine",
@@ -7816,9 +7976,7 @@
     "image": "https://strengthandsunshine.com/wp-content/uploads/2025/08/Coconut-Chewies-7.jpg",
     "date": "2025-08-21T17:00:07+00:00",
     "is_disruptor": true,
-    "special_tags": [
-      "WFPB"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "Rainbow Nourishments",
@@ -7865,7 +8023,9 @@
     "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/08/IMG_8739-scaled.jpg",
     "date": "2025-08-18T14:18:22+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Unconventional Baker",
@@ -7874,7 +8034,9 @@
     "image": "https://www.unconventionalbaker.com/wp-content/uploads/2025/08/macadamia-espresso-ice-cream-sq2.jpg",
     "date": "2025-08-18T00:37:23+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Namely Marly",
@@ -7944,7 +8106,9 @@
     "image": "https://www.unconventionalbaker.com/wp-content/uploads/2025/07/garlic-scape-pesto-sq2.jpg",
     "date": "2025-07-30T02:04:32+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Vegan Yack Attack",
@@ -8054,9 +8218,7 @@
     "image": "https://veggiekinsblog.com/wp-content/uploads/2025/06/CZ5A8498-scaled.jpg",
     "date": "2025-06-30T21:34:37+00:00",
     "is_disruptor": true,
-    "special_tags": [
-      "Easy"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "The Vegan 8",
@@ -8077,7 +8239,9 @@
     "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/06/IMG_8203-1.jpg",
     "date": "2025-06-29T08:46:13+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Unconventional Baker",
@@ -8086,7 +8250,9 @@
     "image": "https://www.unconventionalbaker.com/wp-content/uploads/2025/06/pandan-chocolates-sq.jpg",
     "date": "2025-06-25T08:11:17+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Rhian's Recipes",
@@ -8095,7 +8261,9 @@
     "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/06/IMG_8144-1.jpg",
     "date": "2025-06-24T09:18:03+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "The Stingy Vegan",
@@ -8145,7 +8313,9 @@
     "image": "icon.jpg",
     "date": "2025-06-09T07:12:44+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Fran Costigan",
@@ -8183,7 +8353,9 @@
     "image": "https://www.unconventionalbaker.com/wp-content/uploads/2025/05/tahini-chocolate-fudge-sq.jpg",
     "date": "2025-05-30T05:05:38+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Vegan Heaven",
@@ -8244,7 +8416,9 @@
     "image": "https://www.rhiansrecipes.com/wp-content/uploads/2025/05/IMG_8072-1.jpg",
     "date": "2025-05-14T14:37:23+00:00",
     "is_disruptor": true,
-    "special_tags": []
+    "special_tags": [
+      "GF"
+    ]
   },
   {
     "blog_name": "Namely Marly",
