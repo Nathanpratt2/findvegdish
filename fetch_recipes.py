@@ -14,7 +14,9 @@ import os
 # Format: ("Blog Name", "Feed URL", ["SPECIAL_TAGS"])
 # Tags: "WFPB", "Easy", "Budget"
 
-#OTHER BLOG NOTES: Oh She Glows and Avant-Garde Vegan posts to a closed app now - not accessible/ School Night Vegan confirmed in site map not posted in years. 
+#OTHER BLOG NOTES: Oh She Glows and Avant-Garde Vegan posts to a closed app now - not accessible/ School Night Vegan confirmed in site map not posted in years
+
+#DUPLICATES - some are there to create a secondary cap to allow for more gluten free
 
 TOP_BLOGGERS = [
     ("Minimalist Baker", "https://minimalistbaker.com/recipes/vegan/feed/", ["Easy"]),
