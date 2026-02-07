@@ -118,13 +118,28 @@ DISPLAY_NAME_MAP = {
 ALL_FEEDS = TOP_BLOGGERS + DISRUPTORS
 
 # --- MAPS ---
-URL_MAP = dict((name, url) for name, url, tags in ALL_FEEDS)
-for name, url, tags, mode in HTML_SOURCES:
-    URL_MAP[name] = url
+# Robust map generation that skips malformed entries if they exist
+URL_MAP = {}
+BLOG_TAG_MAP = {}
 
-BLOG_TAG_MAP = dict((name, tags) for name, url, tags in ALL_FEEDS)
-for name, url, tags, mode in HTML_SOURCES:
-    BLOG_TAG_MAP[name] = tags
+# Process RSS Feeds
+for item in ALL_FEEDS:
+    if len(item) == 3:
+        name, url, tags = item
+        URL_MAP[name] = url
+        BLOG_TAG_MAP[name] = tags
+    else:
+        print(f"⚠️ Warning: Skipping malformed RSS config: {item}")
+
+# Process HTML Sources
+for item in HTML_SOURCES:
+    if len(item) == 4:
+        name, url, tags, mode = item
+        URL_MAP[name] = url
+        BLOG_TAG_MAP[name] = tags
+    else:
+        print(f"⚠️ Warning: Skipping malformed HTML config: {item}")
+
 
 MAX_RECIPES_PER_BLOG = 50 
 cutoff_date = datetime.now().astimezone() - timedelta(days=360)
