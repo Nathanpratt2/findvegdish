@@ -1,10 +1,10 @@
 # Feed Health Report
-**Last Run:** 2026-02-07T15:55:18.761367
+**Last Run:** 2026-02-07T17:05:40.916697
 **Total Blogs:** 76
 **Avg Recipes per Blog:** 10.5
 **Active Blogs (Last 90d):** 70 / 76
 **Total Database Size:** 801
-**New Today:** 12
+**New Today:** 7
 **WFPB:** 147 (18%)
 **Easy:** 224 (27%)
 **Budget:** 159 (19%)
@@ -79,7 +79,7 @@
 | The Little Blog of Vegan | https://www.thelittleblogofvegan.com/feed/ | 0 | 12 | 0 | 5 | 0 | 2026-02-06 | ✅ OK |
 | The Post-Punk Kitchen | https://www.theppk.com/feed/ | 0 | 8 | 1 | 1 | 1 | 2026-02-06 | ✅ OK |
 | The Stingy Vegan | https://thestingyvegan.com/feed/ | 0 | 10 | 0 | 10 | 10 | 2025-12-12 | ✅ OK |
-| VegNews | https://vegnews.com/feed | 5 | 29 | 3 | 5 | 1 | 2026-02-07 | ✅ OK |
+| VegNews | https://vegnews.com/feed | 0 | 29 | 3 | 5 | 1 | 2026-02-07 | ✅ OK |
 | Vegan Heaven | https://veganheaven.org/feed/ | 0 | 10 | 0 | 0 | 1 | 2026-01-06 | ✅ OK |
 | Vegan Richa | https://www.veganricha.com/feed/ | 0 | 12 | 0 | 3 | 3 | 2026-02-04 | ✅ OK |
 | Vegan in the Freezer | https://veganinthefreezer.com/feed/ | 0 | 1 | 0 | 0 | 0 | 2026-01-25 | ✅ OK |
