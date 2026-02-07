@@ -87,7 +87,6 @@ DISRUPTORS = [
     ("Rainbow Nourishments", "https://www.rainbownourishments.com/feed/", []),
     ("Rhian's Recipes", "https://www.rhiansrecipes.com/feed/", []),
     ("Snixy Kitchen", "https://www.snixykitchen.com/special-diet/vegan/feed/", []),
-     ("The Loopy Whisk", "https://theloopywhisk.com/diet/vegan/feed/", []),
     ("Monkey & Me Kitchen Adventures", "https://monkeyandmekitchenadventures.com/feed/", ["WFPB"]),
     ("Ann Arbor Vegan Kitchen", "https://www.annarborvegankitchen.com/feed/", ["WFPB"]),
     ("Veggiekins", "https://veggiekinsblog.com/feed/", ["Easy"]),
@@ -106,7 +105,8 @@ HTML_SOURCES = [
     ("Vegan Richa GF", "https://www.veganricha.com/category/gluten-free/", [], "wordpress"),
     ("School Night Vegan", "https://schoolnightvegan.com/category/recipes/", [], "wordpress"),
     ("Love and Lemons", "https://www.loveandlemons.com/category/recipes/vegan/", [], "wordpress"),
-    ("Cookie and Kate", "https://cookieandkate.com/category/vegan-recipes/", [], "wordpress")
+    ("Cookie and Kate", "https://cookieandkate.com/category/vegan-recipes/", [], "wordpress"),
+    ("The Loopy Whisk", "https://theloopywhisk.com/diet/vegan/", [], "wordpress")
 ]
 
 ALL_FEEDS = TOP_BLOGGERS + DISRUPTORS
