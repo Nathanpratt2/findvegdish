@@ -1,10 +1,10 @@
 # Feed Health Report
-**Last Run:** 2026-02-07T11:00:25.464832
+**Last Run:** 2026-02-07T11:51:07.707415
 **Total Blogs:** 76
 **Avg Recipes per Blog:** 10.4
 **Active Blogs (Last 90d):** 70 / 76
 **Total Database Size:** 791
-**New Today:** 8
+**New Today:** 7
 **WFPB:** 146 (18%)
 **Easy:** 224 (28%)
 **Budget:** 159 (20%)
@@ -37,7 +37,7 @@
 | Forks Over Knives | https://www.forksoverknives.com/all-recipes/feed/ | 0 | 14 | 14 | 2 | 4 | 2026-02-05 | ✅ OK |
 | Fragrant Vanilla Cake | https://www.fragrantvanilla.com/feed/ | 0 | 10 | 0 | 0 | 0 | 2026-01-19 | ✅ OK |
 | From My Bowl | https://frommybowl.com/feed/ | 0 | 11 | 11 | 11 | 2 | 2026-02-03 | ✅ OK |
-| Full of Plants | https://fullofplants.com/feed/ | 1 | 7 | 0 | 0 | 0 | 2026-02-07 | ✅ OK |
+| Full of Plants | https://fullofplants.com/feed/ | 0 | 7 | 0 | 0 | 0 | 2026-02-07 | ✅ OK |
 | Gretchen's Vegan Bakery | https://www.gretchensveganbakery.com/feed/ | 0 | 16 | 0 | 1 | 0 | 2026-02-05 | ✅ OK |
 | Healthy Little Vittles | https://healthylittlevittles.com/feed/ | 0 | 20 | 0 | 4 | 1 | 2026-02-05 | ✅ OK |
 | HealthyGirl Kitchen | https://healthygirlkitchen.com/feed/ | 0 | 11 | 2 | 3 | 0 | 2026-02-06 | ✅ OK |
