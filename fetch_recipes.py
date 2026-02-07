@@ -258,7 +258,8 @@ initial_count = len(recipes)
 # Cleanse old VegNews entries if they exist
 recipes = [r for r in recipes if not (r['blog_name'] == "VegNews" and "/recipes/" not in r['link'])]
 existing_links = {r['link'] for r in recipes}
-feed_stats = {} 
+feed_stats = {}
+previous_domain = ""
 
 print(f"Fetching recipes from {len(ALL_FEEDS)} blogs using Cloudscraper...")
 
