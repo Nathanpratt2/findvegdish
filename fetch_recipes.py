@@ -102,10 +102,11 @@ HTML_SOURCES = [
     ("Pick Up Limes", "https://www.pickuplimes.com/recipe/", [], "custom_pul"),
     ("Rainbow Plant Life GF", "https://rainbowplantlife.com/diet/gluten-free/", ["GF"], "wordpress"),
     ("Vegan Richa GF", "https://www.veganricha.com/category/gluten-free/", ["GF"], "wordpress"),
-    ("School Night Vegan", "https://schoolnightvegan.com/category/recipes/", [], "wordpress"),
+    ("School Night Vegan", "https://schoolnightvegan.com/category/recipes/", [], "custom_pul"),
     ("Love and Lemons", "https://www.loveandlemons.com/category/recipes/vegan/", [], "wordpress"),
-    ("Cookie and Kate", "https://cookieandkate.com/category/vegan-recipes/", [], "wordpress"),
-    ("The Loopy Whisk", "https://theloopywhisk.com/diet/vegan/", ["GF"], "wordpress")
+    ("Cookie and Kate", "https://cookieandkate.com/category/vegan-recipes/", [], "custom_pul"),
+    ("The Loopy Whisk", "https://theloopywhisk.com/diet/vegan/", ["GF"], "wordpress"),
+    ("Oh She Glows","https://www.ohsheglows.com/recipe-search/",[], "wordpress")
 ]
 
 # --- DISPLAY NAME MAPPING ---
