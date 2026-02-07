@@ -1,10 +1,10 @@
 # Feed Health Report
-**Last Run:** 2026-02-07T04:56:40.367779
+**Last Run:** 2026-02-07T07:49:26.006353
 **Total Blogs:** 67
 **Avg Recipes per Blog:** 11.0
 **Active Blogs (Last 90d):** 62 / 67
 **Total Database Size:** 739
-**New Today:** 8
+**New Today:** 7
 **WFPB:** 135 (18%)
 **Easy:** 229 (30%)
 **Budget:** 157 (21%)
@@ -78,4 +78,4 @@
 | Vegan in the Freezer | https://veganinthefreezer.com/feed/ | 0 | 1 | 0 | 0 | 0 | 2026-01-25 | ✅ OK |
 | Veggiekins | https://veggiekinsblog.com/feed/ | 0 | 10 | 0 | 10 | 0 | 2026-01-29 | ✅ OK |
 | Veggies Don't Bite | https://veggiesdontbite.com/feed/ | 0 | 19 | 1 | 1 | 3 | 2026-02-06 | ✅ OK |
-| Watch Learn Eat | https://watchlearneat.com/feed/ | 1 | 11 | 1 | 11 | 2 | 2026-02-07 | ✅ OK |
+| Watch Learn Eat | https://watchlearneat.com/feed/ | 0 | 11 | 1 | 11 | 2 | 2026-02-07 | ✅ OK |
