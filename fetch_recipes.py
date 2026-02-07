@@ -115,8 +115,6 @@ DISPLAY_NAME_MAP = {
     "Vegan Richa GF": "Vegan Richa"
 }
 
-]
-
 ALL_FEEDS = TOP_BLOGGERS + DISRUPTORS
 
 # --- MAPS ---
