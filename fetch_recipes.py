@@ -273,7 +273,7 @@ def generate_sitemap(recipes):
 
 # --- HTML SCRAPING LOGIC ---
 
-def scrape_html_feed(name, url, mode, existing_links):
+def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags):
     print(f"   🔎 HTML Scraping: {name} (Mode: {mode})...")
     time.sleep(random.uniform(4, 7))
     
@@ -345,7 +345,15 @@ def scrape_html_feed(name, url, mode, existing_links):
             if not title or not link: continue
             if is_pet_recipe(title): continue
             
-            if link in existing_links: continue
+            # --- FIX START: Handle Duplicates by Merging Tags ---
+            if link in existing_links:
+                # If recipe exists (e.g. from Main Feed), add this source's tags to it (e.g. GF)
+                for r in recipes_list:
+                    if r['link'] == link:
+                        r['special_tags'] = list(set(r.get('special_tags', []) + source_tags))
+                        break
+                continue
+            # --- FIX END ---
             
             if not date_obj:
                 date_obj = datetime.now() 
@@ -366,7 +374,7 @@ def scrape_html_feed(name, url, mode, existing_links):
                     "image": image if image else "icon.jpg",
                     "date": date_obj.isoformat(),
                     "is_disruptor": False,
-                    "special_tags": []
+                    "special_tags": list(source_tags) # Initialize with source tags
                 })
                 existing_links.add(link)
 
@@ -478,7 +486,8 @@ for item in HTML_SOURCES:
     name, url, tags, mode = item
     
     try:
-        new_items, status = scrape_html_feed(name, url, mode, existing_links)
+        # Pass 'recipes' list and current 'tags' (e.g. ['GF']) to allow merging
+        new_items, status = scrape_html_feed(name, url, mode, existing_links, recipes, tags)
         recipes.extend(new_items)
         feed_stats[name] = {'new': len(new_items), 'status': status}
     except Exception as e:
@@ -490,15 +499,18 @@ print("\nUpdating tags for all recipes...")
 for recipe in recipes:
     bname = recipe['blog_name']
     
+    current_tags = recipe.get('special_tags', []) # Grab existing tags (including GF from overlaps)
+
     # 1. Base tags (from configuration)
     base_tags = list(BLOG_TAG_MAP.get(bname, []))
     
     # 2. Auto tags (WFPB, Easy, Budget, GF via Keywords)
     auto_tags = get_auto_tags(recipe['title'])
     
-    combined_tags = list(set(base_tags + auto_tags))
+    # Merge Current + Base + Auto
+    combined_tags = list(set(current_tags + base_tags + auto_tags))
     recipe['special_tags'] = combined_tags
-
+    
 # 6. Prune & Stats (Using Internal Names)
 print("Pruning database and calculating stats...")
 recipes_by_blog = {}
