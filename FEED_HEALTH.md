@@ -1,10 +1,10 @@
 # Feed Health Report
-**Last Run:** 2026-02-07T10:32:24.024609
+**Last Run:** 2026-02-07T11:00:25.464832
 **Total Blogs:** 76
 **Avg Recipes per Blog:** 10.4
 **Active Blogs (Last 90d):** 70 / 76
-**Total Database Size:** 790
-**New Today:** 7
+**Total Database Size:** 791
+**New Today:** 8
 **WFPB:** 146 (18%)
 **Easy:** 224 (28%)
 **Budget:** 159 (20%)
@@ -13,7 +13,7 @@
 | Blog Name | URL | New | Total | WFPB | Easy | Budget | Latest | Status |
 |-----------|-----|-----|-------|------|------|--------|--------|--------|
 | Fran Costigan | https://www.francostigan.com/feed/ | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/ConnErr |
-| Rainbow Plant Life GF | https://rainbowplantlife.com/feed/ | 0 | 0 | 0 | 0 | 0 | N/A | ❌ No Recipes |
+| Rainbow Plant Life GF | https://rainbowplantlife.com/category/recipes/gluten-free/feed/ | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/ConnErr |
 | The Loopy Whisk | https://theloopywhisk.com/diet/vegan/feed/ | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/ConnErr |
 | Vegan Richa GF | https://www.veganricha.com/category/gluten-free/feed/ | 0 | 0 | 0 | 0 | 0 | N/A | ❌ No Recipes |
 | Healthier Steps | https://healthiersteps.com/feed/ | 0 | 2 | 1 | 0 | 0 | 2025-05-18 | ⚠️ Stale (>90d)  |
@@ -37,7 +37,7 @@
 | Forks Over Knives | https://www.forksoverknives.com/all-recipes/feed/ | 0 | 14 | 14 | 2 | 4 | 2026-02-05 | ✅ OK |
 | Fragrant Vanilla Cake | https://www.fragrantvanilla.com/feed/ | 0 | 10 | 0 | 0 | 0 | 2026-01-19 | ✅ OK |
 | From My Bowl | https://frommybowl.com/feed/ | 0 | 11 | 11 | 11 | 2 | 2026-02-03 | ✅ OK |
-| Full of Plants | https://fullofplants.com/feed/ | 0 | 6 | 0 | 0 | 0 | 2026-01-31 | ✅ OK |
+| Full of Plants | https://fullofplants.com/feed/ | 1 | 7 | 0 | 0 | 0 | 2026-02-07 | ✅ OK |
 | Gretchen's Vegan Bakery | https://www.gretchensveganbakery.com/feed/ | 0 | 16 | 0 | 1 | 0 | 2026-02-05 | ✅ OK |
 | Healthy Little Vittles | https://healthylittlevittles.com/feed/ | 0 | 20 | 0 | 4 | 1 | 2026-02-05 | ✅ OK |
 | HealthyGirl Kitchen | https://healthygirlkitchen.com/feed/ | 0 | 11 | 2 | 3 | 0 | 2026-02-06 | ✅ OK |
@@ -59,7 +59,7 @@
 | Plantifully Based | https://plantifullybasedblog.com/feed/ | 0 | 9 | 1 | 2 | 0 | 2026-01-31 | ✅ OK |
 | Rabbit and Wolves | https://www.rabbitandwolves.com/feed/ | 0 | 10 | 0 | 1 | 1 | 2026-01-19 | ✅ OK |
 | Rainbow Nourishments | https://www.rainbownourishments.com/feed/ | 0 | 11 | 0 | 2 | 1 | 2026-02-06 | ✅ OK |
-| Rainbow Plant Life | https://rainbowplantlife.com/vegan-gluten-free-recipes/feed/ | 0 | 10 | 2 | 0 | 2 | 2026-01-29 | ✅ OK |
+| Rainbow Plant Life | https://rainbowplantlife.com/feed/ | 0 | 10 | 2 | 0 | 2 | 2026-01-29 | ✅ OK |
 | Rhian's Recipes | https://www.rhiansrecipes.com/feed/ | 0 | 24 | 0 | 0 | 0 | 2026-01-28 | ✅ OK |
 | Running on Real Food | https://runningonrealfood.com/feed/ | 0 | 10 | 10 | 0 | 2 | 2026-01-29 | ✅ OK |
 | Sarah's Vegan Kitchen | https://sarahsvegankitchen.com/feed/ | 0 | 16 | 0 | 0 | 3 | 2026-02-04 | ✅ OK |

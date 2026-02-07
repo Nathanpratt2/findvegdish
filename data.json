@@ -11,6 +11,15 @@
     ]
   },
   {
+    "blog_name": "Full of Plants",
+    "title": "Homemade Stinky Tofu (Hairy Tofu)",
+    "link": "https://fullofplants.com/homemade-stinky-tofu-hairy-tofu/?adt_ei={$email}",
+    "image": "https://fullofplants.com/wp-content/uploads/2026/01/how-to-make-stinky-tofu-also-known-as-hairy-tofu-21-720x900.jpg",
+    "date": "2026-02-07T10:00:00+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
     "blog_name": "Watch Learn Eat",
     "title": "Chocolate Brownie Baked Oatmeal (High Protein, Dairy Free)",
     "link": "https://watchlearneat.com/brownie-baked-oatmeal/",
@@ -1471,8 +1480,8 @@
     "date": "2026-01-28T12:13:15+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -1515,8 +1524,8 @@
     "date": "2026-01-28T11:45:05+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
       "Easy",
+      "WFPB",
       "Budget"
     ]
   },
@@ -1680,8 +1689,8 @@
     "is_disruptor": false,
     "special_tags": [
       "WFPB",
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -2298,8 +2307,8 @@
     "is_disruptor": false,
     "special_tags": [
       "WFPB",
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -2586,8 +2595,8 @@
     "is_disruptor": false,
     "special_tags": [
       "WFPB",
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -2916,8 +2925,8 @@
     "is_disruptor": true,
     "special_tags": [
       "WFPB",
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -3602,8 +3611,8 @@
     "is_disruptor": false,
     "special_tags": [
       "WFPB",
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -3836,8 +3845,8 @@
     "date": "2025-12-28T20:39:42+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -3913,8 +3922,8 @@
     "is_disruptor": false,
     "special_tags": [
       "WFPB",
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -4333,8 +4342,8 @@
     "date": "2025-12-17T20:30:26+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
       "Easy",
+      "WFPB",
       "Budget"
     ]
   },
@@ -6096,8 +6105,8 @@
     "is_disruptor": true,
     "special_tags": [
       "WFPB",
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -6502,8 +6511,8 @@
     "is_disruptor": true,
     "special_tags": [
       "WFPB",
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -6605,8 +6614,8 @@
     "date": "2025-10-16T10:10:53+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
       "Easy",
+      "WFPB",
       "Budget"
     ]
   },
@@ -6665,8 +6674,8 @@
     "date": "2025-10-12T20:32:47+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -6917,8 +6926,8 @@
     "is_disruptor": true,
     "special_tags": [
       "WFPB",
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -7196,8 +7205,8 @@
     "date": "2025-09-03T12:59:09+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
