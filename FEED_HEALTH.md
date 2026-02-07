@@ -1,10 +1,10 @@
 # Feed Health Report
-**Last Run:** 2026-02-07T02:15:13.149645
-**Total Blogs:** 66
-**Avg Recipes per Blog:** 11.2
-**Active Blogs (Last 90d):** 61 / 66
+**Last Run:** 2026-02-07T02:25:31.792697
+**Total Blogs:** 67
+**Avg Recipes per Blog:** 11.0
+**Active Blogs (Last 90d):** 62 / 67
 **Total Database Size:** 738
-**New Today:** 17
+**New Today:** 7
 **WFPB:** 135 (18%)
 **Easy:** 228 (30%)
 **Budget:** 157 (21%)
@@ -12,6 +12,7 @@
 
 | Blog Name | URL | New | Total | WFPB | Easy | Budget | Latest | Status |
 |-----------|-----|-----|-------|------|------|--------|--------|--------|
+| Fran Costigan | https://www.francostigan.com/feed/ | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/ConnErr |
 | The Vegan 8 | https://thevegan8.com/feed/ | 0 | 10 | 1 | 10 | 10 | 2025-10-25 | ⚠️ Stale (>90d)  |
 | Turnip Vegan | https://turnipvegan.com/blogs/news.atom | 0 | 7 | 0 | 0 | 0 | 2025-04-11 | ⚠️ Stale (>90d)  |
 | Unconventional Baker | https://www.unconventionalbaker.com/feed/ | 0 | 10 | 0 | 0 | 0 | 2025-11-01 | ⚠️ Stale (>90d)  |
@@ -19,7 +20,7 @@
 | ZardyPlants | https://zardyplants.com/feed/ | 0 | 10 | 10 | 7 | 3 | 2025-11-08 | ⚠️ Stale (>90d)  |
 | A Virtual Vegan | https://avirtualvegan.com/feed/ | 0 | 10 | 0 | 1 | 0 | 2026-02-06 | ✅ OK |
 | Addicted to Dates | https://addictedtodates.com/category/recipes/feed/ | 0 | 10 | 0 | 1 | 2 | 2026-01-30 | ✅ OK |
-| Ann Arbor Vegan Kitchen | https://www.annarborvegankitchen.com/feed/ | 10 | 10 | 10 | 0 | 3 | 2026-02-04 | ✅ OK |
+| Ann Arbor Vegan Kitchen | https://www.annarborvegankitchen.com/feed/ | 0 | 10 | 10 | 0 | 3 | 2026-02-04 | ✅ OK |
 | Bianca Zapatka | https://biancazapatka.com/en/feed/ | 0 | 10 | 2 | 5 | 2 | 2025-12-11 | ✅ OK |
 | Cadry's Kitchen | https://cadryskitchen.com/feed/ | 0 | 11 | 1 | 11 | 0 | 2026-02-04 | ✅ OK |
 | Choosing Chia | https://choosingchia.com/feed/ | 0 | 10 | 2 | 10 | 1 | 2026-01-06 | ✅ OK |
