@@ -1085,7 +1085,15 @@
                         if (!PROTEIN_KEYWORDS.some(k => title.includes(k))) return false;
                     } 
                     else if (tag === 'GF') {
-                        const isGF = title.includes('gf') || title.includes('gluten free') || title.includes('gluten-free');
+                        const isGF = title.includes('gf') || 
+             title.includes('gluten free') || 
+             title.includes('gluten-free') || 
+             title.includes('Vittles') || 
+             title.includes('Sunshine') || 
+             title.includes('Vegan 8') || 
+             title.includes("Rhian's") || 
+             title.includes('Snixy') || 
+             title.includes('loopy whisk');
                         if (!isGF) return false;
                     } 
                     else {
