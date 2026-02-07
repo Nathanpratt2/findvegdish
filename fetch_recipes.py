@@ -106,7 +106,9 @@ HTML_SOURCES = [
     ("Love and Lemons", "https://www.loveandlemons.com/category/recipes/vegan/", [], "wordpress"),
     ("Cookie and Kate", "https://cookieandkate.com/category/vegan-recipes/", [], "custom_pul"),
     ("The Loopy Whisk", "https://theloopywhisk.com/diet/vegan/", ["GF"], "wordpress"),
-    ("Oh She Glows","https://www.ohsheglows.com/recipe-search/",[], "wordpress")
+    ("Oh She Glows","https://www.ohsheglows.com/recipe-search/",[], "wordpress"),
+    ("The Full Helping","https://www.thefullhelping.com/dietary/vegan/",[],"wordpress"),
+    ("Hot For Food","https://www.hotforfoodblog.com/recipe-index/",[],"wordpress")
 ]
 
 # --- DISPLAY NAME MAPPING ---
