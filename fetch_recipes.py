@@ -150,7 +150,7 @@ for item in HTML_SOURCES:
         print(f"⚠️ Warning: Skipping malformed HTML config: {item}")
 
 
-MAX_RECIPES_PER_BLOG = 50 
+MAX_RECIPES_PER_BLOG = 100 
 cutoff_date = datetime.now().astimezone() - timedelta(days=360)
 
 # --- KEYWORDS FOR AUTO TAGGING ---
