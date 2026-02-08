@@ -90,7 +90,7 @@ DISRUPTORS = [
     ("ZardyPlants", "https://zardyplants.com/feed/", ["WFPB"]),
     ("Dreena Burton", "https://dreenaburton.com/feed/", ["WFPB"]),
     ("Healthy Little Vittles", "https://healthylittlevittles.com/feed/", ["GF"]), # Will auto-tag GF
-    ("Healthier Steps", "https://healthiersteps.com/feed/", [])
+    ("Healthier Steps", "https://healthiersteps.com/feed/", [])#okonomi kitchen no longer posts vegan recipes
 ]
 
 # --- DIRECT HTML SCRAPING SOURCES ---
