@@ -79,6 +79,7 @@ DISRUPTORS = [
     ("Choosing Chia (Vegan Recipes)", "https://choosingchia.com/category/diet%20/vegan/feed/", ["Easy"]),
     ("Flora & Vino", "https://www.floraandvino.com/feed/", ["WFPB"], ["Easy"]),
     ("Namely Marly", "https://namelymarly.com/feed/", []),
+    ("The Veg Space", "https://www.thevegspace.co.uk/feed/", []),
     ("The Post-Punk Kitchen", "https://www.theppk.com/feed/", []),
     ("The Little Blog of Vegan", "https://www.thelittleblogofvegan.com/feed/", []),
     ("Eat Figs, Not Pigs", "https://www.eatfigsnotpigs.com/feed/", []),
@@ -586,9 +587,7 @@ with open('FEED_HEALTH.md', 'w') as f:
     else:
         avg_date = "N/A"
 
-    report_rows = []
-    three_months_ago = datetime.now() - timedelta(days=90)
-    stale_count = 0
+   report_rows = []
     
     for name in all_monitored_names:
         url = URL_MAP.get(name, "Unknown")
@@ -602,22 +601,17 @@ with open('FEED_HEALTH.md', 'w') as f:
         else:
             name_display = name
 
-        if latest != "N/A":
-            try:
-                latest_dt = parser.parse(latest)
-                if latest_dt.replace(tzinfo=None) < three_months_ago.replace(tzinfo=None):
-                    stale_count += 1
-                    if "❌" not in status:
-                        status = f"⚠️ Stale (>90d) {status.replace('✅ OK', '')}"
-            except: pass
-        
+        # Low Count Check (1 to 4 recipes)
+        if 1 <= total <= 4:
+            if "❌" not in status:
+                status = f"⚠️ Low Count {status.replace('✅ OK', '')}"
+
         if total == 0 and "✅" in status:
             status = "❌ No Recipes"
             
         report_rows.append((name_display, url, new, total, wfpb_counts.get(name,0), easy_counts.get(name,0), budget_counts.get(name,0), gf_counts.get(name,0), latest, status))
 
     f.write(f"**Total Blogs:** {total_blogs_monitored}\n")
-    f.write(f"**Active Blogs (Last 90d):** {total_blogs_monitored - stale_count} / {total_blogs_monitored}\n")
     f.write(f"**Total Database Size:** {total_in_db}\n")
     f.write(f"**New Today:** {total_new_today}\n")
     f.write(f"**WFPB:** {total_wfpb} ({wfpb_percent}%)\n")
