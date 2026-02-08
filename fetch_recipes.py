@@ -70,7 +70,7 @@ DISRUPTORS = [
     ("Watch Learn Eat", "https://watchlearneat.com/feed/", ["Easy"]),
     ("Strength and Sunshine", "https://strengthandsunshine.com/feed/", ["Easy"],["GF"]), # Will auto-tag GF
     ("The Stingy Vegan", "https://thestingyvegan.com/feed/", ["Easy", "Budget"]), 
-    ("Okonomi Kitchen", "https://okonomikitchen.com/feed/", []),
+    ("Okonomi Kitchen", "https://okonomikitchen.com/tag/vegan/feed/", []),
     ("The Foodie Takes Flight", "https://thefoodietakesflight.com/feed/", ["Easy"]),
     ("Vegan Yack Attack", "https://veganyackattack.com/feed/", []),
     ("The Conscious Plant Kitchen", "https://www.theconsciousplantkitchen.com/feed/", []),
