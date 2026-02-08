@@ -54,7 +54,7 @@ TOP_BLOGGERS = [
     ("Turnip Vegan", "https://turnipvegan.com/blogs/news.atom", []),
     ("VegNews", "https://vegnews.com/feed", []),
     ("Plant-Based on a Budget", "https://plantbasedonabudget.com/feed/", ["Budget"]),
-    ("HealthyGirl Kitchen", "https://healthygirlkitchen.com/feed/", []),
+    ("HealthyGirl Kitchen", "https://healthygirlkitchen.com/feed/", [])
 ]
 
 DISRUPTORS = [
@@ -99,6 +99,7 @@ DISRUPTORS = [
 # We will merge them back to the display name at the very end.
 HTML_SOURCES = [
     ("Pick Up Limes", "https://www.pickuplimes.com/recipe/", [], "custom_pul"),
+    ("Zucker & Jagdwurst", "https://www.zuckerjagdwurst.com/en/archive/1", [], "wordpress"),
     ("Rainbow Plant Life GF", "https://rainbowplantlife.com/diet/gluten-free/", ["GF"], "wordpress"),
     ("Vegan Richa GF", "https://www.veganricha.com/category/gluten-free/", ["GF"], "wordpress"),
     ("School Night Vegan", "https://schoolnightvegan.com/category/recipes/", [], "custom_pul"),
