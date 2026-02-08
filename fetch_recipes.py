@@ -555,6 +555,37 @@ for bname, blog_recipes in recipes_by_blog.items():
 
 final_pruned_list.sort(key=lambda x: x['date'], reverse=True)
 
+# --- GLOBAL DEDUPLICATION ---
+# Rule: If duplicate link found:
+# 1. Keep the one where Blog Name contains "GF".
+# 2. If equal or neither, keep the one with the Older date.
+print("   Running global deduplication (Rules: GF source > Older date)...")
+deduped_recipes = {}
+for recipe in final_pruned_list:
+    link = recipe['link']
+    
+    if link not in deduped_recipes:
+        deduped_recipes[link] = recipe
+    else:
+        existing = deduped_recipes[link]
+        
+        # Check GF in Blog Name
+        curr_is_gf = "GF" in recipe['blog_name']
+        exist_is_gf = "GF" in existing['blog_name']
+        
+        if curr_is_gf and not exist_is_gf:
+            deduped_recipes[link] = recipe
+        elif exist_is_gf and not curr_is_gf:
+            pass # Keep existing
+        else:
+            # Tie-breaker: Keep OLDER date
+            if recipe['date'] < existing['date']:
+                deduped_recipes[link] = recipe
+
+final_pruned_list = list(deduped_recipes.values())
+final_pruned_list.sort(key=lambda x: x['date'], reverse=True)
+
+
 # 7. Normalize Display Names (SKIPPED)
 # We strictly keep the names distinct (e.g. "Rainbow Plant Life" vs "Rainbow Plant Life GF").
 print("Pruning complete. Saving database with distinct source names...")
