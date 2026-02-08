@@ -1,11 +1,11 @@
 # Feed Health Report
-**Last Run:** 2026-02-08T17:07:12.031485
+**Last Run:** 2026-02-08T18:01:28.036286
 **Total Blogs:** 84
 **Active Blogs (Last 90d):** 77 / 84
-**Total Database Size:** 839
-**New Today:** 8
-**WFPB:** 132 (15%)
-**Easy:** 205 (24%)
+**Total Database Size:** 845
+**New Today:** 13
+**WFPB:** 134 (15%)
+**Easy:** 206 (24%)
 **Budget:** 166 (19%)
 **Gluten-Free:** 83 (9%)
 **Average Latest Post:** 2026-01-13
@@ -48,7 +48,7 @@
 | Fran Costigan | Unknown | 0 | 3 | 0 | 0 | 0 | 0 | 2026-01-20 | Skipped/DB Only |
 | From My Bowl | https://frommybowl.com/feed/ | 0 | 11 | 11 | 11 | 2 | 0 | 2026-02-03 | ✅ OK |
 | Full of Plants | https://fullofplants.com/feed/ | 0 | 7 | 0 | 0 | 0 | 0 | 2026-02-07 | ✅ OK |
-| Gretchen's Vegan Bakery | https://www.gretchensveganbakery.com/feed/ | 1 | 19 | 0 | 1 | 0 | 0 | 2026-02-07 | ✅ OK |
+| Gretchen's Vegan Bakery | https://www.gretchensveganbakery.com/feed/ | 0 | 19 | 0 | 1 | 0 | 0 | 2026-02-07 | ✅ OK |
 | Healthy Little Vittles | https://healthylittlevittles.com/feed/ | 0 | 20 | 0 | 4 | 1 | 20 | 2026-02-05 | ✅ OK |
 | HealthyGirl Kitchen | https://healthygirlkitchen.com/feed/ | 0 | 11 | 2 | 3 | 0 | 0 | 2026-02-06 | ✅ OK |
 | It Doesn't Taste Like Chicken | https://itdoesnttastelikechicken.com/feed/ | 0 | 34 | 2 | 14 | 34 | 0 | 2026-02-08 | ✅ OK |
@@ -89,7 +89,7 @@
 | The Little Blog of Vegan | https://www.thelittleblogofvegan.com/feed/ | 0 | 12 | 0 | 5 | 0 | 0 | 2026-02-06 | ✅ OK |
 | The Post-Punk Kitchen | https://www.theppk.com/feed/ | 0 | 8 | 1 | 1 | 1 | 0 | 2026-02-06 | ✅ OK |
 | The Stingy Vegan | https://thestingyvegan.com/feed/ | 0 | 10 | 0 | 10 | 10 | 0 | 2025-12-12 | ✅ OK |
-| VegNews | https://vegnews.com/feed | 0 | 29 | 3 | 5 | 1 | 0 | 2026-02-07 | ✅ OK |
+| VegNews | https://vegnews.com/feed | 6 | 35 | 5 | 6 | 1 | 0 | 2026-02-08 | ✅ OK |
 | Vegan Heaven | https://veganheaven.org/feed/ | 0 | 10 | 0 | 0 | 1 | 0 | 2026-01-06 | ✅ OK |
 | Vegan Richa | https://www.veganricha.com/feed/ | 0 | 21 | 0 | 5 | 6 | 1 | 2026-02-07 | ✅ OK |
 | Vegan in the Freezer | https://veganinthefreezer.com/feed/ | 0 | 1 | 0 | 0 | 0 | 0 | 2026-01-25 | ✅ OK |
