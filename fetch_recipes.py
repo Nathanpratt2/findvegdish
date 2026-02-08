@@ -64,7 +64,7 @@ DISRUPTORS = [
     ("Unconventional Baker", "https://www.unconventionalbaker.com/feed/", ["GF"]), # Will auto-tag GF
     ("Fragrant Vanilla Cake", "https://www.fragrantvanilla.com/feed/", []),
     ("Plantifully Based", "https://plantifullybasedblog.com/feed/", []),
-    ("Cadry's Kitchen (Vegan Recipes)", "https://cadryskitchen.com/vegan-recipes/feed/", ["Easy"]),#updated to vegan only
+    ("Cadry's Kitchen (Vegan Recipes)", "https://cadryskitchen.com/vegan-recipes/feed/", ["Easy"]),
     ("Dr. Vegan", "https://drveganblog.com/feed/", ["Easy"]),
     ("Veggies Don't Bite", "https://veggiesdontbite.com/feed/", []),
     ("Watch Learn Eat", "https://watchlearneat.com/feed/", ["Easy"]),
@@ -73,7 +73,7 @@ DISRUPTORS = [
     ("The Foodie Takes Flight", "https://thefoodietakesflight.com/feed/", ["Easy"]),
     ("Vegan Yack Attack", "https://veganyackattack.com/feed/", []),
     ("The Conscious Plant Kitchen", "https://www.theconsciousplantkitchen.com/feed/", []),
-    ("Choosing Chia (Vegan Recipes)", "https://choosingchia.com/category/diet%20/vegan/feed/", ["Easy"]),#updated to vegan only
+    ("Choosing Chia (Vegan Recipes)", "https://choosingchia.com/category/diet%20/vegan/feed/", ["Easy"]),
     ("Flora & Vino", "https://www.floraandvino.com/feed/", ["WFPB"], ["Easy"]),
     ("Namely Marly", "https://namelymarly.com/feed/", []),
     ("The Post-Punk Kitchen", "https://www.theppk.com/feed/", []),
@@ -90,13 +90,10 @@ DISRUPTORS = [
     ("ZardyPlants", "https://zardyplants.com/feed/", ["WFPB"]),
     ("Dreena Burton", "https://dreenaburton.com/feed/", ["WFPB"]),
     ("Healthy Little Vittles", "https://healthylittlevittles.com/feed/", ["GF"]), # Will auto-tag GF
-    ("Healthier Steps", "https://healthiersteps.com/feed/", [])#okonomi kitchen no longer posts vegan recipes
+    ("Healthier Steps", "https://healthiersteps.com/feed/", [])
 ]
 
 # --- DIRECT HTML SCRAPING SOURCES ---
-# Internal naming strategy: We use suffixes like " GF" to treat them as unique sources
-# during the pruning phase (allowing 50 recipes from main, 50 from GF).
-# We will merge them back to the display name at the very end.
 HTML_SOURCES = [
     ("Pick Up Limes", "https://www.pickuplimes.com/recipe/", [], "custom_pul"),
     ("Zucker & Jagdwurst", "https://www.zuckerjagdwurst.com/en/archive/1", [], "wordpress"),
@@ -113,15 +110,13 @@ HTML_SOURCES = [
 
 # --- DISPLAY NAME MAPPING ---
 # Maps Internal Name -> Public Display Name
-DISPLAY_NAME_MAP = {
-    "Rainbow Plant Life GF": "Rainbow Plant Life",
-    "Vegan Richa GF": "Vegan Richa"
-}
+# Updated: We do NOT merge GF blogs back to main names anymore. 
+# They will appear separately (e.g. "Rainbow Plant Life GF").
+DISPLAY_NAME_MAP = {}
 
 ALL_FEEDS = TOP_BLOGGERS + DISRUPTORS
 
 # --- MAPS ---
-# Robust map generation that skips malformed entries if they exist
 URL_MAP = {}
 BLOG_TAG_MAP = {}
 
@@ -348,16 +343,13 @@ def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags)
             if not title or not link: continue
             if is_pet_recipe(title): continue
             
-            # --- FIX START: Handle Duplicates by Merging Tags ---
-            if link in existing_links:
-                # If recipe exists (e.g. from Main Feed), add this source's tags to it (e.g. GF)
-                for r in recipes_list:
-                    if r['link'] == link:
-                        r['special_tags'] = list(set(r.get('special_tags', []) + source_tags))
-                        break
+            # --- SEPARATE ENTRY LOGIC ---
+            # We treat (link, blog_name) as the unique key.
+            # If "Rainbow Plant Life GF" is scraping a link that "Rainbow Plant Life" already has,
+            # we allow it as a NEW entry because the blog_name is different.
+            if (link, name) in existing_links:
                 continue
-            # --- FIX END ---
-            
+
             if not date_obj:
                 date_obj = datetime.now() 
                 
@@ -379,7 +371,7 @@ def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags)
                     "is_disruptor": False,
                     "special_tags": list(source_tags) # Initialize with source tags
                 })
-                existing_links.add(link)
+                existing_links.add((link, name))
 
         except Exception as e:
             continue
@@ -401,7 +393,10 @@ except (FileNotFoundError, json.JSONDecodeError):
 # 2. Cleanse Database
 initial_count = len(recipes)
 recipes = [r for r in recipes if not (r['blog_name'] == "VegNews" and "/recipes/" not in r['link'])]
-existing_links = {r['link'] for r in recipes}
+
+# Update existing_links to be tuples of (link, blog_name) to allow separate entries for GF blogs
+existing_links = {(r['link'], r['blog_name']) for r in recipes}
+
 feed_stats = {}
 previous_domain = ""
 
@@ -455,7 +450,8 @@ for item in ALL_FEEDS:
                     published_time = published_time.astimezone(timezone.utc)
                 
                 if published_time > cutoff_date:
-                    if entry.link not in existing_links:
+                    # Check Uniqueness using (link, name)
+                    if (entry.link, name) not in existing_links:
                         if is_pet_recipe(entry.title): continue
                         image_url = extract_image(entry, name, entry.link)
                         if image_url and image_url.startswith('/'):
@@ -471,7 +467,7 @@ for item in ALL_FEEDS:
                             "is_disruptor": name in [d[0] for d in DISRUPTORS],
                             "special_tags": [] 
                         })
-                        existing_links.add(entry.link)
+                        existing_links.add((entry.link, name))
                         new_count += 1
             except Exception as e:
                 continue
@@ -489,7 +485,8 @@ for item in HTML_SOURCES:
     name, url, tags, mode = item
     
     try:
-        # Pass 'recipes' list and current 'tags' (e.g. ['GF']) to allow merging
+        # Pass 'recipes' list and current 'tags' (e.g. ['GF']).
+        # Note: existing_links now handles (link, name) uniqueness inside the function.
         new_items, status = scrape_html_feed(name, url, mode, existing_links, recipes, tags)
         recipes.extend(new_items)
         feed_stats[name] = {'new': len(new_items), 'status': status}
@@ -502,11 +499,7 @@ print("\nUpdating tags for all recipes...")
 for recipe in recipes:
     bname = recipe['blog_name']
     
-    # FIX: Reset tags for split-feed bloggers to prevent "GF" bleeding from previous merged runs
-    if bname in ["Rainbow Plant Life", "Vegan Richa", "Rainbow Plant Life GF", "Vegan Richa GF"]:
-        current_tags = []
-    else:
-        current_tags = recipe.get('special_tags', []) 
+    current_tags = recipe.get('special_tags', []) 
 
     # 1. Base tags (from configuration)
     base_tags = list(BLOG_TAG_MAP.get(bname, []))
@@ -549,10 +542,8 @@ for bname, blog_recipes in recipes_by_blog.items():
 
 final_pruned_list.sort(key=lambda x: x['date'], reverse=True)
 
-# 7. Normalize Display Names (SKIPPED for DB)
-# We do NOT overwrite the blog_name in the JSON. 
-# We keep "Rainbow Plant Life GF" distinct so the next run knows it is a GF source.
-# The HTML will handle the visual merging.
+# 7. Normalize Display Names (SKIPPED)
+# We strictly keep the names distinct (e.g. "Rainbow Plant Life" vs "Rainbow Plant Life GF").
 print("Pruning complete. Saving database with distinct source names...")
 
 if len(final_pruned_list) > 50:
