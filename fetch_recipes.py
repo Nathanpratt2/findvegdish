@@ -89,6 +89,7 @@ DISRUPTORS = [
     ("Rhian's Recipes", "https://www.rhiansrecipes.com/feed/", ["GF"]), # Will auto-tag GF
     ("Snixy Kitchen (Vegan Recipes)", "https://www.snixykitchen.com/special-diet/vegan/feed/", []),
     ("Monkey & Me Kitchen Adventures", "https://monkeyandmekitchenadventures.com/feed/", ["WFPB"]),
+    ("My Goodness Kitchen", "https://mygoodnesskitchen.com/feed/", []),
     ("Ann Arbor Vegan Kitchen", "https://www.annarborvegankitchen.com/feed/", ["WFPB"]),
     ("Veggiekins", "https://veggiekinsblog.com/feed/", ["Easy"],["GF"]), # Will auto-tag GF
     ("ZardyPlants", "https://zardyplants.com/feed/", ["WFPB"]),
