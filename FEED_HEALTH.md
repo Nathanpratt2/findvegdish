@@ -1,9 +1,9 @@
 # Feed Health Report
-**Last Run:** 2026-02-08T15:03:54.583507
+**Last Run:** 2026-02-08T15:59:43.135027
 **Total Blogs:** 84
 **Active Blogs (Last 90d):** 77 / 84
 **Total Database Size:** 838
-**New Today:** 10
+**New Today:** 7
 **WFPB:** 132 (15%)
 **Easy:** 205 (24%)
 **Budget:** 166 (19%)
@@ -12,6 +12,7 @@
 
 | Blog Name | URL | New | Total | WFPB | Easy | Budget | GF | Latest | Status |
 |-----------|-----|-----|-------|------|------|--------|----|--------|--------|
+| Ann Arbor Vegan Kitchen | https://www.annarborvegankitchen.com/feed/ | 0 | 10 | 10 | 0 | 3 | 0 | 2026-02-04 | ❌ Blocked/ConnErr |
 | Cadry's Kitchen (Vegan Recipes) | https://cadryskitchen.com/vegan-recipes/feed/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/ConnErr |
 | Cookie and Kate (Vegan Recipes) | https://cookieandkate.com/category/vegan-recipes/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/HTML Fail |
 | Minimalist Baker (Vegan Recipes) | https://minimalistbaker.com/recipes/vegan/feed/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ No Recipes |
@@ -34,7 +35,6 @@
 | Vegan Richa GF (-> Vegan Richa) | https://www.veganricha.com/category/gluten-free/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ⚠️ Scraped 0 |
 | A Virtual Vegan | https://avirtualvegan.com/feed/ | 0 | 10 | 0 | 1 | 0 | 0 | 2026-02-06 | ✅ OK |
 | Addicted to Dates | https://addictedtodates.com/category/recipes/feed/ | 0 | 10 | 0 | 1 | 2 | 0 | 2026-01-30 | ✅ OK |
-| Ann Arbor Vegan Kitchen | https://www.annarborvegankitchen.com/feed/ | 0 | 10 | 10 | 0 | 3 | 0 | 2026-02-04 | ✅ OK |
 | Bianca Zapatka | https://biancazapatka.com/en/feed/ | 0 | 10 | 2 | 5 | 2 | 1 | 2025-12-11 | ✅ OK |
 | Cadry's Kitchen | Unknown | 0 | 11 | 1 | 11 | 0 | 0 | 2026-02-04 | Skipped/DB Only |
 | Connoisseurus Veg | https://www.connoisseurusveg.com/feed/ | 0 | 11 | 1 | 0 | 1 | 0 | 2026-02-04 | ✅ OK |
@@ -69,7 +69,7 @@
 | Plantifully Based | https://plantifullybasedblog.com/feed/ | 0 | 10 | 1 | 2 | 0 | 0 | 2026-02-07 | ✅ OK |
 | Rabbit and Wolves | https://www.rabbitandwolves.com/feed/ | 0 | 10 | 0 | 1 | 1 | 0 | 2026-01-19 | ✅ OK |
 | Rainbow Nourishments | https://www.rainbownourishments.com/feed/ | 0 | 11 | 0 | 2 | 1 | 0 | 2026-02-06 | ✅ OK |
-| Rainbow Plant Life | https://rainbowplantlife.com/feed/ | 3 | 23 | 5 | 1 | 4 | 0 | 2026-02-07 | ✅ OK |
+| Rainbow Plant Life | https://rainbowplantlife.com/feed/ | 0 | 23 | 5 | 1 | 4 | 0 | 2026-02-07 | ✅ OK |
 | Rhian's Recipes | https://www.rhiansrecipes.com/feed/ | 0 | 24 | 0 | 0 | 0 | 24 | 2026-01-28 | ✅ OK |
 | Running on Real Food | https://runningonrealfood.com/feed/ | 0 | 10 | 10 | 0 | 2 | 0 | 2026-01-29 | ✅ OK |
 | Sarah's Vegan Kitchen | https://sarahsvegankitchen.com/feed/ | 0 | 16 | 0 | 0 | 3 | 0 | 2026-02-04 | ✅ OK |
