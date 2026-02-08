@@ -501,7 +501,11 @@ print("\nUpdating tags for all recipes...")
 for recipe in recipes:
     bname = recipe['blog_name']
     
-    current_tags = recipe.get('special_tags', []) # Grab existing tags (including GF from overlaps)
+    # FIX: Reset tags for split-feed bloggers to prevent "GF" bleeding from previous merged runs
+    if bname in ["Rainbow Plant Life", "Vegan Richa", "Rainbow Plant Life GF", "Vegan Richa GF"]:
+        current_tags = []
+    else:
+        current_tags = recipe.get('special_tags', []) 
 
     # 1. Base tags (from configuration)
     base_tags = list(BLOG_TAG_MAP.get(bname, []))
@@ -544,11 +548,11 @@ for bname, blog_recipes in recipes_by_blog.items():
 
 final_pruned_list.sort(key=lambda x: x['date'], reverse=True)
 
-# 7. Normalize Display Names
-print("Normalizing display names...")
-for recipe in final_pruned_list:
-    if recipe['blog_name'] in DISPLAY_NAME_MAP:
-        recipe['blog_name'] = DISPLAY_NAME_MAP[recipe['blog_name']]
+# 7. Normalize Display Names (SKIPPED for DB)
+# We do NOT overwrite the blog_name in the JSON. 
+# We keep "Rainbow Plant Life GF" distinct so the next run knows it is a GF source.
+# The HTML will handle the visual merging.
+print("Pruning complete. Saving database with distinct source names...")
 
 if len(final_pruned_list) > 50:
     with open('data.json', 'w') as f:
