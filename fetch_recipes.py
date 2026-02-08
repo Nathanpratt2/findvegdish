@@ -42,7 +42,7 @@ TOP_BLOGGERS = [
     ("Vegan Heaven", "https://veganheaven.org/feed/", []),
     ("The Hidden Veggies", "https://thehiddenveggies.com/feed/", ["Budget"]), 
     ("Vegan in the Freezer", "https://veganinthefreezer.com/feed/", []),
-    ("Bianca Zapatka", "https://https://biancazapatka.com/en/feed/", []),
+    ("Bianca Zapatka", "https://biancazapatka.com/en/feed/", []),
     ("A Virtual Vegan", "https://avirtualvegan.com/feed/", []),
     ("Sarah's Vegan Kitchen", "https://sarahsvegankitchen.com/feed/", []),
     ("Bianca Zapatka", "https://biancazapatka.com/en/feed/", []),
@@ -99,7 +99,7 @@ DISRUPTORS = [
     ("Dreena Burton", "https://dreenaburton.com/feed/", ["WFPB"]),
     ("Cupful of Kale", "https://cupfulofkale.com/feed/", []),
     ("What Jew You Want to Eat", "https://whatjewwannaeat.com/vegan/feed/", []),
-    ("Holistic Chef Academy", "https://https://holisticchefacademy.com/feed/", []),
+    ("Holistic Chef Academy", "https://holisticchefacademy.com/feed/", []),
     ("Healthy Little Vittles", "https://healthylittlevittles.com/feed/", ["GF"]), # Will auto-tag GF
     ("Healthier Steps", "https://healthiersteps.com/feed/", [])
 ]
