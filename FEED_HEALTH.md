@@ -1,17 +1,19 @@
 # Feed Health Report
-**Last Run:** 2026-02-08T11:04:38.851339
+**Last Run:** 2026-02-08T11:54:23.794931
 **Total Blogs:** 80
 **Active Blogs (Last 90d):** 74 / 80
-**Total Database Size:** 855
-**New Today:** 8
+**Total Database Size:** 859
+**New Today:** 11
 **WFPB:** 134 (15%)
-**Easy:** 209 (24%)
+**Easy:** 213 (24%)
 **Budget:** 168 (19%)
 **Gluten-Free:** 122 (14%)
 **Average Latest Post:** 2026-01-15
 
 | Blog Name | URL | New | Total | WFPB | Easy | Budget | GF | Latest | Status |
 |-----------|-----|-----|-------|------|------|--------|----|--------|--------|
+| Ann Arbor Vegan Kitchen | https://www.annarborvegankitchen.com/feed/ | 0 | 10 | 10 | 0 | 3 | 0 | 2026-02-04 | ❌ Blocked/ConnErr |
+| Cadry's Kitchen | https://cadryskitchen.com/vegan-recipes/feed/ | 0 | 11 | 1 | 11 | 0 | 0 | 2026-02-04 | ❌ Blocked/ConnErr |
 | Cookie and Kate | https://cookieandkate.com/category/vegan-recipes/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/HTML Fail |
 | Oh She Glows | https://www.ohsheglows.com/recipe-search/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/HTML Fail |
 | School Night Vegan | https://schoolnightvegan.com/category/recipes/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/HTML Fail |
@@ -30,10 +32,8 @@
 | Vegan Richa GF (-> Vegan Richa) | https://www.veganricha.com/category/gluten-free/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ⚠️ Scraped 0 |
 | A Virtual Vegan | https://avirtualvegan.com/feed/ | 0 | 10 | 0 | 1 | 0 | 0 | 2026-02-06 | ✅ OK |
 | Addicted to Dates | https://addictedtodates.com/category/recipes/feed/ | 0 | 10 | 0 | 1 | 2 | 0 | 2026-01-30 | ✅ OK |
-| Ann Arbor Vegan Kitchen | https://www.annarborvegankitchen.com/feed/ | 0 | 10 | 10 | 0 | 3 | 0 | 2026-02-04 | ✅ OK |
 | Bianca Zapatka | https://biancazapatka.com/en/feed/ | 0 | 10 | 2 | 5 | 2 | 1 | 2025-12-11 | ✅ OK |
-| Cadry's Kitchen | https://cadryskitchen.com/feed/ | 0 | 11 | 1 | 11 | 0 | 0 | 2026-02-04 | ✅ OK |
-| Choosing Chia | https://choosingchia.com/feed/ | 0 | 10 | 2 | 10 | 1 | 0 | 2026-01-06 | ✅ OK |
+| Choosing Chia | https://choosingchia.com/category/diet%20/vegan/feed/ | 4 | 14 | 2 | 14 | 1 | 0 | 2026-01-06 | ✅ OK |
 | Connoisseurus Veg | https://www.connoisseurusveg.com/feed/ | 0 | 11 | 1 | 0 | 1 | 0 | 2026-02-04 | ✅ OK |
 | Dr. Vegan | https://drveganblog.com/feed/ | 0 | 10 | 2 | 10 | 5 | 0 | 2026-01-28 | ✅ OK |
 | Dreena Burton | https://dreenaburton.com/feed/ | 0 | 3 | 3 | 1 | 2 | 0 | 2026-01-20 | ✅ OK |
@@ -48,7 +48,7 @@
 | Gretchen's Vegan Bakery | https://www.gretchensveganbakery.com/feed/ | 0 | 18 | 0 | 1 | 0 | 0 | 2026-02-07 | ✅ OK |
 | Healthy Little Vittles | https://healthylittlevittles.com/feed/ | 0 | 20 | 0 | 4 | 1 | 20 | 2026-02-05 | ✅ OK |
 | HealthyGirl Kitchen | https://healthygirlkitchen.com/feed/ | 0 | 11 | 2 | 3 | 0 | 0 | 2026-02-06 | ✅ OK |
-| It Doesn't Taste Like Chicken | https://itdoesnttastelikechicken.com/feed/ | 1 | 34 | 2 | 13 | 34 | 0 | 2026-02-08 | ✅ OK |
+| It Doesn't Taste Like Chicken | https://itdoesnttastelikechicken.com/feed/ | 0 | 34 | 2 | 13 | 34 | 0 | 2026-02-08 | ✅ OK |
 | Jessica in the Kitchen | https://jessicainthekitchen.com/feed/ | 0 | 13 | 2 | 0 | 2 | 2 | 2026-02-06 | ✅ OK |
 | Lazy Cat Kitchen | https://www.lazycatkitchen.com/feed/ | 0 | 11 | 0 | 0 | 2 | 0 | 2026-02-07 | ✅ OK |
 | Make It Dairy Free | https://makeitdairyfree.com/feed/ | 0 | 10 | 1 | 1 | 2 | 1 | 2026-02-01 | ✅ OK |
