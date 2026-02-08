@@ -7,6 +7,7 @@
     "date": "2026-02-08T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
+      "Easy",
       "Budget"
     ]
   },
@@ -177,8 +178,8 @@
     "date": "2026-02-07T18:33:37.511010+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "GF"
+      "GF",
+      "Budget"
     ]
   },
   {
@@ -189,8 +190,8 @@
     "date": "2026-02-07T18:33:37.510264+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "GF"
+      "GF",
+      "Budget"
     ]
   },
   {
@@ -224,8 +225,8 @@
     "date": "2026-02-07T18:33:37.507913+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "GF"
+      "GF",
+      "Budget"
     ]
   },
   {
@@ -281,8 +282,8 @@
     "date": "2026-02-07T18:33:28.887194+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "GF"
+      "GF",
+      "Budget"
     ]
   },
   {
@@ -304,8 +305,8 @@
     "date": "2026-02-07T18:33:28.885843+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "GF"
+      "GF",
+      "WFPB"
     ]
   },
   {
@@ -316,8 +317,8 @@
     "date": "2026-02-07T18:33:28.885169+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "GF"
+      "GF",
+      "WFPB"
     ]
   },
   {
@@ -328,8 +329,8 @@
     "date": "2026-02-07T18:33:28.884491+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "GF"
+      "GF",
+      "WFPB"
     ]
   },
   {
@@ -407,8 +408,8 @@
     "date": "2026-02-07T18:33:28.879721+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "GF"
+      "GF",
+      "Budget"
     ]
   },
   {
@@ -743,8 +744,8 @@
     "date": "2026-02-06T12:54:49+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "GF"
+      "GF",
+      "Budget"
     ]
   },
   {
@@ -1002,7 +1003,6 @@
       "WFPB"
     ]
   },
-
   {
     "blog_name": "Eat Figs, Not Pigs",
     "title": "Mini Chili Cheese Dogs",
@@ -1030,7 +1030,6 @@
     "is_disruptor": false,
     "special_tags": []
   },
-
   {
     "blog_name": "Vegan Richa",
     "title": "The BEST Strawberry Chia Pudding",
@@ -1539,8 +1538,8 @@
     "date": "2026-02-01T00:05:50+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "GF"
+      "GF",
+      "WFPB"
     ]
   },
   {
@@ -2141,8 +2140,8 @@
     "is_disruptor": true,
     "special_tags": [
       "Easy",
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -2287,8 +2286,8 @@
     "is_disruptor": false,
     "special_tags": [
       "Easy",
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -2357,8 +2356,8 @@
     "date": "2026-01-26T19:54:47+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "GF"
+      "GF",
+      "WFPB"
     ]
   },
   {
@@ -2409,8 +2408,8 @@
     "date": "2026-01-26T02:26:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "GF"
+      "GF",
+      "Budget"
     ]
   },
   {
@@ -2718,8 +2717,8 @@
     "date": "2026-01-22T12:00:00+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "GF"
+      "GF",
+      "Budget"
     ]
   },
   {
@@ -2907,8 +2906,8 @@
     "is_disruptor": false,
     "special_tags": [
       "Easy",
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -3205,8 +3204,8 @@
     "is_disruptor": false,
     "special_tags": [
       "Easy",
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -3289,8 +3288,8 @@
     "date": "2026-01-15T23:20:14+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "GF"
+      "GF",
+      "Budget"
     ]
   },
   {
@@ -3532,8 +3531,8 @@
     "is_disruptor": true,
     "special_tags": [
       "Easy",
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -4186,8 +4185,8 @@
     "is_disruptor": false,
     "special_tags": [
       "Easy",
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -4508,8 +4507,8 @@
     "is_disruptor": false,
     "special_tags": [
       "Easy",
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -5099,8 +5098,8 @@
     "date": "2025-12-14T00:22:05+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
       "GF",
+      "Budget",
       "WFPB"
     ]
   },
@@ -5245,8 +5244,8 @@
     "date": "2025-12-10T18:49:51+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "GF"
+      "GF",
+      "Budget"
     ]
   },
   {
@@ -6373,8 +6372,8 @@
     "date": "2025-11-13T14:25:39+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "GF"
+      "GF",
+      "WFPB"
     ]
   },
   {
@@ -6649,8 +6648,8 @@
     "is_disruptor": true,
     "special_tags": [
       "Easy",
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -7059,8 +7058,8 @@
     "is_disruptor": true,
     "special_tags": [
       "Easy",
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -7166,8 +7165,8 @@
     "is_disruptor": false,
     "special_tags": [
       "Easy",
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -7341,8 +7340,8 @@
     "date": "2025-10-04T09:03:35+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "GF"
+      "GF",
+      "WFPB"
     ]
   },
   {
@@ -7474,8 +7473,8 @@
     "is_disruptor": true,
     "special_tags": [
       "Easy",
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -7920,6 +7919,17 @@
     "special_tags": []
   },
   {
+    "blog_name": "Choosing Chia (Vegan Recipes)",
+    "title": "Chocolate Date Caramels",
+    "link": "https://choosingchia.com/chocolate-date-caramels/",
+    "image": "https://choosingchia.com/jessh-jessh/uploads/2025/08/date-caramels-10.jpg",
+    "date": "2025-08-18T15:18:32+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "Rhian's Recipes",
     "title": "Vegan Olive Oil Yogurt Cake (Gluten-Free)",
     "link": "https://www.rhiansrecipes.com/olive-oil-yogurt-cake/",
@@ -7967,6 +7977,17 @@
     "date": "2025-08-12T12:05:29+00:00",
     "is_disruptor": false,
     "special_tags": []
+  },
+  {
+    "blog_name": "Choosing Chia (Vegan Recipes)",
+    "title": "Banana Protein Balls",
+    "link": "https://choosingchia.com/banana-protein-balls/",
+    "image": "https://choosingchia.com/jessh-jessh/uploads/2025/07/banana-protein-balls-10-1200x1800.jpg",
+    "date": "2025-08-04T14:40:19+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "Easy"
+    ]
   },
   {
     "blog_name": "Rainbow Nourishments",
@@ -8041,6 +8062,17 @@
     "date": "2025-07-18T06:05:04+00:00",
     "is_disruptor": true,
     "special_tags": []
+  },
+  {
+    "blog_name": "Choosing Chia (Vegan Recipes)",
+    "title": "Chocolate Peanut Butter Chia Pudding",
+    "link": "https://choosingchia.com/chocolate-peanut-butter-chia-pudding/",
+    "image": "https://choosingchia.com/jessh-jessh/uploads/2025/07/chocolate-peanut-butter-chia-pudding-2-1.jpg",
+    "date": "2025-07-15T18:34:14+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "Easy"
+    ]
   },
   {
     "blog_name": "Vegan Yack Attack",
@@ -8167,6 +8199,17 @@
     "special_tags": [
       "Easy",
       "Budget"
+    ]
+  },
+  {
+    "blog_name": "Choosing Chia (Vegan Recipes)",
+    "title": "Protein Pancake Bowl",
+    "link": "https://choosingchia.com/protein-pancake-bowl/",
+    "image": "https://choosingchia.com/jessh-jessh/uploads/2025/06/protein-pancake-bowl-7.jpg",
+    "date": "2025-06-19T18:55:01+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "Easy"
     ]
   },
   {
@@ -8497,6 +8540,17 @@
     "special_tags": [
       "Easy",
       "Budget"
+    ]
+  },
+  {
+    "blog_name": "Choosing Chia (Vegan Recipes)",
+    "title": "French Toast Muffins",
+    "link": "https://choosingchia.com/french-toast-muffins/",
+    "image": "https://choosingchia.com/jessh-jessh/uploads/2025/02/french-toast-muffins-9.jpg",
+    "date": "2025-03-05T16:07:44+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "Easy"
     ]
   },
   {
