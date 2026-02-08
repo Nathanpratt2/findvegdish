@@ -1,9 +1,9 @@
 # Feed Health Report
-**Last Run:** 2026-02-08T15:59:43.135027
+**Last Run:** 2026-02-08T17:07:12.031485
 **Total Blogs:** 84
 **Active Blogs (Last 90d):** 77 / 84
-**Total Database Size:** 838
-**New Today:** 7
+**Total Database Size:** 839
+**New Today:** 8
 **WFPB:** 132 (15%)
 **Easy:** 205 (24%)
 **Budget:** 166 (19%)
@@ -12,7 +12,6 @@
 
 | Blog Name | URL | New | Total | WFPB | Easy | Budget | GF | Latest | Status |
 |-----------|-----|-----|-------|------|------|--------|----|--------|--------|
-| Ann Arbor Vegan Kitchen | https://www.annarborvegankitchen.com/feed/ | 0 | 10 | 10 | 0 | 3 | 0 | 2026-02-04 | ❌ Blocked/ConnErr |
 | Cadry's Kitchen (Vegan Recipes) | https://cadryskitchen.com/vegan-recipes/feed/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/ConnErr |
 | Cookie and Kate (Vegan Recipes) | https://cookieandkate.com/category/vegan-recipes/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/HTML Fail |
 | Minimalist Baker (Vegan Recipes) | https://minimalistbaker.com/recipes/vegan/feed/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ No Recipes |
@@ -35,6 +34,7 @@
 | Vegan Richa GF (-> Vegan Richa) | https://www.veganricha.com/category/gluten-free/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ⚠️ Scraped 0 |
 | A Virtual Vegan | https://avirtualvegan.com/feed/ | 0 | 10 | 0 | 1 | 0 | 0 | 2026-02-06 | ✅ OK |
 | Addicted to Dates | https://addictedtodates.com/category/recipes/feed/ | 0 | 10 | 0 | 1 | 2 | 0 | 2026-01-30 | ✅ OK |
+| Ann Arbor Vegan Kitchen | https://www.annarborvegankitchen.com/feed/ | 0 | 10 | 10 | 0 | 3 | 0 | 2026-02-04 | ✅ OK |
 | Bianca Zapatka | https://biancazapatka.com/en/feed/ | 0 | 10 | 2 | 5 | 2 | 1 | 2025-12-11 | ✅ OK |
 | Cadry's Kitchen | Unknown | 0 | 11 | 1 | 11 | 0 | 0 | 2026-02-04 | Skipped/DB Only |
 | Connoisseurus Veg | https://www.connoisseurusveg.com/feed/ | 0 | 11 | 1 | 0 | 1 | 0 | 2026-02-04 | ✅ OK |
@@ -48,7 +48,7 @@
 | Fran Costigan | Unknown | 0 | 3 | 0 | 0 | 0 | 0 | 2026-01-20 | Skipped/DB Only |
 | From My Bowl | https://frommybowl.com/feed/ | 0 | 11 | 11 | 11 | 2 | 0 | 2026-02-03 | ✅ OK |
 | Full of Plants | https://fullofplants.com/feed/ | 0 | 7 | 0 | 0 | 0 | 0 | 2026-02-07 | ✅ OK |
-| Gretchen's Vegan Bakery | https://www.gretchensveganbakery.com/feed/ | 0 | 18 | 0 | 1 | 0 | 0 | 2026-02-07 | ✅ OK |
+| Gretchen's Vegan Bakery | https://www.gretchensveganbakery.com/feed/ | 1 | 19 | 0 | 1 | 0 | 0 | 2026-02-07 | ✅ OK |
 | Healthy Little Vittles | https://healthylittlevittles.com/feed/ | 0 | 20 | 0 | 4 | 1 | 20 | 2026-02-05 | ✅ OK |
 | HealthyGirl Kitchen | https://healthygirlkitchen.com/feed/ | 0 | 11 | 2 | 3 | 0 | 0 | 2026-02-06 | ✅ OK |
 | It Doesn't Taste Like Chicken | https://itdoesnttastelikechicken.com/feed/ | 0 | 34 | 2 | 14 | 34 | 0 | 2026-02-08 | ✅ OK |
