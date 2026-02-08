@@ -262,12 +262,7 @@
             border-color: #769F37 !important;
         }
 
-        #installBtn {
-            display: none;
-            background-color: #2c3e50;
-            color: white;
-            border: none;
-        }
+        /* Install button CSS removed here */
 
         .gallery {
             display: grid;
@@ -1132,27 +1127,15 @@
         processSearchChange();
     });
 
-    clearBtn.addEventListener('click', () => {
+   clearBtn.addEventListener('click', () => {
         searchInput.value = '';
         searchInput.focus();
         clearBtn.style.display = 'none';
         applyFilters(true);
     });
 
-    let deferredPrompt;
-    const installBtn = document.getElementById('installBtn');
-    window.addEventListener('beforeinstallprompt', (e) => {
-        e.preventDefault();
-        deferredPrompt = e;
-        if(installBtn) installBtn.style.display = 'inline-block';
-    });
-    if(installBtn) {
-        installBtn.addEventListener('click', (e) => {
-            installBtn.style.display = 'none';
-            deferredPrompt.prompt();
-            deferredPrompt = null;
-        });
-    }
+    // Custom Install App logic removed. 
+    // Users can use browser native "Add to Home Screen" functionality.
 
     function shareRecipe(e, title, link) {
         e.preventDefault(); 
