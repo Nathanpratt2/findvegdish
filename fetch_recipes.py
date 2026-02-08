@@ -136,7 +136,7 @@ for item in ALL_FEEDS:
     if len(item) == 3:
         name, url, tags = item
         URL_MAP[name] = url
-        BLOG_TAG_MAP[name]S = tags
+        BLOG_TAG_MAP[name] = tags
     else:
         print(f"⚠️ Warning: Skipping malformed RSS config: {item}")
 
