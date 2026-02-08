@@ -24,7 +24,6 @@ TOP_BLOGGERS = [
     ("The Korean Vegan", "https://thekoreanvegan.com/feed/", []),
     ("Rainbow Plant Life", "https://rainbowplantlife.com/feed/", []), # Main Feed
     ("Vegan Richa", "https://www.veganricha.com/feed/", []), # Main Feed
-    ("Forks Over Knives", "https://www.forksoverknives.com/feed/?post_type=recipe", []),
     ("It Doesn't Taste Like Chicken", "https://itdoesnttastelikechicken.com/feed/", []), 
     ("Elavegan", "https://elavegan.com/feed/", ["GF"]), # Will auto-tag GF
     ("The First Mess", "https://thefirstmess.com/feed/", []),
@@ -45,7 +44,6 @@ TOP_BLOGGERS = [
     ("Bianca Zapatka", "https://biancazapatka.com/en/feed/", []),
     ("A Virtual Vegan", "https://avirtualvegan.com/feed/", []),
     ("Sarah's Vegan Kitchen", "https://sarahsvegankitchen.com/feed/", []),
-    ("Bianca Zapatka", "https://biancazapatka.com/en/feed/", []),
     ("Sweet Simple Vegan", "https://sweetsimplevegan.com/feed/", []),
     ("Make It Dairy Free", "https://makeitdairyfree.com/feed/", []),
     ("Addicted to Dates", "https://addictedtodates.com/category/recipes/feed/", []),
