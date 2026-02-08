@@ -73,7 +73,7 @@ DISRUPTORS = [
     ("The Foodie Takes Flight", "https://thefoodietakesflight.com/feed/", ["Easy"]),
     ("Vegan Yack Attack", "https://veganyackattack.com/feed/", []),
     ("The Conscious Plant Kitchen", "https://www.theconsciousplantkitchen.com/feed/", []),
-    ("Choosing Chia", "https://choosingchia.com/feed/", ["Easy"]),
+    ("Choosing Chia", "https://choosingchia.com/category/diet%20/vegan/feed/", ["Easy"]),#updated to vegan only
     ("Flora & Vino", "https://www.floraandvino.com/feed/", ["WFPB"], ["Easy"]),
     ("Namely Marly", "https://namelymarly.com/feed/", []),
     ("The Post-Punk Kitchen", "https://www.theppk.com/feed/", []),
