@@ -1,14 +1,14 @@
 # Feed Health Report
-**Last Run:** 2026-02-07T21:02:19.204366
+**Last Run:** 2026-02-08T05:44:21.115562
 **Total Blogs:** 80
 **Active Blogs (Last 90d):** 74 / 80
-**Total Database Size:** 849
-**New Today:** 9
+**Total Database Size:** 854
+**New Today:** 12
 **WFPB:** 134 (15%)
 **Easy:** 209 (24%)
 **Budget:** 167 (19%)
 **Gluten-Free:** 122 (14%)
-**Average Latest Post:** 2026-01-14
+**Average Latest Post:** 2026-01-15
 
 | Blog Name | URL | New | Total | WFPB | Easy | Budget | GF | Latest | Status |
 |-----------|-----|-----|-------|------|------|--------|----|--------|--------|
@@ -45,7 +45,7 @@
 | Fran Costigan | Unknown | 0 | 3 | 0 | 0 | 0 | 0 | 2026-01-20 | Skipped/DB Only |
 | From My Bowl | https://frommybowl.com/feed/ | 0 | 11 | 11 | 11 | 2 | 0 | 2026-02-03 | ✅ OK |
 | Full of Plants | https://fullofplants.com/feed/ | 0 | 7 | 0 | 0 | 0 | 0 | 2026-02-07 | ✅ OK |
-| Gretchen's Vegan Bakery | https://www.gretchensveganbakery.com/feed/ | 1 | 18 | 0 | 1 | 0 | 0 | 2026-02-07 | ✅ OK |
+| Gretchen's Vegan Bakery | https://www.gretchensveganbakery.com/feed/ | 0 | 18 | 0 | 1 | 0 | 0 | 2026-02-07 | ✅ OK |
 | Healthy Little Vittles | https://healthylittlevittles.com/feed/ | 0 | 20 | 0 | 4 | 1 | 20 | 2026-02-05 | ✅ OK |
 | HealthyGirl Kitchen | https://healthygirlkitchen.com/feed/ | 0 | 11 | 2 | 3 | 0 | 0 | 2026-02-06 | ✅ OK |
 | It Doesn't Taste Like Chicken | https://itdoesnttastelikechicken.com/feed/ | 0 | 33 | 2 | 13 | 33 | 0 | 2026-02-07 | ✅ OK |
@@ -73,11 +73,11 @@
 | Simple Vegan Blog | https://simpleveganblog.com/feed/ | 0 | 7 | 0 | 7 | 1 | 0 | 2026-02-05 | ✅ OK |
 | Snixy Kitchen | https://www.snixykitchen.com/special-diet/vegan/feed/ | 0 | 2 | 0 | 1 | 0 | 0 | 2025-11-21 | ✅ OK |
 | Strength and Sunshine | Unknown | 0 | 10 | 2 | 0 | 2 | 6 | 2026-01-22 | Skipped/DB Only |
-| Sweet Potato Soul | https://sweetpotatosoul.com/feed/ | 0 | 10 | 0 | 1 | 2 | 0 | 2026-01-04 | ✅ OK |
+| Sweet Potato Soul | https://sweetpotatosoul.com/feed/ | 1 | 11 | 0 | 1 | 2 | 0 | 2026-02-07 | ✅ OK |
 | Sweet Simple Vegan | https://sweetsimplevegan.com/feed/ | 0 | 7 | 0 | 4 | 0 | 0 | 2026-02-06 | ✅ OK |
 | The Banana Diaries | https://thebananadiaries.com/feed/ | 0 | 11 | 0 | 5 | 2 | 0 | 2026-02-06 | ✅ OK |
 | The Burger Dude | https://theeburgerdude.com/feed/ | 0 | 14 | 0 | 1 | 3 | 0 | 2026-02-06 | ✅ OK |
-| The Conscious Plant Kitchen | https://www.theconsciousplantkitchen.com/feed/ | 0 | 11 | 11 | 1 | 0 | 1 | 2026-02-05 | ✅ OK |
+| The Conscious Plant Kitchen | https://www.theconsciousplantkitchen.com/feed/ | 1 | 12 | 11 | 1 | 0 | 1 | 2026-02-08 | ✅ OK |
 | The First Mess | https://thefirstmess.com/feed/ | 0 | 13 | 1 | 2 | 2 | 1 | 2026-02-05 | ✅ OK |
 | The Foodie Takes Flight | https://thefoodietakesflight.com/feed/ | 0 | 11 | 0 | 11 | 2 | 0 | 2026-02-05 | ✅ OK |
 | The Hidden Veggies | https://thehiddenveggies.com/feed/ | 0 | 11 | 1 | 1 | 11 | 0 | 2026-02-05 | ✅ OK |
@@ -90,5 +90,5 @@
 | Vegan Richa | https://www.veganricha.com/feed/ | 0 | 21 | 0 | 5 | 6 | 20 | 2026-02-07 | ✅ OK |
 | Vegan in the Freezer | https://veganinthefreezer.com/feed/ | 0 | 1 | 0 | 0 | 0 | 0 | 2026-01-25 | ✅ OK |
 | Veggiekins | Unknown | 0 | 10 | 0 | 1 | 0 | 0 | 2026-01-29 | Skipped/DB Only |
-| Veggies Don't Bite | https://veggiesdontbite.com/feed/ | 1 | 20 | 1 | 1 | 4 | 1 | 2026-02-06 | ✅ OK |
+| Veggies Don't Bite | https://veggiesdontbite.com/feed/ | 3 | 23 | 1 | 1 | 4 | 1 | 2026-02-07 | ✅ OK |
 | Watch Learn Eat | https://watchlearneat.com/feed/ | 0 | 11 | 1 | 11 | 2 | 2 | 2026-02-07 | ✅ OK |
