@@ -81,6 +81,9 @@ DISRUPTORS = [
     ("Namely Marly", "https://namelymarly.com/feed/", []),
     ("The Veg Space", "https://www.thevegspace.co.uk/feed/", []),
     ("The Post-Punk Kitchen", "https://www.theppk.com/feed/", []),
+    ("Vegan Punks", "https://veganpunks.com/feed/", []),
+    ("Plant Baes", "https://plantbaes.com/feed/", []),
+    ("Nadia's Healthy Kitchen (Vegan Recipes)", "https://nadiashealthykitchen.com/category/vegan/feed/", []),
     ("The Little Blog of Vegan", "https://www.thelittleblogofvegan.com/feed/", []),
     ("Eat Figs, Not Pigs", "https://www.eatfigsnotpigs.com/feed/", []),
     ("The Banana Diaries", "https://thebananadiaries.com/feed/", []),
@@ -112,6 +115,7 @@ HTML_SOURCES = [
     ("Cookie and Kate (Vegan Recipes)", "https://cookieandkate.com/category/vegan-recipes/", [], "custom_pul"),
     ("The Loopy Whisk (Vegan Recipes)", "https://theloopywhisk.com/diet/vegan/", ["GF"], "wordpress"),
     ("Oh She Glows","https://www.ohsheglows.com/recipe-search/",[], "wordpress"),
+    ("Elsa's Wholesome Life","https://www.elsaswholesomelife.com/blog?category=Recipes",[], "wordpress"),
     ("The Full Helping (Vegan Recipes)","https://www.thefullhelping.com/dietary/vegan/",[],"wordpress"),
     ("Hot For Food","https://www.hotforfoodblog.com/recipe-index/",[],"wordpress")
 ]
