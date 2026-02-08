@@ -73,6 +73,7 @@ DISRUPTORS = [
     ("The Stingy Vegan", "https://thestingyvegan.com/feed/", ["Easy", "Budget"]),
     ("The Foodie Takes Flight", "https://thefoodietakesflight.com/feed/", ["Easy"]),
     ("Vegan Yack Attack", "https://veganyackattack.com/feed/", []),
+    ("My Vegan Minimalist", "https://myveganminimalist.com/feed/", []),
     ("Messy Vegan Cook", "https://messyvegancook.com/feed/", []),
     ("The Conscious Plant Kitchen", "https://www.theconsciousplantkitchen.com/feed/", []),
     ("Choosing Chia (Vegan Recipes)", "https://choosingchia.com/category/diet%20/vegan/feed/", ["Easy"]),
