@@ -1,13 +1,13 @@
 # Feed Health Report
-**Last Run:** 2026-02-08T14:03:51.606739
+**Last Run:** 2026-02-08T15:03:54.583507
 **Total Blogs:** 84
 **Active Blogs (Last 90d):** 77 / 84
 **Total Database Size:** 838
-**New Today:** 7
+**New Today:** 10
 **WFPB:** 132 (15%)
 **Easy:** 205 (24%)
 **Budget:** 166 (19%)
-**Gluten-Free:** 122 (14%)
+**Gluten-Free:** 83 (9%)
 **Average Latest Post:** 2026-01-13
 
 | Blog Name | URL | New | Total | WFPB | Easy | Budget | GF | Latest | Status |
@@ -69,7 +69,7 @@
 | Plantifully Based | https://plantifullybasedblog.com/feed/ | 0 | 10 | 1 | 2 | 0 | 0 | 2026-02-07 | ✅ OK |
 | Rabbit and Wolves | https://www.rabbitandwolves.com/feed/ | 0 | 10 | 0 | 1 | 1 | 0 | 2026-01-19 | ✅ OK |
 | Rainbow Nourishments | https://www.rainbownourishments.com/feed/ | 0 | 11 | 0 | 2 | 1 | 0 | 2026-02-06 | ✅ OK |
-| Rainbow Plant Life | https://rainbowplantlife.com/feed/ | 0 | 23 | 5 | 1 | 4 | 20 | 2026-02-07 | ✅ OK |
+| Rainbow Plant Life | https://rainbowplantlife.com/feed/ | 3 | 23 | 5 | 1 | 4 | 0 | 2026-02-07 | ✅ OK |
 | Rhian's Recipes | https://www.rhiansrecipes.com/feed/ | 0 | 24 | 0 | 0 | 0 | 24 | 2026-01-28 | ✅ OK |
 | Running on Real Food | https://runningonrealfood.com/feed/ | 0 | 10 | 10 | 0 | 2 | 0 | 2026-01-29 | ✅ OK |
 | Sarah's Vegan Kitchen | https://sarahsvegankitchen.com/feed/ | 0 | 16 | 0 | 0 | 3 | 0 | 2026-02-04 | ✅ OK |
@@ -91,7 +91,7 @@
 | The Stingy Vegan | https://thestingyvegan.com/feed/ | 0 | 10 | 0 | 10 | 10 | 0 | 2025-12-12 | ✅ OK |
 | VegNews | https://vegnews.com/feed | 0 | 29 | 3 | 5 | 1 | 0 | 2026-02-07 | ✅ OK |
 | Vegan Heaven | https://veganheaven.org/feed/ | 0 | 10 | 0 | 0 | 1 | 0 | 2026-01-06 | ✅ OK |
-| Vegan Richa | https://www.veganricha.com/feed/ | 0 | 21 | 0 | 5 | 6 | 20 | 2026-02-07 | ✅ OK |
+| Vegan Richa | https://www.veganricha.com/feed/ | 0 | 21 | 0 | 5 | 6 | 1 | 2026-02-07 | ✅ OK |
 | Vegan in the Freezer | https://veganinthefreezer.com/feed/ | 0 | 1 | 0 | 0 | 0 | 0 | 2026-01-25 | ✅ OK |
 | Veggiekins | Unknown | 0 | 10 | 0 | 1 | 0 | 0 | 2026-01-29 | Skipped/DB Only |
 | Veggies Don't Bite | https://veggiesdontbite.com/feed/ | 0 | 23 | 1 | 1 | 4 | 1 | 2026-02-07 | ✅ OK |
