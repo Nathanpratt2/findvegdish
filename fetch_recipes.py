@@ -90,6 +90,7 @@ DISRUPTORS = [
     ("ZardyPlants", "https://zardyplants.com/feed/", ["WFPB"]),
     ("Dreena Burton", "https://dreenaburton.com/feed/", ["WFPB"]),
     ("Cupful of Kale", "https://cupfulofkale.com/feed/", []),
+    ("What Jew You Want to Eat", "https://whatjewwannaeat.com/vegan/feed/", []),
     ("Holistic Chef Academy", "https://https://holisticchefacademy.com/feed/", []),
     ("Healthy Little Vittles", "https://healthylittlevittles.com/feed/", ["GF"]), # Will auto-tag GF
     ("Healthier Steps", "https://healthiersteps.com/feed/", [])
