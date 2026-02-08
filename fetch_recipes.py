@@ -593,7 +593,7 @@ with open('FEED_HEALTH.md', 'w') as f:
     else:
         avg_date = "N/A"
 
-   report_rows = []
+    report_rows = []  # <--- Fixed indentation (4 spaces)
     
     for name in all_monitored_names:
         url = URL_MAP.get(name, "Unknown")
