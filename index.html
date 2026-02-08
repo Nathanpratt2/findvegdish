@@ -623,6 +623,13 @@
     
     const BATCH_SIZE = 48;        
 
+    // --- CONFIGURATION ---
+    // Maps internal database names to user-friendly display names
+    const BLOG_DISPLAY_MAP = {
+        "Rainbow Plant Life GF": "Rainbow Plant Life",
+        "Vegan Richa GF": "Vegan Richa"
+    };
+
     // --- KEYWORDS ---
     const SWEET_KEYWORDS = ['cookie', 'cake', 'brownie', 'chocolate', 'dessert', 'pie', 'tart', 'muffin', 'donut', 'doughnut', 'ice cream', 'pudding', 'cheesecake', 'sweet', 'fudge', 'truffle', 'bar', 'cupcake', 'blondie', 'galette', 'cobbler', 'mousse', 'cinnamon roll', 'scone', 'waffle', 'pancake'];
     const MEAL_KEYWORDS = ['pasta', 'burger', 'curry', 'soup', 'stew', 'taco', 'pizza', 'sandwich', 'wrap', 'salad', 'bowl', 'rice', 'noodle', 'stir fry', 'lasagna', 'casserole', 'tofu', 'tempeh', 'lentil', 'chickpea', 'potato', 'dinner', 'lunch', 'roast', 'chili', 'shepherd', 'risotto', 'gnocchi', 'quiche', 'enchilada', 'burrito', 'quesadilla', 'mac and cheese', 'dumpling', 'meatball', 'loaf', 'skillet', 'gratin', 'pad thai', 'ramen'];
@@ -930,13 +937,17 @@
             });
         }
         
+        // --- DISPLAY NAME LOGIC ---
+        // If the blog name is "Rainbow Plant Life GF", display "Rainbow Plant Life"
+        const displayBlogger = BLOG_DISPLAY_MAP[recipe.blog_name] || recipe.blog_name;
+
         info.innerHTML = `
             <div class="meta-row">
                 <span class="${tagClass}">${tagText}</span>
                 ${badgeHTML}
             </div>
             <h2 class="title" title="${recipe.title}">${recipe.title}</h2>
-            <div class="blogger">by ${recipe.blog_name}</div>
+            <div class="blogger">by ${displayBlogger}</div>
         `;
 
         const shareBtn = document.createElement('button');
