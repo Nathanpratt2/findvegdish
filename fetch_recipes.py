@@ -64,7 +64,7 @@ DISRUPTORS = [
     ("Unconventional Baker", "https://www.unconventionalbaker.com/feed/", ["GF"]), # Will auto-tag GF
     ("Fragrant Vanilla Cake", "https://www.fragrantvanilla.com/feed/", []),
     ("Plantifully Based", "https://plantifullybasedblog.com/feed/", []),
-    ("Cadry's Kitchen", "https://cadryskitchen.com/feed/", ["Easy"]),
+    ("Cadry's Kitchen", "https://cadryskitchen.com/vegan-recipes/feed/", ["Easy"]),#updated to vegan only
     ("Dr. Vegan", "https://drveganblog.com/feed/", ["Easy"]),
     ("Veggies Don't Bite", "https://veggiesdontbite.com/feed/", []),
     ("Watch Learn Eat", "https://watchlearneat.com/feed/", ["Easy"]),
