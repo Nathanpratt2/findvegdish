@@ -1,9 +1,9 @@
 # Feed Health Report
-**Last Run:** 2026-02-08T13:36:42.915310
+**Last Run:** 2026-02-08T14:03:51.606739
 **Total Blogs:** 84
 **Active Blogs (Last 90d):** 77 / 84
 **Total Database Size:** 838
-**New Today:** 12
+**New Today:** 7
 **WFPB:** 132 (15%)
 **Easy:** 205 (24%)
 **Budget:** 166 (19%)
@@ -19,7 +19,7 @@
 | School Night Vegan | https://schoolnightvegan.com/category/recipes/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/HTML Fail |
 | Snixy Kitchen (Vegan Recipes) | https://www.snixykitchen.com/special-diet/vegan/feed/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ No Recipes |
 | The Loopy Whisk (Vegan Recipes) | https://theloopywhisk.com/diet/vegan/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/HTML Fail |
-| Choosing Chia (Vegan Recipes) | https://choosingchia.com/category/diet%20/vegan/feed/ | 5 | 5 | 0 | 5 | 0 | 0 | 2025-08-18 | ⚠️ Stale (>90d)  |
+| Choosing Chia (Vegan Recipes) | https://choosingchia.com/category/diet%20/vegan/feed/ | 0 | 5 | 0 | 5 | 0 | 0 | 2025-08-18 | ⚠️ Stale (>90d)  |
 | Healthier Steps | https://healthiersteps.com/feed/ | 0 | 2 | 1 | 0 | 0 | 0 | 2025-05-18 | ⚠️ Stale (>90d)  |
 | The Vegan 8 | https://thevegan8.com/feed/ | 0 | 10 | 1 | 10 | 10 | 0 | 2025-10-25 | ⚠️ Stale (>90d)  |
 | Turnip Vegan | https://turnipvegan.com/blogs/news.atom | 0 | 7 | 0 | 0 | 0 | 0 | 2025-04-11 | ⚠️ Stale (>90d)  |
