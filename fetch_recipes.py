@@ -18,7 +18,7 @@ from requests.packages.urllib3.poolmanager import PoolManager
 # Format: ("Blog Name", "Feed URL", ["SPECIAL_TAGS"])
 
 TOP_BLOGGERS = [
-    ("Minimalist Baker", "https://minimalistbaker.com/recipes/vegan/feed/", ["Easy"]),
+    ("Minimalist Baker (Vegan Recipes)", "https://minimalistbaker.com/recipes/vegan/feed/", ["Easy"]),
     ("Nora Cooks", "https://www.noracooks.com/feed/", []),
     ("PlantYou", "https://plantyou.com/feed/", ["WFPB"]),
     ("The Korean Vegan", "https://thekoreanvegan.com/feed/", []),
@@ -64,7 +64,7 @@ DISRUPTORS = [
     ("Unconventional Baker", "https://www.unconventionalbaker.com/feed/", ["GF"]), # Will auto-tag GF
     ("Fragrant Vanilla Cake", "https://www.fragrantvanilla.com/feed/", []),
     ("Plantifully Based", "https://plantifullybasedblog.com/feed/", []),
-    ("Cadry's Kitchen", "https://cadryskitchen.com/vegan-recipes/feed/", ["Easy"]),#updated to vegan only
+    ("Cadry's Kitchen (Vegan Recipes)", "https://cadryskitchen.com/vegan-recipes/feed/", ["Easy"]),#updated to vegan only
     ("Dr. Vegan", "https://drveganblog.com/feed/", ["Easy"]),
     ("Veggies Don't Bite", "https://veggiesdontbite.com/feed/", []),
     ("Watch Learn Eat", "https://watchlearneat.com/feed/", ["Easy"]),
@@ -73,7 +73,7 @@ DISRUPTORS = [
     ("The Foodie Takes Flight", "https://thefoodietakesflight.com/feed/", ["Easy"]),
     ("Vegan Yack Attack", "https://veganyackattack.com/feed/", []),
     ("The Conscious Plant Kitchen", "https://www.theconsciousplantkitchen.com/feed/", []),
-    ("Choosing Chia", "https://choosingchia.com/category/diet%20/vegan/feed/", ["Easy"]),#updated to vegan only
+    ("Choosing Chia (Vegan Recipes)", "https://choosingchia.com/category/diet%20/vegan/feed/", ["Easy"]),#updated to vegan only
     ("Flora & Vino", "https://www.floraandvino.com/feed/", ["WFPB"], ["Easy"]),
     ("Namely Marly", "https://namelymarly.com/feed/", []),
     ("The Post-Punk Kitchen", "https://www.theppk.com/feed/", []),
@@ -83,7 +83,7 @@ DISRUPTORS = [
     ("Plant Power Couple", "https://www.plantpowercouple.com/feed/", ["Easy"]),
     ("Rainbow Nourishments", "https://www.rainbownourishments.com/feed/", []),
     ("Rhian's Recipes", "https://www.rhiansrecipes.com/feed/", ["GF"]), # Will auto-tag GF
-    ("Snixy Kitchen", "https://www.snixykitchen.com/special-diet/vegan/feed/", []),
+    ("Snixy Kitchen (Vegan Recipes)", "https://www.snixykitchen.com/special-diet/vegan/feed/", []),
     ("Monkey & Me Kitchen Adventures", "https://monkeyandmekitchenadventures.com/feed/", ["WFPB"]),
     ("Ann Arbor Vegan Kitchen", "https://www.annarborvegankitchen.com/feed/", ["WFPB"]),
     ("Veggiekins", "https://veggiekinsblog.com/feed/", ["Easy"],["GF"]), # Will auto-tag GF
@@ -102,11 +102,11 @@ HTML_SOURCES = [
     ("Rainbow Plant Life GF", "https://rainbowplantlife.com/diet/gluten-free/", ["GF"], "wordpress"),
     ("Vegan Richa GF", "https://www.veganricha.com/category/gluten-free/", ["GF"], "wordpress"),
     ("School Night Vegan", "https://schoolnightvegan.com/category/recipes/", [], "custom_pul"),
-    ("Love and Lemons", "https://www.loveandlemons.com/category/recipes/vegan/", [], "wordpress"),
-    ("Cookie and Kate", "https://cookieandkate.com/category/vegan-recipes/", [], "custom_pul"),
-    ("The Loopy Whisk", "https://theloopywhisk.com/diet/vegan/", ["GF"], "wordpress"),
+    ("Love and Lemons (Vegan Recipes)", "https://www.loveandlemons.com/category/recipes/vegan/", [], "wordpress"),
+    ("Cookie and Kate (Vegan Recipes)", "https://cookieandkate.com/category/vegan-recipes/", [], "custom_pul"),
+    ("The Loopy Whisk (Vegan Recipes)", "https://theloopywhisk.com/diet/vegan/", ["GF"], "wordpress"),
     ("Oh She Glows","https://www.ohsheglows.com/recipe-search/",[], "wordpress"),
-    ("The Full Helping","https://www.thefullhelping.com/dietary/vegan/",[],"wordpress"),
+    ("The Full Helping (Vegan Recipes)","https://www.thefullhelping.com/dietary/vegan/",[],"wordpress"),
     ("Hot For Food","https://www.hotforfoodblog.com/recipe-index/",[],"wordpress")
 ]
 
