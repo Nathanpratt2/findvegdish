@@ -1,5 +1,5 @@
 # Feed Health Report
-**Last Run:** 2026-02-08T07:55:59.887158
+**Last Run:** 2026-02-08T09:50:38.795972
 **Total Blogs:** 80
 **Active Blogs (Last 90d):** 74 / 80
 **Total Database Size:** 854
@@ -14,16 +14,14 @@
 |-----------|-----|-----|-------|------|------|--------|----|--------|--------|
 | Cookie and Kate | https://cookieandkate.com/category/vegan-recipes/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/HTML Fail |
 | Oh She Glows | https://www.ohsheglows.com/recipe-search/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/HTML Fail |
-| PlantYou | https://plantyou.com/feed/ | 0 | 11 | 11 | 2 | 2 | 0 | 2026-02-06 | ❌ Blocked/ConnErr |
-| Running on Real Food | https://runningonrealfood.com/feed/ | 0 | 10 | 10 | 0 | 2 | 0 | 2026-01-29 | ❌ Blocked/ConnErr |
 | School Night Vegan | https://schoolnightvegan.com/category/recipes/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/HTML Fail |
 | The Loopy Whisk | https://theloopywhisk.com/diet/vegan/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/HTML Fail |
-| ZardyPlants | https://zardyplants.com/feed/ | 0 | 10 | 10 | 7 | 3 | 0 | 2025-11-08 | ❌ Blocked/ConnErr |
 | Healthier Steps | https://healthiersteps.com/feed/ | 0 | 2 | 1 | 0 | 0 | 0 | 2025-05-18 | ⚠️ Stale (>90d)  |
 | The Vegan 8 | https://thevegan8.com/feed/ | 0 | 10 | 1 | 10 | 10 | 0 | 2025-10-25 | ⚠️ Stale (>90d)  |
 | Turnip Vegan | https://turnipvegan.com/blogs/news.atom | 0 | 7 | 0 | 0 | 0 | 0 | 2025-04-11 | ⚠️ Stale (>90d)  |
 | Unconventional Baker | https://www.unconventionalbaker.com/feed/ | 0 | 10 | 0 | 0 | 0 | 10 | 2025-11-01 | ⚠️ Stale (>90d)  |
 | Vegan Yack Attack | https://veganyackattack.com/feed/ | 0 | 5 | 0 | 2 | 0 | 0 | 2025-07-27 | ⚠️ Stale (>90d)  |
+| ZardyPlants | https://zardyplants.com/feed/ | 0 | 10 | 10 | 7 | 3 | 0 | 2025-11-08 | ⚠️ Stale (>90d)  |
 | Hot For Food | https://www.hotforfoodblog.com/recipe-index/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ⚠️ Scraped 0 |
 | Love and Lemons | https://www.loveandlemons.com/category/recipes/vegan/ | 0 | 11 | 1 | 1 | 1 | 0 | 2026-02-07 | ⚠️ Scraped 0 |
 | Pick Up Limes | https://www.pickuplimes.com/recipe/ | 0 | 12 | 0 | 0 | 1 | 0 | 2026-02-07 | ⚠️ Scraped 0 |
@@ -64,11 +62,13 @@
 | One Arab Vegan | https://www.onearabvegan.com/feed/ | 0 | 2 | 0 | 0 | 1 | 0 | 2025-12-04 | ✅ OK |
 | Plant Power Couple | https://www.plantpowercouple.com/feed/ | 0 | 11 | 0 | 11 | 1 | 0 | 2026-02-03 | ✅ OK |
 | Plant-Based on a Budget | https://plantbasedonabudget.com/feed/ | 0 | 10 | 0 | 1 | 10 | 0 | 2026-02-05 | ✅ OK |
+| PlantYou | https://plantyou.com/feed/ | 0 | 11 | 11 | 2 | 2 | 0 | 2026-02-06 | ✅ OK |
 | Plantifully Based | https://plantifullybasedblog.com/feed/ | 0 | 10 | 1 | 2 | 0 | 0 | 2026-02-07 | ✅ OK |
 | Rabbit and Wolves | https://www.rabbitandwolves.com/feed/ | 0 | 10 | 0 | 1 | 1 | 0 | 2026-01-19 | ✅ OK |
 | Rainbow Nourishments | https://www.rainbownourishments.com/feed/ | 0 | 11 | 0 | 2 | 1 | 0 | 2026-02-06 | ✅ OK |
 | Rainbow Plant Life | https://rainbowplantlife.com/feed/ | 0 | 23 | 5 | 1 | 4 | 20 | 2026-02-07 | ✅ OK |
 | Rhian's Recipes | https://www.rhiansrecipes.com/feed/ | 0 | 24 | 0 | 0 | 0 | 24 | 2026-01-28 | ✅ OK |
+| Running on Real Food | https://runningonrealfood.com/feed/ | 0 | 10 | 10 | 0 | 2 | 0 | 2026-01-29 | ✅ OK |
 | Sarah's Vegan Kitchen | https://sarahsvegankitchen.com/feed/ | 0 | 16 | 0 | 0 | 3 | 0 | 2026-02-04 | ✅ OK |
 | Simple Vegan Blog | https://simpleveganblog.com/feed/ | 0 | 7 | 0 | 7 | 1 | 0 | 2026-02-05 | ✅ OK |
 | Snixy Kitchen | https://www.snixykitchen.com/special-diet/vegan/feed/ | 0 | 2 | 0 | 1 | 0 | 0 | 2025-11-21 | ✅ OK |
