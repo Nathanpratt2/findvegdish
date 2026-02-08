@@ -138,7 +138,7 @@ for item in ALL_FEEDS:
     if len(item) == 3:
         name, url, tags = item
         URL_MAP[name] = url
-        BLOG_TAG_MAP[name] = tags
+        BLOG_TAG_MAP[name]S = tags
     else:
         print(f"⚠️ Warning: Skipping malformed RSS config: {item}")
 
@@ -497,6 +497,8 @@ for item in HTML_SOURCES:
         continue
     name, url, tags, mode = item
     
+    time.sleep(random.uniform(2, 7))
+
     try:
         # Pass 'recipes' list and current 'tags' (e.g. ['GF']).
         # Note: existing_links now handles (link, name) uniqueness inside the function.
