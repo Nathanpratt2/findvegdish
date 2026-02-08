@@ -1,12 +1,12 @@
 # Feed Health Report
-**Last Run:** 2026-02-08T09:50:38.795972
+**Last Run:** 2026-02-08T11:04:38.851339
 **Total Blogs:** 80
 **Active Blogs (Last 90d):** 74 / 80
-**Total Database Size:** 854
-**New Today:** 7
+**Total Database Size:** 855
+**New Today:** 8
 **WFPB:** 134 (15%)
 **Easy:** 209 (24%)
-**Budget:** 167 (19%)
+**Budget:** 168 (19%)
 **Gluten-Free:** 122 (14%)
 **Average Latest Post:** 2026-01-15
 
@@ -48,7 +48,7 @@
 | Gretchen's Vegan Bakery | https://www.gretchensveganbakery.com/feed/ | 0 | 18 | 0 | 1 | 0 | 0 | 2026-02-07 | ✅ OK |
 | Healthy Little Vittles | https://healthylittlevittles.com/feed/ | 0 | 20 | 0 | 4 | 1 | 20 | 2026-02-05 | ✅ OK |
 | HealthyGirl Kitchen | https://healthygirlkitchen.com/feed/ | 0 | 11 | 2 | 3 | 0 | 0 | 2026-02-06 | ✅ OK |
-| It Doesn't Taste Like Chicken | https://itdoesnttastelikechicken.com/feed/ | 0 | 33 | 2 | 13 | 33 | 0 | 2026-02-07 | ✅ OK |
+| It Doesn't Taste Like Chicken | https://itdoesnttastelikechicken.com/feed/ | 1 | 34 | 2 | 13 | 34 | 0 | 2026-02-08 | ✅ OK |
 | Jessica in the Kitchen | https://jessicainthekitchen.com/feed/ | 0 | 13 | 2 | 0 | 2 | 2 | 2026-02-06 | ✅ OK |
 | Lazy Cat Kitchen | https://www.lazycatkitchen.com/feed/ | 0 | 11 | 0 | 0 | 2 | 0 | 2026-02-07 | ✅ OK |
 | Make It Dairy Free | https://makeitdairyfree.com/feed/ | 0 | 10 | 1 | 1 | 2 | 1 | 2026-02-01 | ✅ OK |
@@ -58,7 +58,7 @@
 | My Darling Vegan | https://www.mydarlingvegan.com/feed/ | 0 | 13 | 1 | 3 | 2 | 0 | 2026-02-03 | ✅ OK |
 | Namely Marly | https://namelymarly.com/feed/ | 7 | 50 | 4 | 6 | 5 | 0 | 2026-02-06 | ✅ OK |
 | Nora Cooks | https://www.noracooks.com/feed/ | 0 | 10 | 1 | 0 | 0 | 0 | 2026-02-02 | ✅ OK |
-| Okonomi Kitchen | https://okonomikitchen.com/feed/ | 0 | 12 | 0 | 0 | 1 | 0 | 2026-02-04 | ✅ OK |
+| Okonomi Kitchen | Unknown | 0 | 12 | 0 | 0 | 1 | 0 | 2026-02-04 | Skipped/DB Only |
 | One Arab Vegan | https://www.onearabvegan.com/feed/ | 0 | 2 | 0 | 0 | 1 | 0 | 2025-12-04 | ✅ OK |
 | Plant Power Couple | https://www.plantpowercouple.com/feed/ | 0 | 11 | 0 | 11 | 1 | 0 | 2026-02-03 | ✅ OK |
 | Plant-Based on a Budget | https://plantbasedonabudget.com/feed/ | 0 | 10 | 0 | 1 | 10 | 0 | 2026-02-05 | ✅ OK |
