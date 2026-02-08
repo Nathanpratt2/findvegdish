@@ -115,6 +115,7 @@ HTML_SOURCES = [
     ("Cookie and Kate (Vegan Recipes)", "https://cookieandkate.com/category/vegan-recipes/", [], "custom_pul"),
     ("The Loopy Whisk (Vegan Recipes)", "https://theloopywhisk.com/diet/vegan/", ["GF"], "wordpress"),
     ("Oh She Glows","https://www.ohsheglows.com/recipe-search/",[], "wordpress"),
+    ("Zacchary Bird","https://www.zaccharybird.com/all-recipes/",[], "wordpress"),
     ("Elsa's Wholesome Life","https://www.elsaswholesomelife.com/blog?category=Recipes",[], "wordpress"),
     ("The Full Helping (Vegan Recipes)","https://www.thefullhelping.com/dietary/vegan/",[],"wordpress"),
     ("Hot For Food","https://www.hotforfoodblog.com/recipe-index/",[],"wordpress")
