@@ -281,6 +281,110 @@ def generate_sitemap(recipes):
         f.write(sitemap_content)
     print("Generated sitemap.xml")
 
+# --- HELPER FUNCTIONS FOR ROBUST HTML PARSING ---
+
+def parse_srcset(srcset_str):
+    """Parses a srcset string and returns the URL with the highest width."""
+    if not srcset_str:
+        return None
+    
+    candidates = []
+    # Split by comma, handling potential commas in URLs is tricky but srcset standard helps
+    parts = srcset_str.split(',')
+    
+    for p in parts:
+        p = p.strip()
+        if not p: continue
+        
+        # Split by space. Last part is usually width descriptor.
+        subparts = p.split()
+        if len(subparts) < 2:
+             # Just a URL, assume width 0 or check if it's just a url
+             if subparts: candidates.append((0, subparts[0]))
+             continue
+        
+        url_part = subparts[0]
+        width_part = subparts[-1]
+        
+        # Parse width
+        width = 0
+        if width_part.endswith('w'):
+            try: width = int(width_part[:-1])
+            except: pass
+        elif width_part.endswith('x'):
+            try: width = float(width_part[:-1]) * 1000 # Rough equivalent for density
+            except: pass
+            
+        candidates.append((width, url_part))
+        
+    if not candidates: 
+        return None
+    
+    # Sort by width desc
+    candidates.sort(key=lambda x: x[0], reverse=True)
+    return candidates[0][1]
+
+def extract_metadata_from_page(url):
+    """
+    Fetches a specific recipe page to extract the precise date and high-res image.
+    Used for new items that are missing data in the archive view.
+    """
+    html = robust_fetch(url, is_scraping_page=True)
+    if not html: return None, None
+    
+    soup = BeautifulSoup(html, 'lxml')
+    date_obj = None
+    image_url = None
+
+    # 1. Date Extraction
+    # Strategy A: JSON-LD (Most reliable)
+    scripts = soup.find_all('script', type='application/ld+json')
+    for script in scripts:
+        if not script.string: continue
+        try:
+            data = json.loads(script.string)
+            nodes = []
+            if isinstance(data, list): nodes = data
+            elif isinstance(data, dict): nodes = data.get('@graph', [data])
+            
+            for node in nodes:
+                # Look for Article or Recipe
+                if node.get('@type') in ['Article', 'BlogPosting', 'Recipe', 'NewsArticle']:
+                    dt = node.get('datePublished') or node.get('dateCreated')
+                    if dt:
+                        try:
+                            date_obj = parser.parse(dt)
+                            break
+                        except: pass
+            if date_obj: break
+        except: continue
+
+    # Strategy B: Meta Tags
+    if not date_obj:
+        meta_date = soup.find('meta', property='article:published_time') or \
+                    soup.find('meta', property='og:updated_time') or \
+                    soup.find('meta', itemprop='datePublished')
+        if meta_date and meta_date.get('content'):
+            try: date_obj = parser.parse(meta_date['content'])
+            except: pass
+            
+    # Strategy C: Time Tags
+    if not date_obj:
+        time_tag = soup.find('time')
+        if time_tag:
+            dt_str = time_tag.get('datetime') or time_tag.get_text()
+            try: date_obj = parser.parse(dt_str)
+            except: pass
+
+    # 2. Image Extraction (High Res)
+    # OpenGraph is usually best for the main image
+    og_img = soup.find('meta', property='og:image')
+    if og_img and og_img.get('content'):
+        image_url = og_img['content']
+        
+    return date_obj, image_url
+
+
 # --- HTML SCRAPING LOGIC ---
 
 def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags):
@@ -309,17 +413,14 @@ def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags)
                     articles.append(a)
 
     elif mode == "custom_zj":
-        # Zucker & Jagdwurst uses a specific grid structure
-        # We target the 'a' tags that wrap their post items
+        # Zucker & Jagdwurst grid
         links = soup.select("a.post-item, .post-grid a, .archive-posts a")
         if not links:
-            # Fallback to all links if classes change
             links = soup.find_all('a', href=True)
             
         for a in links:
             href = a.get('href', '')
             if '/en/' in href and not any(x in href for x in ['/archive', '/page/', '/category/', '/about']):
-                # Only add if it contains an image or a title
                 if a.find('img') or a.find(['h2', 'h3', 'h4']):
                     articles.append(a)
                     
@@ -372,42 +473,62 @@ def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags)
                 t_tag = art.select_one(".post-item__title, .article-title, h2, h3")
                 title = t_tag.get_text(strip=True) if t_tag else "Recipe"
                 
+                # ZJ Image Logic: Handle Lazy Loading & Srcset
                 img_tag = art.find('img')
                 if img_tag:
-                    image_url = None
-                    # We check high-priority lazy attributes first
-                    for attr in ['data-src', 'data-lazy-src', 'lazy-src', 'data-srcset', 'srcset', 'src']:
-                        val = img_tag.get(attr)
-                        if not val: continue
-
-                        # If it's a srcset, pick the LAST item (usually highest res) instead of the first
-                        if 'srcset' in attr:
-                            parts = [p.strip().split(' ')[0] for p in val.split(',')]
-                            candidate = parts[-1] # Get the largest image
-                        else:
-                            candidate = val.strip()
-
-                        # Clean candidate and validate
-                        if candidate and not candidate.startswith('data:') and 'spacer.gif' not in candidate and '1x1' not in candidate:
-                            image_url = candidate
-                            break
-                    image = image_url
+                    # 1. Try parse_srcset on data-srcset (highest priority for lazy load)
+                    candidate = parse_srcset(img_tag.get('data-srcset'))
+                    
+                    # 2. Try parse_srcset on regular srcset
+                    if not candidate:
+                        candidate = parse_srcset(img_tag.get('srcset'))
+                        
+                    # 3. Fallback to simple attributes
+                    if not candidate:
+                        for attr in ['data-src', 'data-lazy-src', 'src']:
+                            val = img_tag.get(attr)
+                            if val and 'spacer' not in val and 'data:' not in val:
+                                candidate = val
+                                break
+                    
+                    image = candidate
                 
-                date_obj = datetime.now()
+                # ZJ Archive pages often don't have dates. We set None here to trigger detailed fetch later.
+                date_obj = None
 
             if not title or not link: continue
             if is_pet_recipe(title): continue
             
-            # --- SEPARATE ENTRY LOGIC ---
-            # We treat (link, blog_name) as the unique key.
-            # If "Rainbow Plant Life GF" is scraping a link that "Rainbow Plant Life" already has,
-            # we allow it as a NEW entry because the blog_name is different.
+            # --- SEPARATE ENTRY LOGIC & DEEP FETCH ---
+            # If (link, name) exists, we skip entirely.
             if (link, name) in existing_links:
                 continue
 
-            if not date_obj:
-                date_obj = datetime.now() 
+            # If it is a NEW item for these problematic sources, try to get real date/image
+            needs_deep_fetch = (name in ["Zucker & Jagdwurst", "Rainbow Plant Life GF", "Vegan Richa GF"])
+            
+            # If date is missing (common for ZJ) or we force a check, fetch detail
+            if (date_obj is None or needs_deep_fetch):
+                print(f"      Verify deep metadata for: {title[:20]}...")
+                deep_date, deep_image = extract_metadata_from_page(link)
                 
+                if deep_date: 
+                    date_obj = deep_date
+                
+                # If ZJ image was low-res or missing, update it
+                if deep_image and (not image or 'data:' in image):
+                    image = deep_image
+
+            # --- FALLBACK DATE LOGIC ---
+            # If we STILL don't have a date after deep fetch, use old date to push to bottom
+            if not date_obj:
+                if name == "Pick Up Limes":
+                    date_obj = datetime.now() # User said PUL works fine with now
+                else:
+                    # Default to year 2020 so it sits at the bottom of the feed
+                    date_obj = datetime(2020, 1, 1)
+            
+            # Timezone handling
             if date_obj.tzinfo is None:
                 date_obj = date_obj.replace(tzinfo=timezone.utc)
             else:
@@ -416,19 +537,20 @@ def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags)
             if image and not image.startswith('http'):
                  image = urljoin(url, image) 
             
-            if date_obj > cutoff_date:
-                found_items.append({
-                    "blog_name": name,
-                    "title": title,
-                    "link": link,
-                    "image": image if image else "icon.jpg",
-                    "date": date_obj.isoformat(),
-                    "is_disruptor": False,
-                    "special_tags": list(source_tags) # Initialize with source tags
-                })
-                existing_links.add((link, name))
+            # Add to list (Allowing old dates if we just fetched them as 'new' to the DB)
+            found_items.append({
+                "blog_name": name,
+                "title": title,
+                "link": link,
+                "image": image if image else "icon.jpg",
+                "date": date_obj.isoformat(),
+                "is_disruptor": False,
+                "special_tags": list(source_tags)
+            })
+            existing_links.add((link, name))
 
         except Exception as e:
+            # print(f"Error parsing item: {e}") 
             continue
             
     status = f"✅ OK ({len(found_items)})" if found_items else "⚠️ Scraped 0"
@@ -459,9 +581,7 @@ print(f"Fetching recipes from {len(ALL_FEEDS)} RSS feeds & {len(HTML_SOURCES)} H
 
 # 3. Scrape RSS Feeds
 for item in ALL_FEEDS:
-    # Safe unpacking to avoid crashes if bad data slipped in
-    if len(item) != 3:
-        continue
+    if len(item) != 3: continue
     name, url, special_tags = item
 
     new_count = 0
@@ -505,7 +625,6 @@ for item in ALL_FEEDS:
                     published_time = published_time.astimezone(timezone.utc)
                 
                 if published_time > cutoff_date:
-                    # Check Uniqueness using (link, name)
                     if (entry.link, name) not in existing_links:
                         if is_pet_recipe(entry.title): continue
                         image_url = extract_image(entry, name, entry.link)
@@ -535,15 +654,12 @@ for item in ALL_FEEDS:
 # 4. Scrape HTML Sources
 print("\n--- STARTING HTML SCRAPING ---")
 for item in HTML_SOURCES:
-    if len(item) != 4:
-        continue
+    if len(item) != 4: continue
     name, url, tags, mode = item
     
     time.sleep(random.uniform(2, 7))
 
     try:
-        # Pass 'recipes' list and current 'tags' (e.g. ['GF']).
-        # Note: existing_links now handles (link, name) uniqueness inside the function.
         new_items, status = scrape_html_feed(name, url, mode, existing_links, recipes, tags)
         recipes.extend(new_items)
         feed_stats[name] = {'new': len(new_items), 'status': status}
@@ -555,20 +671,13 @@ for item in HTML_SOURCES:
 print("\nUpdating tags for all recipes...")
 for recipe in recipes:
     bname = recipe['blog_name']
-    
     current_tags = recipe.get('special_tags', []) 
-
-    # 1. Base tags (from configuration)
     base_tags = list(BLOG_TAG_MAP.get(bname, []))
-    
-    # 2. Auto tags (WFPB, Easy, Budget, GF via Keywords)
     auto_tags = get_auto_tags(recipe['title'])
-    
-    # Merge Current + Base + Auto
     combined_tags = list(set(current_tags + base_tags + auto_tags))
     recipe['special_tags'] = combined_tags
     
-# 6. Prune & Stats (Using Internal Names)
+# 6. Prune & Stats
 print("Pruning database and calculating stats...")
 recipes_by_blog = {}
 for r in recipes:
@@ -600,41 +709,29 @@ for bname, blog_recipes in recipes_by_blog.items():
 final_pruned_list.sort(key=lambda x: x['date'], reverse=True)
 
 # --- GLOBAL DEDUPLICATION ---
-# Rule: If duplicate TITLE found:
-# 1. Keep the one where Blog Name contains "GF".
-# 2. If equal or neither, keep the one with the Older date.
 print("   Running global deduplication (Rules: Title Match -> GF source > Older date)...")
 deduped_recipes = {}
 for recipe in final_pruned_list:
-    # We use the Title as the unique key now
     title = recipe['title']
     
     if title not in deduped_recipes:
         deduped_recipes[title] = recipe
     else:
         existing = deduped_recipes[title]
-        
-        # Check GF in Blog Name
         curr_is_gf = "GF" in recipe['blog_name']
         exist_is_gf = "GF" in existing['blog_name']
         
         if curr_is_gf and not exist_is_gf:
-            # Current is GF, existing is not -> Replace existing with Current
             deduped_recipes[title] = recipe
         elif exist_is_gf and not curr_is_gf:
-            # Existing is GF, current is not -> Keep existing
             pass 
         else:
-            # Tie-breaker: Keep OLDER date
             if recipe['date'] < existing['date']:
                 deduped_recipes[title] = recipe
 
 final_pruned_list = list(deduped_recipes.values())
 final_pruned_list.sort(key=lambda x: x['date'], reverse=True)
 
-
-# 7. Normalize Display Names (SKIPPED)
-# We strictly keep the names distinct (e.g. "Rainbow Plant Life" vs "Rainbow Plant Life GF").
 print("Pruning complete. Saving database with distinct source names...")
 
 if len(final_pruned_list) > 50:
@@ -671,7 +768,7 @@ with open('FEED_HEALTH.md', 'w') as f:
     else:
         avg_date = "N/A"
 
-    report_rows = []  # <--- Fixed indentation (4 spaces)
+    report_rows = []
     
     for name in all_monitored_names:
         url = URL_MAP.get(name, "Unknown")
@@ -680,15 +777,10 @@ with open('FEED_HEALTH.md', 'w') as f:
         total = total_counts.get(name, 0)
         latest = latest_dates.get(name, "N/A")
         
-        if name in DISPLAY_NAME_MAP:
-            name_display = f"{name} (-> {DISPLAY_NAME_MAP[name]})"
-        else:
-            name_display = name
+        name_display = f"{name} (-> {DISPLAY_NAME_MAP[name]})" if name in DISPLAY_NAME_MAP else name
 
-        # Low Count Check (1 to 4 recipes)
-        if 1 <= total <= 4:
-            if "❌" not in status:
-                status = f"⚠️ Low Count {status.replace('✅ OK', '')}"
+        if 1 <= total <= 4 and "❌" not in status:
+            status = f"⚠️ Low Count {status.replace('✅ OK', '')}"
 
         if total == 0 and "✅" in status:
             status = "❌ No Recipes"
