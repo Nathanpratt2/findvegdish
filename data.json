@@ -6571,7 +6571,6 @@
     "date": "2025-11-13T14:25:39+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "GF",
       "WFPB"
     ]
   },
@@ -6835,9 +6834,7 @@
     "image": "https://rainbowplantlife.com/wp-content/uploads/2025/11/Savoury-Porridge-12-600x800.jpg",
     "date": "2025-11-05T18:14:20+00:00",
     "is_disruptor": false,
-    "special_tags": [
-      "GF"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "Vegan Richa GF",
@@ -8827,9 +8824,7 @@
     "image": "https://rainbowplantlife.com/wp-content/uploads/2025/06/Ultimate-vegan-tacos-cover-photo-1-600x800.jpg",
     "date": "2025-06-18T00:44:03+00:00",
     "is_disruptor": false,
-    "special_tags": [
-      "GF"
-    ]
+    "special_tags": []
   },
   {
     "blog_name": "Messy Vegan Cook",
