@@ -208,7 +208,7 @@ def is_pet_recipe(title):
 
 def robust_fetch(url, is_binary=False, is_scraping_page=False):
     if is_scraping_page:
-        time.sleep(random.uniform(2, 5)) 
+        time.sleep(random.uniform(3, 10)) 
     
     headers = get_headers(referer="https://www.google.com/")
 
@@ -657,7 +657,7 @@ for item in HTML_SOURCES:
     if len(item) != 4: continue
     name, url, tags, mode = item
     
-    time.sleep(random.uniform(2, 7))
+    time.sleep(random.uniform(3, 10))
 
     try:
         new_items, status = scrape_html_feed(name, url, mode, existing_links, recipes, tags)
