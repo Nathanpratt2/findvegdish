@@ -1,10 +1,10 @@
 # Feed Health Report
-**Last Run:** 2026-02-09T15:45:46.975946
-**Total Blogs:** 96
-**Total Database Size:** 946
-**New Today:** 46
+**Last Run:** 2026-02-09T22:53:45.089483
+**Total Blogs:** 94
+**Total Database Size:** 951
+**New Today:** 47
 **WFPB:** 146 (15%)
-**Easy:** 244 (25%)
+**Easy:** 245 (25%)
 **Budget:** 181 (19%)
 **Gluten-Free:** 139 (14%)
 **Average Latest Post:** 2025-11-30
@@ -17,8 +17,7 @@
 | Oh She Glows | https://www.ohsheglows.com/recipe-search/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/HTML Fail |
 | School Night Vegan | https://schoolnightvegan.com/category/recipes/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/HTML Fail |
 | The Loopy Whisk (Vegan Recipes) | https://theloopywhisk.com/diet/vegan/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/HTML Fail |
-| The Veg Space | https://thevegspace.co.uk/recipe-index/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/HTML Fail |
-| Cupful of Kale | https://cupfulofkale.com/recipes/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ⚠️ Scraped 0 |
+| Baking Hermann | https://bakinghermann.com/recipes/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ⚠️ Scraped 0 |
 | Dreena Burton | https://dreenaburton.com/feed/ | 0 | 3 | 3 | 1 | 2 | 0 | 2026-01-20 | ⚠️ Low Count  |
 | Elsa's Wholesome Life | https://www.elsaswholesomelife.com/blog?category=Recipes | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ⚠️ Scraped 0 |
 | Fran Costigan | Unknown | 0 | 3 | 0 | 0 | 0 | 0 | 2026-01-20 | ⚠️ Low Count Skipped/DB Only |
@@ -33,10 +32,8 @@
 | Snixy Kitchen | Unknown | 0 | 2 | 0 | 1 | 0 | 0 | 2025-11-21 | ⚠️ Low Count Skipped/DB Only |
 | Snixy Kitchen (Vegan Recipes) | https://www.snixykitchen.com/special-diet/vegan/feed/ | 2 | 2 | 0 | 1 | 0 | 0 | 2025-11-21 | ⚠️ Low Count  |
 | The Full Helping (Vegan Recipes) | https://www.thefullhelping.com/dietary/vegan/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ⚠️ Scraped 0 |
-| Vegan Punks | https://veganpunks.com/recipes/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ⚠️ Scraped 0 |
 | Vegan Richa GF | https://www.veganricha.com/category/gluten-free/ | 0 | 20 | 0 | 5 | 6 | 20 | 2026-02-04 | ⚠️ Scraped 0 |
 | Vegan in the Freezer | https://veganinthefreezer.com/feed/ | 0 | 1 | 0 | 0 | 0 | 0 | 2026-01-25 | ⚠️ Low Count  |
-| What Jew You Want to Eat | https://whatjewwannaeat.com/category/vegan/ | 0 | 30 | 3 | 1 | 2 | 0 | 2021-10-20 | ⚠️ Scraped 0 |
 | Zacchary Bird | https://www.zaccharybird.com/all-recipes/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ⚠️ Scraped 0 |
 | A Virtual Vegan | https://avirtualvegan.com/feed/ | 0 | 9 | 0 | 1 | 0 | 0 | 2026-02-06 | ✅ OK |
 | Addicted to Dates | https://addictedtodates.com/category/recipes/feed/ | 0 | 10 | 0 | 1 | 2 | 0 | 2026-01-30 | ✅ OK |
@@ -44,8 +41,8 @@
 | Bianca Zapatka | https://biancazapatka.com/en/feed/ | 0 | 10 | 2 | 5 | 2 | 1 | 2025-12-11 | ✅ OK |
 | Cadry's Kitchen | https://cadryskitchen.com/feed/ | 0 | 12 | 1 | 11 | 0 | 0 | 2026-02-08 | ✅ OK |
 | Choosing Chia (Vegan Recipes) | https://choosingchia.com/category/diet%20/vegan/feed/ | 0 | 5 | 0 | 5 | 0 | 0 | 2025-08-18 | ✅ OK |
-| Connoisseurus Veg | https://www.connoisseurusveg.com/feed/ | 1 | 12 | 1 | 0 | 1 | 0 | 2026-02-09 | ✅ OK |
-| Dr. Vegan | https://drveganblog.com/feed/ | 1 | 11 | 2 | 11 | 6 | 0 | 2026-02-09 | ✅ OK |
+| Connoisseurus Veg | https://www.connoisseurusveg.com/feed/ | 0 | 12 | 1 | 0 | 1 | 0 | 2026-02-09 | ✅ OK |
+| Dr. Vegan | https://drveganblog.com/feed/ | 0 | 11 | 2 | 11 | 6 | 0 | 2026-02-09 | ✅ OK |
 | Earth to Veg | https://earthtoveg.com/feed/ | 0 | 10 | 0 | 0 | 1 | 0 | 2026-02-06 | ✅ OK |
 | Eat Figs, Not Pigs | https://www.eatfigsnotpigs.com/feed/ | 0 | 13 | 1 | 2 | 1 | 0 | 2026-02-06 | ✅ OK |
 | Elavegan | https://elavegan.com/feed/ | 0 | 11 | 1 | 2 | 3 | 11 | 2026-02-06 | ✅ OK |
@@ -54,12 +51,12 @@
 | Fragrant Vanilla Cake | https://www.fragrantvanilla.com/feed/ | 0 | 11 | 0 | 1 | 0 | 0 | 2026-02-09 | ✅ OK |
 | From My Bowl | https://frommybowl.com/feed/ | 0 | 11 | 11 | 11 | 2 | 0 | 2026-02-03 | ✅ OK |
 | Full of Plants | https://fullofplants.com/feed/ | 0 | 7 | 0 | 0 | 0 | 0 | 2026-02-07 | ✅ OK |
-| Gretchen's Vegan Bakery | https://www.gretchensveganbakery.com/feed/ | 1 | 20 | 0 | 1 | 0 | 0 | 2026-02-07 | ✅ OK |
+| Gretchen's Vegan Bakery | https://www.gretchensveganbakery.com/feed/ | 1 | 21 | 0 | 1 | 0 | 0 | 2026-02-08 | ✅ OK |
 | Healthy Little Vittles | https://healthylittlevittles.com/feed/ | 0 | 20 | 0 | 4 | 1 | 20 | 2026-02-05 | ✅ OK |
 | HealthyGirl Kitchen | https://healthygirlkitchen.com/feed/ | 0 | 11 | 2 | 3 | 0 | 0 | 2026-02-06 | ✅ OK |
 | Holistic Chef Academy | https://holisticchefacademy.com/feed/ | 0 | 10 | 0 | 0 | 0 | 0 | 2026-01-30 | ✅ OK |
 | It Doesn't Taste Like Chicken | https://itdoesnttastelikechicken.com/feed/ | 0 | 34 | 2 | 14 | 34 | 0 | 2026-02-08 | ✅ OK |
-| Jessica in the Kitchen | https://jessicainthekitchen.com/feed/ | 1 | 14 | 2 | 1 | 2 | 2 | 2026-02-09 | ✅ OK |
+| Jessica in the Kitchen | https://jessicainthekitchen.com/feed/ | 0 | 14 | 2 | 1 | 2 | 2 | 2026-02-09 | ✅ OK |
 | Lazy Cat Kitchen | https://www.lazycatkitchen.com/feed/ | 0 | 11 | 0 | 0 | 2 | 0 | 2026-02-07 | ✅ OK |
 | Make It Dairy Free | https://makeitdairyfree.com/feed/ | 0 | 10 | 1 | 1 | 2 | 1 | 2026-02-01 | ✅ OK |
 | Mary's Test Kitchen | https://www.marystestkitchen.com/feed/ | 0 | 10 | 0 | 0 | 0 | 0 | 2026-02-03 | ✅ OK |
@@ -68,7 +65,7 @@
 | My Goodness Kitchen | https://mygoodnesskitchen.com/feed/ | 0 | 5 | 2 | 1 | 0 | 0 | 2025-11-16 | ✅ OK |
 | My Vegan Minimalist | https://myveganminimalist.com/feed/ | 0 | 7 | 1 | 5 | 0 | 0 | 2026-02-04 | ✅ OK |
 | Namely Marly | https://namelymarly.com/feed/ | 0 | 56 | 4 | 7 | 5 | 0 | 2026-02-06 | ✅ OK |
-| Nora Cooks | https://www.noracooks.com/feed/ | 0 | 10 | 1 | 0 | 0 | 0 | 2026-02-02 | ✅ OK |
+| Nora Cooks | https://www.noracooks.com/feed/ | 1 | 11 | 1 | 0 | 0 | 0 | 2026-02-09 | ✅ OK |
 | Plant Baes | https://plantbaes.com/feed/ | 0 | 10 | 3 | 1 | 2 | 2 | 2026-02-06 | ✅ OK |
 | Plant Power Couple | https://www.plantpowercouple.com/feed/ | 0 | 11 | 0 | 11 | 1 | 0 | 2026-02-03 | ✅ OK |
 | Plant-Based on a Budget | https://plantbasedonabudget.com/feed/ | 0 | 11 | 0 | 1 | 11 | 0 | 2026-02-09 | ✅ OK |
@@ -98,12 +95,13 @@
 | The Vegan 8 | https://thevegan8.com/feed/ | 0 | 10 | 1 | 10 | 10 | 0 | 2025-10-25 | ✅ OK |
 | Turnip Vegan | https://turnipvegan.com/blogs/news.atom | 0 | 7 | 0 | 0 | 0 | 0 | 2025-04-11 | ✅ OK |
 | Unconventional Baker | https://www.unconventionalbaker.com/feed/ | 0 | 10 | 0 | 0 | 0 | 10 | 2025-11-01 | ✅ OK |
-| VegNews | https://vegnews.com/feed | 0 | 35 | 5 | 6 | 1 | 0 | 2026-02-08 | ✅ OK |
+| VegNews | https://vegnews.com/feed | 3 | 38 | 5 | 7 | 1 | 0 | 2026-02-09 | ✅ OK |
 | Vegan Heaven | https://veganheaven.org/feed/ | 0 | 10 | 0 | 0 | 1 | 0 | 2026-01-06 | ✅ OK |
 | Vegan Richa | https://www.veganricha.com/feed/ | 9 | 10 | 0 | 2 | 3 | 0 | 2026-02-04 | ✅ OK |
 | Vegan Yack Attack | https://veganyackattack.com/feed/ | 0 | 5 | 0 | 2 | 0 | 0 | 2025-07-27 | ✅ OK |
 | Veggiekins | https://veggiekinsblog.com/feed/ | 0 | 10 | 0 | 10 | 0 | 10 | 2026-01-29 | ✅ OK |
 | Veggies Don't Bite | https://veggiesdontbite.com/feed/ | 0 | 22 | 1 | 1 | 3 | 1 | 2026-02-07 | ✅ OK |
 | Watch Learn Eat | https://watchlearneat.com/feed/ | 0 | 11 | 1 | 11 | 2 | 2 | 2026-02-07 | ✅ OK |
+| What Jew You Want to Eat | Unknown | 0 | 30 | 3 | 1 | 2 | 0 | 2021-10-20 | Skipped/DB Only |
 | ZardyPlants | https://zardyplants.com/feed/ | 0 | 10 | 10 | 7 | 3 | 0 | 2025-11-08 | ✅ OK |
 | Zucker & Jagdwurst | https://www.zuckerjagdwurst.com/en/archive/1 | 17 | 18 | 0 | 0 | 0 | 0 | 2020-01-01 | ✅ OK (17) |
