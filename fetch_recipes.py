@@ -608,33 +608,32 @@ final_pruned_list.sort(key=lambda x: x['date'], reverse=True)
 # Rule: If duplicate TITLE found:
 # 1. Keep the one where Blog Name contains "GF".
 # 2. If equal or neither, keep the one with the Older date.
-print("   Running global deduplication (Rules: Title Based, GF source > Older date)...")
+print("   Running global deduplication (Rules: Title Match -> GF source > Older date)...")
 deduped_recipes = {}
 for recipe in final_pruned_list:
-    # We normalize the title for comparison (lowercase and no extra spaces)
-    title_key = recipe['title'].lower().strip()
+    # We use the Title as the unique key now
+    title = recipe['title']
     
-    if title_key not in deduped_recipes:
-        deduped_recipes[title_key] = recipe
+    if title not in deduped_recipes:
+        deduped_recipes[title] = recipe
     else:
-        existing = deduped_recipes[title_key]
+        existing = deduped_recipes[title]
         
         # Check GF in Blog Name
         curr_is_gf = "GF" in recipe['blog_name']
         exist_is_gf = "GF" in existing['blog_name']
         
         if curr_is_gf and not exist_is_gf:
-            # Current blog is a GF source, existing isn't. Switch to current.
-            deduped_recipes[title_key] = recipe
+            # Current is GF, existing is not -> Replace existing with Current
+            deduped_recipes[title] = recipe
         elif exist_is_gf and not curr_is_gf:
-            # Existing is GF source, current isn't. Stay with existing.
+            # Existing is GF, current is not -> Keep existing
             pass 
         else:
-            # Tie-breaker: Keep the recipe with the OLDER publication date
+            # Tie-breaker: Keep OLDER date
             if recipe['date'] < existing['date']:
-                deduped_recipes[title_key] = recipe
+                deduped_recipes[title] = recipe
 
-# Convert back to list and sort by date for the final file
 final_pruned_list = list(deduped_recipes.values())
 final_pruned_list.sort(key=lambda x: x['date'], reverse=True)
 
