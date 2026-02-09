@@ -105,7 +105,7 @@ DISRUPTORS = [
 # --- DIRECT HTML SCRAPING SOURCES ---
 HTML_SOURCES = [
     ("Pick Up Limes", "https://www.pickuplimes.com/recipe/", [], "custom_pul"),
-    ("Zucker & Jagdwurst", "https://www.zuckerjagdwurst.com/en/archive", [], "custom_zj"), # UPDATED
+    ("Zucker & Jagdwurst", "https://www.zuckerjagdwurst.com/en/archive/1", [], "custom_zj"), # UPDATED
     ("Rainbow Plant Life GF", "https://rainbowplantlife.com/diet/gluten-free/", ["GF"], "wordpress"),
     ("Vegan Richa GF", "https://www.veganricha.com/category/gluten-free/", ["GF"], "wordpress"),
     ("School Night Vegan", "https://schoolnightvegan.com/category/recipes/", [], "custom_pul"),
@@ -367,28 +367,26 @@ def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags)
                 date_obj = datetime.now() 
 
             elif mode == "custom_zj":
-                link = art.get('href')
-                if link and not link.startswith('http'):
-                    link = urljoin(url, link)
+                link = urljoin(url, art.get('href'))
+                # Title: Look for their specific class or headings
+                t_tag = art.select_one(".post-item__title, .article-title, h2, h3")
+                title = t_tag.get_text(strip=True) if t_tag else "Recipe"
                 
-                # 1. Improved Title Extraction
-                t_tag = art.select_one(".post-item__title, h2, h3, h4")
-                title = t_tag.get_text(strip=True) if t_tag else art.get_text(strip=True)
-                
-                # 2. Improved Image Extraction (Handles Lazy-Loading & srcset)
+                # Image Fix: Prioritize data-src and data-lazy-src to bypass placeholders
                 img_tag = art.find('img')
                 if img_tag:
-                    # Check list of possible attributes in order of quality
-                    # Z&J uses data-srcset for their lazy-loaded responsive images
-                    possible_attrs = ['data-srcset', 'srcset', 'data-src', 'src']
-                    for attr in possible_attrs:
+                    # Order of attributes is critical here to avoid the 1x1 blank pixel
+                    image_url = None
+                    for attr in ['data-src', 'data-lazy-src', 'data-srcset', 'srcset', 'src']:
                         val = img_tag.get(attr)
                         if val:
-                            # If it's a srcset, it looks like "url 400w, url 800w". 
-                            # We take the first URL in the list.
-                            image = val.split(',')[0].split(' ')[0].strip()
-                            if image and not image.startswith('data:'): 
-                                break # Found a valid URL
+                            # If it's a srcset, grab the first clean URL
+                            candidate = val.split(',')[0].split(' ')[0].strip()
+                            # Ignore transparent spacer gifs and base64 strings
+                            if candidate and not candidate.startswith('data:') and 'spacer.gif' not in candidate:
+                                image_url = candidate
+                                break
+                    image = image_url
                 
                 date_obj = datetime.now()
 
