@@ -368,24 +368,28 @@ def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags)
 
             elif mode == "custom_zj":
                 link = urljoin(url, art.get('href'))
-                # Title: Look for their specific class or headings
                 t_tag = art.select_one(".post-item__title, .article-title, h2, h3")
                 title = t_tag.get_text(strip=True) if t_tag else "Recipe"
                 
-                # Image Fix: Prioritize data-src and data-lazy-src to bypass placeholders
                 img_tag = art.find('img')
                 if img_tag:
-                    # Order of attributes is critical here to avoid the 1x1 blank pixel
                     image_url = None
-                    for attr in ['data-src', 'data-lazy-src', 'data-srcset', 'srcset', 'src']:
+                    # We check high-priority lazy attributes first
+                    for attr in ['data-src', 'data-lazy-src', 'lazy-src', 'data-srcset', 'srcset', 'src']:
                         val = img_tag.get(attr)
-                        if val:
-                            # If it's a srcset, grab the first clean URL
-                            candidate = val.split(',')[0].split(' ')[0].strip()
-                            # Ignore transparent spacer gifs and base64 strings
-                            if candidate and not candidate.startswith('data:') and 'spacer.gif' not in candidate:
-                                image_url = candidate
-                                break
+                        if not val: continue
+
+                        # If it's a srcset, pick the LAST item (usually highest res) instead of the first
+                        if 'srcset' in attr:
+                            parts = [p.strip().split(' ')[0] for p in val.split(',')]
+                            candidate = parts[-1] # Get the largest image
+                        else:
+                            candidate = val.strip()
+
+                        # Clean candidate and validate
+                        if candidate and not candidate.startswith('data:') and 'spacer.gif' not in candidate and '1x1' not in candidate:
+                            image_url = candidate
+                            break
                     image = image_url
                 
                 date_obj = datetime.now()
