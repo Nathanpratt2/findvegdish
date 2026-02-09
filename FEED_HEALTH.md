@@ -1,11 +1,11 @@
 # Feed Health Report
-**Last Run:** 2026-02-09T08:12:43.879511
+**Last Run:** 2026-02-09T09:51:17.396751
 **Total Blogs:** 98
-**Total Database Size:** 927
-**New Today:** 36
+**Total Database Size:** 928
+**New Today:** 37
 **WFPB:** 144 (15%)
 **Easy:** 227 (24%)
-**Budget:** 182 (19%)
+**Budget:** 183 (19%)
 **Gluten-Free:** 126 (13%)
 **Average Latest Post:** 2026-01-14
 
@@ -15,6 +15,7 @@
 | Cadry's Kitchen (Vegan Recipes) | https://cadryskitchen.com/vegan-recipes/feed/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/ConnErr |
 | Cookie and Kate (Vegan Recipes) | https://cookieandkate.com/category/vegan-recipes/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/HTML Fail |
 | Cupful of Kale | https://cupfulofkale.com/feed/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ No Recipes |
+| Messy Vegan Cook | https://messyvegancook.com/feed/ | 0 | 18 | 0 | 0 | 3 | 0 | 2026-01-02 | ❌ Blocked/ConnErr |
 | Nadia's Healthy Kitchen (Vegan Recipes) | https://nadiashealthykitchen.com/category/vegan/feed/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/ConnErr |
 | Oh She Glows | https://www.ohsheglows.com/recipe-search/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/HTML Fail |
 | School Night Vegan | https://schoolnightvegan.com/category/recipes/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/HTML Fail |
@@ -62,10 +63,9 @@
 | Jessica in the Kitchen | https://jessicainthekitchen.com/feed/ | 0 | 13 | 2 | 0 | 2 | 2 | 2026-02-06 | ✅ OK |
 | Lazy Cat Kitchen | https://www.lazycatkitchen.com/feed/ | 0 | 11 | 0 | 0 | 2 | 0 | 2026-02-07 | ✅ OK |
 | Love and Lemons | Unknown | 0 | 11 | 1 | 1 | 1 | 0 | 2026-02-07 | Skipped/DB Only |
-| Love and Lemons (Vegan Recipes) | https://www.loveandlemons.com/category/recipes/vegan/ | 11 | 11 | 1 | 1 | 1 | 0 | 2026-02-09 | ✅ OK (11) |
+| Love and Lemons (Vegan Recipes) | https://www.loveandlemons.com/category/recipes/vegan/ | 11 | 11 | 1 | 1 | 1 | 0 | 2026-02-05 | ✅ OK (11) |
 | Make It Dairy Free | https://makeitdairyfree.com/feed/ | 0 | 10 | 1 | 1 | 2 | 1 | 2026-02-01 | ✅ OK |
 | Mary's Test Kitchen | https://www.marystestkitchen.com/feed/ | 0 | 10 | 0 | 0 | 0 | 0 | 2026-02-03 | ✅ OK |
-| Messy Vegan Cook | https://messyvegancook.com/feed/ | 0 | 18 | 0 | 0 | 3 | 0 | 2026-01-02 | ✅ OK |
 | Monkey & Me Kitchen Adventures | https://monkeyandmekitchenadventures.com/feed/ | 0 | 12 | 12 | 0 | 2 | 0 | 2026-02-08 | ✅ OK |
 | My Darling Vegan | https://www.mydarlingvegan.com/feed/ | 0 | 13 | 1 | 3 | 2 | 0 | 2026-02-03 | ✅ OK |
 | My Goodness Kitchen | https://mygoodnesskitchen.com/feed/ | 0 | 5 | 2 | 1 | 0 | 0 | 2025-11-16 | ✅ OK |
@@ -74,7 +74,7 @@
 | Nora Cooks | https://www.noracooks.com/feed/ | 0 | 10 | 1 | 0 | 0 | 0 | 2026-02-02 | ✅ OK |
 | Plant Baes | https://plantbaes.com/feed/ | 0 | 10 | 3 | 1 | 2 | 2 | 2026-02-06 | ✅ OK |
 | Plant Power Couple | https://www.plantpowercouple.com/feed/ | 0 | 11 | 0 | 11 | 1 | 0 | 2026-02-03 | ✅ OK |
-| Plant-Based on a Budget | https://plantbasedonabudget.com/feed/ | 0 | 10 | 0 | 1 | 10 | 0 | 2026-02-05 | ✅ OK |
+| Plant-Based on a Budget | https://plantbasedonabudget.com/feed/ | 1 | 11 | 0 | 1 | 11 | 0 | 2026-02-09 | ✅ OK |
 | PlantYou | https://plantyou.com/feed/ | 0 | 11 | 11 | 2 | 2 | 0 | 2026-02-06 | ✅ OK |
 | Plantifully Based | https://plantifullybasedblog.com/feed/ | 0 | 10 | 1 | 2 | 0 | 0 | 2026-02-07 | ✅ OK |
 | Rabbit and Wolves | https://www.rabbitandwolves.com/feed/ | 0 | 10 | 0 | 1 | 1 | 0 | 2026-01-19 | ✅ OK |
