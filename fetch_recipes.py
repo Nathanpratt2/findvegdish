@@ -63,7 +63,7 @@ DISRUPTORS = [
     ("Unconventional Baker", "https://www.unconventionalbaker.com/feed/", ["GF"]), # Will auto-tag GF
     ("Fragrant Vanilla Cake", "https://www.fragrantvanilla.com/feed/", []),
     ("Plantifully Based", "https://plantifullybasedblog.com/feed/", []),
-    ("Cadry's Kitchen (Vegan Recipes)", "https://cadryskitchen.com/vegan-recipes/feed/", ["Easy"]),
+    ("Cadry's Kitchen", "https://cadryskitchen.com/feed/", []),
     ("Dr. Vegan", "https://drveganblog.com/feed/", ["Easy"]),
     ("Veggies Don't Bite", "https://veggiesdontbite.com/feed/", []),
     ("Earth to Veg", "https://earthtoveg.com/feed/", []),
@@ -570,13 +570,11 @@ except (FileNotFoundError, json.JSONDecodeError):
 # 2. Cleanse Database
 initial_count = len(recipes)
 recipes = [r for r in recipes if not (r['blog_name'] == "VegNews" and "/recipes/" not in r['link'])]
-
-# 2. DATABASE REFRESH: Remove the bad entries so they can be re-scraped
+# 2B. DATABASE REFRESH: Remove the bad entries so they can be re-scraped
     # This deletes ZJ, RPL GF, and VR GF entries so the new logic can fix them.
-    refresh_blogs = ["Zucker & Jagdwurst", "Rainbow Plant Life GF", "Vegan Richa GF"]
-    print(f"Cleaning database of {refresh_blogs} to fix dates/images...")
-    recipes = [r for r in recipes if r['blog_name'] not in refresh_blogs]
-
+refresh_blogs = ["Zucker & Jagdwurst", "Rainbow Plant Life GF", "Vegan Richa GF"]
+print(f"Cleaning database of {refresh_blogs} to fix dates/images...")
+recipes = [r for r in recipes if r['blog_name'] not in refresh_blogs]
 # Update existing_links to be tuples of (link, blog_name) to allow separate entries for GF blogs
 existing_links = {(r['link'], r['blog_name']) for r in recipes}
 
