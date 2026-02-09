@@ -68,7 +68,7 @@ DISRUPTORS = [
     ("Veggies Don't Bite", "https://veggiesdontbite.com/feed/", []),
     ("Earth to Veg", "https://earthtoveg.com/feed/", []),
     ("Watch Learn Eat", "https://watchlearneat.com/feed/", ["Easy"]),
-    ("Strength and Sunshine", "https://strengthandsunshine.com/feed/", ["Easy"],["GF"]), # Will auto-tag GF
+    ("Strength and Sunshine", "https://strengthandsunshine.com/feed/", ["Easy", "GF"]), # Will auto-tag GF
     ("The Stingy Vegan", "https://thestingyvegan.com/feed/", ["Easy", "Budget"]),
     ("The Foodie Takes Flight", "https://thefoodietakesflight.com/feed/", ["Easy"]),
     ("Vegan Yack Attack", "https://veganyackattack.com/feed/", []),
@@ -78,9 +78,7 @@ DISRUPTORS = [
     ("Choosing Chia (Vegan Recipes)", "https://choosingchia.com/category/diet%20/vegan/feed/", ["Easy"]),
     ("Flora & Vino", "https://www.floraandvino.com/feed/", ["WFPB"], ["Easy"]),
     ("Namely Marly", "https://namelymarly.com/feed/", []),
-    ("The Veg Space", "https://www.thevegspace.co.uk/feed/", []),
     ("The Post-Punk Kitchen", "https://www.theppk.com/feed/", []),
-    ("Vegan Punks", "https://veganpunks.com/feed/", []),
     ("Plant Baes", "https://plantbaes.com/feed/", []),
     ("Nadia's Healthy Kitchen (Vegan Recipes)", "https://nadiashealthykitchen.com/category/vegan/feed/", []),
     ("The Little Blog of Vegan", "https://www.thelittleblogofvegan.com/feed/", []),
@@ -93,11 +91,9 @@ DISRUPTORS = [
     ("Monkey & Me Kitchen Adventures", "https://monkeyandmekitchenadventures.com/feed/", ["WFPB"]),
     ("My Goodness Kitchen", "https://mygoodnesskitchen.com/feed/", []),
     ("Ann Arbor Vegan Kitchen", "https://www.annarborvegankitchen.com/feed/", ["WFPB"]),
-    ("Veggiekins", "https://veggiekinsblog.com/feed/", ["Easy"],["GF"]), # Will auto-tag GF
+    ("Veggiekins", "https://veggiekinsblog.com/feed/", ["Easy","GF"]), # Will auto-tag GF
     ("ZardyPlants", "https://zardyplants.com/feed/", ["WFPB"]),
     ("Dreena Burton", "https://dreenaburton.com/feed/", ["WFPB"]),
-    ("Cupful of Kale", "https://cupfulofkale.com/feed/", []),
-    ("What Jew You Want to Eat", "https://whatjewwannaeat.com/vegan/feed/", []),
     ("Holistic Chef Academy", "https://holisticchefacademy.com/feed/", []),
     ("Healthy Little Vittles", "https://healthylittlevittles.com/feed/", ["GF"]), # Will auto-tag GF
     ("Healthier Steps", "https://healthiersteps.com/feed/", [])
@@ -117,6 +113,10 @@ HTML_SOURCES = [
     ("Zacchary Bird","https://www.zaccharybird.com/all-recipes/",[], "wordpress"),
     ("Elsa's Wholesome Life","https://www.elsaswholesomelife.com/blog?category=Recipes",[], "wordpress"),
     ("The Full Helping (Vegan Recipes)","https://www.thefullhelping.com/dietary/vegan/",[],"wordpress"),
+    ("Cupful of Kale", "https://cupfulofkale.com/recipes/", [], "wordpress"),
+    ("The Veg Space", "https://thevegspace.co.uk/recipe-index/", [], "wordpress"),
+    ("Vegan Punks", "https://veganpunks.com/recipes/", [], "wordpress"),
+    ("What Jew You Want to Eat", "https://whatjewwannaeat.com/category/vegan/", [], "wordpress"),
     ("Hot For Food","https://www.hotforfoodblog.com/recipe-index/",[],"wordpress")
 ]
 
