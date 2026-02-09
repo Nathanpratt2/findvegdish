@@ -1,5 +1,184 @@
 [
   {
+    "blog_name": "Zucker & Jagdwurst",
+    "title": "WerbungVegan Linzer Cake with Strawberry-Filling",
+    "link": "https://www.zuckerjagdwurst.com/en/recipes/vegan-linzer-cake-with-strawberry-filling",
+    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
+    "date": "2026-02-09T00:23:17.584391+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Zucker & Jagdwurst",
+    "title": "WerbungVegan Buchteln with Vanilla Sauce",
+    "link": "https://www.zuckerjagdwurst.com/en/recipes/vegan-buchten-with-vanilla-sauce",
+    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
+    "date": "2026-02-09T00:23:17.584265+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Zucker & Jagdwurst",
+    "title": "Kale with Vegan Pinkel Sausage and Potatoes",
+    "link": "https://www.zuckerjagdwurst.com/en/recipes/kale-with-vegan-pinkel-sausage-and-potatoes",
+    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
+    "date": "2026-02-09T00:23:17.584134+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Zucker & Jagdwurst",
+    "title": "Vegan Slice and Bake Cookies \u2013\u00a01 Dough, 7 Ideas",
+    "link": "https://www.zuckerjagdwurst.com/en/recipes/vegan-slice-and-bake-cookies-1-dough-7-ideas",
+    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
+    "date": "2026-02-09T00:23:17.583991+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Zucker & Jagdwurst",
+    "title": "WerbungVegan Pinsa with Brussels Sprouts and Hollandaise",
+    "link": "https://www.zuckerjagdwurst.com/en/recipes/vegan-brussels-sprouts-hollandaise-pinsa",
+    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
+    "date": "2026-02-09T00:23:17.583872+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Zucker & Jagdwurst",
+    "title": "WerbungVegan and Gluten-Free Hazelnut Nougat Cookies",
+    "link": "https://www.zuckerjagdwurst.com/en/recipes/vegan-and-gluten-free-hazelnut-nougat-cookies",
+    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
+    "date": "2026-02-09T00:23:17.583737+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "GF"
+    ]
+  },
+  {
+    "blog_name": "Zucker & Jagdwurst",
+    "title": "Vegan Bueno Cookies",
+    "link": "https://www.zuckerjagdwurst.com/en/recipes/vegan-bueno-cookies",
+    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
+    "date": "2026-02-09T00:23:17.583608+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Zucker & Jagdwurst",
+    "title": "WerbungBaked Red Cabbage Steaks with Bean Pur\u00e9e",
+    "link": "https://www.zuckerjagdwurst.com/en/recipes/baked-red-cabbage-steaks-with-bean-puree",
+    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
+    "date": "2026-02-09T00:23:17.583483+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Zucker & Jagdwurst",
+    "title": "WerbungVegan Baked-Apple-Cheesecake",
+    "link": "https://www.zuckerjagdwurst.com/en/recipes/vegan-baked-apple-cheesecake",
+    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
+    "date": "2026-02-09T00:23:17.583355+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Zucker & Jagdwurst",
+    "title": "WerbungVegan Cabbage Roll Pasta",
+    "link": "https://www.zuckerjagdwurst.com/en/recipes/vegan-cabbage-roll-pasta",
+    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
+    "date": "2026-02-09T00:23:17.583226+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Zucker & Jagdwurst",
+    "title": "WerbungVegan Chocolate Cookies with Banana-Cream-Filling",
+    "link": "https://www.zuckerjagdwurst.com/en/recipes/vegan-chocolate-cookies-with-banana-cream-filling",
+    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
+    "date": "2026-02-09T00:23:17.583085+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Zucker & Jagdwurst",
+    "title": "WerbungPlant-Based Nut Roast Strudel With Quick Gravy",
+    "link": "https://www.zuckerjagdwurst.com/en/recipes/plant-based-nut-roast-strudel-with-quick-gravy",
+    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
+    "date": "2026-02-09T00:23:17.582940+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Zucker & Jagdwurst",
+    "title": "Quick Lentil Goulash with Spaetzle",
+    "link": "https://www.zuckerjagdwurst.com/en/recipes/quick-lentil-goulash-with-spaetzle",
+    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
+    "date": "2026-02-09T00:23:17.582813+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy",
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Zucker & Jagdwurst",
+    "title": "WerbungCrispy Tempeh Schnitzel with Potato-Parsnip Mash and Mushroom Gravy",
+    "link": "https://www.zuckerjagdwurst.com/en/recipes/crispy-tempeh-schnitzel-with-potato-parsnip-mash-mushroom-gravy",
+    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
+    "date": "2026-02-09T00:23:17.582693+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Zucker & Jagdwurst",
+    "title": "WerbungWintery Open Lasagna with Mushrooms and Savoy Cabbage",
+    "link": "https://www.zuckerjagdwurst.com/en/recipes/wintery-open-lasagna-with-mushrooms-savoy-cabbage",
+    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
+    "date": "2026-02-09T00:23:17.582565+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Zucker & Jagdwurst",
+    "title": "Vegan Scrambled Eggs without Tofu (soy free)",
+    "link": "https://www.zuckerjagdwurst.com/en/recipes/vegan-scrambled-eggs-without-tofu-soy-free",
+    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
+    "date": "2026-02-09T00:23:17.582435+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Zucker & Jagdwurst",
+    "title": "Easy Sunday Rolls",
+    "link": "https://www.zuckerjagdwurst.com/en/recipes/easy-sunday-rolls",
+    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
+    "date": "2026-02-09T00:23:17.582309+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Zucker & Jagdwurst",
+    "title": "WerbungVegan Potato Pancake Casserole",
+    "link": "https://www.zuckerjagdwurst.com/en/recipes/vegan-potato-pancake-casserole",
+    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
+    "date": "2026-02-09T00:23:17.582161+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
     "blog_name": "Pick Up Limes",
     "title": "Potato & Sauerkraut Pierogi",
     "link": "https://www.pickuplimes.com/recipe/potato-sauerkraut-pierogi-1021",
@@ -64,8 +243,8 @@
     "date": "2026-02-08T20:44:05.753587+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "GF",
-      "Easy"
+      "Easy",
+      "GF"
     ]
   },
   {
@@ -99,8 +278,8 @@
     "date": "2026-02-08T20:44:05.751238+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "GF",
-      "Easy"
+      "Easy",
+      "GF"
     ]
   },
   {
@@ -203,8 +382,8 @@
     "date": "2026-02-08T20:44:05.744210+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "GF",
-      "Easy"
+      "Easy",
+      "GF"
     ]
   },
   {
@@ -248,8 +427,8 @@
     "date": "2026-02-08T20:44:05.740666+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "GF",
-      "Easy"
+      "Easy",
+      "GF"
     ]
   },
   {
@@ -374,8 +553,8 @@
     "date": "2026-02-08T20:43:57.973888+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "GF",
-      "Easy"
+      "Easy",
+      "GF"
     ]
   },
   {
@@ -909,6 +1088,15 @@
     "special_tags": []
   },
   {
+    "blog_name": "Earth to Veg",
+    "title": "Coconut Coriander Chutney Tofu Scramble",
+    "link": "https://earthtoveg.com/coriander-chutney-tofu-scramble/",
+    "image": "https://earthtoveg.com/wp-content/uploads/2026/01/coriander-chutney-tofu-scramble.jpg",
+    "date": "2026-02-06T20:35:35+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
     "blog_name": "The Burger Dude",
     "title": "Vegan Black Bean Dip",
     "link": "https://theeburgerdude.com/vegan-black-bean-dip/",
@@ -1205,8 +1393,8 @@
     "date": "2026-02-05T12:00:00+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "GF",
-      "Easy"
+      "Easy",
+      "GF"
     ]
   },
   {
@@ -1246,8 +1434,8 @@
     "date": "2026-02-05T07:00:00-08:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -1559,8 +1747,8 @@
     "date": "2026-02-03T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -1736,8 +1924,8 @@
     "date": "2026-02-02T02:33:16+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "GF",
-      "Easy"
+      "Easy",
+      "GF"
     ]
   },
   {
@@ -2037,6 +2225,15 @@
     "special_tags": [
       "Budget"
     ]
+  },
+  {
+    "blog_name": "Earth to Veg",
+    "title": "Vegan Pancit Bihon with Tofu and Vegetables",
+    "link": "https://earthtoveg.com/vegan-pancit-bihon/",
+    "image": "https://earthtoveg.com/wp-content/uploads/2026/01/vegetarian-pancit-bihon-guisado.jpg",
+    "date": "2026-01-30T21:04:30+00:00",
+    "is_disruptor": true,
+    "special_tags": []
   },
   {
     "blog_name": "Namely Marly",
@@ -2421,8 +2618,8 @@
     "date": "2026-01-28T12:13:15+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -2576,8 +2773,8 @@
     "date": "2026-01-27T17:26:09+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -2910,8 +3107,8 @@
     "date": "2026-01-23T11:33:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -3160,8 +3357,8 @@
     "date": "2026-01-20T23:23:34+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -3238,8 +3435,8 @@
     "date": "2026-01-20T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -3259,8 +3456,8 @@
     "date": "2026-01-20T09:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "GF",
-      "Easy"
+      "Easy",
+      "GF"
     ]
   },
   {
@@ -4147,8 +4344,8 @@
     "date": "2026-01-09T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -4527,6 +4724,17 @@
     ]
   },
   {
+    "blog_name": "Earth to Veg",
+    "title": "Purple Sweet Potato Pan-Fried Mochi",
+    "link": "https://earthtoveg.com/purple-sweet-potato-mochi/",
+    "image": "https://earthtoveg.com/wp-content/uploads/2026/01/purple-sweet-potato-rice-cakes-1.jpg",
+    "date": "2026-01-03T01:13:32+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
     "blog_name": "Plantifully Based",
     "title": "15+ Vegan Cheeses to Try Right Now!",
     "link": "https://plantifullybasedblog.com/15-vegan-cheeses-to-try-right-now/?utm_source=rss&utm_medium=rss&utm_campaign=15-vegan-cheeses-to-try-right-now",
@@ -4574,8 +4782,8 @@
     "date": "2026-01-02T12:00:00+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "GF",
-      "Easy"
+      "Easy",
+      "GF"
     ]
   },
   {
@@ -4597,8 +4805,8 @@
     "date": "2026-01-02T09:50:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -4730,8 +4938,8 @@
     "date": "2025-12-28T20:39:42+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -5478,185 +5686,6 @@
     "special_tags": []
   },
   {
-    "blog_name": "Zucker & Jagdwurst",
-    "title": "WerbungVegan Linzer Cake with Strawberry-Filling",
-    "link": "https://www.zuckerjagdwurst.com/en/recipes/vegan-linzer-cake-with-strawberry-filling",
-    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
-    "date": "2026-02-09T00:23:17.584391+00:00",
-    "is_disruptor": false,
-    "special_tags": [
-      "Easy"
-    ]
-  },
-  {
-    "blog_name": "Zucker & Jagdwurst",
-    "title": "WerbungVegan Buchteln with Vanilla Sauce",
-    "link": "https://www.zuckerjagdwurst.com/en/recipes/vegan-buchten-with-vanilla-sauce",
-    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
-    "date": "2026-02-09T00:23:17.584265+00:00",
-    "is_disruptor": false,
-    "special_tags": []
-  },
-  {
-    "blog_name": "Zucker & Jagdwurst",
-    "title": "Kale with Vegan Pinkel Sausage and Potatoes",
-    "link": "https://www.zuckerjagdwurst.com/en/recipes/kale-with-vegan-pinkel-sausage-and-potatoes",
-    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
-    "date": "2026-02-09T00:23:17.584134+00:00",
-    "is_disruptor": false,
-    "special_tags": [
-      "Budget"
-    ]
-  },
-  {
-    "blog_name": "Zucker & Jagdwurst",
-    "title": "Vegan Slice and Bake Cookies \u2013\u00a01 Dough, 7 Ideas",
-    "link": "https://www.zuckerjagdwurst.com/en/recipes/vegan-slice-and-bake-cookies-1-dough-7-ideas",
-    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
-    "date": "2026-02-09T00:23:17.583991+00:00",
-    "is_disruptor": false,
-    "special_tags": []
-  },
-  {
-    "blog_name": "Zucker & Jagdwurst",
-    "title": "WerbungVegan Pinsa with Brussels Sprouts and Hollandaise",
-    "link": "https://www.zuckerjagdwurst.com/en/recipes/vegan-brussels-sprouts-hollandaise-pinsa",
-    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
-    "date": "2026-02-09T00:23:17.583872+00:00",
-    "is_disruptor": false,
-    "special_tags": []
-  },
-  {
-    "blog_name": "Zucker & Jagdwurst",
-    "title": "WerbungVegan and Gluten-Free Hazelnut Nougat Cookies",
-    "link": "https://www.zuckerjagdwurst.com/en/recipes/vegan-and-gluten-free-hazelnut-nougat-cookies",
-    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
-    "date": "2026-02-09T00:23:17.583737+00:00",
-    "is_disruptor": false,
-    "special_tags": [
-      "GF"
-    ]
-  },
-  {
-    "blog_name": "Zucker & Jagdwurst",
-    "title": "Vegan Bueno Cookies",
-    "link": "https://www.zuckerjagdwurst.com/en/recipes/vegan-bueno-cookies",
-    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
-    "date": "2026-02-09T00:23:17.583608+00:00",
-    "is_disruptor": false,
-    "special_tags": []
-  },
-  {
-    "blog_name": "Zucker & Jagdwurst",
-    "title": "WerbungBaked Red Cabbage Steaks with Bean Pur\u00e9e",
-    "link": "https://www.zuckerjagdwurst.com/en/recipes/baked-red-cabbage-steaks-with-bean-puree",
-    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
-    "date": "2026-02-09T00:23:17.583483+00:00",
-    "is_disruptor": false,
-    "special_tags": []
-  },
-  {
-    "blog_name": "Zucker & Jagdwurst",
-    "title": "WerbungVegan Baked-Apple-Cheesecake",
-    "link": "https://www.zuckerjagdwurst.com/en/recipes/vegan-baked-apple-cheesecake",
-    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
-    "date": "2026-02-09T00:23:17.583355+00:00",
-    "is_disruptor": false,
-    "special_tags": []
-  },
-  {
-    "blog_name": "Zucker & Jagdwurst",
-    "title": "WerbungVegan Cabbage Roll Pasta",
-    "link": "https://www.zuckerjagdwurst.com/en/recipes/vegan-cabbage-roll-pasta",
-    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
-    "date": "2026-02-09T00:23:17.583226+00:00",
-    "is_disruptor": false,
-    "special_tags": []
-  },
-  {
-    "blog_name": "Zucker & Jagdwurst",
-    "title": "WerbungVegan Chocolate Cookies with Banana-Cream-Filling",
-    "link": "https://www.zuckerjagdwurst.com/en/recipes/vegan-chocolate-cookies-with-banana-cream-filling",
-    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
-    "date": "2026-02-09T00:23:17.583085+00:00",
-    "is_disruptor": false,
-    "special_tags": []
-  },
-  {
-    "blog_name": "Zucker & Jagdwurst",
-    "title": "WerbungPlant-Based Nut Roast Strudel With Quick Gravy",
-    "link": "https://www.zuckerjagdwurst.com/en/recipes/plant-based-nut-roast-strudel-with-quick-gravy",
-    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
-    "date": "2026-02-09T00:23:17.582940+00:00",
-    "is_disruptor": false,
-    "special_tags": [
-      "Easy"
-    ]
-  },
-  {
-    "blog_name": "Zucker & Jagdwurst",
-    "title": "Quick Lentil Goulash with Spaetzle",
-    "link": "https://www.zuckerjagdwurst.com/en/recipes/quick-lentil-goulash-with-spaetzle",
-    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
-    "date": "2026-02-09T00:23:17.582813+00:00",
-    "is_disruptor": false,
-    "special_tags": [
-      "Easy",
-      "Budget"
-    ]
-  },
-  {
-    "blog_name": "Zucker & Jagdwurst",
-    "title": "WerbungCrispy Tempeh Schnitzel with Potato-Parsnip Mash and Mushroom Gravy",
-    "link": "https://www.zuckerjagdwurst.com/en/recipes/crispy-tempeh-schnitzel-with-potato-parsnip-mash-mushroom-gravy",
-    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
-    "date": "2026-02-09T00:23:17.582693+00:00",
-    "is_disruptor": false,
-    "special_tags": [
-      "Budget"
-    ]
-  },
-  {
-    "blog_name": "Zucker & Jagdwurst",
-    "title": "WerbungWintery Open Lasagna with Mushrooms and Savoy Cabbage",
-    "link": "https://www.zuckerjagdwurst.com/en/recipes/wintery-open-lasagna-with-mushrooms-savoy-cabbage",
-    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
-    "date": "2026-02-09T00:23:17.582565+00:00",
-    "is_disruptor": false,
-    "special_tags": []
-  },
-  {
-    "blog_name": "Zucker & Jagdwurst",
-    "title": "Vegan Scrambled Eggs without Tofu (soy free)",
-    "link": "https://www.zuckerjagdwurst.com/en/recipes/vegan-scrambled-eggs-without-tofu-soy-free",
-    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
-    "date": "2026-02-09T00:23:17.582435+00:00",
-    "is_disruptor": false,
-    "special_tags": []
-  },
-  {
-    "blog_name": "Zucker & Jagdwurst",
-    "title": "Easy Sunday Rolls",
-    "link": "https://www.zuckerjagdwurst.com/en/recipes/easy-sunday-rolls",
-    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
-    "date": "2026-02-09T00:23:17.582309+00:00",
-    "is_disruptor": false,
-    "special_tags": [
-      "Easy"
-    ]
-  },
-  {
-    "blog_name": "Zucker & Jagdwurst",
-    "title": "WerbungVegan Potato Pancake Casserole",
-    "link": "https://www.zuckerjagdwurst.com/en/recipes/vegan-potato-pancake-casserole",
-    "image": "data:image/svg+xml;charset=utf-8,%3Csvg height='229.99999999999997' width='350' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
-    "date": "2026-02-09T00:23:17.582161+00:00",
-    "is_disruptor": false,
-    "special_tags": [
-      "Budget"
-    ]
-  },
-  {
     "blog_name": "The Stingy Vegan",
     "title": "Stir Fry Snow Peas",
     "link": "https://thestingyvegan.com/stir-fry-snow-peas/",
@@ -5676,8 +5705,8 @@
     "date": "2025-12-12T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -5736,8 +5765,8 @@
     "date": "2025-12-11T12:00:00+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "GF",
-      "Easy"
+      "Easy",
+      "GF"
     ]
   },
   {
@@ -5963,8 +5992,8 @@
     "date": "2025-12-05T19:52:47+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -6110,8 +6139,8 @@
     "date": "2025-12-02T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -6412,8 +6441,8 @@
     "date": "2025-11-23T16:02:45+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -6562,8 +6591,8 @@
     "date": "2025-11-20T12:00:00+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "GF",
-      "Easy"
+      "Easy",
+      "GF"
     ]
   },
   {
@@ -7256,8 +7285,8 @@
     "date": "2025-10-31T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -7327,8 +7356,8 @@
     "date": "2025-10-29T04:05:45+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "GF",
-      "Easy"
+      "Easy",
+      "GF"
     ]
   },
   {
@@ -7350,8 +7379,8 @@
     "date": "2025-10-28T17:13:41+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -7714,6 +7743,15 @@
     "special_tags": []
   },
   {
+    "blog_name": "Earth to Veg",
+    "title": "Hong Shao Dou Fu (Red Braised Tofu)",
+    "link": "https://earthtoveg.com/hongshao-doufu-braised-tofu/",
+    "image": "https://earthtoveg.com/wp-content/uploads/2025/09/hongshao-doufu.jpg",
+    "date": "2025-10-14T02:04:19+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
     "blog_name": "Rhian's Recipes",
     "title": "14 Vegan Apple Dessert Recipes (Gluten-Free)",
     "link": "https://www.rhiansrecipes.com/apple-desserts/",
@@ -7732,9 +7770,9 @@
     "date": "2025-10-12T20:32:47+00:00",
     "is_disruptor": true,
     "special_tags": [
+      "Easy",
       "WFPB",
-      "GF",
-      "Easy"
+      "GF"
     ]
   },
   {
@@ -7834,8 +7872,8 @@
     "date": "2025-10-08T15:47:23+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -8062,8 +8100,8 @@
     "date": "2025-09-21T16:04:26+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -8076,6 +8114,15 @@
     "special_tags": [
       "Budget"
     ]
+  },
+  {
+    "blog_name": "Earth to Veg",
+    "title": "Mashawa (Afghan Barley Bean Stew)",
+    "link": "https://earthtoveg.com/mashawa-afghan-barley-bean-stew/",
+    "image": "https://earthtoveg.com/wp-content/uploads/2025/09/afghan-mashawa.jpg",
+    "date": "2025-09-19T21:17:14+00:00",
+    "is_disruptor": true,
+    "special_tags": []
   },
   {
     "blog_name": "Namely Marly",
@@ -8159,6 +8206,15 @@
     "special_tags": []
   },
   {
+    "blog_name": "Earth to Veg",
+    "title": "Kkaennip Jjim (Korean Perilla Leaves Recipe)",
+    "link": "https://earthtoveg.com/kkaennip-jjim-korean-perilla-leaves/",
+    "image": "https://earthtoveg.com/wp-content/uploads/2025/09/kkaennip-jjim.jpg",
+    "date": "2025-09-14T03:26:35+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
     "blog_name": "Namely Marly",
     "title": "Thai Peanut Noodle Salad",
     "link": "https://namelymarly.com/thai-peanut-noodle-salad/",
@@ -8177,8 +8233,8 @@
     "date": "2025-09-13T18:58:14+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -8199,6 +8255,15 @@
     "link": "https://messyvegancook.com/lychee-coconut-water-cold-brew/",
     "image": "icon.jpg",
     "date": "2025-09-12T08:55:19+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Earth to Veg",
+    "title": "Vegan Pasta Alla Norma",
+    "link": "https://earthtoveg.com/vegan-pasta-alla-norma/",
+    "image": "https://earthtoveg.com/wp-content/uploads/2025/09/vegan-pasta-alla-norma.jpg",
+    "date": "2025-09-11T03:20:11+00:00",
     "is_disruptor": true,
     "special_tags": []
   },
@@ -8236,6 +8301,24 @@
       "GF",
       "Budget"
     ]
+  },
+  {
+    "blog_name": "Earth to Veg",
+    "title": "Sour Cherry Fruit Leather (Lavashak)",
+    "link": "https://earthtoveg.com/sour-cherry-lavashak/",
+    "image": "https://earthtoveg.com/wp-content/uploads/2025/09/sour-cherry-fruit-leather.jpg",
+    "date": "2025-09-08T03:52:47+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Earth to Veg",
+    "title": "Fresh Yuba Soup (Tofu Skin Soup)",
+    "link": "https://earthtoveg.com/yuba-soup-tofu-skin-soup/",
+    "image": "https://earthtoveg.com/wp-content/uploads/2025/09/yuba-tofu-skin-soup.jpg",
+    "date": "2025-09-07T20:09:28+00:00",
+    "is_disruptor": true,
+    "special_tags": []
   },
   {
     "blog_name": "Addicted to Dates",
@@ -8300,6 +8383,15 @@
       "Easy",
       "Budget"
     ]
+  },
+  {
+    "blog_name": "Earth to Veg",
+    "title": "Food Store Review: Try Aladdin",
+    "link": "https://earthtoveg.com/review-aladdin/",
+    "image": "https://earthtoveg.com/wp-content/uploads/2025/09/aladdin-vegan-turkish-snacks.jpg",
+    "date": "2025-09-03T03:21:51+00:00",
+    "is_disruptor": true,
+    "special_tags": []
   },
   {
     "blog_name": "Addicted to Dates",
@@ -8611,8 +8703,8 @@
     "date": "2025-07-28T21:27:53+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
