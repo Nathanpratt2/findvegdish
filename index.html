@@ -631,12 +631,63 @@
     const PROTEIN_KEYWORDS = ['tofu', 'tempeh', 'seitan', 'tvp', 'lentil', 'bean', 'chickpea', 'edamame', 'soy', 'quinoa', 'peanut', 'meatball', 'burger', 'sausage', 'protein', 'falafel', 'hummus', 'nut roast'];
 
     // --- UTILS ---
+    // --- UTILS ---
     function debounce(func, wait) {
         let timeout;
         return function(...args) {
             clearTimeout(timeout);
             timeout = setTimeout(() => func.apply(this, args), wait);
         };
+    }
+
+    // Standard Levenshtein Distance Algorithm
+    function levenshteinDistance(a, b) {
+        if (a.length === 0) return b.length;
+        if (b.length === 0) return a.length;
+        const matrix = [];
+        for (let i = 0; i <= b.length; i++) { matrix[i] = [i]; }
+        for (let j = 0; j <= a.length; j++) { matrix[0][j] = j; }
+        for (let i = 1; i <= b.length; i++) {
+            for (let j = 1; j <= a.length; j++) {
+                if (b.charAt(i - 1) === a.charAt(j - 1)) {
+                    matrix[i][j] = matrix[i - 1][j - 1];
+                } else {
+                    matrix[i][j] = Math.min(
+                        matrix[i - 1][j - 1] + 1, 
+                        Math.min(matrix[i][j - 1] + 1, matrix[i - 1][j] + 1) 
+                    );
+                }
+            }
+        }
+        return matrix[b.length][a.length];
+    }
+
+    // "Tight" Fuzzy Match Logic
+    function isFuzzyMatch(query, text) {
+        // 1. Fast path: Exact substring match
+        if (text.includes(query)) return true;
+
+        // 2. Tokenize: Split user query and target text into words
+        const queryTokens = query.split(/\s+/).filter(t => t.length > 0);
+        const textTokens = text.split(/\s+/).filter(t => t.length > 0);
+
+        // 3. Logic: Every word in the user's query must "match" a word in the text
+        return queryTokens.every(qToken => {
+            return textTokens.some(tToken => {
+                // Optimization: Skip if length difference is too large
+                if (Math.abs(qToken.length - tToken.length) > 2) return false;
+
+                const dist = levenshteinDistance(qToken, tToken);
+                
+                // TIGHT THRESHOLDS:
+                // Word length < 4: Must be exact (e.g., "pie" vs "die")
+                // Word length 4-7: Allow 1 typo (e.g., "aple" vs "apple")
+                // Word length > 7: Allow 2 typos (e.g., "brocolli" vs "broccoli")
+                if (qToken.length < 4) return dist === 0;
+                if (qToken.length <= 7) return dist <= 1;
+                return dist <= 2;
+            });
+        });
     }
 
     // --- INITIALIZATION ---
@@ -1045,22 +1096,22 @@
 
         if (term.length > 0) {
             filtered = filtered.filter(recipe => {
+                // Special case for the "Protein" button/keyword
                 if (term === 'protein') {
                     const t = recipe.title.toLowerCase();
                     return PROTEIN_KEYWORDS.some(k => t.includes(k));
                 }
 
+                // Prepare Data for Search
                 const title = recipe.title.toLowerCase().replace(/-/g, ' ');
                 const blogger = recipe.blog_name.toLowerCase().replace(/-/g, ' ');
+                const tags = (recipe.special_tags || []).join(' ').toLowerCase().replace(/-/g, ' ');
                 
-                let hasMatchingTag = false;
-                if (recipe.special_tags && Array.isArray(recipe.special_tags)) {
-                    hasMatchingTag = recipe.special_tags.some(tag => 
-                        tag.toLowerCase().replace(/-/g, ' ').includes(term)
-                    );
-                }
+                // Combine all searchable text into one string for efficient token matching
+                const searchableText = `${title} ${blogger} ${tags}`;
                 
-                return title.includes(term) || blogger.includes(term) || hasMatchingTag;
+                // Run the "Tight" Fuzzy Match
+                return isFuzzyMatch(term, searchableText);
             });
         }
 
