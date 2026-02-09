@@ -571,6 +571,12 @@ except (FileNotFoundError, json.JSONDecodeError):
 initial_count = len(recipes)
 recipes = [r for r in recipes if not (r['blog_name'] == "VegNews" and "/recipes/" not in r['link'])]
 
+# 2. DATABASE REFRESH: Remove the bad entries so they can be re-scraped
+    # This deletes ZJ, RPL GF, and VR GF entries so the new logic can fix them.
+    refresh_blogs = ["Zucker & Jagdwurst", "Rainbow Plant Life GF", "Vegan Richa GF"]
+    print(f"Cleaning database of {refresh_blogs} to fix dates/images...")
+    recipes = [r for r in recipes if r['blog_name'] not in refresh_blogs]
+
 # Update existing_links to be tuples of (link, blog_name) to allow separate entries for GF blogs
 existing_links = {(r['link'], r['blog_name']) for r in recipes}
 
