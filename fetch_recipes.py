@@ -605,32 +605,36 @@ for bname, blog_recipes in recipes_by_blog.items():
 final_pruned_list.sort(key=lambda x: x['date'], reverse=True)
 
 # --- GLOBAL DEDUPLICATION ---
-# Rule: If duplicate link found:
+# Rule: If duplicate TITLE found:
 # 1. Keep the one where Blog Name contains "GF".
 # 2. If equal or neither, keep the one with the Older date.
-print("   Running global deduplication (Rules: GF source > Older date)...")
+print("   Running global deduplication (Rules: Title Based, GF source > Older date)...")
 deduped_recipes = {}
 for recipe in final_pruned_list:
-    link = recipe['link']
+    # We normalize the title for comparison (lowercase and no extra spaces)
+    title_key = recipe['title'].lower().strip()
     
-    if link not in deduped_recipes:
-        deduped_recipes[link] = recipe
+    if title_key not in deduped_recipes:
+        deduped_recipes[title_key] = recipe
     else:
-        existing = deduped_recipes[link]
+        existing = deduped_recipes[title_key]
         
         # Check GF in Blog Name
         curr_is_gf = "GF" in recipe['blog_name']
         exist_is_gf = "GF" in existing['blog_name']
         
         if curr_is_gf and not exist_is_gf:
-            deduped_recipes[link] = recipe
+            # Current blog is a GF source, existing isn't. Switch to current.
+            deduped_recipes[title_key] = recipe
         elif exist_is_gf and not curr_is_gf:
-            pass # Keep existing
+            # Existing is GF source, current isn't. Stay with existing.
+            pass 
         else:
-            # Tie-breaker: Keep OLDER date
+            # Tie-breaker: Keep the recipe with the OLDER publication date
             if recipe['date'] < existing['date']:
-                deduped_recipes[link] = recipe
+                deduped_recipes[title_key] = recipe
 
+# Convert back to list and sort by date for the final file
 final_pruned_list = list(deduped_recipes.values())
 final_pruned_list.sort(key=lambda x: x['date'], reverse=True)
 
