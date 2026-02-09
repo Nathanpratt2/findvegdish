@@ -102,7 +102,7 @@ DISRUPTORS = [
 # --- DIRECT HTML SCRAPING SOURCES ---
 HTML_SOURCES = [
     ("Pick Up Limes", "https://www.pickuplimes.com/recipe/", [], "custom_pul"),
-    ("Zucker & Jagdwurst", "https://www.zuckerjagdwurst.com/en/archive/1", [], "custom_zj"), # UPDATED
+    ("Zucker & Jagdwurst", "https://www.zuckerjagdwurst.com/en/archive/1", [], "custom_zj"),
     ("Rainbow Plant Life GF", "https://rainbowplantlife.com/diet/gluten-free/", ["GF"], "wordpress"),
     ("Vegan Richa GF", "https://www.veganricha.com/category/gluten-free/", ["GF"], "wordpress"),
     ("School Night Vegan", "https://schoolnightvegan.com/category/recipes/", [], "custom_pul"),
@@ -113,11 +113,8 @@ HTML_SOURCES = [
     ("Zacchary Bird","https://www.zaccharybird.com/all-recipes/",[], "wordpress"),
     ("Elsa's Wholesome Life","https://www.elsaswholesomelife.com/blog?category=Recipes",[], "wordpress"),
     ("The Full Helping (Vegan Recipes)","https://www.thefullhelping.com/dietary/vegan/",[],"wordpress"),
-    ("Cupful of Kale", "https://cupfulofkale.com/recipes/", [], "wordpress"),
-    ("The Veg Space", "https://thevegspace.co.uk/recipe-index/", [], "wordpress"),
-    ("Vegan Punks", "https://veganpunks.com/recipes/", [], "wordpress"),
-    ("What Jew You Want to Eat", "https://whatjewwannaeat.com/category/vegan/", [], "wordpress"),
-    ("Hot For Food","https://www.hotforfoodblog.com/recipe-index/",[],"wordpress")
+    ("Hot For Food","https://www.hotforfoodblog.com/recipe-index/",[],"wordpress"),
+    ("Baking Hermann", "https://bakinghermann.com/recipes/", [], "custom_hermann")
 ]
 
 # --- DISPLAY NAME MAPPING ---
@@ -151,7 +148,7 @@ for item in HTML_SOURCES:
         print(f"⚠️ Warning: Skipping malformed HTML config: {item}")
 
 
-MAX_RECIPES_PER_BLOG = 250 
+MAX_RECIPES_PER_BLOG = 100 
 cutoff_date = datetime.now().astimezone() - timedelta(days=360)
 
 # --- KEYWORDS FOR AUTO TAGGING ---
@@ -208,7 +205,7 @@ def is_pet_recipe(title):
 
 def robust_fetch(url, is_binary=False, is_scraping_page=False):
     if is_scraping_page:
-        time.sleep(random.uniform(3, 10)) 
+        time.sleep(random.uniform(2, 5)) 
     
     headers = get_headers(referer="https://www.google.com/")
 
@@ -280,6 +277,29 @@ def generate_sitemap(recipes):
     with open('sitemap.xml', 'w') as f:
         f.write(sitemap_content)
     print("Generated sitemap.xml")
+
+def generate_llms_txt(recipes):
+    """Generates llms.txt for GEO SEO optimization."""
+    count = len(recipes)
+    txt_content = f"""# Find Veg Dish
+
+## About
+FindVegDish.com is a curated aggregator of high-quality plant-based, vegan, and gluten-free recipes from the world's top food bloggers.
+
+## Content
+- Total Recipes: {count}
+- Categories: Vegan, Whole Food Plant Based (WFPB), Gluten-Free (GF), Budget-Friendly, Easy Recipes.
+
+## Data Sources
+We aggregate content from verified sources including Minimalist Baker, Rainbow Plant Life, Pick Up Limes, and more.
+
+## Access
+- Home: https://findvegdish.com/
+- Sitemap: https://findvegdish.com/sitemap.xml
+"""
+    with open('llms.txt', 'w') as f:
+        f.write(txt_content)
+    print("Generated llms.txt")
 
 # --- HELPER FUNCTIONS FOR ROBUST HTML PARSING ---
 
@@ -400,9 +420,19 @@ def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags)
     articles = []
     
     if mode == "wordpress":
-        articles = soup.select("article")
+        # CRITICAL FIX: Restrict to main content area to avoid Sidebar/Footer pollution
+        # This prevents "Rainbow Plant Life GF" from picking up non-GF "Recent Posts" from the sidebar.
+        main_area = soup.find('main') or \
+                    soup.find('div', id='content') or \
+                    soup.find('div', class_='site-content') or \
+                    soup.find('div', class_='main-content') or \
+                    soup.find('section', class_='content')
+        
+        search_scope = main_area if main_area else soup
+
+        articles = search_scope.select("article")
         if not articles:
-            articles = soup.select(".post, .type-post, .blog-entry")
+            articles = search_scope.select(".post, .type-post, .blog-entry, .entry")
             
     elif mode == "custom_pul":
         links = soup.find_all('a')
@@ -423,6 +453,11 @@ def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags)
             if '/en/' in href and not any(x in href for x in ['/archive', '/page/', '/category/', '/about']):
                 if a.find('img') or a.find(['h2', 'h3', 'h4']):
                     articles.append(a)
+
+    elif mode == "custom_hermann":
+        # Baking Hermann (Webflow logic)
+        # Looks for w-dyn-item or collection items common in Webflow
+        articles = soup.select(".w-dyn-item, .collection-item, .recipe-card")
                     
     for art in articles:
         try:
@@ -496,6 +531,23 @@ def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags)
                 # ZJ Archive pages often don't have dates. We set None here to trigger detailed fetch later.
                 date_obj = None
 
+            elif mode == "custom_hermann":
+                # Logic for Baking Hermann
+                link_tag = art.find('a')
+                if link_tag:
+                    link = link_tag.get('href')
+                    if link and not link.startswith('http'): link = urljoin("https://bakinghermann.com", link)
+                
+                title_tag = art.select_one("h3, h2, .heading")
+                if title_tag: title = title_tag.get_text(strip=True)
+                
+                img_tag = art.find('img')
+                if img_tag:
+                    image = img_tag.get('src')
+                    if image and not image.startswith('http'): image = image # Often relative or CDN
+                
+                date_obj = None # Will force deep fetch
+
             if not title or not link: continue
             if is_pet_recipe(title): continue
             
@@ -505,7 +557,7 @@ def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags)
                 continue
 
             # If it is a NEW item for these problematic sources, try to get real date/image
-            needs_deep_fetch = (name in ["Zucker & Jagdwurst", "Rainbow Plant Life GF", "Vegan Richa GF"])
+            needs_deep_fetch = (name in ["Zucker & Jagdwurst", "Rainbow Plant Life GF", "Vegan Richa GF", "Baking Hermann"])
             
             # If date is missing (common for ZJ) or we force a check, fetch detail
             if (date_obj is None or needs_deep_fetch):
@@ -657,7 +709,7 @@ for item in HTML_SOURCES:
     if len(item) != 4: continue
     name, url, tags, mode = item
     
-    time.sleep(random.uniform(3, 10))
+    time.sleep(random.uniform(2, 7))
 
     try:
         new_items, status = scrape_html_feed(name, url, mode, existing_links, recipes, tags)
@@ -738,6 +790,7 @@ if len(final_pruned_list) > 50:
     with open('data.json', 'w') as f:
         json.dump(final_pruned_list, f, indent=2)
     generate_sitemap(final_pruned_list)
+    generate_llms_txt(final_pruned_list)
 else:
     print("⚠️ SAFETY ALERT: Database too small (<50 items). Skipping write.")
 
