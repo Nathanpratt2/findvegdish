@@ -1,12 +1,12 @@
 # Feed Health Report
-**Last Run:** 2026-02-09T00:49:05.591570
+**Last Run:** 2026-02-09T00:54:33.643878
 **Total Blogs:** 97
 **Total Database Size:** 916
 **New Today:** 36
 **WFPB:** 144 (15%)
-**Easy:** 226 (24%)
-**Budget:** 181 (19%)
-**Gluten-Free:** 126 (13%)
+**Easy:** 230 (25%)
+**Budget:** 185 (20%)
+**Gluten-Free:** 127 (13%)
 **Average Latest Post:** 2026-01-13
 
 | Blog Name | URL | New | Total | WFPB | Easy | Budget | GF | Latest | Status |
@@ -38,7 +38,7 @@
 | Vegan Richa GF | https://www.veganricha.com/category/gluten-free/ | 0 | 20 | 0 | 5 | 6 | 20 | 2026-02-08 | ⚠️ Scraped 0 |
 | Vegan in the Freezer | https://veganinthefreezer.com/feed/ | 0 | 1 | 0 | 0 | 0 | 0 | 2026-01-25 | ⚠️ Low Count  |
 | Zacchary Bird | https://www.zaccharybird.com/all-recipes/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ⚠️ Scraped 0 |
-| Zucker & Jagdwurst | https://www.zuckerjagdwurst.com/en/archive/1 | 0 | 18 | 0 | 4 | 4 | 1 | 2026-02-09 | ⚠️ Scraped 0 |
+| Zucker & Jagdwurst | https://www.zuckerjagdwurst.com/en/archive/1 | 0 | 36 | 0 | 8 | 8 | 2 | 2026-02-09 | ⚠️ Scraped 0 |
 | A Virtual Vegan | https://avirtualvegan.com/feed/ | 0 | 9 | 0 | 1 | 0 | 0 | 2026-02-06 | ✅ OK |
 | Addicted to Dates | https://addictedtodates.com/category/recipes/feed/ | 0 | 10 | 0 | 1 | 2 | 0 | 2026-01-30 | ✅ OK |
 | Ann Arbor Vegan Kitchen | https://www.annarborvegankitchen.com/feed/ | 0 | 10 | 10 | 0 | 3 | 0 | 2026-02-04 | ✅ OK |
