@@ -105,7 +105,7 @@ DISRUPTORS = [
 # --- DIRECT HTML SCRAPING SOURCES ---
 HTML_SOURCES = [
     ("Pick Up Limes", "https://www.pickuplimes.com/recipe/", [], "custom_pul"),
-    ("Zucker & Jagdwurst", "https://www.zuckerjagdwurst.com/en/archive/1", [], "custom_zj"), # UPDATED
+    ("Zucker & Jagdwurst", "https://www.zuckerjagdwurst.com/en/archive", [], "custom_zj"), # UPDATED
     ("Rainbow Plant Life GF", "https://rainbowplantlife.com/diet/gluten-free/", ["GF"], "wordpress"),
     ("Vegan Richa GF", "https://www.veganricha.com/category/gluten-free/", ["GF"], "wordpress"),
     ("School Night Vegan", "https://schoolnightvegan.com/category/recipes/", [], "custom_pul"),
@@ -308,29 +308,20 @@ def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags)
                     articles.append(a)
 
     elif mode == "custom_zj":
-        # Logic for Zucker & Jagdwurst
-        # They often use a grid. We look for links containing '/en/' that are not pagination/archive links.
-        # Common structure: <a href="..."> <img ...> <h3>Title</h3> </a>
-        links = soup.find_all('a')
+        # Zucker & Jagdwurst uses a specific grid structure
+        # We target the 'a' tags that wrap their post items
+        links = soup.select("a.post-item, .post-grid a, .archive-posts a")
+        if not links:
+            # Fallback to all links if classes change
+            links = soup.find_all('a', href=True)
+            
         for a in links:
             href = a.get('href', '')
-            if not href: continue
-            
-            # Normalize URL
-            if not href.startswith('http'):
-                href = urljoin(url, href)
-            
-            # Filter for likely recipe posts
-            # Must be in /en/ path, avoid archive/page/category/about
-            if '/en/' in href and not any(x in href for x in ['/archive/', '/page/', '/category/', 'instagram.com', 'facebook.com', 'pinterest.com']):
-                # Check if it has an image or a title-like element
-                has_img = a.find('img')
-                has_title = a.find(['h2', 'h3', 'h4'])
-                
-                # Only accept if it looks like a card (has image OR has heading)
-                if has_img or has_title:
+            if '/en/' in href and not any(x in href for x in ['/archive', '/page/', '/category/', '/about']):
+                # Only add if it contains an image or a title
+                if a.find('img') or a.find(['h2', 'h3', 'h4']):
                     articles.append(a)
-
+                    
     for art in articles:
         try:
             title = None
@@ -380,23 +371,24 @@ def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags)
                 if link and not link.startswith('http'):
                     link = urljoin(url, link)
                 
-                # Title extraction: Try Heading tag first, then image alt, then text
-                t_tag = art.find(['h2', 'h3', 'h4'])
-                if t_tag:
-                    title = t_tag.get_text(strip=True)
-                else:
-                    # Fallback: check for valid text in the link
-                    title = art.get_text(strip=True)
-                    if not title or len(title) < 5:
-                        # Fallback: check image alt
-                        img_in_art = art.find('img')
-                        if img_in_art:
-                            title = img_in_art.get('alt')
+                # 1. Improved Title Extraction
+                t_tag = art.select_one(".post-item__title, h2, h3, h4")
+                title = t_tag.get_text(strip=True) if t_tag else art.get_text(strip=True)
                 
-                # Image extraction
+                # 2. Improved Image Extraction (Handles Lazy-Loading & srcset)
                 img_tag = art.find('img')
                 if img_tag:
-                    image = img_tag.get('data-src') or img_tag.get('src')
+                    # Check list of possible attributes in order of quality
+                    # Z&J uses data-srcset for their lazy-loaded responsive images
+                    possible_attrs = ['data-srcset', 'srcset', 'data-src', 'src']
+                    for attr in possible_attrs:
+                        val = img_tag.get(attr)
+                        if val:
+                            # If it's a srcset, it looks like "url 400w, url 800w". 
+                            # We take the first URL in the list.
+                            image = val.split(',')[0].split(' ')[0].strip()
+                            if image and not image.startswith('data:'): 
+                                break # Found a valid URL
                 
                 date_obj = datetime.now()
 
