@@ -1,3 +1,5 @@
+--- START OF FILE fetch_recipes (20).py ---
+
 import feedparser
 import json
 import requests
@@ -105,7 +107,7 @@ DISRUPTORS = [
 # --- DIRECT HTML SCRAPING SOURCES ---
 HTML_SOURCES = [
     ("Pick Up Limes", "https://www.pickuplimes.com/recipe/", [], "custom_pul"),
-    ("Zucker & Jagdwurst", "https://www.zuckerjagdwurst.com/en/archive/1", [], "wordpress"),
+    ("Zucker & Jagdwurst", "https://www.zuckerjagdwurst.com/en/archive/1", [], "custom_zj"), # UPDATED
     ("Rainbow Plant Life GF", "https://rainbowplantlife.com/diet/gluten-free/", ["GF"], "wordpress"),
     ("Vegan Richa GF", "https://www.veganricha.com/category/gluten-free/", ["GF"], "wordpress"),
     ("School Night Vegan", "https://schoolnightvegan.com/category/recipes/", [], "custom_pul"),
@@ -307,6 +309,30 @@ def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags)
                 if a.find('img'):
                     articles.append(a)
 
+    elif mode == "custom_zj":
+        # Logic for Zucker & Jagdwurst
+        # They often use a grid. We look for links containing '/en/' that are not pagination/archive links.
+        # Common structure: <a href="..."> <img ...> <h3>Title</h3> </a>
+        links = soup.find_all('a')
+        for a in links:
+            href = a.get('href', '')
+            if not href: continue
+            
+            # Normalize URL
+            if not href.startswith('http'):
+                href = urljoin(url, href)
+            
+            # Filter for likely recipe posts
+            # Must be in /en/ path, avoid archive/page/category/about
+            if '/en/' in href and not any(x in href for x in ['/archive/', '/page/', '/category/', 'instagram.com', 'facebook.com', 'pinterest.com']):
+                # Check if it has an image or a title-like element
+                has_img = a.find('img')
+                has_title = a.find(['h2', 'h3', 'h4'])
+                
+                # Only accept if it looks like a card (has image OR has heading)
+                if has_img or has_title:
+                    articles.append(a)
+
     for art in articles:
         try:
             title = None
@@ -350,6 +376,31 @@ def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags)
                     image = img_tag.get('src') or img_tag.get('data-src')
 
                 date_obj = datetime.now() 
+
+            elif mode == "custom_zj":
+                link = art.get('href')
+                if link and not link.startswith('http'):
+                    link = urljoin(url, link)
+                
+                # Title extraction: Try Heading tag first, then image alt, then text
+                t_tag = art.find(['h2', 'h3', 'h4'])
+                if t_tag:
+                    title = t_tag.get_text(strip=True)
+                else:
+                    # Fallback: check for valid text in the link
+                    title = art.get_text(strip=True)
+                    if not title or len(title) < 5:
+                        # Fallback: check image alt
+                        img_in_art = art.find('img')
+                        if img_in_art:
+                            title = img_in_art.get('alt')
+                
+                # Image extraction
+                img_tag = art.find('img')
+                if img_tag:
+                    image = img_tag.get('data-src') or img_tag.get('src')
+                
+                date_obj = datetime.now()
 
             if not title or not link: continue
             if is_pet_recipe(title): continue
