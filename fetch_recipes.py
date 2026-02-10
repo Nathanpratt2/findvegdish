@@ -184,7 +184,7 @@ NON_RECIPE_KEYWORDS = [
     "policy", "terms", "privacy", "contact", "about", "search", "sitemap",
     "neighbor", "law", "videos", "planning", "rituals", "discontinued", 
     "forgotten", "finds", "live", "tests", "lab", "tracking", "progress", 
-    "lifestyle", "success", "story", "stories", "appliances", "books", 
+    "lifestyle", "success", "story", "stories", "appliances", "books", "I met", 
     "reading", "shows", "headshot"
 ]
 
