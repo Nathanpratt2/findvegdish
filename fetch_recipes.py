@@ -164,6 +164,12 @@ EASY_KEYWORDS = ['easy', 'quick', 'simple', 'fast', '1-pot', 'one-pot', 'one pot
 BUDGET_KEYWORDS = ['budget', 'cheap', 'frugal', 'economical', 'pantry', 'low cost', 'money saving', '$', 'affordable', 'leftover', 'scraps', 'beans', 'rice', 'lentil', 'potato']
 GF_KEYWORDS = ['gluten-free', 'gluten free', 'gf', 'wheat-free', 'flourless', 'almond flour', 'oat flour', 'rice flour']
 
+# Words that usually indicate a recipe is NOT Gluten-Free (unless explicitly stated)
+NON_GF_KEYWORDS = [
+    'seitan', 'vital wheat gluten', 'wheat', 'barley', 'rye', 'couscous', 'farro', 
+    'spelt', 'bulgur', 'semolina', 'sandwich', 'baguette', 'croissant', 'ciabatta', 
+    'udon', 'beer', 'malt', 'burger bun', 'toast', 'sourdough'
+    
 NON_RECIPE_KEYWORDS = [
     "meal plan", "weekly menu", "menu plan", "gift guide", "cookbook", "review", 
     "giveaway", "roundup", "collection", "favorites", "best of", "kitchen tour", 
@@ -777,6 +783,16 @@ for recipe in recipes:
     base_tags = list(BLOG_TAG_MAP.get(bname, []))
     auto_tags = get_auto_tags(recipe['title'])
     combined_tags = list(set(current_tags + base_tags + auto_tags))
+    
+    # SAFETY: Remove GF tag if title contains obvious gluten words (unless explicitly marked GF in title)
+    if "GF" in combined_tags:
+        t_lower = recipe['title'].lower()
+        # If it has a bad word (like 'seitan' or 'sandwich')...
+        if any(kw in t_lower for kw in NON_GF_KEYWORDS):
+            # ...and DOESN'T explicitly say "gluten free" or "gf" in the title...
+            if not any(safe in t_lower for safe in GF_KEYWORDS):
+                combined_tags.remove("GF")
+
     recipe['special_tags'] = combined_tags
 
 # 5.5 Global Non-Recipe Filter
