@@ -627,24 +627,62 @@
     let currentContext = [];      
     let renderedCount = 0;        
 
-    // --- WHIMSICAL: VIBE SEARCH PLACEHOLDERS ---
+   // --- WHIMSICAL: TYPEWRITER SEARCH PLACEHOLDERS ---
     const vibes = [
         "Search: Soup, Blog, Cake...", 
         "Craving tacos? 🌮", 
-        "Want something easy & cheap? 💸", 
+        "Need a budget dinner? 💸", 
         "Something chocolatey? 🍫", 
+        "Looking for high protein? 💪", 
         "How about a cozy stew? 🍲", 
     ];
+
     let vibeIndex = 0;
-    
-    setInterval(() => {
+    let charIndex = 0;
+    let isDeleting = false;
+    let typeSpeed = 100;
+
+    function typeWriter() {
         const input = document.getElementById('searchInput');
-        // Only change if input exists, isn't focused, and is empty
-        if (input && document.activeElement !== input && input.value === '') {
-            vibeIndex = (vibeIndex + 1) % vibes.length;
-            input.placeholder = vibes[vibeIndex];
+        if (!input) return;
+
+        // Stop animating if user is typing or has the box clicked
+        if (document.activeElement === input || input.value !== '') {
+            setTimeout(typeWriter, 1000); 
+            return;
         }
-    }, 3500);
+
+        const currentFullText = vibes[vibeIndex];
+
+        if (isDeleting) {
+            // Remove a character
+            input.placeholder = currentFullText.substring(0, charIndex - 1);
+            charIndex--;
+            typeSpeed = 50; // Deleting is faster
+        } else {
+            // Add a character
+            input.placeholder = currentFullText.substring(0, charIndex + 1);
+            charIndex++;
+            typeSpeed = 120; // Typing is slower
+        }
+
+        // Logic for switching states
+        if (!isDeleting && charIndex === currentFullText.length) {
+            // Finished typing: pause before deleting
+            isDeleting = true;
+            typeSpeed = 3000; // Wait 2.5 seconds at the end of the sentence
+        } else if (isDeleting && charIndex === 0) {
+            // Finished deleting: move to next vibe
+            isDeleting = false;
+            vibeIndex = (vibeIndex + 1) % vibes.length;
+            typeSpeed = 500; // Small pause before starting next word
+        }
+
+        setTimeout(typeWriter, typeSpeed);
+    }
+
+    // Start the animation
+    typeWriter();
     
     // Filtering State
     let activeType = null; 
