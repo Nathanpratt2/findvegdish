@@ -1,8 +1,8 @@
 # Feed Health Report
-**Last Run:** 2026-02-10T01:39:06.030217
+**Last Run:** 2026-02-10T05:28:21.794055
 **Total Blogs:** 97
 **Total Database Size:** 990
-**New Today:** 81
+**New Today:** 42
 **WFPB:** 149 (15%)
 **Easy:** 248 (25%)
 **Budget:** 185 (18%)
@@ -12,13 +12,13 @@
 | Blog Name | URL | New | Total | WFPB | Easy | Budget | GF | Latest | Status |
 |-----------|-----|-----|-------|------|------|--------|----|--------|--------|
 | Cookie and Kate (Vegan Recipes) | https://cookieandkate.com/category/vegan-recipes/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/HTML Fail |
-| Eat Figs, Not Pigs | https://www.eatfigsnotpigs.com/feed/ | 0 | 13 | 1 | 2 | 1 | 0 | 2026-02-06 | ❌ Blocked/ConnErr |
 | Messy Vegan Cook | https://messyvegancook.com/feed/ | 0 | 18 | 0 | 0 | 3 | 0 | 2026-01-02 | ❌ Blocked/ConnErr |
 | Nadia's Healthy Kitchen (Vegan Recipes) | https://nadiashealthykitchen.com/category/vegan/feed/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/ConnErr |
 | Oh She Glows | https://www.ohsheglows.com/recipe-search/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/HTML Fail |
 | School Night Vegan | https://schoolnightvegan.com/category/recipes/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/HTML Fail |
 | The Loopy Whisk (Vegan Recipes) | https://theloopywhisk.com/diet/vegan/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ❌ Blocked/HTML Fail |
 | Baking Hermann | https://bakinghermann.com/recipes/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ⚠️ Scraped 0 |
+| Cupful of Kale | https://cupfulofkale.com/category/recipes/ | 0 | 9 | 2 | 0 | 0 | 0 | 2023-10-11 | ⚠️ Scraped 0 |
 | Dreena Burton | https://dreenaburton.com/feed/ | 0 | 3 | 3 | 1 | 2 | 0 | 2026-01-20 | ⚠️ Low Count  |
 | Elsa's Wholesome Life | https://www.elsaswholesomelife.com/blog?category=Recipes | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ⚠️ Scraped 0 |
 | Fran Costigan | Unknown | 0 | 3 | 0 | 0 | 0 | 0 | 2026-01-20 | ⚠️ Low Count Skipped/DB Only |
@@ -28,10 +28,12 @@
 | Minimalist Baker | Unknown | 0 | 4 | 0 | 4 | 0 | 1 | 2026-01-20 | ⚠️ Low Count Skipped/DB Only |
 | Minimalist Baker (Vegan Recipes) | https://minimalistbaker.com/recipes/vegan/feed/ | 4 | 4 | 0 | 4 | 0 | 1 | 2026-01-20 | ⚠️ Low Count  |
 | One Arab Vegan | https://www.onearabvegan.com/feed/ | 0 | 2 | 0 | 0 | 1 | 0 | 2025-12-04 | ⚠️ Low Count  |
+| Pick Up Limes | https://www.pickuplimes.com/recipe/ | 0 | 14 | 0 | 0 | 2 | 0 | 2026-02-10 | ⚠️ Scraped 0 |
 | Rainbow Plant Life GF | https://rainbowplantlife.com/diet/gluten-free/ | 0 | 20 | 5 | 1 | 4 | 20 | 2026-01-29 | ⚠️ Scraped 0 |
 | Snixy Kitchen | Unknown | 0 | 2 | 0 | 1 | 0 | 0 | 2025-11-21 | ⚠️ Low Count Skipped/DB Only |
 | Snixy Kitchen (Vegan Recipes) | https://www.snixykitchen.com/special-diet/vegan/feed/ | 2 | 2 | 0 | 1 | 0 | 0 | 2025-11-21 | ⚠️ Low Count  |
 | The Full Helping (Vegan Recipes) | https://www.thefullhelping.com/dietary/vegan/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ⚠️ Scraped 0 |
+| The Veg Space | https://www.thevegspace.co.uk/recipes/ | 0 | 29 | 1 | 3 | 4 | 0 | 2022-09-29 | ⚠️ Scraped 0 |
 | Vegan Punks | https://veganpunks.com/ | 0 | 0 | 0 | 0 | 0 | 0 | N/A | ⚠️ Scraped 0 |
 | Vegan Richa GF | https://www.veganricha.com/category/gluten-free/ | 0 | 20 | 0 | 5 | 6 | 20 | 2026-02-04 | ⚠️ Scraped 0 |
 | Vegan in the Freezer | https://veganinthefreezer.com/feed/ | 0 | 1 | 0 | 0 | 0 | 0 | 2026-01-25 | ⚠️ Low Count  |
@@ -44,9 +46,9 @@
 | Cadry's Kitchen | https://cadryskitchen.com/feed/ | 0 | 12 | 1 | 11 | 0 | 0 | 2026-02-08 | ✅ OK |
 | Choosing Chia (Vegan Recipes) | https://choosingchia.com/category/diet%20/vegan/feed/ | 0 | 5 | 0 | 5 | 0 | 0 | 2025-08-18 | ✅ OK |
 | Connoisseurus Veg | https://www.connoisseurusveg.com/feed/ | 0 | 12 | 1 | 0 | 1 | 0 | 2026-02-09 | ✅ OK |
-| Cupful of Kale | https://cupfulofkale.com/category/recipes/ | 9 | 9 | 2 | 0 | 0 | 0 | 2023-10-11 | ✅ OK (9) |
 | Dr. Vegan | https://drveganblog.com/feed/ | 0 | 11 | 2 | 11 | 6 | 0 | 2026-02-09 | ✅ OK |
 | Earth to Veg | https://earthtoveg.com/feed/ | 0 | 10 | 0 | 0 | 1 | 0 | 2026-02-06 | ✅ OK |
+| Eat Figs, Not Pigs | https://www.eatfigsnotpigs.com/feed/ | 0 | 13 | 1 | 2 | 1 | 0 | 2026-02-06 | ✅ OK |
 | Elavegan | https://elavegan.com/feed/ | 0 | 11 | 1 | 2 | 3 | 11 | 2026-02-06 | ✅ OK |
 | Flora & Vino | Unknown | 0 | 10 | 1 | 0 | 0 | 0 | 2026-01-31 | Skipped/DB Only |
 | Forks Over Knives | https://www.forksoverknives.com/all-recipes/feed/ | 0 | 14 | 14 | 2 | 4 | 1 | 2026-02-05 | ✅ OK |
@@ -68,7 +70,6 @@
 | My Vegan Minimalist | https://myveganminimalist.com/feed/ | 0 | 7 | 1 | 5 | 0 | 0 | 2026-02-04 | ✅ OK |
 | Namely Marly | https://namelymarly.com/feed/ | 0 | 56 | 4 | 7 | 5 | 0 | 2026-02-06 | ✅ OK |
 | Nora Cooks | https://www.noracooks.com/feed/ | 0 | 11 | 1 | 0 | 0 | 0 | 2026-02-09 | ✅ OK |
-| Pick Up Limes | https://www.pickuplimes.com/recipe/ | 1 | 14 | 0 | 0 | 2 | 0 | 2026-02-10 | ✅ OK (1) |
 | Plant Baes | https://plantbaes.com/feed/ | 0 | 10 | 3 | 1 | 2 | 2 | 2026-02-06 | ✅ OK |
 | Plant Power Couple | https://www.plantpowercouple.com/feed/ | 0 | 11 | 0 | 11 | 1 | 0 | 2026-02-03 | ✅ OK |
 | Plant-Based on a Budget | https://plantbasedonabudget.com/feed/ | 0 | 11 | 0 | 1 | 11 | 0 | 2026-02-09 | ✅ OK |
@@ -95,7 +96,6 @@
 | The Little Blog of Vegan | https://www.thelittleblogofvegan.com/feed/ | 0 | 12 | 0 | 5 | 0 | 0 | 2026-02-06 | ✅ OK |
 | The Post-Punk Kitchen | https://www.theppk.com/feed/ | 0 | 8 | 1 | 1 | 1 | 0 | 2026-02-06 | ✅ OK |
 | The Stingy Vegan | https://thestingyvegan.com/feed/ | 0 | 10 | 0 | 10 | 10 | 0 | 2025-12-12 | ✅ OK |
-| The Veg Space | https://www.thevegspace.co.uk/recipes/ | 29 | 29 | 1 | 3 | 4 | 0 | 2022-09-29 | ✅ OK (29) |
 | The Vegan 8 | https://thevegan8.com/feed/ | 0 | 10 | 1 | 10 | 10 | 0 | 2025-10-25 | ✅ OK |
 | Turnip Vegan | https://turnipvegan.com/blogs/news.atom | 0 | 7 | 0 | 0 | 0 | 0 | 2025-04-11 | ✅ OK |
 | Unconventional Baker | https://www.unconventionalbaker.com/feed/ | 0 | 10 | 0 | 0 | 0 | 10 | 2025-11-01 | ✅ OK |
