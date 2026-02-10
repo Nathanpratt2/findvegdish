@@ -7,8 +7,8 @@
     "date": "2026-02-10T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -718,8 +718,8 @@
     "date": "2026-02-05T20:13:12+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -820,8 +820,8 @@
     "date": "2026-02-05T07:00:00-08:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -1154,8 +1154,8 @@
     "date": "2026-02-03T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -1263,8 +1263,8 @@
     "date": "2026-02-02T15:41:04+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -1791,8 +1791,8 @@
     "date": "2026-01-30T02:05:16+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -1901,8 +1901,8 @@
     "date": "2026-01-29T15:19:42+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -1991,8 +1991,8 @@
     "date": "2026-01-28T19:16:29+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -2035,8 +2035,8 @@
     "date": "2026-01-28T12:13:15+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -2082,8 +2082,8 @@
     "date": "2026-01-28T11:45:05+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
       "Easy",
+      "WFPB",
       "Budget"
     ]
   },
@@ -2203,8 +2203,8 @@
     "date": "2026-01-27T17:26:09+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -2255,8 +2255,8 @@
     "date": "2026-01-27T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
       "Easy",
+      "WFPB",
       "Budget"
     ]
   },
@@ -2540,8 +2540,8 @@
     "date": "2026-01-23T11:33:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -2686,8 +2686,8 @@
     "date": "2026-01-21T21:51:00+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -2783,8 +2783,8 @@
     "date": "2026-01-21T09:00:13+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -2795,8 +2795,8 @@
     "date": "2026-01-20T23:23:34+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -2851,9 +2851,21 @@
     "date": "2026-01-20T13:29:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
       "Easy",
+      "WFPB",
       "Budget"
+    ]
+  },
+  {
+    "blog_name": "From My Bowl",
+    "title": "Black Bean Stew",
+    "link": "https://frommybowl.com/black-bean-stew/?utm_source=rss&utm_medium=rss&utm_campaign=black-bean-stew",
+    "image": "https://frommybowl.com/wp-content/uploads/2026/01/Black_Bean_Stew_Vegan_FromMyBowl-10.jpg",
+    "date": "2026-01-20T11:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -2866,18 +2878,6 @@
     "special_tags": []
   },
   {
-    "blog_name": "From My Bowl",
-    "title": "Black Bean Stew",
-    "link": "https://frommybowl.com/black-bean-stew/?utm_source=rss&utm_medium=rss&utm_campaign=black-bean-stew",
-    "image": "https://frommybowl.com/wp-content/uploads/2026/01/Black_Bean_Stew_Vegan_FromMyBowl-10.jpg",
-    "date": "2026-01-20T11:00:00+00:00",
-    "is_disruptor": false,
-    "special_tags": [
-      "WFPB",
-      "Easy"
-    ]
-  },
-  {
     "blog_name": "Fran Costigan",
     "title": "Essential Vegan Desserts Live Event: Tues Feb 3 1pm PT/ 4pm ET",
     "link": "https://francostigan.com/essential-vegan-desserts-live-event-tues-feb-3-1pm-pt-4pm-et/",
@@ -2887,7 +2887,7 @@
     "special_tags": []
   },
   {
-    "blog_name": "Minimalist Baker",
+    "blog_name": "Minimalist Baker (Vegan Recipes)",
     "title": "Vegan Gluten-Free Morning Glory Muffins",
     "link": "https://minimalistbaker.com/vegan-gluten-free-morning-glory-muffins/",
     "image": "https://minimalistbaker.com/wp-content/uploads/2024/01/Vegan-Gluten-Free-Morning-Glory-Muffins-10-680x1020.jpg",
@@ -3160,8 +3160,8 @@
     "date": "2026-01-16T20:07:56+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
       "Easy",
+      "WFPB",
       "Budget"
     ]
   },
@@ -3311,8 +3311,7 @@
     "is_disruptor": false,
     "special_tags": [
       "Budget",
-      "Easy",
-      "GF"
+      "Easy"
     ]
   },
   {
@@ -3487,8 +3486,8 @@
     "date": "2026-01-14T01:52:22+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
       "Easy",
+      "WFPB",
       "Budget"
     ]
   },
@@ -3531,8 +3530,8 @@
     "date": "2026-01-13T18:12:15+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -3794,8 +3793,8 @@
     "date": "2026-01-09T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -3973,8 +3972,8 @@
     "date": "2026-01-07T09:00:11+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -4175,8 +4174,8 @@
     "date": "2026-01-04T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
       "Easy",
+      "WFPB",
       "Budget"
     ]
   },
@@ -4262,8 +4261,8 @@
     "date": "2026-01-02T09:50:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -4318,7 +4317,7 @@
     ]
   },
   {
-    "blog_name": "Minimalist Baker",
+    "blog_name": "Minimalist Baker (Vegan Recipes)",
     "title": "Creamy Curried Black Eyed Pea Soup",
     "link": "https://minimalistbaker.com/curried-black-eyed-pea-soup/",
     "image": "https://minimalistbaker.com/wp-content/uploads/2025/06/Creamy-Curried-Vegan-Black-Eyed-Bean-Soup-8-680x1020.jpg",
@@ -4367,8 +4366,8 @@
     "date": "2025-12-29T15:35:13+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -4419,8 +4418,8 @@
     "date": "2025-12-28T20:39:42+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -4497,8 +4496,8 @@
     "date": "2025-12-26T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
       "Easy",
+      "WFPB",
       "Budget"
     ]
   },
@@ -4998,7 +4997,7 @@
     ]
   },
   {
-    "blog_name": "Minimalist Baker",
+    "blog_name": "Minimalist Baker (Vegan Recipes)",
     "title": "40 Easy Giftable Recipes for the Holidays",
     "link": "https://minimalistbaker.com/easy-giftable-recipes/",
     "image": "https://minimalistbaker.com/wp-content/uploads/2021/09/EASY-Almond-Brittle-Sweet-crunchy-and-made-with-just-4-ingredients-in-30-minutes-minimalistbaker-recipe-plant-based-glutenfree-almonds-dessert-8-680x1020.jpg",
@@ -5103,8 +5102,8 @@
     "date": "2025-12-14T00:22:05+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
       "Budget",
+      "WFPB",
       "GF"
     ]
   },
@@ -5186,8 +5185,8 @@
     "date": "2025-12-12T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -5198,8 +5197,8 @@
     "date": "2025-12-12T05:45:13+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -5465,8 +5464,8 @@
     "date": "2025-12-05T19:52:47+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -5603,8 +5602,8 @@
     "date": "2025-12-03T09:00:59+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -5624,8 +5623,8 @@
     "date": "2025-12-02T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -5900,8 +5899,8 @@
     "date": "2025-11-23T16:02:45+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -6077,8 +6076,8 @@
     "date": "2025-11-19T22:54:08+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -6345,8 +6344,7 @@
     "date": "2025-11-13T14:25:39+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "GF"
+      "WFPB"
     ]
   },
   {
@@ -6658,8 +6656,8 @@
     "date": "2025-11-05T03:20:51+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
       "Easy",
+      "WFPB",
       "Budget"
     ]
   },
@@ -6788,8 +6786,8 @@
     "date": "2025-10-31T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -6893,8 +6891,8 @@
     "date": "2025-10-28T17:13:41+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -6945,8 +6943,8 @@
     "date": "2025-10-26T09:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -7123,8 +7121,8 @@
     "date": "2025-10-21T16:43:44+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
       "Easy",
+      "WFPB",
       "Budget"
     ]
   },
@@ -7219,8 +7217,8 @@
     "date": "2025-10-16T10:10:53+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
       "Easy",
+      "WFPB",
       "Budget"
     ]
   },
@@ -7302,8 +7300,8 @@
     "date": "2025-10-12T20:32:47+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
       "Easy",
+      "WFPB",
       "GF"
     ]
   },
@@ -7416,8 +7414,8 @@
     "date": "2025-10-08T15:47:23+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -7587,8 +7585,8 @@
     "date": "2025-09-25T17:58:30+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
       "Easy",
+      "WFPB",
       "Budget"
     ]
   },
@@ -7645,8 +7643,8 @@
     "date": "2025-09-21T16:04:26+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -7706,8 +7704,7 @@
     "date": "2025-09-16T00:36:14+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "GF"
+      "Easy"
     ]
   },
   {
@@ -7718,8 +7715,8 @@
     "date": "2025-09-15T20:00:17+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -7790,8 +7787,8 @@
     "date": "2025-09-13T18:58:14+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -8061,8 +8058,8 @@
     "date": "2025-08-25T12:56:12+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -8243,9 +8240,9 @@
     "date": "2025-07-31T18:00:11+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
       "Budget",
       "Easy",
+      "WFPB",
       "GF"
     ]
   },
@@ -8279,8 +8276,8 @@
     "date": "2025-07-28T21:27:53+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -8391,8 +8388,8 @@
     "date": "2025-07-06T18:00:38+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
       "Easy",
+      "WFPB",
       "GF"
     ]
   },
@@ -9601,6 +9598,168 @@
     "special_tags": []
   },
   {
+    "blog_name": "Gaz Oakley",
+    "title": "Frittata",
+    "link": "https://www.gazoakleychef.com/recipes/frittata/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2026/01/frittata--600x690.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Warming Dahl",
+    "link": "https://www.gazoakleychef.com/recipes/warming-dahl/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2026/01/dhal1-600x690.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Spiced Date Cake",
+    "link": "https://www.gazoakleychef.com/recipes/spiced-date-cake/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2025/12/cake-2-600x690.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Maple & Sriracha Glazed Brussels Sprouts",
+    "link": "https://www.gazoakleychef.com/recipes/maple-sriracha-glazed-brussels-sprouts/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2025/12/Crispy-Glazed-Sprouts-600x690.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Teigan\u2019s Banana Bread",
+    "link": "https://www.gazoakleychef.com/recipes/teigans-banana-bread/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2025/08/BB4-600x690.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Ribena (Blackcurrant Cordial)",
+    "link": "https://www.gazoakleychef.com/recipes/ribena-blackcurrant-cordial/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2025/06/rib1-600x690.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Natural Laundry Detergent",
+    "link": "https://www.gazoakleychef.com/recipes/natural-laundry-detergent/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2025/06/ld1-600x690.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Wild Garlic Fritters",
+    "link": "https://www.gazoakleychef.com/recipes/wild-garlic-fritters/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2025/05/frit3-600x690.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Calendula Body Balm",
+    "link": "https://www.gazoakleychef.com/recipes/144618-2/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2025/04/IMG_7331-copy-600x690.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Nettle Tincture",
+    "link": "https://www.gazoakleychef.com/recipes/nettle-tincture/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2025/03/net-600x690.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Natural Hair Gel",
+    "link": "https://www.gazoakleychef.com/recipes/natural-hair-gel/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2025/03/DSCF3232-600x690.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "White Bean, Pumpkin & Kale Stew",
+    "link": "https://www.gazoakleychef.com/recipes/white-bean-pumpkin-kale-stew/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2025/01/stew2-600x690.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Coffee & Miso Rye Bread Loaf",
+    "link": "https://www.gazoakleychef.com/recipes/coffee-miso-rye-bread-loaf/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2025/01/rye1-2-600x690.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Fruit & Nut Rocky Road",
+    "link": "https://www.gazoakleychef.com/recipes/fruit-nut-rocky-road/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2024/12/gaz-36-600x690.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Coconut Bars",
+    "link": "https://www.gazoakleychef.com/recipes/coconut-bars/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2024/12/BOUNTY-600x690.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Courgette, Rye & Lavender Cookies",
+    "link": "https://www.gazoakleychef.com/recipes/courgette-rye-lavender-cookies/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2024/11/cook3-600x690.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Burnt Courgette With Whipped Tofu",
+    "link": "https://www.gazoakleychef.com/recipes/burnt-courgette-with-whipped-tofu/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2024/11/bc1-600x690.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Stuffed Tomatoes",
+    "link": "https://www.gazoakleychef.com/recipes/stuffed-tomatoes/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2024/09/st3-600x690.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "What Jew You Want to Eat",
     "title": "Quick Amba Sauce Recipe",
     "link": "https://whatjewwannaeat.com/quick-amba-sauce-recipe/",
@@ -9776,8 +9935,8 @@
     "date": "2017-01-17T13:23:49+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
