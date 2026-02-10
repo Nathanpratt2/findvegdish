@@ -459,9 +459,20 @@ def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags)
                     articles.append(a)
 
     elif mode == "custom_hermann":
-        # Baking Hermann (Webflow logic)
-        # Looks for w-dyn-item or collection items common in Webflow
-        articles = soup.select(".w-dyn-item, .collection-item, .recipe-card")
+        # Baking Hermann
+        # 1. Try standard Webflow collection items
+        articles = soup.select(".w-dyn-item")
+        
+        # 2. Fallback: Find all <a> tags that look like recipe cards
+        if not articles:
+            candidates = soup.find_all('a', href=True)
+            for a in candidates:
+                href = a['href']
+                # Filter for recipe links (exclude categories/tags/nav)
+                if '/recipes/' in href and href.count('/') > 2: 
+                    # Must contain an image to be a "card"
+                    if a.find('img'):
+                        articles.append(a)
                     
     for art in articles:
         try:
@@ -537,18 +548,36 @@ def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags)
 
             elif mode == "custom_hermann":
                 # Logic for Baking Hermann
-                link_tag = art.find('a')
-                if link_tag:
-                    link = link_tag.get('href')
-                    if link and not link.startswith('http'): link = urljoin("https://bakinghermann.com", link)
+                # Handle both Container (div) and Direct Link (a)
+                if art.name == 'a':
+                    link_tag = art
+                    container = art
+                else:
+                    link_tag = art.find('a', href=True)
+                    container = art
+
+                if not link_tag: continue
+
+                link = link_tag.get('href')
+                if link and not link.startswith('http'): 
+                    link = urljoin("https://bakinghermann.com", link)
                 
-                title_tag = art.select_one("h3, h2, .heading")
-                if title_tag: title = title_tag.get_text(strip=True)
-                
-                img_tag = art.find('img')
+                # Extract Title
+                title_tag = container.select_one("h3, h2, h4, .heading")
+                if title_tag: 
+                    title = title_tag.get_text(strip=True)
+                else:
+                    # Fallback: Check image alt text or link text
+                    img = container.find('img')
+                    if img and img.get('alt'):
+                        title = img['alt']
+                    else:
+                        title = container.get_text(strip=True)
+
+                # Extract Image
+                img_tag = container.find('img')
                 if img_tag:
-                    image = img_tag.get('src')
-                    if image and not image.startswith('http'): image = image # Often relative or CDN
+                    image = img_tag.get('src') or img_tag.get('data-src')
                 
                 date_obj = None # Will force deep fetch
 
