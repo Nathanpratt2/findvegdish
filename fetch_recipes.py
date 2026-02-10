@@ -80,7 +80,6 @@ DISRUPTORS = [
     ("Namely Marly", "https://namelymarly.com/feed/", []),
     ("The Post-Punk Kitchen", "https://www.theppk.com/feed/", []),
     ("Plant Baes", "https://plantbaes.com/feed/", []),
-    ("Nadia's Healthy Kitchen (Vegan Recipes)", "https://nadiashealthykitchen.com/category/vegan/feed/", []),
     ("The Little Blog of Vegan", "https://www.thelittleblogofvegan.com/feed/", []),
     ("Eat Figs, Not Pigs", "https://www.eatfigsnotpigs.com/feed/", []),
     ("The Banana Diaries", "https://thebananadiaries.com/feed/", []),
@@ -105,9 +104,9 @@ HTML_SOURCES = [
     ("Zucker & Jagdwurst", "https://www.zuckerjagdwurst.com/en/archive/1", [], "custom_zj"),
     ("Rainbow Plant Life GF", "https://rainbowplantlife.com/diet/gluten-free/", ["GF"], "wordpress"),
     ("Vegan Richa GF", "https://www.veganricha.com/category/gluten-free/", ["GF"], "wordpress"),
-    ("School Night Vegan", "https://schoolnightvegan.com/category/recipes/", [], "custom_pul"),
+    ("School Night Vegan", "https://schoolnightvegan.com/category/recipes/", [], "wordpress"), # Switched to robust wordpress
     ("Love and Lemons (Vegan Recipes)", "https://www.loveandlemons.com/category/recipes/vegan/", [], "wordpress"),
-    ("Cookie and Kate (Vegan Recipes)", "https://cookieandkate.com/category/vegan-recipes/", [], "custom_pul"),
+    ("Cookie and Kate (Vegan Recipes)", "https://cookieandkate.com/category/vegan-recipes/", [], "wordpress"), # Switched to robust wordpress
     ("The Loopy Whisk (Vegan Recipes)", "https://theloopywhisk.com/diet/vegan/", ["GF"], "wordpress"),
     ("Oh She Glows","https://www.ohsheglows.com/recipe-search/",[], "wordpress"),
     ("Zacchary Bird","https://www.zaccharybird.com/all-recipes/",[], "wordpress"),
@@ -121,7 +120,8 @@ HTML_SOURCES = [
     ("Baking Hermann", "https://bakinghermann.com/recipes/", [], "custom_hermann"),
     ("Gaz Oakley", "https://www.gazoakleychef.com/recipes/", [], "wordpress"),
     ("Vegan Huggs", "https://veganhuggs.com/recipes/", [], "wordpress"),
-    ("The Edgy Veg", "https://www.theedgyveg.com/recipes/", [], "wordpress")
+    ("The Edgy Veg", "https://www.theedgyveg.com/recipes/", [], "wordpress"),
+    ("Nadia's Healthy Kitchen (Vegan Recipes)", "https://nadiashealthykitchen.com/category/vegan/", [], "wordpress") # Added for HTML fallback
 ]
 
 # --- DISPLAY NAME MAPPING ---
@@ -434,9 +434,12 @@ def extract_metadata_from_page(url):
 
 # --- HTML SCRAPING LOGIC ---
 
+# --- HTML SCRAPING LOGIC ---
+
 def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags):
     print(f"   🔎 HTML Scraping: {name} (Mode: {mode})...")
-    time.sleep(random.uniform(4, 7))
+    # Increased delay to avoid blocks (Waterfall attempt 1)
+    time.sleep(random.uniform(5, 8))
     
     html = robust_fetch(url, is_scraping_page=True)
     if not html:
@@ -447,21 +450,57 @@ def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags)
     articles = []
     
     if mode == "wordpress":
-        # CRITICAL FIX: Restrict to main content area to avoid Sidebar/Footer pollution
-        # This prevents "Rainbow Plant Life GF" from picking up non-GF "Recent Posts" from the sidebar.
+        # CRITICAL FIX: Robust Waterfall for WordPress Grids
+        # 1. Scope to Main Content Area
         main_area = soup.find('main') or \
                     soup.find('div', id='content') or \
                     soup.find('div', class_='site-content') or \
                     soup.find('div', class_='main-content') or \
-                    soup.find('section', class_='content')
+                    soup.find('section', class_='content') or \
+                    soup.find('div', class_='elementor-section-wrap')
         
         search_scope = main_area if main_area else soup
 
-        articles = search_scope.select("article")
+        # 2. Selector Waterfall (Try specific grids first)
+        # Includes support for Post Grid plugins, Astra, GeneratePress, Elementor, MV Create, etc.
+        candidate_selectors = [
+            "article", 
+            ".wp-block-post", 
+            ".ast-article-post", 
+            ".post", 
+            ".type-post", 
+            ".blog-entry", 
+            ".entry", 
+            ".post-item",
+            ".mv-create-card",
+            ".tasty-recipes-entry",
+            ".gb-grid-wrapper .gb-query-loop-item",
+            ".fwp-result", # FacetWP results
+            ".facetwp-template .grid-item"
+        ]
+        
+        for sel in candidate_selectors:
+            found = search_scope.select(sel)
+            # Filter: Must have text and likely a link
+            valid_found = [f for f in found if f.get_text(strip=True) and f.find('a')]
+            if len(valid_found) >= 1: 
+                articles = valid_found
+                # print(f"      [Debug] Found {len(articles)} items using selector: {sel}")
+                break
+        
+        # 3. Fallback: Generic DIV search if specific selectors fail
         if not articles:
-            articles = search_scope.select(".post, .type-post, .blog-entry, .entry")
-            
+            # Look for divs that contain an H2 or H3 and an IMG - classic recipe card structure
+            candidates = search_scope.find_all('div')
+            for d in candidates:
+                if d.find(['h2', 'h3']) and d.find('img') and d.find('a'):
+                    # Check if class name suggests it's a post/item (loose check)
+                    cls = " ".join(d.get('class', []))
+                    if any(x in cls for x in ['post', 'entry', 'item', 'card', 'grid']):
+                        articles.append(d)
+
     elif mode == "custom_pul":
+        # DO NOT MODIFY - Legacy Logic for Pick Up Limes
         links = soup.find_all('a')
         for a in links:
             href = a.get('href', '')
@@ -482,7 +521,7 @@ def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags)
                     articles.append(a)
 
     elif mode == "custom_hermann":
-        # Baking Hermann
+        # Baking Hermann - Expanded Logic
         # 1. Try standard Webflow collection items
         articles = soup.select(".w-dyn-item")
         
@@ -491,8 +530,8 @@ def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags)
             candidates = soup.find_all('a', href=True)
             for a in candidates:
                 href = a['href']
-                # Filter for recipe links (exclude categories/tags/nav)
-                if '/recipes/' in href and href.count('/') > 2: 
+                # Filter for recipe links
+                if '/recipes/' in href: 
                     # Must contain an image to be a "card"
                     if a.find('img'):
                         articles.append(a)
@@ -505,11 +544,30 @@ def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags)
             date_obj = None
             
             if mode == "wordpress":
-                title_tag = art.select_one(".entry-title a, .post-title a, h2 a, h3 a")
+                # Title Waterfall: H2 -> H3 -> H4 -> Class-based -> Link Text
+                title_tag = art.select_one(".entry-title a, .post-title a, .post-summary__title a, h2 a, h3 a, h4 a")
+                
                 if title_tag:
                     title = title_tag.get_text(strip=True)
                     link = title_tag['href']
-                
+                else:
+                    # Fallback: Find the first meaningful link
+                    all_links = art.find_all('a', href=True)
+                    for l in all_links:
+                        # Skip utility links
+                        if any(x in l.get_text(strip=True).lower() for x in ['read more', 'continue', 'comment']): continue
+                        if l.find('img'): # Link wrapping image is usually the main one
+                            link = l['href']
+                            # Try to find title again inside this container or use img alt
+                            img = l.find('img')
+                            if img and img.get('alt'): title = img['alt']
+                            break
+                    
+                    # If still no title, look for any header
+                    if not title:
+                        h_tag = art.find(['h2', 'h3', 'h4'])
+                        if h_tag: title = h_tag.get_text(strip=True)
+
                 img_tag = art.select_one("img")
                 if img_tag:
                     image = img_tag.get('data-src') or img_tag.get('data-lazy-src') or img_tag.get('src')
@@ -546,32 +604,20 @@ def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags)
                 t_tag = art.select_one(".post-item__title, .article-title, h2, h3")
                 title = t_tag.get_text(strip=True) if t_tag else "Recipe"
                 
-                # ZJ Image Logic: Handle Lazy Loading & Srcset
                 img_tag = art.find('img')
                 if img_tag:
-                    # 1. Try parse_srcset on data-srcset (highest priority for lazy load)
                     candidate = parse_srcset(img_tag.get('data-srcset'))
-                    
-                    # 2. Try parse_srcset on regular srcset
-                    if not candidate:
-                        candidate = parse_srcset(img_tag.get('srcset'))
-                        
-                    # 3. Fallback to simple attributes
+                    if not candidate: candidate = parse_srcset(img_tag.get('srcset'))
                     if not candidate:
                         for attr in ['data-src', 'data-lazy-src', 'src']:
                             val = img_tag.get(attr)
                             if val and 'spacer' not in val and 'data:' not in val:
                                 candidate = val
                                 break
-                    
                     image = candidate
-                
-                # ZJ Archive pages often don't have dates. We set None here to trigger detailed fetch later.
                 date_obj = None
 
             elif mode == "custom_hermann":
-                # Logic for Baking Hermann
-                # Handle both Container (div) and Direct Link (a)
                 if art.name == 'a':
                     link_tag = art
                     container = art
@@ -585,58 +631,42 @@ def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags)
                 if link and not link.startswith('http'): 
                     link = urljoin("https://bakinghermann.com", link)
                 
-                # Extract Title
                 title_tag = container.select_one("h3, h2, h4, .heading")
                 if title_tag: 
                     title = title_tag.get_text(strip=True)
                 else:
-                    # Fallback: Check image alt text or link text
                     img = container.find('img')
-                    if img and img.get('alt'):
-                        title = img['alt']
-                    else:
-                        title = container.get_text(strip=True)
+                    if img and img.get('alt'): title = img['alt']
+                    else: title = container.get_text(strip=True)
 
-                # Extract Image
                 img_tag = container.find('img')
                 if img_tag:
                     image = img_tag.get('src') or img_tag.get('data-src')
                 
-                date_obj = None # Will force deep fetch
+                date_obj = None 
 
             if not title or not link: continue
             if is_pet_recipe(title): continue
             
-            # --- SEPARATE ENTRY LOGIC & DEEP FETCH ---
-            # If (link, name) exists, we skip entirely.
             if (link, name) in existing_links:
                 continue
 
-            # If it is a NEW item for these problematic sources, try to get real date/image
-            needs_deep_fetch = (name in ["Zucker & Jagdwurst", "Rainbow Plant Life GF", "Vegan Richa GF", "Baking Hermann"])
+            # --- DEEP FETCH LOGIC ---
+            # Force deep fetch for problematic sites or missing dates
+            needs_deep_fetch = (name in ["Zucker & Jagdwurst", "Rainbow Plant Life GF", "Vegan Richa GF", "Baking Hermann", "Hot For Food", "The Full Helping"])
             
-            # If date is missing (common for ZJ) or we force a check, fetch detail
             if (date_obj is None or needs_deep_fetch):
-                print(f"      Verify deep metadata for: {title[:20]}...")
+                # print(f"      Verify deep metadata for: {title[:20]}...")
                 deep_date, deep_image = extract_metadata_from_page(link)
-                
-                if deep_date: 
-                    date_obj = deep_date
-                
-                # If ZJ image was low-res or missing, update it
-                if deep_image and (not image or 'data:' in image):
-                    image = deep_image
+                if deep_date: date_obj = deep_date
+                if deep_image and (not image or 'data:' in image): image = deep_image
 
-            # --- FALLBACK DATE LOGIC ---
-            # If we STILL don't have a date after deep fetch, use old date to push to bottom
             if not date_obj:
                 if name == "Pick Up Limes":
-                    date_obj = datetime.now() # User said PUL works fine with now
+                    date_obj = datetime.now()
                 else:
-                    # Default to year 2020 so it sits at the bottom of the feed
                     date_obj = datetime(2020, 1, 1)
             
-            # Timezone handling
             if date_obj.tzinfo is None:
                 date_obj = date_obj.replace(tzinfo=timezone.utc)
             else:
@@ -645,7 +675,6 @@ def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags)
             if image and not image.startswith('http'):
                  image = urljoin(url, image) 
             
-            # Add to list (Allowing old dates if we just fetched them as 'new' to the DB)
             found_items.append({
                 "blog_name": name,
                 "title": title,
