@@ -76,7 +76,7 @@ DISRUPTORS = [
     ("Messy Vegan Cook", "https://messyvegancook.com/feed/", []),
     ("The Conscious Plant Kitchen", "https://www.theconsciousplantkitchen.com/feed/", []),
     ("Choosing Chia (Vegan Recipes)", "https://choosingchia.com/category/diet%20/vegan/feed/", ["Easy"]),
-    ("Flora & Vino", "https://www.floraandvino.com/feed/", ["WFPB"], ["Easy"]),
+    ("Flora & Vino", "https://www.floraandvino.com/feed/", ["WFPB"]),
     ("Namely Marly", "https://namelymarly.com/feed/", []),
     ("The Post-Punk Kitchen", "https://www.theppk.com/feed/", []),
     ("Plant Baes", "https://plantbaes.com/feed/", []),
@@ -160,7 +160,7 @@ cutoff_date = datetime.now().astimezone() - timedelta(days=360)
 
 # --- KEYWORDS FOR AUTO TAGGING ---
 WFPB_KEYWORDS = ['oil-free', 'oil free', 'no oil', 'wfpb', 'whole food', 'clean', 'refined sugar free', 'detox', 'healthy', 'salad', 'steamed']
-EASY_KEYWORDS = ['easy', 'quick', 'simple', 'fast', '1-pot', 'one-pot', 'one pot', 'one bowl', 'one-bowl', '30-minute', 'minute', '15-minute', '20-minute', '5-ingredient', 'sheet pan', 'skillet', 'mug', 'blender', 'no-bake', 'raw','no bake','no-bake', 'air fryer']
+EASY_KEYWORDS = ['easy', 'quick', 'simple', 'fast', '1-pot', 'one-pot', 'one pot', 'one bowl', 'one-bowl', '1 pan', 'one pan', '30-minute', 'minute', '15-minute', '20-minute', '5-ingredient', 'sheet pan', 'skillet', 'mug', 'blender', 'no-bake', 'raw','no bake','no-bake', 'air fryer']
 BUDGET_KEYWORDS = ['budget', 'cheap', 'frugal', 'economical', 'pantry', 'low cost', 'money saving', '$', 'affordable', 'leftover', 'scraps', 'beans', 'rice', 'lentil', 'potato']
 GF_KEYWORDS = ['gluten-free', 'gluten free', 'gf', 'wheat-free', 'flourless', 'almond flour', 'oat flour', 'rice flour']
 
