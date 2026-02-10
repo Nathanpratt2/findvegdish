@@ -118,7 +118,9 @@ HTML_SOURCES = [
     ("The Veg Space", "https://www.thevegspace.co.uk/recipes/", [], "wordpress"),
     ("Vegan Punks", "https://veganpunks.com/", [], "wordpress"),
     ("What Jew You Want to Eat", "https://whatjewwannaeat.com/category/vegan/", [], "wordpress"),
-    ("Baking Hermann", "https://bakinghermann.com/recipes/", [], "custom_hermann")
+    ("Baking Hermann", "https://bakinghermann.com/recipes/", [], "custom_hermann"),
+    ("Vegan Huggs", "https://veganhuggs.com/recipes/", [], "wordpress"),
+    ("The Edgy Veg", "https://www.theedgyveg.com/recipes/", [], "wordpress")
 ]
 
 # --- DISPLAY NAME MAPPING ---
@@ -160,6 +162,20 @@ WFPB_KEYWORDS = ['oil-free', 'oil free', 'no oil', 'wfpb', 'whole food', 'clean'
 EASY_KEYWORDS = ['easy', 'quick', 'simple', 'fast', '1-pot', 'one-pot', 'one pot', 'one bowl', 'one-bowl', '30-minute', 'minute', '15-minute', '20-minute', '5-ingredient', 'sheet pan', 'skillet', 'mug', 'blender', 'no-bake', 'raw','no bake','no-bake', 'air fryer']
 BUDGET_KEYWORDS = ['budget', 'cheap', 'frugal', 'economical', 'pantry', 'low cost', 'money saving', '$', 'affordable', 'leftover', 'scraps', 'beans', 'rice', 'lentil', 'potato']
 GF_KEYWORDS = ['gluten-free', 'gluten free', 'gf', 'wheat-free', 'flourless', 'almond flour', 'oat flour', 'rice flour']
+
+NON_RECIPE_KEYWORDS = [
+    "meal plan", "weekly menu", "menu plan", "gift guide", "cookbook", "review", 
+    "giveaway", "roundup", "collection", "favorites", "best of", "kitchen tour", 
+    "grocery haul", "what i eat", "routine", "travel", "restaurant", 
+    "dining out", "interview", "guest post", "workshop", "class", "course", 
+    "ebook", "merch", "store", "shop", "announcement", "update", "news", 
+    "contest", "winner", "promo", "discount", "coupon", "deal", "top 10", 
+    "top 20", "5 best", "10 best", "15 best", "20 best", "rpl", "going vegan", 
+    "why i", "my story", "journey", "life lately", "coffee talk", "link love", 
+    "weekend reading", "batch cooking", "staples", "essentials", "substitutes",
+    "how to make", "101", "tutorial", "guide", "tips", "tricks", "faq",
+    "policy", "terms", "privacy", "contact", "about", "search", "sitemap"
+]
 
 # --- ADVANCED SCRAPER SETUP & SSL FIX ---
 
@@ -761,6 +777,27 @@ for recipe in recipes:
     auto_tags = get_auto_tags(recipe['title'])
     combined_tags = list(set(current_tags + base_tags + auto_tags))
     recipe['special_tags'] = combined_tags
+
+# 5.5 Global Non-Recipe Filter
+print("Running global non-recipe filter...")
+non_recipes_removed_count = 0
+valid_recipes = []
+
+for r in recipes:
+    title_lower = r['title'].lower()
+    is_spam = False
+    for kw in NON_RECIPE_KEYWORDS:
+        if kw in title_lower:
+            is_spam = True
+            break
+    
+    if is_spam:
+        non_recipes_removed_count += 1
+    else:
+        valid_recipes.append(r)
+
+recipes = valid_recipes
+print(f"   Removed {non_recipes_removed_count} non-recipe items.")
     
 # 6. Prune & Stats
 print("Pruning database and calculating stats...")
@@ -876,6 +913,7 @@ with open('FEED_HEALTH.md', 'w') as f:
     f.write(f"**Total Blogs:** {total_blogs_monitored}\n")
     f.write(f"**Total Database Size:** {total_in_db}\n")
     f.write(f"**New Today:** {total_new_today}\n")
+    f.write(f"**Non-Recipes Filtered:** {non_recipes_removed_count}\n")
     f.write(f"**WFPB:** {total_wfpb} ({wfpb_percent}%)\n")
     f.write(f"**Easy:** {total_easy} ({easy_percent}%)\n")
     f.write(f"**Budget:** {total_budget} ({budget_percent}%)\n")
