@@ -168,7 +168,7 @@
             height: 48px;
             border-radius: 50%; 
             background-color: white; 
-            border: 2px solid #769F37; 
+            border: 1px solid #ddd; /* Matches chip filter depth */
             color: #769F37; 
             display: flex;
             justify-content: center;
@@ -184,9 +184,23 @@
         @media (hover: hover) {
             #shuffleIconBtn:hover {
                 background-color: #769F37;
+                border-color: #769F37; /* Restore green border on hover */
                 color: white;
                 box-shadow: 0 4px 8px rgba(118, 159, 55, 0.3);
             }
+        }
+
+        @keyframes jiggle {
+            0%, 100% { transform: rotate(0deg); }
+            15% { transform: rotate(-8deg); }
+            30% { transform: rotate(8deg); }
+            45% { transform: rotate(-6deg); }
+            60% { transform: rotate(6deg); }
+            75% { transform: rotate(-3deg); }
+            90% { transform: rotate(3deg); }
+        }
+        .jiggle {
+            animation: jiggle 1s ease-in-out;
         }
 
         /* --- SCROLLING CONTROLS --- */
@@ -691,6 +705,28 @@
     }
 
     // --- INITIALIZATION ---
+    // Visitor tracking for Shuffle Animation
+    try {
+        const visitKey = 'shuffle_visit_data';
+        const now = Date.now();
+        const oneHour = 60 * 60 * 1000;
+        let visitData = JSON.parse(localStorage.getItem(visitKey) || '{"count": 0, "lastVisit": 0}');
+        
+        // Reset if more than 1 hour has passed
+        if (now - visitData.lastVisit > oneHour) {
+            visitData.count = 1; // Start new session
+        } else {
+            visitData.count++; // Increment within session
+        }
+        visitData.lastVisit = now;
+        localStorage.setItem(visitKey, JSON.stringify(visitData));
+
+        if (visitData.count > 1) {
+            const btn = document.getElementById('shuffleIconBtn');
+            if (btn) btn.classList.add('jiggle');
+        }
+    } catch (e) { console.error('Storage access restricted', e); }
+
     fetch('data.json?v=' + new Date().getTime())
         .then(response => response.json())
         .then(data => {
