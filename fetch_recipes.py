@@ -882,13 +882,13 @@ else:
     print("⚠️ SAFETY ALERT: Database too small (<50 items). Skipping write.")
 
 # 8. Generate Report
-with open('FEED_HEALTH.md', 'w') as f:
+with open('FEED_HEALTH.md', 'w', encoding='utf-8') as f:
     f.write(f"# Feed Health Report\n")
-    f.write(f"**Last Run:** {datetime.now().isoformat()}\n")
+    f.write(f"**Last Run:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
 
+    # --- CALCULATE STATS ---
     total_new_today = sum(stats.get('new', 0) for stats in feed_stats.values())
     total_in_db = len(final_pruned_list)
-    
     all_monitored_names = set(list(feed_stats.keys()) + list(total_counts.keys()))
     total_blogs_monitored = len(all_monitored_names)
     
@@ -903,53 +903,75 @@ with open('FEED_HEALTH.md', 'w') as f:
     gf_percent = int((total_gf / total_in_db) * 100) if total_in_db > 0 else 0
     
     all_dates = [parser.parse(d) for d in latest_dates.values() if d != "N/A"]
-    if all_dates:
-        avg_date = datetime.fromtimestamp(sum(d.timestamp() for d in all_dates) / len(all_dates)).strftime('%Y-%m-%d')
-    else:
-        avg_date = "N/A"
+    avg_date = datetime.fromtimestamp(sum(d.timestamp() for d in all_dates) / len(all_dates)).strftime('%Y-%m-%d') if all_dates else "N/A"
 
-    report_rows = []
+    # --- WRITE SUMMARY TABLE ---
+    f.write("### 📊 System Summary\n")
+    f.write("| Metric | Value | Breakdown |\n")
+    f.write("| :--- | :--- | :--- |\n")
+    f.write(f"| **Total Database** | {total_in_db} | {total_new_today} new today |\n")
+    f.write(f"| **Blogs Monitored** | {total_blogs_monitored} | {len(HTML_SOURCES)} HTML / {len(ALL_FEEDS)} RSS |\n")
+    f.write(f"| **WFPB Recipes** | {total_wfpb} | {wfpb_percent}% of total |\n")
+    f.write(f"| **Easy Recipes** | {total_easy} | {easy_percent}% of total |\n")
+    f.write(f"| **Budget Recipes** | {total_budget} | {budget_percent}% of total |\n")
+    f.write(f"| **Gluten-Free** | {total_gf} | {gf_percent}% of total |\n")
+    f.write(f"| **Avg Freshness** | {avg_date} | Latest post average |\n\n")
+
+    f.write("---\n\n")
+    f.write("### 📋 Detailed Blog Status\n")
+    f.write("> **Tip:** Use the scroll bar in the box below to view all blogs.\n\n")
     
+    # --- START SCROLLABLE CONTAINER ---
+    # This HTML wrapper creates the scrollable area for the detailed table
+    f.write('<div style="height:600px; overflow-y:auto; border:1px solid #ddd; padding:10px; border-radius:5px;">\n\n')
+
+    f.write("| Blog Name | New | Total | WFPB | Easy | Budg | GF | Latest | Status |\n")
+    f.write("| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :--- | :--- |\n")
+    
+    report_rows = []
     for name in all_monitored_names:
-        url = URL_MAP.get(name, "Unknown")
         new = feed_stats.get(name, {}).get('new', 0)
-        status = feed_stats.get(name, {}).get('status', 'Skipped/DB Only')
+        status = feed_stats.get(name, {}).get('status', 'Skipped')
         total = total_counts.get(name, 0)
         latest = latest_dates.get(name, "N/A")
         
-        name_display = f"{name} (-> {DISPLAY_NAME_MAP[name]})" if name in DISPLAY_NAME_MAP else name
+        # Clean up Status for reporting
+        if "Scraped 0" in status or "Parsed 0 items" in status:
+            status = "✅ OK"
 
-        if 1 <= total <= 4 and "❌" not in status:
-            status = f"⚠️ Low Count {status.replace('✅ OK', '')}"
-
-        if total == 0 and "✅" in status:
+        # Apply the Requested "No Recipes" Red X logic
+        if total == 0:
             status = "❌ No Recipes"
-            
-        report_rows.append((name_display, url, new, total, wfpb_counts.get(name,0), easy_counts.get(name,0), budget_counts.get(name,0), gf_counts.get(name,0), latest, status))
+        elif 1 <= total <= 4 and "❌" not in status:
+            status = f"⚠️ Low Count"
 
-    f.write(f"**Total Blogs:** {total_blogs_monitored}\n")
-    f.write(f"**Total Database Size:** {total_in_db}\n")
-    f.write(f"**New Today:** {total_new_today}\n")
-    f.write(f"**Non-Recipes Filtered:** {non_recipes_removed_count}\n")
-    f.write(f"**WFPB:** {total_wfpb} ({wfpb_percent}%)\n")
-    f.write(f"**Easy:** {total_easy} ({easy_percent}%)\n")
-    f.write(f"**Budget:** {total_budget} ({budget_percent}%)\n")
-    f.write(f"**Gluten-Free:** {total_gf} ({gf_percent}%)\n")
-    f.write(f"**Average Latest Post:** {avg_date}\n\n")
+        report_rows.append({
+            "name": name,
+            "new": new,
+            "total": total,
+            "wfpb": wfpb_counts.get(name, 0),
+            "easy": easy_counts.get(name, 0),
+            "budget": budget_counts.get(name, 0),
+            "gf": gf_counts.get(name, 0),
+            "latest": latest,
+            "status": status
+        })
 
-    f.write("| Blog Name | URL | New | Total | WFPB | Easy | Budget | GF | Latest | Status |\n")
-    f.write("|-----------|-----|-----|-------|------|------|--------|----|--------|--------|\n")
-    
-    def sort_key(row):
-        stat = row[9] 
-        priority = 3 
-        if '❌' in stat: priority = 0
-        elif 'Stale' in stat: priority = 1
-        elif '⚠️' in stat: priority = 2
-        return (priority, row[0])
+    # Sort: Errors (❌) first, then Warnings (⚠️), then Alphabetical
+    def sort_report(row):
+        priority = 2
+        if "❌" in row['status']: priority = 0
+        elif "⚠️" in row['status']: priority = 1
+        return (priority, row['name'])
 
-    report_rows.sort(key=sort_key)
-    for row in report_rows:
-        f.write(f"| {row[0]} | {row[1]} | {row[2]} | {row[3]} | {row[4]} | {row[5]} | {row[6]} | {row[7]} | {row[8]} | {row[9]} |\n")
+    report_rows.sort(key=sort_report)
 
-print(f"Successfully scraped. Database size: {len(final_pruned_list)}")
+    for r in report_rows:
+        f.write(f"| {r['name']} | {r['new']} | {r['total']} | {r['wfpb']} | {r['easy']} | {r['budget']} | {r['gf']} | {r['latest']} | {r['status']} |\n")
+
+    f.write('\n</div>\n\n') 
+    # --- END SCROLLABLE CONTAINER ---
+
+    f.write("---\n*Report generated automatically by FindVegDish Fetcher.*")
+
+print(f"Successfully generated FEED_HEALTH.md with scrollable table. Database size: {len(final_pruned_list)}")
