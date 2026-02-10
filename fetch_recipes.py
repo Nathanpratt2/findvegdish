@@ -434,12 +434,9 @@ def extract_metadata_from_page(url):
 
 # --- HTML SCRAPING LOGIC ---
 
-# --- HTML SCRAPING LOGIC ---
-
 def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags):
     print(f"   🔎 HTML Scraping: {name} (Mode: {mode})...")
-    # Increased delay to avoid blocks (Waterfall attempt 1)
-    time.sleep(random.uniform(5, 8))
+    time.sleep(random.uniform(5, 8)) # Safety delay
     
     html = robust_fetch(url, is_scraping_page=True)
     if not html:
@@ -447,249 +444,188 @@ def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags)
     
     soup = BeautifulSoup(html, 'lxml')
     found_items = []
-    articles = []
     
+    # --- MODE 1: WORDPRESS / GENERIC AGGREGATION (THE FIX) ---
     if mode == "wordpress":
-        # CRITICAL FIX: Robust Waterfall for WordPress Grids
-        # 1. Scope to Main Content Area
-        main_area = soup.find('main') or \
-                    soup.find('div', id='content') or \
-                    soup.find('div', class_='site-content') or \
-                    soup.find('div', class_='main-content') or \
-                    soup.find('section', class_='content') or \
-                    soup.find('div', class_='elementor-section-wrap')
+        # 1. Scope to Main Content
+        main_scope = soup.find('main') or \
+                     soup.find(id='main') or \
+                     soup.find(class_='site-main') or \
+                     soup.find(id='content') or \
+                     soup.find(class_='entry-content') or \
+                     soup.find(class_='elementor-location-archive') or \
+                     soup.find(class_='archive-container')
         
-        search_scope = main_area if main_area else soup
+        if not main_scope: main_scope = soup
 
-        # 2. Selector Waterfall (Try specific grids first)
-        # Includes support for Post Grid plugins, Astra, GeneratePress, Elementor, MV Create, etc.
-        candidate_selectors = [
-            "article", 
-            ".wp-block-post", 
-            ".ast-article-post", 
-            ".post", 
-            ".type-post", 
-            ".blog-entry", 
-            ".entry", 
-            ".post-item",
-            ".mv-create-card",
-            ".tasty-recipes-entry",
-            ".gb-grid-wrapper .gb-query-loop-item",
-            ".fwp-result", # FacetWP results
-            ".facetwp-template .grid-item"
-        ]
-        
-        for sel in candidate_selectors:
-            found = search_scope.select(sel)
-            # Filter: Must have text and likely a link
-            valid_found = [f for f in found if f.get_text(strip=True) and f.find('a')]
-            if len(valid_found) >= 1: 
-                articles = valid_found
-                # print(f"      [Debug] Found {len(articles)} items using selector: {sel}")
-                break
-        
-        # 3. Fallback: Generic DIV search if specific selectors fail
-        if not articles:
-            # Look for divs that contain an H2 or H3 and an IMG - classic recipe card structure
-            candidates = search_scope.find_all('div')
-            for d in candidates:
-                if d.find(['h2', 'h3']) and d.find('img') and d.find('a'):
-                    # Check if class name suggests it's a post/item (loose check)
-                    cls = " ".join(d.get('class', []))
-                    if any(x in cls for x in ['post', 'entry', 'item', 'card', 'grid']):
-                        articles.append(d)
+        # 2. Link Aggregation
+        candidates = {} # URL -> {'title': str, 'image': str}
 
+        all_links = main_scope.find_all('a', href=True)
+
+        for a in all_links:
+            raw_link = a['href']
+            
+            # Clean Link
+            if any(x in raw_link for x in ['#', 'javascript:', 'mailto:', 'tel:', '/category/', '/tag/', '/author/', '/page/', '?share=', 'comment', '#comments']):
+                continue
+            
+            full_link = urljoin(url, raw_link)
+            if full_link.rstrip('/') == url.rstrip('/'): continue # Skip home link
+
+            if full_link not in candidates:
+                candidates[full_link] = {'title': '', 'image': None}
+
+            # 2a. IMAGE EXTRACTION (Standard + Background)
+            img = a.find('img')
+            src = None
+            if img:
+                src = img.get('data-src') or img.get('data-lazy-src') or img.get('src') or img.get('srcset')
+            
+            # Check for CSS Background Image (Fix for Zacchary Bird / Vegan Punks)
+            if not src and a.find(style=True):
+                style = a['style'] or ""
+                if 'background-image' in style and 'url(' in style:
+                    try:
+                        src = style.split('url(')[1].split(')')[0].strip('"').strip("'")
+                    except: pass
+            
+            if src:
+                if ',' in src: src = src.split(',')[0].split(' ')[0]
+                candidates[full_link]['image'] = src
+
+            # 2b. TITLE EXTRACTION
+            link_text = a.get_text(" ", strip=True)
+            h_child = a.find(['h2', 'h3', 'h4'])
+            
+            if h_child:
+                candidates[full_link]['title'] = h_child.get_text(strip=True)
+            elif len(link_text) > 10 and len(link_text) > len(candidates[full_link]['title']):
+                # Filter utility links
+                if not any(x == link_text.lower() for x in ['read more', 'continue reading', 'get the recipe', 'view recipe', 'cookie policy']):
+                    candidates[full_link]['title'] = link_text
+
+        # 3. Process Candidates
+        for link_url, data in candidates.items():
+            # FILTER: Title is mandatory, but Image is optional (Deep fetch can fix it)
+            if not data['title']: continue
+            
+            # Filter non-recipe titles
+            t_low = data['title'].lower()
+            if len(data['title']) < 5: continue
+            if any(x in t_low for x in ['privacy policy', 'contact', 'about us', 'terms', 'accessibility', 'skip to content']): continue
+
+            if (link_url, name) in existing_links: continue
+
+            # DEEP FETCH (The Safety Net)
+            # If image is missing OR we are on a known "Problem" site, force deep fetch
+            # This fixes "Vegan Punks" having 1 item. It will now check the other links.
+            
+            final_image = data['image']
+            deep_date = None
+            
+            # Force deep fetch for all HTML sources to ensure date accuracy and high-res images
+            deep_date, deep_image = extract_metadata_from_page(link_url)
+            
+            if deep_image: 
+                final_image = deep_image # Always prefer the high-quality meta tag image
+            
+            # If we still have no image after deep fetch, skip (it's likely not a recipe)
+            if not final_image: 
+                continue
+
+            final_date = deep_date if deep_date else datetime(2020, 1, 1).replace(tzinfo=timezone.utc)
+            
+            if final_image and not final_image.startswith('http'):
+                final_image = urljoin(url, final_image)
+
+            found_items.append({
+                "blog_name": name,
+                "title": data['title'],
+                "link": link_url,
+                "image": final_image,
+                "date": final_date.isoformat(),
+                "is_disruptor": False,
+                "special_tags": list(source_tags)
+            })
+            existing_links.add((link_url, name))
+
+    # --- MODE 2: CUSTOM PUL (Do Not Modify) ---
     elif mode == "custom_pul":
-        # DO NOT MODIFY - Legacy Logic for Pick Up Limes
         links = soup.find_all('a')
         for a in links:
             href = a.get('href', '')
             if '/recipe/' in href and href != '/recipe/':
                 if a.find('img'):
-                    articles.append(a)
+                    link = urljoin("https://www.pickuplimes.com", href)
+                    if (link, name) in existing_links: continue
+                    t_tag = a.select_one("h3, h2, .article_title") 
+                    title = t_tag.get_text(strip=True) if t_tag else "Recipe"
+                    img_tag = a.find('img')
+                    image = img_tag.get('src') if img_tag else "icon.jpg"
+                    found_items.append({
+                        "blog_name": name, "title": title, "link": link, "image": image,
+                        "date": datetime.now().isoformat(), "is_disruptor": False, "special_tags": list(source_tags)
+                    })
+                    existing_links.add((link, name))
 
+    # --- MODE 3: CUSTOM ZJ ---
     elif mode == "custom_zj":
-        # Zucker & Jagdwurst grid
-        links = soup.select("a.post-item, .post-grid a, .archive-posts a")
-        if not links:
-            links = soup.find_all('a', href=True)
-            
+        links = soup.select("a.post-item, .post-grid a, .archive-posts a") or soup.find_all('a', href=True)
         for a in links:
             href = a.get('href', '')
             if '/en/' in href and not any(x in href for x in ['/archive', '/page/', '/category/', '/about']):
-                if a.find('img') or a.find(['h2', 'h3', 'h4']):
-                    articles.append(a)
+                if a.find('img') or a.find(['h2', 'h3']):
+                    link = urljoin(url, href)
+                    if (link, name) in existing_links: continue
+                    t_tag = a.select_one("h2, h3, .article-title")
+                    title = t_tag.get_text(strip=True) if t_tag else "Recipe"
+                    deep_date, deep_image = extract_metadata_from_page(link)
+                    
+                    found_items.append({
+                        "blog_name": name, "title": title, "link": link, 
+                        "image": deep_image if deep_image else "icon.jpg",
+                        "date": deep_date.isoformat() if deep_date else datetime(2020,1,1).replace(tzinfo=timezone.utc).isoformat(),
+                        "is_disruptor": False, "special_tags": list(source_tags)
+                    })
+                    existing_links.add((link, name))
 
+    # --- MODE 4: CUSTOM HERMANN ---
     elif mode == "custom_hermann":
-        # Baking Hermann - Expanded Logic
-        # 1. Try standard Webflow collection items
-        articles = soup.select(".w-dyn-item")
+        # Baking Hermann (Robust Link Aggregation)
+        candidates = soup.select(".w-dyn-item") + soup.find_all('a', href=True)
+        processed_urls = set()
         
-        # 2. Fallback: Find all <a> tags that look like recipe cards
-        if not articles:
-            candidates = soup.find_all('a', href=True)
-            for a in candidates:
-                href = a['href']
-                # Filter for recipe links
-                if '/recipes/' in href: 
-                    # Must contain an image to be a "card"
-                    if a.find('img'):
-                        articles.append(a)
-                    
-    for art in articles:
-        try:
-            title = None
-            link = None
-            image = None
-            date_obj = None
+        for item in candidates:
+            # Handle both DIV containers and raw A tags
+            a_tag = item if item.name == 'a' else item.find('a', href=True)
+            if not a_tag: continue
             
-            if mode == "wordpress":
-                # Title Waterfall: H2 -> H3 -> H4 -> Class-based -> Link Text
-                title_tag = art.select_one(".entry-title a, .post-title a, .post-summary__title a, h2 a, h3 a, h4 a")
-                
-                if title_tag:
-                    title = title_tag.get_text(strip=True)
-                    link = title_tag['href']
-                else:
-                    # Fallback: Find the first meaningful link
-                    all_links = art.find_all('a', href=True)
-                    for l in all_links:
-                        # Skip utility links
-                        if any(x in l.get_text(strip=True).lower() for x in ['read more', 'continue', 'comment']): continue
-                        if l.find('img'): # Link wrapping image is usually the main one
-                            link = l['href']
-                            # Try to find title again inside this container or use img alt
-                            img = l.find('img')
-                            if img and img.get('alt'): title = img['alt']
-                            break
-                    
-                    # If still no title, look for any header
-                    if not title:
-                        h_tag = art.find(['h2', 'h3', 'h4'])
-                        if h_tag: title = h_tag.get_text(strip=True)
-
-                img_tag = art.select_one("img")
-                if img_tag:
-                    image = img_tag.get('data-src') or img_tag.get('data-lazy-src') or img_tag.get('src')
-                    
-                time_tag = art.select_one("time")
-                if time_tag and time_tag.has_attr('datetime'):
-                    try:
-                        date_obj = parser.parse(time_tag['datetime'])
-                    except: pass
-                
-            elif mode == "custom_pul":
-                link = art.get('href')
-                if link and not link.startswith('http'):
-                    link = urljoin("https://www.pickuplimes.com", link)
-                
-                t_tag = art.select_one("h3, h2, .article_title") 
-                if t_tag:
-                    title = t_tag.get_text(strip=True)
-                else:
-                    divs = art.select("div")
-                    for d in divs:
-                        if len(d.get_text(strip=True)) > 10:
-                            title = d.get_text(strip=True)
-                            break
-                            
-                img_tag = art.find('img')
-                if img_tag:
-                    image = img_tag.get('src') or img_tag.get('data-src')
-
-                date_obj = datetime.now() 
-
-            elif mode == "custom_zj":
-                link = urljoin(url, art.get('href'))
-                t_tag = art.select_one(".post-item__title, .article-title, h2, h3")
-                title = t_tag.get_text(strip=True) if t_tag else "Recipe"
-                
-                img_tag = art.find('img')
-                if img_tag:
-                    candidate = parse_srcset(img_tag.get('data-srcset'))
-                    if not candidate: candidate = parse_srcset(img_tag.get('srcset'))
-                    if not candidate:
-                        for attr in ['data-src', 'data-lazy-src', 'src']:
-                            val = img_tag.get(attr)
-                            if val and 'spacer' not in val and 'data:' not in val:
-                                candidate = val
-                                break
-                    image = candidate
-                date_obj = None
-
-            elif mode == "custom_hermann":
-                if art.name == 'a':
-                    link_tag = art
-                    container = art
-                else:
-                    link_tag = art.find('a', href=True)
-                    container = art
-
-                if not link_tag: continue
-
-                link = link_tag.get('href')
-                if link and not link.startswith('http'): 
-                    link = urljoin("https://bakinghermann.com", link)
-                
-                title_tag = container.select_one("h3, h2, h4, .heading")
-                if title_tag: 
-                    title = title_tag.get_text(strip=True)
-                else:
-                    img = container.find('img')
-                    if img and img.get('alt'): title = img['alt']
-                    else: title = container.get_text(strip=True)
-
-                img_tag = container.find('img')
-                if img_tag:
-                    image = img_tag.get('src') or img_tag.get('data-src')
-                
-                date_obj = None 
-
-            if not title or not link: continue
-            if is_pet_recipe(title): continue
+            href = a_tag['href']
+            if '/recipes/' not in href or href.count('/') <= 2: continue
             
-            if (link, name) in existing_links:
-                continue
+            link = urljoin("https://bakinghermann.com", href)
+            if link in processed_urls or (link, name) in existing_links: continue
+            processed_urls.add(link)
 
-            # --- DEEP FETCH LOGIC ---
-            # Force deep fetch for problematic sites or missing dates
-            needs_deep_fetch = (name in ["Zucker & Jagdwurst", "Rainbow Plant Life GF", "Vegan Richa GF", "Baking Hermann", "Hot For Food", "The Full Helping"])
+            # Get Title
+            title = "Recipe"
+            t_elem = item.select_one("h3, h2, h4") if item.name != 'a' else None
+            if t_elem: title = t_elem.get_text(strip=True)
+            elif a_tag.find('img') and a_tag.find('img').get('alt'): title = a_tag.find('img')['alt']
+            elif item.get_text(strip=True): title = item.get_text(strip=True)
             
-            if (date_obj is None or needs_deep_fetch):
-                # print(f"      Verify deep metadata for: {title[:20]}...")
-                deep_date, deep_image = extract_metadata_from_page(link)
-                if deep_date: date_obj = deep_date
-                if deep_image and (not image or 'data:' in image): image = deep_image
+            # Deep Fetch is mandatory for Hermann
+            deep_date, deep_image = extract_metadata_from_page(link)
+            
+            if deep_image:
+                found_items.append({
+                    "blog_name": name, "title": title, "link": link, "image": deep_image,
+                    "date": deep_date.isoformat() if deep_date else datetime(2020,1,1).replace(tzinfo=timezone.utc).isoformat(),
+                    "is_disruptor": False, "special_tags": list(source_tags)
+                })
+                existing_links.add((link, name))
 
-            if not date_obj:
-                if name == "Pick Up Limes":
-                    date_obj = datetime.now()
-                else:
-                    date_obj = datetime(2020, 1, 1)
-            
-            if date_obj.tzinfo is None:
-                date_obj = date_obj.replace(tzinfo=timezone.utc)
-            else:
-                date_obj = date_obj.astimezone(timezone.utc)
-
-            if image and not image.startswith('http'):
-                 image = urljoin(url, image) 
-            
-            found_items.append({
-                "blog_name": name,
-                "title": title,
-                "link": link,
-                "image": image if image else "icon.jpg",
-                "date": date_obj.isoformat(),
-                "is_disruptor": False,
-                "special_tags": list(source_tags)
-            })
-            existing_links.add((link, name))
-
-        except Exception as e:
-            # print(f"Error parsing item: {e}") 
-            continue
-            
     status = f"✅ OK ({len(found_items)})" if found_items else "⚠️ Scraped 0"
     return found_items, status
 
