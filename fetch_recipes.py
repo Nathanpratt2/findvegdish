@@ -119,6 +119,7 @@ HTML_SOURCES = [
     ("Vegan Punks", "https://veganpunks.com/", [], "wordpress"),
     ("What Jew You Want to Eat", "https://whatjewwannaeat.com/category/vegan/", [], "wordpress"),
     ("Baking Hermann", "https://bakinghermann.com/recipes/", [], "custom_hermann"),
+    ("Gaz Oakley", "https://www.gazoakleychef.com/recipes/", [], "wordpress"),
     ("Vegan Huggs", "https://veganhuggs.com/recipes/", [], "wordpress"),
     ("The Edgy Veg", "https://www.theedgyveg.com/recipes/", [], "wordpress")
 ]
