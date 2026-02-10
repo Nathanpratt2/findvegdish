@@ -168,7 +168,7 @@ GF_KEYWORDS = ['gluten-free', 'gluten free', 'gf', 'wheat-free', 'flourless', 'a
 NON_GF_KEYWORDS = [
     'seitan', 'vital wheat gluten', 'wheat', 'barley', 'rye', 'couscous', 'farro', 
     'spelt', 'bulgur', 'semolina', 'sandwich', 'baguette', 'croissant', 'ciabatta', 
-    'udon', 'beer', 'malt', 'burger bun', 'toast', 'sourdough'
+    'udon', 'beer', 'malt', 'burger bun', 'toast', 'sourdough']
     
 NON_RECIPE_KEYWORDS = [
     "meal plan", "weekly menu", "menu plan", "gift guide", "cookbook", "review", 
