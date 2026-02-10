@@ -192,12 +192,12 @@
 
         @keyframes jiggle {
             0%, 100% { transform: rotate(0deg); }
-            15% { transform: rotate(-8deg); }
-            30% { transform: rotate(8deg); }
-            45% { transform: rotate(-6deg); }
-            60% { transform: rotate(6deg); }
-            75% { transform: rotate(-3deg); }
-            90% { transform: rotate(3deg); }
+            15% { transform: rotate(-12deg); }
+            30% { transform: rotate(12deg); }
+            45% { transform: rotate(-9deg); }
+            60% { transform: rotate(9deg); }
+            75% { transform: rotate(-5deg); }
+            90% { transform: rotate(5deg); }
         }
         .jiggle {
             animation: jiggle 1s ease-in-out;
@@ -557,6 +557,7 @@
     </div>
 
     <div class="controls">
+        <button id="installBtn" class="btn" style="display:none; color: #769F37; border-color: #769F37;" onclick="installPWA()">📲 Install App</button>
         <a href="?type=meal" class="btn" id="mealsBtn" onclick="toggleType(event, 'meal')">🍝 Meals</a>
         <a href="?type=sweet" class="btn" id="sweetsBtn" onclick="toggleType(event, 'sweet')">🍪 Sweets</a>
         <a href="?tag=Budget" class="btn" id="budgetBtn" onclick="toggleTag(event, 'Budget')">💸 Budget</a>
@@ -1229,8 +1230,50 @@
         applyFilters(true);
     });
 
-    // Custom Install App logic removed. 
-    // Users can use browser native "Add to Home Screen" functionality.
+    // --- PWA INSTALL LOGIC ---
+    let deferredPrompt;
+    const installBtn = document.getElementById('installBtn');
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+        // 1. Prevent Chrome 67 and earlier from automatically showing the prompt
+        e.preventDefault();
+        // 2. Stash the event so it can be triggered later.
+        deferredPrompt = e;
+        
+        // 3. check visit count (User must have visited more than 1 time)
+        try {
+            const visitData = JSON.parse(localStorage.getItem('shuffle_visit_data') || '{"count": 0}');
+            if (visitData.count > 1) {
+                installBtn.style.display = 'flex';
+            }
+        } catch (err) {
+            console.log('Storage access error', err);
+        }
+    });
+
+    async function installPWA() {
+        if (!deferredPrompt) return;
+        
+        // Hide the button immediately
+        installBtn.style.display = 'none';
+        
+        // Show the install prompt
+        deferredPrompt.prompt();
+        
+        // Wait for the user to respond to the prompt
+        const { outcome } = await deferredPrompt.userChoice;
+        console.log(`User response to install prompt: ${outcome}`);
+        
+        // We've used the prompt, and can't use it again, throw it away
+        deferredPrompt = null;
+    }
+
+    window.addEventListener('appinstalled', () => {
+        // Hide the app-provided install promotion
+        installBtn.style.display = 'none';
+        deferredPrompt = null;
+        console.log('PWA was installed');
+    });
 
     function shareRecipe(e, title, link) {
         e.preventDefault(); 
