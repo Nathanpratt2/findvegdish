@@ -114,6 +114,10 @@ HTML_SOURCES = [
     ("Elsa's Wholesome Life","https://www.elsaswholesomelife.com/blog?category=Recipes",[], "wordpress"),
     ("The Full Helping (Vegan Recipes)","https://www.thefullhelping.com/dietary/vegan/",[],"wordpress"),
     ("Hot For Food","https://www.hotforfoodblog.com/recipe-index/",[],"wordpress"),
+    ("Cupful of Kale", "https://cupfulofkale.com/category/recipes/", [], "wordpress"),
+    ("The Veg Space", "https://www.thevegspace.co.uk/recipes/", [], "wordpress"),
+    ("Vegan Punks", "https://veganpunks.com/", [], "wordpress"),
+    ("What Jew You Want to Eat", "https://whatjewwannaeat.com/category/vegan/", [], "wordpress"),
     ("Baking Hermann", "https://bakinghermann.com/recipes/", [], "custom_hermann")
 ]
 
