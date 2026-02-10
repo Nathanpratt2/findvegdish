@@ -178,10 +178,14 @@ NON_RECIPE_KEYWORDS = [
     "ebook", "merch", "store", "shop", "announcement", "update", "news", 
     "contest", "winner", "promo", "discount", "coupon", "deal", "top 10", 
     "top 20", "5 best", "10 best", "15 best", "20 best", "rpl", "going vegan", 
-    "why i", "my story", "journey", "life lately", "coffee talk", "link love", 
+    "i", "my story", "journey", "life lately", "coffee talk", "link love", 
     "weekend reading", "batch cooking", "staples", "essentials", "substitutes",
     "how to make", "101", "tutorial", "guide", "tips", "tricks", "faq",
-    "policy", "terms", "privacy", "contact", "about", "search", "sitemap"
+    "policy", "terms", "privacy", "contact", "about", "search", "sitemap",
+    "neighbor", "law", "qa", "videos", "planning", "rituals", "discontinued", 
+    "forgotten", "finds", "live", "tests", "lab", "tracking", "progress", 
+    "lifestyle", "success", "story", "stories", "appliances", "books", 
+    "reading", "shows", "headshot"
 ]
 
 # --- ADVANCED SCRAPER SETUP & SSL FIX ---
