@@ -629,18 +629,25 @@
 
    // --- WHIMSICAL: TYPEWRITER SEARCH PLACEHOLDERS ---
     const vibes = [
-        "Search: Soup, Blog, Cake...", 
+        "Search: Soup, Cake, Tofu...", 
+        "Find your favorite blogger",
+        "No-bake treats? 🍰",
         "Craving tacos? 🌮", 
-        "Need a budget dinner? 💸", 
-        "Something chocolatey? 🍫", 
-        "Looking for high protein? 💪", 
-        "How about a cozy stew? 🍲", 
+        "Something chocolatey? 🍫"
     ];
 
     let vibeIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
     let typeSpeed = 100;
+
+    // FIX: Clear placeholder immediately when user clicks (focus)
+    const sInput = document.getElementById('searchInput');
+    if(sInput) {
+        sInput.addEventListener('focus', () => {
+            sInput.placeholder = '';
+        });
+    }
 
     function typeWriter() {
         const input = document.getElementById('searchInput');
@@ -655,33 +662,27 @@
         const currentFullText = vibes[vibeIndex];
 
         if (isDeleting) {
-            // Remove a character
             input.placeholder = currentFullText.substring(0, charIndex - 1);
             charIndex--;
-            typeSpeed = 50; // Deleting is faster
+            typeSpeed = 50; 
         } else {
-            // Add a character
             input.placeholder = currentFullText.substring(0, charIndex + 1);
             charIndex++;
-            typeSpeed = 120; // Typing is slower
+            typeSpeed = 120; 
         }
 
-        // Logic for switching states
         if (!isDeleting && charIndex === currentFullText.length) {
-            // Finished typing: pause before deleting
             isDeleting = true;
-            typeSpeed = 3000; // Wait 2.5 seconds at the end of the sentence
+            typeSpeed = 3000; // Pause at end
         } else if (isDeleting && charIndex === 0) {
-            // Finished deleting: move to next vibe
             isDeleting = false;
             vibeIndex = (vibeIndex + 1) % vibes.length;
-            typeSpeed = 500; // Small pause before starting next word
+            typeSpeed = 500; 
         }
 
         setTimeout(typeWriter, typeSpeed);
     }
 
-    // Start the animation
     typeWriter();
     
     // Filtering State
