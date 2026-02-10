@@ -13,34 +13,67 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+
+      - name: Check execution window
+        id: check_window
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # If manually triggered, always run
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            echo "Manual trigger detected. Forcing run."
+            echo "skip_run=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          # Get time of last SUCCESSFUL run for this workflow
+          LAST_RUN=$(gh run list --workflow "Daily Recipe Refresh" --status success --limit 1 --json updatedAt -q '.[0].updatedAt')
+
+          if [[ -z "$LAST_RUN" ]]; then
+             echo "No previous successful run found. Proceeding."
+             echo "skip_run=false" >> $GITHUB_OUTPUT
+          else
+             # Calculate time difference in seconds
+             LAST_TS=$(date -d "$LAST_RUN" +%s)
+             NOW_TS=$(date +%s)
+             DIFF=$((NOW_TS - LAST_TS))
+             COOLDOWN=21600 # 6 hours in seconds
+
+             if (( DIFF < COOLDOWN )); then
+                HOURS=$((DIFF / 3600))
+                echo "Last successful run was only $HOURS hours ago (less than 6). Skipping."
+                echo "skip_run=true" >> $GITHUB_OUTPUT
+             else
+                echo "Last successful run was $DIFF seconds ago. Proceeding."
+                echo "skip_run=false" >> $GITHUB_OUTPUT
+             fi
+          fi
 
       - name: Set up Python
+        if: steps.check_window.outputs.skip_run != 'true'
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
 
       - name: Install dependencies
+        if: steps.check_window.outputs.skip_run != 'true'
         run: |
           pip install -r requirements.txt
 
       - name: Run Fetch Script
+        if: steps.check_window.outputs.skip_run != 'true'
         run: python fetch_recipes.py
 
       - name: Commit and push changes
+        if: steps.check_window.outputs.skip_run != 'true'
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
-          # Add the files you want to commit
-          git add data.json FEED_HEALTH.md
-          # Commit only if there are changes; prevent failure if clean
+          git add data.json FEED_HEALTH.md llms.txt sitemap.xml
           git commit -m "Daily recipe & health refresh" || echo "No changes to commit"
-          
-          # FIX: Pull latest changes from remote and rebase local changes on top
           git pull --rebase origin main
-          
-          # Push the reconciled history
           git push origin main
