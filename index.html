@@ -622,10 +622,29 @@
 </footer>
 
 <script>
-    // --- GLOBAL STATE ---
+   // --- GLOBAL STATE ---
     let allRecipes = [];          
     let currentContext = [];      
     let renderedCount = 0;        
+
+    // --- WHIMSICAL: VIBE SEARCH PLACEHOLDERS ---
+    const vibes = [
+        "Search: Soup, Blog, Cake...", 
+        "Craving tacos? 🌮", 
+        "Want something easy & cheap? 💸", 
+        "Something chocolatey? 🍫", 
+        "How about a cozy stew? 🍲", 
+    ];
+    let vibeIndex = 0;
+    
+    setInterval(() => {
+        const input = document.getElementById('searchInput');
+        // Only change if input exists, isn't focused, and is empty
+        if (input && document.activeElement !== input && input.value === '') {
+            vibeIndex = (vibeIndex + 1) % vibes.length;
+            input.placeholder = vibes[vibeIndex];
+        }
+    }, 3500);
     
     // Filtering State
     let activeType = null; 
