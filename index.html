@@ -1074,6 +1074,14 @@
     }
 
     function shuffleRecipes() {
+        // Trigger Jiggle Animation
+        const btn = document.getElementById('shuffleIconBtn');
+        if (btn) {
+            btn.classList.remove('jiggle');
+            void btn.offsetWidth; // Trigger reflow to restart animation
+            btn.classList.add('jiggle');
+        }
+
         document.activeElement.blur(); 
         for (let i = allRecipes.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
