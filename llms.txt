@@ -4,7 +4,7 @@
 FindVegDish.com is a curated aggregator of high-quality plant-based, vegan, and gluten-free recipes from the world's top food bloggers.
 
 ## Content
-- Total Recipes: 233
+- Total Recipes: 859
 - Categories: Vegan, Whole Food Plant Based (WFPB), Gluten-Free (GF), Budget-Friendly, Easy Recipes.
 
 ## Data Sources
