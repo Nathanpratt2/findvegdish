@@ -10,9 +10,21 @@ import time
 import random
 import os
 import ssl
+import shutil
 from requests.adapters import HTTPAdapter
 from requests.packages.urllib3.util.ssl_ import create_urllib3_context
 from requests.packages.urllib3.poolmanager import PoolManager
+
+# Selenium Imports for robust fallback
+try:
+    from selenium import webdriver
+    from selenium.webdriver.chrome.options import Options
+    from selenium.webdriver.chrome.service import Service
+    from webdriver_manager.chrome import ChromeDriverManager
+    SELENIUM_AVAILABLE = True
+except ImportError:
+    SELENIUM_AVAILABLE = False
+    print("⚠️ Selenium modules not found. Install 'selenium' and 'webdriver-manager' for better results.")
 
 # --- CONFIGURATION ---
 # Format: ("Blog Name", "Feed URL", ["SPECIAL_TAGS"])
@@ -243,26 +255,69 @@ def is_pet_recipe(title):
     if any(phrase in t for phrase in pet_phrases): return True
     return False
 
+def fetch_with_selenium(url):
+    """
+    Last resort fetcher using Headless Chrome.
+    """
+    if not SELENIUM_AVAILABLE:
+        return None
+
+    try:
+        print(f"   [Selenium] Attempting fallback for {url}...")
+        chrome_options = Options()
+        chrome_options.add_argument("--headless=new") # Modern headless mode
+        chrome_options.add_argument("--no-sandbox")
+        chrome_options.add_argument("--disable-dev-shm-usage")
+        chrome_options.add_argument("--disable-gpu")
+        chrome_options.add_argument(f"user-agent={random.choice(USER_AGENTS)}")
+        
+        # Suppress logs
+        chrome_options.add_argument("--log-level=3")
+
+        service = Service(ChromeDriverManager().install())
+        driver = webdriver.Chrome(service=service, options=chrome_options)
+        
+        # STRICT TIMEOUT: 25 seconds max for page load
+        driver.set_page_load_timeout(25)
+        
+        try:
+            driver.get(url)
+            # Small sleep to let JS render
+            time.sleep(3)
+            return driver.page_source
+        finally:
+            driver.quit()
+    except Exception as e:
+        print(f"   [!] Selenium failed: {str(e)[:100]}")
+    
+    return None
+
 def robust_fetch(url, is_binary=False, is_scraping_page=False):
     if is_scraping_page:
         time.sleep(random.uniform(2, 5)) 
     
     headers = get_headers(referer="https://www.google.com/")
 
+    # 1. CloudScraper (Timeout 15s)
     try:
-        response = scraper.get(url, headers=headers, timeout=20)
+        response = scraper.get(url, headers=headers, timeout=15)
         if response.status_code == 200:
             return response.content if is_binary else response.text
     except Exception as e:
-        print(f"   [!] Cloudscraper error for {url}: {e}")
+        print(f"   [!] Cloudscraper error for {url}: {str(e)[:50]}")
     
+    # 2. Requests Fallback (Timeout 15s)
     try:
         fallback_session.headers.update(headers)
         response = fallback_session.get(url, timeout=15)
         if response.status_code == 200:
             return response.content if is_binary else response.text
     except Exception as e:
-        print(f"   [!] Requests error for {url}: {e}")
+        print(f"   [!] Requests error for {url}: {str(e)[:50]}")
+
+    # 3. Selenium Fallback (Only for text/HTML, not binary images)
+    if not is_binary:
+        return fetch_with_selenium(url)
         
     return None
 
@@ -914,12 +969,29 @@ final_pruned_list.sort(key=lambda x: x['date'], reverse=True)
 print("Pruning complete. Saving database with distinct source names...")
 
 if len(final_pruned_list) > 50:
-    with open('data.json', 'w') as f:
-        json.dump(final_pruned_list, f, indent=2)
-    generate_sitemap(final_pruned_list)
-    generate_llms_txt(final_pruned_list)
+    # 1. Write to temp file first (Atomic Write Pattern)
+    temp_file = "data.tmp.json"
+    final_file = "data.json"
+    
+    try:
+        with open(temp_file, 'w', encoding='utf-8') as f:
+            json.dump(final_pruned_list, f, indent=2)
+        
+        # 2. Rename/Move only if write was successful
+        # os.replace is atomic on POSIX, acts like move on Windows
+        os.replace(temp_file, final_file)
+        print(f"✅ Successfully wrote {len(final_pruned_list)} items to {final_file}")
+        
+        generate_sitemap(final_pruned_list)
+        generate_llms_txt(final_pruned_list)
+        
+    except Exception as e:
+        print(f"❌ CRITICAL ERROR writing database: {e}")
+        # Attempt cleanup of temp file
+        if os.path.exists(temp_file):
+            os.remove(temp_file)
 else:
-    print("⚠️ SAFETY ALERT: Database too small (<50 items). Skipping write.")
+    print("⚠️ SAFETY ALERT: Database too small (<50 items). Skipping write to prevent data loss.")
 
 # 8. Generate Report
 with open('FEED_HEALTH.md', 'w', encoding='utf-8') as f:
