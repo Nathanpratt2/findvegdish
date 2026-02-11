@@ -1,5 +1,72 @@
 [
   {
+    "blog_name": "Dr. Vegan",
+    "title": "Loaded Twice Baked Potato Skins",
+    "link": "https://drveganblog.com/loaded-twice-baked-potato-skins/",
+    "image": "https://drveganblog.com/wp-content/uploads/2026/02/loaded-potatoes1-576x1024.jpg",
+    "date": "2026-02-11T14:17:44+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "Budget",
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Vegan Richa GF",
+    "title": "Creamy Chipotle Whipped Tofu with Crispy Lentils and Roasted Zucchini",
+    "link": "https://www.veganricha.com/chipotle-whipped-tofu-crispy-lentils/",
+    "image": "https://www.veganricha.com/wp-content/uploads/2026/01/Chipotle-Cream-Crispy-Lentils-Zucchini-Bowl-5745.jpg",
+    "date": "2026-02-11T12:05:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget",
+      "GF"
+    ]
+  },
+  {
+    "blog_name": "Healthy Little Vittles",
+    "title": "Creamy Strawberry White Chocolate Marshmallow Dip (made with coconut milk)",
+    "link": "https://healthylittlevittles.com/creamy-strawberry-white-chocolate-marshmallow-dip/",
+    "image": "https://healthylittlevittles.com/wp-content/uploads/2026/02/Strawberry-White-Chocolate-Coconut-Milk-Marshmallow-Dip-3.jpg",
+    "date": "2026-02-11T12:00:00+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "Easy",
+      "GF"
+    ]
+  },
+  {
+    "blog_name": "Flora & Vino",
+    "title": "Chocolate SunButter Hummus",
+    "link": "https://www.floraandvino.com/chocolate-sunbutter-hummus/",
+    "image": "https://www.floraandvino.com/wp-content/uploads/2026/02/Chocolate-SunButter-Hummus-8-560x840.jpg",
+    "date": "2026-02-11T11:00:32+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "It Doesn't Taste Like Chicken",
+    "title": "The Ultimate Vegan Chocolate Cake (Rich & Moist)",
+    "link": "https://itdoesnttastelikechicken.com/the-ultimate-vegan-chocolate-cake/",
+    "image": "https://itdoesnttastelikechicken.com/wp-content/uploads/2015/11/Vegan-Chocolate-Cake-recipe-rich-moist-best-easy-simple-facebook.jpg",
+    "date": "2026-02-11T10:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "The Conscious Plant Kitchen",
+    "title": "Snickers Balls (4g Protein, Healthy)",
+    "link": "https://www.theconsciousplantkitchen.com/snickers-balls/",
+    "image": "https://www.theconsciousplantkitchen.com/wp-content/uploads/2025/07/Snickers-Balls-1.jpg",
+    "date": "2026-02-11T07:17:08+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
     "blog_name": "Pick Up Limes",
     "title": "Spicy Carrot Wrap",
     "link": "https://www.pickuplimes.com/recipe/spicy-carrot-wrap-2688",
@@ -16,8 +83,8 @@
     "date": "2026-02-10T21:06:11+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -126,15 +193,6 @@
     "special_tags": []
   },
   {
-    "blog_name": "The Korean Vegan",
-    "title": "That time I met Barack Obama.",
-    "link": "https://thekoreanvegan.com/that-time-i-met-barack-obama/",
-    "image": "https://thekoreanvegan.com/wp-content/uploads/2026/02/Barack-Obama-Teaching.jpg",
-    "date": "2026-02-10T17:11:43+00:00",
-    "is_disruptor": false,
-    "special_tags": []
-  },
-  {
     "blog_name": "VegNews",
     "title": "The Cutest Heart-Shaped Vegan Chocolate Cake for Valentine's Day",
     "link": "https://vegnews.com/recipes/vegan-chocolate-cake",
@@ -169,9 +227,9 @@
     "date": "2026-02-10T16:20:03+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
       "WFPB",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -202,8 +260,8 @@
     "date": "2026-02-10T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -225,6 +283,15 @@
     "special_tags": [
       "Easy"
     ]
+  },
+  {
+    "blog_name": "Big Box Vegan",
+    "title": "Vegan Texas Sheet Cake",
+    "link": "https://bigboxvegan.com/2026/02/09/vegan-texas-sheet-cake/",
+    "image": "https://bigboxvegan.com/wp-content/uploads/2026/02/IMG_7656-1024x682.jpeg",
+    "date": "2026-02-09T22:35:05+00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "Nora Cooks",
@@ -283,8 +350,8 @@
     "date": "2026-02-09T14:40:03+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -697,8 +764,8 @@
     "date": "2026-02-06T12:54:49+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "GF"
+      "GF",
+      "Budget"
     ]
   },
   {
@@ -877,8 +944,8 @@
     "date": "2026-02-05T12:00:00+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -889,8 +956,8 @@
     "date": "2026-02-05T06:59:28+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -903,6 +970,15 @@
     "special_tags": [
       "Budget"
     ]
+  },
+  {
+    "blog_name": "Big Box Vegan",
+    "title": "Why Vegan Butter Sticks are Disappearing (and What to Use Instead)",
+    "link": "https://bigboxvegan.com/2026/02/04/why-vegan-butter-sticks-are-disappearing-and-what-to-use-instead/",
+    "image": "https://bigboxvegan.com/wp-content/uploads/2026/02/IMG_0228-768x1024.jpeg",
+    "date": "2026-02-05T01:48:26+00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "Sarah's Vegan Kitchen",
@@ -988,8 +1064,8 @@
     "date": "2026-02-04T12:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -1091,6 +1167,15 @@
     ]
   },
   {
+    "blog_name": "The Plant-Based RD",
+    "title": "Oven Baked Tostones",
+    "link": "https://plantbasedrdblog.com/2026/02/oven-baked-tostones/?utm_source=rss&utm_medium=rss&utm_campaign=oven-baked-tostones",
+    "image": "https://plantbasedrdblog.com/wp-content/uploads/2026/02/Baked-Tostones-819x1024.jpg",
+    "date": "2026-02-03T17:15:05+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Gretchen's Vegan Bakery",
     "title": "Vegan Box of Chocolates",
     "link": "https://www.gretchensveganbakery.com/vegan-box-chocolates/",
@@ -1147,8 +1232,8 @@
     "date": "2026-02-03T05:14:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -1258,8 +1343,8 @@
     "date": "2026-02-02T02:33:16+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -1270,8 +1355,8 @@
     "date": "2026-02-02T02:19:12+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "GF"
+      "GF",
+      "Budget"
     ]
   },
   {
@@ -1281,6 +1366,15 @@
     "image": "https://plantbaes.com/wp-content/uploads/2026/01/Protein-Edamame-Avocado-Spread-2.jpg",
     "date": "2026-02-02T00:33:17+00:00",
     "is_disruptor": true,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Big Box Vegan",
+    "title": "Vegan Bran Muffins (That Aren\u2019t Dry)",
+    "link": "https://bigboxvegan.com/2026/02/01/vegan-bran-muffins-that-arent-dry/",
+    "image": "https://bigboxvegan.com/wp-content/uploads/2026/02/IMG_7374-682x1024.jpeg",
+    "date": "2026-02-01T22:12:20+00:00",
+    "is_disruptor": false,
     "special_tags": []
   },
   {
@@ -1686,8 +1780,8 @@
     "date": "2026-01-29T01:58:31+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -1700,6 +1794,15 @@
     "special_tags": [
       "Easy"
     ]
+  },
+  {
+    "blog_name": "The Plant-Based RD",
+    "title": "Creamy Salsa Verde White Bean Soup",
+    "link": "https://plantbasedrdblog.com/2026/01/salsa-verde-white-bean-soup/?utm_source=rss&utm_medium=rss&utm_campaign=salsa-verde-white-bean-soup",
+    "image": "https://plantbasedrdblog.com/wp-content/uploads/2026/01/Salsa-Cremosa-Soup-819x1024.jpg",
+    "date": "2026-01-28T22:14:16+00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "My Darling Vegan",
@@ -1732,8 +1835,8 @@
     "date": "2026-01-28T18:39:31+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -1764,8 +1867,8 @@
     "date": "2026-01-28T12:13:15+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -1798,9 +1901,9 @@
     "date": "2026-01-28T12:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
+      "GF",
       "Budget",
-      "GF"
+      "Easy"
     ]
   },
   {
@@ -1811,9 +1914,9 @@
     "date": "2026-01-28T11:45:05+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
       "WFPB",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -1854,6 +1957,17 @@
     "image": "https://thefoodietakesflight.com/wp-content/uploads/2026/01/Sweet-Chili-Calamansi-Udon-16-of-42-768x1024.jpg",
     "date": "2026-01-28T04:50:00+00:00",
     "is_disruptor": true,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Big Box Vegan",
+    "title": "Easy Vegan Brownie Pudding",
+    "link": "https://bigboxvegan.com/2026/01/27/easy-vegan-brownie-pudding/",
+    "image": "https://bigboxvegan.com/wp-content/uploads/2026/01/IMG_7282-1.jpeg",
+    "date": "2026-01-27T22:40:12+00:00",
+    "is_disruptor": false,
     "special_tags": [
       "Easy"
     ]
@@ -1904,8 +2018,8 @@
     "date": "2026-01-27T17:26:09+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -2023,8 +2137,8 @@
     "date": "2026-01-26T02:26:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "GF"
+      "GF",
+      "Budget"
     ]
   },
   {
@@ -2076,6 +2190,15 @@
     "image": "https://www.theconsciousplantkitchen.com/wp-content/uploads/2025/11/Date-Nut-Bread-1.jpg",
     "date": "2026-01-25T00:03:18+00:00",
     "is_disruptor": true,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Big Box Vegan",
+    "title": "A Vegan Winter Getaway to Asheville, North Carolina",
+    "link": "https://bigboxvegan.com/2026/01/24/a-vegan-winter-getaway-to-asheville-north-carolina/",
+    "image": "https://bigboxvegan.com/wp-content/uploads/2026/01/Untitled-21-1024x576.png",
+    "date": "2026-01-24T21:40:06+00:00",
+    "is_disruptor": false,
     "special_tags": []
   },
   {
@@ -2193,8 +2316,8 @@
     "date": "2026-01-23T03:14:19+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -2207,6 +2330,15 @@
     "special_tags": []
   },
   {
+    "blog_name": "Big Box Vegan",
+    "title": "Mondelez Ends Animal Testing and What That Means for Oreos",
+    "link": "https://bigboxvegan.com/2026/01/22/mondelez-ends-animal-testing-and-what-that-means-for-oreos/",
+    "image": "https://bigboxvegan.com/wp-content/uploads/2026/01/IMG_0200-768x1024.jpeg",
+    "date": "2026-01-22T19:21:44+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Strength and Sunshine",
     "title": "Traditional Lentil Soup Recipe",
     "link": "https://strengthandsunshine.com/lentil-soup/",
@@ -2214,9 +2346,9 @@
     "date": "2026-01-22T18:00:48+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
+      "GF",
       "Budget",
-      "GF"
+      "Easy"
     ]
   },
   {
@@ -2258,8 +2390,8 @@
     "date": "2026-01-22T13:11:31+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -2270,8 +2402,8 @@
     "date": "2026-01-22T12:00:00+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "GF"
+      "GF",
+      "Budget"
     ]
   },
   {
@@ -2378,8 +2510,8 @@
     "date": "2026-01-21T09:00:13+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -2445,9 +2577,9 @@
     "date": "2026-01-20T13:29:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
       "WFPB",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -2458,8 +2590,8 @@
     "date": "2026-01-20T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -2479,8 +2611,8 @@
     "date": "2026-01-20T09:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -2604,6 +2736,15 @@
     ]
   },
   {
+    "blog_name": "Big Box Vegan",
+    "title": "Vegan Copycat Costco Brownie Walnut Pie",
+    "link": "https://bigboxvegan.com/2026/01/18/vegan-copycat-costco-brownie-walnut-pie/",
+    "image": "https://bigboxvegan.com/wp-content/uploads/2026/01/IMG_7167.jpeg",
+    "date": "2026-01-18T15:35:03+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Love and Lemons (Vegan Recipes)",
     "title": "Vegetable Soup",
     "link": "https://www.loveandlemons.com/vegetable-soup/",
@@ -2658,8 +2799,8 @@
     "date": "2026-01-17T02:23:55+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -2708,8 +2849,8 @@
     "date": "2026-01-16T09:37:53+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -2742,8 +2883,8 @@
     "date": "2026-01-15T23:20:14+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "GF"
+      "GF",
+      "Budget"
     ]
   },
   {
@@ -2767,6 +2908,17 @@
     "special_tags": []
   },
   {
+    "blog_name": "The Plant-Based RD",
+    "title": "Dan Dan Charred Cabbage Bean Salad",
+    "link": "https://plantbasedrdblog.com/2026/01/dan-dan-charred-cabbage-bean-salad/?utm_source=rss&utm_medium=rss&utm_campaign=dan-dan-charred-cabbage-bean-salad",
+    "image": "https://plantbasedrdblog.com/wp-content/uploads/2026/01/Dan-Dan-Cabbage-Bean-Salad-819x1024.jpg",
+    "date": "2026-01-15T17:11:37+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
     "blog_name": "Plantifully Based",
     "title": "Easy Vegan Crumbled Tofu \u201cSausage\u201d",
     "link": "https://plantifullybasedblog.com/easy-vegan-crumbled-tofu-sausage/?utm_source=rss&utm_medium=rss&utm_campaign=easy-vegan-crumbled-tofu-sausage",
@@ -2785,8 +2937,8 @@
     "date": "2026-01-15T13:09:27+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -2866,8 +3018,8 @@
     "date": "2026-01-14T14:40:33+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -2920,8 +3072,8 @@
     "date": "2026-01-14T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -2952,9 +3104,9 @@
     "date": "2026-01-14T01:52:22+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
+      "WFPB",
       "Easy",
-      "WFPB"
+      "Budget"
     ]
   },
   {
@@ -3158,6 +3310,15 @@
     "special_tags": []
   },
   {
+    "blog_name": "Big Box Vegan",
+    "title": "Are Goldfish Hot Buffalo Pretzels Their First Vegan\u2011Friendly Snack?",
+    "link": "https://bigboxvegan.com/2026/01/09/are-goldfish-hot-buffalo-pretzels-their-first-vegan-friendly-snack/",
+    "image": "https://bigboxvegan.com/wp-content/uploads/2026/01/IMG_9782-edited.jpeg",
+    "date": "2026-01-09T19:02:51+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Namely Marly",
     "title": "Baked Donut Recipes",
     "link": "https://namelymarly.com/baked-donut-recipes/",
@@ -3174,8 +3335,8 @@
     "date": "2026-01-09T17:15:12+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -3221,6 +3382,18 @@
     ]
   },
   {
+    "blog_name": "The Cheap Lazy Vegan",
+    "title": "Vegan Budae Jjigae",
+    "link": "https://thecheaplazyvegan.com/vegan-budae-jjigae/",
+    "image": "https://thecheaplazyvegan.com/wp-content/uploads/2026/01/Vegan-Budae-Jjigae-01-1024x819.jpg",
+    "date": "2026-01-09T00:32:41+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy",
+      "Budget"
+    ]
+  },
+  {
     "blog_name": "Forks Over Knives",
     "title": "Tropical Chia Pudding",
     "link": "https://www.forksoverknives.com/recipes/vegan-breakfast/tropical-chia-pudding/",
@@ -3251,6 +3424,18 @@
     "is_disruptor": true,
     "special_tags": [
       "GF"
+    ]
+  },
+  {
+    "blog_name": "The Cheap Lazy Vegan",
+    "title": "Vegan Stroganoff",
+    "link": "https://thecheaplazyvegan.com/vegan-stroganoff/",
+    "image": "https://thecheaplazyvegan.com/wp-content/uploads/2026/01/Vegan-Stroganoff-01-1024x819.jpg",
+    "date": "2026-01-08T01:01:09+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -3484,8 +3669,8 @@
     "date": "2026-01-05T09:04:00+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -3543,8 +3728,8 @@
     "date": "2026-01-04T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -3555,6 +3740,29 @@
     "date": "2026-01-03T18:22:58+00:00",
     "is_disruptor": false,
     "special_tags": [
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "The Plant-Based RD",
+    "title": "Cilantro Lime Edamame Toast with Pickled Onion Radish Salad",
+    "link": "https://plantbasedrdblog.com/2026/01/cilantro-lime-edamame-toast/?utm_source=rss&utm_medium=rss&utm_campaign=cilantro-lime-edamame-toast",
+    "image": "https://plantbasedrdblog.com/wp-content/uploads/2026/01/Cilantro-Lime-Edamame-Toast-819x1024.jpg",
+    "date": "2026-01-03T16:40:02+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "The Cheap Lazy Vegan",
+    "title": "Vegan Tofu Meatballs",
+    "link": "https://thecheaplazyvegan.com/vegan-tofu-meatballs/",
+    "image": "https://thecheaplazyvegan.com/wp-content/uploads/2026/01/meatballs-vegan-04-1024x819.jpg",
+    "date": "2026-01-03T00:03:40+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy",
       "Budget"
     ]
   },
@@ -3595,8 +3803,8 @@
     "date": "2026-01-02T12:00:00+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -3607,8 +3815,8 @@
     "date": "2026-01-02T09:50:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -3652,6 +3860,15 @@
     "special_tags": [
       "Easy"
     ]
+  },
+  {
+    "blog_name": "It's Liv B",
+    "title": "Vegan Buffalo Chicken Wings (No Seitan)",
+    "link": "https://itslivb.com/2025/12/30/vegan-buffalo-chicken-wings-no-seitan/",
+    "image": "https://itslivb.com/wp-content/uploads/2025/10/vegan-buffalo-wings-06-1440x2160.jpg",
+    "date": "2025-12-30T15:00:54+00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "Minimalist Baker (Vegan Recipes)",
@@ -3910,6 +4127,18 @@
     ]
   },
   {
+    "blog_name": "The Cheap Lazy Vegan",
+    "title": "Brussels Sprouts with Maple Syrup and Balsamic",
+    "link": "https://thecheaplazyvegan.com/brussels-sprouts-with-maple-syrup-and-balsamic/",
+    "image": "https://thecheaplazyvegan.com/wp-content/uploads/2025/12/Brussels-Sprouts-with-Maple-and-Balsamic-01-1024x819.jpg",
+    "date": "2025-12-22T02:56:44+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy",
+      "Budget"
+    ]
+  },
+  {
     "blog_name": "Veggiekins",
     "title": "Birthday Cake Matcha Latte",
     "link": "https://veggiekinsblog.com/2025/12/21/birthday-cake-matcha-latte/",
@@ -3917,8 +4146,8 @@
     "date": "2025-12-21T18:34:48+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -3940,8 +4169,8 @@
     "date": "2025-12-21T14:29:08+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -4007,6 +4236,15 @@
     "special_tags": [
       "Easy"
     ]
+  },
+  {
+    "blog_name": "The Plant-Based RD",
+    "title": "Churro Cookies",
+    "link": "https://plantbasedrdblog.com/2025/12/churro-cookies/?utm_source=rss&utm_medium=rss&utm_campaign=churro-cookies",
+    "image": "https://plantbasedrdblog.com/wp-content/uploads/2025/12/Churro-Cookies-819x1024.jpg",
+    "date": "2025-12-20T18:50:46+00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "Lazy Cat Kitchen",
@@ -4096,8 +4334,8 @@
     "date": "2025-12-18T18:00:14+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -4157,8 +4395,8 @@
     "date": "2025-12-17T22:11:31+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -4246,6 +4484,15 @@
     "special_tags": []
   },
   {
+    "blog_name": "The Plant-Based RD",
+    "title": "Gingerbread Cheesecake Chia Pudding",
+    "link": "https://plantbasedrdblog.com/2025/12/gingerbread-cheesecake-chia-pudding/?utm_source=rss&utm_medium=rss&utm_campaign=gingerbread-cheesecake-chia-pudding",
+    "image": "https://plantbasedrdblog.com/wp-content/uploads/2025/12/Gingerbread-Cheesecake-Chia-Pudding-819x1024.jpg",
+    "date": "2025-12-16T16:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Addicted to Dates",
     "title": "Pistachio Fudge",
     "link": "https://addictedtodates.com/pistachio-fudge/",
@@ -4294,6 +4541,18 @@
     "is_disruptor": true,
     "special_tags": [
       "GF"
+    ]
+  },
+  {
+    "blog_name": "The Cheap Lazy Vegan",
+    "title": "Vegan Orange Tofu",
+    "link": "https://thecheaplazyvegan.com/vegan-orange-tofu/",
+    "image": "https://thecheaplazyvegan.com/wp-content/uploads/2025/12/Vegan-Orange-Tofu-03-1024x819.jpg",
+    "date": "2025-12-15T04:35:43+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -4360,9 +4619,9 @@
     "date": "2025-12-14T00:22:05+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
       "WFPB",
-      "GF"
+      "GF",
+      "Budget"
     ]
   },
   {
@@ -4422,8 +4681,8 @@
     "date": "2025-12-12T13:18:20+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -4482,8 +4741,8 @@
     "date": "2025-12-11T12:00:00+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -4503,8 +4762,8 @@
     "date": "2025-12-10T18:49:51+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "GF"
+      "GF",
+      "Budget"
     ]
   },
   {
@@ -4544,9 +4803,18 @@
     "date": "2025-12-10T04:03:38+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
+  },
+  {
+    "blog_name": "The Plant-Based RD",
+    "title": "Buffalo Cauliflower Soup",
+    "link": "https://plantbasedrdblog.com/2025/12/buffalo-cauliflower-soup/?utm_source=rss&utm_medium=rss&utm_campaign=buffalo-cauliflower-soup",
+    "image": "https://plantbasedrdblog.com/wp-content/uploads/2025/12/Buffalo-Cauliflower-Soup-819x1024.jpg",
+    "date": "2025-12-09T23:37:40+00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "HealthyGirl Kitchen",
@@ -4568,6 +4836,17 @@
     "is_disruptor": false,
     "special_tags": [
       "WFPB"
+    ]
+  },
+  {
+    "blog_name": "It's Liv B",
+    "title": "Creamy Vegan Ranch Dressing (in 5 minutes)",
+    "link": "https://itslivb.com/2025/12/09/creamy-vegan-ranch-dressing-in-5-minutes/",
+    "image": "https://itslivb.com/wp-content/uploads/2025/10/vegan-ranch-dressing-1-1440x2160.jpg",
+    "date": "2025-12-09T14:59:11+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
     ]
   },
   {
@@ -4718,8 +4997,8 @@
     "date": "2025-12-04T18:00:19+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -4739,8 +5018,8 @@
     "date": "2025-12-04T14:06:21+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -4813,8 +5092,8 @@
     "date": "2025-12-03T09:00:59+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "WFPB"
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -4903,8 +5182,8 @@
     "date": "2025-11-28T13:08:20+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -4953,8 +5232,8 @@
     "date": "2025-11-26T13:25:35+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -5007,8 +5286,8 @@
     "date": "2025-11-25T11:53:03+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -5061,6 +5340,17 @@
     "special_tags": []
   },
   {
+    "blog_name": "It's Liv B",
+    "title": "Zingy 10-Minute Vegan Buffalo Sauce",
+    "link": "https://itslivb.com/2025/11/24/zingy-10-minute-vegan-buffalo-sauce/",
+    "image": "https://itslivb.com/wp-content/uploads/2025/11/vegan-buffalo-sauce-2-2-1440x2160.jpg",
+    "date": "2025-11-24T16:31:33+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "Sarah's Vegan Kitchen",
     "title": "Fluffy Vegan Dinner Rolls (Tangzhong Milk Bread Style)",
     "link": "https://sarahsvegankitchen.com/recipes/fluffy-dinner-rolls/",
@@ -5086,8 +5376,8 @@
     "date": "2025-11-23T20:44:19+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -5209,8 +5499,8 @@
     "date": "2025-11-20T12:00:00+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -5337,8 +5627,8 @@
     "date": "2025-11-17T23:40:42+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -5349,8 +5639,8 @@
     "date": "2025-11-17T23:34:21+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -5486,8 +5776,8 @@
     "date": "2025-11-13T18:00:23+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -5524,6 +5814,26 @@
     ]
   },
   {
+    "blog_name": "The Plant-Based RD",
+    "title": "Honeynut Sun-Dried Tomato Soup",
+    "link": "https://plantbasedrdblog.com/2025/11/honeynut-sun-dried-tomato-soup/?utm_source=rss&utm_medium=rss&utm_campaign=honeynut-sun-dried-tomato-soup",
+    "image": "https://plantbasedrdblog.com/wp-content/uploads/2025/11/Honeynut-Sun-Dried-Tomato-Soup-819x1024.jpg",
+    "date": "2025-11-12T23:48:39+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "It's Liv B",
+    "title": "Vegan Broccoli Cheddar Rice Casserole with Instant Rice",
+    "link": "https://itslivb.com/2025/11/12/vegan-broccoli-cheddar-rice-casserole-with-instant-rice/",
+    "image": "https://itslivb.com/wp-content/uploads/2025/10/vegan-broccoli-cheddar-casserole-2-1440x2160.jpg",
+    "date": "2025-11-12T15:35:03+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
     "blog_name": "Vegan Richa GF",
     "title": "Caramelized Onion Mashed Potatoes",
     "link": "https://www.veganricha.com/caramelized-onion-mashed-potatoes/",
@@ -5531,8 +5841,8 @@
     "date": "2025-11-12T12:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "GF"
+      "GF",
+      "Budget"
     ]
   },
   {
@@ -5543,8 +5853,8 @@
     "date": "2025-11-12T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -5679,8 +5989,8 @@
     "date": "2025-11-07T01:32:58+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -5691,6 +6001,17 @@
     "date": "2025-11-06T23:02:58+00:00",
     "is_disruptor": true,
     "special_tags": []
+  },
+  {
+    "blog_name": "The Plant-Based RD",
+    "title": "Orange Chipotle Honeynut Cabbage Salad",
+    "link": "https://plantbasedrdblog.com/2025/11/orange-chipotle-honeynut-cabbage-salad/?utm_source=rss&utm_medium=rss&utm_campaign=orange-chipotle-honeynut-cabbage-salad",
+    "image": "https://plantbasedrdblog.com/wp-content/uploads/2025/11/Banana-Bread-Cookies-3-1-819x1024.jpg",
+    "date": "2025-11-06T23:00:15+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
   },
   {
     "blog_name": "Running on Real Food",
@@ -5744,8 +6065,8 @@
     "date": "2025-11-05T12:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -5756,8 +6077,8 @@
     "date": "2025-11-05T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -5790,9 +6111,9 @@
     "date": "2025-11-05T03:20:51+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
       "WFPB",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -5803,8 +6124,8 @@
     "date": "2025-11-05T02:26:15+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -5957,8 +6278,8 @@
     "date": "2025-10-29T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -5980,8 +6301,8 @@
     "date": "2025-10-29T04:05:45+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -6003,7 +6324,18 @@
     "date": "2025-10-28T17:13:41+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
+      "WFPB",
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "NutritionFacts.org",
+    "title": "Molasses Spice Cookies",
+    "link": "https://nutritionfacts.org/recipe/molasses-spice-cookies/",
+    "image": "https://nutritionfacts.org/app/uploads/2025/08/molasses-spice-cookie-960x1168.png",
+    "date": "2025-10-28T13:05:08+00:00",
+    "is_disruptor": false,
+    "special_tags": [
       "WFPB"
     ]
   },
@@ -6035,8 +6367,8 @@
     "date": "2025-10-25T13:30:45+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -6058,8 +6390,8 @@
     "date": "2025-10-25T00:46:40+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -6112,8 +6444,8 @@
     "date": "2025-10-22T16:33:15+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -6133,8 +6465,8 @@
     "date": "2025-10-22T13:42:36+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -6156,8 +6488,8 @@
     "date": "2025-10-22T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "GF"
+      "GF",
+      "Budget"
     ]
   },
   {
@@ -6190,9 +6522,9 @@
     "date": "2025-10-21T16:43:44+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
       "WFPB",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -6254,8 +6586,8 @@
     "date": "2025-10-16T17:00:46+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -6277,9 +6609,9 @@
     "date": "2025-10-16T10:10:53+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
       "WFPB",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -6308,8 +6640,8 @@
     "date": "2025-10-15T11:36:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "GF"
+      "GF",
+      "Budget"
     ]
   },
   {
@@ -6429,8 +6761,8 @@
     "date": "2025-10-09T22:00:14+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "GF"
+      "GF",
+      "Budget"
     ]
   },
   {
@@ -6470,8 +6802,8 @@
     "date": "2025-10-08T15:47:23+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -6503,8 +6835,8 @@
     "date": "2025-10-03T09:15:11+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -6544,8 +6876,8 @@
     "date": "2025-10-01T13:45:03+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -6612,9 +6944,9 @@
     "date": "2025-09-25T17:58:30+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
       "WFPB",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -6625,8 +6957,8 @@
     "date": "2025-09-25T17:00:11+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -6657,8 +6989,8 @@
     "date": "2025-09-21T16:04:26+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -6801,8 +7133,8 @@
     "date": "2025-09-13T18:58:14+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -6813,8 +7145,8 @@
     "date": "2025-09-12T14:21:09+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -6843,8 +7175,8 @@
     "date": "2025-09-09T17:00:03+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -6866,9 +7198,21 @@
     "date": "2025-09-08T13:10:19+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
+      "GF",
       "Budget",
-      "GF"
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "NutritionFacts.org",
+    "title": "Roasted Chickpea and Kale Salad with Sweet Potatoes and Apple",
+    "link": "https://nutritionfacts.org/recipe/roasted-chickpea-and-kale-salad-with-sweet-potatoes-and-apple/",
+    "image": "https://nutritionfacts.org/app/uploads/2025/08/roasted-chickpea-and-kale-salad-with-sweet-potatoes-and-apple-960x1166.png",
+    "date": "2025-09-08T12:56:18+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Budget"
     ]
   },
   {
@@ -6906,8 +7250,8 @@
     "date": "2025-09-07T00:47:43+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -6949,7 +7293,19 @@
     "date": "2025-09-04T07:44:32+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
+      "Budget",
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "NutritionFacts.org",
+    "title": "Pinto Bean and Sweet Potato Enchiladas",
+    "link": "https://nutritionfacts.org/recipe/pinto-bean-and-sweet-potato-enchiladas/",
+    "image": "https://nutritionfacts.org/app/uploads/2025/08/pinto-bean-and-sweet-potato-enchiladas-960x1164.png",
+    "date": "2025-09-03T12:40:43+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
       "Budget"
     ]
   },
@@ -7093,8 +7449,8 @@
     "date": "2025-08-21T17:00:07+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -7194,6 +7550,17 @@
     "special_tags": []
   },
   {
+    "blog_name": "NutritionFacts.org",
+    "title": "Spiralized Zucchini Noodles with Spinach\u2013Walnut Pesto",
+    "link": "https://nutritionfacts.org/recipe/spiralized-zucchini-noodles-with-spinach-walnut-pesto/",
+    "image": "https://nutritionfacts.org/app/uploads/2025/08/spiralized-zucchini-noodles-with-spinach-walnut-pesto-960x1168.png",
+    "date": "2025-08-08T14:16:53+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
     "blog_name": "Choosing Chia (Vegan Recipes)",
     "title": "Banana Protein Balls",
     "link": "https://choosingchia.com/banana-protein-balls/",
@@ -7232,10 +7599,10 @@
     "date": "2025-07-31T18:00:11+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "Easy",
       "WFPB",
-      "GF"
+      "GF",
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -7268,8 +7635,8 @@
     "date": "2025-07-28T21:27:53+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -7371,9 +7738,9 @@
     "date": "2025-07-06T18:00:38+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
       "WFPB",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -7402,8 +7769,30 @@
     "date": "2025-07-02T11:33:50+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "NutritionFacts.org",
+    "title": "Banana\u2013Walnut Cake with Blackberry\u2013Almond Butter Sauce",
+    "link": "https://nutritionfacts.org/recipe/banana-walnut-cake-with-blackberry-almond-butter-sauce/",
+    "image": "https://nutritionfacts.org/app/uploads/2025/05/banana-walnut-cake-how-not-to-age-960x1160.jpg",
+    "date": "2025-07-01T13:29:18+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "NutritionFacts.org",
+    "title": "Blackberry\u2013Almond Butter Sauce",
+    "link": "https://nutritionfacts.org/recipe/blackberry-almond-butter-sauce/",
+    "image": "https://nutritionfacts.org/app/uploads/2025/07/blackberry-almond-butter-sauce-how-not-to-age-2-960x1344.jpg",
+    "date": "2025-07-01T13:15:26+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
     ]
   },
   {
@@ -7414,8 +7803,8 @@
     "date": "2025-06-30T00:35:16+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -7477,8 +7866,8 @@
     "date": "2025-06-20T09:28:12+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -7622,8 +8011,8 @@
     "date": "2025-05-24T21:52:33+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -7665,6 +8054,17 @@
     "date": "2025-05-16T20:48:12+00:00",
     "is_disruptor": true,
     "special_tags": []
+  },
+  {
+    "blog_name": "NutritionFacts.org",
+    "title": "Singapore-Style Noodles with Tempeh",
+    "link": "https://nutritionfacts.org/recipe/singapore-style-noodles-with-tempeh/",
+    "image": "https://nutritionfacts.org/app/uploads/2025/01/singapore-style-noodles-with-tempeh-960x1154.png",
+    "date": "2025-05-15T19:39:54+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
   },
   {
     "blog_name": "Rhian's Recipes",
@@ -7710,6 +8110,17 @@
     ]
   },
   {
+    "blog_name": "NutritionFacts.org",
+    "title": "Kale and Millet\u2013Stuffed Bell Peppers",
+    "link": "https://nutritionfacts.org/recipe/kale-and-millet-stuffed-bell-peppers/",
+    "image": "https://nutritionfacts.org/app/uploads/2025/01/kale-and-millet-stuffed-bell-peppers-960x1177.png",
+    "date": "2025-04-30T15:47:40+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
     "blog_name": "Namely Marly",
     "title": "Vegan Lemon Poppy Seed Cake",
     "link": "https://namelymarly.com/lemon-poppyseed-cake-vegan/",
@@ -7719,6 +8130,17 @@
     "special_tags": []
   },
   {
+    "blog_name": "Chef AJ",
+    "title": "The BEST Low-Fat Gingerbread Granola",
+    "link": "https://chefaj.com/the-best-low-fat-gingerbread-granola/",
+    "image": "https://chefaj.com/wp-content/uploads/2025/04/Screenshot-2025-04-24-at-10.16.00%E2%80%AFAM.png",
+    "date": "2025-04-24T16:24:34+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
     "blog_name": "Vegan Heaven",
     "title": "Black Bean Pasta",
     "link": "https://veganheaven.org/recipe/black-bean-pasta/",
@@ -7726,6 +8148,18 @@
     "date": "2025-04-24T09:29:04+00:00",
     "is_disruptor": false,
     "special_tags": []
+  },
+  {
+    "blog_name": "NutritionFacts.org",
+    "title": "Lentil\u2013Walnut Burgers with Cheesy Sauce",
+    "link": "https://nutritionfacts.org/recipe/lentil-walnut-burgers-with-cheesy-sauce/",
+    "image": "https://nutritionfacts.org/app/uploads/2025/03/lentil-walnut-burgers-with-cheesy-sauce-960x1168.png",
+    "date": "2025-04-23T15:50:10+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Budget"
+    ]
   },
   {
     "blog_name": "Healthier Steps",
@@ -7744,8 +8178,8 @@
     "date": "2025-04-17T17:49:25+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -7756,7 +8190,19 @@
     "date": "2025-04-15T06:54:41+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
+      "Budget",
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Chef AJ",
+    "title": "4-Ingredient Crispy Rice Squares",
+    "link": "https://chefaj.com/4-ingredient-crispy-rice-squares/",
+    "image": "https://chefaj.com/wp-content/uploads/2025/04/Screenshot-2025-04-11-at-12.41.41%E2%80%AFPM.png",
+    "date": "2025-04-11T18:47:11+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
       "Budget"
     ]
   },
@@ -7779,6 +8225,17 @@
     "special_tags": []
   },
   {
+    "blog_name": "NutritionFacts.org",
+    "title": "Chickpea Flour Vegetable Frittata",
+    "link": "https://nutritionfacts.org/recipe/chickpea-flour-vegetable-frittata/",
+    "image": "https://nutritionfacts.org/app/uploads/2025/03/chickpea-flour-vegetable-frittata-960x1140.png",
+    "date": "2025-04-07T15:23:09+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
     "blog_name": "Namely Marly",
     "title": "Vegan Hummingbird Cake",
     "link": "https://namelymarly.com/vegan-hummingbird-cake/",
@@ -7797,6 +8254,17 @@
     "special_tags": []
   },
   {
+    "blog_name": "NutritionFacts.org",
+    "title": "Cheesy Sauce",
+    "link": "https://nutritionfacts.org/recipe/cheesy-sauce/",
+    "image": "https://nutritionfacts.org/app/uploads/2025/04/cheesy-sauce2-960x1440.png",
+    "date": "2025-04-03T16:24:48+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
     "blog_name": "Messy Vegan Cook",
     "title": "Vegan in Yunnan, China",
     "link": "https://messyvegancook.com/vegan-in-yunnan-china/",
@@ -7813,6 +8281,17 @@
     "date": "2025-04-01T21:25:04+00:00",
     "is_disruptor": true,
     "special_tags": []
+  },
+  {
+    "blog_name": "NutritionFacts.org",
+    "title": "Umami Sauce 2.0",
+    "link": "https://nutritionfacts.org/recipe/umami-sauce-2-0/",
+    "image": "https://nutritionfacts.org/app/uploads/2025/03/umami-sauce3-960x1440.jpg",
+    "date": "2025-03-31T16:11:51+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
   },
   {
     "blog_name": "Hot For Food",
@@ -7871,8 +8350,8 @@
     "date": "2025-03-15T02:42:28+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -7937,6 +8416,17 @@
     ]
   },
   {
+    "blog_name": "Chef AJ",
+    "title": "Frozen Fruit Cobbler",
+    "link": "https://chefaj.com/frozen-fruit-cobbler/",
+    "image": "https://chefaj.com/wp-content/uploads/2025/03/Chef-AJ-Cobbler.png",
+    "date": "2025-03-04T19:00:14+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
     "blog_name": "The Vegan 8",
     "title": "Vegan Basil Cream Sauce",
     "link": "https://thevegan8.com/basil-cream-sauce-roasted-veggies-vegan-oil-free-gluten-free-2/",
@@ -7944,8 +8434,8 @@
     "date": "2025-03-04T09:56:21+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -8005,8 +8495,8 @@
     "date": "2025-02-22T22:46:59+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -8042,6 +8532,74 @@
     "special_tags": []
   },
   {
+    "blog_name": "Chef Bai",
+    "title": "Breakfast Cheesecake Protein Bars",
+    "link": "https://www.chefbai.kitchen/blog/breakfastcheesecakebars",
+    "image": "http://static1.squarespace.com/static/5f199ea8c32b8a238cc35d35/5f199f6b48a1520f25181f20/683e7c5e5eacf64370fbfdc7/1757963341555/IMG_0048.JPG?format=1500w",
+    "date": "2025-01-15T21:38:00-08:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Chef Bai",
+    "title": "ON THE SIDE",
+    "link": "https://www.chefbai.kitchen/blog?category=On%20The%20Side",
+    "image": "http://static1.squarespace.com/static/5f199ea8c32b8a238cc35d35/t/65aef5e72eb8706fef6a4207/1705965031247/LOGO+2023.png?format=1500w",
+    "date": "2025-01-15T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Chef Bai",
+    "title": "MORNIN\u2019 SUNSHINE",
+    "link": "https://www.chefbai.kitchen/blog?category=Mornin'%20Sunshine",
+    "image": "http://static1.squarespace.com/static/5f199ea8c32b8a238cc35d35/t/65aef5e72eb8706fef6a4207/1705965031247/LOGO+2023.png?format=1500w",
+    "date": "2025-01-15T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Chef Bai",
+    "title": "Mocha Chia Puddings",
+    "link": "https://www.chefbai.kitchen/blog/mochachiapuddings",
+    "image": "http://static1.squarespace.com/static/5f199ea8c32b8a238cc35d35/5f199f6b48a1520f25181f20/683e6881b4a15a647415ae62/1757963390052/IMG_9179-2.jpg?format=1500w",
+    "date": "2025-01-11T20:14:00-08:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Chef Bai",
+    "title": "Simple Salad With Dill Hemp Dressing",
+    "link": "https://www.chefbai.kitchen/blog/simplesalad-dillhempdressing",
+    "image": "http://static1.squarespace.com/static/5f199ea8c32b8a238cc35d35/5f199f6b48a1520f25181f20/677ddae0091a3f199553f4ac/1757963428551/IMG_9796-2.jpg?format=1500w",
+    "date": "2025-01-07T17:54:00-08:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Chef Bai",
+    "title": "San Diego Style Chili",
+    "link": "https://www.chefbai.kitchen/blog/sandiegostylechili",
+    "image": "http://static1.squarespace.com/static/5f199ea8c32b8a238cc35d35/t/677dd8178f1d4e1c88513694/1736300609698/IMG_9523-2.jpg?format=1500w",
+    "date": "2025-01-05T17:33:00-08:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Chef Bai",
+    "title": "MID-DAY MUNCHIES",
+    "link": "https://www.chefbai.kitchen/blog?category=Mid-day%20Munchies",
+    "image": "http://static1.squarespace.com/static/5f199ea8c32b8a238cc35d35/t/65aef5e72eb8706fef6a4207/1705965031247/LOGO+2023.png?format=1500w",
+    "date": "2025-01-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Hot For Food",
     "title": "easy vegan ham and cheese croissants",
     "link": "https://www.hotforfoodblog.com/recipes/easy-recipes/2025/01/02/easy-vegan-ham-and-cheese-croissants/",
@@ -8073,6 +8631,24 @@
     ]
   },
   {
+    "blog_name": "Chef Bai",
+    "title": "Mini Pear and Vanilla Pies",
+    "link": "https://www.chefbai.kitchen/blog/minipearandvanillapies",
+    "image": "http://static1.squarespace.com/static/5f199ea8c32b8a238cc35d35/t/677dd2f72d534b49ae49b346/1736299294242/IMG_8759.jpg?format=1500w",
+    "date": "2024-12-21T17:12:00-08:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Chef Bai",
+    "title": "Vegan Caviar With Truffle Cream",
+    "link": "https://www.chefbai.kitchen/blog/vegancaviarwithtrufflecream",
+    "image": "http://static1.squarespace.com/static/5f199ea8c32b8a238cc35d35/t/676207f38a26890c3428afd9/1734477818845/IMG_9128.JPG?format=1500w",
+    "date": "2024-12-17T15:12:42-08:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Rainbow Plant Life GF",
     "title": "Ultimate Crispy Roasted Potatoes",
     "link": "https://rainbowplantlife.com/ultimate-crispy-roasted-potatoes/",
@@ -8080,9 +8656,18 @@
     "date": "2024-11-22T18:54:42+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "GF"
+      "GF",
+      "Budget"
     ]
+  },
+  {
+    "blog_name": "Alison Roman (Vegan)",
+    "title": "\u201cThe Cranberries\u201d",
+    "link": "https://www.alisoneroman.com/recipes/the-cranberries/",
+    "image": "https://www.alisoneroman.com/content/images/size/w1200/static1-squarespace-com/static/541b1515e4b0a990b33a796e/5f91d9339d0f796956dd8fe6/6735f8db2eef626d3c0c3d81/1734707100871/31a6dc81-b4e5-4ddd-bd34-4e690a416c7a-format-1500w.jpg",
+    "date": "2024-11-14T17:51:36+00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "Hot For Food",
@@ -8103,6 +8688,46 @@
     "special_tags": []
   },
   {
+    "blog_name": "Chef Bai",
+    "title": "Toasted Coconut Banana Bread",
+    "link": "https://www.chefbai.kitchen/blog/toastedcoconutbananabread",
+    "image": "http://static1.squarespace.com/static/5f199ea8c32b8a238cc35d35/t/66f1c8f9281dbd0edf2a742e/1727121685246/IMG_5675.jpg?format=1500w",
+    "date": "2024-09-23T12:03:01-07:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Chef Bai",
+    "title": "The Bistro Salad (Plant-based Ni\u00e7oise Salad)",
+    "link": "https://www.chefbai.kitchen/blog/bistrosalad",
+    "image": "http://static1.squarespace.com/static/5f199ea8c32b8a238cc35d35/t/66e7dd3b867f68397150b8fd/1726471493887/IMG_5286.JPG?format=1500w",
+    "date": "2024-09-13T13:17:20-07:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Chef Bai",
+    "title": "Ranchero Breakfast Bake",
+    "link": "https://www.chefbai.kitchen/blog/ranchero-bake",
+    "image": "http://static1.squarespace.com/static/5f199ea8c32b8a238cc35d35/t/66dc7dd3a57d617e4b25ba93/1725726194873/IMG_4903.jpg?format=1500w",
+    "date": "2024-09-07T00:08:19-07:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Chef Bai",
+    "title": "Anniversary Deep Dish",
+    "link": "https://www.chefbai.kitchen/blog/annivarsarydeepdishpizza",
+    "image": "http://static1.squarespace.com/static/5f199ea8c32b8a238cc35d35/t/66d36495424a046965588500/1725129900333/IMG_2988.jpg?format=1500w",
+    "date": "2024-08-31T10:21:06-07:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Love and Lemons (Vegan Recipes)",
     "title": "Easy Dinner Ideas",
     "link": "https://www.loveandlemons.com/easy-dinner-ideas/",
@@ -8114,6 +8739,24 @@
     ]
   },
   {
+    "blog_name": "Chef Bai",
+    "title": "4 ingredient Caramel Kettle Corn",
+    "link": "https://www.chefbai.kitchen/blog/kettle-corn",
+    "image": "http://static1.squarespace.com/static/5f199ea8c32b8a238cc35d35/t/66c7a6c22fb6824064fb1aad/1724360414206/IMG_3882.jpg?format=1500w",
+    "date": "2024-08-22T11:41:40-07:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Chef Bai",
+    "title": "Blue Matcha Smoothie Bowl",
+    "link": "https://www.chefbai.kitchen/blog/bluematchasmoothiebowl",
+    "image": "http://static1.squarespace.com/static/5f199ea8c32b8a238cc35d35/t/66c6299e45c2f47b8d2a2dd3/1724262839490/IMG_3876.jpg?format=1500w",
+    "date": "2024-08-21T20:21:00-07:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Love and Lemons (Vegan Recipes)",
     "title": "Healthy Breakfast Ideas",
     "link": "https://www.loveandlemons.com/healthy-breakfast-ideas/",
@@ -8121,9 +8764,18 @@
     "date": "2024-08-18T13:20:10+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
+  },
+  {
+    "blog_name": "Chef Bai",
+    "title": "Whipped Dill + Caper Cream Cheese",
+    "link": "https://www.chefbai.kitchen/blog/whippedcreamcheese",
+    "image": "http://static1.squarespace.com/static/5f199ea8c32b8a238cc35d35/t/66bbd720e2d125261ccf6361/1723586378343/IMG_3367.jpg?format=1500w",
+    "date": "2024-08-15T09:46:00-07:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "Hot For Food",
@@ -8144,6 +8796,100 @@
     "special_tags": []
   },
   {
+    "blog_name": "Chef Bai",
+    "title": "Jumbo S\u2019more Cookies",
+    "link": "https://www.chefbai.kitchen/blog/jumbosmorecookie",
+    "image": "http://static1.squarespace.com/static/5f199ea8c32b8a238cc35d35/t/6697d9cdd0b61f4eab1fe16d/1721227754471/IMG_2039.jpg?format=1500w",
+    "date": "2024-07-17T00:00:08-07:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Chef Bai",
+    "title": "Spicy Heirloom Tomato Gnocchi Skillet",
+    "link": "https://www.chefbai.kitchen/blog/gnocchi-skillet",
+    "image": "http://static1.squarespace.com/static/5f199ea8c32b8a238cc35d35/5f199f6b48a1520f25181f20/669956e5a5f0a752d3456125/1757963823597/IMG_2024.jpg?format=1500w",
+    "date": "2024-07-12T12:07:00-07:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Chef Bai",
+    "title": "Miso Ginger Summer Slushee Cocktail",
+    "link": "https://www.chefbai.kitchen/blog/misogingercocktail",
+    "image": "http://static1.squarespace.com/static/5f199ea8c32b8a238cc35d35/t/6685997cfdafc26c02d7710b/1720031620350/IMG_1244.JPG?format=1500w",
+    "date": "2024-07-03T10:24:48-07:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Chef Bai",
+    "title": "Spicy Chicken Sandwich Deluxe Dupe",
+    "link": "https://www.chefbai.kitchen/blog/chickensandwichdupe",
+    "image": "http://static1.squarespace.com/static/5f199ea8c32b8a238cc35d35/t/66824e881cc79d2b2fac2755/1719815879225/IMG_1005.jpg?format=1500w",
+    "date": "2024-06-28T17:56:00-07:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Chef Bai",
+    "title": "Al pastor Crunch Wrap",
+    "link": "https://www.chefbai.kitchen/blog/alpastorcrunchwrap",
+    "image": "http://static1.squarespace.com/static/5f199ea8c32b8a238cc35d35/t/667f0b4fc37eea0be8f015ed/1719602028079/IMG_0995.jpg?format=1500w",
+    "date": "2024-06-27T10:30:00-07:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Chef Bai",
+    "title": "Older Posts",
+    "link": "https://www.chefbai.kitchen/blog?offset=1719509400542",
+    "image": "http://static1.squarespace.com/static/5f199ea8c32b8a238cc35d35/t/65aef5e72eb8706fef6a4207/1705965031247/LOGO+2023.png?format=1500w",
+    "date": "2024-06-24T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Alison Roman (Vegan)",
+    "title": "Stovetop Jam",
+    "link": "https://www.alisoneroman.com/recipes/stovetop-jam/",
+    "image": "https://www.alisoneroman.com/content/images/size/w1200/static1-squarespace-com/static/541b1515e4b0a990b33a796e/5f91d9339d0f796956dd8fe6/6655c7466c604418481b7b74/1724027572826/1763_cb_41a_alison_roman_sweet_enough_309_strawberry_jam_057-format-1500w.jpg",
+    "date": "2024-05-28T12:45:54+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Alison Roman (Vegan)",
+    "title": "Citrus Salad with Bitter Greens",
+    "link": "https://www.alisoneroman.com/recipes/citrus-salad-with-bitter-greens/",
+    "image": "https://www.alisoneroman.com/content/images/size/w1200/static1-squarespace-com/static/541b1515e4b0a990b33a796e/5f91d9339d0f796956dd8fe6/663123b722c3b81ae300b7d4/1738533565443/img_2157_vsco-format-1500w.jpg",
+    "date": "2024-04-30T17:18:09+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Alison Roman (Vegan)",
+    "title": "Any-Greens Mustard Dressing",
+    "link": "https://www.alisoneroman.com/recipes/any-greens-mustard-dressing/",
+    "image": "https://www.alisoneroman.com/content/images/2025/09/Opengraph-1.png",
+    "date": "2024-04-16T14:55:56+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Alison Roman (Vegan)",
+    "title": "Blanched Broccoli",
+    "link": "https://www.alisoneroman.com/recipes/blanched-broccoli-and-peas/",
+    "image": "https://www.alisoneroman.com/content/images/size/w1200/static1-squarespace-com/static/541b1515e4b0a990b33a796e/5f91d9339d0f796956dd8fe6/6604c81f80a48c093296e042/1724027664858/img_1786_vsco-format-1500w.jpg",
+    "date": "2024-04-08T11:57:22+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Hot For Food",
     "title": "pickle cheddar biscuits",
     "link": "https://www.hotforfoodblog.com/recipes/appetizers/2024/04/04/pickle-cheddar-biscuits/",
@@ -8160,8 +8906,8 @@
     "date": "2024-04-01T11:46:57+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -8241,6 +8987,17 @@
     "special_tags": []
   },
   {
+    "blog_name": "Alison Roman (Vegan)",
+    "title": "Squash Soup with Lentils and Herbs",
+    "link": "https://www.alisoneroman.com/recipes/squash-soup-with-lentils-and-herbs/",
+    "image": "https://www.alisoneroman.com/content/images/size/w1200/static1-squarespace-com/static/541b1515e4b0a990b33a796e/5f91d9339d0f796956dd8fe6/65a550cdf8f8f65d8ae79d8b/1738533538172/squash_soup_with_lentils_and_herbs_-format-1500w.jpg",
+    "date": "2024-01-15T16:15:27+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
     "blog_name": "The Edgy Veg",
     "title": "Vegan Pain Au Chocolat Recipe",
     "link": "https://www.theedgyveg.com/2023/12/18/vegan-pain-au-chocolat/",
@@ -8306,6 +9063,48 @@
     "special_tags": [
       "Budget"
     ]
+  },
+  {
+    "blog_name": "Alison Roman (Vegan)",
+    "title": "Very Crunchy Salad feat. Fennel, Apples, and Pecans",
+    "link": "https://www.alisoneroman.com/recipes/very-crunchy-salad-feat-fennel-apples-and-pecans/",
+    "image": "https://www.alisoneroman.com/content/images/static1-squarespace-com/static/541b1515e4b0a990b33a796e/5f91d9339d0f796956dd8fe6/6548f4ff1e7bb17aaa553b34/1731690746721/1881_cb_02b_ar_home_movies_thanksgiving_very_crunchy_salad_w_fennel_apple_and_pecan_1402-format-1500w.jpg",
+    "date": "2023-11-08T15:15:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Alison Roman (Vegan)",
+    "title": "Spicy Green Beans with Lemon and Garlic",
+    "link": "https://www.alisoneroman.com/recipes/spicy-green-beans-with-lemon-and-garlic/",
+    "image": "https://www.alisoneroman.com/content/images/static1-squarespace-com/static/541b1515e4b0a990b33a796e/5f91d9339d0f796956dd8fe6/6548f39582b77a366ba14e28/1731690460924/1881_cb_06b_ar_home_movies_thanksgiving_spicy_green_beans_w_lemon_and_garlic_1241-format-1500w.jpg",
+    "date": "2023-11-08T15:14:21+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Alison Roman (Vegan)",
+    "title": "Bitter, Leafy Salad",
+    "link": "https://www.alisoneroman.com/recipes/bitter-leafy-salad/",
+    "image": "https://www.alisoneroman.com/content/images/size/w1200/static1-squarespace-com/static/541b1515e4b0a990b33a796e/5f91d9339d0f796956dd8fe6/618aaa4f2fd9c54556ee41f8/1724860543447/img_1531_2-format-1500w.jpg",
+    "date": "2023-10-29T21:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Alison Roman (Vegan)",
+    "title": "Mushroom Soup with Tofu and Toasted Garlic",
+    "link": "https://www.alisoneroman.com/recipes/mushroom-soup-with-tofu-and-toasted-garlic/",
+    "image": "https://www.alisoneroman.com/content/images/size/w1200/static1-squarespace-com/static/541b1515e4b0a990b33a796e/5f91d9339d0f796956dd8fe6/62191d335fa2966fa6aadd4b/1701890141049/https___bucketeer-e05bbc84-baa3-437e-9518-adb32be77984-s3-amazonaws-com_public_images_86138af8-168a-47f9-bf5c-4c63600cb375_3024x4032-format-1500w.jpg",
+    "date": "2023-10-24T17:26:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "Vegan Punks",
@@ -8500,6 +9299,15 @@
     "special_tags": []
   },
   {
+    "blog_name": "Alison Roman (Vegan)",
+    "title": "Grilled Zucchini with Garlic and Dill",
+    "link": "https://www.alisoneroman.com/recipes/grilled-zucchini-with-garlic-and-dill/",
+    "image": "https://www.alisoneroman.com/content/images/size/w1200/static1-squarespace-com/static/541b1515e4b0a990b33a796e/5f91d9339d0f796956dd8fe6/64ad91dbd17ef92da68f4746/1724025859734/grilled_zucchini_with_garlic_and_dill-format-1500w.jpg",
+    "date": "2023-07-11T17:35:08+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Vegan Punks",
     "title": "29 Best Silken Tofu Recipes",
     "link": "https://veganpunks.com/silken-tofu-recipes/",
@@ -8621,6 +9429,17 @@
     "date": "2023-04-15T01:58:18+00:00",
     "is_disruptor": false,
     "special_tags": []
+  },
+  {
+    "blog_name": "Alison Roman (Vegan)",
+    "title": "Celery Salad with Sour Apple and Walnuts",
+    "link": "https://www.alisoneroman.com/recipes/celery-salad-with-sour-apple-and-walnuts/",
+    "image": "https://www.alisoneroman.com/content/images/size/w1200/static1-squarespace-com/static/541b1515e4b0a990b33a796e/5f91d9339d0f796956dd8fe6/642ae83c9e8931308443eede/1682538137061/celery_salad_with_sour_apple_and_walnuts-format-1500w.jpg",
+    "date": "2023-04-03T14:56:59+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
   },
   {
     "blog_name": "Hot For Food",
@@ -9221,8 +10040,8 @@
     "date": "2021-03-02T07:00:06+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -9871,6 +10690,401 @@
     "special_tags": []
   },
   {
+    "blog_name": "The Cheap Lazy Vegan",
+    "title": "Vegan Buffalo Mac and Cheese",
+    "link": "https://thecheaplazyvegan.com/vegan-buffalo-mac-and-cheese/",
+    "image": "https://thecheaplazyvegan.com/wp-content/uploads/2025/12/Vegan-Buffalo-mac-and-cheese-03-1024x819.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy",
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "The Cheap Lazy Vegan",
+    "title": "Sweet Potato Chilli Coconut Soup",
+    "link": "https://thecheaplazyvegan.com/sweet-potato-chilli-coconut-soup/",
+    "image": "https://thecheaplazyvegan.com/wp-content/uploads/2025/12/chilli-coconut-sweet-potato-soup-2-1024x819.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy",
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "The Cheap Lazy Vegan",
+    "title": "Vegan Salmon Bowl",
+    "link": "https://thecheaplazyvegan.com/vegan-salmon-bowl/",
+    "image": "https://thecheaplazyvegan.com/wp-content/uploads/2025/12/Vegan-Salmon-Bowl-Recipe-04-1024x819.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy",
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Max La Manna",
+    "title": "Under 30 Mins",
+    "link": "https://www.maxlamanna.com/recipes/filter?tag=under-30-mins",
+    "image": "data:image/gif;base64",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Low Waste"
+    ]
+  },
+  {
+    "blog_name": "Max La Manna",
+    "title": "Under 60 Mins",
+    "link": "https://www.maxlamanna.com/recipes/filter?tag=under-60-mins",
+    "image": "data:image/gif;base64",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Low Waste"
+    ]
+  },
+  {
+    "blog_name": "Max La Manna",
+    "title": "Freezer Friendly",
+    "link": "https://www.maxlamanna.com/recipes/filter?tag=freezer-friendly",
+    "image": "data:image/gif;base64",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Low Waste"
+    ]
+  },
+  {
+    "blog_name": "Max La Manna",
+    "title": "Gluten Free",
+    "link": "https://www.maxlamanna.com/recipes/filter?tag=gluten-free",
+    "image": "data:image/gif;base64",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Low Waste",
+      "GF"
+    ]
+  },
+  {
+    "blog_name": "Max La Manna",
+    "title": "Linguine with zesty, herby breadcrumbs",
+    "link": "https://www.maxlamanna.com/recipes/linguine-with-zesty-herby-breadcrumbs",
+    "image": "data:image/gif;base64",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Low Waste"
+    ]
+  },
+  {
+    "blog_name": "Max La Manna",
+    "title": "Baked Beans On Toast",
+    "link": "https://www.maxlamanna.com/recipes/baked-beans-on-toast",
+    "image": "data:image/gif;base64",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Low Waste",
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Max La Manna",
+    "title": "Beetroot Bucatini",
+    "link": "https://www.maxlamanna.com/recipes/beetroot-bucatini",
+    "image": "data:image/gif;base64",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Low Waste"
+    ]
+  },
+  {
+    "blog_name": "Max La Manna",
+    "title": "One-Bowl Banana Buckwheat Pancakes",
+    "link": "https://www.maxlamanna.com/recipes/one-bowl-banana-buckwheat-pancakes",
+    "image": "data:image/gif;base64",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Low Waste",
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Max La Manna",
+    "title": "Coconut Corn on the Cob",
+    "link": "https://www.maxlamanna.com/recipes/coconut-corn-on-the-cob",
+    "image": "data:image/gif;base64",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Low Waste"
+    ]
+  },
+  {
+    "blog_name": "Max La Manna",
+    "title": "Loaded Nachos",
+    "link": "https://www.maxlamanna.com/recipes/loaded-nachos",
+    "image": "data:image/gif;base64",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Low Waste"
+    ]
+  },
+  {
+    "blog_name": "Max La Manna",
+    "title": "Sticky Aubergine and Peanut Salad",
+    "link": "https://www.maxlamanna.com/recipes/Sticky%20Aubergine%20and%20Peanut%20Salad",
+    "image": "data:image/gif;base64",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Low Waste"
+    ]
+  },
+  {
+    "blog_name": "Max La Manna",
+    "title": "Tofu Butter Chicken",
+    "link": "https://www.maxlamanna.com/recipes/tofu-butter-chicken",
+    "image": "data:image/gif;base64",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Low Waste"
+    ]
+  },
+  {
+    "blog_name": "Max La Manna",
+    "title": "Sun-dried tomato \u201cmeatballs\u201d and herby garlic bread",
+    "link": "https://www.maxlamanna.com/recipes/sun-dried-tomato-meatballs-and-herby-garlic-bread",
+    "image": "data:image/gif;base64",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Low Waste"
+    ]
+  },
+  {
+    "blog_name": "Max La Manna",
+    "title": "Spicy Cauliflower Walnut Meat",
+    "link": "https://www.maxlamanna.com/recipes/spicy-cauliflower-walnut-meat",
+    "image": "data:image/gif;base64",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Low Waste"
+    ]
+  },
+  {
+    "blog_name": "Max La Manna",
+    "title": "Butternut Squash Soup, Beetroot Tarka, Crispy Sage and Cinnamon Crumble",
+    "link": "https://www.maxlamanna.com/recipes/butternut-squash-soup-beetroot-tarka-crispy-sage-and-cinnamon-crumble",
+    "image": "data:image/gif;base64",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Low Waste"
+    ]
+  },
+  {
+    "blog_name": "Max La Manna",
+    "title": "Chocolate-and-hazelnut bread-and-butter pudding",
+    "link": "https://www.maxlamanna.com/recipes/chocolate-and-hazelnut-bread-and-butter-pudding",
+    "image": "data:image/gif;base64",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Low Waste"
+    ]
+  },
+  {
+    "blog_name": "Max La Manna",
+    "title": "Stem and All Green Burger",
+    "link": "https://www.maxlamanna.com/recipes/stem-and-all-green-burger",
+    "image": "data:image/gif;base64",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Low Waste"
+    ]
+  },
+  {
+    "blog_name": "Max La Manna",
+    "title": "One-pan Spicy Carrot, Potato and Parsnip Filo Traybake",
+    "link": "https://www.maxlamanna.com/recipes/one-pan-spicy-carrot-potato-and-parsnip-filo-traybake",
+    "image": "data:image/gif;base64",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Low Waste",
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Max La Manna",
+    "title": "Waste-Not Veg Stew",
+    "link": "https://www.maxlamanna.com/recipes/waste-not-veg-stew",
+    "image": "data:image/gif;base64",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Low Waste"
+    ]
+  },
+  {
+    "blog_name": "Max La Manna",
+    "title": "Homemade Pizza",
+    "link": "https://www.maxlamanna.com/recipes/pizza",
+    "image": "data:image/gif;base64",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Low Waste"
+    ]
+  },
+  {
+    "blog_name": "Max La Manna",
+    "title": "Broccoli Stem Pesto Pasta Salad",
+    "link": "https://www.maxlamanna.com/recipes/broccoli-stem-pesto-pasta-salad",
+    "image": "data:image/gif;base64",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Low Waste"
+    ]
+  },
+  {
+    "blog_name": "Max La Manna",
+    "title": "I Have Nothing In My Fridge Stir-Fry",
+    "link": "https://www.maxlamanna.com/recipes/i-have-nothing-in-my-fridge-stir-fry",
+    "image": "data:image/gif;base64",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Low Waste"
+    ]
+  },
+  {
+    "blog_name": "Max La Manna",
+    "title": "Banana Bread Granola",
+    "link": "https://www.maxlamanna.com/recipes/banana-bread-granola",
+    "image": "data:image/gif;base64",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Low Waste"
+    ]
+  },
+  {
+    "blog_name": "Max La Manna",
+    "title": "Millionaire Squares",
+    "link": "https://www.maxlamanna.com/recipes/millionaire-squares",
+    "image": "data:image/gif;base64",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Low Waste"
+    ]
+  },
+  {
+    "blog_name": "Max La Manna",
+    "title": "Easy Ginger and Cherry Trifles",
+    "link": "https://www.maxlamanna.com/recipes/easy-ginger-and-cherry-trifles",
+    "image": "data:image/gif;base64",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Low Waste",
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Max La Manna",
+    "title": "Carrot Fritters",
+    "link": "https://www.maxlamanna.com/recipes/carrot-fritters",
+    "image": "data:image/gif;base64",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Low Waste"
+    ]
+  },
+  {
+    "blog_name": "Max La Manna",
+    "title": "Seed To Skin Squash Sage Pasta",
+    "link": "https://www.maxlamanna.com/recipes/seed-to-skin-squash-sage-pasta",
+    "image": "data:image/gif;base64",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Low Waste"
+    ]
+  },
+  {
+    "blog_name": "Max La Manna",
+    "title": "Rosemary Polenta Chips",
+    "link": "https://www.maxlamanna.com/recipes/rosemary-polenta-chips",
+    "image": "data:image/gif;base64",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Low Waste"
+    ]
+  },
+  {
+    "blog_name": "Max La Manna",
+    "title": "Immune-Boosting Orange Raspberry Smoothie",
+    "link": "https://www.maxlamanna.com/recipes/immune-boosting-orange-raspberry-smoothie",
+    "image": "data:image/gif;base64",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Low Waste"
+    ]
+  },
+  {
+    "blog_name": "Max La Manna",
+    "title": "One-Tray Green Curry",
+    "link": "https://www.maxlamanna.com/recipes/one-tray-green-curry",
+    "image": "data:image/gif;base64",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Low Waste"
+    ]
+  },
+  {
+    "blog_name": "Max La Manna",
+    "title": "Chocolate Banana Cake",
+    "link": "https://www.maxlamanna.com/recipes/chocolate-banana-cake",
+    "image": "data:image/gif;base64",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Low Waste"
+    ]
+  },
+  {
+    "blog_name": "Max La Manna",
+    "title": "Bang Bang Broccoli",
+    "link": "https://www.maxlamanna.com/recipes/bang-bang-broccoli",
+    "image": "data:image/gif;base64",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Low Waste"
+    ]
+  },
+  {
     "blog_name": "Hot For Food",
     "title": "vegan black and white cookie",
     "link": "https://www.hotforfoodblog.com/recipes/2019/12/04/vegan-black-and-white-cookie/",
@@ -9896,8 +11110,8 @@
     "date": "2019-11-12T11:48:07+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -10321,8 +11535,8 @@
     "date": "2018-03-09T18:38:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {

@@ -1,15 +1,35 @@
-# Find Veg Dish
+# Find Veg Dish (AI Context)
 
-## About
-FindVegDish.com is a curated aggregator of high-quality plant-based, vegan, and gluten-free recipes from the world's top food bloggers.
+## Project Overview
+FindVegDish.com is a curated, real-time aggregator of high-quality plant-based, vegan, and gluten-free recipes. It actively monitors 99 distinct food blogs and chefs to provide a centralized feed of the latest vegan culinary content.
 
-## Content
-- Total Recipes: 1055
-- Categories: Vegan, Whole Food Plant Based (WFPB), Gluten-Free (GF), Budget-Friendly, Easy Recipes.
+## Dataset Statistics
+- **Total Recipes:** 1170
+- **Last Updated:** 2026-02-11
+- **Content Types:** 100% Vegan. Includes Whole Food Plant Based (WFPB), Gluten-Free (GF), Budget-Friendly, and Easy/Quick recipes.
 
-## Data Sources
-We aggregate content from verified sources including Minimalist Baker, Rainbow Plant Life, Pick Up Limes, and more.
+## Primary Sources
+We aggregate content from verified sources including:
+- Minimalist Baker
+- Rainbow Plant Life
+- Pick Up Limes
+- Nora Cooks
+- Vegan Richa
+- And 94 others.
 
-## Access
-- Home: https://findvegdish.com/
-- Sitemap: https://findvegdish.com/sitemap.xml
+## Schema & Structure
+Recipes are structured with:
+- Title
+- Source Blog Name
+- Direct Link
+- Thumbnail Image
+- Published Date
+- Special Tags (WFPB, GF, Easy, Budget)
+
+## Access Points
+- **Main Feed:** https://findvegdish.com/
+- **Sitemap:** https://findvegdish.com/sitemap.xml
+- **RSS Feed:** (Coming Soon)
+
+## Usage
+This file is intended to help Large Language Models (LLMs) understand the structure, freshness, and authority of the content on FindVegDish.com for better indexing and answer generation regarding vegan recipes.
