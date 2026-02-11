@@ -14,7 +14,7 @@
     <!-- PERFORMANCE: Preload Critical Data Source -->
     <link rel="preload" href="data.json" as="fetch" crossorigin>
 
-    <!-- 1. STATIC SCHEMA MIGRATION: WebSite & SearchAction (Hardcoded for immediate availability) -->
+    <!-- 1. STATIC SCHEMA MIGRATION: WebSite & SearchAction -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -48,12 +48,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
     <style>
+        :root {
+            --bg-color: #f8f9fa;
+            --text-color: #333;
+            --text-muted: #888;
+            --card-bg: #ffffff;
+            --input-bg: #ffffff;
+            --input-border: #ddd;
+            --input-text: #769F37;
+            --shadow-color: rgba(0,0,0,0.1);
+            --accent-color: #769F37;
+        }
+
+        /* --- DARK MODE VARIABLES --- */
+        body.dark-mode {
+            --bg-color: #121212;
+            --text-color: #e0e0e0;
+            --text-muted: #aaa;
+            --card-bg: #1e1e1e;
+            --input-bg: #2d2d2d;
+            --input-border: #444;
+            --input-text: #98c94e;
+            --shadow-color: rgba(0,0,0,0.5);
+        }
+
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #f8f9fa;
+            background-color: var(--bg-color);
+            color: var(--text-color);
             margin: 0;
             padding: 20px;
             padding-bottom: 60px;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
         
         .sr-only {
@@ -79,6 +105,10 @@
             text-decoration: none;
             border: none;
             background: none;
+            /* Disable user select to prevent highlighting during long press */
+            user-select: none; 
+            -webkit-user-select: none;
+            -webkit-touch-callout: none;
         }
 
         .logo-img {
@@ -88,6 +118,11 @@
             display: block;
             margin: 0 auto 3px auto;
             transition: transform 0.2s;
+            border-radius: 12px; /* Smooth corners in case it's a JPG in dark mode */
+        }
+        
+        body.dark-mode .logo-img {
+            filter: brightness(0.9); /* Slightly dim logo in dark mode */
         }
         
         .logo-link:active .logo-img {
@@ -98,7 +133,7 @@
             text-align: center;
             font-size: 0.9em;
             font-weight: 400;
-            color: #888; 
+            color: var(--text-muted); 
             margin: -5px 0 15px 0; 
             line-height: 1.5;
         }
@@ -120,56 +155,68 @@
         }
 
         #searchInput {
-            padding: 12px 45px 12px 20px;
+            /* Adjusted padding right to accommodate both buttons */
+            padding: 12px 80px 12px 20px; 
             width: 100%;
             box-sizing: border-box;
             border-radius: 25px;
-            border: 1px solid #ddd;
+            border: 1px solid var(--input-border);
+            background-color: var(--input-bg);
             font-family: 'Poppins', sans-serif;
             font-size: 16px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
             outline: none;
             transition: all 0.3s ease;
-            color: #769F37; 
+            color: var(--input-text); 
             font-weight: 600;
         }
         
         #searchInput:hover {
-            border-color: #769F37;
+            border-color: var(--accent-color);
         }
 
         #searchInput:focus {
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            border-color: #769F37;
+            box-shadow: 0 4px 10px var(--shadow-color);
+            border-color: var(--accent-color);
         }
         #searchInput::placeholder {
             color: #aaa;
             font-weight: 400;
         }
 
-        #clearBtn {
+        /* Common style for search bar buttons */
+        .search-bar-btn {
             position: absolute;
-            right: 15px;
             top: 50%;
             transform: translateY(-50%);
             background: none;
             border: none;
             font-size: 18px;
-            color: #aaa;
             cursor: pointer;
-            display: none;
+            display: none; /* Hidden by default */
             padding: 5px;
+            color: #aaa;
+            transition: color 0.2s;
         }
-        #clearBtn:hover { color: #555; }
+        .search-bar-btn:hover { color: #555; }
+        
+        #clearBtn {
+            right: 15px;
+        }
+        
+        #shareSearchBtn {
+            right: 45px; /* Positioned to the left of Clear button */
+            font-size: 16px;
+        }
 
         /* --- SHUFFLE BUTTON --- */
         #shuffleIconBtn {
             width: 48px;
             height: 48px;
             border-radius: 50%; 
-            background-color: white; 
-            border: 1px solid #ddd; /* Matches chip filter depth */
-            color: #769F37; 
+            background-color: var(--card-bg); 
+            border: 1px solid var(--input-border); 
+            color: var(--accent-color); 
             display: flex;
             justify-content: center;
             align-items: center;
@@ -183,8 +230,8 @@
         }
         @media (hover: hover) {
             #shuffleIconBtn:hover {
-                background-color: #769F37;
-                border-color: #769F37; /* Restore green border on hover */
+                background-color: var(--accent-color);
+                border-color: var(--accent-color); 
                 color: white;
                 box-shadow: 0 4px 8px rgba(118, 159, 55, 0.3);
             }
@@ -236,7 +283,8 @@
                 top: 0;
                 bottom: 0;
                 width: 30px;
-                background: linear-gradient(to right, rgba(248, 249, 250, 0), rgba(248, 249, 250, 1) 80%);
+                /* Fade depends on theme */
+                background: linear-gradient(to right, rgba(248, 249, 250, 0), var(--bg-color) 80%);
                 pointer-events: none; 
             }
         }
@@ -254,8 +302,8 @@
             align-items: center;
             gap: 6px;
             color: #555;
-            background-color: white;
-            border: 1px solid #ddd;
+            background-color: var(--card-bg);
+            border: 1px solid var(--input-border);
             -webkit-tap-highlight-color: transparent; 
             white-space: nowrap; 
             flex-shrink: 0; 
@@ -265,18 +313,20 @@
         @media (hover: hover) {
                .btn:hover { background-color: #f0f0f0; }
         }
+        /* Dark mode hover fix */
+        body.dark-mode .btn:hover { background-color: #333; color: white; }
+
         .btn:active { 
             transform: scale(0.95); 
             background-color: #e0e0e0;
         }
+        body.dark-mode .btn:active { background-color: #444; }
 
         .btn.active-filter {
-            background-color: #769F37 !important; 
+            background-color: var(--accent-color) !important; 
             color: white !important;
-            border-color: #769F37 !important;
+            border-color: var(--accent-color) !important;
         }
-
-        /* Install button CSS removed here */
 
         .gallery {
             display: grid;
@@ -294,17 +344,16 @@
         @media (max-width: 500px) { .gallery { grid-template-columns: 1fr; } }
 
         .card {
-            background: white;
+            background: var(--card-bg);
             border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.2s;
+            box-shadow: 0 4px 6px var(--shadow-color);
+            transition: transform 0.2s, background-color 0.3s;
             overflow: hidden;
             display: flex;
             flex-direction: column; 
             position: relative;
             animation: fadeIn 0.5s ease-in;
             height: 100%;
-            /* 3. CSS content-visibility: Performance boost for rendering large lists */
             content-visibility: auto;
             contain-intrinsic-size: 400px; 
         }
@@ -339,7 +388,7 @@
             position: absolute;
             top: 10px;
             right: 10px;
-            background: white;
+            background: var(--card-bg);
             width: 44px;
             height: 44px;
             border-radius: 50%;
@@ -355,7 +404,9 @@
             padding: 0;
         }
         .share-btn:hover { transform: scale(1.1); background-color: #f0f0f0; }
+        body.dark-mode .share-btn:hover { background-color: #444; }
         .share-btn svg { width: 22px; height: 22px; fill: #555; }
+        body.dark-mode .share-btn svg { fill: #ddd; }
 
         .info { 
             padding: 15px; 
@@ -378,7 +429,7 @@
             font-size: 0.75em;
             text-transform: uppercase;
             letter-spacing: 1px;
-            color: #769F37; 
+            color: var(--accent-color); 
             font-weight: 600;
             display: inline-block;
         }
@@ -395,7 +446,7 @@
         }
         
         .fresh-badge {
-            background-color: #769F37; 
+            background-color: var(--accent-color); 
             animation: pulse 2s infinite;
         }
         @keyframes pulse {
@@ -412,7 +463,7 @@
             font-weight: 600;
             line-height: 1.4;
             margin: 5px 0;
-            color: #333;
+            color: var(--text-color);
             display: -webkit-box;
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
@@ -421,21 +472,21 @@
         }
         h2.title { margin: 5px 0; }
         
-        .blogger { font-size: 0.9em; color: #888; margin-top: auto; padding-top: 10px; }
+        .blogger { font-size: 0.9em; color: var(--text-muted); margin-top: auto; padding-top: 10px; }
         
         .no-results {
             grid-column: 1 / -1;
             text-align: center;
             font-size: 1.2em;
-            color: #888;
+            color: var(--text-muted);
             margin-top: 40px;
         }
 
         /* --- SKELETON LOADING STYLES --- */
         .skeleton-card {
-            background: white;
+            background: var(--card-bg);
             border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px var(--shadow-color);
             overflow: hidden;
             display: flex;
             flex-direction: column;
@@ -447,6 +498,8 @@
             background-color: #eee;
             animation: skeleton-pulse 1.5s infinite ease-in-out;
         }
+        body.dark-mode .skeleton-img { background-color: #333; }
+        
         .skeleton-info {
             padding: 15px;
             flex-grow: 1;
@@ -460,6 +513,8 @@
             border-radius: 4px;
             animation: skeleton-pulse 1.5s infinite ease-in-out;
         }
+        body.dark-mode .skeleton-text { background-color: #333; }
+
         .w-60 { width: 60%; }
         .w-80 { width: 80%; }
         .w-40 { width: 40%; }
@@ -470,7 +525,7 @@
             100% { opacity: 0.6; }
         }
 
-        footer { text-align: center; margin-top: 50px; color: #aaa; font-size: 0.9em; padding: 0 20px;}
+        footer { text-align: center; margin-top: 50px; color: var(--text-muted); font-size: 0.9em; padding: 0 20px;}
         
         .footer-topics {
             margin-top: 20px;
@@ -481,17 +536,19 @@
             justify-content: center;
             gap: 15px;
         }
+        body.dark-mode .footer-topics { border-top-color: #444; }
+
         .footer-topics a {
-            color: #888;
+            color: var(--text-muted);
             text-decoration: none;
             font-size: 0.85em;
         }
         .footer-topics a:hover {
-            color: #769F37;
+            color: var(--accent-color);
             text-decoration: underline;
         }
 
-        #loader { text-align: center; padding: 20px; color: #888; font-style: italic; display: none; }
+        #loader { text-align: center; padding: 20px; color: var(--text-muted); font-style: italic; display: none; }
 
         #scrollTopBtn {
             display: none; 
@@ -503,7 +560,7 @@
             height: 60px;
             border: none;
             outline: none;
-            background-color: #769F37;
+            background-color: var(--accent-color);
             color: white;
             cursor: pointer;
             border-radius: 50%;
@@ -552,7 +609,11 @@
             <label for="searchInput" style="display:none;">Search Recipes</label>
             <!-- 5. INPUT UX: Input Mode and Enter Key Hint -->
             <input type="text" id="searchInput" placeholder="Search: Soup, Blog, Cake..." inputmode="search" enterkeyhint="search">
-            <button id="clearBtn" title="Clear Search">✕</button>
+            
+            <!-- NEW SHARE BUTTON -->
+            <button id="shareSearchBtn" class="search-bar-btn" title="Share this search URL">🔗</button>
+            
+            <button id="clearBtn" class="search-bar-btn" title="Clear Search">✕</button>
         </div>
     </div>
 
@@ -633,6 +694,7 @@
         "Use the buttons to filter too",
         "Find your favorite blogger",
         "⬅️Click Shuffle to mix it up",
+        "⬆️Long press the logo for Dark Mode",
         'Try, "One pot"',
         "No-bake treats? 🍰",
         "Taco Night? 🌮",
@@ -798,8 +860,6 @@
             allRecipes = data;
             currentContext = allRecipes; 
             
-            // 1. Static Schema Migration: Function removed. Schema is now in <head>.
-            
             setupInfiniteScroll();   
             parseURLState();
         })
@@ -813,6 +873,59 @@
     window.addEventListener('popstate', () => {
         parseURLState();
     });
+
+    // --- DARK MODE LOGIC ---
+    let pressTimer;
+    let isLongPress = false;
+    const logoLink = document.querySelector('.logo-link');
+
+    function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
+        // Visual feedback
+        if("vibrate" in navigator) navigator.vibrate(50);
+        
+        // Save preference (optional, but good UX)
+        if(document.body.classList.contains('dark-mode')) {
+            localStorage.setItem('theme', 'dark');
+        } else {
+            localStorage.removeItem('theme');
+        }
+    }
+
+    // Check saved theme
+    if(localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark-mode');
+    }
+
+    function startPress(e) {
+        isLongPress = false;
+        pressTimer = setTimeout(() => {
+            isLongPress = true;
+            toggleDarkMode();
+        }, 1000); // 1 second
+    }
+
+    function cancelPress() {
+        clearTimeout(pressTimer);
+    }
+
+    // Add listeners to logo
+    if(logoLink) {
+        logoLink.addEventListener('mousedown', startPress);
+        logoLink.addEventListener('touchstart', startPress);
+        
+        logoLink.addEventListener('mouseup', cancelPress);
+        logoLink.addEventListener('mouseleave', cancelPress);
+        logoLink.addEventListener('touchend', cancelPress);
+        
+        // Prevent navigation if it was a long press
+        logoLink.addEventListener('click', (e) => {
+            if(isLongPress) {
+                e.preventDefault();
+                isLongPress = false; // reset
+            }
+        });
+    }
 
     // --- URL & SEO LOGIC ---
 
@@ -828,7 +941,9 @@
 
         if (params.has('q')) {
             document.getElementById('searchInput').value = params.get('q');
-            document.getElementById('clearBtn').style.display = 'block';
+            toggleSearchButtons(true);
+        } else {
+            toggleSearchButtons(false);
         }
 
         if (params.has('type')) {
@@ -1277,9 +1392,22 @@
 
     const searchInput = document.getElementById('searchInput');
     const clearBtn = document.getElementById('clearBtn');
+    const shareSearchBtn = document.getElementById('shareSearchBtn');
+
+    function toggleSearchButtons(hasText) {
+        if (hasText) {
+            clearBtn.style.display = 'block';
+            shareSearchBtn.style.display = 'block';
+        } else {
+            clearBtn.style.display = 'none';
+            shareSearchBtn.style.display = 'none';
+        }
+    }
 
     searchInput.addEventListener('keyup', (e) => {
-        clearBtn.style.display = searchInput.value.length > 0 ? 'block' : 'none';
+        const hasText = searchInput.value.length > 0;
+        toggleSearchButtons(hasText);
+        
         // UX: Enter key dismisses keyboard/blurs input
         if (e.key === 'Enter') {
             searchInput.blur();
@@ -1290,8 +1418,23 @@
    clearBtn.addEventListener('click', () => {
         searchInput.value = '';
         searchInput.focus();
-        clearBtn.style.display = 'none';
+        toggleSearchButtons(false);
         applyFilters(true);
+    });
+    
+    // Share current Search URL
+    shareSearchBtn.addEventListener('click', () => {
+        const url = window.location.href;
+        if (navigator.share) {
+            navigator.share({
+                title: 'Daily Vegan Recipes Search',
+                url: url
+            }).catch(console.error);
+        } else {
+            navigator.clipboard.writeText(url).then(() => {
+                alert("Search URL copied to clipboard!");
+            });
+        }
     });
 
     // --- PWA INSTALL LOGIC ---
