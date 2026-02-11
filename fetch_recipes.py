@@ -54,7 +54,7 @@ TOP_BLOGGERS = [
     ("Plant-Based on a Budget", "https://plantbasedonabudget.com/feed/", ["Budget"]),
     ("HealthyGirl Kitchen", "https://healthygirlkitchen.com/feed/", []),
     ("Chef AJ", "https://chefaj.com/feed/", ["WFPB"]),
-    ("Big Box Vegan", "https://bigboxvegan.com/feed", []),
+    ("Big Box Vegan", "https://bigboxvegan.com/category/recipes/feed/", []),
     ("The Plant-Based RD", "https://plantbasedrdblog.com/feed/", []),
     ("It's Liv B", "https://itslivb.com/feed/", []),
     ("NutritionFacts.org", "https://nutritionfacts.org/recipes/feed/", ["WFPB"])
