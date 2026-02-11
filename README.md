@@ -1,82 +1,88 @@
 Daily Vegan Recipes (findvegdish.com)
 A high-performance, minimal-maintenance discovery engine for new vegan recipes. This project is built with a "Creator First" philosophy, designed to send traffic directly to bloggers while remaining robust enough to rarely break.
 🎯 Core Philosophy
-1. Simple Frontend, Robust Backend
-Frontend: The user-facing site is 100% Vanilla JS, HTML, and CSS. There are no build tools, no frameworks (React/Vue), and no client-side dependencies. This ensures the site loads instantly and never suffers from "dependency rot."
-Backend: The data fetching logic is sophisticated. It employs a Hybrid Scraping Engine that combines RSS parsing, direct HTML scraping, and headless browser automation (Selenium) to ensure high uptime for feed retrieval.
+1. Simple & Robust
+The goal is to have as few moving parts as possible. It is better to have fewer features that work perfectly than complex features that require constant fixing. If a feature isn't essential to finding a meal, it isn't included.
 2. Creator First (Traffic to Real People)
-This site is a bridge, not a destination. We explicitly do not display ingredients or instructions. By keeping "time on site" low, we ensure that the value—and the traffic—is passed directly to the original creators.
-3. "No-Break" Reliability
-To ensure longevity:
-Direct Linking: We load original images directly from the source (with referrer hiding). We do not use image proxies, removing a single point of failure.
-Static Data: The site runs from a single data.json file. If the scraper fails one day, the site remains online and functional with yesterday's data.
-🛠 Backend: The Hybrid Scraping Engine
-The core logic resides in fetch_recipes.py. Unlike simple RSS readers, this system uses a tiered approach to gather content from over 100 sources.
-1. Tiered Fetching Strategy
-RSS Parsing: The preferred method. Fast and lightweight using feedparser.
-HTML Scraping (Custom): For sites that dropped RSS support (e.g., Pick Up Limes, Baking Hermann), we use BeautifulSoup to scrape recipe indices directly.
-Selenium Fallback (The Nuclear Option): If a site is protected by heavy Cloudflare rules or requires JavaScript to render, the script launches a headless Chrome instance to retrieve the content.
-2. Smart Categorization & Tagging
-Top Bloggers: Established giants (e.g., Minimalist Baker, Rainbow Plant Life).
-Disruptors: High-quality, rising creators. In the UI, these are highlighted to encourage discovery of new voices.
-Auto-Tagging: The script analyzes titles and feeds to apply tags automatically:
-WFPB: "Oil-free", "Whole food"
-GF: "Gluten-free", "Almond flour" (plus specific GF-only feed handling)
-Easy: "1-pot", "30-minute", "Air fryer"
-Budget: "Pantry", "Cheap", "Beans"
-3. Data Hygiene
-Pet Filter: Automatically removes recipes for dog/cat treats.
-Non-Recipe Filter: Removes "Gift Guides," "Meal Plans," and "News" articles.
-Deduplication: Logic exists to handle blogs that have both "Main" and "Gluten-Free" feeds, preventing duplicate entries while preserving specific GF tagging.
-💻 Frontend: Performance & UX
-The index.html file is a study in modern, vanilla web performance.
-1. "Tight" Fuzzy Search
-We do not use external search libraries (like Fuse.js) to save weight. Instead, we implemented a custom Levenshtein Distance algorithm.
-Logic: It tokenizes the user's input and matches it against titles/authors.
-Tolerance:
-Words < 4 chars: Must match exactly.
-Words 4-7 chars: Allows 1 typo.
-Words > 7 chars: Allows 2 typos.
-2. Performance Optimizations
-LCP Optimization: The first 4 images are loaded with fetchpriority="high" and loading="eager".
-Lazy Loading: All subsequent images use native loading="lazy" and decoding="async".
-Skeleton Screens: CSS-only skeleton loaders prevent layout shift (CLS) during data fetching.
-3. Features
-Dark Mode: Long-press the logo to toggle. Persists via LocalStorage.
-PWA: Fully installable on mobile devices (manifest.json included).
-Shuffle: Randomizes the feed for discovery, complete with a CSS "jiggle" animation.
-📂 File Structure & Artifacts
-fetch_recipes.py: The worker script. Scrapes, cleans, and generates data.
-data.json: The database. Contains ~1,000 active recipes.
-FEED_HEALTH.md: A generated report detailing which blogs are active, blocked, or empty.
-llms.txt: A standardized file providing context for AI bots/crawlers about the site's structure and authority.
-sitemap.xml: Auto-generated SEO sitemap.
-index.html: The application.
-🚀 How to Run (Development)
-Prerequisites
+This site is a bridge, not a destination. We do not display ingredients or instructions. By keeping "time on site" low, we ensure that the value—and the traffic—is passed directly to the original creators.
+3. Zero Dependencies & "No-Break" Programming
+To ensure the site remains functional for years with zero intervention:
+No Image Proxies: We load original images directly. We do not use services like weserv.nl because they create a single point of failure.
+No Production LLMs: We do not use AI in the live environment. This prevents API failures and allows the site to run completely free.
+No Frameworks: Built with 100% Vanilla JS, HTML, and CSS. There are no libraries to update or build-tools to manage.
+📊 Data & Inventory Logic
+Seasonal Rotation (Not a Database)
+This site is designed to be seasonally relevant, not a permanent archive.
+The Rolling Window: We maintain roughly 1,100+ recipes at a time.
+Freshness: The scraper prioritizes content from the last 360 days to ensure recipes are current.
+The Cap: To prevent a single large blog from dominating the feed, we cap each creator at 100 recipes (with strict pruning for older content). This ensures a diverse mix of voices.
+Categorization (Top vs. Disruptors)
+We avoid complex, subjective ranking systems. Creators are categorized simply:
+Top Bloggers: High-traffic, established vegan heavyweights (e.g., Minimalist Baker, Rainbow Plant Life).
+Disruptors: Up-and-coming creators or niche specialists (e.g., Full of Plants, Mary's Test Kitchen).
+The Mix: The feed naturally balances these sources to ensure users discover new creators alongside established favorites.
+🛠 Technical Implementation
+The backend is a Python-based worker (fetch_recipes.py) that acts as a "Static Site Generator" for our data, transforming fragmented RSS feeds and HTML pages into a single, clean data.json file.
+1. The Hybrid Fetching Pipeline
+RSS Parsing: Uses feedparser to grab the latest entries from over 80+ curated vegan blogs.
+Direct HTML Scraping: For blogs that don't provide RSS feeds (or provide poor ones), we use BeautifulSoup and custom scrapers (supports WordPress archives and custom site structures).
+Robust Fallbacks:
+CloudScraper: Bypasses basic bot protection.
+Selenium (Headless Chrome): Used as a "last resort" fetcher for sites heavily reliant on JavaScript or strict firewalls.
+SSL & Network Hardening: Custom adapters handle legacy SSL ciphers to ensure connection to older servers.
+2. Intelligent Data Extraction
+Image Logic: The script uses a multi-step fallback system:
+Check RSS media tags (media_content, media_thumbnail).
+Scrape the post HTML for high-res images (filtering out pixels/emojis).
+Fetch OpenGraph (og:image) tags via a secondary request if needed.
+Date Normalization: extracting accurate publication dates from JSON-LD schema, meta tags, or URL patterns.
+3. Automated Tagging (Logic-Based)
+To avoid the complexity of a manual database or an LLM, the script auto-tags recipes using keyword matching:
+WFPB: Looks for "oil-free," "whole food," "no oil," "refined sugar free."
+Easy: Looks for "1-pot," "30-minute," "simple," "air fryer," "5-ingredient."
+Budget: Looks for "cheap," "pantry," "beans," "rice," "economical."
+Gluten-Free (GF): Checks titles and source tags, with a safety filter to remove the tag if keywords like "seitan" or "wheat" appear.
+4. Database Hygiene & Output
+Global Deduplication: Removes duplicate recipes if posted by the same author across different feeds, prioritizing the version with better metadata (e.g., GF specific feeds).
+Spam Filtering: aggressive filtering of non-recipe content (e.g., "Gift Guides," "Meal Plans," "Travel," "Giveaways").
+LLM Context Generation: Automatically generates an llms.txt file, providing AI models with a structured index of the site's content for better SEO and citations.
+Feed Health Report: Generates FEED_HEALTH.md to visualize scrape success rates, broken links, and database composition.
+📱 Frontend Architecture (index.html)
+The frontend is a single-file Vanilla JS application designed for speed and UX.
+Search & Discovery
+Fuzzy Search: Implements a Levenshtein distance algorithm for "typo-tolerant" searching directly in the browser.
+Smart Filtering:
+Meals: Filters for savory keywords while excluding sides/sauces.
+Sweets: Filters for dessert keywords while excluding savory terms (e.g., "sweet potato").
+Shuffle: A randomized sorting function to surface older or less popular recipes.
+User Experience (UX)
+Dark Mode: Activated via a long-press on the logo (persisted via LocalStorage).
+Infinite Scroll: Renders recipes in batches of 48 to keep the DOM light.
+Skeleton Loading: CSS-based skeleton screens prevent layout shifts (CLS) during load.
+PWA Support: Includes a manifest and install logic for "Add to Home Screen" functionality.
+SEO & Performance
+Lazy Loading: Native loading="lazy" for images below the fold; fetchpriority="high" for LCP images.
+JSON-LD Schema: Dynamically injects WebSite, BreadcrumbList, and ItemList schema for rich results.
+Dynamic Meta: Updates <title> and <meta description> based on current search/filters.
+🚀 How to Run
+Requirements
 Python 3.9+
-Google Chrome (for Selenium fallback)
-1. Install Dependencies
+Chrome (for Selenium fallback)
+Installation
 code
 Bash
+# Install Python dependencies
 pip install -r requirements.txt
-# OR manually:
-pip install feedparser beautifulsoup4 requests cloudscraper selenium webdriver-manager python-dateutil lxml
-2. Run the Scraper
+# (Optional) Ensure Chrome is installed for Selenium
+Execution
 code
 Bash
+# Run the scraper
 python fetch_recipes.py
-This will iterate through ~100 feeds.
-It may take 2-5 minutes depending on how many sites require Selenium.
-Check FEED_HEALTH.md afterwards to see the status of every blog.
-3. Launch the Site
-Simply open index.html in a browser. No server required (though a local server is recommended for Service Worker/PWA testing).
-🔍 Maintenance Guide
-Monitor FEED_HEALTH.md:
-Look for ❌ Blocked/HTML Fail. If a site consistently fails, their DOM structure may have changed, or they may have blocked the bot.
-Look for ⚠️ Low Count. If a major blog shows 0-1 recipes, the date parsing logic might be failing for their specific format.
-Updating Sources:
-Edit the TOP_BLOGGERS, DISRUPTORS, or HTML_SOURCES lists in fetch_recipes.py.
-Format: ("Display Name", "URL", ["Manual_Tags"])
-Seasonal Rotation:
-The script automatically prunes recipes older than 360 days. No manual cleanup is required.
+This will generate data.json, sitemap.xml, llms.txt, and FEED_HEALTH.md.
+🛡 Maintenance
+Updates: Content updates are handled by pushing a new data.json file via a scheduled task (e.g., GitHub Actions).
+Monitoring: Check FEED_HEALTH.md periodically to identify:
+Blogs that have changed domains or structures (❌ Blocked/HTML Fail).
+Feeds returning 0 items (⚠️ Low Count).
+Configuration: Add or remove blogs simply by editing the TOP_BLOGGERS, DISRUPTORS, or HTML_SOURCES lists in fetch_recipes.py
