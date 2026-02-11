@@ -591,13 +591,17 @@ def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags)
             if img:
                 src = img.get('data-src') or img.get('data-lazy-src') or img.get('src') or img.get('srcset')
             
-            # Check for CSS Background Image (Fix for Zacchary Bird / Vegan Punks)
-            if not src and a.find(style=True):
-                style = a['style'] or ""
-                if 'background-image' in style and 'url(' in style:
-                    try:
-                        src = style.split('url(')[1].split(')')[0].strip('"').strip("'")
-                    except: pass
+            # Check for CSS Background Image (Fix for Zacchary Bird / Vegan Punks / Full Helping)
+            if not src:
+                # Check if the link itself has the style OR a child element has it
+                style_source = a if a.has_attr('style') else a.find(style=True)
+                if style_source and style_source.has_attr('style'):
+                    style_str = style_source['style']
+                    if 'background-image' in style_str and 'url(' in style_str:
+                        try:
+                            # Extract URL from background-image: url('...')
+                            src = style_str.split('url(')[1].split(')')[0].strip('"').strip("'")
+                        except: pass
             
             if src:
                 if ',' in src: src = src.split(',')[0].split(' ')[0]
