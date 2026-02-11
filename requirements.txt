@@ -4,3 +4,4 @@ cloudscraper
 python-dateutil
 lxml
 requests
+selenium
