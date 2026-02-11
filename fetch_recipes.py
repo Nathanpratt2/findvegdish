@@ -336,26 +336,46 @@ def fetch_og_image(link):
 
 def extract_image(entry, blog_name, link):
     image_candidate = None
+    
+    # 1. RSS Media Enclosures (Best source)
     if 'media_content' in entry:
         for media in entry.media_content:
             if 'url' in media: return media['url']
     if 'media_thumbnail' in entry: 
         return entry.media_thumbnail[0]['url']
+        
+    # 2. Parse HTML Content
     content = entry.get('content', [{}])[0].get('value', '') or entry.get('summary', '')
     if content:
         soup = BeautifulSoup(content, 'lxml')
         images = soup.find_all('img')
+        
         for img in images:
-            src = (img.get('data-src') or img.get('data-lazy-src') or img.get('data-original') or img.get('src'))
+            # Check for high-res source in srcset first
+            srcset = img.get('srcset') or img.get('data-srcset')
+            src = parse_srcset(srcset)
+            
+            # Fallback to standard attributes
+            if not src:
+                src = (img.get('data-src') or img.get('data-lazy-src') or img.get('data-original') or img.get('src'))
+            
             if not src: continue
+            
+            # Filter out junk/placeholders
             src_lower = src.lower()
-            if any(x in src_lower for x in ['pixel', 'emoji', 'icon', 'logo', 'gravatar', 'gif', 'facebook', 'pinterest', 'share', 'button']): continue
+            if any(x in src_lower for x in ['pixel', 'emoji', 'icon', 'logo', 'gravatar', 'gif', 'facebook', 'pinterest', 'share', 'button', 'loader', 'placeholder', 'blank.jpg', '1x1']): 
+                continue
+                
             width = img.get('width')
             if width and width.isdigit() and int(width) < 200: continue
+            
             image_candidate = src
             break
-    if not image_candidate:
+            
+    # 3. Fallback to OpenGraph (Last resort)
+    if not image_candidate or "placeholder" in str(image_candidate):
         image_candidate = fetch_og_image(link)
+        
     return image_candidate if image_candidate else "icon.jpg"
 
 def generate_sitemap(recipes):
@@ -588,23 +608,29 @@ def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags)
             # 2a. IMAGE EXTRACTION (Standard + Background)
             img = a.find('img')
             src = None
-            if img:
-                src = img.get('data-src') or img.get('data-lazy-src') or img.get('src') or img.get('srcset')
             
+            if img:
+                # 1. Try to get largest image from srcset
+                srcset = img.get('srcset') or img.get('data-srcset')
+                if srcset:
+                    src = parse_srcset(srcset)
+                
+                # 2. Fallback to standard attributes if srcset failed
+                if not src:
+                    src = img.get('data-src') or img.get('data-lazy-src') or img.get('src')
+
             # Check for CSS Background Image (Fix for Zacchary Bird / Vegan Punks / Full Helping)
             if not src:
-                # Check if the link itself has the style OR a child element has it
                 style_source = a if a.has_attr('style') else a.find(style=True)
                 if style_source and style_source.has_attr('style'):
                     style_str = style_source['style']
                     if 'background-image' in style_str and 'url(' in style_str:
                         try:
-                            # Extract URL from background-image: url('...')
                             src = style_str.split('url(')[1].split(')')[0].strip('"').strip("'")
                         except: pass
             
             if src:
-                if ',' in src: src = src.split(',')[0].split(' ')[0]
+                # Clean up URL (remove query params for resizing if needed, though usually fine)
                 candidates[full_link]['image'] = src
 
             # 2b. TITLE EXTRACTION
