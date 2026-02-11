@@ -313,7 +313,14 @@
                .btn:hover { background-color: #f0f0f0; }
         }
         /* Dark mode hover fix */
-        body.dark-mode .btn:hover { background-color: #333; color: white; }
+        body.dark-mode .btn {
+            color: #ffffff; /* Makes text white in dark mode */
+            background-color: #2d2d2d; /* Slightly lighter than the background */
+        }
+        body.dark-mode .btn:hover { 
+            background-color: #444; 
+            color: #ffffff; 
+        }
 
         .btn:active { 
             transform: scale(0.95); 
