@@ -3,7 +3,7 @@ A high-performance, minimal-maintenance discovery engine for new vegan recipes. 
 🎯 Core Philosophy
 1. Simple Frontend, Robust Backend
 Frontend: The user-facing site is 100% Vanilla JS, HTML, and CSS. There are no build tools, no frameworks (React/Vue), and no client-side dependencies. This ensures the site loads instantly and never suffers from "dependency rot."
-Backend: The data fetching logic is sophisticated. It employs a Hybrid Scraping Engine that combines RSS parsing, direct HTML scraping, and headless browser automation (Selenium) to ensure 99% uptime for feed retrieval.
+Backend: The data fetching logic is sophisticated. It employs a Hybrid Scraping Engine that combines RSS parsing, direct HTML scraping, and headless browser automation (Selenium) to ensure high uptime for feed retrieval.
 2. Creator First (Traffic to Real People)
 This site is a bridge, not a destination. We explicitly do not display ingredients or instructions. By keeping "time on site" low, we ensure that the value—and the traffic—is passed directly to the original creators.
 3. "No-Break" Reliability
