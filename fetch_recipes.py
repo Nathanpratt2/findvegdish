@@ -194,7 +194,7 @@ NON_RECIPE_KEYWORDS = [
     "neighbor", "law", "videos", "planning", "rituals", "discontinued", 
     "forgotten", "finds", "live", "tests", "lab", "tracking", "progress", 
     "lifestyle", "success", "story", "obama", "trump", "stories", "appliances", 
-    "books", "I met", "reading", "shows", "headshot", "just"
+    "books", "I met", "reading", "shows", "headshot", "just", "2026", "2025", "best seller"
 ]
 
 # --- ADVANCED SCRAPER SETUP & SSL FIX ---
