@@ -49,7 +49,6 @@ TOP_BLOGGERS = [
     ("Addicted to Dates", "https://addictedtodates.com/category/recipes/feed/", []),
     ("Gretchen's Vegan Bakery", "https://www.gretchensveganbakery.com/feed/", []),
     ("Running on Real Food", "https://runningonrealfood.com/feed/", ["WFPB"]),
-    ("The Full Helping", "https://thefullhelping.com/feed/", []),
     ("Turnip Vegan", "https://turnipvegan.com/blogs/news.atom", []),
     ("VegNews", "https://vegnews.com/feed", []),
     ("Plant-Based on a Budget", "https://plantbasedonabudget.com/feed/", ["Budget"]),
