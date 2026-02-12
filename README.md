@@ -1,5 +1,6 @@
 Daily Vegan Recipes (findvegdish.com)
 A high-performance, minimal-maintenance discovery engine for new vegan recipes. This project is built with a "Creator First" philosophy, designed to send traffic directly to bloggers while remaining robust enough to rarely break.
+
 🎯 Core Philosophy
 1. Simple & Robust
 The goal is to have as few moving parts as possible. It is better to have fewer features that work perfectly than complex features that require constant fixing. If a feature isn't essential to finding a meal, it isn't included.
