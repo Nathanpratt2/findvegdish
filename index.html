@@ -1054,9 +1054,11 @@
         const tagsArr = Array.from(activeTags);
 
         if (searchVal) {
-            title = `${searchVal} - Search | Daily Vegan Recipes`;
-            desc = `Best vegan recipes matching "${searchVal}".`;
-            breadcrumbName = `Search: ${searchVal}`;
+            // SECURITY: Sanitize input before putting in Title/Schema
+            const safeSearch = searchVal.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+            title = `${safeSearch} - Search | Daily Vegan Recipes`;
+            desc = `Best vegan recipes matching "${safeSearch}".`;
+            breadcrumbName = `Search: ${safeSearch}`;
         } else if (activeType === 'meal') {
             title = "Vegan Dinner & Meal Ideas | Daily Vegan Recipes";
             desc = "Discover savory vegan meals, dinners, and lunch ideas from top plant-based blogs.";
