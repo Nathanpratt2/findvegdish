@@ -847,8 +847,43 @@
 
     // --- INITIALIZATION ---
     // Visitor tracking for Shuffle Animation
+    // FIX: Helper to safely access storage (Safari Private Mode throws error)
+    function safeGetStorage(key, defaultVal) {
+        try {
+            return JSON.parse(localStorage.getItem(key) || defaultVal);
+        } catch (e) {
+            return JSON.parse(defaultVal);
+        }
+    }
+    
+    function safeSetStorage(key, value) {
+        try {
+            localStorage.setItem(key, JSON.stringify(value));
+        } catch (e) { 
+            // Storage quota full or private mode; fail silently
+        }
+    }
+
     try {
         const visitKey = 'shuffle_visit_data';
+        const now = Date.now();
+        const oneHour = 60 * 60 * 1000;
+        let visitData = safeGetStorage(visitKey, '{"count": 0, "lastVisit": 0}');
+        
+        // Reset if more than 1 hour has passed
+        if (now - visitData.lastVisit > oneHour) {
+            visitData.count = 1; // Start new session
+        } else {
+            visitData.count++; // Increment within session
+        }
+        visitData.lastVisit = now;
+        safeSetStorage(visitKey, visitData);
+
+        if (visitData.count > 1) {
+            const btn = document.getElementById('shuffleIconBtn');
+            if (btn) btn.classList.add('jiggle');
+        }
+    } catch (e) { console.error('Storage logic skipped', e); }
         const now = Date.now();
         const oneHour = 60 * 60 * 1000;
         let visitData = JSON.parse(localStorage.getItem(visitKey) || '{"count": 0, "lastVisit": 0}');
@@ -1211,14 +1246,21 @@
         // If the blog name is "Rainbow Plant Life GF", display "Rainbow Plant Life"
         const displayBlogger = BLOG_DISPLAY_MAP[recipe.blog_name] || recipe.blog_name;
 
+        // SECURITY FIX: Escape title to prevent XSS
+        const safeTitle = recipe.title.replace(/&/g, "&amp;")
+                                      .replace(/</g, "&lt;")
+                                      .replace(/>/g, "&gt;")
+                                      .replace(/"/g, "&quot;")
+                                      .replace(/'/g, "&#039;");
+
         info.innerHTML = `
             <div class="meta-row">
                 ${badgeHTML}
             </div>
-            <h2 class="title" title="${recipe.title}">${recipe.title}</h2>
+            <h2 class="title" title="${safeTitle}">${safeTitle}</h2>
             <div class="blogger">by ${displayBlogger}</div>
         `;
-
+        
         const shareBtn = document.createElement('button');
         shareBtn.className = 'share-btn';
         shareBtn.ariaLabel = "Share Recipe";
