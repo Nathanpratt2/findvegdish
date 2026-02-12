@@ -894,6 +894,13 @@ for item in ALL_FEEDS:
                 else:
                     published_time = published_time.astimezone(timezone.utc)
                 
+                # SAFETY: Prevent future dates (typos or timezone glitches)
+                # Allow a small buffer (24h) for timezone differences, but discard obvious bad years
+                now_utc = datetime.now(timezone.utc)
+                if published_time > now_utc + timedelta(days=1):
+                    # If date is way in the future, assume it's a mistake or sticky post; use Now
+                    published_time = now_utc
+
                 if published_time > cutoff_date:
                     if (entry.link, name) not in existing_links:
                         if is_pet_recipe(entry.title): continue
