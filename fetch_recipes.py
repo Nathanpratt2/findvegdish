@@ -293,30 +293,37 @@ def fetch_with_selenium(url):
         chrome_options.page_load_strategy = 'eager'
 
         service = Service(ChromeDriverManager().install())
-        driver = webdriver.Chrome(service=service, options=chrome_options)
-        
-        # Remove navigator.webdriver flag (Anti-detection)
-        driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
-        
-        driver.set_page_load_timeout(30)
+        driver = None
         
         try:
+            driver = webdriver.Chrome(service=service, options=chrome_options)
+            
+            # Remove navigator.webdriver flag (Anti-detection)
+            driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
+            
+            driver.set_page_load_timeout(30)
+            
             driver.get(url)
             
             # 6. Explicit Wait logic instead of fixed sleep
-            # We wait up to 10s for the <body> or <main> tag to ensure content exists.
             try:
                 WebDriverWait(driver, 10).until(
                     EC.presence_of_element_located((By.TAG_NAME, "body"))
                 )
-                # Small buffer for client-side hydration (React/Vue)
                 time.sleep(2) 
             except Exception:
-                pass # If timeout, we still return whatever source we managed to get
+                pass 
 
             return driver.page_source
+        except Exception as e:
+            print(f"   [!] Selenium Driver Error: {str(e)[:100]}")
+            return None
         finally:
-            driver.quit()
+            if driver:
+                try:
+                    driver.quit()
+                except:
+                    pass
     except Exception as e:
         print(f"   [!] Selenium failed: {str(e)[:100]}")
     
