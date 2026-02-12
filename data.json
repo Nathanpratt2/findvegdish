@@ -85,15 +85,6 @@
     ]
   },
   {
-    "blog_name": "Vegan in the Freezer",
-    "title": "Vegan Zuppa Toscana",
-    "link": "https://veganinthefreezer.com/vegan-zuppa-toscana/",
-    "image": "https://www.youtube.com/embed/jpghVC_UdT0",
-    "date": "2026-02-11T19:15:28+00:00",
-    "is_disruptor": false,
-    "special_tags": []
-  },
-  {
     "blog_name": "Eat Figs, Not Pigs",
     "title": "Strawberry Biscoff Icebox Cake",
     "link": "https://www.eatfigsnotpigs.com/strawberry-biscoff-icebox-cake/?utm_source=rss&utm_medium=rss&utm_campaign=strawberry-biscoff-icebox-cake",
@@ -2356,15 +2347,6 @@
     "special_tags": [
       "Easy"
     ]
-  },
-  {
-    "blog_name": "Vegan in the Freezer",
-    "title": "Chickpea Fritters",
-    "link": "https://veganinthefreezer.com/chickpea-fritters/",
-    "image": "https://www.youtube.com/embed/fDNgS7yKM1k",
-    "date": "2026-01-25T01:43:40+00:00",
-    "is_disruptor": false,
-    "special_tags": []
   },
   {
     "blog_name": "The Conscious Plant Kitchen",
