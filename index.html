@@ -1177,9 +1177,10 @@
         img.referrerPolicy = "no-referrer";
         img.onerror = function() { 
             this.onerror = null; 
-            this.src = 'icon.jpg'; 
+            this.src = 'logo.png';
+            this.style.objectFit = 'contain';
+            this.style.padding = '20px';
         };
-
         const info = document.createElement('div');
         info.className = 'info';
 
