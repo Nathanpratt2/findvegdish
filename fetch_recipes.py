@@ -20,6 +20,9 @@ try:
     from selenium import webdriver
     from selenium.webdriver.chrome.options import Options
     from selenium.webdriver.chrome.service import Service
+    from selenium.webdriver.common.by import By
+    from selenium.webdriver.support.ui import WebDriverWait
+    from selenium.webdriver.support import expected_conditions as EC
     from webdriver_manager.chrome import ChromeDriverManager
     SELENIUM_AVAILABLE = True
 except ImportError:
@@ -258,6 +261,7 @@ def is_pet_recipe(title):
 def fetch_with_selenium(url):
     """
     Last resort fetcher using Headless Chrome.
+    Updated for 2026: Anti-detection, Eager Loading, and Explicit Waits.
     """
     if not SELENIUM_AVAILABLE:
         return None
@@ -265,25 +269,51 @@ def fetch_with_selenium(url):
     try:
         print(f"   [Selenium] Attempting fallback for {url}...")
         chrome_options = Options()
-        chrome_options.add_argument("--headless=new") # Modern headless mode
+        
+        # 1. Modern Headless Mode
+        chrome_options.add_argument("--headless=new")
+        
+        # 2. Performance & Stability
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-dev-shm-usage")
         chrome_options.add_argument("--disable-gpu")
+        chrome_options.add_argument("--window-size=1920,1080") # Ensure desktop layout
+        chrome_options.add_argument("--log-level=3")
+        
+        # 3. Anti-Detection / Stealth (Crucial for blocking evasion)
+        chrome_options.add_argument("--disable-blink-features=AutomationControlled")
+        chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
+        chrome_options.add_experimental_option("useAutomationExtension", False)
+        
+        # 4. User Agent Rotation
         chrome_options.add_argument(f"user-agent={random.choice(USER_AGENTS)}")
         
-        # Suppress logs
-        chrome_options.add_argument("--log-level=3")
+        # 5. Page Load Strategy: 'eager' 
+        # Waits for DOMContentLoaded (HTML+Scripts) but not all images/CSS. Much faster.
+        chrome_options.page_load_strategy = 'eager'
 
         service = Service(ChromeDriverManager().install())
         driver = webdriver.Chrome(service=service, options=chrome_options)
         
-        # STRICT TIMEOUT: 25 seconds max for page load
-        driver.set_page_load_timeout(25)
+        # Remove navigator.webdriver flag (Anti-detection)
+        driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
+        
+        driver.set_page_load_timeout(30)
         
         try:
             driver.get(url)
-            # Small sleep to let JS render
-            time.sleep(3)
+            
+            # 6. Explicit Wait logic instead of fixed sleep
+            # We wait up to 10s for the <body> or <main> tag to ensure content exists.
+            try:
+                WebDriverWait(driver, 10).until(
+                    EC.presence_of_element_located((By.TAG_NAME, "body"))
+                )
+                # Small buffer for client-side hydration (React/Vue)
+                time.sleep(2) 
+            except Exception:
+                pass # If timeout, we still return whatever source we managed to get
+
             return driver.page_source
         finally:
             driver.quit()
