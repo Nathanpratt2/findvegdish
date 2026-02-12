@@ -123,7 +123,7 @@ HTML_SOURCES = [
     ("Zucker & Jagdwurst", "https://www.zuckerjagdwurst.com/en/archive/1", [], "custom_zj"),
     ("Rainbow Plant Life GF", "https://rainbowplantlife.com/diet/gluten-free/", ["GF"], "wordpress"),
     ("Vegan Richa GF", "https://www.veganricha.com/category/gluten-free/", ["GF"], "wordpress"),
-    ("School Night Vegan", "https://schoolnightvegan.com/dinners/", [], "wordpress"), 
+    ("School Night Vegan", "https://schoolnightvegan.com/dinners/page/2/", [], "wordpress"), 
     ("Love and Lemons (Vegan Recipes)", "https://www.loveandlemons.com/category/recipes/vegan/", [], "wordpress"),
     ("Cookie and Kate (Vegan Recipes)", "https://cookieandkate.com/category/vegan-recipes/", [], "wordpress"), 
     ("The Loopy Whisk (Vegan Recipes)", "https://theloopywhisk.com/diet/vegan/", ["GF"], "wordpress"),
@@ -131,21 +131,21 @@ HTML_SOURCES = [
     ("Zacchary Bird","https://www.zaccharybird.com/all-recipes/",[], "wordpress"),
     ("Elsa's Wholesome Life","https://www.elsaswholesomelife.com/blog?category=Recipes",[], "wordpress"),
     ("The Full Helping (Vegan Recipes)","https://www.thefullhelping.com/dietary/vegan/",[],"wordpress"),
-    ("Hot For Food","https://www.hotforfoodblog.com/category/recipes/easy-recipes/",[],"wordpress"),
-    ("Cupful of Kale", "https://cupfulofkale.com/category/recipes/page/2/", [], "wordpress"),
-    ("The Veg Space", "https://www.thevegspace.co.uk/category/recipes/mains/", [], "wordpress"),
-    ("Vegan Punks", "https://veganpunks.com/category/30-minutes/", [], "wordpress"),
+    ("Hot For Food","https://www.hotforfoodblog.com/category/recipes/easy-recipes/page/2/",[],"wordpress"),
+    ("Cupful of Kale", "https://cupfulofkale.com/category/recipes/page/3/", [], "wordpress"),
+    ("The Veg Space", "https://www.thevegspace.co.uk/category/recipes/mains/page/2/", [], "wordpress"),
+    ("Vegan Punks", "https://veganpunks.com/category/30-minutes/page/2/", [], "wordpress"),
     ("What Jew You Want to Eat", "https://whatjewwannaeat.com/category/vegan/", [], "wordpress"),
     ("Baking Hermann", "https://bakinghermann.com/recipes/", [], "custom_hermann"),
-    ("Gaz Oakley", "https://www.gazoakleychef.com/recipes/?sf_paged=2", [], "wordpress"),
+    ("Gaz Oakley", "https://www.gazoakleychef.com/recipes/?sf_paged=3", [], "wordpress"),
     ("Vegan Huggs", "https://veganhuggs.com/recipes/", [], "wordpress"),
     ("The Edgy Veg", "https://www.theedgyveg.com/recipes/", [], "wordpress"),
     ("Nadia's Healthy Kitchen (Vegan Recipes)", "https://nadiashealthykitchen.com/category/vegan/", [], "wordpress"),
     ("The Cheap Lazy Vegan", "https://thecheaplazyvegan.com/blog/", ["Budget", "Easy"], "wordpress"),
-    ("Alison Roman (Vegan)", "https://www.alisoneroman.com/recipes/collections/vegan/page/2/", [], "wordpress"),
+    ("Alison Roman (Vegan)", "https://www.alisoneroman.com/recipes/collections/vegan/page/3/", [], "wordpress"),
     ("Max La Manna", "https://www.maxlamanna.com/recipes", ["Low Waste"], "wordpress"),
     ("No Meat Disco", "https://www.nomeatdisco.com/recipes", [], "wordpress"),
-    ("Chef Bai", "https://www.chefbai.kitchen/blog?offset=1719509400542", [], "wordpress")
+    ("Chef Bai", "https://www.chefbai.kitchen/blog?offset=1710270365119", [], "wordpress")
 ]
 
 # --- DISPLAY NAME MAPPING ---
