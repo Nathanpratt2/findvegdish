@@ -1275,20 +1275,36 @@
         return card;
     }
 
-    function setupInfiniteScroll() {
-        window.addEventListener('scroll', () => {
-            const scrollBtn = document.getElementById("scrollTopBtn");
-            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-                scrollBtn.style.display = "flex";
-            } else {
-                scrollBtn.style.display = "none";
+    // Helper: Throttling for scroll performance
+    function throttle(func, limit) {
+        let inThrottle;
+        return function() {
+            const args = arguments;
+            const context = this;
+            if (!inThrottle) {
+                func.apply(context, args);
+                inThrottle = true;
+                setTimeout(() => inThrottle = false, limit);
             }
+        }
+    }
+
+    function setupInfiniteScroll() {
+        const handleScroll = throttle(() => {
+            const scrollBtn = document.getElementById("scrollTopBtn");
+            const scrolled = document.body.scrollTop > 300 || document.documentElement.scrollTop > 300;
+            
+            if (scrollBtn) scrollBtn.style.display = scrolled ? "flex" : "none";
+
             if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 500) {
                 if (renderedCount < currentContext.length) {
                     renderNextBatch();
                 }
             }
-        });
+        }, 200); // Only run once every 200ms
+
+        window.addEventListener('scroll', handleScroll);
+        
         document.getElementById("scrollTopBtn").addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
