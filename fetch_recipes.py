@@ -1111,13 +1111,71 @@ with open('FEED_HEALTH.md', 'w', encoding='utf-8') as f:
 
     f.write("---\n\n")
     f.write("### 📋 Detailed Blog Status\n")
-    f.write("> **Tip:** Use the scroll bar in the box below to view all blogs.\n\n")
+    f.write("> **Tip:** Use the scroll bar in the box below to view all blogs. Click headers to sort.\n\n")
     
-    # --- START SCROLLABLE CONTAINER ---
-    f.write('<div style="height:600px; overflow-y:auto; border:1px solid #ddd; padding:10px; border-radius:5px;">\n\n')
-
-    f.write("| Blog Name | New | Total | WFPB | Easy | Budg | GF | Latest | Status |\n")
-    f.write("| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :--- | :--- |\n")
+    # --- HTML/JS SORTABLE TABLE GENERATION ---
+    f.write("""
+<script>
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("statusTable");
+  switching = true;
+  dir = "asc";
+  while (switching) {
+    switching = false;
+    rows = table.rows;
+    for (i = 1; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      var xContent = x.innerText.toLowerCase();
+      var yContent = y.innerText.toLowerCase();
+      var xNum = parseFloat(xContent);
+      var yNum = parseFloat(yContent);
+      // Sort numerically only if both are numbers AND not dates (contain hyphen)
+      if (!isNaN(xNum) && !isNaN(yNum) && /^\d/.test(xContent) && xContent.indexOf('-') === -1) {
+          xContent = xNum; yContent = yNum;
+      }
+      if (dir == "asc") {
+        if (xContent > yContent) { shouldSwitch = true; break; }
+      } else if (dir == "desc") {
+        if (xContent < yContent) { shouldSwitch = true; break; }
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchcount ++;
+    } else {
+      if (switchcount == 0 && dir == "asc") { dir = "desc"; switching = true; }
+    }
+  }
+}
+</script>
+<style>
+  #statusTable th { cursor: pointer; background-color: #f2f2f2; position: sticky; top: 0; z-index: 1; user-select: none; }
+  #statusTable th:hover { background-color: #ddd; }
+  #statusTable { border-collapse: collapse; width: 100%; font-family: sans-serif; }
+  #statusTable th, #statusTable td { padding: 8px; text-align: left; border-bottom: 1px solid #ddd; font-size: 14px; }
+  #statusTable tr:hover { background-color: #f9f9f9; }
+</style>
+<div style="height:600px; overflow-y:auto; border:1px solid #ddd; padding:0; border-radius:5px;">
+<table id="statusTable">
+<thead>
+<tr>
+ <th onclick="sortTable(0)">Blog Name &#8693;</th>
+ <th onclick="sortTable(1)">New &#8693;</th>
+ <th onclick="sortTable(2)">Total &#8693;</th>
+ <th onclick="sortTable(3)">WFPB &#8693;</th>
+ <th onclick="sortTable(4)">Easy &#8693;</th>
+ <th onclick="sortTable(5)">Budg &#8693;</th>
+ <th onclick="sortTable(6)">GF &#8693;</th>
+ <th onclick="sortTable(7)">Latest &#8693;</th>
+ <th onclick="sortTable(8)">Status &#8693;</th>
+</tr>
+</thead>
+<tbody>
+""")
     
     report_rows = []
     for name in all_monitored_names:
@@ -1126,36 +1184,25 @@ with open('FEED_HEALTH.md', 'w', encoding='utf-8') as f:
         total = total_counts.get(name, 0)
         latest = latest_dates.get(name, "N/A")
         
-        # Clean up Status for reporting
         if "Scraped 0" in status or "Parsed 0 items" in status:
-            if total > 0:
-                status = "✅ OK"
-            else:
-                status = "❌ No Recipes (0 Found)"
+            if total > 0: status = "✅ OK"
+            else: status = "❌ No Recipes (0 Found)"
         
-        # If total is 0, show error clearly
         if total == 0:
-             if "OK" in status:
-                 status = "❌ No Recipes (Empty)"
+             if "OK" in status: status = "❌ No Recipes (Empty)"
              else:
-                 # If status already has an error message, keep it but ensure red X
                  if "❌" not in status: status = f"❌ {status}"
         elif 1 <= total <= 4 and "❌" not in status:
             status = f"⚠️ Low Count"
 
         report_rows.append({
-            "name": name,
-            "new": new,
-            "total": total,
-            "wfpb": wfpb_counts.get(name, 0),
-            "easy": easy_counts.get(name, 0),
-            "budget": budget_counts.get(name, 0),
-            "gf": gf_counts.get(name, 0),
-            "latest": latest,
-            "status": status
+            "name": name, "new": new, "total": total,
+            "wfpb": wfpb_counts.get(name, 0), "easy": easy_counts.get(name, 0),
+            "budget": budget_counts.get(name, 0), "gf": gf_counts.get(name, 0),
+            "latest": latest, "status": status
         })
 
-    # Sort: Errors (❌) first, then Warnings (⚠️), then Alphabetical
+    # Initial Default Sort
     def sort_report(row):
         priority = 2
         if "❌" in row['status']: priority = 0
@@ -1165,9 +1212,9 @@ with open('FEED_HEALTH.md', 'w', encoding='utf-8') as f:
     report_rows.sort(key=sort_report)
 
     for r in report_rows:
-        f.write(f"| {r['name']} | {r['new']} | {r['total']} | {r['wfpb']} | {r['easy']} | {r['budget']} | {r['gf']} | {r['latest']} | {r['status']} |\n")
+        f.write(f"<tr><td>{r['name']}</td><td>{r['new']}</td><td>{r['total']}</td><td>{r['wfpb']}</td><td>{r['easy']}</td><td>{r['budget']}</td><td>{r['gf']}</td><td>{r['latest']}</td><td>{r['status']}</td></tr>\n")
 
-    f.write('\n</div>\n\n') 
+    f.write('</tbody></table></div>\n\n')
     # --- END SCROLLABLE CONTAINER ---
 
     f.write("---\n*Report generated automatically by FindVegDish Fetcher.*")
