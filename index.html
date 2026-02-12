@@ -884,24 +884,6 @@
             if (btn) btn.classList.add('jiggle');
         }
     } catch (e) { console.error('Storage logic skipped', e); }
-        const now = Date.now();
-        const oneHour = 60 * 60 * 1000;
-        let visitData = JSON.parse(localStorage.getItem(visitKey) || '{"count": 0, "lastVisit": 0}');
-        
-        // Reset if more than 1 hour has passed
-        if (now - visitData.lastVisit > oneHour) {
-            visitData.count = 1; // Start new session
-        } else {
-            visitData.count++; // Increment within session
-        }
-        visitData.lastVisit = now;
-        localStorage.setItem(visitKey, JSON.stringify(visitData));
-
-        if (visitData.count > 1) {
-            const btn = document.getElementById('shuffleIconBtn');
-            if (btn) btn.classList.add('jiggle');
-        }
-    } catch (e) { console.error('Storage access restricted', e); }
 
     fetch('data.json?v=' + new Date().getTime())
         .then(response => response.json())
