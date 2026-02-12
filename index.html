@@ -1184,13 +1184,6 @@
         const info = document.createElement('div');
         info.className = 'info';
 
-        let tagClass = 'tag';
-        let tagText = 'Top Blog';
-        if(recipe.is_disruptor) {
-            tagClass += ' disruptor-tag';
-            tagText = 'Rising Blog';
-        }
-
         const recipeDate = new Date(recipe.date);
         const now = new Date();
         const hoursOld = (now - recipeDate) / (1000 * 3600);
@@ -1220,7 +1213,6 @@
 
         info.innerHTML = `
             <div class="meta-row">
-                <span class="${tagClass}">${tagText}</span>
                 ${badgeHTML}
             </div>
             <h2 class="title" title="${recipe.title}">${recipe.title}</h2>
