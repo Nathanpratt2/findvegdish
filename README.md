@@ -1,7 +1,7 @@
 Daily Vegan Recipes (findvegdish.com)
 A high-performance, minimal-maintenance discovery engine for new vegan recipes. This project is built with a "Creator First" philosophy, designed to send traffic directly to bloggers while remaining robust enough to rarely break.
 
-🎯 Core Philosophy
+# 🎯 Core Philosophy
 1. Simple & Robust
 The goal is to have as few moving parts as possible. It is better to have fewer features that work perfectly than complex features that require constant fixing. If a feature isn't essential to finding a meal, it isn't included.
 2. Creator First (Traffic to Real People)
@@ -11,18 +11,17 @@ To ensure the site remains functional for years with zero intervention:
 No Image Proxies: We load original images directly. We do not use services like weserv.nl because they create a single point of failure.
 No Production LLMs: We do not use AI in the live environment. This prevents API failures and allows the site to run completely free.
 No Frameworks: Built with 100% Vanilla JS, HTML, and CSS. There are no libraries to update or build-tools to manage.
-📊 Data & Inventory Logic
-Seasonal Rotation (Not a Database)
-This site is designed to be seasonally relevant, not a permanent archive.
-The Rolling Window: We maintain roughly 1,100+ recipes at a time.
-Freshness: The scraper prioritizes content from the last 360 days to ensure recipes are current.
-The Cap: To prevent a single large blog from dominating the feed, we cap each creator at 100 recipes (with strict pruning for older content). This ensures a diverse mix of voices.
+
+# 📊 Data & Inventory Logic
+This site is designed to be seasonally relevant, not a permanent archive of every recipe ever.
+The Cap: To prevent a single large blog from dominating the feed, we cap each creator at 250 recipes (with strict pruning for older content). This ensures a diverse mix of voices.
 Categorization (Top vs. Disruptors)
 We avoid complex, subjective ranking systems. Creators are categorized simply:
-Top Bloggers: High-traffic, established vegan heavyweights (e.g., Minimalist Baker, Rainbow Plant Life).
-Disruptors: Up-and-coming creators or niche specialists (e.g., Full of Plants, Mary's Test Kitchen).
+- Top Bloggers: High-traffic, established vegan heavyweights (e.g., Minimalist Baker, Rainbow Plant Life).
+- Disruptors / Rising Blogs: Up-and-coming creators or niche specialists (e.g., Full of Plants, Mary's Test Kitchen).
 The Mix: The feed naturally balances these sources to ensure users discover new creators alongside established favorites.
-🛠 Technical Implementation
+
+# 🛠 Technical Implementation
 The backend is a Python-based worker (fetch_recipes.py) that acts as a "Static Site Generator" for our data, transforming fragmented RSS feeds and HTML pages into a single, clean data.json file.
 1. The Hybrid Fetching Pipeline
 RSS Parsing: Uses feedparser to grab the latest entries from over 80+ curated vegan blogs.
@@ -39,16 +38,19 @@ Fetch OpenGraph (og:image) tags via a secondary request if needed.
 Date Normalization: extracting accurate publication dates from JSON-LD schema, meta tags, or URL patterns.
 3. Automated Tagging (Logic-Based)
 To avoid the complexity of a manual database or an LLM, the script auto-tags recipes using keyword matching:
-WFPB: Looks for "oil-free," "whole food," "no oil," "refined sugar free."
-Easy: Looks for "1-pot," "30-minute," "simple," "air fryer," "5-ingredient."
-Budget: Looks for "cheap," "pantry," "beans," "rice," "economical."
+WFPB: Looks for things such as "oil-free," "whole food," "no oil," "refined sugar free."
+Easy: Looks for things such as "1-pot," "30-minute," "simple," "air fryer," "5-ingredient."
+Budget: Looks for things such as "cheap," "pantry," "beans," "rice," "economical."
 Gluten-Free (GF): Checks titles and source tags, with a safety filter to remove the tag if keywords like "seitan" or "wheat" appear.
 4. Database Hygiene & Output
 Global Deduplication: Removes duplicate recipes if posted by the same author across different feeds, prioritizing the version with better metadata (e.g., GF specific feeds).
 Spam Filtering: aggressive filtering of non-recipe content (e.g., "Gift Guides," "Meal Plans," "Travel," "Giveaways").
 LLM Context Generation: Automatically generates an llms.txt file, providing AI models with a structured index of the site's content for better SEO and citations.
-Feed Health Report: Generates FEED_HEALTH.md to visualize scrape success rates, broken links, and database composition.
-📱 Frontend Architecture (index.html)
+
+# Feed Health Report
+Very important - Generates FEED_HEALTH.md to visualize scrape success rates, broken links, and database composition. The ultimate hub for maintaining the website
+
+# 📱 Frontend Architecture (index.html)
 The frontend is a single-file Vanilla JS application designed for speed and UX.
 Search & Discovery
 Fuzzy Search: Implements a Levenshtein distance algorithm for "typo-tolerant" searching directly in the browser.
@@ -65,23 +67,24 @@ SEO & Performance
 Lazy Loading: Native loading="lazy" for images below the fold; fetchpriority="high" for LCP images.
 JSON-LD Schema: Dynamically injects WebSite, BreadcrumbList, and ItemList schema for rich results.
 Dynamic Meta: Updates <title> and <meta description> based on current search/filters.
-🚀 How to Run
+
+# 🚀 How to Run
 Requirements
 Python 3.9+
 Chrome (for Selenium fallback)
 Installation
 code
 Bash
-# Install Python dependencies
+Install Python dependencies
 pip install -r requirements.txt
-# (Optional) Ensure Chrome is installed for Selenium
+(Optional) Ensure Chrome is installed for Selenium
 Execution
 code
 Bash
-# Run the scraper
-python fetch_recipes.py
+Run the scraper: python fetch_recipes.py
 This will generate data.json, sitemap.xml, llms.txt, and FEED_HEALTH.md.
-🛡 Maintenance
+
+# 🛡 Maintenance
 Updates: Content updates are handled by pushing a new data.json file via a scheduled task (e.g., GitHub Actions).
 Monitoring: Check FEED_HEALTH.md periodically to identify:
 Blogs that have changed domains or structures (❌ Blocked/HTML Fail).
