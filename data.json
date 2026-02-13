@@ -1,5 +1,23 @@
 [
   {
+    "blog_name": "Namely Marly",
+    "title": "Chickpea Cookies",
+    "link": "https://namelymarly.com/chickpea-cookies/",
+    "image": "https://namelymarly.com/wp-content/uploads/2026/01/Chickpea-Cookies-1023-3x2-web.jpg",
+    "date": "2026-02-12T21:49:46+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Sweet Potato Soul",
+    "title": "Golden Hour Roasted Vegetables",
+    "link": "https://sweetpotatosoul.com/roasted-vegetables/",
+    "image": "https://sweetpotatosoul.com/wp-content/uploads/2025/12/roasted-vegetables-recipe.jpg",
+    "date": "2026-02-12T18:57:28+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "The Hidden Veggies",
     "title": "Thai Red Curry Noodles with Tofu",
     "link": "https://thehiddenveggies.com/thai-red-curry-noodles-with-tofu/",
@@ -102,8 +120,8 @@
     "date": "2026-02-11T21:28:14+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -145,8 +163,8 @@
     "date": "2026-02-11T14:17:44+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -169,8 +187,8 @@
     "date": "2026-02-11T12:00:00+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -221,8 +239,8 @@
     "date": "2026-02-10T21:06:11+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -365,9 +383,9 @@
     "date": "2026-02-10T16:20:03+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
       "GF",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -407,8 +425,8 @@
     "date": "2026-02-10T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -426,6 +444,17 @@
     "link": "https://minimalistbaker.com/chocolate-tahini-cookies/",
     "image": "https://minimalistbaker.com/wp-content/uploads/2025/06/Fudgy-Vegan-Chocolate-Tahini-Cookies-7-680x1020.jpg",
     "date": "2026-02-10T09:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Gretchen's Vegan Bakery",
+    "title": "Strawberry Shortcakes",
+    "link": "https://www.gretchensveganbakery.com/strawberry-shortcakes/",
+    "image": "https://www.gretchensveganbakery.com/wp-content/uploads/2021/05/biscuits-resized-1.jpg",
+    "date": "2026-02-10T07:28:00+00:00",
     "is_disruptor": false,
     "special_tags": [
       "Easy"
@@ -528,8 +557,8 @@
     "date": "2026-02-09T14:40:03+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -1131,8 +1160,8 @@
     "date": "2026-02-05T12:00:00+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -1143,8 +1172,8 @@
     "date": "2026-02-05T06:59:28+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -1233,8 +1262,8 @@
     "date": "2026-02-04T12:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -1410,8 +1439,8 @@
     "date": "2026-02-03T05:14:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -1521,8 +1550,8 @@
     "date": "2026-02-02T02:33:16+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -1958,8 +1987,8 @@
     "date": "2026-01-29T01:58:31+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -2013,8 +2042,8 @@
     "date": "2026-01-28T18:39:31+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -2054,8 +2083,8 @@
     "date": "2026-01-28T12:13:15+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -2066,9 +2095,9 @@
     "date": "2026-01-28T12:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
       "GF",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -2101,9 +2130,9 @@
     "date": "2026-01-28T11:45:05+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
       "WFPB",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -2205,8 +2234,8 @@
     "date": "2026-01-27T17:26:09+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -2514,8 +2543,8 @@
     "date": "2026-01-23T03:14:19+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -2535,9 +2564,9 @@
     "date": "2026-01-22T18:00:48+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
       "GF",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -2579,8 +2608,8 @@
     "date": "2026-01-22T13:11:31+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -2766,9 +2795,9 @@
     "date": "2026-01-20T13:29:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
       "WFPB",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -2779,8 +2808,8 @@
     "date": "2026-01-20T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -2800,8 +2829,8 @@
     "date": "2026-01-20T09:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -2999,8 +3028,8 @@
     "date": "2026-01-17T02:23:55+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -3049,8 +3078,8 @@
     "date": "2026-01-16T09:37:53+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -3137,8 +3166,8 @@
     "date": "2026-01-15T13:09:27+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -3218,8 +3247,8 @@
     "date": "2026-01-14T14:40:33+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -3272,8 +3301,8 @@
     "date": "2026-01-14T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -3304,9 +3333,9 @@
     "date": "2026-01-14T01:52:22+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
       "WFPB",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -3517,8 +3546,8 @@
     "date": "2026-01-09T17:15:12+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -3571,8 +3600,8 @@
     "date": "2026-01-09T00:32:41+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -3625,8 +3654,8 @@
     "date": "2026-01-08T01:01:09+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -3670,15 +3699,6 @@
     "special_tags": [
       "WFPB"
     ]
-  },
-  {
-    "blog_name": "Nora Cooks",
-    "title": "Vegan Split Pea Soup",
-    "link": "https://www.noracooks.com/vegan-split-pea-soup/",
-    "image": "https://www.noracooks.com/wp-content/uploads/2025/12/split-pea-soup-1-2-1200x1200.jpg",
-    "date": "2026-01-07T17:24:30+00:00",
-    "is_disruptor": false,
-    "special_tags": []
   },
   {
     "blog_name": "Mary's Test Kitchen",
@@ -3871,8 +3891,8 @@
     "date": "2026-01-05T09:04:00+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -3930,8 +3950,8 @@
     "date": "2026-01-04T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -3964,8 +3984,8 @@
     "date": "2026-01-03T00:03:40+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -4005,8 +4025,8 @@
     "date": "2026-01-02T12:00:00+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -4017,8 +4037,8 @@
     "date": "2026-01-02T09:50:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -4307,8 +4327,8 @@
     "date": "2025-12-22T02:56:44+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -4319,8 +4339,8 @@
     "date": "2025-12-21T18:34:48+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -4342,8 +4362,8 @@
     "date": "2025-12-21T14:29:08+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -4516,8 +4536,8 @@
     "date": "2025-12-18T18:00:14+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -4577,8 +4597,8 @@
     "date": "2025-12-17T22:11:31+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -4742,8 +4762,8 @@
     "date": "2025-12-15T04:35:43+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -4872,8 +4892,8 @@
     "date": "2025-12-12T13:18:20+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -4932,8 +4952,8 @@
     "date": "2025-12-11T12:00:00+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -4994,8 +5014,8 @@
     "date": "2025-12-10T04:03:38+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -5179,8 +5199,8 @@
     "date": "2025-12-04T18:00:19+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -5200,8 +5220,8 @@
     "date": "2025-12-04T14:06:21+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -5375,8 +5395,8 @@
     "date": "2025-11-28T13:08:20+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -5434,8 +5454,8 @@
     "date": "2025-11-26T13:25:35+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -5497,8 +5517,8 @@
     "date": "2025-11-25T11:53:03+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -5587,8 +5607,8 @@
     "date": "2025-11-23T20:44:19+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -5721,8 +5741,8 @@
     "date": "2025-11-20T12:00:00+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -5849,8 +5869,8 @@
     "date": "2025-11-17T23:40:42+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -5861,8 +5881,8 @@
     "date": "2025-11-17T23:34:21+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -5998,8 +6018,8 @@
     "date": "2025-11-13T18:00:23+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -6075,8 +6095,8 @@
     "date": "2025-11-12T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -6211,8 +6231,8 @@
     "date": "2025-11-07T01:32:58+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -6296,8 +6316,8 @@
     "date": "2025-11-05T12:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -6308,8 +6328,8 @@
     "date": "2025-11-05T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -6342,9 +6362,9 @@
     "date": "2025-11-05T03:20:51+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
       "WFPB",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -6355,8 +6375,8 @@
     "date": "2025-11-05T02:26:15+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -6388,6 +6408,17 @@
     "is_disruptor": true,
     "special_tags": [
       "GF"
+    ]
+  },
+  {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "Vegan Stuffed Butternut Squash",
+    "link": "https://plantbasedonabudget.com/vegan-stuffed-butternut-squash/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2025/10/Stuffed-Butternut-Squash-PBOAB-16.jpg",
+    "date": "2025-11-03T08:01:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
     ]
   },
   {
@@ -6509,8 +6540,8 @@
     "date": "2025-10-29T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -6532,8 +6563,8 @@
     "date": "2025-10-29T04:05:45+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -6544,8 +6575,8 @@
     "date": "2025-10-28T17:13:41+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -6587,8 +6618,8 @@
     "date": "2025-10-25T13:30:45+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -6610,8 +6641,8 @@
     "date": "2025-10-25T00:46:40+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -6664,8 +6695,8 @@
     "date": "2025-10-22T16:33:15+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -6730,9 +6761,9 @@
     "date": "2025-10-21T16:43:44+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
       "WFPB",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -6742,6 +6773,15 @@
     "image": "https://www.rainbownourishments.com/wp-content/uploads/2025/10/vegan-pecan-upside-down-cake-1.2.jpg",
     "date": "2025-10-21T10:37:47+00:00",
     "is_disruptor": true,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "Vegan Chai Sticky Toffee Pudding",
+    "link": "https://sweetsimplevegan.com/vegan-chai-sticky-toffee-pudding/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2025/10/Chai-Sticky-Toffee-Pudding-sweet-simple-vegan-recipe-11.jpg",
+    "date": "2025-10-20T20:54:03+00:00",
+    "is_disruptor": false,
     "special_tags": []
   },
   {
@@ -6794,8 +6834,8 @@
     "date": "2025-10-16T17:00:46+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -6817,9 +6857,9 @@
     "date": "2025-10-16T10:10:53+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
       "WFPB",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -6879,6 +6919,15 @@
     "image": "https://earthtoveg.com/wp-content/uploads/2025/09/hongshao-doufu.jpg",
     "date": "2025-10-14T02:04:19+00:00",
     "is_disruptor": true,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "Pumpkin Chai Latte Overnight Oats",
+    "link": "https://sweetsimplevegan.com/pumpkin-chai-latte-overnight-oats/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2025/10/Pumpkin-Chai-Latte-Overnight-Oats-sweet-simple-vegan-recipe-9.jpg",
+    "date": "2025-10-13T17:43:23+00:00",
+    "is_disruptor": false,
     "special_tags": []
   },
   {
@@ -6974,6 +7023,15 @@
     ]
   },
   {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "Creamy Vegan Butternut Squash Mac and Cheese",
+    "link": "https://sweetsimplevegan.com/vegan-butternut-squash-mac-and-cheese/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2025/10/Butternut-Squash-Mac-Cheese-sweet-simple-vegan-recipe-2.jpg",
+    "date": "2025-10-09T19:48:48+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Messy Vegan Cook",
     "title": "Sweetcorn liang fen (corn jelly noodles)",
     "link": "https://messyvegancook.com/sweetcorn-liang-fen-corn-jelly-noodles/",
@@ -7010,8 +7068,8 @@
     "date": "2025-10-08T15:47:23+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -7034,8 +7092,8 @@
     "date": "2025-10-03T09:15:11+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -7075,8 +7133,8 @@
     "date": "2025-10-01T13:45:03+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -7108,6 +7166,15 @@
     "image": "https://namelymarly.com/wp-content/uploads/2025/09/Apple-Monsters-0545-16x9-web.jpg",
     "date": "2025-09-30T12:16:00+00:00",
     "is_disruptor": true,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "S\u2019mores Pie (Dairy-Free and Egg-Free)",
+    "link": "https://sweetsimplevegan.com/smores-pie/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2025/09/Smores-Pie-Dairy-Free-sweet-simple-vegan-recipe-7.jpg",
+    "date": "2025-09-29T21:55:57+00:00",
+    "is_disruptor": false,
     "special_tags": []
   },
   {
@@ -7154,9 +7221,9 @@
     "date": "2025-09-25T17:58:30+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
       "WFPB",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -7167,8 +7234,8 @@
     "date": "2025-09-25T17:00:11+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -7192,6 +7259,17 @@
     "special_tags": []
   },
   {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "Easy Caramelized Onion Flatbread",
+    "link": "https://sweetsimplevegan.com/easy-caramelized-onion-flatbread/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2025/09/Easy-Caramelized-Onion-Flatbread-sweet-simple-vegan-recipe-6.jpg",
+    "date": "2025-09-22T19:05:42+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "ZardyPlants",
     "title": "Easy Creamy Vegan Tortellini Soup Recipe",
     "link": "https://zardyplants.com/recipes/easy-creamy-vegan-tortellini-soup-recipe/",
@@ -7199,8 +7277,8 @@
     "date": "2025-09-21T16:04:26+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -7343,8 +7421,8 @@
     "date": "2025-09-13T18:58:14+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -7355,8 +7433,8 @@
     "date": "2025-09-12T14:21:09+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -7385,8 +7463,8 @@
     "date": "2025-09-09T17:00:03+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -7408,9 +7486,9 @@
     "date": "2025-09-08T13:10:19+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
       "GF",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -7460,8 +7538,8 @@
     "date": "2025-09-07T00:47:43+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -7485,6 +7563,28 @@
     "special_tags": []
   },
   {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "Easy Mango Sago (Tapioca Pudding)",
+    "link": "https://sweetsimplevegan.com/easy-mango-sago/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2025/08/mango-Sago-sweet-simple-vegan-recipe-10.jpg",
+    "date": "2025-09-05T20:41:55+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "Easy Oven-Baked Ratatouille",
+    "link": "https://sweetsimplevegan.com/easy-oven-baked-ratatouille/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2025/09/easy-oven-baked-ratatouille-sweet-simple-vegan-recipe-9.jpg",
+    "date": "2025-09-05T20:36:19+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "Namely Marly",
     "title": "Protein Pasta Salad",
     "link": "https://namelymarly.com/protein-pasta-salad/",
@@ -7503,8 +7603,8 @@
     "date": "2025-09-04T07:44:32+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -7641,6 +7741,19 @@
     "special_tags": []
   },
   {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "Easy Curried Chickpea Salad",
+    "link": "https://plantbasedonabudget.com/easy-curried-chickpea-salad/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2025/02/Curried-Chickpea-Salad-Plant-Based-on-a-Budget-13.jpg",
+    "date": "2025-08-25T11:46:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Budget",
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "Rhian's Recipes",
     "title": "Gluten-Free Vegan Lemon Poppy Seed Layer Cake",
     "link": "https://www.rhiansrecipes.com/lemon-poppy-seed-cake/",
@@ -7659,8 +7772,8 @@
     "date": "2025-08-21T17:00:07+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -7760,6 +7873,26 @@
     "special_tags": []
   },
   {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "Alphabet Soup Recipe",
+    "link": "https://plantbasedonabudget.com/alphabet-soup-recipe/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2025/02/Alphabet-Soup-PBOAB-15.jpg",
+    "date": "2025-08-11T08:47:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Alison Roman (Vegan)",
+    "title": "Return to Homepage",
+    "link": "https://www.alisoneroman.com",
+    "image": "https://www.alisoneroman.com/content/images/2025/09/Opengraph-1.png",
+    "date": "2025-08-11T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "NutritionFacts.org",
     "title": "Spiralized Zucchini Noodles with Spinach\u2013Walnut Pesto",
     "link": "https://nutritionfacts.org/recipe/spiralized-zucchini-noodles-with-spinach-walnut-pesto/",
@@ -7771,6 +7904,15 @@
     ]
   },
   {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "Vegan Copycat Hostess Cupcakes",
+    "link": "https://sweetsimplevegan.com/vegan-hostess-cupcakes-copycat/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2025/08/Vegan-Copycat-Hostess-Cupcakes-sweet-simple-vegan-recipe-9.jpg",
+    "date": "2025-08-07T23:05:12+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Choosing Chia (Vegan Recipes)",
     "title": "Banana Protein Balls",
     "link": "https://choosingchia.com/banana-protein-balls/",
@@ -7778,6 +7920,18 @@
     "date": "2025-08-04T14:40:19+00:00",
     "is_disruptor": true,
     "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "Easy Tempeh Tacos",
+    "link": "https://plantbasedonabudget.com/easy-tempeh-tacos/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2024/06/Tempeh-Tacos-PBOAB-Plant-Based-on-a-Budget-42.jpg",
+    "date": "2025-08-04T08:15:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget",
       "Easy"
     ]
   },
@@ -7809,10 +7963,10 @@
     "date": "2025-07-31T18:00:11+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
       "GF",
       "WFPB",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -7838,6 +7992,15 @@
     ]
   },
   {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "Vegan Matcha Sugar Cookies",
+    "link": "https://sweetsimplevegan.com/vegan-matcha-sugar-cookies/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2025/07/matcha-sugar-cookies-sweet-simple-vegan-recipe-7.jpg",
+    "date": "2025-07-29T20:51:48+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "My Vegan Minimalist",
     "title": "Crunchy Cucumber Beet Salad with Easy Dressing",
     "link": "https://myveganminimalist.com/cucumber-beet-salad/",
@@ -7845,8 +8008,8 @@
     "date": "2025-07-28T21:27:53+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -7870,12 +8033,43 @@
     ]
   },
   {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "5-Ingredient Matcha Chia Pudding",
+    "link": "https://sweetsimplevegan.com/matcha-chia-pudding/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2025/07/matcha-chia-seed-pudding-sweet-simple-vegan-recipe-4.jpg",
+    "date": "2025-07-24T20:17:04+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "Messy Vegan Cook",
     "title": "Red date, goji berry and longan tea",
     "link": "https://messyvegancook.com/red-date-goji-berry-and-longan-tea/",
     "image": "https://messyvegancook.com/wp-content/uploads/2025/07/red-dates-longan-goji-berries.jpg",
     "date": "2025-07-24T09:31:05+00:00",
     "is_disruptor": true,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "Cheesy Pesto Garlic Bread (Easy & Vegan)",
+    "link": "https://sweetsimplevegan.com/cheesy-pesto-garlic-bread/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2025/07/Cheesy-pesto-Garlic-Bread-sweet-simple-vegan-recipe-6.jpg",
+    "date": "2025-07-22T19:48:30+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "Cheesy Gochujang Garlic Bread (Vegan)",
+    "link": "https://sweetsimplevegan.com/gochujang-garlic-bread/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2025/07/Cheesy-Gochujang-Garlic-Bread-sweet-simple-vegan-recipe-6.jpg",
+    "date": "2025-07-21T23:44:00+00:00",
+    "is_disruptor": false,
     "special_tags": []
   },
   {
@@ -7888,6 +8082,15 @@
     "special_tags": [
       "Easy"
     ]
+  },
+  {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "Fried Zucchini with Garlic and Red Wine Vinegar (Vegan-Friendly)",
+    "link": "https://sweetsimplevegan.com/fried-zucchini/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2025/07/crispy-fried-zucchini-garlic-red-wine-vinegar-5.jpg",
+    "date": "2025-07-15T20:09:41+00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "Choosing Chia (Vegan Recipes)",
@@ -7948,10 +8151,19 @@
     "date": "2025-07-06T18:00:38+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
       "GF",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
+  },
+  {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "Vegan Limoncello Tiramisu",
+    "link": "https://sweetsimplevegan.com/vegan-limoncello-tiramisu/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2025/06/Vegan_Limoncello_Tiramisu_recipe_sweetsimplevegan_10.jpg",
+    "date": "2025-07-03T17:30:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "Messy Vegan Cook",
@@ -7979,8 +8191,8 @@
     "date": "2025-07-02T11:33:50+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -8006,6 +8218,15 @@
     ]
   },
   {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "Vegan Lemon Curd (Egg-Free, No Fuss)",
+    "link": "https://sweetsimplevegan.com/vegan-lemon-curd-egg-free-no-fuss/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2025/06/vegan_Lemon_Curd_recipe_sweetsimplevegan_5.jpg",
+    "date": "2025-06-30T18:29:03+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "The Vegan 8",
     "title": "Homemade Pineapple Dole Whip",
     "link": "https://thevegan8.com/homemade-pineapple-dole-whip/",
@@ -8013,8 +8234,8 @@
     "date": "2025-06-30T00:35:16+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -8076,8 +8297,8 @@
     "date": "2025-06-20T09:28:12+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -8123,12 +8344,43 @@
     ]
   },
   {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "Easy Chili Lime Tofu Lettuce Wraps",
+    "link": "https://sweetsimplevegan.com/chili-lime-tofu-lettuce-wraps/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2025/06/Chili-Lime-Tofu-Lettuce-Wraps-recipe-sweetsimplevegan-13.jpg",
+    "date": "2025-06-17T18:37:43+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "Messy Vegan Cook",
     "title": "Suki Haeng or stir fried Thai suki noodles",
     "link": "https://messyvegancook.com/suki-haeng-or-stir-fried-thai-suki-noodles/",
     "image": "https://messyvegancook.com/wp-content/uploads/2025/06/suki-haeng-recipe.jpg",
     "date": "2025-06-17T17:01:16+00:00",
     "is_disruptor": true,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "10-Minute Broccoli with Garlic Sauce",
+    "link": "https://sweetsimplevegan.com/broccoli-with-garlic-sauce/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2025/06/10-Minute-Broccoli-Garlic-Sauce-recipe-sweetsimplevegan-4.jpg",
+    "date": "2025-06-12T20:15:13+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "6-Ingredient Sun-Dried Tomato Pesto (Nut-Free!)",
+    "link": "https://sweetsimplevegan.com/sun-dried-tomato-pesto-recipe/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2025/06/6-Ingredient_Sun-Dried_Tomato_Pesto_recipe_sweetsimplevegan_1.jpg",
+    "date": "2025-06-12T19:55:49+00:00",
+    "is_disruptor": false,
     "special_tags": []
   },
   {
@@ -8221,8 +8473,8 @@
     "date": "2025-05-24T21:52:33+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -8234,6 +8486,17 @@
     "is_disruptor": false,
     "special_tags": [
       "GF"
+    ]
+  },
+  {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "Butternut Squash and Apple Soup",
+    "link": "https://plantbasedonabudget.com/butternut-squash-and-apple-soup/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2025/02/Butternut-Squash-and-Apple-Soup-PBOaB-15.jpg",
+    "date": "2025-05-19T08:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
     ]
   },
   {
@@ -8388,7 +8651,18 @@
     "date": "2025-04-17T17:49:25+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
+      "Budget",
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "Roasted Cauliflower Soup",
+    "link": "https://plantbasedonabudget.com/roasted-cauliflower-soup/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2025/01/Roasted-Cauliflower-Soup-PBOAB-21.jpg",
+    "date": "2025-04-16T08:05:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
       "Budget"
     ]
   },
@@ -8409,8 +8683,8 @@
     "date": "2025-04-15T06:54:41+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -8493,6 +8767,17 @@
     "special_tags": []
   },
   {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "Crispy Orange Tofu",
+    "link": "https://plantbasedonabudget.com/crispy-orange-tofu/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2024/12/Orange-Tofu-PBOAB-17.jpg",
+    "date": "2025-04-02T08:13:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
     "blog_name": "Namely Marly",
     "title": "Cherry Overnight Oats",
     "link": "https://namelymarly.com/cherry-overnight-oats/",
@@ -8520,6 +8805,18 @@
     "date": "2025-03-27T19:41:31+00:00",
     "is_disruptor": false,
     "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "Easy Chickpea Lentil Curry",
+    "link": "https://plantbasedonabudget.com/easy-chickpea-lentil-curry/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2024/09/Chickpea-and-Lentil-Curry-18.jpg",
+    "date": "2025-03-24T16:59:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget",
       "Easy"
     ]
   },
@@ -8569,8 +8866,8 @@
     "date": "2025-03-15T02:42:28+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -8653,7 +8950,18 @@
     "date": "2025-03-04T09:56:21+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
+      "Budget",
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "Roasted Parsnip Soup",
+    "link": "https://plantbasedonabudget.com/roasted-parsnip-soup/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2024/11/Roasted-Parsnip-soup-PBOAB-12.jpg",
+    "date": "2025-03-03T20:47:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
       "Budget"
     ]
   },
@@ -8714,8 +9022,8 @@
     "date": "2025-02-22T22:46:59+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -8724,6 +9032,17 @@
     "link": "https://www.thefullhelping.com/vegan-bolognese-with-tvp/",
     "image": "https://www.thefullhelping.com/wp-content/uploads/2025/02/meaty-vegan-bolognese-with-TVP-6-1024x1536.jpg",
     "date": "2025-02-18T12:53:32+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "Lemon Lentil Soup",
+    "link": "https://plantbasedonabudget.com/lemon-lentil-soup/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2024/11/Lemon-Lentil-Soup-PBOAB-16.jpg",
+    "date": "2025-02-17T08:19:00+00:00",
     "is_disruptor": false,
     "special_tags": [
       "Budget"
@@ -8739,6 +9058,17 @@
     "special_tags": [
       "GF",
       "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "Broccoli Pasta Sauce",
+    "link": "https://plantbasedonabudget.com/broccoli-pasta-sauce/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2024/07/Broccoli-Pasta-Sauce-PBOAB-19.jpg",
+    "date": "2025-02-10T08:06:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
     ]
   },
   {
@@ -8769,6 +9099,17 @@
     "date": "2025-01-22T21:10:41+00:00",
     "is_disruptor": false,
     "special_tags": []
+  },
+  {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "Sweet Potato and Black Bean Tacos",
+    "link": "https://plantbasedonabudget.com/sweet-potato-and-black-bean-tacos/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2024/06/Sweet-Potato-and-Black-Bean-Tacos-PBOAB-Plant-Based-on-a-Budget-43.jpg",
+    "date": "2025-01-20T15:28:52+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
   },
   {
     "blog_name": "Chef Bai",
@@ -8809,6 +9150,17 @@
     "special_tags": []
   },
   {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "Lemon Orzo Soup",
+    "link": "https://plantbasedonabudget.com/lemon-orzo-soup/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2024/09/Lemon-Orzo-Soup-PBOAB-13.jpg",
+    "date": "2025-01-13T09:01:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
     "blog_name": "Chef Bai",
     "title": "Mocha Chia Puddings",
     "link": "https://www.chefbai.kitchen/blog/mochachiapuddings",
@@ -8818,6 +9170,17 @@
     "special_tags": []
   },
   {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "Vegan White Bean Chili",
+    "link": "https://plantbasedonabudget.com/vegan-white-bean-chili/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2024/10/Vegan-White-Bean-Chili-PBOAB-14.jpg",
+    "date": "2025-01-08T16:04:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
     "blog_name": "Chef Bai",
     "title": "Simple Salad With Dill Hemp Dressing",
     "link": "https://www.chefbai.kitchen/blog/simplesalad-dillhempdressing",
@@ -8825,8 +9188,19 @@
     "date": "2025-01-07T17:54:00-08:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "Tuscan White Bean Soup [With Kale]",
+    "link": "https://plantbasedonabudget.com/tuscan-white-bean-soup-with-kale/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2024/10/Tuscan-White-Bean-Soup-PBOAB-15.jpg",
+    "date": "2025-01-06T16:26:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
     ]
   },
   {
@@ -8910,6 +9284,17 @@
     "special_tags": []
   },
   {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "Sticky Eggplant and Tofu",
+    "link": "https://plantbasedonabudget.com/sticky-eggplant-and-tofu/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2024/08/Eggplant-Tofu-PBOAB-11.jpg",
+    "date": "2024-12-23T16:10:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
     "blog_name": "Chef Bai",
     "title": "Mini Pear and Vanilla Pies",
     "link": "https://www.chefbai.kitchen/blog/minipearandvanillapies",
@@ -8939,6 +9324,18 @@
     "special_tags": []
   },
   {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "Easy Lentil Loaf",
+    "link": "https://plantbasedonabudget.com/easy-lentil-loaf/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2024/11/Lentil-Loaf-PBOAB-18.jpg",
+    "date": "2024-12-16T09:42:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget",
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "The Full Helping (Vegan Recipes)",
     "title": "The Best Cubed Air Fryer Sweet Potatoes",
     "link": "https://www.thefullhelping.com/air-fryer-sweet-potatoes/",
@@ -8946,8 +9343,8 @@
     "date": "2024-12-06T17:50:36+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -9048,6 +9445,17 @@
     "date": "2024-11-13T21:15:04+00:00",
     "is_disruptor": false,
     "special_tags": []
+  },
+  {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "Roasted Pumpkin Soup",
+    "link": "https://plantbasedonabudget.com/roasted-pumpkin-soup-2/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2024/10/Pumpkin-Soup-PBOAB-20.jpg",
+    "date": "2024-11-13T17:57:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
   },
   {
     "blog_name": "School Night Vegan",
@@ -9289,6 +9697,17 @@
     ]
   },
   {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Best Vegan Lentil Recipes from Your Favorite Bloggers",
+    "link": "https://veganyackattack.com/2024/09/15/best-vegan-lentil-recipes/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2024/09/bestLentilRoundUp-notext.jpg",
+    "date": "2024-09-15T19:38:01+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
     "blog_name": "Chef Bai",
     "title": "The Bistro Salad (Plant-based Ni\u00e7oise Salad)",
     "link": "https://www.chefbai.kitchen/blog/bistrosalad",
@@ -9360,8 +9779,8 @@
     "date": "2024-09-05T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -9472,8 +9891,8 @@
     "date": "2024-08-18T13:20:10+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -9694,6 +10113,17 @@
     "special_tags": []
   },
   {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Dairy-free Sheet Pan Creamy Lemon Basil Pasta",
+    "link": "https://veganyackattack.com/2024/06/22/creamy-lemon-basil-pasta/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2024/06/creamylemonbasilpasta-header.jpg",
+    "date": "2024-06-21T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "Chef Bai",
     "title": "Watermelon Natural Sports Drink (Nature\u2019s gatorade)",
     "link": "https://www.chefbai.kitchen/blog/watermelongatorade",
@@ -9730,8 +10160,8 @@
     "date": "2024-06-07T12:49:51+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -9828,6 +10258,15 @@
     "link": "https://www.chefbai.kitchen/blog/chimichurrimeatballs",
     "image": "http://static1.squarespace.com/static/5f199ea8c32b8a238cc35d35/t/664267dfd99cee5d9c0fc649/1715628032302/IMG_8644.jpg?format=1500w",
     "date": "2024-05-12T11:12:00-07:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Flavor-Packed Swiss Chard Toasted Almond Sauce",
+    "link": "https://veganyackattack.com/2024/05/08/swiss-chard-almond-sauce/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2024/05/swisschardalmondsauce-header.jpg",
+    "date": "2024-05-05T00:00:00",
     "is_disruptor": false,
     "special_tags": []
   },
@@ -10011,8 +10450,8 @@
     "date": "2024-04-01T11:46:57+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -10182,8 +10621,8 @@
     "date": "2024-02-03T15:59:32+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -10212,8 +10651,8 @@
     "date": "2024-01-29T07:04:00-08:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -10320,6 +10759,15 @@
     "special_tags": []
   },
   {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Spicy Jackfruit Chili from Vegan Yack Attack On the Go!",
+    "link": "https://veganyackattack.com/2023/12/05/spicy-jackfruit-chili/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2023/12/jackfruitchili-6.jpg",
+    "date": "2023-12-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Vegan Richa GF",
     "title": "tiramisu cookies",
     "link": "https://www.veganricha.com/gluten-free-tiramisu-cookies/",
@@ -10413,6 +10861,18 @@
     "special_tags": []
   },
   {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "Healthy Quinoa Veggie Bowl",
+    "link": "https://plantbasedonabudget.com/seasoned-quinoa-with-roasted-spring-veggies/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2021/07/springveggiecombo-scaled.jpg",
+    "date": "2023-10-28T10:59:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Budget"
+    ]
+  },
+  {
     "blog_name": "School Night Vegan",
     "title": "Vegan Mushroom Soup",
     "link": "https://schoolnightvegan.com/home/vegan-mushroom-soup/",
@@ -10447,8 +10907,8 @@
     "date": "2023-10-21T15:11:34+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -10625,6 +11085,17 @@
     "is_disruptor": false,
     "special_tags": [
       "Easy"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Vegan and Gluten-free Luscious Banana Cream Pie",
+    "link": "https://veganyackattack.com/2023/09/04/gluten-free-banana-cream-pie/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2023/09/bananacreampie-header.jpg",
+    "date": "2023-09-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "GF"
     ]
   },
   {
@@ -10810,6 +11281,18 @@
     "special_tags": []
   },
   {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Quick and Easy Gochujang Kimchi Tofu Salad",
+    "link": "https://veganyackattack.com/2023/06/14/gochujang-kimchi-tofu-salad/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2023/06/gochujangtofusalad-header.jpg",
+    "date": "2023-06-11T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "Cupful of Kale",
     "title": "Vegan Jambalaya",
     "link": "https://cupfulofkale.com/vegan-jambalaya/",
@@ -10919,6 +11402,17 @@
     "special_tags": []
   },
   {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "Thai Mango Sticky Rice",
+    "link": "https://plantbasedonabudget.com/sticky-coconut-rice-topped-with-mango-kow-neuw-mamuang/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2023/04/Vegan-Mango-Sticky-Rice-Plant-Based-on-a-Budget-7.jpg",
+    "date": "2023-04-13T16:25:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
     "blog_name": "Alison Roman (Vegan)",
     "title": "Celery Salad with Sour Apple and Walnuts",
     "link": "https://www.alisoneroman.com/recipes/celery-salad-with-sour-apple-and-walnuts/",
@@ -10937,6 +11431,17 @@
     "date": "2023-03-14T21:31:45+00:00",
     "is_disruptor": false,
     "special_tags": []
+  },
+  {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "Sauteed Asparagus with Lemon and Garlic [+ Shallots]",
+    "link": "https://plantbasedonabudget.com/lemon-asparagus-with-caramelized-shallots/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2023/02/Lemon-Asparagus-Plant-Based-on-a-Budget-10.jpg",
+    "date": "2023-02-28T14:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
   },
   {
     "blog_name": "School Night Vegan",
@@ -11087,8 +11592,8 @@
     "date": "2022-11-19T13:13:41+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -11157,6 +11662,17 @@
     "special_tags": []
   },
   {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "Lentil Potato Soup",
+    "link": "https://plantbasedonabudget.com/potato-lentil-turmeric-soup/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2015/09/Potato-Lentil-Turmeric-Soup-Plant-Based-on-a-Budget-14.jpg",
+    "date": "2022-10-06T01:45:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
     "blog_name": "School Night Vegan",
     "title": "Vegan Turkey Roast",
     "link": "https://schoolnightvegan.com/home/vegan-turkey-roast/",
@@ -11195,6 +11711,15 @@
     "special_tags": [
       "Budget"
     ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Best Vegan Soup Recipes for All Tastes",
+    "link": "https://veganyackattack.com/2022/09/24/best-vegan-soup-recipes/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2022/09/bestvegansoups-header.jpg",
+    "date": "2022-09-24T22:57:14+00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "The Veg Space",
@@ -11248,6 +11773,28 @@
     "special_tags": []
   },
   {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "Vegan Split Pea Soup",
+    "link": "https://plantbasedonabudget.com/comfort-veggie-soup/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2019/12/Split-Pea-Soup-Plant-Based-on-a-Budget-7.jpg",
+    "date": "2022-09-15T00:40:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "Vegan Pasta Primavera",
+    "link": "https://plantbasedonabudget.com/pasta-italiano/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2024/07/Vegan-Pasta-Primavera-PBOAB-20-1.jpg",
+    "date": "2022-09-14T21:30:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
     "blog_name": "The Veg Space",
     "title": "Puttanesca Vegan Pasta Bake",
     "link": "https://www.thevegspace.co.uk/vegan-pasta-bake/",
@@ -11283,6 +11830,17 @@
     "is_disruptor": false,
     "special_tags": [
       "GF"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Easy Lemon Pepper Tofu Sheet Pan Meal",
+    "link": "https://veganyackattack.com/2022/08/29/lemon-pepper-tofu-sheet-pan-meal/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2022/08/lemonpeppertofumeal-header.jpg",
+    "date": "2022-08-30T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
     ]
   },
   {
@@ -11567,6 +12125,18 @@
     ]
   },
   {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "50+ Gluten Free Vegan Recipes",
+    "link": "https://plantbasedonabudget.com/gluten-free-vegan-recipes/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2013/08/Vegan-Butternut-Squash-Curry-Plant-Based-on-a-Budget-2-15.jpg",
+    "date": "2022-04-07T02:06:12+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "GF",
+      "Budget"
+    ]
+  },
+  {
     "blog_name": "The Veg Space",
     "title": "Vegan Biscoff Brownies",
     "link": "https://www.thevegspace.co.uk/vegan-biscoff-brownies/",
@@ -11592,6 +12162,17 @@
     "date": "2022-03-09T20:00:00+00:00",
     "is_disruptor": false,
     "special_tags": []
+  },
+  {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "30+ Vegan Instant Pot Recipes",
+    "link": "https://plantbasedonabudget.com/30-vegan-instant-pot-recipes/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2022/03/Pot-Pinto-Beans-Plant-Based-on-a-Budget-5.jpg",
+    "date": "2022-03-09T10:54:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
   },
   {
     "blog_name": "School Night Vegan",
@@ -11639,6 +12220,17 @@
     "special_tags": []
   },
   {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Mediterranean-Inspired Rice Bake",
+    "link": "https://veganyackattack.com/2022/02/01/mediterranean-inspired-rice-bake/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2022/02/mediterraneanricebake-header.jpg",
+    "date": "2022-02-02T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
     "blog_name": "Nadia's Healthy Kitchen (Vegan Recipes)",
     "title": "Peanut Butter Chocolate Oat Cups",
     "link": "https://nadiashealthykitchen.com/peanut-butter-chocolate-oat-cups/",
@@ -11652,6 +12244,15 @@
     "title": "Oven-Fried Breaded Pickles",
     "link": "https://www.pickuplimes.com/recipe/oven-fried-breaded-pickles-2534",
     "image": "https://cdn.pickuplimes.com/cache/82/bf/82bfcc4666e69be701c1a79515b2a369.jpg",
+    "date": "2022-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Pick Up Limes",
+    "title": "Spicy Sambal Roasted Carrots with Herby Yogurt",
+    "link": "https://www.pickuplimes.com/recipe/spicy-sambal-roasted-carrots-with-herby-yogurt-2745",
+    "image": "https://cdn.pickuplimes.com/cache/36/f2/36f2da2747dd1308f5d865099e3a2538.jpg",
     "date": "2022-01-01T00:00:00+00:00",
     "is_disruptor": false,
     "special_tags": []
@@ -11684,6 +12285,15 @@
     "special_tags": [
       "GF"
     ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Best Vegan Winter Squash Recipes for All Tastes",
+    "link": "https://veganyackattack.com/2021/12/15/best-vegan-winter-squash-recipes/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2021/12/bestveganwintersquashrecipes-header.jpg",
+    "date": "2021-12-15T22:48:42+00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "The Veg Space",
@@ -11799,6 +12409,18 @@
     "special_tags": []
   },
   {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "24 Easy Vegan Canned Pumpkin Recipes",
+    "link": "https://plantbasedonabudget.com/canned-pumpkin-recipes/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2013/10/PumpkinMolasesCookies4of6.jpg",
+    "date": "2021-10-13T17:00:32+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget",
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "Alison Roman (Vegan)",
     "title": "Lentils (Daal) with Fried Lemon and Garlic",
     "link": "https://www.alisoneroman.com/recipes/lentils-with-fried-lemon-and-garlic/",
@@ -11807,6 +12429,29 @@
     "is_disruptor": false,
     "special_tags": [
       "Budget"
+    ]
+  },
+  {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "20 Vegan Fall Dessert Recipes",
+    "link": "https://plantbasedonabudget.com/20-vegan-fall-dessert-recipes/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2021/10/Easy-Vegan-Apple-Pie-Plant-Based-on-a-Budget-11-edited.jpg",
+    "date": "2021-10-06T17:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "20 Easy Vegan Pasta Recipes You Need To Try!",
+    "link": "https://plantbasedonabudget.com/20-easy-vegan-pasta-recipes/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2021/08/Simple-Pasta-with-Tomatoes-and-Basil-4-resized.jpg",
+    "date": "2021-09-29T17:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -11925,6 +12570,17 @@
     "date": "2021-08-09T15:53:50+10:00",
     "is_disruptor": false,
     "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Tofu Egg Salad Sandwich - Three Ways!",
+    "link": "https://veganyackattack.com/2019/02/19/tofu-egg-salad-sandwich/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2019/02/tofusandwich-header.jpg",
+    "date": "2021-08-07T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
   },
   {
     "blog_name": "Vegan Punks",
@@ -12054,6 +12710,15 @@
     "special_tags": []
   },
   {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Vegan Loaded BBQ Dogs",
+    "link": "https://veganyackattack.com/2021/06/09/vegan-loaded-bbq-dogs/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2021/06/veganbbqupdogs-header.jpg",
+    "date": "2021-06-10T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Elsa's Wholesome Life",
     "title": "Wholesome Pumpkin Soup",
     "link": "https://www.elsaswholesomelife.com/blog/wholesome-pumpkin-soup",
@@ -12114,6 +12779,17 @@
     ]
   },
   {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Easy Meal Prep! Vegan Lunch Roll-Ups + Chorizo Breakfast Bake",
+    "link": "https://veganyackattack.com/2020/01/14/vegan-turkey-lunch-roll-ups-chorizo-breakfast-bake/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2020/01/rollupcasserolegroupshot-header.jpg",
+    "date": "2021-05-14T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "Vegan Punks",
     "title": "Vegan Mi Goreng in 15 Minutes [with step-by-step instructions]",
     "link": "https://veganpunks.com/vegan-mi-goreng/",
@@ -12154,8 +12830,8 @@
     "date": "2021-04-28T05:36:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -12168,6 +12844,17 @@
     "special_tags": []
   },
   {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Easy Vegan Curried Tofu Lettuce Cups",
+    "link": "https://veganyackattack.com/2021/04/21/curried-tofu-lettuce-cups/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2021/04/curriedtofucups-header.jpg",
+    "date": "2021-04-21T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "School Night Vegan",
     "title": "Chickpea Noodle Soup - One Pot Recipe!",
     "link": "https://schoolnightvegan.com/home/chickpea-noodle-soup/",
@@ -12177,6 +12864,15 @@
     "special_tags": [
       "Easy"
     ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "No-Boil Broccoli Pasta Bake",
+    "link": "https://veganyackattack.com/2021/04/13/no-boil-broccoli-pasta-bake/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2021/04/broccolipastabake-header.jpg",
+    "date": "2021-04-13T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "School Night Vegan",
@@ -12235,9 +12931,56 @@
     "date": "2021-03-02T07:00:06+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
+      "Budget",
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Plant-Based on a Budget",
+    "title": "23 Cozy Vegan Soup Recipes to Warm You Up!",
+    "link": "https://plantbasedonabudget.com/18-cozy-vegan-soup-recipes-to-warm-you-up/",
+    "image": "https://plantbasedonabudget.com/wp-content/uploads/2021/07/18-Cozy-Vegan-Soup-Recipes-to-Warm-You-Up.jpg",
+    "date": "2021-03-02T01:26:47+00:00",
+    "is_disruptor": false,
+    "special_tags": [
       "Budget"
     ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Freezer-Friendly Ginger Turmeric Squash Soup",
+    "link": "https://veganyackattack.com/2019/12/12/ginger-turmeric-squash-soup/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2019/12/gingersoup-header.jpg",
+    "date": "2021-03-01T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Hearty Vegan Shepherd's Pie with a Twist",
+    "link": "https://veganyackattack.com/2019/11/25/vegan-shepherds-pie/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2019/11/shepherdspie-header.jpg",
+    "date": "2021-03-01T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Marinated Tempeh Veggie Skewers",
+    "link": "https://veganyackattack.com/2019/06/21/marinated-tempeh-veggie-skewers/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2019/06/skewers-header.jpg",
+    "date": "2021-03-01T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Stuffed Kabocha Squash Centerpiece",
+    "link": "https://veganyackattack.com/2019/11/13/stuffed-kabocha-squash-centerpiece/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2019/11/EBstuffedsquash-header.jpg",
+    "date": "2021-03-01T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "Hot For Food",
@@ -12432,6 +13175,15 @@
     "special_tags": []
   },
   {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Chipotle Tempeh Kale Bowl [VYA's Plant-Based Meal Prep]",
+    "link": "https://veganyackattack.com/2021/01/06/chipotle-tempeh-kale-bowl-vyas-plant-based-meal-prep/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2021/01/chipotletempehkalebowl-header.jpg",
+    "date": "2021-01-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "The Veg Space",
     "title": "Vegan Mushroom Soup with porcini",
     "link": "https://www.thevegspace.co.uk/recipe-vegan-mushroom-soup-with-porcini-thyme/",
@@ -12517,6 +13269,18 @@
     "special_tags": []
   },
   {
+    "blog_name": "School Night Vegan",
+    "title": "One Pot Red Lentil Dal",
+    "link": "https://schoolnightvegan.com/home/one-pot-red-lentil-dal/",
+    "image": "https://schoolnightvegan.com/wp-content/uploads/2020/11/one-pot-red-lentil-dal-0573-scaled.jpg",
+    "date": "2020-11-27T19:30:48+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget",
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "Vegan Punks",
     "title": "Sticky Maple Roasted Carrots and Parsnips",
     "link": "https://veganpunks.com/maple-roasted-carrots-parsnips/",
@@ -12535,6 +13299,15 @@
     "special_tags": [
       "Easy"
     ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Slow Cooker Seitan Roast",
+    "link": "https://veganyackattack.com/2020/11/22/slow-cooker-seitan-roast/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2020/11/slowcookerseitanroast-header.jpg",
+    "date": "2020-11-22T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "Hot For Food",
@@ -12564,6 +13337,26 @@
     "special_tags": []
   },
   {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Autumn Squash Wild Rice Bake",
+    "link": "https://veganyackattack.com/2020/10/03/autumn-squash-wild-rice-bake/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2020/10/autumnsquashwildricebake-header.jpg",
+    "date": "2020-10-04T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Vegan Mushroom (Champi\u00f1\u00f3n) Asado Fries",
+    "link": "https://veganyackattack.com/2020/09/08/vegan-mushroom-champinon-asado-fries/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2020/09/mushroomasadofries-header.jpg",
+    "date": "2020-09-08T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Hot For Food",
     "title": "cheesy vegan breakfast tacos",
     "link": "https://www.hotforfoodblog.com/recipes/2020/09/06/cheesy-vegan-breakfast-tacos/",
@@ -12573,6 +13366,15 @@
     "special_tags": [
       "Easy"
     ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Vegan Grilled Eggplant Burgers",
+    "link": "https://veganyackattack.com/2020/09/05/vegan-grilled-eggplant-burgers/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2020/09/grilledeggplantburgers-header.jpg",
+    "date": "2020-09-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "School Night Vegan",
@@ -12604,6 +13406,24 @@
     "special_tags": [
       "Easy"
     ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Best Vegan Zucchini Recipes",
+    "link": "https://veganyackattack.com/2020/07/25/best-vegan-zucchini-recipes/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2020/07/bestveganzucchinirecipes-header-scaled.jpg",
+    "date": "2020-07-25T22:00:53+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Grilled Sourdough Flatbread + White Bean Basil Spread",
+    "link": "https://veganyackattack.com/2020/07/16/grilled-sourdough-flatbread/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2020/07/sourdoughflatbread-header.jpg",
+    "date": "2020-07-17T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "What Jew You Want to Eat",
@@ -12651,6 +13471,27 @@
     "special_tags": []
   },
   {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Low-Effort Vegan Recipes by Black Creators",
+    "link": "https://veganyackattack.com/2020/06/09/low-effort-vegan-recipes-by-black-creators/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2020/06/loweffortveganrecipesheader-scaled.jpg",
+    "date": "2020-06-09T20:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Punks",
+    "title": "Vegan Papaya Salad in 15 minutes",
+    "link": "https://veganpunks.com/vegan-papaya-salad/",
+    "image": "https://veganpunks.com/wp-content/uploads/2020/05/Papaya-recipe-card-min.jpg",
+    "date": "2020-05-30T12:39:49+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "Hot For Food",
     "title": "Japanese pasta salad with roasted kabocha",
     "link": "https://www.hotforfoodblog.com/recipes/2020/05/27/japanese-pasta-salad-with-roasted-kabocha/",
@@ -12659,6 +13500,18 @@
     "is_disruptor": false,
     "special_tags": [
       "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Vegan Punks",
+    "title": "Easy Thai Yellow Curry with Tofu, Potatoes & Veg",
+    "link": "https://veganpunks.com/tofu-yellow-curry/",
+    "image": "https://veganpunks.com/wp-content/uploads/2020/05/Yellow-curry-recipe-card-min.jpg",
+    "date": "2020-05-24T11:52:28+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -12707,8 +13560,8 @@
     "date": "2020-05-14T18:01:32+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -12741,6 +13594,1349 @@
     "special_tags": []
   },
   {
+    "blog_name": "Vegan Yack Attack",
+    "title": "30-Minute Soyrizo-Stuffed Mushrooms",
+    "link": "https://veganyackattack.com/2016/05/11/soyrizo-stuffed-mushrooms/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2025/07/soyrizomushroom.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Air Fryer BBQ Lentil Meatballs - #VYAPantrychallenge",
+    "link": "https://veganyackattack.com/2018/04/04/bbq-lentil-meatballs/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2018/04/lentilballs-header.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget",
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Apple Fennel Seitan Dogs",
+    "link": "https://veganyackattack.com/2014/03/26/apple-fennel-seitan-dogs/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2014/03/applefennelsausage-5.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Avocado Avenger Appetizer - The Perfect Blend",
+    "link": "https://veganyackattack.com/2017/01/14/avocado-avenger/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2017/01/avocadoavenger-header.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Avocado Mac with Pepita Bacon",
+    "link": "https://veganyackattack.com/2014/09/11/avocado-mac-with-pepita-bacon/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2014/09/avopepitabaconmac-7.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Baked Mediterranean Mac and Cheese",
+    "link": "https://veganyackattack.com/2014/09/15/baked-mediterranean-mac-and-cheese/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2014/09/mediterraneanmac-5.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Beefy Jackfruit Tacos with Tomatillo Fajita Filling",
+    "link": "https://veganyackattack.com/2014/06/17/beefy-jackfruit-tacos-with-tomatillo-fajita-filling/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2014/06/jackfruittacos-7.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Best Zucchini Corn Cakes with Easy Green Tomato Relish",
+    "link": "https://veganyackattack.com/2017/08/10/zucchini-corn-cakes-green-tomato-relish/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2017/08/zucchinicorncakes-header.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Black Bean Cornbread Pot Pie",
+    "link": "https://veganyackattack.com/2015/12/19/mexican-cornbread-pot-pie/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2015/12/mexcornbreadpie-7.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Buffalo Chickpea Ranch Pizza",
+    "link": "https://veganyackattack.com/2014/07/22/buffalo-chickpea-ranch-pizza/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2014/07/buffchickpeapizza-9.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Burrito-Stuffed Sweet Potatoes {The First Mess}",
+    "link": "https://veganyackattack.com/2017/03/07/burrito-stuffed-sweet-potatoes/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2017/03/thefirstmess-header.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Cauliflower Scramble",
+    "link": "https://veganyackattack.com/2014/05/25/cauliflower-scramble/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2014/05/plated_cauli.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Celebration Roast Centerpiece with Mushroom Gravy",
+    "link": "https://veganyackattack.com/2018/11/07/celebration-roast-centerpiece-gravy/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2018/11/celebrationroast-header.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Chipotle Mac and Cheese",
+    "link": "https://veganyackattack.com/2016/05/27/chipotle-mac-and-cheese/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2016/05/chipotlemac-7.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Chipotle Tofu Rainbow Wraps",
+    "link": "https://veganyackattack.com/2018/08/07/chipotle-tofu-rainbow-wraps/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2018/08/tofurainbowwrap-header.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Chipotle White Bean Salad Sandwich",
+    "link": "https://veganyackattack.com/2016/04/22/chipotle-white-bean-salad-sandwich/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2016/04/chipotlesaladsammich-9.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Comforting Squash Butter Bean Bacon Soup",
+    "link": "https://veganyackattack.com/2017/01/09/butternut-squash-bacon-soup/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2017/01/butternutbaconsoup-header.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Couscous-Stuffed Delicata Squash",
+    "link": "https://veganyackattack.com/2017/11/20/couscous-stuffed-delicata-squash/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2017/11/wildgardensquash-header.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Crispy Spring Asparagus Herbed Focaccia",
+    "link": "https://veganyackattack.com/2017/05/02/spring-asparagus-herbed-focaccia/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2017/05/focaccia-header.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Curry Cauliflower Burrito",
+    "link": "https://veganyackattack.com/2017/06/23/curry-cauliflower-burrito/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2017/06/curryburrito-header.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Curry Cauliflower Grill Packets with Yogurt Sauce",
+    "link": "https://veganyackattack.com/2016/08/30/curry-cauliflower-grill-packets-yogurt-sauce/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2016/08/cauliflowerpackets-head.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Dairy-free Pesto Potato Pizza",
+    "link": "https://veganyackattack.com/2016/04/10/pesto-potato-pizza/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2016/04/pestopotatopizza-7.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Easy One Pot Mushroom Spaghetti [Mindful Vegan Meals]",
+    "link": "https://veganyackattack.com/2019/03/05/one-pot-mushroom-spaghetti/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2019/03/mushroomspaghetti-header.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Easy Vegan Down Home BBQ Burger - Veggies Don't Bite",
+    "link": "https://veganyackattack.com/2018/07/27/down-home-bbq-burger/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2018/07/downhomebbq-header.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Eaternity: Cauliflower Lentil Tacos",
+    "link": "https://veganyackattack.com/2016/05/03/eaternity-cauli-lentil-tacos/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2016/05/lentilcaulitacos-7164.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Empowered Soba Noodle Bowl from Oh She Glows",
+    "link": "https://veganyackattack.com/2014/05/15/empowered-noodle-bowl-oh-she-glows/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2014/05/ohsheglows-4.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Fall Farro Protein Bowl",
+    "link": "https://veganyackattack.com/2016/10/20/fall-farro-protein-bowl/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2016/10/fallfarrobowl-header.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Farro-Stuffed Acorn Squash with Tahini Dressing",
+    "link": "https://veganyackattack.com/2016/09/08/farro-stuffed-acorn-squash-tahini/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2016/09/stuffedacornsquash-header.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Gluten-free Avocado Tahini Pasta",
+    "link": "https://veganyackattack.com/2018/05/29/avocado-tahini-pasta/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2018/05/avopasta-header.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "GF"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Gluten-free Creamy Tomato Basil Tartlets",
+    "link": "https://veganyackattack.com/2017/08/23/creamy-tomato-basil-tartlets/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2017/08/tomatotartlet-header-scaled.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "GF"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Grilled Asparagus with Cream Sauce over Ribbons",
+    "link": "https://veganyackattack.com/2016/03/29/grilled-asparagus-with-cream-sauce-over-ribbons/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2016/03/grilledasparagusribbon-7.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Grilled BBQ Lentil Pizza",
+    "link": "https://veganyackattack.com/2018/07/17/grilled-bbq-lentil-pizza/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2018/07/grilledbbqlentilpizza-header.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Grilled BBQ Seitan Skewers",
+    "link": "https://veganyackattack.com/2014/07/09/bbq-seitan-skewers-giveaway/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2014/07/seitanskewers-square.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Grilled Plant-Based Beer Sausages",
+    "link": "https://veganyackattack.com/2018/09/26/grilled-plant-based-beer-sausages/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2018/09/fieldroastsausage-header.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Grilled Seitan Kimchi Mac and Cheese",
+    "link": "https://veganyackattack.com/2014/09/30/grilled-seitan-kimchi-mac-and-cheese/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2014/09/seitanmac.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Grilled Tofu Miso Noodle Soup",
+    "link": "https://veganyackattack.com/2016/03/04/grilled-tofu-miso-noodle-soup/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2016/03/grilledtofunoodlesoup-6.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Healthy Roasted Red Cabbage Soup",
+    "link": "https://veganyackattack.com/2018/11/14/roasted-red-cabbage-soup/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2018/11/cabbagesoup-header.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Kabocha Squash Feta Salad",
+    "link": "https://veganyackattack.com/2018/10/06/kabocha-squash-feta-salad/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2018/10/kabochasquash-header.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Kimchi Fried Rice - Bold Flavored Vegan Cooking",
+    "link": "https://veganyackattack.com/2017/07/25/kimchi-fried-rice/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2017/07/kimchifriedrice-header.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Korean-Inspired Tempeh Shiitake Bowl",
+    "link": "https://veganyackattack.com/2017/01/18/korean-tempeh-shiitake-bowl/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2017/01/koreanbowl-header.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Macho Mac and Cheese Nachos",
+    "link": "https://veganyackattack.com/2014/09/17/macho-mac-and-cheese-nachos/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2014/09/macnachos-5.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Pineapple Teriyaki Chickpea Zoodles",
+    "link": "https://veganyackattack.com/2017/08/27/pineapple-teriyaki-chickpea-zoodles/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2017/08/pineapplechickpeateriyaki-header-scaled.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Plantain Tempeh Breakfast Hash",
+    "link": "https://veganyackattack.com/2016/01/21/plantain-tempeh-breakfast-hash/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2016/01/plantainhash-6.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Portobello Fajita Salad [Vegan Yack Attack On the Go!]",
+    "link": "https://veganyackattack.com/2018/04/18/portobello-fajita-salad/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2018/04/fajitasalad-header.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Pressure Cooker Pulled Jackfruit",
+    "link": "https://veganyackattack.com/2015/02/19/pressure-cooker-pulled-jackfruit/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2015/02/pulledjackfruit-7.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Pressure Cooker Seitan with Red Wine Mushroom Sauce",
+    "link": "https://veganyackattack.com/2014/12/20/pressure-cooker-seitan-with-red-wine-mushroom-sauce/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2014/12/pressureseitan-9.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Roasted Butternut Garlic Bisque with Grilled 3-Cheese Sandwich Sticks",
+    "link": "https://veganyackattack.com/2014/12/02/roasted-butternut-garlic-bisque-with-grilled-3-cheese-sandwich-sticks/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2020/05/bnutsoupgrillchz-5.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Roasted Carrots & Creamy Quinoa",
+    "link": "https://veganyackattack.com/2016/09/28/roasted-carrots-creamy-quinoa/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2016/09/quinoacarrots-3311header.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Rosemary Chickpea Salad Sandwich",
+    "link": "https://veganyackattack.com/2017/08/13/rosemary-chickpea-salad-sandwich/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2017/08/chickpeasandwich-header-scaled.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Savory Tomato Cobbler with Cheddar Chive Biscuits",
+    "link": "https://veganyackattack.com/2016/12/27/savory-tomato-cobbler/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2016/12/tomatocobbler-header.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Slow Cooker Potato Curry Chili",
+    "link": "https://veganyackattack.com/2014/02/28/slow-cooker-potato-curry-chili/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2014/02/currychili-6.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Slow Cooker Vegetable Lentil Stew",
+    "link": "https://veganyackattack.com/2012/01/23/slow-cooker-vegetable-lentil-stew/",
+    "image": "https://farm8.staticflickr.com/7158/6752578225_37471b66a4.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Southwestern Kale Salad",
+    "link": "https://veganyackattack.com/2014/05/29/southwestern-kale-salad/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2014/05/southwesternsalad-6.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Spicy Teriyaki Chick'n Tacos",
+    "link": "https://veganyackattack.com/2015/05/12/spicy-teriyaki-chickn-tacos/",
+    "image": "https://farm8.staticflickr.com/7738/17396781378_4dae952b73_b.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Squash & Scramble Breakfast Tacos",
+    "link": "https://veganyackattack.com/2014/11/13/squash-scramble-breakfast-tacos/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2014/11/bfasttacos-11.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Sriracha Cauliflower Mac n Cheeze",
+    "link": "https://veganyackattack.com/2014/09/22/sriracha-cauliflower-mac-n-cheeze/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2014/09/srirachacaulimac-8.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Super-Veggie Pot Pies",
+    "link": "https://veganyackattack.com/2014/12/15/yumuniverse-giveaway-and-super-veggie-pot-pies/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2014/12/yumuni-10.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Supreme Nacho Burger",
+    "link": "https://veganyackattack.com/2016/02/04/supreme-nacho-burger/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2016/02/nachoburger-3054.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Tofu Benedict Fillo Pockets",
+    "link": "https://veganyackattack.com/2017/04/15/tofu-benedict-fillo-pockets/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2017/04/tofubenedict-header.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Tofu Shawarma Skewers",
+    "link": "https://veganyackattack.com/2017/06/29/tofu-shawarma-skewers/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2017/06/tofushwarma-header.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Vegan Biscuits and Country-Style Gravy",
+    "link": "https://veganyackattack.com/2018/04/10/vegan-biscuits-and-gravy/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2018/04/biscuitsgravy-header-scaled.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Vegan Bowl Attack! Grilled Romaine Chop Salad",
+    "link": "https://veganyackattack.com/2016/07/15/vegan-bowl-attack-grilled-romaine-chop-salad/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2016/07/FW7217_079lo.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Vegan Crustless Bacon and Brussels Quiche",
+    "link": "https://veganyackattack.com/2016/12/07/crustless-bacon-brussels-quiche/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2016/12/brusselsbacon-header.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Vegan Loaded Holiday Panini with Gravy",
+    "link": "https://veganyackattack.com/2015/11/09/loaded-holiday-panini/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2015/11/holidaysammich-7.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Vegan Pizza Party!",
+    "link": "https://veganyackattack.com/2014/05/12/vegan-cuts-pizza-party/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2014/05/Pizzaparty-6.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Vegan Thanksgiving Leftover Recipe Ideas",
+    "link": "https://veganyackattack.com/2017/11/26/thanksgiving-leftover-recipe-ideas/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2017/11/leftovers-header.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Zucchini Risotto with Roasted Tomatoes",
+    "link": "https://veganyackattack.com/2017/08/01/zucchini-risotto-roasted-tomatoes/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2017/08/zuccrisotto-header-scaled.jpg",
+    "date": "2020-05-06T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Baked Spinach Falafel & Homemade Tzatziki Sauce",
+    "link": "https://veganyackattack.com/2012/03/28/greenslove-baked-spinach-falafel-with-homemade-tzatziki-sauce/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2012/03/7025129579_0b372c42a7_z.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Balsamic Baked Tofu Sandwich",
+    "link": "https://veganyackattack.com/2012/10/17/balsamic-baked-tofu-sandwich/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2012/10/balsamicbakedtofusandwich-7.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "BBQ Gardein Pineapple Pizza & Vegan Pizza Day!",
+    "link": "https://veganyackattack.com/2012/06/29/bbq-gardein-pineapple-pizza/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2012/06/7469714222_cd63c3b0b3.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "BBQ Party Pack",
+    "link": "https://veganyackattack.com/2013/07/03/bbq-party-pack/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2013/07/bbqpartypack-7.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Bean-Stuffed Acorn Squash & Spooky Sips",
+    "link": "https://veganyackattack.com/2012/10/24/spooky-sips-and-dressed-up-dogs/",
+    "image": "https://farm9.staticflickr.com/8045/8120762285_f09f9e5ae1.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Beer & Brat Mac 'n' Cheese",
+    "link": "https://veganyackattack.com/2013/09/09/beer-brat-mac-cheese/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2013/09/beerbrautmac-8.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Black Bean Party Burgers",
+    "link": "https://veganyackattack.com/2012/05/30/black-bean-party-burgers/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2012/05/7305163068_f762e0b363.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Broccoli Cheddar Quiche",
+    "link": "https://veganyackattack.com/2013/12/13/broccoli-cheddar-quiche/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2013/12/broccheddarquiche-5.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Brown Rice Veggie Roll",
+    "link": "https://veganyackattack.com/2012/07/30/brown-rice-veggie-roll/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2012/07/7681298466_b988ca4e76_c.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Buffalo Chickpea Mac n Cheese",
+    "link": "https://veganyackattack.com/2013/09/19/buffalo-chickpea-mac-n-cheese/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2013/09/buffalochickpeamac-5.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Buffalo Chickpea Nachos",
+    "link": "https://veganyackattack.com/2014/01/25/buffalo-chickpea-nachos/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2014/01/buffalochickpeanachos-7.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Cajun Mac 'n' Cheese",
+    "link": "https://veganyackattack.com/2012/10/12/cajun-mac-n-cheese/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2012/10/8081610936_13f02120d4_c.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Cauliflower Fried Rice",
+    "link": "https://veganyackattack.com/2014/01/28/cauliflower-fried-rice/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2014/01/Cauliflower-Fried-Rice-1.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Creamy Garlic Spinach Pasta with Toasted Hazelnuts",
+    "link": "https://veganyackattack.com/2012/12/20/quinoa-pasta-with-creamy-garlic-sauce-toasted-hazelnuts/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2012/12/garlicsauce6.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Creamy Tomato Basil Soup with Focaccia Grilled Cheese Sandwiches!",
+    "link": "https://veganyackattack.com/2011/11/18/creamy-tomato-basil-soup-with-focaccia-grilled-cheese-sandwiches/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2011/11/6359804505_478b590dac.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Crispy Tofu Thai Curry + June Vegan Food Swap",
+    "link": "https://veganyackattack.com/2012/06/27/crispy-tofu-thai-curry-june-vegan-food-swap/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2012/06/7457488506_26592b2f4c.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Deconstructed Falafel Bowl with All the Fixings",
+    "link": "https://veganyackattack.com/2014/01/18/deconstructed-falafel-bowl/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2014/01/D6C_2488.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Fiesta Lettuce Wraps",
+    "link": "https://veganyackattack.com/2013/03/09/fiesta-lettuce-wraps/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2013/03/8541805628_1cd8de68ac_c.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Grilled Buffalo Tempeh Mozzarella Sandwich",
+    "link": "https://veganyackattack.com/2013/04/18/grilled-buffalo-tempeh-mozzarella-sandwich/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2013/04/buffalo-grilled-cheese-8.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Grilled Sourdough Sandwich with Jalape\u00f1o Lime Aioli",
+    "link": "https://veganyackattack.com/2012/07/16/grilled-sourdough-sammie-with-jalapeno-lime-aioli/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2012/07/7586599622_8e1bfc8809_c.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "High-Protein Hash brown-Crusted Frittata: VYA's Plant-Based Meal Prep!",
+    "link": "https://veganyackattack.com/2019/10/17/hash-brown-crusted-frittata/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2019/10/frittataheader.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Impressive Instant Pot Chanterelle Squash Risotto",
+    "link": "https://veganyackattack.com/2019/11/06/instant-pot-chanterelle-squash-risotto/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2019/11/chanterellerisotto-header.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Kale Pepita Pesto over Zucchini Ribbons",
+    "link": "https://veganyackattack.com/2012/08/06/kale-pepita-pesto-over-zucchini-ribbons/",
+    "image": "https://farm8.staticflickr.com/7271/7729066216_faa6d168e2.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Loaded Breakfast Potatoes",
+    "link": "https://veganyackattack.com/2013/06/13/loaded-breakfast-potatoes-fathers-day-anyone/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2013/06/loadedbfastpots-8.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget",
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Mac 'n' Cheese Burrito with Red Sauce",
+    "link": "https://veganyackattack.com/2013/09/12/mexican-mac-burrito-with-red-sauce/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2013/09/mexmacburrito-9-1.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Macaroni Lasagna with White Bean Cheese Sauce",
+    "link": "https://veganyackattack.com/2013/09/16/macaroni-lasagna-with-white-bean-cheese-sauce/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2013/09/maclasagna-6.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Mediterranean Pesto Pizza",
+    "link": "https://veganyackattack.com/2013/06/26/mediterranean-pesto-pizza/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2013/06/pestopizza-6.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Mozzarella Mac Deep Dish Pizza",
+    "link": "https://veganyackattack.com/2013/09/30/mozzarella-mac-deep-dish-pizza/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2013/09/macdeepdish-6.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Mushroom Lentil Spaghetti Squash Casserole",
+    "link": "https://veganyackattack.com/2014/01/06/mushroom-lentil-spaghetti-squash-casserole/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2014/01/spaghettisquashcasserole-8.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Pizza Stuffed Spaghetti Squash",
+    "link": "https://veganyackattack.com/2012/03/02/pizza-stuffed-spaghetti-squash/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2012/03/6801559280_73160f2c70.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Pretzel Dogs of the Dead",
+    "link": "https://veganyackattack.com/2013/10/18/pretzel-dogs-and-giveaway/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2013/10/pretzeldogs-4.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Pumpkin Curry Risotto",
+    "link": "https://veganyackattack.com/2012/10/09/pumpkin-curry-risotto/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2012/10/8072636555_243a7a1329_c.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Quick Street-Style Barbacoa Burrito [30 minute Vegan Dinners]",
+    "link": "https://veganyackattack.com/2019/05/22/street-style-barbacoa-burrito/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2019/05/barbacoaburrito-4.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Quinoa Cauliflower Bowl with Almond Sriracha Sauce",
+    "link": "https://veganyackattack.com/2014/01/22/quinoa-cauliflower-bowl-with-almond-sriracha-sauce/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2014/01/Quinoa-Cauli-bowl-7622.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Quinoa-Stuffed Acorn Squash",
+    "link": "https://veganyackattack.com/2013/10/25/quinoa-stuffed-acorn-squash/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2013/10/squashmichigan-5.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Raw Creamy Tomato Basil Pasta",
+    "link": "https://veganyackattack.com/2012/06/15/raw-creamy-tomato-basil-pasta/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2012/06/7188841159_9390fbd9c6_z.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Raw Quesadilla with Flaxseed Tortilla",
+    "link": "https://veganyackattack.com/2011/10/05/raw-quesadilla-with-flaxseed-tortilla/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2011/10/6216211336_bfc3b28a0c-1.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Roasted Cauliflower Tomato Soup",
+    "link": "https://veganyackattack.com/2013/12/28/roasted-cauliflower-tomato-soup/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2013/12/roastedcaulisoup-6.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Rustic Arugula Flatbread",
+    "link": "https://veganyackattack.com/2012/03/09/greenslove-rustic-arugula-flatbread/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2012/03/6811330926_f28030176c.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Savory Rosemary Veggie Oats",
+    "link": "https://veganyackattack.com/2012/07/08/savory-rosemary-veggie-oats/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2012/07/7528633568_2c42fd4d17.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Seitan Currywurst",
+    "link": "https://veganyackattack.com/2013/07/22/seitan-currywurst/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2013/07/currywurst-5.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Seitan Sauerkraut Sandwich",
+    "link": "https://veganyackattack.com/2013/06/10/seitan-sauerkraut-sandwich/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2013/06/seitansammich-8.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Sheet Pan Tofu Kale Tacos",
+    "link": "https://veganyackattack.com/2013/10/04/roasted-tofu-kale-tacos/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2013/10/tofu-kale-tacos-7.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Simple Smoky Yam Soup",
+    "link": "https://veganyackattack.com/2011/03/09/smoky-yam-soup/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2011/03/tumblr_lhrz78PCbm1qzf5leo1_500.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Simple Spaghetti Squash with Fire-Roasted Marinara",
+    "link": "https://veganyackattack.com/2013/08/30/simple-spaghetti-squash-with-fire-roasted-marinara/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2013/08/squash-spaghetti-6.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Smoky Mac and Cheese-Stuffed Sweet Potatoes",
+    "link": "https://veganyackattack.com/2013/09/03/smoky-mac-stuffed-sweet-potatoes/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2013/09/macstuffedpotato-6.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Smoky Mushroom Vegetable Slow Cooker Stew",
+    "link": "https://veganyackattack.com/2011/10/03/smoky-mushroom-vegetable-slow-cooker-stew/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2011/10/Smokey-Mushroom-Vegetable-Stew.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Smoky Sweet Potato Soup with Jalape\u00f1o Cornbread",
+    "link": "https://veganyackattack.com/2012/12/06/smoky-sweet-potato-soup-with-jalapeno-cornbread/",
+    "image": "https://farm9.staticflickr.com/8344/8250568233_7049610bd3_c.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Southwest Macaroni & Cheeze",
+    "link": "https://veganyackattack.com/2012/05/05/mexican-macaroni-cheeze/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2012/05/southwesternmaccheese-header.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Southwestern Chili Cheese Burritos",
+    "link": "https://veganyackattack.com/2014/01/20/southwestern-chili-cheese-burritos/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2014/01/chili-cheese-burrito-vegan-yack-attack.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Soyrizo Guacamole Burger",
+    "link": "https://veganyackattack.com/2013/08/09/soyrizo-guacamole-burger/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2013/08/soyrizo-burger-9.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Spinach Pappardelle with Romesco-Style Sauce and Grilled Zucchini",
+    "link": "https://veganyackattack.com/2019/08/15/spinach-pappardelle-sauce/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2019/08/pappardelle-header.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Spooky Gluten-free Buckwheat Pancakes for Halloween!",
+    "link": "https://veganyackattack.com/2019/10/29/spooky-buckwheat-pancakes/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2019/10/spookypancakes-header.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "GF"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Spring Soba Stir Fry",
+    "link": "https://veganyackattack.com/2013/03/13/spring-soba-stir-fry/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2013/03/spring-soba-stirfry-8548.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Steamed Butternut Squash over Quinoa with Southwestern Tahini Sauce",
+    "link": "https://veganyackattack.com/2012/10/10/steamed-butternut-squash-over-quinoa-with-southwestern-tahini-sauce/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2012/10/8075579234_6074e1f031_c.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Steamed Veggies with Quinoa & Sesame Ginger Dressing",
+    "link": "https://veganyackattack.com/2012/04/11/steamed-veggies-with-quinoa-sesame-ginger-dressing/",
+    "image": "https://farm6.staticflickr.com/5467/6923356876_e30d80237c.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Strawberry BBQ Sauce Tempeh Sandwich",
+    "link": "https://veganyackattack.com/2012/04/25/homemade-strawberry-bbq-sauce-with-tempeh-sandwich/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2012/04/7113109855_6f3099f3f2.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Stuffed Seitan Roast",
+    "link": "https://veganyackattack.com/2013/11/20/stuffed-seitan-roast/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2022/11/stuffedseitanroast-7342.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Sweet Potato Adzuki Bean Burger Sliders with Dill Aioli",
+    "link": "https://veganyackattack.com/2013/01/31/sweet-potato-adzuki-bean-burger-sliders-with-dill-aioli/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2013/01/sweet-potato-burger-buns-189-001.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Tex-Mex Tofu Frittata",
+    "link": "https://veganyackattack.com/2012/05/02/mexican-tofu-frittata/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2012/05/6991188450_0b44e615e2.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Tofu Scramble Breakfast Burrito",
+    "link": "https://veganyackattack.com/2012/03/20/tofu-scramble-breakfast-burrito/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2012/03/Tofu-Breakfast-Burrito.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Tomato Spinach Grilled Cheese Bread Bowl",
+    "link": "https://veganyackattack.com/2012/11/29/tomato-spinach-grilled-cheese-bread-bowl/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2012/11/8230596123_0458c5c27a_c.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Vegan Chili Mac 'n' Cheese",
+    "link": "https://veganyackattack.com/2013/09/06/chili-fiesta-mac-n-cheese/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2013/09/chilimaccheese-7.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Vegan Chopped: Healthy Black-Eyed Pea Enchiladas with Mole Sauce & Mango Mint Salsa",
+    "link": "https://veganyackattack.com/2012/06/24/vegan-chopped-healthy-black-eyed-pea-enchiladas-with-mole-sauce-mango-mint-salsa/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2012/06/7435366764_da1dc272dd_z.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Vegan Cream of Asparagus Soup",
+    "link": "https://veganyackattack.com/2013/01/28/cream-of-asparagus-soup/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2013/01/Cream-of-Asparagus-Soup-37.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Vegan Fried Chicken and Sourdough Biscuits",
+    "link": "https://veganyackattack.com/2019/04/04/vegan-fried-chicken-and-sourdough-biscuits/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2019/04/chicknbiscuits-header-scaled.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Vegan Grilled Mac n Cheese BLT",
+    "link": "https://veganyackattack.com/2013/09/24/grilled-mac-n-cheese-blt/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2013/09/grilledmaccheeseblt-6.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Vegan Indian Butter Tofu",
+    "link": "https://veganyackattack.com/2014/01/31/indian-butter-tofu/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2014/01/VYA-fv.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Vegan Smoky Corn Chowder",
+    "link": "https://veganyackattack.com/2012/09/12/smoky-corn-chowder/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2012/09/smokycornchowder-header.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Vegan Spinach and Mushroom Lasagna Rolls",
+    "link": "https://veganyackattack.com/2011/06/06/spinach-and-mushroom-lasagna-rolls/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2011/06/mushroomspinachlasagnarolls-header.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Warm Smoky Tempeh Salad",
+    "link": "https://veganyackattack.com/2013/02/28/warm-smoky-tempeh-salad/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2013/02/warm-tempeh-salad-4.jpg",
+    "date": "2020-05-05T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Vegan Easy Cabbage Roll Soup",
+    "link": "https://veganyackattack.com/2020/05/01/cabbage-roll-soup/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2020/05/cabbagerollsoup-header.jpg",
+    "date": "2020-05-02T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "School Night Vegan",
     "title": "Vegan Gnocchi Verdi",
     "link": "https://schoolnightvegan.com/home/vegan-gnocchi-verdi/",
@@ -12748,6 +14944,18 @@
     "date": "2020-04-28T18:30:00+00:00",
     "is_disruptor": false,
     "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "One-Pot Lentil Mushroom Pasta",
+    "link": "https://veganyackattack.com/2020/04/25/one-pot-lentil-mushroom-pasta/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2020/04/onepotlentilmushroompasta-header.jpg",
+    "date": "2020-04-25T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget",
+      "Easy"
+    ]
   },
   {
     "blog_name": "Elsa's Wholesome Life",
@@ -12778,12 +14986,43 @@
   },
   {
     "blog_name": "Vegan Punks",
+    "title": "Noodles with Gravy (Rad Na)",
+    "link": "https://veganpunks.com/noodles-with-gravy-rad-na/",
+    "image": "https://veganpunks.com/wp-content/uploads/2020/04/Rad-Na-recipe-card-min.jpg",
+    "date": "2020-04-10T11:49:45+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Punks",
     "title": "Thai Morning Glory Stir Fry",
     "link": "https://veganpunks.com/thai-morning-glory-stir-fry/",
     "image": "https://veganpunks.com/wp-content/uploads/2020/04/Morning-glory-recipe-card.jpg",
     "date": "2020-04-09T16:10:35+00:00",
     "is_disruptor": false,
     "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Chipotle Brown Rice Bake",
+    "link": "https://veganyackattack.com/2020/04/03/chipotle-brown-rice-bake/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2020/04/chipotlebrownricebake-header.jpg",
+    "date": "2020-04-04T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Vegan Cheesy Sweet Potato Pierogi",
+    "link": "https://veganyackattack.com/2020/03/27/vegan-cheesy-sweet-potato-pierogi/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2020/03/sweetpotatopierogi-header.jpg",
+    "date": "2020-03-28T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
   },
   {
     "blog_name": "Hot For Food",
@@ -12815,6 +15054,49 @@
     ]
   },
   {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Hearty Lentil Rice Soup Mix - Great for Camping!",
+    "link": "https://veganyackattack.com/2020/03/18/hearty-lentil-rice-soup-mix/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2020/03/heartylentilricesoupmix-header.jpg",
+    "date": "2020-03-19T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "High-Protein Vegan Meal Prep for Two",
+    "link": "https://veganyackattack.com/2020/03/12/high-protein-vegan-meal-prep-for-two/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2016/05/proteinmealprep.jpg",
+    "date": "2020-03-12T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Easy Kale Quinoa Tabbouleh Salad",
+    "link": "https://veganyackattack.com/2020/03/05/kale-quinoa-tabbouleh-salad/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2020/03/kalequinoatabboulehsalad-header-scaled.jpg",
+    "date": "2020-03-04T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "The Best Vegan Breakfast Scramble Tacos",
+    "link": "https://veganyackattack.com/2020/03/02/vegan-breakfast-tacos/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2020/03/veganbreakfasttacos-header.jpg",
+    "date": "2020-03-02T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "School Night Vegan",
     "title": "Roasted Romanesco Dhansak",
     "link": "https://schoolnightvegan.com/home/roasted-romanesco-dhansak/",
@@ -12822,6 +15104,17 @@
     "date": "2020-02-25T19:00:00+00:00",
     "is_disruptor": false,
     "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Super Simple Black Bean Stew",
+    "link": "https://veganyackattack.com/2020/02/19/black-bean-stew/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2020/02/blackbeanstew-header.jpg",
+    "date": "2020-02-20T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
   },
   {
     "blog_name": "School Night Vegan",
@@ -12840,6 +15133,17 @@
     "date": "2020-02-12T17:30:28+11:00",
     "is_disruptor": false,
     "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Mediterranean Sheet Pan Meal",
+    "link": "https://veganyackattack.com/2020/02/12/mediterranean-sheet-pan-meal/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2020/02/mediterraneansheetpan-header.jpg",
+    "date": "2020-02-12T00:00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
   },
   {
     "blog_name": "School Night Vegan",
@@ -12867,8 +15171,8 @@
     "date": "2020-01-01T00:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -12879,8 +15183,8 @@
     "date": "2020-01-01T00:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -12891,8 +15195,8 @@
     "date": "2020-01-01T00:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -13320,6 +15624,163 @@
     "special_tags": []
   },
   {
+    "blog_name": "Gaz Oakley",
+    "title": "Simple Kimchi Hash Browns",
+    "link": "https://www.gazoakleychef.com/recipes/simple-kimchi-hash-browns/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2023/08/gaz-94-819x1024.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Courgette Risotto",
+    "link": "https://www.gazoakleychef.com/recipes/courgette-risotto/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2023/07/gaz-25-819x1024.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Garlic Rolls",
+    "link": "https://www.gazoakleychef.com/recipes/garlic-rolls/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2023/07/roll12-819x1024.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Basil Ice Cream",
+    "link": "https://www.gazoakleychef.com/recipes/basil-ice-cream/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2023/06/gaz-112-819x1024.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Super Beet Burgers",
+    "link": "https://www.gazoakleychef.com/recipes/super-beet-burgers/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2023/06/gaz-213-819x1024.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Rustic Braised Butter Bean & Kale Stew",
+    "link": "https://www.gazoakleychef.com/recipes/rustic-braised-butter-bean/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2023/06/gaz-193-819x1024.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Elderflower Creme Br\u00fbl\u00e9e",
+    "link": "https://www.gazoakleychef.com/recipes/elderflower-creme-brulee/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2023/06/creme1-819x1024.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Elderflower, Champagne & Raspberry Jelly",
+    "link": "https://www.gazoakleychef.com/recipes/elderflower-champagne-raspberry-jelly/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2023/06/JEL3-819x1024.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Stinging Nettle & Chickpea Scramble",
+    "link": "https://www.gazoakleychef.com/recipes/stinging-nettle-chickpea-scramble/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2023/05/nettscram-819x1024.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Kimchi Fried Rice",
+    "link": "https://www.gazoakleychef.com/recipes/kimchi-fried-rice/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2023/05/kimifri1-819x1024.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Jamaica inspired Peanut Porridge",
+    "link": "https://www.gazoakleychef.com/recipes/jamaica-inspired-peanut-porridge/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2023/05/peanutpor1-819x1024.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Healthier Protein Packed Banana Pudding",
+    "link": "https://www.gazoakleychef.com/recipes/banana-pudding/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2023/05/bana1-819x1024.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Wild Garlic Falafel",
+    "link": "https://www.gazoakleychef.com/recipes/wild-garlic-falafel/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2023/04/Wild-Garlic-Falafel-819x1024.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Pumpkin Dhal & Peshwari Naan",
+    "link": "https://www.gazoakleychef.com/recipes/pumpkin-dhal-peshwari-naan/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2023/03/DSC00604-2-819x1024.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Black Bean Stew, Pumpkin Dip & Quinoa Meal Prep",
+    "link": "https://www.gazoakleychef.com/recipes/black-bean-stew-pumpkin-dip-quinoa-meal-prep/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2023/03/High-Protein-Meal-Prep-819x1024.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Welsh Rarebit",
+    "link": "https://www.gazoakleychef.com/recipes/welsh-rarebit/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2021/03/Welsh-Rarebits1-819x1024.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Bread & Butter Pudding",
+    "link": "https://www.gazoakleychef.com/recipes/bread-butter-pudding/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2023/02/Bread-Butter-Pudding-2nd-Higher-819x1024.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Zucker & Jagdwurst",
     "title": "Recipe",
     "link": "https://www.zuckerjagdwurst.com/en/recipes/vegan-potato-pancake-casserole",
@@ -13424,8 +15885,8 @@
     "date": "2020-01-01T00:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Low Waste"
+      "Low Waste",
+      "Easy"
     ]
   },
   {
@@ -13615,8 +16076,8 @@
     "date": "2020-01-01T00:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Low Waste"
+      "Low Waste",
+      "Easy"
     ]
   },
   {
@@ -13731,8 +16192,8 @@
     "date": "2019-11-12T11:48:07+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "GF"
+      "GF",
+      "Easy"
     ]
   },
   {
@@ -13931,6 +16392,24 @@
     "special_tags": []
   },
   {
+    "blog_name": "School Night Vegan",
+    "title": "Vegan Scallops and Crushed Edamame on Toast",
+    "link": "https://schoolnightvegan.com/home/vegan-scallops/",
+    "image": "https://schoolnightvegan.com/wp-content/uploads/2019/07/vegan-scallops.jpg",
+    "date": "2019-06-27T19:49:35+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Punks",
+    "title": "Creamy Vegan Cauliflower Alfredo",
+    "link": "https://veganpunks.com/creamy-vegan-cauliflower-alfredo/",
+    "image": "https://veganpunks.com/wp-content/uploads/2020/01/Alfredo-featured.jpg",
+    "date": "2019-06-25T15:18:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Vegan Punks",
     "title": "Vegan Kimchi Fried Rice in 15 Minutes",
     "link": "https://veganpunks.com/vegan-kimchi-fried-rice/",
@@ -13938,9 +16417,18 @@
     "date": "2019-06-18T14:40:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
+  },
+  {
+    "blog_name": "School Night Vegan",
+    "title": "Vegan Scouse",
+    "link": "https://schoolnightvegan.com/home/vegan-scouse/",
+    "image": "https://schoolnightvegan.com/wp-content/uploads/2019/06/IMG_2813-2.jpg",
+    "date": "2019-06-12T18:59:34+00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "Hot For Food",
@@ -14005,6 +16493,15 @@
     "special_tags": [
       "WFPB"
     ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "All-Time Best Vegan Mac and Cheese Recipes",
+    "link": "https://veganyackattack.com/2019/04/18/best-vegan-mac-and-cheese-recipes/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2019/04/macncheesepin.jpg",
+    "date": "2019-04-18T20:00:15+00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "Vegan Punks",
@@ -14112,6 +16609,33 @@
     "special_tags": []
   },
   {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Vegan Recipes for Beginners",
+    "link": "https://veganyackattack.com/2019/01/14/vegan-recipes-for-beginners/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2019/01/veganbeginner-header.jpg",
+    "date": "2019-01-14T21:00:57+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "School Night Vegan",
+    "title": "Mini Beet Wellingtons",
+    "link": "https://schoolnightvegan.com/home/2018-12-19-mini-beet-wellingtons/",
+    "image": "https://schoolnightvegan.com/wp-content/uploads/2019/08/mini-beet-wellingtons.jpeg",
+    "date": "2018-12-21T09:00:08+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "School Night Vegan",
+    "title": "Beetroot Dal with Onion Bhajji",
+    "link": "https://schoolnightvegan.com/home/2018-12-18-beetroot-dal-with-onion-bhajji/",
+    "image": "https://schoolnightvegan.com/wp-content/uploads/2018/12/beetroot-dal-with-nion-bhaji.jpeg",
+    "date": "2018-12-18T19:48:11+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Hot For Food",
     "title": "vegan latkes with sauerkraut",
     "link": "https://www.hotforfoodblog.com/recipes/breakfast/2018/11/27/potato-sauerkraut-latkes-with-lemon-dill-sour-cream/",
@@ -14121,11 +16645,29 @@
     "special_tags": []
   },
   {
+    "blog_name": "School Night Vegan",
+    "title": "Butter Cauliflower Curry with Cucumber Lime Salsa",
+    "link": "https://schoolnightvegan.com/home/2018-11-22-butter-cauliflower-curry-with-cucumber-lime-salsa/",
+    "image": "https://schoolnightvegan.com/wp-content/uploads/2018/11/IMG_7080.jpg",
+    "date": "2018-11-22T21:16:20+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "The Veg Space",
     "title": "Vegan Sausage Rolls with sage and red onion",
     "link": "https://www.thevegspace.co.uk/recipe-easy-vegan-sausage-rolls/",
     "image": "https://www.thevegspace.co.uk/wp-content/uploads/2018/10/vegan-sausage-rolls-1.jpg",
     "date": "2018-10-01T19:24:35+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Punks",
+    "title": "Vegan Sushi",
+    "link": "https://veganpunks.com/vegan-sushi/",
+    "image": "https://veganpunks.com/wp-content/uploads/2020/02/sushi-featured.jpg",
+    "date": "2018-09-26T10:57:00+00:00",
     "is_disruptor": false,
     "special_tags": []
   },
@@ -14164,6 +16706,17 @@
     "date": "2018-08-28T11:18:49+00:00",
     "is_disruptor": false,
     "special_tags": []
+  },
+  {
+    "blog_name": "Hot For Food",
+    "title": "3 easy vegan dips",
+    "link": "https://www.hotforfoodblog.com/recipes/2018/08/20/3-easy-vegan-dips/",
+    "image": "https://www.hotforfoodblog.com/wp-content/uploads/2018/08/easyvegandips_hotforfood_filtered1.jpg",
+    "date": "2018-08-20T21:57:13+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
   },
   {
     "blog_name": "Hot For Food",
@@ -14233,6 +16786,17 @@
     "special_tags": []
   },
   {
+    "blog_name": "School Night Vegan",
+    "title": "Vegan Hoi-Sin Tempeh Rice Bowl",
+    "link": "https://schoolnightvegan.com/home/vegan-rice-bowl/",
+    "image": "https://schoolnightvegan.com/wp-content/uploads/2019/07/DSC_3715.jpg",
+    "date": "2018-07-13T11:23:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
     "blog_name": "Hot For Food",
     "title": "easy vegan pulled pork sandwiches",
     "link": "https://www.hotforfoodblog.com/recipes/sandwiches/2018/06/25/easy-vegan-pulled-pork-sandwiches/",
@@ -14284,6 +16848,26 @@
     "special_tags": []
   },
   {
+    "blog_name": "Vegan Punks",
+    "title": "Beetroot hummus",
+    "link": "https://veganpunks.com/beetroot-hummus/",
+    "image": "https://veganpunks.com/wp-content/uploads/2018/04/Beetroot-Hummus-featured.jpg",
+    "date": "2018-04-30T17:40:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Punks",
+    "title": "Vegan Baked Beans",
+    "link": "https://veganpunks.com/vegan-baked-beans/",
+    "image": "https://veganpunks.com/wp-content/uploads/2018/04/baked-beans-featured.jpg",
+    "date": "2018-04-29T13:49:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
     "blog_name": "What Jew You Want to Eat",
     "title": "Sabich Crostini",
     "link": "https://whatjewwannaeat.com/sabich-crostini/",
@@ -14323,14 +16907,23 @@
   },
   {
     "blog_name": "Vegan Punks",
+    "title": "Thai Red Vegetable Curry",
+    "link": "https://veganpunks.com/thai-red-vegetable-curry/",
+    "image": "https://veganpunks.com/wp-content/uploads/2020/02/7E74FCC2-64BF-49AE-A385-9F7060367346.jpeg",
+    "date": "2018-03-13T17:18:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Punks",
     "title": "Easy Aubergine and Sweet Potato Katsu Curry (Wagamama Copycat)",
     "link": "https://veganpunks.com/vegan-katsu-curry/",
     "image": "https://veganpunks.com/wp-content/uploads/2018/03/Sweet-potato-katsu-FB.jpg",
     "date": "2018-03-09T18:38:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -14398,6 +16991,15 @@
     ]
   },
   {
+    "blog_name": "Vegan Punks",
+    "title": "Creamy Vegan Mushroom Risotto",
+    "link": "https://veganpunks.com/creamy-vegan-mushroom-risotto/",
+    "image": "https://veganpunks.com/wp-content/uploads/2018/01/Vegan-Mushroom-Risotto-featured.jpg",
+    "date": "2018-01-07T12:41:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "The Veg Space",
     "title": "Creamy Vegan Gnocchi with wild mushrooms",
     "link": "https://www.thevegspace.co.uk/recipe-creamy-wild-mushroom-one-pot-gnocchi-vegan/",
@@ -14454,6 +17056,24 @@
     "link": "https://www.thevegspace.co.uk/vegan-christmas-dinner-recipe-kale-lovers-christmas-pie/",
     "image": "https://www.thevegspace.co.uk/wp-content/uploads/2017/12/christmas-pie.jpg",
     "date": "2017-12-06T09:53:12+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Hot For Food",
+    "title": "hemp hearts 3 ways",
+    "link": "https://www.hotforfoodblog.com/recipes/2017/11/27/hemp-hearts-3-ways/",
+    "image": "https://www.hotforfoodblog.com/wp-content/uploads/2017/11/manitobaharvest_hotforfood_filtered1-1.jpg",
+    "date": "2017-11-27T19:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Punks",
+    "title": "Vegan Tuna Sandwich",
+    "link": "https://veganpunks.com/vegan-tuna-sandwich/",
+    "image": "https://veganpunks.com/wp-content/uploads/2017/09/DSC_0738-featured.jpg",
+    "date": "2017-09-20T13:00:00+00:00",
     "is_disruptor": false,
     "special_tags": []
   },
@@ -14550,6 +17170,26 @@
     "link": "https://www.hotforfoodblog.com/recipes/2017/06/30/vegan-carbonara-with-zucchini-cream-sauce/",
     "image": "https://www.hotforfoodblog.com/wp-content/uploads/2017/07/vegancarbonara_hotforfood_filtered1.jpg",
     "date": "2017-06-30T18:30:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Hot For Food",
+    "title": "3 easy summer salsas",
+    "link": "https://www.hotforfoodblog.com/recipes/2017/06/27/3-easy-summer-salsas/",
+    "image": "https://www.hotforfoodblog.com/wp-content/uploads/2017/06/salsas_hotforfood_filtered3.jpg",
+    "date": "2017-06-27T18:30:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Hot For Food",
+    "title": "vegan cornbread 3 ways",
+    "link": "https://www.hotforfoodblog.com/recipes/2017/06/20/vegan-cornbread-3-ways/",
+    "image": "https://www.hotforfoodblog.com/wp-content/uploads/2017/06/vegancornbread3ways_hotforfood_filtered1.jpg",
+    "date": "2017-06-20T18:30:00+00:00",
     "is_disruptor": false,
     "special_tags": []
   },
@@ -14785,6 +17425,17 @@
     "special_tags": []
   },
   {
+    "blog_name": "Hot For Food",
+    "title": "3 easy dinner party recipes",
+    "link": "https://www.hotforfoodblog.com/recipes/2016/04/03/3-easy-dinner-party-recipes/",
+    "image": "https://www.hotforfoodblog.com/wp-content/uploads/2016/04/dinnerparty_hotforfood_filtered1.jpg",
+    "date": "2016-04-03T19:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "The Veg Space",
     "title": "Pangrattato with sun-dried tomato and lemon",
     "link": "https://www.thevegspace.co.uk/recipe-lemony-linguine-pangrattato/",
@@ -14857,8 +17508,8 @@
     "date": "2015-11-17T20:22:16+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "Budget"
+      "Budget",
+      "Easy"
     ]
   },
   {
@@ -14867,6 +17518,15 @@
     "link": "https://www.hotforfoodblog.com/recipes/soups/2015/11/16/vegan-chicken-noodle-soup/",
     "image": "https://www.hotforfoodblog.com/wp-content/uploads/2015/11/veganchickennoodlesoup_hotforfood_filtered1-scaled.jpg",
     "date": "2015-11-16T21:53:01+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Hot For Food",
+    "title": "3 vegan recipes with coconut milk",
+    "link": "https://www.hotforfoodblog.com/recipes/breakfast/2015/10/13/3-unique-ways-to-use-coconut-milk/",
+    "image": "https://www.hotforfoodblog.com/wp-content/uploads/2015/10/coconutchiaparfaits_hotforfood_filtered4-scaled.jpg",
+    "date": "2015-10-13T19:09:10+00:00",
     "is_disruptor": false,
     "special_tags": []
   },
@@ -15097,6 +17757,17 @@
     "special_tags": []
   },
   {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Healthy Recipes for the New Year!",
+    "link": "https://veganyackattack.com/2015/01/06/healthy-recipes-for-the-new-year/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2015/01/IMG_9682-1.jpg",
+    "date": "2015-01-06T12:00:25+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
     "blog_name": "Hot For Food",
     "title": "the drunk uncle cocktail",
     "link": "https://www.hotforfoodblog.com/recipes/2014/12/07/the-drunk-uncle-cocktail/",
@@ -15133,6 +17804,15 @@
     "link": "https://www.hotforfoodblog.com/recipes/2014/10/06/moroccan-mint-corn/",
     "image": "https://www.hotforfoodblog.com/wp-content/uploads/2014/10/moroccanmintcorn_hotforfoodblog_filtered-scaled.jpg",
     "date": "2014-10-06T04:54:23+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Return of the Mac MoFo!",
+    "link": "https://veganyackattack.com/2014/09/01/return-of-the-mac-mofo/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2014/09/returnofthemacllo.jpg",
+    "date": "2014-09-01T19:56:25+00:00",
     "is_disruptor": false,
     "special_tags": []
   },
@@ -15193,11 +17873,85 @@
     "special_tags": []
   },
   {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Top 13 Recipes of 2013!",
+    "link": "https://veganyackattack.com/2013/12/30/top-13-recipes-of-2013/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2013/12/top13of2013.jpg",
+    "date": "2013-12-30T18:15:15+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Vegan Holiday Recipe Round Up!",
+    "link": "https://veganyackattack.com/2013/11/27/holiday-recipe-round-up/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2013/11/veganholidayreciperoundup.jpg",
+    "date": "2013-11-27T18:40:55+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "The Veg Space",
     "title": "Peanut Butter Chickpea Curry",
     "link": "https://www.thevegspace.co.uk/recipe-namibian-spicy-peanut-chickpea-soup/",
     "image": "https://www.thevegspace.co.uk/wp-content/uploads/2013/11/peanut-butter-chickpea-curry-3.jpg",
     "date": "2013-11-14T11:39:36+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Born to Mac (Vegan) MOFO",
+    "link": "https://veganyackattack.com/2013/09/01/born-to-mac-vegan-mofo/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2013/09/borntomac-1.jpg",
+    "date": "2013-09-01T18:40:27+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Vegan Pizza Recipes",
+    "link": "https://veganyackattack.com/2013/06/28/vegan-pizza-day-round-up/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2013/03/mini-pizza-pies-9.jpg",
+    "date": "2013-06-28T17:04:34+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "The Best Vegan Memorial Day Recipes!",
+    "link": "https://veganyackattack.com/2012/05/28/memorial-day-recipes/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2012/05/grilledcornandburgers-0697-copy-scaled.jpg",
+    "date": "2012-05-28T10:57:17+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "CitrusLove: Sesame Crusted Tofu with Kale Satsuma Stir Fry",
+    "link": "https://veganyackattack.com/2012/01/09/citruslove-sesame-crusted-tofu-with-kale-satsuma-stir-fry/",
+    "image": "https://farm8.staticflickr.com/7169/6670611515_0ce6245795.jpg",
+    "date": "2012-01-09T22:15:46+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Homemade Skillet Seitan Sausage Crumbles",
+    "link": "https://veganyackattack.com/2011/09/12/half-half-veggie-and-seitan-sausage-pizza/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2011/09/6129586898_2e6bc7176f.jpg",
+    "date": "2011-09-12T10:58:34+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Spicy Mushroom Tacos with Soft Eggplant Shells & Hot Cheese Sauce",
+    "link": "https://veganyackattack.com/2011/09/01/spicy-mushroom-tacos-with-soft-eggplant-shells-pico-de-gallo-hot-cheese-sauce/",
+    "image": "https://veganyackattack.com/wp-content/uploads/2011/09/tumblr_lqvb4ns2BD1qzf5leo1_500.jpg",
+    "date": "2011-09-01T22:14:12+00:00",
     "is_disruptor": false,
     "special_tags": []
   },
