@@ -1,5 +1,99 @@
 [
   {
+    "blog_name": "The Little Blog of Vegan",
+    "title": "Mini No-Bake Banoffee Cheesecakes",
+    "link": "https://www.thelittleblogofvegan.com/2026/02/mini-no-bake-banoffee-cheesecakes.html",
+    "image": "https://www.thelittleblogofvegan.com/wp-content/uploads/2026/02/mini-banoffee-cheesecakes-1440x2181.jpg",
+    "date": "2026-02-13T13:35:25+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Plantifully Based",
+    "title": "Vegan Shredded Chicken (Made from Seitan)",
+    "link": "https://plantifullybasedblog.com/vegan-shredded-chicken-made-from-seitan/?utm_source=rss&utm_medium=rss&utm_campaign=vegan-shredded-chicken-made-from-seitan",
+    "image": "https://plantifullybasedblog.com/wp-content/uploads/2026/02/85E85060-B377-4AAE-A7AA-577A8EAEA18F-819x1024.jpeg",
+    "date": "2026-02-13T13:28:04+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
+    "blog_name": "The Stingy Vegan",
+    "title": "Spinach Tortellini",
+    "link": "https://thestingyvegan.com/spinach-tortellini/",
+    "image": "https://thestingyvegan.com/wp-content/uploads/2026/02/spinach-tortellini-picture.jpg",
+    "date": "2026-02-13T12:22:29+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "Budget",
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Connoisseurus Veg",
+    "title": "Easy Vegan Chocolate Truffles",
+    "link": "https://www.connoisseurusveg.com/vegan-truffles/",
+    "image": "https://www.connoisseurusveg.com/wp-content/uploads/2026/01/vegan-truffles-sq.jpg",
+    "date": "2026-02-13T12:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "The Banana Diaries",
+    "title": "Small Batch Vegan Chocolate Mousse Cake \u2013 No Tofu, No Cashews!",
+    "link": "https://thebananadiaries.com/small-batch-chocolate-mousse-cake-vegan/",
+    "image": "https://thebananadiaries.com/wp-content/uploads/2023/10/small-batch-chocolate-mousse-cake-vegan_9691.jpg",
+    "date": "2026-02-13T12:00:00+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
+    "blog_name": "From My Bowl",
+    "title": "One Pan Vegan Massaman Curry",
+    "link": "https://frommybowl.com/one-pan-vegan-massaman-curry/?utm_source=rss&utm_medium=rss&utm_campaign=one-pan-vegan-massaman-curry",
+    "image": "https://frommybowl.com/wp-content/uploads/2026/02/One_Pan_Vegan_Massaman_Curry_FromMyBowl-13.jpg",
+    "date": "2026-02-13T11:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Full of Plants",
+    "title": "Celery Pasta Soup",
+    "link": "https://fullofplants.com/celery-pasta-soup/?adt_ei={$email}",
+    "image": "https://fullofplants.com/wp-content/uploads/2026/02/vegan-celery-pasta-soup-rich-and-hearty-16-720x900.jpg",
+    "date": "2026-02-13T11:00:00+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
+    "blog_name": "The Conscious Plant Kitchen",
+    "title": "Chocolate Pistachio Cookies (No Gluten, No Eggs, No Dairy)",
+    "link": "https://www.theconsciousplantkitchen.com/chocolate-pistachio-cookies/",
+    "image": "https://www.theconsciousplantkitchen.com/wp-content/uploads/2025/12/Chocolate-Pistachios-Cookies-1.jpg",
+    "date": "2026-02-13T05:32:07+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
+    "blog_name": "The Vegan 8",
+    "title": "Vegan \u201cChicken\u201d Salad (Oil-free)",
+    "link": "https://thevegan8.com/vegan-chicken-salad-oil-free/",
+    "image": "https://thevegan8.com/wp-content/uploads/2026/02/vegan-chicken-salad-oil-free2.jpg",
+    "date": "2026-02-13T01:59:38+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Budget",
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "Namely Marly",
     "title": "Chickpea Cookies",
     "link": "https://namelymarly.com/chickpea-cookies/",
@@ -175,8 +269,8 @@
     "date": "2026-02-11T12:05:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "GF",
-      "Budget"
+      "Budget",
+      "GF"
     ]
   },
   {
@@ -383,8 +477,8 @@
     "date": "2026-02-10T16:20:03+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "GF",
       "WFPB",
+      "GF",
       "Easy"
     ]
   },
@@ -980,8 +1074,8 @@
     "date": "2026-02-06T12:54:49+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "GF",
-      "Budget"
+      "Budget",
+      "GF"
     ]
   },
   {
@@ -1562,8 +1656,8 @@
     "date": "2026-02-02T02:19:12+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "GF",
-      "Budget"
+      "Budget",
+      "GF"
     ]
   },
   {
@@ -2095,8 +2189,8 @@
     "date": "2026-01-28T12:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "GF",
       "Budget",
+      "GF",
       "Easy"
     ]
   },
@@ -2330,8 +2424,8 @@
     "date": "2026-01-26T19:54:47+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "GF",
-      "WFPB"
+      "WFPB",
+      "GF"
     ]
   },
   {
@@ -2382,8 +2476,8 @@
     "date": "2026-01-26T02:26:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "GF",
-      "Budget"
+      "Budget",
+      "GF"
     ]
   },
   {
@@ -2564,8 +2658,8 @@
     "date": "2026-01-22T18:00:48+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "GF",
       "Budget",
+      "GF",
       "Easy"
     ]
   },
@@ -2620,8 +2714,8 @@
     "date": "2026-01-22T12:00:00+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "GF",
-      "Budget"
+      "Budget",
+      "GF"
     ]
   },
   {
@@ -3112,8 +3206,8 @@
     "date": "2026-01-15T23:20:14+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "GF",
-      "Budget"
+      "Budget",
+      "GF"
     ]
   },
   {
@@ -4830,9 +4924,9 @@
     "date": "2025-12-14T00:22:05+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "GF",
+      "Budget",
       "WFPB",
-      "Budget"
+      "GF"
     ]
   },
   {
@@ -4973,8 +5067,8 @@
     "date": "2025-12-10T18:49:51+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "GF",
-      "Budget"
+      "Budget",
+      "GF"
     ]
   },
   {
@@ -6083,8 +6177,8 @@
     "date": "2025-11-12T12:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "GF",
-      "Budget"
+      "Budget",
+      "GF"
     ]
   },
   {
@@ -6716,8 +6810,8 @@
     "date": "2025-10-22T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "GF",
-      "Budget"
+      "Budget",
+      "GF"
     ]
   },
   {
@@ -6888,8 +6982,8 @@
     "date": "2025-10-15T11:36:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "GF",
-      "Budget"
+      "Budget",
+      "GF"
     ]
   },
   {
@@ -7018,8 +7112,8 @@
     "date": "2025-10-09T22:00:14+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "GF",
-      "Budget"
+      "Budget",
+      "GF"
     ]
   },
   {
@@ -7080,8 +7174,8 @@
     "date": "2025-10-04T09:03:35+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "GF",
-      "WFPB"
+      "WFPB",
+      "GF"
     ]
   },
   {
@@ -7486,8 +7580,8 @@
     "date": "2025-09-08T13:10:19+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "GF",
       "Budget",
+      "GF",
       "Easy"
     ]
   },
@@ -7963,9 +8057,9 @@
     "date": "2025-07-31T18:00:11+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "GF",
-      "WFPB",
       "Budget",
+      "WFPB",
+      "GF",
       "Easy"
     ]
   },
@@ -8151,8 +8245,8 @@
     "date": "2025-07-06T18:00:38+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "GF",
       "WFPB",
+      "GF",
       "Easy"
     ]
   },
@@ -8558,8 +8652,8 @@
     "date": "2025-05-07T02:23:11+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "GF",
-      "WFPB"
+      "WFPB",
+      "GF"
     ]
   },
   {
@@ -8907,8 +9001,8 @@
     "date": "2025-03-09T00:57:09+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "GF",
-      "WFPB"
+      "WFPB",
+      "GF"
     ]
   },
   {
@@ -9056,8 +9150,8 @@
     "date": "2025-02-14T00:53:37+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "GF",
-      "WFPB"
+      "WFPB",
+      "GF"
     ]
   },
   {
@@ -9384,8 +9478,8 @@
     "date": "2024-11-22T18:54:42+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "GF",
-      "Budget"
+      "Budget",
+      "GF"
     ]
   },
   {
@@ -12083,6 +12177,15 @@
     "special_tags": []
   },
   {
+    "blog_name": "Vegan Yack Attack",
+    "title": "Learn how your comment data is processed.",
+    "link": "https://akismet.com/privacy/",
+    "image": "https://s2.wp.com/wp-content/themes/a8c/akismet-2022/assets/images/social-banner.png?m=1681845962i",
+    "date": "2022-04-14T21:22:07+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "School Night Vegan",
     "title": "Vegan Vodka Sauce",
     "link": "https://schoolnightvegan.com/home/vegan-vodka-sauce/",
@@ -12132,8 +12235,8 @@
     "date": "2022-04-07T02:06:12+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "GF",
-      "Budget"
+      "Budget",
+      "GF"
     ]
   },
   {
