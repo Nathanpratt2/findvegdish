@@ -1,15 +1,15 @@
 # Feed Health Report
-**Last Run:** 2026-02-13 14:50:10
+**Last Run:** 2026-02-13 20:31:25
 
 ### 📊 System Summary
 | Metric | Value | Breakdown |
 | :--- | :--- | :--- |
-| **Total Database** | 1801 | 142 new today |
+| **Total Database** | 1812 | 143 new today |
 | **Blogs Monitored** | 107 | 30 HTML / 76 RSS |
 | **Active Sources** | 92 | Sources with 5+ recipes |
-| **WFPB Recipes** | 208 | 11% of total |
-| **Easy Recipes** | 404 | 22% of total |
-| **Budget Recipes** | 256 | 14% of total |
+| **WFPB Recipes** | 209 | 11% of total |
+| **Easy Recipes** | 405 | 22% of total |
+| **Budget Recipes** | 257 | 14% of total |
 | **Gluten-Free** | 153 | 8% of total |
 | **Avg Freshness** | 2025-08-01 | Latest post average |
 
@@ -103,26 +103,26 @@ function sortTable(n) {
 <tr><td>Cadry's Kitchen</td><td>5</td><td>5</td><td>0</td><td>3</td><td>0</td><td>0</td><td>2026-01-26</td><td>✅ OK</td></tr>
 <tr><td>Chef Bai</td><td>1</td><td>63</td><td>3</td><td>11</td><td>1</td><td>1</td><td>2025-01-15</td><td>✅ OK (1)</td></tr>
 <tr><td>Choosing Chia (Vegan Recipes)</td><td>0</td><td>5</td><td>0</td><td>5</td><td>0</td><td>0</td><td>2025-08-18</td><td>✅ OK</td></tr>
-<tr><td>Connoisseurus Veg</td><td>1</td><td>11</td><td>0</td><td>1</td><td>1</td><td>0</td><td>2026-02-13</td><td>✅ OK</td></tr>
+<tr><td>Connoisseurus Veg</td><td>0</td><td>11</td><td>0</td><td>1</td><td>1</td><td>0</td><td>2026-02-13</td><td>✅ OK</td></tr>
 <tr><td>Cupful of Kale</td><td>9</td><td>6</td><td>1</td><td>0</td><td>0</td><td>0</td><td>2023-10-11</td><td>✅ OK (9)</td></tr>
-<tr><td>Dr. Vegan</td><td>0</td><td>10</td><td>2</td><td>10</td><td>7</td><td>0</td><td>2026-02-11</td><td>✅ OK</td></tr>
+<tr><td>Dr. Vegan</td><td>1</td><td>11</td><td>3</td><td>11</td><td>7</td><td>0</td><td>2026-02-13</td><td>✅ OK</td></tr>
 <tr><td>Earth to Veg</td><td>2</td><td>8</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2026-02-06</td><td>✅ OK</td></tr>
-<tr><td>Eat Figs, Not Pigs</td><td>0</td><td>13</td><td>0</td><td>5</td><td>1</td><td>0</td><td>2026-02-12</td><td>✅ OK</td></tr>
+<tr><td>Eat Figs, Not Pigs</td><td>1</td><td>14</td><td>0</td><td>5</td><td>1</td><td>0</td><td>2026-02-13</td><td>✅ OK</td></tr>
 <tr><td>Elavegan</td><td>0</td><td>10</td><td>1</td><td>1</td><td>2</td><td>9</td><td>2026-02-06</td><td>✅ OK</td></tr>
 <tr><td>Elsa's Wholesome Life</td><td>1</td><td>20</td><td>1</td><td>0</td><td>0</td><td>0</td><td>2022-02-14</td><td>✅ OK (1)</td></tr>
 <tr><td>Flora & Vino</td><td>1</td><td>10</td><td>10</td><td>0</td><td>0</td><td>0</td><td>2026-02-11</td><td>✅ OK</td></tr>
 <tr><td>Forks Over Knives</td><td>1</td><td>10</td><td>10</td><td>2</td><td>2</td><td>1</td><td>2026-02-10</td><td>✅ OK</td></tr>
 <tr><td>Fragrant Vanilla Cake</td><td>0</td><td>10</td><td>0</td><td>1</td><td>0</td><td>0</td><td>2026-02-09</td><td>✅ OK</td></tr>
-<tr><td>From My Bowl</td><td>1</td><td>11</td><td>4</td><td>4</td><td>2</td><td>0</td><td>2026-02-13</td><td>✅ OK</td></tr>
-<tr><td>Full of Plants</td><td>1</td><td>7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2026-02-13</td><td>✅ OK</td></tr>
+<tr><td>From My Bowl</td><td>0</td><td>11</td><td>4</td><td>4</td><td>2</td><td>0</td><td>2026-02-13</td><td>✅ OK</td></tr>
+<tr><td>Full of Plants</td><td>0</td><td>7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2026-02-13</td><td>✅ OK</td></tr>
 <tr><td>Gaz Oakley</td><td>0</td><td>56</td><td>1</td><td>2</td><td>3</td><td>0</td><td>2020-01-01</td><td>✅ OK</td></tr>
-<tr><td>Gretchen's Vegan Bakery</td><td>0</td><td>17</td><td>0</td><td>4</td><td>0</td><td>0</td><td>2026-02-10</td><td>✅ OK</td></tr>
+<tr><td>Gretchen's Vegan Bakery</td><td>1</td><td>18</td><td>0</td><td>4</td><td>0</td><td>0</td><td>2026-02-12</td><td>✅ OK</td></tr>
 <tr><td>Healthy Little Vittles</td><td>1</td><td>20</td><td>0</td><td>5</td><td>1</td><td>20</td><td>2026-02-11</td><td>✅ OK</td></tr>
 <tr><td>HealthyGirl Kitchen</td><td>3</td><td>8</td><td>1</td><td>3</td><td>0</td><td>0</td><td>2026-02-06</td><td>✅ OK</td></tr>
 <tr><td>Holistic Chef Academy</td><td>0</td><td>10</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2026-01-30</td><td>✅ OK</td></tr>
 <tr><td>Hot For Food</td><td>1</td><td>150</td><td>10</td><td>23</td><td>9</td><td>0</td><td>2025-05-28</td><td>✅ OK (1)</td></tr>
 <tr><td>It Doesn't Taste Like Chicken</td><td>0</td><td>32</td><td>1</td><td>14</td><td>9</td><td>0</td><td>2026-02-11</td><td>✅ OK</td></tr>
-<tr><td>Jessica in the Kitchen</td><td>0</td><td>11</td><td>1</td><td>2</td><td>1</td><td>2</td><td>2026-02-12</td><td>✅ OK</td></tr>
+<tr><td>Jessica in the Kitchen</td><td>1</td><td>12</td><td>1</td><td>2</td><td>1</td><td>2</td><td>2026-02-13</td><td>✅ OK</td></tr>
 <tr><td>Lazy Cat Kitchen</td><td>0</td><td>10</td><td>0</td><td>0</td><td>2</td><td>0</td><td>2026-02-07</td><td>✅ OK</td></tr>
 <tr><td>Love and Lemons (Vegan Recipes)</td><td>4</td><td>25</td><td>4</td><td>4</td><td>2</td><td>0</td><td>2026-02-05</td><td>✅ OK (4)</td></tr>
 <tr><td>Make It Dairy Free</td><td>2</td><td>8</td><td>1</td><td>1</td><td>2</td><td>1</td><td>2026-02-01</td><td>✅ OK</td></tr>
@@ -142,7 +142,7 @@ function sortTable(n) {
 <tr><td>Plant Power Couple</td><td>0</td><td>12</td><td>0</td><td>12</td><td>1</td><td>0</td><td>2026-02-11</td><td>✅ OK</td></tr>
 <tr><td>Plant-Based on a Budget</td><td>2</td><td>36</td><td>2</td><td>7</td><td>36</td><td>1</td><td>2026-02-09</td><td>✅ OK (2)</td></tr>
 <tr><td>PlantYou</td><td>0</td><td>12</td><td>12</td><td>1</td><td>2</td><td>0</td><td>2026-02-12</td><td>✅ OK</td></tr>
-<tr><td>Plantifully Based</td><td>1</td><td>10</td><td>1</td><td>2</td><td>0</td><td>0</td><td>2026-02-13</td><td>✅ OK</td></tr>
+<tr><td>Plantifully Based</td><td>0</td><td>10</td><td>1</td><td>2</td><td>0</td><td>0</td><td>2026-02-13</td><td>✅ OK</td></tr>
 <tr><td>Rabbit and Wolves</td><td>2</td><td>8</td><td>0</td><td>1</td><td>1</td><td>0</td><td>2026-01-19</td><td>✅ OK</td></tr>
 <tr><td>Rainbow Nourishments</td><td>0</td><td>10</td><td>0</td><td>2</td><td>1</td><td>0</td><td>2026-02-06</td><td>✅ OK</td></tr>
 <tr><td>Rainbow Plant Life</td><td>10</td><td>6</td><td>2</td><td>0</td><td>2</td><td>0</td><td>2026-01-29</td><td>✅ OK</td></tr>
@@ -154,11 +154,11 @@ function sortTable(n) {
 <tr><td>Simple Vegan Blog</td><td>1</td><td>7</td><td>0</td><td>7</td><td>0</td><td>0</td><td>2026-02-12</td><td>✅ OK</td></tr>
 <tr><td>Strength and Sunshine</td><td>0</td><td>10</td><td>2</td><td>10</td><td>2</td><td>10</td><td>2026-01-22</td><td>✅ OK</td></tr>
 <tr><td>Sweet Potato Soul</td><td>0</td><td>10</td><td>0</td><td>1</td><td>1</td><td>0</td><td>2026-02-12</td><td>✅ OK</td></tr>
-<tr><td>Sweet Simple Vegan</td><td>2</td><td>25</td><td>0</td><td>10</td><td>2</td><td>0</td><td>2026-02-10</td><td>✅ OK (2)</td></tr>
-<tr><td>The Banana Diaries</td><td>1</td><td>11</td><td>0</td><td>4</td><td>2</td><td>0</td><td>2026-02-13</td><td>✅ OK</td></tr>
+<tr><td>Sweet Simple Vegan</td><td>3</td><td>26</td><td>0</td><td>10</td><td>2</td><td>0</td><td>2026-02-10</td><td>✅ OK (3)</td></tr>
+<tr><td>The Banana Diaries</td><td>0</td><td>11</td><td>0</td><td>4</td><td>2</td><td>0</td><td>2026-02-13</td><td>✅ OK</td></tr>
 <tr><td>The Burger Dude</td><td>2</td><td>14</td><td>0</td><td>1</td><td>2</td><td>0</td><td>2026-02-12</td><td>✅ OK</td></tr>
 <tr><td>The Cheap Lazy Vegan</td><td>0</td><td>8</td><td>0</td><td>8</td><td>8</td><td>0</td><td>2026-01-09</td><td>✅ OK</td></tr>
-<tr><td>The Conscious Plant Kitchen</td><td>1</td><td>11</td><td>3</td><td>1</td><td>0</td><td>1</td><td>2026-02-13</td><td>✅ OK</td></tr>
+<tr><td>The Conscious Plant Kitchen</td><td>0</td><td>11</td><td>3</td><td>1</td><td>0</td><td>1</td><td>2026-02-13</td><td>✅ OK</td></tr>
 <tr><td>The Edgy Veg</td><td>1</td><td>9</td><td>0</td><td>1</td><td>0</td><td>0</td><td>2024-03-18</td><td>✅ OK (1)</td></tr>
 <tr><td>The First Mess</td><td>0</td><td>12</td><td>1</td><td>2</td><td>2</td><td>1</td><td>2026-02-05</td><td>✅ OK</td></tr>
 <tr><td>The Foodie Takes Flight</td><td>0</td><td>10</td><td>0</td><td>10</td><td>2</td><td>0</td><td>2026-02-05</td><td>✅ OK</td></tr>
@@ -166,22 +166,22 @@ function sortTable(n) {
 <tr><td>The Full Helping (Vegan Recipes)</td><td>5</td><td>32</td><td>3</td><td>5</td><td>6</td><td>0</td><td>2026-01-19</td><td>✅ OK (5)</td></tr>
 <tr><td>The Hidden Veggies</td><td>1</td><td>10</td><td>1</td><td>1</td><td>10</td><td>0</td><td>2026-02-12</td><td>✅ OK</td></tr>
 <tr><td>The Korean Vegan</td><td>3</td><td>7</td><td>0</td><td>5</td><td>0</td><td>0</td><td>2026-02-12</td><td>✅ OK</td></tr>
-<tr><td>The Little Blog of Vegan</td><td>1</td><td>11</td><td>0</td><td>6</td><td>0</td><td>0</td><td>2026-02-13</td><td>✅ OK</td></tr>
+<tr><td>The Little Blog of Vegan</td><td>0</td><td>11</td><td>0</td><td>6</td><td>0</td><td>0</td><td>2026-02-13</td><td>✅ OK</td></tr>
 <tr><td>The Loopy Whisk (Vegan Recipes)</td><td>0</td><td>11</td><td>0</td><td>4</td><td>0</td><td>10</td><td>2024-06-07</td><td>✅ OK</td></tr>
-<tr><td>The Plant-Based RD</td><td>1</td><td>9</td><td>3</td><td>0</td><td>0</td><td>0</td><td>2026-02-03</td><td>✅ OK</td></tr>
+<tr><td>The Plant-Based RD</td><td>2</td><td>10</td><td>3</td><td>0</td><td>0</td><td>0</td><td>2026-02-13</td><td>✅ OK</td></tr>
 <tr><td>The Post-Punk Kitchen</td><td>0</td><td>10</td><td>1</td><td>1</td><td>2</td><td>0</td><td>2026-02-11</td><td>✅ OK</td></tr>
-<tr><td>The Stingy Vegan</td><td>1</td><td>11</td><td>0</td><td>11</td><td>11</td><td>0</td><td>2026-02-13</td><td>✅ OK</td></tr>
+<tr><td>The Stingy Vegan</td><td>0</td><td>11</td><td>0</td><td>11</td><td>11</td><td>0</td><td>2026-02-13</td><td>✅ OK</td></tr>
 <tr><td>The Veg Space</td><td>1</td><td>46</td><td>2</td><td>4</td><td>4</td><td>0</td><td>2022-10-20</td><td>✅ OK (1)</td></tr>
-<tr><td>The Vegan 8</td><td>2</td><td>10</td><td>2</td><td>10</td><td>10</td><td>0</td><td>2026-02-13</td><td>✅ OK</td></tr>
+<tr><td>The Vegan 8</td><td>1</td><td>10</td><td>2</td><td>10</td><td>10</td><td>0</td><td>2026-02-13</td><td>✅ OK</td></tr>
 <tr><td>Unconventional Baker</td><td>0</td><td>10</td><td>0</td><td>0</td><td>0</td><td>10</td><td>2025-11-01</td><td>✅ OK</td></tr>
 <tr><td>VegNews</td><td>0</td><td>17</td><td>2</td><td>2</td><td>0</td><td>0</td><td>2026-02-10</td><td>✅ OK</td></tr>
 <tr><td>Vegan Heaven</td><td>0</td><td>9</td><td>0</td><td>0</td><td>1</td><td>0</td><td>2026-01-06</td><td>✅ OK</td></tr>
 <tr><td>Vegan Punks</td><td>0</td><td>76</td><td>1</td><td>48</td><td>7</td><td>0</td><td>2025-11-26</td><td>✅ OK</td></tr>
 <tr><td>Vegan Richa</td><td>9</td><td>10</td><td>0</td><td>2</td><td>4</td><td>0</td><td>2026-02-11</td><td>✅ OK</td></tr>
 <tr><td>Vegan Richa GF</td><td>0</td><td>25</td><td>0</td><td>7</td><td>7</td><td>25</td><td>2026-02-11</td><td>✅ OK</td></tr>
-<tr><td>Vegan Yack Attack</td><td>20</td><td>192</td><td>15</td><td>30</td><td>23</td><td>4</td><td>2025-07-27</td><td>✅ OK (20)</td></tr>
+<tr><td>Vegan Yack Attack</td><td>19</td><td>192</td><td>15</td><td>30</td><td>23</td><td>4</td><td>2025-07-27</td><td>✅ OK (19)</td></tr>
 <tr><td>Veggiekins</td><td>0</td><td>10</td><td>1</td><td>10</td><td>0</td><td>10</td><td>2026-02-10</td><td>✅ OK</td></tr>
-<tr><td>Veggies Don't Bite</td><td>0</td><td>12</td><td>0</td><td>1</td><td>1</td><td>0</td><td>2026-02-07</td><td>✅ OK</td></tr>
+<tr><td>Veggies Don't Bite</td><td>5</td><td>17</td><td>0</td><td>1</td><td>2</td><td>0</td><td>2026-02-13</td><td>✅ OK</td></tr>
 <tr><td>Watch Learn Eat</td><td>1</td><td>10</td><td>0</td><td>10</td><td>2</td><td>1</td><td>2026-02-07</td><td>✅ OK</td></tr>
 <tr><td>What Jew You Want to Eat</td><td>1</td><td>29</td><td>3</td><td>1</td><td>1</td><td>0</td><td>2021-10-20</td><td>✅ OK (1)</td></tr>
 <tr><td>ZardyPlants</td><td>0</td><td>10</td><td>10</td><td>7</td><td>3</td><td>0</td><td>2025-11-08</td><td>✅ OK</td></tr>
