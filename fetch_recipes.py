@@ -122,9 +122,9 @@ HTML_SOURCES = [
     ("Vegan Richa GF", "https://www.veganricha.com/category/gluten-free/", ["GF"], "wordpress"),
     ("School Night Vegan", "https://schoolnightvegan.com/dinners/page/3/", [], "wordpress"), 
     ("Love and Lemons (Vegan Recipes)", "https://www.loveandlemons.com/category/recipes/vegan/", [], "wordpress"),
-    ("Cookie and Kate (Vegan Recipes)", "https://cookieandkate.com/category/vegan-recipes/", [], "wordpress"), 
+    ("Cookie and Kate (Vegan Recipes)", "https://cookieandkate.com/category/food-recipes/vegan/?_paged=1", [], "wordpress"), 
     ("The Loopy Whisk (Vegan Recipes)", "https://theloopywhisk.com/diet/vegan/", ["GF"], "wordpress"),
-    ("Oh She Glows","https://www.ohsheglows.com/recipe-search/",[], "wordpress"),
+    ("Oh She Glows","https://www.ohsheglows.com/recipe-search/",[], "squarespace"),
     ("Zacchary Bird","https://www.zaccharybird.com/all-recipes/",[], "wordpress"),
     ("Elsa's Wholesome Life","https://www.elsaswholesomelife.com/blog?category=Recipes",[], "wordpress"),
     ("The Full Helping (Vegan Recipes)","https://www.thefullhelping.com/dietary/vegan/",[],"wordpress"),
@@ -144,7 +144,7 @@ HTML_SOURCES = [
     ("The Cheap Lazy Vegan", "https://thecheaplazyvegan.com/blog/", ["Budget", "Easy"], "wordpress"),
     ("Alison Roman (Vegan)", "https://www.alisoneroman.com/recipes/collections/vegan/page/5/", [], "wordpress"),
     ("Max La Manna", "https://www.maxlamanna.com/recipes", ["Low Waste"], "wordpress"),
-    ("No Meat Disco", "https://www.nomeatdisco.com/recipes", [], "wordpress"),
+    ("No Meat Disco", "https://www.nomeatdisco.com/recipes", [], "squarespace"),
     ("Chef Bai", "https://www.chefbai.kitchen/blog?offset=1710270365119", [], "wordpress")
 ]
 
@@ -719,6 +719,66 @@ def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags)
                 "special_tags": list(source_tags)
             })
             existing_links.add((link_url, name))
+
+    # --- MODE 2: SQUARESPACE (NEW) ---
+    elif mode == "squarespace":
+        # Targets: Standard 7.0/7.1 Blog Lists, Summary Blocks, Grid Items
+        items = soup.select("article, .summary-item, .blog-item, .blog-basic-grid-item, .entry, .h-entry")
+        
+        for item in items:
+            # 1. Find the link
+            a_tag = item.select_one("a.summary-title-link, a.blog-item-title-link, .entry-title a, a.u-url")
+            
+            # Fallback: First link in container (usually the image link if title link is missing)
+            if not a_tag: 
+                a_tag = item.find('a', href=True)
+            
+            if not a_tag: continue
+            
+            href = a_tag['href']
+            link = urljoin(url, href)
+            
+            # Filter non-recipe links (common in squarespace footers/navs if selector leaked)
+            if any(x in link for x in ["/category/", "/tag/", "/author/", "/archive"]): continue
+
+            if (link, name) in existing_links: continue
+
+            # 2. Find Title
+            # Try specific title classes first
+            t_tag = item.select_one(".summary-title, .blog-item-title, .entry-title, h1, h2")
+            title = t_tag.get_text(strip=True) if t_tag else a_tag.get_text(strip=True)
+            
+            if not title: title = "Recipe"
+
+            # 3. Find Image (Squarespace uses data-src for lazy loading)
+            img = item.find('img')
+            image_candidate = None
+            if img:
+                image_candidate = img.get('data-src') or img.get('data-image') or img.get('src')
+            
+            # 4. Deep Fetch (Mandatory for Squarespace Dates & High Res Images)
+            # Squarespace list views often hide dates or use weird formatting. 
+            # We fetch the article page to get clean JSON-LD metadata.
+            deep_date, deep_image = extract_metadata_from_page(link)
+            
+            final_image = deep_image if deep_image else image_candidate
+            
+            # 5. Fallback Date Logic
+            # If deep fetch failed to find a date, default to a generic past date 
+            # so it doesn't appear as "Brand New" on top of the feed.
+            final_date = deep_date if deep_date else datetime(2022, 1, 1).replace(tzinfo=timezone.utc)
+
+            if final_image:
+                found_items.append({
+                    "blog_name": name, 
+                    "title": title, 
+                    "link": link, 
+                    "image": final_image,
+                    "date": final_date.isoformat(), 
+                    "is_disruptor": False, 
+                    "special_tags": list(source_tags)
+                })
+                existing_links.add((link, name))
 
     # --- MODE 2: CUSTOM PUL (Pick Up Limes) ---
     elif mode == "custom_pul":
