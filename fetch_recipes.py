@@ -1080,7 +1080,6 @@ with open('FEED_HEALTH.md', 'w', encoding='utf-8') as f:
     all_monitored_names = set(list(feed_stats.keys()) + list(total_counts.keys()))
     total_blogs_monitored = len(all_monitored_names)
     
-    # Count how many blogs have >= 5 recipes (Active Sources)
     active_sources_count = sum(1 for count in total_counts.values() if count >= 5)
     
     total_wfpb = sum(wfpb_counts.values())
@@ -1102,76 +1101,36 @@ with open('FEED_HEALTH.md', 'w', encoding='utf-8') as f:
     f.write("| :--- | :--- | :--- |\n")
     f.write(f"| **Total Database** | {total_in_db} | {total_new_today} new today |\n")
     f.write(f"| **Blogs Monitored** | {total_blogs_monitored} | {len(HTML_SOURCES)} HTML / {len(ALL_FEEDS)} RSS |\n")
-    f.write(f"| **Active Sources** | {active_sources_count} | Sources with 5+ recipes |\n")
-    f.write(f"| **WFPB Recipes** | {total_wfpb} | {wfpb_percent}% of total |\n")
-    f.write(f"| **Easy Recipes** | {total_easy} | {easy_percent}% of total |\n")
-    f.write(f"| **Budget Recipes** | {total_budget} | {budget_percent}% of total |\n")
-    f.write(f"| **Gluten-Free** | {total_gf} | {gf_percent}% of total |\n")
-    f.write(f"| **Avg Freshness** | {avg_date} | Latest post average |\n\n")
+    f.write(f"| **Active Sources** | {active_sources_count} | 5+ recipes |\n")
+    f.write(f"| **WFPB / GF** | {total_wfpb} / {total_gf} | {wfpb_percent}% / {gf_percent}% |\n")
+    f.write(f"| **Easy / Budget** | {total_easy} / {total_budget} | {easy_percent}% / {budget_percent}% |\n\n")
 
     f.write("---\n\n")
-    f.write("### 📋 Detailed Blog Status\n")
-    f.write("> **Tip:** Use the scroll bar in the box below to view all blogs. Click headers to sort.\n\n")
+    f.write("### 📋 Detailed Blog Status (Sorted: 0 Recipes First)\n")
     
-    # --- HTML/JS SORTABLE TABLE GENERATION ---
+    # --- CSS FOR CLEAN LAYOUT ---
     f.write("""
-<script>
-function sortTable(n) {
-  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("statusTable");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.rows;
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("TD")[n];
-      y = rows[i + 1].getElementsByTagName("TD")[n];
-      var xContent = x.innerText.toLowerCase();
-      var yContent = y.innerText.toLowerCase();
-      var xNum = parseFloat(xContent);
-      var yNum = parseFloat(yContent);
-      // Sort numerically only if both are numbers AND not dates (contain hyphen)
-      if (!isNaN(xNum) && !isNaN(yNum) && /^\d/.test(xContent) && xContent.indexOf('-') === -1) {
-          xContent = xNum; yContent = yNum;
-      }
-      if (dir == "asc") {
-        if (xContent > yContent) { shouldSwitch = true; break; }
-      } else if (dir == "desc") {
-        if (xContent < yContent) { shouldSwitch = true; break; }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount == 0 && dir == "asc") { dir = "desc"; switching = true; }
-    }
-  }
-}
-</script>
 <style>
-  #statusTable th { cursor: pointer; background-color: #f2f2f2; position: sticky; top: 0; z-index: 1; user-select: none; }
-  #statusTable th:hover { background-color: #ddd; }
-  #statusTable { border-collapse: collapse; width: 100%; font-family: sans-serif; }
-  #statusTable th, #statusTable td { padding: 8px; text-align: left; border-bottom: 1px solid #ddd; font-size: 14px; }
-  #statusTable tr:hover { background-color: #f9f9f9; }
+  .report-container { height: 600px; overflow-y: auto; border: 1px solid #ddd; border-radius: 8px; margin-top: 10px; }
+  #statusTable { border-collapse: collapse; width: 100%; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  #statusTable th { position: sticky; top: 0; background-color: #f8f9fa; border-bottom: 2px solid #dee2e6; padding: 12px 8px; text-align: left; font-size: 13px; z-index: 10; }
+  #statusTable td { padding: 10px 8px; border-bottom: 1px solid #eee; font-size: 13px; }
+  #statusTable tr:hover { background-color: #f1f3f5; }
+  .status-badge { padding: 2px 6px; border-radius: 4px; font-size: 11px; font-weight: bold; }
 </style>
-<div style="height:600px; overflow-y:auto; border:1px solid #ddd; padding:0; border-radius:5px;">
+<div class="report-container">
 <table id="statusTable">
 <thead>
 <tr>
- <th onclick="sortTable(0)">Blog Name &#8693;</th>
- <th onclick="sortTable(1)">New &#8693;</th>
- <th onclick="sortTable(2)">Total &#8693;</th>
- <th onclick="sortTable(3)">WFPB &#8693;</th>
- <th onclick="sortTable(4)">Easy &#8693;</th>
- <th onclick="sortTable(5)">Budg &#8693;</th>
- <th onclick="sortTable(6)">GF &#8693;</th>
- <th onclick="sortTable(7)">Latest &#8693;</th>
- <th onclick="sortTable(8)">Status &#8693;</th>
+ <th>Blog Name</th>
+ <th>New</th>
+ <th>Total</th>
+ <th>WFPB</th>
+ <th>Easy</th>
+ <th>Budg</th>
+ <th>GF</th>
+ <th>Latest</th>
+ <th>Status</th>
 </tr>
 </thead>
 <tbody>
@@ -1184,17 +1143,10 @@ function sortTable(n) {
         total = total_counts.get(name, 0)
         latest = latest_dates.get(name, "N/A")
         
+        # Normalize status
         if "Scraped 0" in status or "Parsed 0 items" in status:
-            if total > 0: status = "✅ OK"
-            else: status = "❌ No Recipes (0 Found)"
+            status = "✅ OK" if total > 0 else "❌ Empty"
         
-        if total == 0:
-             if "OK" in status: status = "❌ No Recipes (Empty)"
-             else:
-                 if "❌" not in status: status = f"❌ {status}"
-        elif 1 <= total <= 4 and "❌" not in status:
-            status = f"⚠️ Low Count"
-
         report_rows.append({
             "name": name, "new": new, "total": total,
             "wfpb": wfpb_counts.get(name, 0), "easy": easy_counts.get(name, 0),
@@ -1202,19 +1154,26 @@ function sortTable(n) {
             "latest": latest, "status": status
         })
 
-    # Initial Default Sort
-    def sort_report(row):
-        priority = 2
-        if "❌" in row['status']: priority = 0
-        elif "⚠️" in row['status']: priority = 1
-        return (priority, row['name'])
-
-    report_rows.sort(key=sort_report)
+    # --- CRITICAL: SORT BY TOTAL (0 FIRST), THEN BY NAME ---
+    report_rows.sort(key=lambda r: (r['total'], r['name']))
 
     for r in report_rows:
-        f.write(f"<tr><td>{r['name']}</td><td>{r['new']}</td><td>{r['total']}</td><td>{r['wfpb']}</td><td>{r['easy']}</td><td>{r['budget']}</td><td>{r['gf']}</td><td>{r['latest']}</td><td>{r['status']}</td></tr>\n")
+        # Simple color for status
+        status_color = "#28a745" if "✅" in r['status'] else "#dc3545" if "❌" in r['status'] else "#ffc107"
+        f.write(f"<tr>"
+                f"<td><strong>{r['name']}</strong></td>"
+                f"<td>{r['new']}</td>"
+                f"<td>{r['total']}</td>"
+                f"<td>{r['wfpb']}</td>"
+                f"<td>{r['easy']}</td>"
+                f"<td>{r['budget']}</td>"
+                f"<td>{r['gf']}</td>"
+                f"<td>{r['latest']}</td>"
+                f"<td><span style='color:{status_color}'>{r['status']}</span></td>"
+                f"</tr>\n")
 
     f.write('</tbody></table></div>\n\n')
+    f.write("---\n*Report generated automatically by FindVegDish Fetcher.*")
     # --- END SCROLLABLE CONTAINER ---
 
     f.write("---\n*Report generated automatically by FindVegDish Fetcher.*")
