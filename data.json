@@ -1,5 +1,38 @@
 [
   {
+    "blog_name": "Namely Marly",
+    "title": "Kale Chickpea Salad",
+    "link": "https://namelymarly.com/kale-chickpea-salad/",
+    "image": "https://namelymarly.com/wp-content/uploads/2026/01/Chickpea-Kale-Salad-1012-5x4-web.jpg",
+    "date": "2026-02-14T21:51:05+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Lazy Cat Kitchen",
+    "title": "Baked sweet potatoes with chilli",
+    "link": "https://www.lazycatkitchen.com/baked-sweet-potatoes-chilli/",
+    "image": "https://cdn77-s3.lazycatkitchen.com/wp-content/uploads/2026/02/baked-sweet-potatoes.jpg",
+    "date": "2026-02-14T17:16:52+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "The Hidden Veggies",
+    "title": "Vegan White Chocolate Bark",
+    "link": "https://thehiddenveggies.com/vegan-white-chocolate-bark/",
+    "image": "https://thehiddenveggies.com/wp-content/uploads/2026/02/vegan-white-chocolate-bark-sq.jpg",
+    "date": "2026-02-14T16:29:06+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
     "blog_name": "Plantifully Based",
     "title": "Saucy Tofu \u201cSteak\u201d Bits (Easy Recipe)",
     "link": "https://plantifullybasedblog.com/saucy-tofu-steak-bits-easy-recipe/?utm_source=rss&utm_medium=rss&utm_campaign=saucy-tofu-steak-bits-easy-recipe",
@@ -9,6 +42,15 @@
     "special_tags": [
       "Easy"
     ]
+  },
+  {
+    "blog_name": "Gretchen's Vegan Bakery",
+    "title": "Fluffy Vegan Lemon Cake Recipe",
+    "link": "https://www.gretchensveganbakery.com/vegan-lemon-cake-recipe/",
+    "image": "https://www.gretchensveganbakery.com/wp-content/uploads/2023/05/lemon-cake-featured-resized.jpg",
+    "date": "2026-02-13T21:06:48+00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "Veggies Don't Bite",
@@ -72,8 +114,8 @@
     "date": "2026-02-13T14:40:55+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -104,8 +146,8 @@
     "date": "2026-02-13T12:22:29+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -165,9 +207,9 @@
     "date": "2026-02-13T01:59:38+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
+      "Easy",
       "Budget",
-      "Easy"
+      "WFPB"
     ]
   },
   {
@@ -291,6 +333,15 @@
     "special_tags": []
   },
   {
+    "blog_name": "Gretchen's Vegan Bakery",
+    "title": "Chocolate Eclair Cake",
+    "link": "https://www.gretchensveganbakery.com/chocolate-eclair-cake/",
+    "image": "https://www.gretchensveganbakery.com/wp-content/uploads/2022/01/choco-eclair-cake-resized-2.jpg",
+    "date": "2026-02-12T00:35:18+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "The Korean Vegan",
     "title": "Easy Vegan Lemon Loaf Recipe \u2013 Better Than Starbucks",
     "link": "https://thekoreanvegan.com/easy-vegan-lemon-loaf-recipe/",
@@ -300,6 +351,24 @@
     "special_tags": [
       "Easy"
     ]
+  },
+  {
+    "blog_name": "Picky Eater (Vegan Options)",
+    "title": "Banana Porridge",
+    "link": "https://pickyeaterblog.com/banana-porridge/",
+    "image": "https://pickyeaterblog.com/wp-content/uploads/2023/06/healthy-jamaican-banana-porridge-recipe.jpg",
+    "date": "2026-02-11T21:43:00+00:00",
+    "is_disruptor": true,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Picky Eater (Vegan Options)",
+    "title": "Vegan Bechamel Sauce",
+    "link": "https://pickyeaterblog.com/vegan-bechamel-sauce/",
+    "image": "https://pickyeaterblog.com/wp-content/uploads/2022/03/easy-dairy-free-vegetarian-and-vegan-bechamel-sauce-recipe.jpg",
+    "date": "2026-02-11T21:43:00+00:00",
+    "is_disruptor": true,
+    "special_tags": []
   },
   {
     "blog_name": "Plant Power Couple",
@@ -320,8 +389,8 @@
     "date": "2026-02-11T21:28:14+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -363,8 +432,8 @@
     "date": "2026-02-11T14:17:44+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -439,8 +508,8 @@
     "date": "2026-02-10T21:06:11+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -583,9 +652,9 @@
     "date": "2026-02-10T16:20:03+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
       "GF",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -625,8 +694,8 @@
     "date": "2026-02-10T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -757,8 +826,8 @@
     "date": "2026-02-09T14:40:03+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -1288,8 +1357,8 @@
     "date": "2026-02-05T20:13:12+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -1372,8 +1441,8 @@
     "date": "2026-02-05T06:59:28+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -1639,8 +1708,8 @@
     "date": "2026-02-03T05:14:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -1709,8 +1778,8 @@
     "date": "2026-02-02T15:41:04+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -2001,6 +2070,15 @@
     "special_tags": []
   },
   {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Fajita Veggies (Chipotle-Inspired)",
+    "link": "https://cookieandkate.com/fajita-veggies/",
+    "image": "https://cookieandkate.com/images/2026/01/fajita-vegetables.jpg",
+    "date": "2026-01-30T17:02:53+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Connoisseurus Veg",
     "title": "Vegan Cheesecake Dip",
     "link": "https://www.connoisseurusveg.com/vegan-cheesecake-dip/",
@@ -2142,8 +2220,8 @@
     "date": "2026-01-29T15:19:42+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -2230,8 +2308,8 @@
     "date": "2026-01-28T19:16:29+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -2242,8 +2320,8 @@
     "date": "2026-01-28T18:39:31+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -2283,8 +2361,8 @@
     "date": "2026-01-28T12:13:15+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -2307,8 +2385,8 @@
     "is_disruptor": false,
     "special_tags": [
       "GF",
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -2330,9 +2408,9 @@
     "date": "2026-01-28T11:45:05+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
+      "Easy",
       "Budget",
-      "Easy"
+      "WFPB"
     ]
   },
   {
@@ -2434,8 +2512,8 @@
     "date": "2026-01-27T17:26:09+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -2530,8 +2608,8 @@
     "date": "2026-01-26T19:54:47+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "GF"
+      "GF",
+      "WFPB"
     ]
   },
   {
@@ -2626,6 +2704,15 @@
     "image": "https://www.theconsciousplantkitchen.com/wp-content/uploads/2025/11/Date-Nut-Bread-1.jpg",
     "date": "2026-01-25T00:03:18+00:00",
     "is_disruptor": true,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Energy Balls",
+    "link": "https://cookieandkate.com/energy-balls/",
+    "image": "https://cookieandkate.com/images/2026/01/energy-ball-recipe.jpg",
+    "date": "2026-01-24T23:20:09+00:00",
+    "is_disruptor": false,
     "special_tags": []
   },
   {
@@ -2765,8 +2852,8 @@
     "is_disruptor": true,
     "special_tags": [
       "GF",
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -2808,8 +2895,8 @@
     "date": "2026-01-22T13:11:31+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -2832,8 +2919,8 @@
     "date": "2026-01-21T21:51:00+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -2928,8 +3015,8 @@
     "date": "2026-01-21T09:00:13+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -2995,9 +3082,9 @@
     "date": "2026-01-20T13:29:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
+      "Easy",
       "Budget",
-      "Easy"
+      "WFPB"
     ]
   },
   {
@@ -3008,8 +3095,8 @@
     "date": "2026-01-20T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -3228,8 +3315,8 @@
     "date": "2026-01-17T02:23:55+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -3278,8 +3365,8 @@
     "date": "2026-01-16T09:37:53+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -3366,8 +3453,8 @@
     "date": "2026-01-15T13:09:27+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -3447,8 +3534,8 @@
     "date": "2026-01-14T14:40:33+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -3501,8 +3588,8 @@
     "date": "2026-01-14T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -3533,9 +3620,9 @@
     "date": "2026-01-14T01:52:22+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
+      "Easy",
       "Budget",
-      "Easy"
+      "WFPB"
     ]
   },
   {
@@ -3746,8 +3833,8 @@
     "date": "2026-01-09T17:15:12+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -3800,8 +3887,8 @@
     "date": "2026-01-09T00:32:41+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -3814,6 +3901,15 @@
     "special_tags": [
       "WFPB"
     ]
+  },
+  {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Cabbage Vegetable Soup",
+    "link": "https://cookieandkate.com/cabbage-vegetable-soup/",
+    "image": "https://cookieandkate.com/images/2026/01/cabbage-soup-recipe.jpg",
+    "date": "2026-01-08T20:44:10+00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "Nadia's Healthy Kitchen (Vegan Recipes)",
@@ -3854,8 +3950,8 @@
     "date": "2026-01-08T01:01:09+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -3959,8 +4055,8 @@
     "date": "2026-01-07T09:00:11+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -4091,8 +4187,8 @@
     "date": "2026-01-05T09:04:00+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -4150,8 +4246,8 @@
     "date": "2026-01-04T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -4184,8 +4280,8 @@
     "date": "2026-01-03T00:03:40+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -4237,8 +4333,8 @@
     "date": "2026-01-02T09:50:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -4320,8 +4416,8 @@
     "date": "2025-12-29T15:35:13+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -4527,8 +4623,8 @@
     "date": "2025-12-22T02:56:44+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -4562,8 +4658,8 @@
     "date": "2025-12-21T14:29:08+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -4962,8 +5058,8 @@
     "date": "2025-12-15T04:35:43+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -5030,9 +5126,9 @@
     "date": "2025-12-14T00:22:05+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
       "GF",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -5092,8 +5188,8 @@
     "date": "2025-12-12T13:18:20+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -5113,8 +5209,8 @@
     "date": "2025-12-12T05:45:13+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -5214,8 +5310,8 @@
     "date": "2025-12-10T04:03:38+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -5420,8 +5516,8 @@
     "date": "2025-12-04T14:06:21+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -5494,8 +5590,8 @@
     "date": "2025-12-03T09:00:59+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -5595,8 +5691,8 @@
     "date": "2025-11-28T13:08:20+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -5717,8 +5813,8 @@
     "date": "2025-11-25T11:53:03+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -5807,8 +5903,8 @@
     "date": "2025-11-23T20:44:19+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -5975,8 +6071,8 @@
     "date": "2025-11-19T22:54:08+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -6295,8 +6391,8 @@
     "date": "2025-11-12T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -6528,8 +6624,8 @@
     "date": "2025-11-05T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -6562,9 +6658,9 @@
     "date": "2025-11-05T03:20:51+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
+      "Easy",
       "Budget",
-      "Easy"
+      "WFPB"
     ]
   },
   {
@@ -6775,8 +6871,8 @@
     "date": "2025-10-28T17:13:41+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -6818,8 +6914,8 @@
     "date": "2025-10-25T13:30:45+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -6841,8 +6937,8 @@
     "date": "2025-10-25T00:46:40+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -6963,6 +7059,15 @@
     ]
   },
   {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Sofritas (Chipotle-Style)",
+    "link": "https://cookieandkate.com/sofritas/",
+    "image": "https://cookieandkate.com/images/2025/10/sofritas-recipe.jpg",
+    "date": "2025-10-21T19:17:41+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "ZardyPlants",
     "title": "Easy Creamy Potato and Mushroom Soup Recipe",
     "link": "https://zardyplants.com/recipes/easy-creamy-potato-and-mushroom-soup-recipe/",
@@ -6970,9 +7075,9 @@
     "date": "2025-10-21T16:43:44+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
+      "Easy",
       "Budget",
-      "Easy"
+      "WFPB"
     ]
   },
   {
@@ -7066,9 +7171,9 @@
     "date": "2025-10-16T10:10:53+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
+      "Easy",
       "Budget",
-      "Easy"
+      "WFPB"
     ]
   },
   {
@@ -7277,8 +7382,8 @@
     "date": "2025-10-08T15:47:23+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -7289,8 +7394,8 @@
     "date": "2025-10-04T09:03:35+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "GF"
+      "GF",
+      "WFPB"
     ]
   },
   {
@@ -7301,8 +7406,8 @@
     "date": "2025-10-03T09:15:11+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -7342,8 +7447,8 @@
     "date": "2025-10-01T13:45:03+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -7430,9 +7535,9 @@
     "date": "2025-09-25T17:58:30+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
+      "Easy",
       "Budget",
-      "Easy"
+      "WFPB"
     ]
   },
   {
@@ -7457,6 +7562,15 @@
     "special_tags": [
       "Easy"
     ]
+  },
+  {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Homemade Ketchup",
+    "link": "https://cookieandkate.com/homemade-ketchup/",
+    "image": "https://cookieandkate.com/images/2025/09/ketchup-recipe.jpg",
+    "date": "2025-09-24T22:06:52+00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "Messy Vegan Cook",
@@ -7486,8 +7600,8 @@
     "date": "2025-09-21T16:04:26+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -7567,8 +7681,8 @@
     "date": "2025-09-15T20:00:17+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -7630,8 +7744,8 @@
     "date": "2025-09-13T18:58:14+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -7642,8 +7756,8 @@
     "date": "2025-09-12T14:21:09+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -7696,8 +7810,8 @@
     "is_disruptor": false,
     "special_tags": [
       "GF",
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -7708,8 +7822,8 @@
     "date": "2025-09-08T12:56:18+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -7747,8 +7861,8 @@
     "date": "2025-09-07T00:47:43+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -7812,8 +7926,8 @@
     "date": "2025-09-04T07:44:32+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -7824,8 +7938,8 @@
     "date": "2025-09-03T12:40:43+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -7936,8 +8050,8 @@
     "date": "2025-08-25T12:56:12+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -7957,9 +8071,9 @@
     "date": "2025-08-25T11:46:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
+      "Easy",
       "Budget",
-      "Easy"
+      "WFPB"
     ]
   },
   {
@@ -8082,6 +8196,15 @@
     "special_tags": []
   },
   {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Homemade Pita Chips",
+    "link": "https://cookieandkate.com/pita-chips-recipe/",
+    "image": "https://cookieandkate.com/images/2025/08/baked-pita-chips-1.jpg",
+    "date": "2025-08-11T20:04:51+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Plant-Based on a Budget",
     "title": "Alphabet Soup Recipe",
     "link": "https://plantbasedonabudget.com/alphabet-soup-recipe/",
@@ -8140,8 +8263,8 @@
     "date": "2025-08-04T08:15:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -8172,10 +8295,10 @@
     "date": "2025-07-31T18:00:11+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
       "GF",
+      "Easy",
       "Budget",
-      "Easy"
+      "WFPB"
     ]
   },
   {
@@ -8217,8 +8340,8 @@
     "date": "2025-07-28T21:27:53+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -8259,6 +8382,15 @@
     "image": "https://messyvegancook.com/wp-content/uploads/2025/07/red-dates-longan-goji-berries.jpg",
     "date": "2025-07-24T09:31:05+00:00",
     "is_disruptor": true,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Pistachio Milk",
+    "link": "https://cookieandkate.com/pistachio-milk/",
+    "image": "https://cookieandkate.com/images/2025/07/pistachio-milk-recipe.jpg",
+    "date": "2025-07-22T19:57:59+00:00",
+    "is_disruptor": false,
     "special_tags": []
   },
   {
@@ -8360,9 +8492,9 @@
     "date": "2025-07-06T18:00:38+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "WFPB",
       "GF",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -8393,6 +8525,15 @@
     "special_tags": []
   },
   {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Watermelon Popsicles",
+    "link": "https://cookieandkate.com/watermelon-popsicles/",
+    "image": "https://cookieandkate.com/images/2025/06/star-shaped-watermelon-popsicles.jpg",
+    "date": "2025-07-02T18:56:59+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "The Stingy Vegan",
     "title": "White Beans and Spinach",
     "link": "https://thestingyvegan.com/white-beans-and-spinach/",
@@ -8400,8 +8541,8 @@
     "date": "2025-07-02T11:33:50+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -8443,9 +8584,18 @@
     "date": "2025-06-30T00:35:16+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
+  },
+  {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Quinoa Tabbouleh",
+    "link": "https://cookieandkate.com/quinoa-tabbouleh/",
+    "image": "https://cookieandkate.com/images/2025/06/quinoa-tabbouleh.jpg",
+    "date": "2025-06-29T20:26:52+00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "Rhian's Recipes",
@@ -8506,8 +8656,8 @@
     "date": "2025-06-20T09:28:12+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -8738,8 +8888,8 @@
     "date": "2025-05-24T21:52:33+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -8843,6 +8993,15 @@
     ]
   },
   {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Thai Peanut Dressing",
+    "link": "https://cookieandkate.com/thai-peanut-dressing/",
+    "image": "https://cookieandkate.com/images/2025/05/peanut-dressing-recipe.jpg",
+    "date": "2025-05-08T21:27:01+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Rainbow Plant Life GF",
     "title": "Mediterranean Chickpea Salad",
     "link": "https://rainbowplantlife.com/chickpea-salad/",
@@ -8850,8 +9009,8 @@
     "date": "2025-05-07T02:23:11+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "GF"
+      "GF",
+      "WFPB"
     ]
   },
   {
@@ -8940,8 +9099,8 @@
     "date": "2025-04-23T15:50:10+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -8970,8 +9129,8 @@
     "date": "2025-04-17T17:49:25+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -9002,8 +9161,8 @@
     "date": "2025-04-15T06:54:41+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -9014,8 +9173,8 @@
     "date": "2025-04-11T18:47:11+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -9162,8 +9321,8 @@
     "date": "2025-03-24T16:59:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -9230,8 +9389,8 @@
     "date": "2025-03-15T02:42:28+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -9251,6 +9410,18 @@
     "date": "2025-03-13T19:50:35+00:00",
     "is_disruptor": true,
     "special_tags": []
+  },
+  {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Lentil Salad",
+    "link": "https://cookieandkate.com/lentil-salad/",
+    "image": "https://cookieandkate.com/images/2025/03/classic-lentil-salad.jpg",
+    "date": "2025-03-13T19:10:04+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget",
+      "WFPB"
+    ]
   },
   {
     "blog_name": "Turnip Vegan",
@@ -9280,8 +9451,8 @@
     "date": "2025-03-09T00:57:09+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "GF"
+      "GF",
+      "WFPB"
     ]
   },
   {
@@ -9292,6 +9463,17 @@
     "date": "2025-03-08T17:39:09+00:00",
     "is_disruptor": true,
     "special_tags": []
+  },
+  {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Cauliflower Salad",
+    "link": "https://cookieandkate.com/cauliflower-salad/",
+    "image": "https://cookieandkate.com/images/2025/03/cauliflower-salad-recipe.jpg",
+    "date": "2025-03-05T19:21:37+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
   },
   {
     "blog_name": "Choosing Chia (Vegan Recipes)",
@@ -9323,8 +9505,8 @@
     "date": "2025-03-04T09:56:21+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -9395,8 +9577,8 @@
     "date": "2025-02-22T22:46:59+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -9429,8 +9611,8 @@
     "date": "2025-02-14T00:53:37+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "GF"
+      "GF",
+      "WFPB"
     ]
   },
   {
@@ -9465,6 +9647,17 @@
     "special_tags": []
   },
   {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Refried Black Beans",
+    "link": "https://cookieandkate.com/refried-black-beans-recipe/",
+    "image": "https://cookieandkate.com/images/2025/01/refried-black-beans.jpg",
+    "date": "2025-01-27T17:38:05+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
     "blog_name": "The Full Helping (Vegan Recipes)",
     "title": "Vegan Blended Baked Oats with Dark Chocolate Chips",
     "link": "https://www.thefullhelping.com/vegan-blended-baked-oats/",
@@ -9483,6 +9676,15 @@
     "special_tags": [
       "Budget"
     ]
+  },
+  {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Homemade Peanut Butter",
+    "link": "https://cookieandkate.com/peanut-butter-recipe/",
+    "image": "https://cookieandkate.com/images/2025/01/peanut-butter-recipe.jpg",
+    "date": "2025-01-16T22:21:06+00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "Chef Bai",
@@ -9561,8 +9763,8 @@
     "date": "2025-01-07T17:54:00-08:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -9688,6 +9890,17 @@
     ]
   },
   {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Sweet Potato Hash",
+    "link": "https://cookieandkate.com/sweet-potato-hash/",
+    "image": "https://cookieandkate.com/images/2024/12/sweet-potato-hash-recipe.jpg",
+    "date": "2024-12-17T20:17:15+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
     "blog_name": "Chef Bai",
     "title": "Vegan Caviar With Truffle Cream",
     "link": "https://www.chefbai.kitchen/blog/vegancaviarwithtrufflecream",
@@ -9704,9 +9917,18 @@
     "date": "2024-12-16T09:42:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
+  },
+  {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Cranberry Salsa",
+    "link": "https://cookieandkate.com/cranberry-salsa-recipe/",
+    "image": "https://cookieandkate.com/images/2024/12/cranberry-salsa-with-tortilla-chips.jpg",
+    "date": "2024-12-10T21:25:03+00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "The Full Helping (Vegan Recipes)",
@@ -9716,9 +9938,18 @@
     "date": "2024-12-06T17:50:36+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
+  },
+  {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Cinnamon Tea",
+    "link": "https://cookieandkate.com/cinnamon-tea/",
+    "image": "https://cookieandkate.com/images/2024/12/cinnamon-tea.jpg",
+    "date": "2024-12-06T04:00:35+00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "School Night Vegan",
@@ -9831,6 +10062,17 @@
     ]
   },
   {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Quick Swiss Chard",
+    "link": "https://cookieandkate.com/swiss-chard-recipe/",
+    "image": "https://cookieandkate.com/images/2024/11/cooked-swiss-chard-on-plate.jpg",
+    "date": "2024-11-07T22:38:27+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "School Night Vegan",
     "title": "Creamy Vegan Sweet Potato Soup (Coconut Free!)",
     "link": "https://schoolnightvegan.com/home/vegan-sweet-potato-soup/",
@@ -9902,6 +10144,15 @@
     ]
   },
   {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Arrabbiata Sauce",
+    "link": "https://cookieandkate.com/arrabbiata-sauce-recipe/",
+    "image": "https://cookieandkate.com/images/2024/09/arrabbiata-sauce-recipe.jpg",
+    "date": "2024-10-17T19:22:33+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "School Night Vegan",
     "title": "Vegan Pumpkin Mac and Cheese with Miso and Sage",
     "link": "https://schoolnightvegan.com/home/vegan-pumpkin-mac-and-cheese/",
@@ -9918,8 +10169,8 @@
     "date": "2024-10-16T22:24:07+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -10112,6 +10363,15 @@
     ]
   },
   {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Pickled Jalape\u00f1os",
+    "link": "https://cookieandkate.com/pickled-jalapenos/",
+    "image": "https://cookieandkate.com/images/2024/08/pickled-jalapenos-with-taco-ingredients.jpg",
+    "date": "2024-09-10T19:08:30+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "School Night Vegan",
     "title": "Vegan Rice Krispie Treats",
     "link": "https://schoolnightvegan.com/home/vegan-rice-krispie-treats/",
@@ -10264,8 +10524,8 @@
     "date": "2024-08-18T13:20:10+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -10565,8 +10825,8 @@
     "date": "2024-06-06T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -11024,8 +11284,8 @@
     "date": "2024-01-29T07:04:00-08:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -11241,8 +11501,8 @@
     "date": "2023-10-28T10:59:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -11661,8 +11921,8 @@
     "date": "2023-06-11T00:00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -12798,8 +13058,8 @@
     "date": "2021-10-13T17:00:32+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -12832,8 +13092,8 @@
     "date": "2021-09-29T17:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -12862,8 +13122,8 @@
     "date": "2021-09-20T19:57:51+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -13230,8 +13490,8 @@
     "date": "2021-04-28T05:36:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -13331,8 +13591,8 @@
     "date": "2021-03-02T07:00:06+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -13676,8 +13936,8 @@
     "date": "2020-11-27T19:30:48+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -13905,8 +14165,8 @@
     "date": "2020-05-30T12:39:49+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -13928,8 +14188,8 @@
     "date": "2020-05-24T11:52:28+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -13978,8 +14238,8 @@
     "date": "2020-05-14T18:01:32+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -14030,8 +14290,8 @@
     "date": "2020-05-06T00:00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -14882,8 +15142,8 @@
     "date": "2020-05-05T00:00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -15371,8 +15631,8 @@
     "date": "2020-04-25T00:00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -15499,8 +15759,8 @@
     "date": "2020-03-04T00:00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Easy"
+      "Easy",
+      "WFPB"
     ]
   },
   {
@@ -15589,8 +15849,8 @@
     "date": "2020-01-01T00:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -15601,8 +15861,8 @@
     "date": "2020-01-01T00:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -15613,8 +15873,8 @@
     "date": "2020-01-01T00:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -16199,15 +16459,6 @@
     "special_tags": []
   },
   {
-    "blog_name": "Zucker & Jagdwurst",
-    "title": "Recipe",
-    "link": "https://www.zuckerjagdwurst.com/en/recipes/vegan-potato-pancake-casserole",
-    "image": "https://images.zuckerjagdwurst.com/img/e2z53m5rly5pzkc0bqw0aezvu581?w=1200&h=640&q=80&fit=fill&f=jpg&g=ce?w=1200",
-    "date": "2020-01-01T00:00:00+00:00",
-    "is_disruptor": false,
-    "special_tags": []
-  },
-  {
     "blog_name": "Zacchary Bird",
     "title": "SPANAKOPITA",
     "link": "https://www.zaccharybird.com/spanakopita",
@@ -16257,8 +16508,8 @@
     "date": "2020-01-01T00:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Low Waste",
-      "GF"
+      "GF",
+      "Low Waste"
     ]
   },
   {
@@ -16280,8 +16531,8 @@
     "date": "2020-01-01T00:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Low Waste",
-      "Budget"
+      "Budget",
+      "Low Waste"
     ]
   },
   {
@@ -16303,8 +16554,8 @@
     "date": "2020-01-01T00:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Low Waste",
-      "Easy"
+      "Easy",
+      "Low Waste"
     ]
   },
   {
@@ -16337,8 +16588,8 @@
     "date": "2020-01-01T00:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Low Waste",
-      "WFPB"
+      "WFPB",
+      "Low Waste"
     ]
   },
   {
@@ -16415,8 +16666,8 @@
     "date": "2020-01-01T00:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Low Waste",
-      "Budget"
+      "Budget",
+      "Low Waste"
     ]
   },
   {
@@ -16449,8 +16700,8 @@
     "date": "2020-01-01T00:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Low Waste",
-      "WFPB"
+      "WFPB",
+      "Low Waste"
     ]
   },
   {
@@ -16494,8 +16745,8 @@
     "date": "2020-01-01T00:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Low Waste",
-      "Easy"
+      "Easy",
+      "Low Waste"
     ]
   },
   {
@@ -16844,8 +17095,8 @@
     "date": "2019-06-18T14:40:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -17380,8 +17631,8 @@
     "date": "2018-03-09T18:38:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -17755,8 +18006,8 @@
     "date": "2017-01-17T13:23:49+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -17803,8 +18054,8 @@
     "date": "2016-10-30T17:50:25+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -17931,8 +18182,8 @@
     "date": "2016-05-18T17:46:45+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "WFPB",
-      "Budget"
+      "Budget",
+      "WFPB"
     ]
   },
   {
@@ -18066,8 +18317,8 @@
     "date": "2015-11-17T20:22:16+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Budget",
-      "Easy"
+      "Easy",
+      "Budget"
     ]
   },
   {
@@ -18481,6 +18732,15 @@
     "link": "https://veganyackattack.com/2013/06/28/vegan-pizza-day-round-up/",
     "image": "https://veganyackattack.com/wp-content/uploads/2013/03/mini-pizza-pies-9.jpg",
     "date": "2013-06-28T17:04:34+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Oh She Glows",
+    "title": "Recipe",
+    "link": "https://ohsheglows.com/creamy-avocado-spaghetti-squash-pasta-how-to-roast-spaghetti-squash/",
+    "image": "https://ohsheglows.com/wp-content/uploads/2012/09/Creamy_Avocado_Spaghetti_Squash_Pasta_IMG_3143-scaled.jpg",
+    "date": "2012-09-28T13:18:00+00:00",
     "is_disruptor": false,
     "special_tags": []
   },
