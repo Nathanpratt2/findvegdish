@@ -137,7 +137,7 @@ HTML_SOURCES = [
     ("Baking Hermann", "https://bakinghermann.com/recipes/", [], "custom_hermann"),
     ("Sweet Simple Vegan", "https://sweetsimplevegan.com/recipes/page/3/", [], "wordpress"),
     ("Gaz Oakley", "https://www.gazoakleychef.com/recipes/?sf_paged=4", [], "wordpress"),
-    ("Vegan Huggs", "https://veganhuggs.com/recipes/", [], "wordpress"),
+    ("Vegan Huggs", "https://veganhuggs.com/category/recipes/", [], "wordpress"),
     ("The Edgy Veg", "https://www.theedgyveg.com/recipes/", [], "wordpress"),
     ("Vegan Yack Attack", "https://veganyackattack.com/entrees/", [], "wordpress"),
     ("Nadia's Healthy Kitchen (Vegan Recipes)", "https://nadiashealthykitchen.com/category/vegan/", [], "wordpress"),
