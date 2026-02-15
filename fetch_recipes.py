@@ -131,14 +131,14 @@ HTML_SOURCES = [
     ("Chef AJ", "https://chefaj.com/recipe-index/page/2/", ["WFPB"], "wordpress"),
     ("Dreena Burton", "https://dreenaburton.com/category/recipes/page/1/", ["WFPB"], "wordpress"),
     ("Gaz Oakley", "https://www.gazoakleychef.com/recipes/?sf_paged=4", [], "wordpress"),
-    ("Vegan Huggs", "https://veganhuggs.com/category/recipes/", [], "wordpress"),
+    ("Vegan Huggs", "https://veganhuggs.com/category/recipes/", [], "custom_veganhuggs"),
     ("The Edgy Veg", "https://www.theedgyveg.com/recipes/", [], "wordpress"),
     ("Vegan Yack Attack", "https://veganyackattack.com/entrees/", [], "wordpress"),
     ("Nadia's Healthy Kitchen (Vegan Recipes)", "https://nadiashealthykitchen.com/category/vegan/", [], "wordpress"),
     ("The Cheap Lazy Vegan", "https://thecheaplazyvegan.com/blog/", ["Budget", "Easy"], "wordpress"),
     ("Alison Roman (Vegan)", "https://www.alisoneroman.com/recipes/collections/vegan/page/5/", [], "wordpress"),
     ("Max La Manna", "https://www.maxlamanna.com/recipes", [], "wordpress"),
-    ("No Meat Disco", "https://www.nomeatdisco.com/recipes", [], "squarespace"),
+    ("No Meat Disco", "https://www.nomeatdisco.com/recipes", [], "custom_nomeatdisco"),
     ("Snixy Kitchen (Vegan Recipes)", "https://www.snixykitchen.com/special-diet/vegan", ["GF"], "wordpress"),
     ("Vegan in the Freezer", "https://veganinthefreezer.com/recipes/", [], "wordpress"),
     ("Chef Bai", "https://www.chefbai.kitchen/blog?offset=1710270365119", [], "wordpress"),
@@ -827,10 +827,81 @@ def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags)
                     })
                     existing_links.add((link, name))
 
-    # --- MODE 4: CUSTOM HERMANN ---
+    # --- MODE 3a: CUSTOM VEGAN HUGGS (Trellis Theme) ---
+    elif mode == "custom_veganhuggs":
+        # Targets Trellis/Mediavine structure: <article> tags with specific classes
+        articles = soup.find_all('article')
+        for art in articles:
+            # Title Link
+            title_tag = art.find(['h2', 'h3'], class_='entry-title') or art.find(['h2', 'h3'], class_='post-summary__title')
+            a_tag = title_tag.find('a') if title_tag else art.find('a', href=True)
+            
+            if not a_tag: continue
+            
+            link = a_tag['href']
+            if (link, name) in existing_links: continue
+            
+            title = a_tag.get_text(strip=True)
+            
+            # Image: Look for img tag or data-bg
+            img = art.find('img')
+            image = None
+            if img:
+                image = img.get('data-src') or img.get('data-lazy-src') or img.get('src')
+            
+            # Deep fetch for clean date
+            deep_date, deep_image = extract_metadata_from_page(link)
+            
+            found_items.append({
+                "blog_name": name, "title": title, "link": link, 
+                "image": deep_image if deep_image else (image or "icon.jpg"),
+                "date": deep_date.isoformat() if deep_date else datetime(2022,1,1).replace(tzinfo=timezone.utc).isoformat(),
+                "is_disruptor": False, "special_tags": list(source_tags)
+            })
+            existing_links.add((link, name))
+
+    # --- MODE 3b: CUSTOM NO MEAT DISCO (Squarespace 7.1 Grid) ---
+    elif mode == "custom_nomeatdisco":
+        # Targets Squarespace 7.1 .grid-item structure
+        items = soup.select(".grid-item, .blog-basic-grid-item")
+        for item in items:
+            a_tag = item.find('a', class_='grid-item-link') or item.find('a', href=True)
+            if not a_tag: continue
+            
+            href = a_tag['href']
+            link = urljoin(url, href)
+            if (link, name) in existing_links: continue
+            
+            # Title
+            title_div = item.select_one(".grid-item-title, .blog-title, h3")
+            title = title_div.get_text(strip=True) if title_div else "Recipe"
+            
+            # Image
+            img = item.find('img')
+            image = None
+            if img:
+                 image = img.get('data-src') or img.get('src')
+            
+            # Metadata
+            deep_date, deep_image = extract_metadata_from_page(link)
+            
+            found_items.append({
+                "blog_name": name, "title": title, "link": link, 
+                "image": deep_image if deep_image else (image or "icon.jpg"),
+                "date": deep_date.isoformat() if deep_date else datetime(2022,1,1).replace(tzinfo=timezone.utc).isoformat(),
+                "is_disruptor": False, "special_tags": list(source_tags)
+            })
+            existing_links.add((link, name))
+
+    # --- MODE 4: CUSTOM HERMANN (Improved for Webflow Lazy Loading) ---
     elif mode == "custom_hermann":
-        # Baking Hermann (Robust Link Aggregation)
-        candidates = soup.select(".w-dyn-item") + soup.find_all('a', href=True)
+        # Baking Hermann
+        # 1. Try finding items via standard classes
+        candidates = soup.select(".w-dyn-item") + soup.select(".recipe-card") + soup.find_all('a', class_='recipe-link')
+        
+        # If robust_fetch failed to get content, soup might be empty.
+        # But if we have soup, iterate:
+        
         processed_urls = set()
         
         for item in candidates:
@@ -838,48 +909,50 @@ def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags)
             if not a_tag: continue
             
             href = a_tag['href']
-            if '/recipes/' not in href or href.count('/') <= 2: continue
+            if '/recipes/' not in href: continue
             
             link = urljoin("https://bakinghermann.com", href)
             if link in processed_urls or (link, name) in existing_links: continue
             processed_urls.add(link)
 
             title = "Recipe"
-            t_elem = item.select_one("h3, h2, h4") if item.name != 'a' else None
+            t_elem = item.select_one("h3, h2, h4, .heading")
             if t_elem: title = t_elem.get_text(strip=True)
-            elif a_tag.find('img') and a_tag.find('img').get('alt'): title = a_tag.find('img')['alt']
-            elif item.get_text(strip=True): title = item.get_text(strip=True)
+            elif item.get_text(strip=True): title = item.get_text(strip=True)[:50]
             
-            # Deep Fetch is mandatory for Hermann (using extraction logic)
-            # We use the standard function, but it might fail if blocking continues.
-            # However, extract_metadata relies on robust_fetch which we can't easily patch here without code duplication.
-            # But the main loop getting 'html' passed, so we hope article pages are less protected or robust_fetch works occasionally.
+            # 2. IMAGE STRATEGY: Webflow often puts images in background-image styles or lazy-loaded img tags
+            image_candidate = None
             
-            # To be safe, we will rely on extract_metadata_from_page but if it returns nothing, we just set a default.
+            # Check A: Background Image in Style
+            style_elem = item.find(style=lambda v: v and 'background-image' in v) or \
+                         (item.has_attr('style') and 'background-image' in item['style'] and item)
+            
+            if style_elem:
+                try:
+                    style = style_elem['style']
+                    # Extract url('...')
+                    if 'url(' in style:
+                        image_candidate = style.split('url(')[1].split(')')[0].strip('"').strip("'")
+                except: pass
+
+            # Check B: Image tag with data-src (Webflow lazy load)
+            if not image_candidate:
+                img = item.find('img')
+                if img:
+                    image_candidate = img.get('src') or img.get('data-src') or img.get('srcset')
+                    # If srcset, parse it
+                    if image_candidate and ',' in image_candidate:
+                        image_candidate = parse_srcset(image_candidate)
+
+            # 3. Deep Fetch (Mandatory for Hermann to get Date)
             deep_date, deep_image = extract_metadata_from_page(link)
             
-            # If standard extract failed, try our custom insecure fetch if needed
-            if not deep_image:
-                 # Minimal fallback attempt
-                 try:
-                    s = requests.Session()
-                    r = s.get(link, headers={'User-Agent': 'Mozilla/5.0'}, verify=False, timeout=10)
-                    if r.status_code == 200:
-                        s2 = BeautifulSoup(r.text, 'lxml')
-                        og = s2.find('meta', property='og:image')
-                        if og: deep_image = og['content']
-                        # Date
-                        ld = s2.find('script', type='application/ld+json')
-                        if ld and ld.string:
-                             if '"datePublished":' in ld.string:
-                                 # simple parse
-                                 pass 
-                 except: pass
-
-            if deep_image:
+            final_image = deep_image if deep_image else image_candidate
+            
+            if final_image:
                 found_items.append({
-                    "blog_name": name, "title": title, "link": link, "image": deep_image,
-                    "date": deep_date.isoformat() if deep_date else datetime(2020,1,1).replace(tzinfo=timezone.utc).isoformat(),
+                    "blog_name": name, "title": title, "link": link, "image": final_image,
+                    "date": deep_date.isoformat() if deep_date else datetime(2022,1,1).replace(tzinfo=timezone.utc).isoformat(),
                     "is_disruptor": False, "special_tags": list(source_tags)
                 })
                 existing_links.add((link, name))
