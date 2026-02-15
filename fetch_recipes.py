@@ -54,8 +54,7 @@ TOP_BLOGGERS = [
     ("Forks Over Knives", "https://www.forksoverknives.com/all-recipes/feed/", ["WFPB"]),
     ("Rabbit and Wolves", "https://www.rabbitandwolves.com/feed/", []),
     ("Vegan Heaven", "https://veganheaven.org/feed/", []),
-    ("The Hidden Veggies", "https://thehiddenveggies.com/feed/", ["Budget"]), 
-    ("Vegan in the Freezer", "https://veganinthefreezer.com/feed/", []),
+    ("The Hidden Veggies", "https://thehiddenveggies.com/feed/", ["Budget"]),
     ("Bianca Zapatka", "https://biancazapatka.com/en/feed/", []),
     ("A Virtual Vegan", "https://avirtualvegan.com/feed/", []),
     ("Sarah's Vegan Kitchen", "https://sarahsvegankitchen.com/feed/", []),
@@ -143,8 +142,9 @@ HTML_SOURCES = [
     ("Nadia's Healthy Kitchen (Vegan Recipes)", "https://nadiashealthykitchen.com/category/vegan/", [], "wordpress"),
     ("The Cheap Lazy Vegan", "https://thecheaplazyvegan.com/blog/", ["Budget", "Easy"], "wordpress"),
     ("Alison Roman (Vegan)", "https://www.alisoneroman.com/recipes/collections/vegan/page/5/", [], "wordpress"),
-    ("Max La Manna", "https://www.maxlamanna.com/recipes", ["Low Waste"], "wordpress"),
+    ("Max La Manna", "https://www.maxlamanna.com/recipes", [], "wordpress"),
     ("No Meat Disco", "https://www.nomeatdisco.com/recipes", [], "squarespace"),
+    ("Vegan in the Freezer", "https://veganinthefreezer.com/recipes/", [], "wordpress"),
     ("Chef Bai", "https://www.chefbai.kitchen/blog?offset=1710270365119", [], "wordpress")
 ]
 
