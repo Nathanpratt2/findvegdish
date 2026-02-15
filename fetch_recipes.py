@@ -33,7 +33,6 @@ except ImportError:
 # Format: ("Blog Name", "Feed URL", ["SPECIAL_TAGS"])
 
 TOP_BLOGGERS = [
-    ("Minimalist Baker (Vegan Recipes)", "https://minimalistbaker.com/recipes/vegan/feed/", ["Easy"]),
     ("Nora Cooks", "https://www.noracooks.com/feed/", []),
     ("PlantYou", "https://plantyou.com/feed/", ["WFPB"]),
     ("The Korean Vegan", "https://thekoreanvegan.com/feed/", []),
@@ -62,19 +61,15 @@ TOP_BLOGGERS = [
     ("Addicted to Dates", "https://addictedtodates.com/category/recipes/feed/", []),
     ("Gretchen's Vegan Bakery", "https://www.gretchensveganbakery.com/feed/", []),
     ("Running on Real Food", "https://runningonrealfood.com/feed/", ["WFPB"]),
-    ("Turnip Vegan", "https://turnipvegan.com/blogs/news.atom", []),
     ("VegNews", "https://vegnews.com/feed", []),
     ("HealthyGirl Kitchen", "https://healthygirlkitchen.com/feed/", []),
-    ("Chef AJ", "https://chefaj.com/feed/", ["WFPB"]),
     ("Big Box Vegan", "https://bigboxvegan.com/category/recipes/feed/", []),
     ("The Plant-Based RD", "https://plantbasedrdblog.com/feed/", []),
-    ("It's Liv B", "https://itslivb.com/feed/", []),
     ("NutritionFacts.org", "https://nutritionfacts.org/recipes/feed/", ["WFPB"])
 ]
 
 DISRUPTORS = [
     ("Full of Plants", "https://fullofplants.com/feed/", []),
-    ("One Arab Vegan", "https://www.onearabvegan.com/feed/", []),
     ("Mary's Test Kitchen", "https://www.marystestkitchen.com/feed/", []),
     ("Unconventional Baker", "https://www.unconventionalbaker.com/feed/", ["GF"]), # Will auto-tag GF
     ("Fragrant Vanilla Cake", "https://www.fragrantvanilla.com/feed/", []),
@@ -101,30 +96,28 @@ DISRUPTORS = [
     ("Plant Power Couple", "https://www.plantpowercouple.com/feed/", ["Easy"]),
     ("Rainbow Nourishments", "https://www.rainbownourishments.com/feed/", []),
     ("Rhian's Recipes", "https://www.rhiansrecipes.com/feed/", ["GF"]), # Will auto-tag GF
-    ("Snixy Kitchen (Vegan Recipes)", "https://www.snixykitchen.com/special-diet/vegan/feed/", []),
     ("Monkey & Me Kitchen Adventures", "https://monkeyandmekitchenadventures.com/feed/", ["WFPB"]),
     ("My Goodness Kitchen", "https://mygoodnesskitchen.com/feed/", []),
     ("Ann Arbor Vegan Kitchen", "https://www.annarborvegankitchen.com/feed/", ["WFPB"]),
     ("Veggiekins", "https://veggiekinsblog.com/feed/", ["Easy","GF"]), # Will auto-tag GF
     ("ZardyPlants", "https://zardyplants.com/feed/", ["WFPB"]),
-    ("Dreena Burton", "https://dreenaburton.com/feed/", ["WFPB"]),
     ("Holistic Chef Academy", "https://holisticchefacademy.com/feed/", []),
-    ("Healthy Little Vittles", "https://healthylittlevittles.com/feed/", ["GF"]), # Will auto-tag GF
-    ("Healthier Steps", "https://healthiersteps.com/feed/", [])
+    ("Healthy Little Vittles", "https://healthylittlevittles.com/feed/", ["GF"]) # Will auto-tag GF
 ]
 
 # --- DIRECT HTML SCRAPING SOURCES ---
 HTML_SOURCES = [
+    ("Minimalist Baker (Vegan Recipes)", "https://minimalistbaker.com/recipes/vegan/", [], "wordpress"),
     ("Pick Up Limes", "https://www.pickuplimes.com/recipe/", [], "custom_pul"),
     ("Zucker & Jagdwurst", "https://www.zuckerjagdwurst.com/en/archive/1", [], "custom_zj"),
-    ("Rainbow Plant Life GF", "https://rainbowplantlife.com/diet/gluten-free/", ["GF"], "wordpress"),
+    ("Rainbow Plant Life GF", "https://rainbowplantliffe.com/diet/gluten-free/", ["GF"], "wordpress"),
     ("Vegan Richa GF", "https://www.veganricha.com/category/gluten-free/", ["GF"], "wordpress"),
     ("School Night Vegan", "https://schoolnightvegan.com/dinners/page/3/", [], "wordpress"), 
     ("Love and Lemons (Vegan Recipes)", "https://www.loveandlemons.com/category/recipes/vegan/", [], "wordpress"),
     ("Cookie and Kate (Vegan Recipes)", "https://cookieandkate.com/category/food-recipes/vegan/?_paged=1", [], "wordpress"), 
     ("The Loopy Whisk (Vegan Recipes)", "https://theloopywhisk.com/diet/vegan/", ["GF"], "wordpress"),
     ("Oh She Glows","https://www.ohsheglows.com/recipe-search/",[], "squarespace"),
-    ("Zacchary Bird","https://www.zaccharybird.com/all-recipes/",[], "wordpress"),
+    ("Zacchary Bird","https://www.zaccharybird.com/all-recipes/",[], "squarespace"),
     ("Elsa's Wholesome Life","https://www.elsaswholesomelife.com/blog?category=Recipes",[], "wordpress"),
     ("The Full Helping (Vegan Recipes)","https://www.thefullhelping.com/dietary/vegan/",[],"wordpress"),
     ("Hot For Food","https://www.hotforfoodblog.com/category/recipes/easy-recipes/page/3/",[],"wordpress"),
@@ -135,6 +128,8 @@ HTML_SOURCES = [
     ("Plant-Based on a Budget", "https://plantbasedonabudget.com/category/vegan-dinners/", ["Budget"], "wordpress"),
     ("Baking Hermann", "https://bakinghermann.com/recipes/", [], "custom_hermann"),
     ("Sweet Simple Vegan", "https://sweetsimplevegan.com/recipes/page/3/", [], "wordpress"),
+    ("Chef AJ", "https://chefaj.com/recipe-index/page/2/", ["WFPB"], "wordpress"),
+    ("Dreena Burton", "https://dreenaburton.com/category/recipes/page/1/", ["WFPB"], "wordpress"),
     ("Gaz Oakley", "https://www.gazoakleychef.com/recipes/?sf_paged=4", [], "wordpress"),
     ("Vegan Huggs", "https://veganhuggs.com/category/recipes/", [], "wordpress"),
     ("The Edgy Veg", "https://www.theedgyveg.com/recipes/", [], "wordpress"),
@@ -144,8 +139,12 @@ HTML_SOURCES = [
     ("Alison Roman (Vegan)", "https://www.alisoneroman.com/recipes/collections/vegan/page/5/", [], "wordpress"),
     ("Max La Manna", "https://www.maxlamanna.com/recipes", [], "wordpress"),
     ("No Meat Disco", "https://www.nomeatdisco.com/recipes", [], "squarespace"),
+    ("Snixy Kitchen (Vegan Recipes)", "https://www.snixykitchen.com/special-diet/vegan", ["GF"], "wordpress"),
     ("Vegan in the Freezer", "https://veganinthefreezer.com/recipes/", [], "wordpress"),
-    ("Chef Bai", "https://www.chefbai.kitchen/blog?offset=1710270365119", [], "wordpress")
+    ("Chef Bai", "https://www.chefbai.kitchen/blog?offset=1710270365119", [], "wordpress"),
+    ("It's Liv B", "https://itslivb.com/category/main-dishes/page/1/", [], "wordpress"),
+    ("One Arab Vegan", "https://www.onearabvegan.com/category/recipes/page/1/", [], "wordpress"),
+    ("Healthier Steps", "https://healthiersteps.com/recipe-index/?_paged=1", [], "wordpress")
 ]
 
 # --- DISPLAY NAME MAPPING ---
@@ -1166,35 +1165,11 @@ with open('FEED_HEALTH.md', 'w', encoding='utf-8') as f:
     f.write(f"| **Easy / Budget** | {total_easy} / {total_budget} | {easy_percent}% / {budget_percent}% |\n\n")
 
     f.write("---\n\n")
-    f.write("### 📋 Detailed Blog Status (Sorted: 0 Recipes First)\n")
+    f.write("### 📋 Detailed Blog Status (Sorted: 0 Recipes First)\n\n")
     
-    # --- CSS FOR CLEAN LAYOUT ---
-    f.write("""
-<style>
-  .report-container { height: 600px; overflow-y: auto; border: 1px solid #ddd; border-radius: 8px; margin-top: 10px; }
-  #statusTable { border-collapse: collapse; width: 100%; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-  #statusTable th { position: sticky; top: 0; background-color: #f8f9fa; border-bottom: 2px solid #dee2e6; padding: 12px 8px; text-align: left; font-size: 13px; z-index: 10; }
-  #statusTable td { padding: 10px 8px; border-bottom: 1px solid #eee; font-size: 13px; }
-  #statusTable tr:hover { background-color: #f1f3f5; }
-  .status-badge { padding: 2px 6px; border-radius: 4px; font-size: 11px; font-weight: bold; }
-</style>
-<div class="report-container">
-<table id="statusTable">
-<thead>
-<tr>
- <th>Blog Name</th>
- <th>New</th>
- <th>Total</th>
- <th>WFPB</th>
- <th>Easy</th>
- <th>Budg</th>
- <th>GF</th>
- <th>Latest</th>
- <th>Status</th>
-</tr>
-</thead>
-<tbody>
-""")
+    # Standard Markdown Table Header
+    f.write("| Blog Name | New | Total | WFPB | Easy | Budg | GF | Latest | Status |\n")
+    f.write("| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n")
     
     report_rows = []
     for name in all_monitored_names:
@@ -1218,24 +1193,9 @@ with open('FEED_HEALTH.md', 'w', encoding='utf-8') as f:
     report_rows.sort(key=lambda r: (r['total'], r['name']))
 
     for r in report_rows:
-        # Simple color for status
-        status_color = "#28a745" if "✅" in r['status'] else "#dc3545" if "❌" in r['status'] else "#ffc107"
-        f.write(f"<tr>"
-                f"<td><strong>{r['name']}</strong></td>"
-                f"<td>{r['new']}</td>"
-                f"<td>{r['total']}</td>"
-                f"<td>{r['wfpb']}</td>"
-                f"<td>{r['easy']}</td>"
-                f"<td>{r['budget']}</td>"
-                f"<td>{r['gf']}</td>"
-                f"<td>{r['latest']}</td>"
-                f"<td><span style='color:{status_color}'>{r['status']}</span></td>"
-                f"</tr>\n")
+        # Markdown Table Row
+        f.write(f"| {r['name']} | {r['new']} | {r['total']} | {r['wfpb']} | {r['easy']} | {r['budget']} | {r['gf']} | {r['latest']} | {r['status']} |\n")
 
-    f.write('</tbody></table></div>\n\n')
-    f.write("---\n*Report generated automatically by FindVegDish Fetcher.*")
-    # --- END SCROLLABLE CONTAINER ---
-
-    f.write("---\n*Report generated automatically by FindVegDish Fetcher.*")
+    f.write("\n---\n*Report generated automatically by FindVegDish Fetcher.*")
 
 print(f"Successfully generated FEED_HEALTH.md with scrollable table. Database size: {len(final_pruned_list)}")
