@@ -144,6 +144,7 @@ HTML_SOURCES = [
     ("Chef Bai", "https://www.chefbai.kitchen/blog?offset=1710270365119", [], "wordpress"),
     ("It's Liv B", "https://itslivb.com/category/main-dishes/page/2/", [], "wordpress"),
     ("One Arab Vegan", "https://www.onearabvegan.com/category/recipes/page/2/", [], "wordpress"),
+    ("Steamy Vegan", "https://steamyvegan.com/recipes/", [], "wordpress"),
     ("Healthier Steps", "https://healthiersteps.com/recipe-index/?_paged=2", [], "wordpress")
 ]
 
