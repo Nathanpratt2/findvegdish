@@ -1,5 +1,26 @@
 [
   {
+    "blog_name": "Dr. Vegan",
+    "title": "Crispy Smashed Potato Cups",
+    "link": "https://drveganblog.com/crispy-smashed-potato-cups/",
+    "image": "https://drveganblog.com/wp-content/uploads/2026/02/6-819x1024.png",
+    "date": "2026-02-16T11:39:11+00:00",
+    "is_disruptor": true,
+    "special_tags": [
+      "Easy",
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "The Happy Pear",
+    "title": "Charred Gochujang Cabbage with Herb Vinaigrette",
+    "link": "https://thehappypear.ie/plant-based-and-vegan-recipes/charred-gochujang-cabbage-with-herb-vinaigrette/",
+    "image": "https://thehappypear.ie/wp-content/uploads/2020/12/uv3.jpg",
+    "date": "2026-02-16T10:01:51+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Steamy Vegan",
     "title": "Moroccan Lentil Salad",
     "link": "https://steamyvegan.com/moroccan-lentil-salad/",
@@ -58,6 +79,17 @@
     "is_disruptor": false,
     "special_tags": [
       "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Gretchen's Vegan Bakery",
+    "title": "Strawberry Lemon Lavender Cake",
+    "link": "https://www.gretchensveganbakery.com/strawberry-lemon-lavender-cake/",
+    "image": "https://www.gretchensveganbakery.com/wp-content/uploads/2023/05/ssl-cake-resized-3.jpg",
+    "date": "2026-02-15T15:35:01+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
     ]
   },
   {
@@ -242,8 +274,8 @@
     "date": "2026-02-13T14:40:55+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -308,6 +340,18 @@
     "special_tags": []
   },
   {
+    "blog_name": "The Happy Pear",
+    "title": "No-Bake Gluten Free Quinoa Cookies",
+    "link": "https://thehappypear.ie/plant-based-and-vegan-recipes/no-bake-gluten-free-quinoa-cookies/",
+    "image": "https://thehappypear.ie/wp-content/uploads/2020/12/uv3.jpg",
+    "date": "2026-02-13T11:55:30+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "GF",
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "From My Bowl",
     "title": "One Pan Vegan Massaman Curry",
     "link": "https://frommybowl.com/one-pan-vegan-massaman-curry/?utm_source=rss&utm_medium=rss&utm_campaign=one-pan-vegan-massaman-curry",
@@ -344,8 +388,8 @@
     "date": "2026-02-13T01:59:38+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
       "WFPB",
+      "Easy",
       "Budget"
     ]
   },
@@ -428,6 +472,15 @@
     "special_tags": [
       "Budget"
     ]
+  },
+  {
+    "blog_name": "The Happy Pear",
+    "title": "Homemade Savoury Protein Crepes 3 Ways",
+    "link": "https://thehappypear.ie/plant-based-and-vegan-recipes/homemade-savoury-protein-crepes-3-ways/",
+    "image": "https://thehappypear.ie/wp-content/uploads/2020/12/uv3.jpg",
+    "date": "2026-02-12T16:28:18+00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "Jessica in the Kitchen",
@@ -526,8 +579,8 @@
     "date": "2026-02-11T21:28:14+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -654,8 +707,8 @@
     "date": "2026-02-10T21:06:11+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -840,8 +893,8 @@
     "date": "2026-02-10T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -1711,6 +1764,15 @@
     "special_tags": []
   },
   {
+    "blog_name": "The Happy Pear",
+    "title": "Thai Red Curry Noodle Bowl",
+    "link": "https://thehappypear.ie/plant-based-and-vegan-recipes/thai-red-curry-noodle-bowl/",
+    "image": "https://thehappypear.ie/wp-content/uploads/2020/12/uv3.jpg",
+    "date": "2026-02-04T10:45:01+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "It Doesn't Taste Like Chicken",
     "title": "Marinated Tofu (Smoky Soy-Garlic)",
     "link": "https://itdoesnttastelikechicken.com/marinated-tofu/",
@@ -2529,8 +2591,8 @@
     "date": "2026-01-28T12:13:15+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -2576,8 +2638,8 @@
     "date": "2026-01-28T11:45:05+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
       "WFPB",
+      "Easy",
       "Budget"
     ]
   },
@@ -2680,8 +2742,8 @@
     "date": "2026-01-27T17:26:09+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -3241,6 +3303,15 @@
     ]
   },
   {
+    "blog_name": "The Happy Pear",
+    "title": "Happy Heart Challenge",
+    "link": "https://thehappypear.ie/courses/happy-heart-course/",
+    "image": "https://thehappypear.ie/wp-content/uploads/2020/12/uv3.jpg",
+    "date": "2026-01-20T17:28:39+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Steamy Vegan",
     "title": "Crustless Vegan Chicken Pot Pie",
     "link": "https://steamyvegan.com/crustless-vegan-chicken-pot-pie/",
@@ -3279,8 +3350,8 @@
     "date": "2026-01-20T13:29:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
       "WFPB",
+      "Easy",
       "Budget"
     ]
   },
@@ -3292,8 +3363,8 @@
     "date": "2026-01-20T11:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -3817,8 +3888,8 @@
     "date": "2026-01-14T01:52:22+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
       "WFPB",
+      "Easy",
       "Budget"
     ]
   },
@@ -4463,8 +4534,8 @@
     "date": "2026-01-04T10:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -4550,8 +4621,8 @@
     "date": "2026-01-02T09:50:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -4582,6 +4653,15 @@
     "link": "https://itslivb.com/2025/12/30/vegan-buffalo-chicken-wings-no-seitan/",
     "image": "https://itslivb.com/wp-content/uploads/2025/10/vegan-buffalo-wings-06-1440x2160.jpg",
     "date": "2025-12-30T15:00:54+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "The Happy Pear",
+    "title": "Fibre-Packed Berry Smoothie",
+    "link": "https://thehappypear.ie/plant-based-and-vegan-recipes/fibre-packed-berry-smoothie/",
+    "image": "https://thehappypear.ie/wp-content/uploads/2020/12/uv3.jpg",
+    "date": "2025-12-30T11:30:01+00:00",
     "is_disruptor": false,
     "special_tags": []
   },
@@ -6508,6 +6588,17 @@
     "special_tags": []
   },
   {
+    "blog_name": "The Happy Pear",
+    "title": "One Pan Orzo Pesto Pasta Bake",
+    "link": "https://thehappypear.ie/plant-based-and-vegan-recipes/one-pan-orzo-pesto-pasta-bake/",
+    "image": "https://thehappypear.ie/wp-content/uploads/2020/12/uv3.jpg",
+    "date": "2025-11-17T15:47:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "Fragrant Vanilla Cake",
     "title": "Vegan Maple Pecan Baklava",
     "link": "https://www.fragrantvanilla.com/vegan-maple-pecan-baklava/?utm_source=rss&utm_medium=rss&utm_campaign=vegan-maple-pecan-baklava",
@@ -6826,8 +6917,8 @@
     "date": "2025-11-07T14:47:15+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -7009,8 +7100,8 @@
     "date": "2025-11-05T03:20:51+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
       "WFPB",
+      "Easy",
       "Budget"
     ]
   },
@@ -7231,8 +7322,8 @@
     "date": "2025-10-28T17:13:41+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -7446,8 +7537,8 @@
     "date": "2025-10-21T16:43:44+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
       "WFPB",
+      "Easy",
       "Budget"
     ]
   },
@@ -7553,8 +7644,8 @@
     "date": "2025-10-16T10:10:53+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
       "WFPB",
+      "Easy",
       "Budget"
     ]
   },
@@ -7776,8 +7867,8 @@
     "date": "2025-10-08T15:47:23+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -7958,8 +8049,8 @@
     "date": "2025-09-25T17:58:30+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
       "WFPB",
+      "Easy",
       "Budget"
     ]
   },
@@ -8023,8 +8114,8 @@
     "date": "2025-09-21T16:04:26+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -8167,8 +8258,8 @@
     "date": "2025-09-13T18:58:14+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -8514,8 +8605,8 @@
     "date": "2025-08-25T11:46:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
       "WFPB",
+      "Easy",
       "Budget"
     ]
   },
@@ -8805,8 +8896,8 @@
     "date": "2025-07-28T21:27:53+00:00",
     "is_disruptor": true,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -10452,8 +10543,8 @@
     "date": "2025-01-07T17:54:00-08:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -10642,6 +10733,15 @@
     "special_tags": []
   },
   {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "Creamy Sherry Tofu",
+    "link": "https://sweetsimplevegan.com/creamy-sherry-tofu/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2024/11/creamy-sherry-tofu-recipe-sweet-simple-vegan-5.jpg",
+    "date": "2024-12-12T20:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Steamy Vegan",
     "title": "Vegan Tofu Cream Cheese",
     "link": "https://steamyvegan.com/tofu-cream-cheese/",
@@ -10671,6 +10771,37 @@
     "special_tags": []
   },
   {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "No-Bake Vegan Peanut Butter Pie",
+    "link": "https://sweetsimplevegan.com/no-bake-vegan-peanut-butter-pie/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2024/12/no-bake-vegan-peanut-butter-pie-recipe-sweet-simple-vegan-2.jpg",
+    "date": "2024-12-10T20:46:43+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "No-Bake Ube Cheesecake (Vegan)",
+    "link": "https://sweetsimplevegan.com/no-bake-ube-cheesecake-vegan/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2024/12/no-bake-vegan-ube-cheesecake-recipe-sweet-simple-vegan-7.jpg",
+    "date": "2024-12-10T20:27:32+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "Crispy Tofu Sisig",
+    "link": "https://sweetsimplevegan.com/crispy-tofu-sisig/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2022/03/Close_up_Crispy_Tofu-Sisig_Recipe_sweet_simple_vegan_3.jpg",
+    "date": "2024-12-10T16:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "The Full Helping (Vegan Recipes)",
     "title": "The Best Cubed Air Fryer Sweet Potatoes",
     "link": "https://www.thefullhelping.com/air-fryer-sweet-potatoes/",
@@ -10692,11 +10823,29 @@
     "special_tags": []
   },
   {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "Instant Pot Apple Butter (Sweetened with Dates!)",
+    "link": "https://sweetsimplevegan.com/instant-pot-apple-butter/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2019/11/Instant-Pot-Apple-Butter-Vegan-Refined-Sugar-Free-Vegan-Breakfast-Sweet-Simple-Vegan-5.jpg",
+    "date": "2024-12-05T16:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "School Night Vegan",
     "title": "Vegan Pumpkin Sticky Toffee Pudding",
     "link": "https://schoolnightvegan.com/home/vegan-pumpkin-sticky-toffee-pudding/",
     "image": "https://schoolnightvegan.com/wp-content/uploads/2024/11/vegan-pumpkin-sticky-toffee-pudding-featured-1.jpg",
     "date": "2024-12-05T12:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "Vegan Creme Br\u00fbl\u00e9e Cinnamon Rolls",
+    "link": "https://sweetsimplevegan.com/vegan-creme-brulee-cinnamon-rolls/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2024/11/vegan-creme-brulee-cinnamon-rolls-recipe-sweet-simple-vegan-5.jpg",
+    "date": "2024-12-02T20:22:16+00:00",
     "is_disruptor": false,
     "special_tags": []
   },
@@ -10719,6 +10868,15 @@
     "special_tags": [
       "Easy"
     ]
+  },
+  {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "Vegan Vanilla Panna Cotta",
+    "link": "https://sweetsimplevegan.com/vegan-vanilla-panna-cotta/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2024/11/vegan-vanilla-panna-cotta-recipe-sweet-simple-vegan-5.jpg",
+    "date": "2024-11-25T19:22:07+00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "Rainbow Plant Life GF",
@@ -10753,11 +10911,31 @@
     "special_tags": []
   },
   {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "Ube Rice Krispie Treats (Vegan)",
+    "link": "https://sweetsimplevegan.com/ube-rice-krispie-treats-vegan/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2024/11/Ube-Rice-Krispie-Treats-recipe-sweet-simple-vegan-10.jpg",
+    "date": "2024-11-20T01:32:55+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
     "blog_name": "The Full Helping (Vegan Recipes)",
     "title": "Root Vegetable Barley Soup",
     "link": "https://www.thefullhelping.com/root-vegetable-barley-soup/",
     "image": "https://www.thefullhelping.com/wp-content/uploads/2024/11/root-vegetable-barley-soup-6.jpg",
     "date": "2024-11-18T20:31:33+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "Vegan Cinnamon Apple Shortbread Bars",
+    "link": "https://sweetsimplevegan.com/vegan-apple-shortbread-bars/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2024/11/vegan-cinnamon-apple-shortbread-bars-recipe-sweet-simple-vegan-6.jpg",
+    "date": "2024-11-15T22:28:35+00:00",
     "is_disruptor": false,
     "special_tags": []
   },
@@ -10802,6 +10980,17 @@
     ]
   },
   {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "Easy Vegan Manicotti",
+    "link": "https://sweetsimplevegan.com/vegan-manicotti-recipe/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2024/11/vegan-manicotti-recipe-sweet-simple-vegan-2.jpg",
+    "date": "2024-11-12T23:41:17+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "Cookie and Kate (Vegan Recipes)",
     "title": "Quick Swiss Chard",
     "link": "https://cookieandkate.com/swiss-chard-recipe/",
@@ -10824,11 +11013,47 @@
     ]
   },
   {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "Vegan Enchiladas with Flour Tortillas",
+    "link": "https://sweetsimplevegan.com/vegan-enchiladas/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2024/11/vegan-enchiladas-recipe-sweet-simple-vegan-8.jpg",
+    "date": "2024-11-06T20:54:57+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "Homemade Enchilada Sauce (Tex-Mex Chili Gravy)",
+    "link": "https://sweetsimplevegan.com/homemade-vegan-enchilada-sauce/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2024/11/homemade-enchilada-sauce-recipe-sweet-simple-vegan-4.jpg",
+    "date": "2024-11-06T20:54:45+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "The Full Helping (Vegan Recipes)",
     "title": "Vegan Apple Pie Crumble Cookies",
     "link": "https://www.thefullhelping.com/vegan-apple-pie-crumble-cookies/",
     "image": "https://www.thefullhelping.com/wp-content/uploads/2024/11/vegan-apple-pie-cookies-6.jpg",
     "date": "2024-11-05T21:54:36+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "Buko Pandan",
+    "link": "https://sweetsimplevegan.com/buko-pandan-recipe/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2024/11/Vegan-filipino-buko-pandan-recipe-sweet-simple-vegan-7.jpg",
+    "date": "2024-11-01T22:13:49+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "Vegan Pumpkin Cream Cheese Muffins",
+    "link": "https://sweetsimplevegan.com/vegan-pumpkin-cream-cheese-muffins/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2024/10/Vegan-Pumpkin-Cream-Cheese-Muffins-recipe-sweet-simple-vegan-26.jpg",
+    "date": "2024-10-31T22:25:37+00:00",
     "is_disruptor": false,
     "special_tags": []
   },
@@ -10866,6 +11091,15 @@
     ]
   },
   {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "Vegan Tofu Marsala",
+    "link": "https://sweetsimplevegan.com/vegan-tofu-marsala/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2024/10/Vegan-tofu-marsala-recipe-sweetsimplevegan-5.jpg",
+    "date": "2024-10-25T20:05:19+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "School Night Vegan",
     "title": "Vegan Pumpkin Scones (Starbucks Copycat Recipe)",
     "link": "https://schoolnightvegan.com/home/vegan-pumpkin-scones/",
@@ -10893,6 +11127,15 @@
     "special_tags": [
       "Easy"
     ]
+  },
+  {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "Vegan French Onion Soup",
+    "link": "https://sweetsimplevegan.com/vegan-french-onion-soup/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2024/10/Vegan-French-Onion-Soup-recipe-sweet-simple-vegan-3.jpg",
+    "date": "2024-10-18T19:06:34+00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "Cookie and Kate (Vegan Recipes)",
@@ -11052,6 +11295,15 @@
     "special_tags": []
   },
   {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "Creamy Vegan Pumpkin Mac and Cheese",
+    "link": "https://sweetsimplevegan.com/creamy-vegan-pumpkin-mac-and-cheese/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2024/10/Creamy-Vegan-Pumpkin-Mac-and-Cheese-recipe-sweet-simple-vegan-7.jpg",
+    "date": "2024-10-14T20:33:03+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "School Night Vegan",
     "title": "Vegan Green Bean Casserole with Gluten Free Option",
     "link": "https://schoolnightvegan.com/home/vegan-green-bean-casserole/",
@@ -11072,6 +11324,15 @@
     "special_tags": [
       "Easy"
     ]
+  },
+  {
+    "blog_name": "Sweet Simple Vegan",
+    "title": "Baked Vegan Apple Cider Donuts",
+    "link": "https://sweetsimplevegan.com/baked-vegan-apple-cider-donuts/",
+    "image": "https://sweetsimplevegan.com/wp-content/uploads/2024/10/Baked-Vegan-Apple-Cider-Donuts-recipe-sweet-simple-vegan-4.jpg",
+    "date": "2024-10-08T20:39:28+00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "Chef AJ",
@@ -11132,8 +11393,8 @@
     "date": "2024-10-01T22:29:55+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -11220,8 +11481,8 @@
     "date": "2024-09-16T19:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -11390,8 +11651,8 @@
     "date": "2024-08-30T20:07:39+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -11493,8 +11754,8 @@
     "date": "2024-08-18T13:20:10+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -11734,6 +11995,24 @@
     ]
   },
   {
+    "blog_name": "The Happy Pear",
+    "title": "Alcohol Free Challenge",
+    "link": "https://thehappypear.ie/courses/alcohol-free-challenge/",
+    "image": "https://thehappypear.ie/wp-content/uploads/2020/12/uv3.jpg",
+    "date": "2024-07-15T18:53:49+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "The Happy Pear",
+    "title": "Happy Shape Challenge",
+    "link": "https://thehappypear.ie/courses/happy-shape-course/",
+    "image": "https://thehappypear.ie/wp-content/uploads/2020/12/uv3.jpg",
+    "date": "2024-07-15T17:27:26+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "School Night Vegan",
     "title": "Grilled Vegan Kebabs with Mediterranean Marinade",
     "link": "https://schoolnightvegan.com/home/vegan-kebabs-with-mediterranean-marinade/",
@@ -11929,6 +12208,15 @@
     ]
   },
   {
+    "blog_name": "Healthier Steps",
+    "title": "Cilantro Pesto",
+    "link": "https://healthiersteps.com/cilantro-pesto/",
+    "image": "https://healthiersteps.com/wp-content/uploads/2023/02/cilantro-pesto-recipe.jpg",
+    "date": "2024-06-06T21:55:23+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Chef Bai",
     "title": "Ginger Blood Orange Tofu",
     "link": "https://www.chefbai.kitchen/blog/gingerbloodorangetofu",
@@ -11970,6 +12258,24 @@
     ]
   },
   {
+    "blog_name": "Healthier Steps",
+    "title": "Non-Fortified Nutritional Yeast",
+    "link": "https://healthiersteps.com/non-fortified-nutritional-yeast/",
+    "image": "https://healthiersteps.com/wp-content/uploads/2021/03/nutritional-yeast-flakes.jpg",
+    "date": "2024-06-06T08:40:03+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Healthier Steps",
+    "title": "General Tso Cauliflower",
+    "link": "https://healthiersteps.com/general-tso-cauliflower/",
+    "image": "https://healthiersteps.com/wp-content/uploads/2019/07/best-general-tso-cauliflower-1-1.jpg",
+    "date": "2024-06-05T01:12:12+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Chef AJ",
     "title": "Hail to the Kale Salad",
     "link": "https://chefaj.com/hail-to-the-kale-salad/",
@@ -11978,6 +12284,49 @@
     "is_disruptor": false,
     "special_tags": [
       "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Healthier Steps",
+    "title": "Vegan Sweet Potato Salad",
+    "link": "https://healthiersteps.com/vegan-sweet-potato-salad/",
+    "image": "https://healthiersteps.com/wp-content/uploads/2021/09/vegan-sweet-potato-salad.jpg",
+    "date": "2024-06-04T22:19:52+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Healthier Steps",
+    "title": "How to Cook Frozen Green Beans",
+    "link": "https://healthiersteps.com/how-to-cook-frozen-green-beans/",
+    "image": "https://healthiersteps.com/wp-content/uploads/2021/09/green-beans-frozen-skillet.jpg",
+    "date": "2024-06-04T22:10:24+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Healthier Steps",
+    "title": "Apple And Walnut Porridge With Maple Syrup",
+    "link": "https://healthiersteps.com/apple-and-walnut-porridge-with-maple-syrup/",
+    "image": "https://healthiersteps.com/wp-content/uploads/2021/09/apple-and-walnut-porridge-with-maple-syrup.jpg",
+    "date": "2024-06-04T21:56:01+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Healthier Steps",
+    "title": "Breakfast Banana Split",
+    "link": "https://healthiersteps.com/banana-split-oatmeal/",
+    "image": "https://healthiersteps.com/wp-content/uploads/2017/02/breakfast-banana-split-recipe-1.jpg",
+    "date": "2024-06-04T21:47:10+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
     ]
   },
   {
@@ -12000,9 +12349,27 @@
     "date": "2024-06-04T18:22:02+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
+  },
+  {
+    "blog_name": "Healthier Steps",
+    "title": "Spinach Smoothie With Pineapple",
+    "link": "https://healthiersteps.com/spinach-smoothie-with-pineapple/",
+    "image": "https://healthiersteps.com/wp-content/uploads/2023/05/holding-spinach-smoothie.jpg",
+    "date": "2024-06-04T18:13:34+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Healthier Steps",
+    "title": "Jamaican Spice Bun",
+    "link": "https://healthiersteps.com/jamaican-spice-bun-2/",
+    "image": "https://healthiersteps.com/wp-content/uploads/2019/04/jamaican-spice-bun.jpg",
+    "date": "2024-06-04T18:05:19+00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "Chef AJ",
@@ -12093,6 +12460,73 @@
     "is_disruptor": false,
     "special_tags": [
       "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Chef AJ",
+    "title": "Blueberry Mill-Oat Muffins",
+    "link": "https://chefaj.com/blueberry-mill-oat-muffins/",
+    "image": "https://chefaj.com/wp-content/uploads/2024/06/IMG_3350-scaled.jpeg",
+    "date": "2024-06-01T01:36:12+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Chef AJ",
+    "title": "Chef AJ\u2019s Disappearing Lasagna",
+    "link": "https://chefaj.com/disappearing-lasagna/",
+    "image": "https://chefaj.com/wp-content/uploads/2024/06/IMG_3733-768x1024.png",
+    "date": "2024-06-01T01:03:25+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Chef AJ",
+    "title": "Spicy Peanut Noodles with Broccoli",
+    "link": "https://chefaj.com/spicy-peanut-noodles-broccoli/",
+    "image": "https://chefaj.com/wp-content/uploads/2024/06/IMG_3553-1024x768.png",
+    "date": "2024-06-01T00:40:32+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Chef AJ",
+    "title": "Enlightened Faux Parmesan",
+    "link": "https://chefaj.com/enlightened-faux-parmesan/",
+    "image": "https://chefaj.com/wp-content/uploads/2024/06/IMG_3391-scaled.jpeg",
+    "date": "2024-06-01T00:20:19+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Chef AJ",
+    "title": "Faux Parmesan",
+    "link": "https://chefaj.com/faux-parmesan/",
+    "image": "https://chefaj.com/wp-content/uploads/2024/06/faux-parm-featuer-1-1.jpg",
+    "date": "2024-06-01T00:01:22+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Chef AJ",
+    "title": "Quick Dijon Balsamic-Glazed Brussels Sprouts",
+    "link": "https://chefaj.com/quick-dijon-balsamic-glazed-brussels-sprouts/",
+    "image": "https://chefaj.com/wp-content/uploads/2024/05/IMG_3837-1024x768.png",
+    "date": "2024-05-30T22:38:06+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -13109,6 +13543,988 @@
     "special_tags": []
   },
   {
+    "blog_name": "BOSH! TV",
+    "title": "15 Minute Healthy Mac and Greens",
+    "link": "https://www.bosh.tv/recipes/15-minute-healthy-mac-and-greens",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_15_Minute_Healthy_Mac___Greens_Bosh_TV.jpg.webp?itok=EJK9RqN0",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "15 Minute Ratatouille with Gary Barlow",
+    "link": "https://www.bosh.tv/recipes/15-minute-ratatouille-with-gary-barlow",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_15_Minute_Ratatouille_with_Gary_Barlow_Bosh_TV.jpg.webp?itok=5LeSMmQq",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "15 Minute Red Thai Curry with Gary Barlow",
+    "link": "https://www.bosh.tv/recipes/15-minute-red-thai-curry-with-gary-barlow",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_15_Minute_Red_Thai_Curry_with_Gary_Barlow_Bosh_TV.jpg.webp?itok=3u29EMvD",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "3-Way Healthy Juice",
+    "link": "https://www.bosh.tv/recipes/3-way-healthy-juice",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_3-Way_Healthy_Juice_BOSHTV.jpg.webp?itok=Ecx4smC2",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Apricot Harissa Grains Bowl",
+    "link": "https://www.bosh.tv/recipes/apricot-harissa-grains-bowl",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Apricot_Harissa_Grains_Bowl_Bosh_TV.jpg.webp?itok=kqGLgDVS",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Asparagus Tabbouleh Salad",
+    "link": "https://www.bosh.tv/recipes/asparagus-tabbouleh-salad",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Asparagus_Tabbouleh_Salad_Bosh_TV.jpg.webp?itok=Eedq9kdp",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Baba Ganoush Pasta",
+    "link": "https://www.bosh.tv/recipes/baba-ganoush-pasta",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Baba_Ganoush_Pasta_Bosh_TV.jpg.webp?itok=Sz_TX1JB",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Baked One Pot Pasta",
+    "link": "https://www.bosh.tv/recipes/baked-one-pot-pasta",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Baked_One_Pot_Pasta_Bosh_TV.jpg.webp?itok=4wDCcJmZ",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Bangin' Gyros Wraps",
+    "link": "https://www.bosh.tv/recipes/bangin-gyros-wraps",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Bangin__Gyros_Wraps_Bosh_TV.jpg.webp?itok=NYDEmeSs",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Best Homemade Red Pesto Pasta",
+    "link": "https://www.bosh.tv/recipes/best-homemade-red-pesto-pasta",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Best_Homemade_Red_Pesto_Pasta_-_REVAMP_Bosh_TV.jpg.webp?itok=W5p8dGEJ",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Big Bad Chilli Nachos",
+    "link": "https://www.bosh.tv/recipes/big-bad-chilli-nachos",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Big_Bad_Chilli_Nachos_Bosh_TV.jpg.webp?itok=s7_H5bLP",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Black Bean and Sun-dried Tomato Dip",
+    "link": "https://www.bosh.tv/recipes/black-bean-and-sun-dried-tomato-dip",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Black_Bean___Sun-dried_Tomato_Dip_Bosh_TV.jpg.webp?itok=3SBb03gP",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "BOSH! X GRUBBY Crunchy Bang Bang Satay Stir Fry",
+    "link": "https://www.bosh.tv/recipes/bosh-x-grubby-crunchy-bang-bang-satay-stir-fry",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_BOSH__X_GRUBBY_Crunchy_Bang_Bang_Satay_Stir_Fry_BOSHTV.jpg.webp?itok=jEN26IFc",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Bruschetta Salad",
+    "link": "https://www.bosh.tv/recipes/bruschetta-salad",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Bruschetta_Salad__Bosh_TV.jpg.webp?itok=aWGc13SO",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Butter Lemon Pasta",
+    "link": "https://www.bosh.tv/recipes/butter-lemon-pasta",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Butter_Lemon_Pasta__Bosh_TV.jpg.webp?itok=BTBdoZM3",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Butter Tofu Curry",
+    "link": "https://www.bosh.tv/recipes/butter-tofu-curry",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Butter_Tofu_Curry_Bosh_TV.jpg.webp?itok=RglzuhhV",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Butternut Squash with Spiced Red Wine Jus and Roast Spiced Nuts",
+    "link": "https://www.bosh.tv/recipes/butternut-squash-with-spiced-red-wine-jus-and-roast-spiced-nuts",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Butternut_Squash_with_Spiced_Red_Wine_Jus___Roast_Spiced_Nuts_Bosh_TV.jpg.webp?itok=mrMfII8i",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Cacio E Pepe",
+    "link": "https://www.bosh.tv/recipes/cacio-e-pepe",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Cacio_E_Pepe_Bosh_TV.jpg.webp?itok=uE2Z7HHe",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Caprese Sandwich",
+    "link": "https://www.bosh.tv/recipes/caprese-sandwich",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Caprese_Sandwich_BOSHTV.jpg.webp?itok=Eb4fa1XJ",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Car'bean'ara \u2018Pancetta\u2019 Pangrattato",
+    "link": "https://www.bosh.tv/recipes/carbeanara-pancetta-pangrattato",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Car_bean_ara____Pancetta____Pangrattato_BOSHTV.jpg.webp?itok=j000wZ0A",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Cauliflower Alfredo",
+    "link": "https://www.bosh.tv/recipes/cauliflower-alfredo",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Cauliflower_Alfredo_Bosh_TV.jpg.webp?itok=3gU5-4LO",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Cheeseburger Salad",
+    "link": "https://www.bosh.tv/recipes/cheeseburger-salad",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Cheeseburger_Salad_Bosh_TV.jpg.webp?itok=S54MXJMX",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Cheezy Beans on Toast",
+    "link": "https://www.bosh.tv/recipes/cheezy-beans-on-toast",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Cheezy_Beans_on_Toast_BOSHTV.jpg.webp?itok=kx26dhX-",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy",
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "'Chicken' Lo Mein",
+    "link": "https://www.bosh.tv/recipes/chicken-lo-mein",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan__Chicken__Lo_Mein_Bosh_TV.jpg.webp?itok=b9tDup5_",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Chickpea 'Tuna' Pasta Salad",
+    "link": "https://www.bosh.tv/recipes/chickpea-tuna-pasta-salad",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Chickpea__Tuna__Pasta_Salad_Bosh_TV.jpg.webp?itok=fjgl8BeQ",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Chilli Smoked Tofu Noodles",
+    "link": "https://www.bosh.tv/recipes/chilli-smoked-tofu-noodles",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Chilli_Smoked_Tofu_Noodles_Bosh_TV.jpg.webp?itok=9EhBjIqY",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Chinese Takeaway Waffle Fries",
+    "link": "https://www.bosh.tv/recipes/chinese-takeaway-waffle-fries",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Chinese_Takeaway_Waffle_Fries_Bosh_TV.jpg.webp?itok=6SRc_E_E",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Chocolate Croissant Tearer Sharer",
+    "link": "https://www.bosh.tv/recipes/chocolate-croissant-tearer-sharer",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Chocolate_Croissant_Tearer_Sharer__Bosh_TV.jpg.webp?itok=0L58xJWR",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Choconana Protein Shake",
+    "link": "https://www.bosh.tv/recipes/choconana-protein-shake",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Choconana_Protein_Shake_Bosh_TV.jpg.webp?itok=6b2nKWDK",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Coffee Caramel Tearer Sharer",
+    "link": "https://www.bosh.tv/recipes/coffee-caramel-tearer-sharer",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Coffee_Caramel_Tearer_Sharer_Bosh_TV.jpg.webp?itok=3LXUI2eQ",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Crack Cookies",
+    "link": "https://www.bosh.tv/recipes/crack-cookies",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Crack_Cookies_BOSH__png.jpg.webp?itok=Fs93JD6L",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Creamed Corn Linguine",
+    "link": "https://www.bosh.tv/recipes/creamed-corn-linguine",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Creamed_Corn_Linguine_Bosh_TV.jpg.webp?itok=KlsTHARv",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Creamy Coconut Noodle Soup",
+    "link": "https://www.bosh.tv/recipes/creamy-coconut-noodle-soup",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Creamy_Coconut_Noodle_Soup_BOSH__png.jpg.webp?itok=E08sQSoT",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Creamy Garlic Mushroom Pasta",
+    "link": "https://www.bosh.tv/recipes/creamy-garlic-mushroom-pasta",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Creamy_Garlic_Mushroom_Pasta_Bosh_TV.jpg.webp?itok=IVRyyR8u",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Creamy Green Curry",
+    "link": "https://www.bosh.tv/recipes/creamy-green-curry",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Creamy_Green_Curry_Bosh_TV.jpg.webp?itok=8QjyGAqq",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Creamy Herby Potato Salad",
+    "link": "https://www.bosh.tv/recipes/creamy-herby-potato-salad",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Creamy_Herby_Potato_Salad__Bosh_TV.jpg.webp?itok=SGzp9H2T",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Easy",
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Creamy Lemony Linguini with Exotic Mushrooms",
+    "link": "https://www.bosh.tv/recipes/creamy-lemony-linguini-with-exotic-mushrooms",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Creamy_Lemony_Linguini_with_Exotic_Mushrooms_Bosh_TV.jpg.webp?itok=XKoxzFyC",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Creamy Pea and Smoky 'Bacon' Penne",
+    "link": "https://www.bosh.tv/recipes/creamy-pea-and-smoky-bacon-penne",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Creamy_Pea___Smokey__Bacon__Penne_Bosh_TV.jpg.webp?itok=EdUx65C-",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Creamy Pesto Pasta",
+    "link": "https://www.bosh.tv/recipes/creamy-pesto-pasta",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Creamy_Pesto_Pasta_Bosh_TV.jpg.webp?itok=O7uO62iu",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Creamy Roasted Garlic Alfredo",
+    "link": "https://www.bosh.tv/recipes/creamy-roasted-garlic-alfredo",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Creamy_Roasted_Garlic_Alfredo_BOSHTV.jpg.webp?itok=eEz60rX0",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Creamy Seaside Pasta",
+    "link": "https://www.bosh.tv/recipes/creamy-seaside-pasta",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Creamy_Seaside_Pasta__Bosh_TV.jpg.webp?itok=9SO7LFtd",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Creamy Tahini Chilli Noodles",
+    "link": "https://www.bosh.tv/recipes/creamy-tahini-chilli-noodles",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Creamy_Tahini_Chilli_Noodles_BOSHTV.jpg.webp?itok=paDCMsUt",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Creamy Veggie Sausage Pasta",
+    "link": "https://www.bosh.tv/recipes/creamy-veggie-sausage-pasta",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Creamy_Veggie_Sausage_Pasta_Bosh_TV.jpg.webp?itok=4qOVODib",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Crispy Chilli Rainbow Stir Fry",
+    "link": "https://www.bosh.tv/recipes/crispy-chilli-rainbow-stir-fry",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Crispy_Chilli_Rainbow_Stir_Fry_BOSHTV.jpg.webp?itok=dO0eFcWM",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Crispy Chilli Tofu",
+    "link": "https://www.bosh.tv/recipes/crispy-chilli-tofu",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Crispy_Chilli_Tofu_Bosh_TV.jpg.webp?itok=fFxff_0P",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Crispy Corn Fritters",
+    "link": "https://www.bosh.tv/recipes/crispy-corn-fritters",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Crispy_Corn_Fritters__Bosh_TV.jpg.webp?itok=CW5qAa9X",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Easy Cheezy Mushroom Tagliatelle",
+    "link": "https://www.bosh.tv/recipes/easy-cheezy-mushroom-tagliatelle",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Easy_Cheezy_Mushroom_Tagliatelle_BOSHTV.jpg.webp?itok=SKyRuZ1U",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Easy Peasy Pasta Bake",
+    "link": "https://www.bosh.tv/recipes/easy-peasy-pasta-bake",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Easy_Peasy_Pasta_Bake_Bosh_TV.jpg.webp?itok=KEuLItfP",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Easy Peasy Pesto Pasta",
+    "link": "https://www.bosh.tv/recipes/easy-peasy-pesto-pasta",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Easy_Pea-sy_Pesto_Pasta_Bosh_TV.jpg.webp?itok=CqSG98og",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Fish Finger Tacos",
+    "link": "https://www.bosh.tv/recipes/fish-finger-tacos",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Fish_Finger_Tacos__Bosh_TV.jpg.webp?itok=dAwEoU3p",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Fishless Finger Sarnie",
+    "link": "https://www.bosh.tv/recipes/fishless-finger-sarnie",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Fishless_Finger_Sarnie_Bosh_TV.jpg.webp?itok=-kQHAibF",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Fluffy Blueberry and Peanut Butter Pancakes",
+    "link": "https://www.bosh.tv/recipes/fluffy-blueberry-and-peanut-butter-pancakes-",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Fluffy_Blueberry___Peanut_Butter_Pancakes_BOSHTV.jpg.webp?itok=Vy6JBUqZ",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Fridge Raid Soup",
+    "link": "https://www.bosh.tv/recipes/fridge-raid-soup",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Fridge_Raid_Soup_Bosh_TV.jpg.webp?itok=UsQcM4f5",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Frying Pan Red Pesto Lasagne",
+    "link": "https://www.bosh.tv/recipes/frying-pan-red-pesto-lasagne",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Frying_Pan_Red_Pesto_Lasagne_BOSHTV.jpg.webp?itok=O7bIoJar",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Frying Pan Samosa Pie",
+    "link": "https://www.bosh.tv/recipes/frying-pan-samosa-pie",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Frying_Pan_Samosa_Pie_Bosh_TV.jpg.webp?itok=iFIeKOJq",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Go Go Gochujang Noodles",
+    "link": "https://www.bosh.tv/recipes/go-go-gochujang-noodles",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Go_Go_Gochujang_Noodles_Bosh_TV.jpg.webp?itok=G3ZrMUs8",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Gochujang Arrabbiata Pasta",
+    "link": "https://www.bosh.tv/recipes/gochujang-arrabbiata-pasta",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Gochujang_Arrabbiata_Pasta__BOSHTV.jpg.webp?itok=t36YQeUo",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Gochujang Chilli Oil Noodles",
+    "link": "https://www.bosh.tv/recipes/gochujang-chilli-oil-noodles",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Gochujang_Chilli_Oil_Noodles____BOSHTV.jpg.webp?itok=r3Jx1xm8",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Green Goodness Smoothie",
+    "link": "https://www.bosh.tv/recipes/green-goodness-smoothie",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Green_Goodness_Smoothie_Bosh_TV.jpg.webp?itok=L4iTze3E",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Gremolata Spaghetti",
+    "link": "https://www.bosh.tv/recipes/gremolata-spaghetti",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Gremolata_Spaghetti_BOSHTV.jpg.webp?itok=brxlzpQ1",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Gyros Loaded Fries",
+    "link": "https://www.bosh.tv/recipes/gyros-loaded-fries",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Gyros_Loaded_Fries_Bosh_TV.jpg.webp?itok=O-tgeICP",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Harissa Roasted Aubergine",
+    "link": "https://www.bosh.tv/recipes/harissa-roasted-aubergine",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Harissa_Roasted_Aubergine__Bosh_TV.jpg.webp?itok=mTuc7N0A",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Hasselguac Potatoes with Guacamole",
+    "link": "https://www.bosh.tv/recipes/hasselguac-potatoes-with-guacamole",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Hasselguac_Potatoes_with_Guacamole_Bosh_TV.jpg.webp?itok=4EmsVNWA",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy",
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Healthy Vegan Burger",
+    "link": "https://www.bosh.tv/recipes/healthy-vegan-burger",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Healthy_Vegan_Burger_Bosh_TV.jpg.webp?itok=hP8g_2Pe",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Hearty Minestrone",
+    "link": "https://www.bosh.tv/recipes/hearty-minestrone",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Hearty_Minestrone_Bosh_TV.jpg.webp?itok=ybMuNlG1",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Henry's 30 Minute Lasagne",
+    "link": "https://www.bosh.tv/recipes/henrys-30-minute-lasagne",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Henry_s_30_Minute_Lasagne_Bosh_TV.jpg.webp?itok=HrQakKVv",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Henry's Biryani",
+    "link": "https://www.bosh.tv/recipes/henrys-biryani",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Henry_s_Biryani__Bosh_TV.jpg.webp?itok=RtE8F_37",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Herby Mushrooms on Toast",
+    "link": "https://www.bosh.tv/recipes/herby-mushrooms-on-toast",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Herby_Mushrooms_on_Toast_Bosh_TV.jpg.webp?itok=8x_f_qPV",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Hot Tofu Rips",
+    "link": "https://www.bosh.tv/recipes/hot-tofu-rips",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Hot_Tofu_Rips_BOSH__png.jpg.webp?itok=Bf55VGcL",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Hummus Curry",
+    "link": "https://www.bosh.tv/recipes/hummus-curry",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Hummus_Curry_Bosh_TV.jpg.webp?itok=qiKyAl7f",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Hummus with Mexican 'Beef'",
+    "link": "https://www.bosh.tv/recipes/hummus-with-mexican-beef",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Hummus_with_Mexican__Beef__Bosh_TV.jpg.webp?itok=oYygMY2O",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Indian Spiced Tomato Soup",
+    "link": "https://www.bosh.tv/recipes/indian-spiced-tomato-soup",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Indian_Spiced_Tomato_Soup_Bosh_TV.jpg.webp?itok=LM0pHe-q",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Instant Ramen Stir Fry",
+    "link": "https://www.bosh.tv/recipes/instant-ramen-stir-fry",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Instant_Ramen_Stir_Fry_Bosh_TV.jpg.webp?itok=mb2yNMbg",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Joe and The Juice 'Tunacado'",
+    "link": "https://www.bosh.tv/recipes/joe-and-the-juice-tunacado",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Joe___The_Juice__Tunacado__BOSHTV.jpg.webp?itok=QGXMG6ie",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Kale and Walnut Pasta",
+    "link": "https://www.bosh.tv/recipes/kale-and-walnut-pasta",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Kale___Walnut_Pasta_Bosh_TV.jpg.webp?itok=DD_2Eqio",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Keema Aloo",
+    "link": "https://www.bosh.tv/recipes/keema-aloo",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Keema_Aloo_Bosh_TV.jpg.webp?itok=ztxC2XTI",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Kimcheese Toastie",
+    "link": "https://www.bosh.tv/recipes/kimcheese-toastie",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Kimcheese_Toastie_Bosh_TV.jpg.webp?itok=NKFd6ML9",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Lazy One Pan Burrito",
+    "link": "https://www.bosh.tv/recipes/lazy-one-pan-burrito",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Lazy_One_Pan_Burrito_Bosh_TV.jpg.webp?itok=LcAgmTzb",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Lentil Pasta Salad",
+    "link": "https://www.bosh.tv/recipes/lentil-pasta-salad",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Lentil_Pasta_Salad__Bosh_TV.jpg.webp?itok=EXDqwf-D",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Easy",
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Mixed Berry Protein Pancakes",
+    "link": "https://www.bosh.tv/recipes/mixed-berry-protein-pancakes",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Mixed_Berry_Protein_Pancakes_Bosh_TV.jpg.webp?itok=U_-k4id7",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Muhammara Pasta",
+    "link": "https://www.bosh.tv/recipes/muhammara-pasta",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Muhammara_Pasta_BOSH__png.jpg.webp?itok=f3MvrOcE",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Ni\u00e7oise Salad",
+    "link": "https://www.bosh.tv/recipes/nicoise-salad",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Ni__oise_Salad_Bosh_TV.jpg.webp?itok=VB6-Y0be",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "One Pan Naked Burrito",
+    "link": "https://www.bosh.tv/recipes/one-pan-naked-burrito",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_One_Pan_Naked_Burrito_BOSHTV.jpg.webp?itok=95tLmfKz",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "One Pot Creamy Fajita Pasta",
+    "link": "https://www.bosh.tv/recipes/one-pot-creamy-fajita-pasta",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_One_Pot_Creamy_Fajita_Pasta_Bosh_TV.jpg.webp?itok=b0mPrpYZ",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "One Pot Meatball Marinara Sub",
+    "link": "https://www.bosh.tv/recipes/one-pot-meatball-marinara-sub",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_One_Pot_Meatball_Marinara_Sub_Bosh_TV.jpg.webp?itok=u0oEdKKV",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Orzotto",
+    "link": "https://www.bosh.tv/recipes/orzotto",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Orzotto_Bosh_TV.jpg.webp?itok=oRT3NQQ1",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Overnight Oats",
+    "link": "https://www.bosh.tv/recipes/overnight-oats",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/Vegan_Overnight_Oats__Bosh_TV.jpg.webp?itok=B-osyBdP",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "BOSH! TV",
+    "title": "Pan Con Tomate",
+    "link": "https://www.bosh.tv/recipes/pan-con-tomate",
+    "image": "https://www.bosh.tv/sites/default/files/styles/share/public/feeds_images/PanConTomate-3-_1_-min_webp.jpg.webp?itok=114sRK9C",
+    "date": "2023-09-15T01:00:00+01:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
+  },
+  {
     "blog_name": "Chef Bai",
     "title": "Espresso Almond Cookies",
     "link": "https://www.chefbai.kitchen/blog/espressoalmondcookies",
@@ -13466,8 +14882,8 @@
     "date": "2023-06-11T00:00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -13592,6 +15008,15 @@
     "special_tags": []
   },
   {
+    "blog_name": "The Happy Pear",
+    "title": "Farm Veg Box",
+    "link": "https://thehappypear.ie/general/farm-veg-box/",
+    "image": "https://thehappypear.ie/wp-content/uploads/2020/12/uv3.jpg",
+    "date": "2023-04-26T15:24:55+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Hot For Food",
     "title": "vegan white lasagna soup",
     "link": "https://www.hotforfoodblog.com/recipes/soups/2023/04/14/vegan-white-lasagna-soup/",
@@ -13660,6 +15085,17 @@
     "is_disruptor": false,
     "special_tags": [
       "Easy"
+    ]
+  },
+  {
+    "blog_name": "Dreena Burton",
+    "title": "Kale Chips: Oven-Dehydrated (no dehydrator needed!)",
+    "link": "https://dreenaburton.com/kale-chips/",
+    "image": "https://dreenaburton.com/wp-content/uploads/2023/03/Oven-Dehydrated-Kale-Chips_2-min-scaled.jpg",
+    "date": "2023-03-19T15:35:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
     ]
   },
   {
@@ -13768,6 +15204,15 @@
     ]
   },
   {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Italian Dressing",
+    "link": "https://cookieandkate.com/italian-dressing-recipe/",
+    "image": "https://cookieandkate.com/images/2022/12/italian-salad-dressing-recipe-3.jpg",
+    "date": "2022-12-14T19:02:06+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Nadia's Healthy Kitchen (Vegan Recipes)",
     "title": "Vegan & Gluten-free Florentines",
     "link": "https://nadiashealthykitchen.com/vegan-gluten-free-florentines/",
@@ -13784,6 +15229,26 @@
     "link": "https://schoolnightvegan.com/home/vegan-ham/",
     "image": "https://schoolnightvegan.com/wp-content/uploads/2022/12/vegan-ham-featured.jpg",
     "date": "2022-12-13T13:05:31+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Perfect Baked Sweet Potato",
+    "link": "https://cookieandkate.com/baked-sweet-potato-recipe/",
+    "image": "https://cookieandkate.com/images/2021/09/baked-sweet-potato-recipe-1.jpg",
+    "date": "2022-12-08T21:39:44+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Favorite Balsamic Vinaigrette",
+    "link": "https://cookieandkate.com/balsamic-vinaigrette-recipe/",
+    "image": "https://cookieandkate.com/images/2021/11/balsamic-vinaigrette-recipe-1.jpg",
+    "date": "2022-12-06T22:20:49+00:00",
     "is_disruptor": false,
     "special_tags": []
   },
@@ -13824,6 +15289,18 @@
     "date": "2022-12-02T11:08:38+00:00",
     "is_disruptor": false,
     "special_tags": []
+  },
+  {
+    "blog_name": "Dreena Burton",
+    "title": "Oil-Free Onion Rings (vegan, gluten-free option)",
+    "link": "https://dreenaburton.com/crispy-un-fried-onion-rings/",
+    "image": "https://dreenaburton.com/wp-content/uploads/2016/05/OnionRingspantext1.jpg",
+    "date": "2022-11-28T04:05:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "GF"
+    ]
   },
   {
     "blog_name": "School Night Vegan",
@@ -13870,6 +15347,15 @@
     "link": "https://www.hotforfoodblog.com/recipes/2022/11/18/vegan-smoked-gouda-mac-and-cheese/",
     "image": "https://www.hotforfoodblog.com/wp-content/uploads/2022/11/vegan-smoked-gouda-mac-and-cheese_hot-for-food_4-copy-CROPPED-scaled-e1668796726529.jpg",
     "date": "2022-11-18T20:02:43+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Perfect Roasted Delicata Squash",
+    "link": "https://cookieandkate.com/roasted-delicata-squash-recipe/",
+    "image": "https://cookieandkate.com/images/2022/11/roasted-delicata-squash-recipe.jpg",
+    "date": "2022-11-08T22:42:28+00:00",
     "is_disruptor": false,
     "special_tags": []
   },
@@ -14366,6 +15852,15 @@
     "special_tags": []
   },
   {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Perfect Roasted Butternut Squash",
+    "link": "https://cookieandkate.com/roasted-butternut-squash-recipe/",
+    "image": "https://cookieandkate.com/images/2022/04/roasted-butternut-squash.jpg",
+    "date": "2022-04-26T20:21:08+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "School Night Vegan",
     "title": "Vegan Chicken Katsu Sandwich",
     "link": "https://schoolnightvegan.com/home/vegan-chicken-katsu-sandwich/",
@@ -14456,6 +15951,27 @@
     ]
   },
   {
+    "blog_name": "Dreena Burton",
+    "title": "10-Minute Avocado Pasta (lower-fat)",
+    "link": "https://dreenaburton.com/avocado-pasta/",
+    "image": "https://dreenaburton.com/wp-content/uploads/2019/07/AvocadoPastaSauceOHJPG-768x768.jpg",
+    "date": "2022-04-02T23:17:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "Vegan Punks",
+    "title": "50+ Best Vegan Easter Recipes (Including Treats)",
+    "link": "https://veganpunks.com/vegan-easter-recipes/",
+    "image": "https://veganpunks.com/wp-content/uploads/2022/03/Easter-Roundup-FB.jpg",
+    "date": "2022-03-18T14:00:28+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "The Veg Space",
     "title": "Vegan Biscoff Brownies",
     "link": "https://www.thevegspace.co.uk/vegan-biscoff-brownies/",
@@ -14494,6 +16010,15 @@
     ]
   },
   {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Fresh Turmeric Tea",
+    "link": "https://cookieandkate.com/turmeric-tea-recipe/",
+    "image": "https://cookieandkate.com/images/2022/02/turmeric-tea-recipe-2.jpg",
+    "date": "2022-03-08T17:32:51+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "School Night Vegan",
     "title": "Vegan Tikka Masala Curry",
     "link": "https://schoolnightvegan.com/home/vegan-tikka-masala/",
@@ -14530,6 +16055,17 @@
     "special_tags": []
   },
   {
+    "blog_name": "Dreena Burton",
+    "title": "Rich Curried Winter Squash Sauce (in a vegan buddha bowl)",
+    "link": "https://dreenaburton.com/winter-squash-sauce/",
+    "image": "https://dreenaburton.com/wp-content/uploads/2022/02/Roasted-Squash-Pasta-Sauce-with-Fresh-Cream-15rs.jpg",
+    "date": "2022-02-10T21:16:59+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
     "blog_name": "Vegan Punks",
     "title": "Crispy Indonesian Tempeh Kecap",
     "link": "https://veganpunks.com/tempeh-kecap/",
@@ -14556,6 +16092,29 @@
     "is_disruptor": false,
     "special_tags": [
       "Budget"
+    ]
+  },
+  {
+    "blog_name": "Dreena Burton",
+    "title": "Sweet Potato Muffins (vegan, whole-grain, oil-free, nut-free)",
+    "link": "https://dreenaburton.com/sweet-potato-muffins/",
+    "image": "https://dreenaburton.com/wp-content/uploads/2022/01/Sweet-Potato-Muffins-14rs.jpg",
+    "date": "2022-01-28T21:03:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Dreena Burton",
+    "title": "Vegan Chocolate Chip Muffins",
+    "link": "https://dreenaburton.com/vegan-chocolate-chip-muffins/",
+    "image": "https://dreenaburton.com/wp-content/uploads/2019/07/ChocolateChipMuffinstray1-scaled.jpg",
+    "date": "2022-01-26T15:09:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
     ]
   },
   {
@@ -14658,11 +16217,32 @@
     "special_tags": []
   },
   {
+    "blog_name": "Dreena Burton",
+    "title": "Gingerbread Granola (vegan, gluten-free, oil-free)",
+    "link": "https://dreenaburton.com/gingerbread-granola/",
+    "image": "https://dreenaburton.com/wp-content/uploads/2021/12/Gingerbread-Granola-6rs.jpg",
+    "date": "2021-12-09T03:54:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "GF"
+    ]
+  },
+  {
     "blog_name": "The Veg Space",
     "title": "Butter Bean Stew",
     "link": "https://www.thevegspace.co.uk/butter-bean-stew/",
     "image": "https://www.thevegspace.co.uk/wp-content/uploads/2021/11/butter-bean-stew.jpg",
     "date": "2021-11-24T11:43:43+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Perfect Roasted Acorn Squash",
+    "link": "https://cookieandkate.com/roasted-acorn-squash-recipe/",
+    "image": "https://cookieandkate.com/images/2021/09/roasted-acorn-squash.jpg",
+    "date": "2021-11-23T20:41:03+00:00",
     "is_disruptor": false,
     "special_tags": []
   },
@@ -14826,6 +16406,17 @@
     "special_tags": []
   },
   {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Favorite Chickpea Salad",
+    "link": "https://cookieandkate.com/best-chickpea-salad-recipe/",
+    "image": "https://cookieandkate.com/images/2021/08/best-chickpea-salad-recipe-2.jpg",
+    "date": "2021-09-27T13:30:01+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
     "blog_name": "The Veg Space",
     "title": "Marrow Soup",
     "link": "https://www.thevegspace.co.uk/marrow-soup/",
@@ -14865,6 +16456,15 @@
     "special_tags": []
   },
   {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Roasted Red Peppers",
+    "link": "https://cookieandkate.com/roasted-red-peppers-recipe/",
+    "image": "https://cookieandkate.com/images/2021/08/roasted-red-peppers-recipe-2.jpg",
+    "date": "2021-09-13T13:30:26+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "The Veg Space",
     "title": "Vegan Hotpot",
     "link": "https://www.thevegspace.co.uk/vegan-hotpot/",
@@ -14890,6 +16490,37 @@
     "date": "2021-09-08T18:57:12+00:00",
     "is_disruptor": false,
     "special_tags": []
+  },
+  {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Roasted Tomatoes",
+    "link": "https://cookieandkate.com/roasted-tomatoes-recipe/",
+    "image": "https://cookieandkate.com/images/2021/08/roasted-cherry-tomatoes-close-up.jpg",
+    "date": "2021-08-31T20:54:13+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Cucumber Tomato Salad with Greek Dressing",
+    "link": "https://cookieandkate.com/cucumber-tomato-salad-recipe/",
+    "image": "https://cookieandkate.com/images/2021/08/cucumber-tomato-salad-recipe-3.jpg",
+    "date": "2021-08-26T20:29:47+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
+  },
+  {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Greek Salad Dressing",
+    "link": "https://cookieandkate.com/greek-salad-dressing-recipe/",
+    "image": "https://cookieandkate.com/images/2021/08/greek-dressing-recipe-1.jpg",
+    "date": "2021-08-24T21:04:21+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB"
+    ]
   },
   {
     "blog_name": "Vegan Punks",
@@ -15063,11 +16694,29 @@
     ]
   },
   {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Roasted Cauliflower Steak",
+    "link": "https://cookieandkate.com/cauliflower-steak-recipe/",
+    "image": "https://cookieandkate.com/images/2021/05/cauliflower-steak-with-gremolata.jpg",
+    "date": "2021-06-22T17:18:30+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Hot For Food",
     "title": "vegan cornbread waffles with sausage",
     "link": "https://www.hotforfoodblog.com/recipes/2021/06/18/vegan-cornbread-waffles-with-sausage/",
     "image": "https://www.hotforfoodblog.com/wp-content/uploads/2021/06/cornbread-waffles-TMRW-Foods_hot-for-food_filtered1.jpg",
     "date": "2021-06-18T17:05:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Gremolata (Italian Parsley Condiment)",
+    "link": "https://cookieandkate.com/gremolata-recipe/",
+    "image": "https://cookieandkate.com/images/2021/05/gremolata-recipe-2.jpg",
+    "date": "2021-06-15T13:59:14+00:00",
     "is_disruptor": false,
     "special_tags": []
   },
@@ -15086,6 +16735,15 @@
     "link": "https://www.elsaswholesomelife.com/blog/wholesome-pumpkin-soup",
     "image": "http://static1.squarespace.com/static/5646cc17e4b0a2863f2ce1a2/58927a08e58c62319356c515/60bdaf98f8f9a34b0e4a2ae8/1631502627412/20210329-IMG_0022-2.jpg?format=1500w",
     "date": "2021-06-08T16:45:10+10:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Homemade Croutons",
+    "link": "https://cookieandkate.com/croutons-recipe/",
+    "image": "https://cookieandkate.com/images/2021/05/homemade-croutons.jpg",
+    "date": "2021-06-08T16:30:01+00:00",
     "is_disruptor": false,
     "special_tags": []
   },
@@ -15137,6 +16795,17 @@
     "date": "2021-05-19T10:22:11+00:00",
     "is_disruptor": false,
     "special_tags": []
+  },
+  {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Simple Strawberry Smoothie",
+    "link": "https://cookieandkate.com/simple-strawberry-smoothie-recipe/",
+    "image": "https://cookieandkate.com/images/2021/05/simple-strawberry-smoothie-recipe-2.jpg",
+    "date": "2021-05-15T16:25:51+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy"
+    ]
   },
   {
     "blog_name": "Vegan Punks",
@@ -15268,6 +16937,27 @@
     ]
   },
   {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Super Simple Arugula Salad",
+    "link": "https://cookieandkate.com/simple-arugula-salad-recipe/",
+    "image": "https://cookieandkate.com/images/2021/04/arugula-salad-recipe-1.jpg",
+    "date": "2021-04-19T18:02:26+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "WFPB",
+      "Easy"
+    ]
+  },
+  {
+    "blog_name": "The Veg Space",
+    "title": "Tuscan Bean Stew",
+    "link": "https://www.thevegspace.co.uk/recipe-tuscan-bean-stew-with-garlic-oregano/",
+    "image": "https://www.thevegspace.co.uk/wp-content/uploads/2021/04/tuscan-bean-stew.jpg",
+    "date": "2021-04-15T13:14:18+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Vegan Yack Attack",
     "title": "No-Boil Broccoli Pasta Bake",
     "link": "https://veganyackattack.com/2021/04/13/no-boil-broccoli-pasta-bake/",
@@ -15282,6 +16972,24 @@
     "link": "https://schoolnightvegan.com/home/vegan-mac-and-cheese-instant/",
     "image": "https://schoolnightvegan.com/wp-content/uploads/2021/04/vegan-mac-and-cheese-instant-mix.png",
     "date": "2021-04-12T19:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Vegan Punks",
+    "title": "55+ Best Ever Vegan Indian Dishes",
+    "link": "https://veganpunks.com/vegan-indian-dishes/",
+    "image": "https://veganpunks.com/wp-content/uploads/2021/04/Vegan-Indian-Dishes-FB.jpg",
+    "date": "2021-04-06T12:39:51+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Cookie and Kate (Vegan Recipes)",
+    "title": "Perfect Roasted Cabbage",
+    "link": "https://cookieandkate.com/perfect-roasted-cabbage-recipe/",
+    "image": "https://cookieandkate.com/images/2021/03/perfect-roasted-cabbage-recipe-2.jpg",
+    "date": "2021-04-03T15:56:48+00:00",
     "is_disruptor": false,
     "special_tags": []
   },
@@ -15357,6 +17065,15 @@
     "special_tags": []
   },
   {
+    "blog_name": "The Veg Space",
+    "title": "Vegan Stew with ale & pearl barley",
+    "link": "https://www.thevegspace.co.uk/recipe-vegan-stew-with-ale-pearl-barley/",
+    "image": "https://www.thevegspace.co.uk/wp-content/uploads/2021/03/vegan-stew.jpg",
+    "date": "2021-03-04T11:42:38+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Vegan Punks",
     "title": "Easy Vegetable Tikka Masala (Cauliflower and Potato)",
     "link": "https://veganpunks.com/vegetable-tikka-masala/",
@@ -15421,6 +17138,15 @@
     "link": "https://www.onearabvegan.com/2021/02/vegan-timman-bagilla/",
     "image": "https://www.onearabvegan.com/wp-content/uploads/2021/02/vegan-timman-bagilla-7.jpg",
     "date": "2021-02-27T19:36:36+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "The Veg Space",
+    "title": "Vegan Katsu Curry",
+    "link": "https://www.thevegspace.co.uk/recipe-vegan-katsu-curry/",
+    "image": "https://www.thevegspace.co.uk/wp-content/uploads/2021/02/vegan-katsu-curry.jpg",
+    "date": "2021-02-24T18:25:01+00:00",
     "is_disruptor": false,
     "special_tags": []
   },
@@ -15711,6 +17437,17 @@
     "special_tags": []
   },
   {
+    "blog_name": "The Veg Space",
+    "title": "Vegan Puff Pastry Pie with Tenderstem and creamy lentils",
+    "link": "https://www.thevegspace.co.uk/recipe-vegan-puff-pastry-pie-with-tenderstem-and-creamy-lentils/",
+    "image": "https://www.thevegspace.co.uk/wp-content/uploads/2020/11/vegan-puff-pastry-pie.jpg",
+    "date": "2020-12-02T10:24:11+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
     "blog_name": "Hot For Food",
     "title": "vegan millionaire shortbread",
     "link": "https://www.hotforfoodblog.com/recipes/desserts/2020/11/29/vegan-millionaire-shortbread/",
@@ -15770,6 +17507,15 @@
     "special_tags": []
   },
   {
+    "blog_name": "The Veg Space",
+    "title": "Chickpea and Butternut Squash Curry",
+    "link": "https://www.thevegspace.co.uk/recipe-chickpea-and-butternut-squash-curry/",
+    "image": "https://www.thevegspace.co.uk/wp-content/uploads/2020/11/chickpea-and-butternut-squash-curry.jpg",
+    "date": "2020-11-09T11:55:07+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Hot For Food",
     "title": "vegan ros\u00e9 lasagna",
     "link": "https://www.hotforfoodblog.com/recipes/2020/10/28/vegan-rose-lasagna/",
@@ -15815,6 +17561,15 @@
     "special_tags": [
       "Budget"
     ]
+  },
+  {
+    "blog_name": "The Veg Space",
+    "title": "Creamy Courgette Curry",
+    "link": "https://www.thevegspace.co.uk/recipe-creamy-courgette-curry/",
+    "image": "https://www.thevegspace.co.uk/wp-content/uploads/2020/09/Courgette-Curry.jpg",
+    "date": "2020-09-29T11:09:26+00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "Vegan Yack Attack",
@@ -15893,6 +17648,17 @@
     "date": "2020-07-25T22:00:53+00:00",
     "is_disruptor": false,
     "special_tags": []
+  },
+  {
+    "blog_name": "The Veg Space",
+    "title": "Swiss Chard Curry with potato & lentils",
+    "link": "https://www.thevegspace.co.uk/recipe-swiss-chard-new-potato-dhal/",
+    "image": "https://www.thevegspace.co.uk/wp-content/uploads/2015/07/swiss-chard-recipe.jpg",
+    "date": "2020-07-21T13:46:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
   },
   {
     "blog_name": "Vegan Yack Attack",
@@ -15976,8 +17742,8 @@
     "date": "2020-05-30T12:39:49+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -17630,8 +19396,8 @@
     "date": "2020-03-04T00:00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Easy",
-      "WFPB"
+      "WFPB",
+      "Easy"
     ]
   },
   {
@@ -17757,6 +19523,17 @@
     "is_disruptor": false,
     "special_tags": [
       "Easy"
+    ]
+  },
+  {
+    "blog_name": "It's Liv B",
+    "title": "Liv B\u2019s Vegan on a Budget",
+    "link": "https://itslivb.com/cookbook/",
+    "image": "https://itslivb.com/wp-content/uploads/2018/09/olivia-biermann-vegan-on-budget-cookbook3.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
     ]
   },
   {
@@ -18517,6 +20294,170 @@
     "special_tags": []
   },
   {
+    "blog_name": "Gaz Oakley",
+    "title": "Whole Roasted Cauliflower Cheese",
+    "link": "https://www.gazoakleychef.com/recipes/whole-roasted-cauliflower-cheese/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2022/10/caulicheesy-820x1024.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "TACOS AL PASTOR",
+    "link": "https://www.gazoakleychef.com/recipes/tacos-al-pastor/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2022/09/1Al-Pastor-83-819x1024.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "My Dads Tofu Tikka Sizzler",
+    "link": "https://www.gazoakleychef.com/recipes/my-dads-tofu-tikka-sizzler/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2022/09/tikka-819x1024.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Swedish Meatballs",
+    "link": "https://www.gazoakleychef.com/recipes/swedish-meatballs/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2022/09/meatballyss-819x1024.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "CARIBBEAN STEW WITH DUMPLINGS",
+    "link": "https://www.gazoakleychef.com/recipes/caribbean-stew-with-dumplings/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2022/08/stewy-819x1024.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "CHARD ENCHILARDAS",
+    "link": "https://www.gazoakleychef.com/recipes/chard-enchilardas/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2022/08/ench-819x1024.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Beet & Shallot Tarts with Cream Cheese",
+    "link": "https://www.gazoakleychef.com/recipes/beet-shallot-tarts/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2022/08/Beetroot-Tart-819x1024.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Pumpkin Croquette Katsu Burger",
+    "link": "https://www.gazoakleychef.com/recipes/pumpkin-croquette-katsu-burger/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2022/07/0F85C32A-FED7-4F53-B028-4396619EFA97-819x1024.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "King Oyster Mushroom & Tofu Yakitori",
+    "link": "https://www.gazoakleychef.com/recipes/king-oyster-mushroom-tofu-yakitori/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2022/07/GrillRecipes-38-819x1024.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "MY BEST RAMEN",
+    "link": "https://www.gazoakleychef.com/recipes/my-best-ramen/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2022/06/Creamy-Ramen-819x1024.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Pickled Radish",
+    "link": "https://www.gazoakleychef.com/recipes/pickled-radish/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2022/05/Radish-Pickle-819x1024.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Spring Quiche",
+    "link": "https://www.gazoakleychef.com/recipes/spring-quiche/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2022/05/Spring-Quiche3-819x1024.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Rhubarb & Safron Rice Pudding",
+    "link": "https://www.gazoakleychef.com/recipes/rhubarbricepudding/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2022/05/rice1-819x1024.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Greatest Mac & Cheese Ever",
+    "link": "https://www.gazoakleychef.com/recipes/greatest-mac-cheese-ever/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2022/05/Mac-Cheese-3-819x1024.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Spring Focaccia",
+    "link": "https://www.gazoakleychef.com/recipes/spring-focaccia/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2022/04/sfoc-819x1024.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Vegan Fried Chicken Experiment",
+    "link": "https://www.gazoakleychef.com/recipes/vegan-fried-chicken-experiment/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2022/03/chickex-819x1024.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Kentucky Fried Shrooms & Waffles",
+    "link": "https://www.gazoakleychef.com/recipes/kentucky-fried-shrooms-waffles/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2022/03/chickwaff-819x1024.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "Gaz Oakley",
+    "title": "Smokey Tofu Scramble Hash",
+    "link": "https://www.gazoakleychef.com/recipes/smokey-tofu-scramble-hash/",
+    "image": "https://www.gazoakleychef.com/wp-content/uploads/2022/03/Mexican-Tofu-Scramble3-819x1024.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Zacchary Bird",
     "title": "SPANAKOPITA",
     "link": "https://www.zaccharybird.com/spanakopita",
@@ -18646,8 +20587,8 @@
     "date": "2020-01-01T00:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Low Waste",
-      "WFPB"
+      "WFPB",
+      "Low Waste"
     ]
   },
   {
@@ -18758,8 +20699,8 @@
     "date": "2020-01-01T00:00:00+00:00",
     "is_disruptor": false,
     "special_tags": [
-      "Low Waste",
-      "WFPB"
+      "WFPB",
+      "Low Waste"
     ]
   },
   {
@@ -18883,6 +20824,96 @@
     "special_tags": [
       "Low Waste"
     ]
+  },
+  {
+    "blog_name": "The Happy Pear",
+    "title": "Whole Health",
+    "link": "https://thehappypear.ie/whole-health/",
+    "image": "https://thehappypear.ie/wp-content/uploads/2020/12/uv3.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "The Happy Pear",
+    "title": "Recipe Club",
+    "link": "https://thehappypear.ie/recipe-club/",
+    "image": "https://thehappypear.ie/wp-content/uploads/2020/12/uv3.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "The Happy Pear",
+    "title": "The 21 Day Gut Health Reset",
+    "link": "https://thehappypear.ie/the-21-day-gut-health-reset/",
+    "image": "https://thehappypear.ie/wp-content/uploads/2020/12/uv3.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "The Happy Pear",
+    "title": "Supper Club",
+    "link": "https://thehappypear.ie/supper-club/",
+    "image": "https://thehappypear.ie/wp-content/uploads/2020/12/uv3.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "The Happy Pear",
+    "title": "Food Products",
+    "link": "https://thehappypear.ie/food-products/",
+    "image": "https://thehappypear.ie/wp-content/uploads/2020/12/uv3.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "The Happy Pear",
+    "title": "Book A Talk",
+    "link": "https://thehappypear.ie/talks/",
+    "image": "https://thehappypear.ie/wp-content/uploads/2020/12/uv3.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "The Happy Pear",
+    "title": "Articles & Blog",
+    "link": "https://thehappypear.ie/articles-and-blog/",
+    "image": "https://thehappypear.ie/wp-content/uploads/2020/12/uv3.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "The Happy Pear",
+    "title": "Opportunities",
+    "link": "https://thehappypear.ie/opportunities/",
+    "image": "https://thehappypear.ie/wp-content/uploads/2020/12/uv3.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "The Happy Pear",
+    "title": "Sustainability",
+    "link": "https://thehappypear.ie/sustainability",
+    "image": "https://thehappypear.ie/wp-content/uploads/2020/12/uv3.jpg",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "The Happy Pear",
+    "title": "Foxlight Designs",
+    "link": "http://foxlightdesigns.com",
+    "image": "http://foxlightdesigns.com/devices.png",
+    "date": "2020-01-01T00:00:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "School Night Vegan",
@@ -19476,6 +21507,15 @@
     "special_tags": []
   },
   {
+    "blog_name": "The Veg Space",
+    "title": "Vegan Chilli Burritos",
+    "link": "https://www.thevegspace.co.uk/recipe-speedy-spicy-chilli-bean-burritos/",
+    "image": "https://www.thevegspace.co.uk/wp-content/uploads/2017/01/chilli-burrito.jpg",
+    "date": "2019-01-11T16:04:00+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "School Night Vegan",
     "title": "Mini Beet Wellingtons",
     "link": "https://schoolnightvegan.com/home/2018-12-19-mini-beet-wellingtons/",
@@ -19519,6 +21559,15 @@
     "link": "https://schoolnightvegan.com/home/2018-11-22-butter-cauliflower-curry-with-cucumber-lime-salsa/",
     "image": "https://schoolnightvegan.com/wp-content/uploads/2018/11/IMG_7080.jpg",
     "date": "2018-11-22T21:16:20+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "The Veg Space",
+    "title": "Vegan Korma with coconut yoghurt sauce",
+    "link": "https://www.thevegspace.co.uk/recipe-takeaway-style-vegan-korma/",
+    "image": "https://www.thevegspace.co.uk/wp-content/uploads/2018/11/vegan-korma-1.jpg",
+    "date": "2018-11-19T20:16:14+00:00",
     "is_disruptor": false,
     "special_tags": []
   },
@@ -19787,6 +21836,18 @@
   },
   {
     "blog_name": "Vegan Punks",
+    "title": "Vegan Dahl with Red Lentils in 35 Minutes",
+    "link": "https://veganpunks.com/vegan-dahl/",
+    "image": "https://veganpunks.com/wp-content/uploads/2018/04/Vegan-dahl-featured.jpg",
+    "date": "2018-04-13T14:46:00+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Easy",
+      "Budget"
+    ]
+  },
+  {
+    "blog_name": "Vegan Punks",
     "title": "Vegan Thai Cashew Stir Fry",
     "link": "https://veganpunks.com/thai-cashew-stir-fry/",
     "image": "https://veganpunks.com/wp-content/uploads/2018/04/Cashew-recipe-card-min.jpg",
@@ -19902,6 +21963,15 @@
     ]
   },
   {
+    "blog_name": "The Veg Space",
+    "title": "Avocado & Black Bean Tacos",
+    "link": "https://www.thevegspace.co.uk/recipe-black-bean-avocado-tacos/",
+    "image": "https://www.thevegspace.co.uk/wp-content/uploads/2018/01/black-bean-vegan-tacos.jpg",
+    "date": "2018-01-11T21:15:53+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "Dreena Burton",
     "title": "vegan chickpea tacos",
     "link": "https://dreenaburton.com/chickpea-tacos/",
@@ -19992,6 +22062,15 @@
   },
   {
     "blog_name": "The Veg Space",
+    "title": "Butternut Slow Cooker Dahl",
+    "link": "https://www.thevegspace.co.uk/recipe-slow-cooker-butternut-dhal/",
+    "image": "https://www.thevegspace.co.uk/wp-content/uploads/2017/11/slow-cooker-dahl.jpg",
+    "date": "2017-11-21T20:00:08+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "The Veg Space",
     "title": "Cavolo Nero Pasta with walnut sauce",
     "link": "https://www.thevegspace.co.uk/recipe-pappardelle-with-cavolo-nero-walnut-sauce/",
     "image": "https://www.thevegspace.co.uk/wp-content/uploads/2015/10/cavolo-nero-pasta.jpg",
@@ -20010,6 +22089,15 @@
       "GF",
       "Easy"
     ]
+  },
+  {
+    "blog_name": "The Veg Space",
+    "title": "Moroccan Stuffed Romano Peppers",
+    "link": "https://www.thevegspace.co.uk/recipe-moroccan-stuffed-romano-peppers/",
+    "image": "https://www.thevegspace.co.uk/wp-content/uploads/2017/09/stuffed-romano-peppers.jpg",
+    "date": "2017-09-21T11:05:12+00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "Vegan Punks",
@@ -20173,6 +22261,15 @@
     "link": "https://www.thevegspace.co.uk/recipe-bbq-black-bean-jalepeno-burger-vegan/",
     "image": "https://www.thevegspace.co.uk/wp-content/uploads/2017/05/black-bean-burger.jpg",
     "date": "2017-05-16T18:54:16+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "The Veg Space",
+    "title": "Black Bean Chilli with Chipotle Paste",
+    "link": "https://www.thevegspace.co.uk/recipe-chipotle-black-bean-chilli/",
+    "image": "https://www.thevegspace.co.uk/wp-content/uploads/2017/04/black-bean-chilli-1.jpg",
+    "date": "2017-04-12T09:53:53+00:00",
     "is_disruptor": false,
     "special_tags": []
   },
@@ -20348,11 +22445,29 @@
     "special_tags": []
   },
   {
+    "blog_name": "The Veg Space",
+    "title": "Vegan Lasagne - Roasted Squash & Creamy Pesto",
+    "link": "https://www.thevegspace.co.uk/recipe-make-freeze-roasted-squash-creamy-pesto-lasagne-vegan/",
+    "image": "https://www.thevegspace.co.uk/wp-content/uploads/2016/09/Roasted-Squash-Creamy-Pesto-Lasagne.jpg",
+    "date": "2016-09-30T13:15:45+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
     "blog_name": "What Jew You Want to Eat",
     "title": "Pomegranate Tahini Bark",
     "link": "https://whatjewwannaeat.com/pomegranate-tahini-bark/",
     "image": "https://whatjewwannaeat.com/wp-content/uploads/2016/09/IMG_4384-2.jpg",
     "date": "2016-09-27T11:47:04+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "The Veg Space",
+    "title": "Roasted Tomato Arrabbiata Sauce",
+    "link": "https://www.thevegspace.co.uk/recipe-roasted-tomato-arrabbiata-sauce/",
+    "image": "https://www.thevegspace.co.uk/wp-content/uploads/2016/09/homemade-arrabbiata-sauce.jpg",
+    "date": "2016-09-16T12:21:42+00:00",
     "is_disruptor": false,
     "special_tags": []
   },
@@ -20499,6 +22614,15 @@
       "WFPB",
       "Budget"
     ]
+  },
+  {
+    "blog_name": "The Veg Space",
+    "title": "Very Lazy Veggie Lasagne",
+    "link": "https://www.thevegspace.co.uk/recipe-the-ultimate-lazy-veggie-lasagne/",
+    "image": "https://www.thevegspace.co.uk/wp-content/uploads/2016/05/Ultimate-Lazy-Veggie-Lasagne.jpg",
+    "date": "2016-05-10T13:56:44+00:00",
+    "is_disruptor": false,
+    "special_tags": []
   },
   {
     "blog_name": "The Veg Space",
@@ -20703,6 +22827,17 @@
     "date": "2015-09-22T20:39:39+00:00",
     "is_disruptor": false,
     "special_tags": []
+  },
+  {
+    "blog_name": "The Veg Space",
+    "title": "Harissa Baked Aubergine & Chickpeas with Sweet Potato",
+    "link": "https://www.thevegspace.co.uk/recipe-harissa-roasted-chickpeas-and-aubergine-with-sweet-potato-mash/",
+    "image": "https://www.thevegspace.co.uk/wp-content/uploads/2015/09/baked-aubergine.jpg",
+    "date": "2015-09-10T13:58:55+00:00",
+    "is_disruptor": false,
+    "special_tags": [
+      "Budget"
+    ]
   },
   {
     "blog_name": "Snixy Kitchen (Vegan Recipes)",
@@ -21080,6 +23215,15 @@
     "link": "https://www.thevegspace.co.uk/recipe-baked-onions-with-hazelnut-sultana-feta-stuffing/",
     "image": "https://www.thevegspace.co.uk/wp-content/uploads/2014/06/stuffed-onions.jpg",
     "date": "2014-06-20T17:00:03+00:00",
+    "is_disruptor": false,
+    "special_tags": []
+  },
+  {
+    "blog_name": "The Veg Space",
+    "title": "Sri Lankan Cashew Nut stuffed Capsicum in a coconut and curry leaf sauce",
+    "link": "https://www.thevegspace.co.uk/recipe-sri-lankan-cashew-nut-stuffed-capsicum-in-a-coconut-and-curry-leaf-sauce/",
+    "image": "https://www.thevegspace.co.uk/wp-content/uploads/2014/04/cashew-stuffed-capsicums-low-res.jpg",
+    "date": "2014-04-09T19:09:58+00:00",
     "is_disruptor": false,
     "special_tags": []
   },
