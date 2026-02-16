@@ -76,7 +76,6 @@ DISRUPTORS = [
     ("Plantifully Based", "https://plantifullybasedblog.com/feed/", []),
     ("Cadry's Kitchen", "https://cadryskitchen.com/feed/", []),
     ("Dr. Vegan", "https://drveganblog.com/feed/", ["Easy"]),
-    ("Picky Eater (Vegan Options)", "https://veggiesdontbite.com/feed/", []),
     ("Earth to Veg", "https://earthtoveg.com/feed/", []),
     ("Watch Learn Eat", "https://watchlearneat.com/feed/", ["Easy"]),
     ("Strength and Sunshine", "https://strengthandsunshine.com/feed/", ["Easy", "GF"]), # Will auto-tag GF
