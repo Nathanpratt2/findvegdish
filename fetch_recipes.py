@@ -146,6 +146,7 @@ HTML_SOURCES = [
     ("One Arab Vegan", "https://www.onearabvegan.com/category/recipes/page/2/", [], "wordpress"),
     ("Steamy Vegan", "https://steamyvegan.com/recipes/", [], "wordpress"),
     ("BOSH! TV", "https://www.bosh.tv/collections/extra/speedy/", ["Easy"], "wordpress"),
+    ("The Happy Pear", "https://thehappypear.ie/plant-based-vegan-recipes/", [], "wordpress"),
     ("Healthier Steps", "https://healthiersteps.com/recipe-index/?_paged=2", [], "wordpress")
 ]
 
