@@ -107,7 +107,7 @@ DISRUPTORS = [
 # --- DIRECT HTML SCRAPING SOURCES ---
 HTML_SOURCES = [
     ("Minimalist Baker (Vegan Recipes)", "https://minimalistbaker.com/recipes/vegan/", [], "wordpress"),
-    ("Pick Up Limes", "https://www.pickuplimes.com/recipe/", [], "custom_pul"),
+    ("Pick Up Limes", "https://www.pickuplimes.com/recipe/?sb=&public=on&page=1", [], "custom_pul"),
     ("Zucker & Jagdwurst", "https://www.zuckerjagdwurst.com/en/archive/1", [], "custom_zj"),
     ("Rainbow Plant Life GF", "https://rainbowplantliffe.com/diet/gluten-free/", ["GF"], "wordpress"),
     ("Vegan Richa GF", "https://www.veganricha.com/category/gluten-free/", ["GF"], "wordpress"),
