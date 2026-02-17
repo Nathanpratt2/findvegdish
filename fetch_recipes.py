@@ -38,7 +38,7 @@ TOP_BLOGGERS = [
     ("The Korean Vegan", "https://thekoreanvegan.com/feed/", []),
     ("Rainbow Plant Life", "https://rainbowplantlife.com/feed/", []), # Main Feed
     ("Vegan Richa", "https://www.veganricha.com/feed/", []), # Main Feed
-    ("It Doesn't Taste Like Chicken", "https://itdoesnttastelikechicken.com/feed/", []), 
+    ("It Doesn't Taste Like Chicken", "https://itdoesnttastelikechicken.com/recipe-index/#search/c=eyJ2IjoiNC4wIiwidGl0bGUiOiJMYXRlc3QiLCJncm91cFR5cGUiOiJyZWNlbnQiLCJhcnJhbmdlbWVudCI6ImNvbnRleHQtd2l0aC1zZWFyY2gifQ%3D%3D", []), 
     ("Elavegan", "https://elavegan.com/feed/", ["GF"]), # Will auto-tag GF
     ("The First Mess", "https://thefirstmess.com/feed/", []),
     ("Sweet Potato Soul", "https://sweetpotatosoul.com/feed/", []),
@@ -59,7 +59,6 @@ TOP_BLOGGERS = [
     ("Sarah's Vegan Kitchen", "https://sarahsvegankitchen.com/feed/", []),
     ("Make It Dairy Free", "https://makeitdairyfree.com/feed/", []),
     ("Addicted to Dates", "https://addictedtodates.com/category/recipes/feed/", []),
-    ("Gretchen's Vegan Bakery", "https://www.gretchensveganbakery.com/feed/", []),
     ("Running on Real Food", "https://runningonrealfood.com/feed/", ["WFPB"]),
     ("VegNews", "https://vegnews.com/feed", []),
     ("HealthyGirl Kitchen", "https://healthygirlkitchen.com/feed/", []),
@@ -86,7 +85,6 @@ DISRUPTORS = [
     ("The Conscious Plant Kitchen", "https://www.theconsciousplantkitchen.com/feed/", []),
     ("Choosing Chia (Vegan Recipes)", "https://choosingchia.com/category/diet%20/vegan/feed/", ["Easy"]),
     ("Flora & Vino", "https://www.floraandvino.com/feed/", ["WFPB"]),
-    ("Namely Marly", "https://namelymarly.com/feed/", []),
     ("The Post-Punk Kitchen", "https://www.theppk.com/feed/", []),
     ("Plant Baes", "https://plantbaes.com/feed/", []),
     ("The Little Blog of Vegan", "https://www.thelittleblogofvegan.com/feed/", []),
@@ -94,7 +92,6 @@ DISRUPTORS = [
     ("The Banana Diaries", "https://thebananadiaries.com/feed/", []),
     ("Plant Power Couple", "https://www.plantpowercouple.com/feed/", ["Easy"]),
     ("Rainbow Nourishments", "https://www.rainbownourishments.com/feed/", []),
-    ("Rhian's Recipes", "https://www.rhiansrecipes.com/feed/", ["GF"]), # Will auto-tag GF
     ("Monkey & Me Kitchen Adventures", "https://monkeyandmekitchenadventures.com/feed/", ["WFPB"]),
     ("My Goodness Kitchen", "https://mygoodnesskitchen.com/feed/", []),
     ("Ann Arbor Vegan Kitchen", "https://www.annarborvegankitchen.com/feed/", ["WFPB"]),
@@ -112,39 +109,40 @@ HTML_SOURCES = [
     ("Rainbow Plant Life GF", "https://rainbowplantliffe.com/diet/gluten-free/", ["GF"], "wordpress"),
     ("Vegan Richa GF", "https://www.veganricha.com/category/gluten-free/", ["GF"], "wordpress"),
     ("School Night Vegan", "https://schoolnightvegan.com/essentials/", [], "wordpress"), 
-    ("Love and Lemons (Vegan Recipes)", "https://www.loveandlemons.com/category/recipes/vegan/", [], "wordpress"),
-    ("Cookie and Kate (Vegan Recipes)", "https://cookieandkate.com/category/food-recipes/vegan/?_paged=3", [], "wordpress"), 
-    ("The Loopy Whisk (Vegan Recipes)", "https://theloopywhisk.com/diet/vegan/page/2/", ["GF"], "wordpress"),
+    ("Love and Lemons (Vegan Recipes)", "https://www.loveandlemons.com/category/recipes/vegan/page/2/", [], "wordpress"),
+    ("Cookie and Kate (Vegan Recipes)", "https://cookieandkate.com/category/food-recipes/vegan/?_paged=4", [], "wordpress"),#24 pages for this 
+    ("The Loopy Whisk (Vegan Recipes)", "https://theloopywhisk.com/diet/vegan/page/3/", ["GF"], "wordpress"),
     ("Zacchary Bird","https://www.zaccharybird.com/all-recipes/",[], "wordpress"),
     ("Elsa's Wholesome Life","https://www.elsaswholesomelife.com/blog?category=Recipes",[], "wordpress"),
-    ("The Full Helping (Vegan Recipes)","https://www.thefullhelping.com/dietary/vegan/",[],"wordpress"),
+    ("The Full Helping (Vegan Recipes)","https://www.thefullhelping.com/dietary/vegan/",[],"wordpress"),#Load more limitation
     ("Hot For Food","https://www.hotforfoodblog.com/category/recipes/page/1/",[],"wordpress"),
     ("Cupful of Kale", "https://cupfulofkale.com/category/recipes/page/5/", [], "wordpress"),
-    ("The Veg Space", "https://www.thevegspace.co.uk/category/recipes/mains/page/5/", [], "wordpress"),
-    ("Vegan Punks", "https://veganpunks.com/page/1/?s=+", [], "wordpress"), #this is a search for space bar so most of their recipes on this feed - do multiple pages
+    ("The Veg Space", "https://www.thevegspace.co.uk/category/recipes/page/2/", [], "wordpress"),#13 pages for this then remove
+    ("Vegan Punks", "https://veganpunks.com/page/2/?s=+", [], "wordpress"), #this is a search for space bar so most of their recipes on this feed - do multiple pages
     ("What Jew You Want to Eat", "https://whatjewwannaeat.com/category/vegan/", [], "wordpress"),
-    ("Plant-Based on a Budget", "https://plantbasedonabudget.com/category/vegan-dinners/", ["Budget"], "wordpress"),
+    ("Plant-Based on a Budget", "https://plantbasedonabudget.com/category/vegan-dinners/page/2/", ["Budget"], "wordpress"),
     ("Baking Hermann", "https://bakinghermann.com/recipes/", [], "squarespace"),
     ("Sweet Simple Vegan", "https://sweetsimplevegan.com/recipes/page/6/", [], "wordpress"),
-    ("Chef AJ", "https://chefaj.com/recipe-index/page/5/", ["WFPB"], "wordpress"),
-    ("Dreena Burton", "https://dreenaburton.com/category/recipes/page/4", ["WFPB"], "wordpress"),
+    ("Dreena Burton", "https://dreenaburton.com/category/recipes/page/5/", ["WFPB"], "wordpress"),#21 pages of this
     ("Gaz Oakley", "https://www.gazoakleychef.com/recipes/?sf_paged=7", [], "wordpress"), #has 20 pages with this link
     ("The Edgy Veg", "https://www.theedgyveg.com/recipes/", [], "wordpress"),
     ("Vegan Yack Attack", "https://veganyackattack.com/entrees/", [], "wordpress"),
-    ("Nadia's Healthy Kitchen (Vegan Recipes)", "https://nadiashealthykitchen.com/category/vegan/", [], "wordpress"),
+    ("Nadia's Healthy Kitchen (Vegan Recipes)", "https://nadiashealthykitchen.com/category/vegan/page/2/", [], "wordpress"),
     ("The Cheap Lazy Vegan", "https://thecheaplazyvegan.com/blog/", ["Budget", "Easy"], "wordpress"),
     ("Alison Roman (Vegan)", "https://www.alisoneroman.com/recipes/collections/vegan/", [], "wordpress"), #already got the history on this one
-    ("Max La Manna", "https://www.maxlamanna.com/recipes", [], "wordpress"),
-    ("Snixy Kitchen (Vegan Recipes)", "https://www.snixykitchen.com/special-diet/vegan", ["GF"], "wordpress"),
+    ("Max La Manna", "https://www.maxlamanna.com/recipes", [], "wordpress"),#got all of these already
     ("Vegan in the Freezer", "https://veganinthefreezer.com/recipes/?pg=2", [], "wordpress"),
-    ("Chef Bai", "https://www.chefbai.kitchen/blog?offset=1689212719826", [], "wordpress"),
+    ("Chef Bai", "https://www.chefbai.kitchen/blog?offset=1679948736072", [], "wordpress"),
     ("It's Liv B", "https://itslivb.com/category/main-dishes/page/4/", [], "wordpress"),
     ("One Arab Vegan", "https://www.onearabvegan.com/category/recipes/page/3/", [], "wordpress"),
-    ("Steamy Vegan", "https://steamyvegan.com/recipes/", [], "wordpress"),
+    ("Steamy Vegan", "https://steamyvegan.com/category/mains/page/2/", [], "wordpress"),
     ("BOSH! TV", "https://www.bosh.tv/recipes", [], "wordpress"),
-    ("The Happy Pear", "https://thehappypear.ie/plant-based-vegan-recipes/", [], "wordpress"),
-    ("Rachel Ama", "https://www.rachelama.com/recipes", [], "squarespace"),
-    ("Healthier Steps", "https://healthiersteps.com/recipe-index/?_paged=4", [], "wordpress")
+    ("The Happy Pear", "https://thehappypear.ie/plant-based-vegan-recipes/", [], "wordpress"),#not going to get any more from this one
+    ("Rachel Ama", "https://www.rachelama.com/recipes?offset=1575905820126", [], "squarespace"),
+    ("Namely Marly", "https://namelymarly.com/category/vegan-recipes/page/2/", [], "wordpress"),#35 pages for this
+    ("Gretchen's Vegan Bakery", "https://www.gretchensveganbakery.com/category/all-recipes/page/2/", [], "wordpress"),
+    ("Rhian's Recipes", "https://www.rhiansrecipes.com/recipes/page/1/", ["GF"], "wordpress"), # Will auto-tag GF
+    ("Healthier Steps", "https://healthiersteps.com/recipe-index/?_paged=5", [], "wordpress")#Hundreds of pages for this one
 ]
 
 # --- DISPLAY NAME MAPPING ---
