@@ -779,15 +779,6 @@
     ]
   },
   {
-    "blog_name": "Pick Up Limes",
-    "title": "Spicy Carrot Wrap",
-    "link": "https://www.pickuplimes.com/recipe/spicy-carrot-wrap-2688",
-    "image": "https://cdn.pickuplimes.com/cache/46/bd/46bdd94acc2a3f538012553e2b38e315.jpg",
-    "date": "2026-02-11T05:29:16.839877",
-    "is_disruptor": false,
-    "special_tags": []
-  },
-  {
     "blog_name": "Forks Over Knives",
     "title": "10-Minute Tofu Scramble",
     "link": "https://www.forksoverknives.com/recipes/vegan-breakfast/10-minute-tofu-scramble/",
@@ -798,91 +789,6 @@
       "WFPB",
       "Easy"
     ]
-  },
-  {
-    "blog_name": "Pick Up Limes",
-    "title": "Cinnamon Roll Pancakes",
-    "link": "https://www.pickuplimes.com/recipe/cinnamon-roll-pancakes-2239",
-    "image": "https://cdn.pickuplimes.com/cache/76/80/7680fa2623a2fe259504ab88b2ab5405.jpg",
-    "date": "2026-02-10T20:27:27.809838",
-    "is_disruptor": false,
-    "special_tags": []
-  },
-  {
-    "blog_name": "Pick Up Limes",
-    "title": "Grilled Dessert Bananas",
-    "link": "https://www.pickuplimes.com/recipe/grilled-dessert-bananas-2211",
-    "image": "https://cdn.pickuplimes.com/cache/dd/c4/ddc4a53e9f2289829da1d44150e019af.jpg",
-    "date": "2026-02-10T20:27:27.809693",
-    "is_disruptor": false,
-    "special_tags": []
-  },
-  {
-    "blog_name": "Pick Up Limes",
-    "title": "Crispy Potato Peel Chips",
-    "link": "https://www.pickuplimes.com/recipe/crispy-potato-peel-chips-2485",
-    "image": "https://cdn.pickuplimes.com/cache/e4/b8/e4b81cd4edaaee9421d2c40c316e1a02.jpg",
-    "date": "2026-02-10T20:27:27.809568",
-    "is_disruptor": false,
-    "special_tags": [
-      "Budget"
-    ]
-  },
-  {
-    "blog_name": "Pick Up Limes",
-    "title": "Buffalo Cauliflower Wings",
-    "link": "https://www.pickuplimes.com/recipe/buffalo-cauliflower-wings-2819",
-    "image": "https://cdn.pickuplimes.com/cache/e8/96/e896208941d6949396be46f60eab323f.jpg",
-    "date": "2026-02-10T20:27:27.809312",
-    "is_disruptor": false,
-    "special_tags": []
-  },
-  {
-    "blog_name": "Pick Up Limes",
-    "title": "White Sauce Veggie Pasta",
-    "link": "https://www.pickuplimes.com/recipe/white-sauce-veggie-pasta-2338",
-    "image": "https://cdn.pickuplimes.com/cache/15/64/15647df28a77cf0d5897a562642aee31.jpg",
-    "date": "2026-02-10T20:27:27.809194",
-    "is_disruptor": false,
-    "special_tags": []
-  },
-  {
-    "blog_name": "Pick Up Limes",
-    "title": "Pickle & Dill Pizza with Garlic Sauce",
-    "link": "https://www.pickuplimes.com/recipe/pickle-dill-pizza-with-garlic-sauce-2494",
-    "image": "https://cdn.pickuplimes.com/cache/ef/58/ef58b4f17dbdeed1137d32f23e72806c.jpg",
-    "date": "2026-02-10T20:27:27.809067",
-    "is_disruptor": false,
-    "special_tags": []
-  },
-  {
-    "blog_name": "Pick Up Limes",
-    "title": "Banana Bread Dip",
-    "link": "https://www.pickuplimes.com/recipe/banana-bread-dip-2487",
-    "image": "https://cdn.pickuplimes.com/cache/8d/7c/8d7cf70c0915cda437b43b5f603f498f.jpg",
-    "date": "2026-02-10T20:27:27.808953",
-    "is_disruptor": false,
-    "special_tags": []
-  },
-  {
-    "blog_name": "Pick Up Limes",
-    "title": "Potato & Sauerkraut Pierogi",
-    "link": "https://www.pickuplimes.com/recipe/potato-sauerkraut-pierogi-1021",
-    "image": "https://cdn.pickuplimes.com/cache/dd/06/dd061d3fb08e852be362e795da9aab65.jpg",
-    "date": "2026-02-10T20:27:27.808837",
-    "is_disruptor": false,
-    "special_tags": [
-      "Budget"
-    ]
-  },
-  {
-    "blog_name": "Pick Up Limes",
-    "title": "Chocolate Almond Milk",
-    "link": "https://www.pickuplimes.com/recipe/chocolate-almond-milk-2891",
-    "image": "https://cdn.pickuplimes.com/cache/57/7e/577e0d4a8b2cec681b9c7438d076a5bb.jpg",
-    "date": "2026-02-10T20:27:27.808687",
-    "is_disruptor": false,
-    "special_tags": []
   },
   {
     "blog_name": "Sweet Simple Vegan",
@@ -1288,24 +1194,6 @@
     "link": "https://www.lazycatkitchen.com/sesame-snaps/",
     "image": "https://cdn77-s3.lazycatkitchen.com/wp-content/uploads/2026/02/sesame-snaps-stack.jpg",
     "date": "2026-02-07T19:31:26+00:00",
-    "is_disruptor": false,
-    "special_tags": []
-  },
-  {
-    "blog_name": "Pick Up Limes",
-    "title": "Speedy Lahmacun",
-    "link": "https://www.pickuplimes.com/recipe/speedy-lahmacun-2155",
-    "image": "https://cdn.pickuplimes.com/cache/87/a3/87a3b048a5ca7ae8899a35f36058f501.jpg",
-    "date": "2026-02-07T18:33:18.904180+00:00",
-    "is_disruptor": false,
-    "special_tags": []
-  },
-  {
-    "blog_name": "Pick Up Limes",
-    "title": "Golden Raspberry Truffles",
-    "link": "https://www.pickuplimes.com/recipe/golden-raspberry-truffles-1337",
-    "image": "https://cdn.pickuplimes.com/cache/86/d5/86d5db6096c5feb0ccd05cc050dd099d.jpg",
-    "date": "2026-02-07T18:33:18.903825+00:00",
     "is_disruptor": false,
     "special_tags": []
   },
@@ -16234,44 +16122,6 @@
     "link": "https://nadiashealthykitchen.com/peanut-butter-chocolate-oat-cups/",
     "image": "https://nadiashealthykitchen.com/wp-content/uploads/2020/08/vegan-peanut-butter-oat-cups_5.jpg",
     "date": "2022-01-05T16:09:32+00:00",
-    "is_disruptor": false,
-    "special_tags": []
-  },
-  {
-    "blog_name": "Pick Up Limes",
-    "title": "Oven-Fried Breaded Pickles",
-    "link": "https://www.pickuplimes.com/recipe/oven-fried-breaded-pickles-2534",
-    "image": "https://cdn.pickuplimes.com/cache/82/bf/82bfcc4666e69be701c1a79515b2a369.jpg",
-    "date": "2022-01-01T00:00:00+00:00",
-    "is_disruptor": false,
-    "special_tags": []
-  },
-  {
-    "blog_name": "Pick Up Limes",
-    "title": "Spicy Sambal Roasted Carrots with Herby Yogurt",
-    "link": "https://www.pickuplimes.com/recipe/spicy-sambal-roasted-carrots-with-herby-yogurt-2745",
-    "image": "https://cdn.pickuplimes.com/cache/36/f2/36f2da2747dd1308f5d865099e3a2538.jpg",
-    "date": "2022-01-01T00:00:00+00:00",
-    "is_disruptor": false,
-    "special_tags": []
-  },
-  {
-    "blog_name": "Pick Up Limes",
-    "title": "Carrot Lentil Soup with Gremolata Topping",
-    "link": "https://www.pickuplimes.com/recipe/carrot-lentil-soup-with-gremolata-topping-2347",
-    "image": "https://cdn.pickuplimes.com/cache/cc/19/cc199788901e1c28cf31131e00ef8ba8.jpg",
-    "date": "2022-01-01T00:00:00+00:00",
-    "is_disruptor": false,
-    "special_tags": [
-      "Budget"
-    ]
-  },
-  {
-    "blog_name": "Pick Up Limes",
-    "title": "Harissa Maple Tofu Bowl",
-    "link": "https://www.pickuplimes.com/recipe/harissa-maple-tofu-bowl-2707",
-    "image": "https://cdn.pickuplimes.com/cache/f3/75/f3751da774dc2ecf8b8c48c7c3138ec9.jpg",
-    "date": "2022-01-01T00:00:00+00:00",
     "is_disruptor": false,
     "special_tags": []
   },
