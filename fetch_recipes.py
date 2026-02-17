@@ -129,7 +129,6 @@ HTML_SOURCES = [
     ("Chef AJ", "https://chefaj.com/recipe-index/page/4/", ["WFPB"], "wordpress"),
     ("Dreena Burton", "https://dreenaburton.com/category/recipes/page/3", ["WFPB"], "wordpress"),
     ("Gaz Oakley", "https://www.gazoakleychef.com/recipes/?sf_paged=6", [], "wordpress"),
-    ("Vegan Huggs", "https://veganhuggs.com/category/recipes/", [], "custom_veganhuggs"),
     ("The Edgy Veg", "https://www.theedgyveg.com/recipes/", [], "wordpress"),
     ("Vegan Yack Attack", "https://veganyackattack.com/entrees/", [], "wordpress"),
     ("Nadia's Healthy Kitchen (Vegan Recipes)", "https://nadiashealthykitchen.com/category/vegan/", [], "wordpress"),
@@ -144,7 +143,7 @@ HTML_SOURCES = [
     ("Steamy Vegan", "https://steamyvegan.com/recipes/", [], "wordpress"),
     ("BOSH! TV", "https://www.bosh.tv/collections/extra/speedy/", ["Easy"], "wordpress"),
     ("The Happy Pear", "https://thehappypear.ie/plant-based-vegan-recipes/", [], "wordpress"),
-    ("Rachel Ama", "https://www.rachelama.com/recipes", [], "square space"),
+    ("Rachel Ama", "https://www.rachelama.com/recipes", [], "squarespace"),
     ("Healthier Steps", "https://healthiersteps.com/recipe-index/?_paged=3", [], "wordpress")
 ]
 
