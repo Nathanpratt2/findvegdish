@@ -104,6 +104,16 @@ DISRUPTORS = [
 # --- DIRECT HTML SCRAPING SOURCES ---
 HTML_SOURCES = [
     ("Minimalist Baker (Vegan Recipes)", "https://minimalistbaker.com/recipes/vegan/page/2/", [], "wordpress"),#150 pages and lots of new ones
+    ("Minimalist Baker (Vegan Recipes)", "https://minimalistbaker.com/recipes/vegan/page/3/", [], "wordpress"),#150 pages and lots of new ones
+    ("Minimalist Baker (Vegan Recipes)", "https://minimalistbaker.com/recipes/vegan/page/4/", [], "wordpress"),#150 pages and lots of new ones
+    ("Minimalist Baker (Vegan Recipes)", "https://minimalistbaker.com/recipes/vegan/page/5/", [], "wordpress"),#150 pages and lots of new ones
+    ("Minimalist Baker (Vegan Recipes)", "https://minimalistbaker.com/recipes/vegan/page/6/", [], "wordpress"),#150 pages and lots of new ones
+    ("Minimalist Baker (Vegan Recipes)", "https://minimalistbaker.com/recipes/vegan/page/7/", [], "wordpress"),#150 pages and lots of new ones
+    ("Minimalist Baker (Vegan Recipes)", "https://minimalistbaker.com/recipes/vegan/page/8/", [], "wordpress"),#150 pages and lots of new ones
+    ("Minimalist Baker (Vegan Recipes)", "https://minimalistbaker.com/recipes/vegan/page/9/", [], "wordpress"),#150 pages and lots of new ones
+    ("Minimalist Baker (Vegan Recipes)", "https://minimalistbaker.com/recipes/vegan/page/10/", [], "wordpress"),#150 pages and lots of new ones
+    ("Minimalist Baker (Vegan Recipes)", "https://minimalistbaker.com/recipes/vegan/page/11/", [], "wordpress"),#150 pages and lots of new ones
+    ("Minimalist Baker (Vegan Recipes)", "https://minimalistbaker.com/recipes/vegan/page/12/", [], "wordpress"),#150 pages and lots of new ones
     ("Pick Up Limes", "https://www.pickuplimes.com/recipe/?sb=&public=on&page=2", [], "custom_pul"),#grab only pages then come back to page 1
     ("Zucker & Jagdwurst", "https://www.zuckerjagdwurst.com/en/archive/1", [], "custom_zj"),
     ("Rainbow Plant Life GF", "https://rainbowplantliffe.com/diet/gluten-free/", ["GF"], "wordpress"),
