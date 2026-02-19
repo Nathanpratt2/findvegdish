@@ -103,49 +103,110 @@ DISRUPTORS = [
 
 # --- DIRECT HTML SCRAPING SOURCES ---
 HTML_SOURCES = [
-    ("Minimalist Baker (Vegan Recipes)", "https://minimalistbaker.com/recipes/vegan/page/13/", [], "wordpress"),#150 pages and lots of new ones
-    ("Minimalist Baker (Vegan Recipes)", "https://minimalistbaker.com/recipes/vegan/page/14/", [], "wordpress"),#150 pages and lots of new ones
-    ("Minimalist Baker (Vegan Recipes)", "https://minimalistbaker.com/recipes/vegan/page/15/", [], "wordpress"),#150 pages and lots of new ones
-    ("Minimalist Baker (Vegan Recipes)", "https://minimalistbaker.com/recipes/vegan/page/16/", [], "wordpress"),#150 pages and lots of new ones
-    ("Minimalist Baker (Vegan Recipes)", "https://minimalistbaker.com/recipes/vegan/page/17/", [], "wordpress"),#150 pages and lots of new ones
-    ("Minimalist Baker (Vegan Recipes)", "https://minimalistbaker.com/recipes/vegan/page/18/", [], "wordpress"),#150 pages and lots of new ones
-    ("Minimalist Baker (Vegan Recipes)", "https://minimalistbaker.com/recipes/vegan/page/19/", [], "wordpress"),#150 pages and lots of new ones
-    ("Minimalist Baker (Vegan Recipes)", "https://minimalistbaker.com/recipes/vegan/page/20/", [], "wordpress"),#150 pages and lots of new ones
-    ("Minimalist Baker (Vegan Recipes)", "https://minimalistbaker.com/recipes/vegan/page/21/", [], "wordpress"),#150 pages and lots of new ones
-    ("Minimalist Baker (Vegan Recipes)", "https://minimalistbaker.com/recipes/vegan/page/22/", [], "wordpress"),#150 pages and lots of new ones
-    ("Pick Up Limes", "https://www.pickuplimes.com/recipe/?sb=&public=on&page=3", [], "custom_pul"),#grab only pages then come back to page 1
+    ("Minimalist Baker (Vegan Recipes)", "https://minimalistbaker.com/recipes/vegan", [], "wordpress"),#maxed out recipes. keep base link
+    ("Pick Up Limes", "https://www.pickuplimes.com/recipe/?sb=&public=on&page=4", [], "custom_pul"),#grab only pages then come back to page 1
+    ("Pick Up Limes", "https://www.pickuplimes.com/recipe/?sb=&public=on&page=5", [], "custom_pul"),#grab only pages then come back to page 1
+    ("Pick Up Limes", "https://www.pickuplimes.com/recipe/?sb=&public=on&page=6", [], "custom_pul"),#grab only pages then come back to page 1
+    ("Pick Up Limes", "https://www.pickuplimes.com/recipe/?sb=&public=on&page=7", [], "custom_pul"),#grab only pages then come back to page 1
+    ("Pick Up Limes", "https://www.pickuplimes.com/recipe/?sb=&public=on&page=8", [], "custom_pul"),#grab only pages then come back to page 1
+    ("Pick Up Limes", "https://www.pickuplimes.com/recipe/?sb=&public=on&page=9", [], "custom_pul"),#grab only pages then come back to page 1
     ("Zucker & Jagdwurst", "https://www.zuckerjagdwurst.com/en/archive/1", [], "custom_zj"),
     ("Rainbow Plant Life GF", "https://rainbowplantliffe.com/diet/gluten-free/", ["GF"], "wordpress"),
     ("Vegan Richa GF", "https://www.veganricha.com/category/gluten-free/", ["GF"], "wordpress"),
-    ("School Night Vegan", "https://schoolnightvegan.com/lunch/", [], "wordpress"), #have done dinner, essentials and page 1 of lunch
-    ("Love and Lemons (Vegan Recipes)", "https://www.loveandlemons.com/category/recipes/vegan/page/5/", [], "wordpress"),
-    ("Cookie and Kate (Vegan Recipes)", "https://cookieandkate.com/category/food-recipes/vegan/?_paged=7", [], "wordpress"),#24 pages for this 
-    ("The Loopy Whisk (Vegan Recipes)", "https://theloopywhisk.com/diet/vegan/page/5/", ["GF"], "wordpress"),#9 pages
+    ("School Night Vegan", "https://schoolnightvegan.com/snacks/page/1/", [], "wordpress"), #have done dinner, essentials and snacks page 1
+    ("Love and Lemons (Vegan Recipes)", "https://www.loveandlemons.com/category/recipes/vegan/page/6/", [], "wordpress"),
+    ("Cookie and Kate (Vegan Recipes)", "https://cookieandkate.com/category/food-recipes/vegan/?_paged=8", [], "wordpress"),#24 pages for this
+    ("Cookie and Kate (Vegan Recipes)", "https://cookieandkate.com/category/food-recipes/vegan/?_paged=9", [], "wordpress"),#24 pages for this 
+    ("Cookie and Kate (Vegan Recipes)", "https://cookieandkate.com/category/food-recipes/vegan/?_paged=10", [], "wordpress"),#24 pages for this 
+    ("Cookie and Kate (Vegan Recipes)", "https://cookieandkate.com/category/food-recipes/vegan/?_paged=11", [], "wordpress"),#24 pages for this 
+    ("Cookie and Kate (Vegan Recipes)", "https://cookieandkate.com/category/food-recipes/vegan/?_paged=12", [], "wordpress"),#24 pages for this 
+    ("Cookie and Kate (Vegan Recipes)", "https://cookieandkate.com/category/food-recipes/vegan/?_paged=13", [], "wordpress"),#24 pages for this 
+    ("The Loopy Whisk (Vegan Recipes)", "https://theloopywhisk.com/diet/vegan/page/6/", ["GF"], "wordpress"),#9 pages
+    ("The Loopy Whisk (Vegan Recipes)", "https://theloopywhisk.com/diet/vegan/page/7/", ["GF"], "wordpress"),#9 pages
+    ("The Loopy Whisk (Vegan Recipes)", "https://theloopywhisk.com/diet/vegan/page/8/", ["GF"], "wordpress"),#9 pages
+    ("The Loopy Whisk (Vegan Recipes)", "https://theloopywhisk.com/diet/vegan/page/9/", ["GF"], "wordpress"),#9 pages
     ("Zacchary Bird","https://www.zaccharybird.com/all-recipes/",[], "wordpress"),
     ("Elsa's Wholesome Life","https://www.elsaswholesomelife.com/blog?category=Recipes",[], "wordpress"),#unclear if still posting new ones. on 2/18 spiced cauli was latest
-    ("The Full Helping (Vegan Recipes)","https://www.thefullhelping.com/dietary/vegan/",[],"wordpress"),#Load more limitation but still posting new ones. Keep this
-    ("Hot For Food","https://www.hotforfoodblog.com/category/recipes/page/4/",[],"wordpress"),#will hit recipe limit before page limit
+    ("The Full Helping (Vegan Recipes)","https://www.thefullhelping.com/dietary/vegan/page/2/",[],"wordpress"),#Load more so unsure how many pages
+    ("The Full Helping (Vegan Recipes)","https://www.thefullhelping.com/dietary/vegan/page/3/",[],"wordpress"),#Load more so unsure how many pages
+    ("The Full Helping (Vegan Recipes)","https://www.thefullhelping.com/dietary/vegan/page/4/",[],"wordpress"),#Load more so unsure how many pages
+    ("The Full Helping (Vegan Recipes)","https://www.thefullhelping.com/dietary/vegan/page/5/",[],"wordpress"),#Load more so unsure how many pages
+    ("Hot For Food","https://www.hotforfoodblog.com/category/recipes/page/5/",[],"wordpress"),#maxed out after page 5
     ("Cupful of Kale", "https://cupfulofkale.com/category/recipes/page/8/", [], "wordpress"),#has 22 pages
-    ("The Veg Space", "https://www.thevegspace.co.uk/category/recipes/page/14/", [], "wordpress"),#13 pages for this then remove
-    ("Vegan Punks", "https://veganpunks.com/page/5/?s=+", [], "wordpress"), #7 pages then delete not posting new ones
+    ("Cupful of Kale", "https://cupfulofkale.com/category/recipes/page/9/", [], "wordpress"),#has 22 pages
+    ("Cupful of Kale", "https://cupfulofkale.com/category/recipes/page/10/", [], "wordpress"),#has 22 pages
+    ("Cupful of Kale", "https://cupfulofkale.com/category/recipes/page/11/", [], "wordpress"),#has 22 pages
+    ("Cupful of Kale", "https://cupfulofkale.com/category/recipes/page/12/", [], "wordpress"),#has 22 pages
+    ("Vegan Punks", "https://veganpunks.com/page/6/?s=+", [], "wordpress"), #7 pages then delete not posting new ones
+    ("Vegan Punks", "https://veganpunks.com/page/7/?s=+", [], "wordpress"), #7 pages then delete not posting new ones
     ("Plant-Based on a Budget", "https://plantbasedonabudget.com/category/vegan-dinners/page/5/", ["Budget"], "wordpress"),#17 pages
-    ("Baking Hermann", "https://bakinghermann.com/recipes/", [], "squarespace"),
-    ("Sweet Simple Vegan", "https://sweetsimplevegan.com/recipes/page/9/", [], "wordpress"),#has 43 pages
+    ("Plant-Based on a Budget", "https://plantbasedonabudget.com/category/vegan-dinners/page/6/", ["Budget"], "wordpress"),#17 pages
+    ("Plant-Based on a Budget", "https://plantbasedonabudget.com/category/vegan-dinners/page/7/", ["Budget"], "wordpress"),#17 pages
+    ("Plant-Based on a Budget", "https://plantbasedonabudget.com/category/vegan-dinners/page/8/", ["Budget"], "wordpress"),#17 pages
+    ("Plant-Based on a Budget", "https://plantbasedonabudget.com/category/vegan-dinners/page/9/", ["Budget"], "wordpress"),#17 pages
+    ("Plant-Based on a Budget", "https://plantbasedonabudget.com/category/vegan-dinners/page/10/", ["Budget"], "wordpress"),#17 pages
+    ("Baking Hermann", "https://bakinghermann.com/recipes/", [], "wordpress"),
+    ("Sweet Simple Vegan", "https://sweetsimplevegan.com/recipes/page/10/", [], "wordpress"),#has 43 pages
+    ("Sweet Simple Vegan", "https://sweetsimplevegan.com/recipes/page/11/", [], "wordpress"),#has 43 pages
+    ("Sweet Simple Vegan", "https://sweetsimplevegan.com/recipes/page/12/", [], "wordpress"),#has 43 pages
+    ("Sweet Simple Vegan", "https://sweetsimplevegan.com/recipes/page/13/", [], "wordpress"),#has 43 pages
+    ("Sweet Simple Vegan", "https://sweetsimplevegan.com/recipes/page/14/", [], "wordpress"),#has 43 pages
+    ("Sweet Simple Vegan", "https://sweetsimplevegan.com/recipes/page/15/", [], "wordpress"),#has 43 pages
     ("Dreena Burton", "https://dreenaburton.com/category/recipes/page/8/", ["WFPB"], "wordpress"),#21 pages of this
-    ("Gaz Oakley", "https://www.gazoakleychef.com/recipes/?sf_paged=10", [], "wordpress"), #has 20 pages with this link
-    ("The Edgy Veg", "https://www.theedgyveg.com/recipes/page/15/", [], "wordpress"),#75 pages
-    ("Vegan Yack Attack", "https://veganyackattack.com/gluten-free-recipes/", ["GF"], "wordpress"),#Temp tagged as GF. have done Entrees and GF pages now
+    ("Dreena Burton", "https://dreenaburton.com/category/recipes/page/9/", ["WFPB"], "wordpress"),#21 pages of this
+    ("Dreena Burton", "https://dreenaburton.com/category/recipes/page/10/", ["WFPB"], "wordpress"),#21 pages of this
+    ("Dreena Burton", "https://dreenaburton.com/category/recipes/page/11/", ["WFPB"], "wordpress"),#21 pages of this
+    ("Dreena Burton", "https://dreenaburton.com/category/recipes/page/12/", ["WFPB"], "wordpress"),#21 pages of this
+    ("Dreena Burton", "https://dreenaburton.com/category/recipes/page/13/", ["WFPB"], "wordpress"),#21 pages of this
+    ("Gaz Oakley", "https://www.gazoakleychef.com/recipes/?sf_paged=11", [], "wordpress"), #has 20 pages with this link
+    ("Gaz Oakley", "https://www.gazoakleychef.com/recipes/?sf_paged=12", [], "wordpress"), #has 20 pages with this link
+    ("Gaz Oakley", "https://www.gazoakleychef.com/recipes/?sf_paged=13", [], "wordpress"), #has 20 pages with this link
+    ("Gaz Oakley", "https://www.gazoakleychef.com/recipes/?sf_paged=14", [], "wordpress"), #has 20 pages with this link
+    ("Gaz Oakley", "https://www.gazoakleychef.com/recipes/?sf_paged=15", [], "wordpress"), #has 20 pages with this link
+    ("Gaz Oakley", "https://www.gazoakleychef.com/recipes/?sf_paged=16", [], "wordpress"), #has 20 pages with this link
+    ("The Edgy Veg", "https://www.theedgyveg.com/recipes/page/16/", [], "wordpress"),#75 pages
+    ("The Edgy Veg", "https://www.theedgyveg.com/recipes/page/17/", [], "wordpress"),#75 pages
+    ("The Edgy Veg", "https://www.theedgyveg.com/recipes/page/18/", [], "wordpress"),#75 pages
+    ("The Edgy Veg", "https://www.theedgyveg.com/recipes/page/19/", [], "wordpress"),#75 pages
+    ("The Edgy Veg", "https://www.theedgyveg.com/recipes/page/20/", [], "wordpress"),#75 pages
+    ("The Edgy Veg", "https://www.theedgyveg.com/recipes/page/21/", [], "wordpress"),#75 pages
+    ("Vegan Yack Attack", "https://veganyackattack.com/", [], "wordpress"),#maxed out recipes. keep base link for new ones
     ("The Cheap Lazy Vegan", "https://thecheaplazyvegan.com/blog/page/14/", ["Budget", "Easy"], "wordpress"),#62 pages
-    ("Vegan in the Freezer", "https://veganinthefreezer.com/recipes/?pg=5", [], "wordpress"),#62 pages
+    ("The Cheap Lazy Vegan", "https://thecheaplazyvegan.com/blog/page/15/", ["Budget", "Easy"], "wordpress"),#62 pages
+    ("The Cheap Lazy Vegan", "https://thecheaplazyvegan.com/blog/page/16/", ["Budget", "Easy"], "wordpress"),#62 pages
+    ("The Cheap Lazy Vegan", "https://thecheaplazyvegan.com/blog/page/17/", ["Budget", "Easy"], "wordpress"),#62 pages
+    ("The Cheap Lazy Vegan", "https://thecheaplazyvegan.com/blog/page/18/", ["Budget", "Easy"], "wordpress"),#62 pages
+    ("The Cheap Lazy Vegan", "https://thecheaplazyvegan.com/blog/page/19/", ["Budget", "Easy"], "wordpress"),#62 pages
+    ("Vegan in the Freezer", "https://veganinthefreezer.com/recipes/?pg=6", [], "wordpress"),#62 pages
+    ("Vegan in the Freezer", "https://veganinthefreezer.com/recipes/?pg=7", [], "wordpress"),#62 pages
+    ("Vegan in the Freezer", "https://veganinthefreezer.com/recipes/?pg=8", [], "wordpress"),#62 pages
+    ("Vegan in the Freezer", "https://veganinthefreezer.com/recipes/?pg=9", [], "wordpress"),#62 pages
+    ("Vegan in the Freezer", "https://veganinthefreezer.com/recipes/?pg=10", [], "wordpress"),#62 pages
+    ("Vegan in the Freezer", "https://veganinthefreezer.com/recipes/?pg=11", [], "wordpress"),#62 pages
     ("Chef Bai", "https://www.chefbai.kitchen/blog?offset=1663435380734", [], "wordpress"),
-    ("It's Liv B", "https://itslivb.com/category/main-dishes/page/7/", [], "wordpress"),#Mains have 14 pages
-    ("One Arab Vegan", "https://www.onearabvegan.com/category/recipes/page/6/", [], "wordpress"),#28 pages
-    ("Steamy Vegan", "https://steamyvegan.com/category/mains/page/5/", [], "wordpress"), #Mains have 5 pages
-    ("BOSH! TV", "https://www.bosh.tv/recipes", [], "wordpress"), #Load More site, so cant add any more pages
-    ("Namely Marly", "https://namelymarly.com/category/vegan-recipes/page/5/", [], "wordpress"),#35 pages for this
-    ("Gretchen's Vegan Bakery", "https://www.gretchensveganbakery.com/category/all-recipes/page/5/", [], "wordpress"),#at least 50 pages
-    ("Rhian's Recipes", "https://www.rhiansrecipes.com/recipes/page/4/", ["GF"], "wordpress"), #15 pages
-    ("Healthier Steps", "https://healthiersteps.com/recipe-index/?_paged=8", [], "wordpress")#Hundreds of pages for this one
+    ("It's Liv B", "https://itslivb.com/category/main-dishes/page/8/", [], "wordpress"),#Mains have 14 pages yes she has new ones
+    ("It's Liv B", "https://itslivb.com/category/main-dishes/page/9/", [], "wordpress"),#Mains have 14 pages
+    ("It's Liv B", "https://itslivb.com/category/main-dishes/page/10/", [], "wordpress"),#Mains have 14 pages
+    ("It's Liv B", "https://itslivb.com/category/main-dishes/page/11/", [], "wordpress"),#Mains have 14 pages
+    ("It's Liv B", "https://itslivb.com/category/main-dishes/page/12/", [], "wordpress"),#Mains have 14 pages
+    ("It's Liv B", "https://itslivb.com/category/main-dishes/page/13/", [], "wordpress"),#Mains have 14 pages
+    ("It's Liv B", "https://itslivb.com/category/main-dishes/page/14/", [], "wordpress"),#Mains have 14 pages
+    ("One Arab Vegan", "https://www.onearabvegan.com/category/recipes/page/7/", [], "wordpress"),#28 pages
+    ("Steamy Vegan", "https://steamyvegan.com/category/sweet-treats/page/2/", [], "wordpress"), #is posting new ones. 3 pages of sweets 
+    ("BOSH! TV", "https://www.bosh.tv/collections/cuisine/british", [], "wordpress"), #almost maxed
+    ("Namely Marly", "https://namelymarly.com/category/vegan-recipes/page/6/", [], "wordpress"),#35 pages for this
+    ("Namely Marly", "https://namelymarly.com/category/vegan-recipes/page/7/", [], "wordpress"),#35 pages for this
+    ("Namely Marly", "https://namelymarly.com/category/vegan-recipes/page/8/", [], "wordpress"),#35 pages for this
+    ("Namely Marly", "https://namelymarly.com/category/vegan-recipes/page/9/", [], "wordpress"),#35 pages for this
+    ("Namely Marly", "https://namelymarly.com/category/vegan-recipes/page/10/", [], "wordpress"),#35 pages for this
+    ("Gretchen's Vegan Bakery", "https://www.gretchensveganbakery.com/category/all-recipes/page/6/", [], "wordpress"),#at least 50 pages
+    ("Gretchen's Vegan Bakery", "https://www.gretchensveganbakery.com/category/all-recipes/page/7/", [], "wordpress"),#at least 50 pages
+    ("Gretchen's Vegan Bakery", "https://www.gretchensveganbakery.com/category/all-recipes/page/8/", [], "wordpress"),#at least 50 pages
+    ("Gretchen's Vegan Bakery", "https://www.gretchensveganbakery.com/category/all-recipes/page/9/", [], "wordpress"),#at least 50 pages
+    ("Gretchen's Vegan Bakery", "https://www.gretchensveganbakery.com/category/all-recipes/page/10/", [], "wordpress"),#at least 50 pages
+    ("Gretchen's Vegan Bakery", "https://www.gretchensveganbakery.com/category/all-recipes/page/11/", [], "wordpress"),#at least 50 pages
+    ("Rhian's Recipes", "https://www.rhiansrecipes.com/recipes/page/5/", ["GF"], "wordpress"), #15 pages
+    ("Healthier Steps", "https://healthiersteps.com/recipe-index/?_paged=9", [], "wordpress")#Hundreds of pages for this one
 ]
 
 # --- DISPLAY NAME MAPPING ---
