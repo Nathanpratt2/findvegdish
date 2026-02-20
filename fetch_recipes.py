@@ -112,7 +112,7 @@ HTML_SOURCES = [
     ("Cupful of Kale", "https://cupfulofkale.com/category/recipes/page/10/", [], "wordpress"),#has 22 pages
     ("Plant-Based on a Budget", "https://plantbasedonabudget.com/category/vegan-dinners/page/7/", ["Budget"], "wordpress"),#17 pages
     ("Baking Hermann", "https://bakinghermann.com/recipes/", [], "wordpress"),
-    ("Bianca Zapatka", "hhttps://biancazapatka.com/en/recipes/page/2/", [], "wordpress"),#70 pages
+    ("Bianca Zapatka", ["https://biancazapatka.com/en/recipes/page/2/", "https://biancazapatka.com/en/recipes/page/3/", "https://biancazapatka.com/en/recipes/page/4/"], [], "wordpress"),#70 pages
     ("Sweet Simple Vegan", "https://sweetsimplevegan.com/recipes/page/1/", [], "wordpress"),#maxed out recipes
     ("Dreena Burton", "https://dreenaburton.com/category/recipes/page/10/", ["WFPB"], "wordpress"),#21 pages of this
     ("Gaz Oakley", "https://www.gazoakleychef.com/recipes/?sf_paged=1", [], "wordpress"), #maxed out
@@ -132,7 +132,7 @@ HTML_SOURCES = [
     ("Rhian's Recipes", "https://www.rhiansrecipes.com/recipes/page/7/", ["GF"], "wordpress"), #15 pages
     ("My Goodness Kitchen", "https://mygoodnesskitchen.com/post-sitemap.xml/", [], "wordpress"),#attempting site map but no images?
     ("Choosing Chia (Vegan Recipes)", "https://choosingchia.com/category/diet%20/vegan/page/2/", ["Easy"], "wordpress"),#37 pages
-    ("The Burger Dude", "https://theeburgerdude.com/recipe%20index/page/3/", [], "wordpress"),#54 pages
+    ("The Burger Dude", ["https://theeburgerdude.com/recipe%20index/page/3/", "https://theeburgerdude.com/recipe%20index/page/4/", "https://theeburgerdude.com/recipe%20index/page/5/"], [], "wordpress"),#54 pages
     ("Healthier Steps", "https://healthiersteps.com/recipe-index/?_paged=11", [], "wordpress")#Hundreds of pages for this one
 ]
 
