@@ -1080,11 +1080,11 @@ for item in HTML_SOURCES:
     if isinstance(url_source, tuple) and len(url_source) == 3:
         base_url, start_page, end_page = url_source
         # Replace {} with the page number
-        urls_to_scrape =
+        urls_to_scrape = [base_url.format(i) for i in range(start_page, end_page + 1)]
     elif isinstance(url_source, list):
         urls_to_scrape = url_source
     else:
-        urls_to_scrape =
+        urls_to_scrape = [url_source]
     
     all_new_items =[]
     last_status = "Skipped"
