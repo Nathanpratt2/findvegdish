@@ -609,6 +609,31 @@
         @media (max-width: 400px) {
             #scrollTopBtn { bottom: 90px; right: 18px; width: 55px; height: 55px; }
         }
+
+        /* --- SAVED LIST SHARE BUTTON --- */
+        #shareSavedBtn {
+            padding: 0;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            justify-content: center;
+            display: none; /* Hidden by default */
+            transition: background-color 0.2s, transform 0.1s;
+        }
+        #shareSavedBtn svg {
+            fill: white;
+            width: 20px;
+            height: 20px;
+        }
+        #shareSavedBtn:hover {
+            background-color: #5d822b;
+        }
+        #shareSavedBtn:active {
+            transform: scale(0.95);
+        }
     </style>
 </head>
 <body>
@@ -663,7 +688,13 @@
     <div class="controls">
         <button id="installBtn" class="btn" style="display:none; color: #769F37; border-color: #769F37;" onclick="installPWA()">📲 Install App</button>
         <!-- SAVED BUTTON -->
-        <a href="?view=saved" class="btn" id="savedBtn" onclick="toggleSavedView(event)">💚 Saved (0)</a>        
+        <a href="?view=saved" class="btn" id="savedBtn" onclick="toggleSavedView(event)">💚 Saved (0)</a>
+        
+        <!-- NEW SHARE LIST BUTTON -->
+        <button id="shareSavedBtn" class="btn" onclick="shareSavedList()" title="Share List" style="display:none;">
+            <svg viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/></svg>
+        </button>
+
         <a href="?type=meal" class="btn" id="mealsBtn" onclick="toggleType(event, 'meal')">🍝 Meals</a>
         <a href="?type=sweet" class="btn" id="sweetsBtn" onclick="toggleType(event, 'sweet')">🍪 Sweets</a>
         <a href="?tag=Budget" class="btn" id="budgetBtn" onclick="toggleTag(event, 'Budget')">💸 Budget</a>
@@ -912,16 +943,19 @@
     function toggleSavedView(e) {
         if(e) e.preventDefault();
         const savedBtn = document.getElementById('savedBtn');
+        const shareSavedBtn = document.getElementById('shareSavedBtn');
         
         if (isSavedView) {
             // Toggle OFF
             isSavedView = false;
             savedBtn.classList.remove('active-filter');
+            shareSavedBtn.style.display = 'none';
         } else {
             // Toggle ON
             if (savedRecipesMap.size === 0) return;
             isSavedView = true;
             savedBtn.classList.add('active-filter');
+            shareSavedBtn.style.display = 'flex';
         }
         applyFilters(true);
     }
@@ -1125,6 +1159,9 @@
         if (params.has('view') && params.get('view') === 'saved') {
             isSavedView = true;
             document.getElementById('savedBtn').classList.add('active-filter');
+            document.getElementById('shareSavedBtn').style.display = 'flex';
+        } else {
+            document.getElementById('shareSavedBtn').style.display = 'none';
         }
 
         if (params.has('type')) {
@@ -1706,6 +1743,32 @@
         deferredPrompt = null;
         console.log('PWA was installed');
     });
+
+    function shareSavedList() {
+        if (savedRecipesMap.size === 0) {
+            alert("No saved recipes to share!");
+            return;
+        }
+
+        let text = "My Saved Recipes from FindVegDish.com:\n\n";
+        // Convert Map to array and reverse to show most recent first (matching the view)
+        const recipes = Array.from(savedRecipesMap.values()).sort((a, b) => (b.savedAt || 0) - (a.savedAt || 0));
+        
+        recipes.forEach(r => {
+            text += `${r.title} - ${r.link}\n`;
+        });
+
+        if (navigator.share) {
+            navigator.share({
+                title: 'My Saved Vegan Recipes',
+                text: text
+            }).catch(console.error);
+        } else {
+            navigator.clipboard.writeText(text).then(() => {
+                alert("Saved recipes copied to clipboard!");
+            });
+        }
+    }
 
     function shareRecipe(e, title, link) {
         e.preventDefault(); 
