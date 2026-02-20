@@ -47,7 +47,6 @@ TOP_BLOGGERS = [
     ("Jessica in the Kitchen", "https://jessicainthekitchen.com/feed/", []),
     ("Lazy Cat Kitchen", "https://www.lazycatkitchen.com/feed/", []),
     ("My Darling Vegan", "https://www.mydarlingvegan.com/feed/", []),
-    ("The Burger Dude", "https://theeburgerdude.com/feed/", []),
     ("The Vegan 8", "https://thevegan8.com/feed/", ["Easy", "Budget"]), 
     ("From My Bowl", "https://frommybowl.com/feed/", []),
     ("Rabbit and Wolves", "https://www.rabbitandwolves.com/feed/", []),
@@ -133,6 +132,7 @@ HTML_SOURCES = [
     ("Rhian's Recipes", "https://www.rhiansrecipes.com/recipes/page/7/", ["GF"], "wordpress"), #15 pages
     ("My Goodness Kitchen", "https://mygoodnesskitchen.com/post-sitemap.xml/", [], "wordpress"),#attempting site map but no images?
     ("Choosing Chia (Vegan Recipes)", "https://choosingchia.com/category/diet%20/vegan/page/2/", ["Easy"], "wordpress"),#37 pages
+    ("The Burger Dude", "https://theeburgerdude.com/recipe%20index/page/3/", [], "wordpress"),#54 pages
     ("Healthier Steps", "https://healthiersteps.com/recipe-index/?_paged=11", [], "wordpress")#Hundreds of pages for this one
 ]
 
