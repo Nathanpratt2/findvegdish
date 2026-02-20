@@ -33,8 +33,6 @@ except ImportError:
 # Format: ("Blog Name", "Feed URL", ["SPECIAL_TAGS"])
 
 TOP_BLOGGERS = [
-    ("Nora Cooks", "https://www.noracooks.com/feed/", []),
-    ("PlantYou", "https://plantyou.com/feed/", ["WFPB"]),
     ("The Korean Vegan", "https://thekoreanvegan.com/feed/", []),
     ("Rainbow Plant Life", "https://rainbowplantlife.com/feed/", []), # Main Feed
     ("Vegan Richa", "https://www.veganricha.com/feed/", []), # Main Feed
@@ -71,7 +69,6 @@ DISRUPTORS = [
     ("Plantifully Based", "https://plantifullybasedblog.com/feed/", []),
     ("Cadry's Kitchen", "https://cadryskitchen.com/feed/", []),
     ("Dr. Vegan", "https://drveganblog.com/feed/", ["Easy"]),
-    ("Earth to Veg", "https://earthtoveg.com/feed/", []),
     ("Watch Learn Eat", "https://watchlearneat.com/feed/", ["Easy"]),
     ("Strength and Sunshine", "https://strengthandsunshine.com/feed/", ["Easy", "GF"]), # Will auto-tag GF
     ("The Stingy Vegan", "https://thestingyvegan.com/feed/", ["Easy", "Budget"]),
@@ -99,9 +96,12 @@ DISRUPTORS = [
 HTML_SOURCES = [
     ("Minimalist Baker (Vegan Recipes)", "https://minimalistbaker.com/recipes/vegan", [], "wordpress"),#maxed out recipes. keep base link
     ("Pick Up Limes", "https://www.pickuplimes.com/recipe/?sb=&public=on&page=11", [], "custom_pul"),#40 pages
+    ("Nora Cooks", ("https://www.noracooks.com/blog/page/{}/", 2, 7), [], "wordpress"),#45 pages
     ("Zucker & Jagdwurst", "https://www.zuckerjagdwurst.com/en/archive/1", [], "custom_zj"),
+    ("Earth to Veg", ("https://earthtoveg.com/page/{}/?s=+", 2, 18), [], "wordpress"),#18 pages
     ("Rainbow Plant Life GF", "https://rainbowplantliffe.com/diet/gluten-free/", ["GF"], "wordpress"),
     ("Vegan Richa GF", "https://www.veganricha.com/category/gluten-free/", ["GF"], "wordpress"),
+    ("PlantYou", ("https://plantyou.com/category/all-recipes/page/{}/", 2, 10), ["WFPB"], "wordpress"),#23 pages
     ("School Night Vegan", "https://schoolnightvegan.com/snacks/page/3/", [], "wordpress"), #have done dinner, essentials and snacks page 1
     ("Love and Lemons (Vegan Recipes)", "https://www.loveandlemons.com/category/recipes/vegan/page/8/", [], "wordpress"),#75 or more pages
     ("Cookie and Kate (Vegan Recipes)", "https://cookieandkate.com/category/food-recipes/vegan/?_paged=15", [], "wordpress"),#24 pages for this but almost at 250 cap 
