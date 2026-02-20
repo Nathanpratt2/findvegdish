@@ -1299,8 +1299,9 @@ with open('FEED_HEALTH.md', 'w', encoding='utf-8') as f:
             "latest": latest, "status": status
         })
 
-    # --- CRITICAL: SORT BY TOTAL (0 FIRST), THEN BY NAME ---
-    report_rows.sort(key=lambda r: (r['total'], r['name']))
+    # --- CRITICAL: SORT BY STATUS (SKIPPED LAST), THEN TOTAL (0 FIRST), THEN NAME ---
+    # This ensures active/failed feeds are at the top, and decommissioned/skipped ones are at the bottom.
+    report_rows.sort(key=lambda r: (1 if r['status'] == 'Skipped' else 0, r['total'], r['name']))
 
     for r in report_rows:
         # Markdown Table Row
