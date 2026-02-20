@@ -93,7 +93,7 @@ HTML_SOURCES = [
     ("Minimalist Baker (Vegan Recipes)", "https://minimalistbaker.com/recipes/vegan", [], "wordpress"),#maxed out recipes
     ("Cupful of Kale", "https://cupfulofkale.com/category/recipes/page/2/", [], "wordpress"),#has 22 pages. Delete this one if still not adding more recipes on the top. Not worth extra code
     ("It's Liv B", "https://itslivb.com/category/main-dishes/page/9/", [], "wordpress"),#Mains have 14 pages yes she has new ones. Delete this one if still not adding more recipes on the top. Not worth extra code
-    ("Pick Up Limes", ("https://www.pickuplimes.com/recipe/?sb=&public=on&page={}", 12, 25, [], "custom_pul"),#40 pages, going to max out
+    ("Pick Up Limes", ("https://www.pickuplimes.com/recipe/?sb=&public=on&page={}", 12, 25), [], "custom_pul"),#40 pages, going to max out
     ("Nora Cooks", ("https://www.noracooks.com/blog/page/{}/", 2, 7), [], "wordpress"),#45 pages
     ("The Korean Vegan", ("https://thekoreanvegan.com/recipes/?pg={}", 2 , 7), [], "wordpress"),#lots of pages
     ("Zucker & Jagdwurst", "https://www.zuckerjagdwurst.com/en/archive/1", [], "custom_zj"),
