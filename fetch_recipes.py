@@ -1074,17 +1074,39 @@ for item in ALL_FEEDS:
 print("\n--- STARTING HTML SCRAPING ---")
 for item in HTML_SOURCES:
     if len(item) != 4: continue
-    name, url, tags, mode = item
+    name, url_source, tags, mode = item
     
-    time.sleep(random.uniform(2, 7))
+    # Enable Multi-Page Scraping: Handle single string OR list of URLs
+    urls_to_scrape = url_source if isinstance(url_source, list) else [url_source]
+    
+    all_new_items = []
+    last_status = "Skipped"
 
-    try:
-        new_items, status = scrape_html_feed(name, url, mode, existing_links, recipes, tags)
-        recipes.extend(new_items)
-        feed_stats[name] = {'new': len(new_items), 'status': status}
-    except Exception as e:
-        print(f"   [!] Critical Error scraping {name}: {e}")
-        feed_stats[name] = {'new': 0, 'status': "❌ HTML Crash"}
+    for i, single_url in enumerate(urls_to_scrape):
+        # 1. Global polite delay between different blogs
+        if i == 0:
+            time.sleep(random.uniform(2, 7))
+        else:
+            # 2. Intra-blog delay: Sleep 10s between pages of the SAME blog to avoid flagging
+            print(f"   ...cooling down (10s) before next page of {name}...")
+            time.sleep(random.uniform(8, 12))
+
+        try:
+            new_items, status = scrape_html_feed(name, single_url, mode, existing_links, recipes, tags)
+            all_new_items.extend(new_items)
+            last_status = status
+            
+            # If blocked on page 1, do not attempt page 2
+            if "Blocked" in status or "Crash" in status:
+                print(f"   Stopping multi-page scrape for {name} due to error on page {i+1}.")
+                break
+                
+        except Exception as e:
+            print(f"   [!] Critical Error scraping {name}: {e}")
+            last_status = "❌ HTML Crash"
+
+    recipes.extend(all_new_items)
+    feed_stats[name] = {'new': len(all_new_items), 'status': last_status}
 
 # 5. Backfill Tags (Including GF)
 print("\nUpdating tags for all recipes...")
