@@ -99,7 +99,7 @@ HTML_SOURCES = [
     ("Nora Cooks", ("https://www.noracooks.com/blog/page/{}/", 2, 7), [], "wordpress"),#45 pages
     ("Zucker & Jagdwurst", "https://www.zuckerjagdwurst.com/en/archive/1", [], "custom_zj"),
     ("Earth to Veg", ("https://earthtoveg.com/page/{}/?s=+", 2, 18), [], "wordpress"),#18 pages
-    ("Rainbow Plant Life GF", "https://rainbowplantliffe.com/diet/gluten-free/", ["GF"], "wordpress"),
+    ("Rainbow Plant Life GF", "https://rainbowplantlife.com/diet/gluten-free/", ["GF"], "wordpress"),
     ("Vegan Richa GF", "https://www.veganricha.com/category/gluten-free/", ["GF"], "wordpress"),
     ("PlantYou", ("https://plantyou.com/category/all-recipes/page/{}/", 2, 10), ["WFPB"], "wordpress"),#23 pages
     ("School Night Vegan", "https://schoolnightvegan.com/snacks/page/3/", [], "wordpress"), #have done dinner, essentials and snacks page 1
