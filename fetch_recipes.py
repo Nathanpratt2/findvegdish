@@ -100,7 +100,7 @@ DISRUPTORS = [
 HTML_SOURCES = [
     ("Minimalist Baker (Vegan Recipes)", "https://minimalistbaker.com/recipes/vegan", [], "wordpress"),#maxed out recipes. keep base link
     ("Pick Up Limes", "https://www.pickuplimes.com/recipe/?sb=&public=on&page=11", [], "custom_pul"),#40 pages
-    ("Zucker & Jagdwurst", "https://www.zuckerjagdwurst.com/en/archive/1", [], "wordpress"),
+    ("Zucker & Jagdwurst", "https://www.zuckerjagdwurst.com/en/archive/1", [], "custom_zj"),
     ("Rainbow Plant Life GF", "https://rainbowplantliffe.com/diet/gluten-free/", ["GF"], "wordpress"),
     ("Vegan Richa GF", "https://www.veganricha.com/category/gluten-free/", ["GF"], "wordpress"),
     ("School Night Vegan", "https://schoolnightvegan.com/snacks/page/3/", [], "wordpress"), #have done dinner, essentials and snacks page 1
@@ -795,26 +795,38 @@ def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags)
                     })
                     existing_links.add((link, name))
 
-    # --- MODE 3: CUSTOM ZJ ---
+    # --- MODE 3: CUSTOM ZJ (Zucker & Jagdwurst) ---
     elif mode == "custom_zj":
-        links = soup.select("a.post-item, .post-grid a, .archive-posts a") or soup.find_all('a', href=True)
+        # Specific selector for their teaser cards to avoid navigation links
+        links = soup.select(".teaser__link, article a") or soup.find_all('a', href=True)
         for a in links:
             href = a.get('href', '')
-            if '/en/' in href and not any(x in href for x in ['/archive', '/page/', '/category/', '/about']):
-                if a.find('img') or a.find(['h2', 'h3']):
-                    link = urljoin(url, href)
-                    if (link, name) in existing_links: continue
-                    t_tag = a.select_one("h2, h3, .article-title")
-                    title = t_tag.get_text(strip=True) if t_tag else "Recipe"
-                    deep_date, deep_image = extract_metadata_from_page(link)
-                    
-                    found_items.append({
-                        "blog_name": name, "title": title, "link": link, 
-                        "image": deep_image if deep_image else "icon.jpg",
-                        "date": deep_date.isoformat() if deep_date else datetime(2020,1,1).replace(tzinfo=timezone.utc).isoformat(),
-                        "is_disruptor": False, "special_tags": list(source_tags)
-                    })
-                    existing_links.add((link, name))
+            # Filter valid recipe posts (ignoring archives, pages, categories)
+            if '/en/' in href and not any(x in href for x in ['/archive', '/page/', '/category/', '/about', '/search', 'shop']):
+                link = urljoin(url, href)
+                if (link, name) in existing_links: continue
+
+                # Title: Try finding header inside, or fallback to text
+                t_tag = a.select_one("h2, h3, .teaser__title, .headline")
+                title = t_tag.get_text(strip=True) if t_tag else "Recipe"
+                
+                # IMAGE STRATEGY:
+                # ZJ uses aggressive lazy loading on the archive page (often blank/placeholder).
+                # We skip the local image check and mandatory Deep Fetch the article page 
+                # to get the robust OpenGraph image.
+                deep_date, deep_image = extract_metadata_from_page(link)
+                
+                found_items.append({
+                    "blog_name": name, 
+                    "title": title, 
+                    "link": link, 
+                    "image": deep_image if deep_image else "icon.jpg",
+                    # Default to slightly newer date fallback to ensure visibility if date fetch fails
+                    "date": deep_date.isoformat() if deep_date else datetime(2023,1,1).replace(tzinfo=timezone.utc).isoformat(),
+                    "is_disruptor": False, 
+                    "special_tags": list(source_tags)
+                })
+                existing_links.add((link, name))
 
     # --- MODE 3a: CUSTOM VEGAN HUGGS (Trellis Theme) ---
     elif mode == "custom_veganhuggs":
@@ -962,7 +974,14 @@ except (FileNotFoundError, json.JSONDecodeError):
 
 # 2. Cleanse Database
 initial_count = len(recipes)
-recipes = [r for r in recipes if not (r['blog_name'] == "VegNews" and "/recipes/" not in r['link'])]
+# Remove specific requested blogs
+BLOGS_TO_REMOVE = ["Oh She Glows", "Zaccary Bird", "Picky Eater", "Turnip Vegan"]
+
+recipes = [
+    r for r in recipes 
+    if not (r['blog_name'] == "VegNews" and "/recipes/" not in r['link'])
+    and not any(rem.lower() in r['blog_name'].lower() for rem in BLOGS_TO_REMOVE)
+]
 
 # Update existing_links to be tuples of (link, blog_name) to allow separate entries for GF blogs
 existing_links = {(r['link'], r['blog_name']) for r in recipes}
