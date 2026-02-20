@@ -33,7 +33,6 @@ except ImportError:
 # Format: ("Blog Name", "Feed URL", ["SPECIAL_TAGS"])
 
 TOP_BLOGGERS = [
-    ("The Korean Vegan", "https://thekoreanvegan.com/feed/", []),
     ("Rainbow Plant Life", "https://rainbowplantlife.com/feed/", []), # Main Feed
     ("Vegan Richa", "https://www.veganricha.com/feed/", []), # Main Feed
     ("It Doesn't Taste Like Chicken", "https://itdoesnttastelikechicken.com/recipe-index/#search/c=eyJ2IjoiNC4wIiwidGl0bGUiOiJMYXRlc3QiLCJncm91cFR5cGUiOiJyZWNlbnQiLCJhcnJhbmdlbWVudCI6ImNvbnRleHQtd2l0aC1zZWFyY2gifQ%3D%3D", []), 
@@ -97,6 +96,7 @@ HTML_SOURCES = [
     ("Minimalist Baker (Vegan Recipes)", "https://minimalistbaker.com/recipes/vegan", [], "wordpress"),#maxed out recipes. keep base link
     ("Pick Up Limes", "https://www.pickuplimes.com/recipe/?sb=&public=on&page=11", [], "custom_pul"),#40 pages
     ("Nora Cooks", ("https://www.noracooks.com/blog/page/{}/", 2, 7), [], "wordpress"),#45 pages
+    ("The Korean Vegan", ("https://thekoreanvegan.com/recipes/?pg={}", 2 , 7), [], "wordpress"),#lots of pages
     ("Zucker & Jagdwurst", "https://www.zuckerjagdwurst.com/en/archive/1", [], "custom_zj"),
     ("Earth to Veg", ("https://earthtoveg.com/page/{}/?s=+", 2, 18), [], "wordpress"),#18 pages
     ("Rainbow Plant Life GF", "https://rainbowplantlife.com/diet/gluten-free/", ["GF"], "wordpress"),
@@ -122,9 +122,9 @@ HTML_SOURCES = [
     ("Vegan in the Freezer", "https://veganinthefreezer.com/recipes/?pg=7", [], "wordpress"),#62 pages
     ("Chef Bai", "https://www.chefbai.kitchen/blog?offset=1643497710300", [], "wordpress"),
     ("Addicted to Dates", "https://addictedtodates.com/category/recipes/page/2/", [], "wordpress"),#19 pages
-    ("Forks Over Knives", "https://www.forksoverknives.com/all-recipes/page/2/", ["WFPB"], "wordpress"),#153 pages
-    ("It's Liv B", "https://itslivb.com/category/main-dishes/page/8/", [], "wordpress"),#Mains have 14 pages yes she has new ones
-    ("One Arab Vegan", "https://www.onearabvegan.com/category/recipes/page/8/", [], "wordpress"),#28 pages
+    ("Forks Over Knives", ("https://www.forksoverknives.com/all-recipes/page/{}/", 2, 20), ["WFPB"], "wordpress"),#153 pages
+    ("It's Liv B", "https://itslivb.com/category/main-dishes/page/9/", [], "wordpress"),#Mains have 14 pages yes she has new ones
+    ("One Arab Vegan", "https://www.onearabvegan.com/category/recipes/page/9/", [], "wordpress"),#28 pages
     ("Steamy Vegan", "https://steamyvegan.com/category/sweet-treats/page/3/", [], "wordpress"), #is posting new ones. 3 pages of sweets 
     ("BOSH! TV", "https://www.bosh.tv/recipes", [], "wordpress"), #maxed out
     ("Namely Marly", "https://namelymarly.com/category/vegan-recipes/page/7/", [], "wordpress"),#35 pages for this
