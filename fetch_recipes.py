@@ -112,7 +112,7 @@ HTML_SOURCES = [
     ("Cupful of Kale", "https://cupfulofkale.com/category/recipes/page/10/", [], "wordpress"),#has 22 pages
     ("Plant-Based on a Budget", "https://plantbasedonabudget.com/category/vegan-dinners/page/7/", ["Budget"], "wordpress"),#17 pages
     ("Baking Hermann", "https://bakinghermann.com/recipes/", [], "wordpress"),
-    ("Bianca Zapatka", ["https://biancazapatka.com/en/recipes/page/2/", "https://biancazapatka.com/en/recipes/page/3/", "https://biancazapatka.com/en/recipes/page/4/"], [], "wordpress"),#70 pages
+    ("Bianca Zapatka", ("https://biancazapatka.com/en/recipes/page/{}/", 2, 7), [], "wordpress"),#70 pages, input as a range
     ("Sweet Simple Vegan", "https://sweetsimplevegan.com/recipes/page/1/", [], "wordpress"),#maxed out recipes
     ("Dreena Burton", "https://dreenaburton.com/category/recipes/page/10/", ["WFPB"], "wordpress"),#21 pages of this
     ("Gaz Oakley", "https://www.gazoakleychef.com/recipes/?sf_paged=1", [], "wordpress"), #maxed out
@@ -132,7 +132,7 @@ HTML_SOURCES = [
     ("Rhian's Recipes", "https://www.rhiansrecipes.com/recipes/page/7/", ["GF"], "wordpress"), #15 pages
     ("My Goodness Kitchen", "https://mygoodnesskitchen.com/post-sitemap.xml/", [], "wordpress"),#attempting site map but no images?
     ("Choosing Chia (Vegan Recipes)", "https://choosingchia.com/category/diet%20/vegan/page/2/", ["Easy"], "wordpress"),#37 pages
-    ("The Burger Dude", ["https://theeburgerdude.com/recipe%20index/page/3/", "https://theeburgerdude.com/recipe%20index/page/4/", "https://theeburgerdude.com/recipe%20index/page/5/"], [], "wordpress"),#54 pages
+    ("The Burger Dude", ("https://theeburgerdude.com/recipe%20index/page/{}/", 3, 7), [], "wordpress"),#54 pages, input as a range
     ("Healthier Steps", "https://healthiersteps.com/recipe-index/?_paged=11", [], "wordpress")#Hundreds of pages for this one
 ]
 
@@ -1076,10 +1076,17 @@ for item in HTML_SOURCES:
     if len(item) != 4: continue
     name, url_source, tags, mode = item
     
-    # Enable Multi-Page Scraping: Handle single string OR list of URLs
-    urls_to_scrape = url_source if isinstance(url_source, list) else [url_source]
+    # Enable Multi-Page Scraping: Handle string, list, OR range tuple (url_pattern, start, end)
+    if isinstance(url_source, tuple) and len(url_source) == 3:
+        base_url, start_page, end_page = url_source
+        # Replace {} with the page number
+        urls_to_scrape =
+    elif isinstance(url_source, list):
+        urls_to_scrape = url_source
+    else:
+        urls_to_scrape =
     
-    all_new_items = []
+    all_new_items =[]
     last_status = "Skipped"
 
     for i, single_url in enumerate(urls_to_scrape):
