@@ -272,23 +272,62 @@
         
         .controls::-webkit-scrollbar { display: none; }
 
+        /* --- CUISINE SUB-MENU STYLES --- */
+        .sub-controls-wrapper {
+            display: grid;
+            grid-template-rows: 0fr;
+            transition: grid-template-rows 0.3s ease;
+            width: 100%;
+        }
+        .sub-controls-wrapper.open {
+            grid-template-rows: 1fr;
+        }
+        .sub-controls {
+            overflow: hidden;
+        }
+        .sub-controls-inner {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 5px 5px 15px 5px;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            justify-content: flex-start;
+        }
+        .sub-controls-inner::-webkit-scrollbar { display: none; }
+        
+        .dropdown-arrow {
+            transition: transform 0.3s ease;
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+            margin-left: -2px;
+        }
+        .dropdown-arrow.open {
+            transform: rotate(180deg);
+        }
+
         @media (min-width: 550px) {
-            .controls {
+            .controls, .sub-controls-inner {
                 justify-content: center;
             }
         }
         
         @media (max-width: 549px) {
-            .controls::after {
+            .controls::after, .sub-controls-inner::after {
                 content: '';
                 position: absolute;
                 right: 0;
                 top: 0;
                 bottom: 0;
                 width: 30px;
-                /* Fade depends on theme */
                 background: linear-gradient(to right, rgba(248, 249, 250, 0), var(--bg-color) 80%);
                 pointer-events: none; 
+            }
+            .sub-controls-inner::after {
+                z-index: 10;
             }
         }
 
@@ -699,9 +738,30 @@
         <a href="?type=sweet" class="btn" id="sweetsBtn" onclick="toggleType(event, 'sweet')">🍪 Sweets</a>
         <a href="?tag=Budget" class="btn" id="budgetBtn" onclick="toggleTag(event, 'Budget')">💸 Budget</a>
         <a href="?tag=Easy" class="btn" id="easyBtn" onclick="toggleTag(event, 'Easy')">⚡ Easy</a>
+        
+        <!-- NEW CUISINE BUTTON -->
+        <button id="cuisinesBtn" class="btn" onclick="toggleCuisineMenu(event)">
+            🌎 Cuisines
+            <svg class="dropdown-arrow" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+        </button>
+
         <a href="?tag=Protein" class="btn" id="proteinBtn" onclick="toggleTag(event, 'Protein')">⬆️ Protein</a>
         <a href="?tag=WFPB" class="btn" id="wfpbBtn" onclick="toggleTag(event, 'WFPB')">🥗 WFPB</a>
         <a href="?tag=GF" class="btn" id="gfBtn" onclick="toggleTag(event, 'GF')">🌾 GF</a>        
+    </div>
+
+    <!-- NEW HORIZONTAL SCROLLING CHIPS (HIDDEN BY DEFAULT) -->
+    <div id="subControlsWrapper" class="sub-controls-wrapper">
+        <div class="sub-controls">
+            <div class="sub-controls-inner" id="cuisineChips">
+                <button class="btn cuisine-btn" data-cuisine="Indian" onclick="toggleCuisine(event, 'Indian')">Indian</button>
+                <button class="btn cuisine-btn" data-cuisine="Mexican" onclick="toggleCuisine(event, 'Mexican')">Mexican</button>
+                <button class="btn cuisine-btn" data-cuisine="Italian" onclick="toggleCuisine(event, 'Italian')">Italian</button>
+                <button class="btn cuisine-btn" data-cuisine="Asian" onclick="toggleCuisine(event, 'Asian')">Asian</button>
+                <button class="btn cuisine-btn" data-cuisine="Middle Eastern" onclick="toggleCuisine(event, 'Middle Eastern')">Middle Eastern</button>
+                <button class="btn cuisine-btn" data-cuisine="Mediterranean" onclick="toggleCuisine(event, 'Mediterranean')">Mediterranean</button>
+            </div>
+        </div>
     </div>
 </header>
 
@@ -839,8 +899,10 @@
     // Filtering State
     let activeType = null; 
     let activeTags = new Set(); 
+    let activeCuisines = new Set();
+    let isCuisineMenuOpen = false;
     
-    const BATCH_SIZE = 48;        
+    const BATCH_SIZE = 48;      
 
     // --- CONFIGURATION ---
     // Maps internal database names to user-friendly display names
@@ -853,6 +915,15 @@
     const SWEET_KEYWORDS = ['cookie', 'cake', 'brownie', 'chocolate', 'dessert', 'pie', 'tart', 'muffin', 'donut', 'doughnut', 'ice cream', 'pudding', 'cheesecake', 'sweet', 'fudge', 'truffle', 'bar', 'cupcake', 'blondie', 'galette', 'cobbler', 'mousse', 'cinnamon roll', 'scone', 'waffle', 'pancake'];
     const MEAL_KEYWORDS = ['pasta', 'burger', 'curry', 'soup', 'stew', 'taco', 'pizza', 'sandwich', 'wrap', 'salad', 'bowl', 'rice', 'noodle', 'stir fry', 'lasagna', 'casserole', 'tofu', 'tempeh', 'lentil', 'chickpea', 'potato', 'dinner', 'lunch', 'roast', 'chili', 'shepherd', 'risotto', 'gnocchi', 'quiche', 'chowder', 'jackfruit', 'cauliflower', 'enchilada', 'burrito', 'quesadilla', 'mac and cheese', 'dumpling', 'meatball', 'loaf', 'skillet', 'gratin', 'pad thai', 'ramen'];
     const PROTEIN_KEYWORDS = ['tofu', 'tempeh', 'seitan', 'tvp', 'lentil', 'bean', 'chickpea', 'edamame', 'soy', 'quinoa', 'peanut', 'meatball', 'burger', 'sausage', 'protein', 'falafel', 'hummus', 'nut roast'];
+
+    const CUISINE_KEYWORDS = {
+        "Indian": ['curry', 'masala', 'dal', 'tikka', 'saag', 'korma', 'vindaloo', 'naan', 'samosa', 'chutney', 'aloo', 'gobi', 'chana'],
+        "Mexican": ['taco', 'burrito', 'enchada', 'quesadilla', 'salsa', 'guacamole', 'fajita', 'nachos', 'tostada', 'pozole', 'chipotle'],
+        "Italian": ['pasta', 'lasagna', 'pizza', 'risotto', 'gnocchi', 'bolognese', 'pesto', 'carbonara', 'marinara', 'focaccia', 'polenta'],
+        "Asian": ['stir fry', 'noodle', 'ramen', 'pad thai', 'dumpling', 'sushi', 'kimchi', 'miso', 'teriyaki', 'udon', 'bok choy', 'spring roll', 'soy ginger', 'gochujang', 'hoisin'],
+        "Middle Eastern": ['hummus', 'falafel', 'tahini', 'shawarma', 'pita', 'couscous', 'tabbouleh', 'shakshuka', "za'atar", 'kabob', 'sumac'],
+        "Mediterranean": ['greek', 'tzatziki', 'olives', 'feta', 'mediterranean', 'lemon herb', 'artichoke', 'couscous']
+    };
 
     // --- FAVORITES LOGIC ---
     function loadSavedRecipes() {
@@ -1182,6 +1253,24 @@
             });
         }
 
+        // Handle Cuisines State via URL
+        if (params.has('cuisine')) {
+            const cuisines = params.get('cuisine').split(',');
+            cuisines.forEach(c => {
+                activeCuisines.add(c);
+                const chip = document.querySelector(`.cuisine-btn[data-cuisine="${c}"]`);
+                if (chip) chip.classList.add('active-filter');
+            });
+            // If URL loads with cuisine, open the menu directly
+            if (activeCuisines.size > 0) {
+                isCuisineMenuOpen = true;
+                document.getElementById('subControlsWrapper').classList.add('open');
+                const arrow = document.querySelector('#cuisinesBtn .dropdown-arrow');
+                if (arrow) arrow.classList.add('open');
+            }
+        }
+        updateCuisinesButtonState();
+
         applyFilters(false); 
     }
 
@@ -1193,6 +1282,7 @@
         if (isSavedView) params.set('view', 'saved'); // Add saved to URL
         if (activeType) params.set('type', activeType);
         if (activeTags.size > 0) params.set('tag', Array.from(activeTags).join(','));
+        if (activeCuisines.size > 0) params.set('cuisine', Array.from(activeCuisines).join(','));
 
         const newURL = params.toString() ? `?${params.toString()}` : window.location.pathname;
         
@@ -1244,6 +1334,12 @@
             title = "Vegan Sweets & Desserts | Daily Vegan Recipes";
             desc = "Indulge in the best vegan desserts, cookies, cakes, and sweets.";
             breadcrumbName = "Sweets";
+        } else if (activeCuisines.size > 0) {
+            const cuisinesArr = Array.from(activeCuisines);
+            const primaryCuisine = cuisinesArr[0];
+            title = `Vegan ${primaryCuisine} Recipes | Daily Vegan Recipes`;
+            desc = `Explore the best plant-based and vegan ${primaryCuisine} recipes updated daily.`;
+            breadcrumbName = `${primaryCuisine} Cuisine`;
         } else if (tagsArr.length > 0) {
             const primaryTag = tagsArr[0];
             title = `${primaryTag} Vegan Recipes | Daily Vegan Recipes`;
@@ -1568,6 +1664,52 @@
         applyFilters(true);
     }
 
+    function toggleCuisineMenu(e) {
+        if(e) e.preventDefault();
+        document.activeElement.blur();
+        isCuisineMenuOpen = !isCuisineMenuOpen;
+        
+        const wrapper = document.getElementById('subControlsWrapper');
+        const arrow = document.querySelector('#cuisinesBtn .dropdown-arrow');
+        
+        if (isCuisineMenuOpen) {
+            wrapper.classList.add('open');
+            arrow.classList.add('open');
+        } else {
+            wrapper.classList.remove('open');
+            arrow.classList.remove('open');
+        }
+    }
+
+    function toggleCuisine(e, cuisineName) {
+        if(e) e.preventDefault();
+        document.activeElement.blur();
+        
+        const btn = document.querySelector(`.cuisine-btn[data-cuisine="${cuisineName}"]`);
+        
+        if (activeCuisines.has(cuisineName)) {
+            activeCuisines.delete(cuisineName);
+            btn.classList.remove('active-filter');
+        } else {
+            activeCuisines.add(cuisineName);
+            btn.classList.add('active-filter');
+        }
+        
+        updateCuisinesButtonState();
+        applyFilters(true);
+    }
+
+    // Colors main button green if ANY cuisine is selected 
+    function updateCuisinesButtonState() {
+        const cuisinesBtn = document.getElementById('cuisinesBtn');
+        if (!cuisinesBtn) return;
+        if (activeCuisines.size > 0) {
+            cuisinesBtn.classList.add('active-filter');
+        } else {
+            cuisinesBtn.classList.remove('active-filter');
+        }
+    }
+
     function applyFilters(pushState = true) {
         const rawInput = document.getElementById('searchInput').value;
         const term = rawInput.toLowerCase().replace(/-/g, ' '); 
@@ -1641,6 +1783,22 @@
                     }
                 }
                 return true;
+            });
+        }
+
+        // 5. Apply Cuisines (OR logic within cuisines, AND logic with other filters)
+        if (activeCuisines.size > 0) {
+            let activeKeywords = [];
+            activeCuisines.forEach(c => {
+                if (CUISINE_KEYWORDS[c]) {
+                    activeKeywords.push(...CUISINE_KEYWORDS[c]);
+                }
+            });
+            
+            filtered = filtered.filter(recipe => {
+                const title = recipe.title.toLowerCase();
+                // Check if any of the active cuisine keywords exist in the title
+                return activeKeywords.some(k => title.includes(k.toLowerCase()));
             });
         }
 
