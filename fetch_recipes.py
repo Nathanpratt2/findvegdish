@@ -94,55 +94,16 @@ HTML_SOURCES = [
     ("Nora Cooks", ("https://www.noracooks.com/blog/page/{}/", 8, 25), [], "wordpress"),#45 pages
     ("The Korean Vegan", ("https://thekoreanvegan.com/recipes/?pg={}", 8, 25), [], "wordpress"),#lots of pages
     ("Earth to Veg", "https://earthtoveg.com/page/1/?s=+", [], "wordpress"),#have gotten entire catalog
-    ("Rainbow Plant Life", [
-        (("https://rainbowplantlife.com/category/recipes/dinner/page/{}/", 1, 10), []),
-        (("https://rainbowplantlife.com/category/recipes/breakfast/page/{}/", 1, 3), []),
-        (("https://rainbowplantlife.com/category/recipes/dessert/page/{}/", 1, 4), []),
-        (("https://rainbowplantlife.com/category/recipes/instant-pot/page/{}/", 1, 5), ["Easy"]),
-        (("https://rainbowplantlife.com/category/recipes/salads/page/{}/", 1, 3), []),
-        (("https://rainbowplantlife.com/category/recipes/soups-stews/page/{}/", 1, 4), []),
-        (("https://rainbowplantlife.com/category/recipes/sides/page/{}/", 1, 4), []),
-        (("https://rainbowplantlife.com/category/recipes/page/{}/", 1, 15), [])
-    ], "wordpress"),
+    ("Rainbow Plant Life", ("https://rainbowplantlife.com/category/recipes/dinner/page/{}/", 1, 10), [], "wordpress"),
     ("Rainbow Plant Life GF", "https://rainbowplantlife.com/diet/gluten-free/", ["GF"], "wordpress"),
     ("Vegan Richa GF", "https://www.veganricha.com/category/gluten-free/", ["GF"], "wordpress"),
-    ("Cadry's Kitchen", [
-        (("https://cadryskitchen.com/category/recipes/course/breakfast/page/{}/", 1, 3), []),
-        (("https://cadryskitchen.com/category/recipes/course/lunch/page/{}/", 1, 4), []),
-        (("https://cadryskitchen.com/category/recipes/course/dinner/page/{}/", 1, 4), []),
-        (("https://cadryskitchen.com/category/recipes/type/main-dishes/page/{}/", 1, 5), []),
-        (("https://cadryskitchen.com/category/recipes/course/salads/page/{}/", 1, 3), []),
-        (("https://cadryskitchen.com/category/recipes/course/soups/page/{}/", 1, 3), []),
-        (("https://cadryskitchen.com/category/recipes/course/sides/page/{}/", 1, 3), []),
-        (("https://cadryskitchen.com/category/recipes/course/desserts/page/{}/", 1, 3), []),
-        (("https://cadryskitchen.com/category/recipes/type/air-fryer/page/{}/", 1, 5), ["Easy"]),
-        (("https://cadryskitchen.com/recipes/page/{}/", 1, 20), [])
-    ], "wordpress"),
+    ("Cadry's Kitchen", ("https://cadryskitchen.com/category/recipes/type/main-dishes/page/{}/", 1, 5), [], "wordpress"),
     ("PlantYou", ("https://plantyou.com/category/all-recipes/page/{}", 11, 20), ["WFPB"], "wordpress"),#23 pages
-    ("School Night Vegan", [
-        (("https://schoolnightvegan.com/category/dinners/page/{}", 1, 4), []),
-        (("https://schoolnightvegan.com/category/breakfast/page/{}", 1, 2), []),
-        (("https://schoolnightvegan.com/category/lunch/page/{}", 1, 2), []),
-        (("https://schoolnightvegan.com/category/desserts/page/{}", 1, 3), []),
-        (("https://schoolnightvegan.com/category/snacks/page/{}", 1, 2), []),
-        (("https://schoolnightvegan.com/category/party-food/page/{}", 1, 2), []),
-        (("https://schoolnightvegan.com/category/sauces/page/{}", 1, 2), []),
-        (("https://schoolnightvegan.com/category/essentials/page/{}", 1, 2), []),
-        (("https://schoolnightvegan.com/category/recipes/page/{}", 1, 10), [])
-    ], [], "wordpress"),
+    ("School Night Vegan", ("https://schoolnightvegan.com/category/desserts/page/{}", 1, 3), [], "wordpress"),
     ("Love and Lemons (Vegan Recipes)", "https://www.loveandlemons.com/category/recipes/vegan/page/9/", [], "wordpress"),#75 or more pages
     ("The Loopy Whisk (Vegan Recipes)", "https://theloopywhisk.com/diet/vegan/page/9/", ["GF"], "wordpress"),#9 pages
     ("Veg Kit","https://www.vegkit.com/recipes/?pagenumber=1",[], "squarespace"),#7 pages
-    ("Simple Vegan Blog", [
-        (("https://simpleveganblog.com/category/recipes/dinner/page/{}/", 1, 8), []),
-        (("https://simpleveganblog.com/category/recipes/breakfast/page/{}/", 1, 3), []),
-        (("https://simpleveganblog.com/category/recipes/desserts/page/{}/", 1, 5), []),
-        (("https://simpleveganblog.com/category/recipes/salads/page/{}/", 1, 3), []),
-        (("https://simpleveganblog.com/category/recipes/soups/page/{}/", 1, 3), []),
-        (("https://simpleveganblog.com/category/recipes/sides/page/{}/", 1, 3), []),
-        (("https://simpleveganblog.com/category/recipes/beverages/page/{}/", 1, 2), []),
-        (("https://simpleveganblog.com/recipes/page/{}/", 1, 20), [])
-    [], "wordpress"),
+    ("Simple Vegan Blog", ("https://simpleveganblog.com/category/recipes/dinner/page/{}/", 1, 8), [], "wordpress"),
     ("The Full Helping (Vegan Recipes)","https://www.thefullhelping.com/dietary/vegan/page/4/",[],"wordpress"),#Load more so unsure how many pages
     ("Plant-Based on a Budget", "https://plantbasedonabudget.com/category/vegan-dinners/page/7/", ["Budget"], "wordpress"),#17 pages
     ("Baking Hermann", "https://bakinghermann.com/recipes/", [], "wordpress"), #have gotten all of this catalog
@@ -157,18 +118,7 @@ HTML_SOURCES = [
     ("Steamy Vegan", "https://steamyvegan.com/category/sweet-treats/page/3/", [], "wordpress"), #is posting new ones. 3 pages of sweets 
     ("Namely Marly", ("https://namelymarly.com/category/vegan-recipes/page/{}/", 8, 25), [], "wordpress"),#35 pages for this
     ("Gretchen's Vegan Bakery", ("https://www.gretchensveganbakery.com/category/all-recipes/page/{}/", 8, 35), [], "wordpress"),#at least 50 pages
-    ("My Goodness Kitchen", [
-        (("https://mygoodnesskitchen.com/category/vegan-breakfasts/page/{}/", 1, 3), [], "wordpress"),
-        (("https://mygoodnesskitchen.com/category/vegan-mains/page/{}/", 1, 5), [], "wordpress"),
-        (("https://mygoodnesskitchen.com/category/vegan-desserts-and-sweets/page/{}/", 1, 4), [], "wordpress"),
-        (("https://mygoodnesskitchen.com/category/soup-season/page/{}/", 1, 2), [], "wordpress"),
-        (("https://mygoodnesskitchen.com/category/fresh-salads/page/{}/", 1, 2), [], "wordpress"),
-        (("https://mygoodnesskitchen.com/category/pasta-night/page/{}/", 1, 2), [], "wordpress"),
-        (("https://mygoodnesskitchen.com/category/light-vegan-meals-and-sides/page/{}/", 1, 3), [], "wordpress"),
-        (("https://mygoodnesskitchen.com/category/gluten-free-vegan-recipes/page/{}/", 1, 4), [], "wordpress"),
-        (("https://mygoodnesskitchen.com/category/holiday-recipes/page/{}/", 1, 2), [], "wordpress"),
-        (("https://mygoodnesskitchen.com/recipes/page/{}/", 1, 10), [], "wordpress")
-    ], [], "wordpress"),#attempting site map but no images?
+    ("My Goodness Kitchen", ("https://mygoodnesskitchen.com/recipes/page/{}/", 1, 1), [], "wordpress")
     ("Healthier Steps", ("https://healthiersteps.com/recipe-index/?_paged={}", 12, 35), [], "wordpress")#Hundreds of pages for this one
     ("Choosing Chia (Vegan Recipes)", ("https://choosingchia.com/category/diet%20/vegan/page/{}/", 3, 15), ["Easy"], "wordpress"),#37 pages
     ("The Burger Dude", ("https://theeburgerdude.com/recipe%20index/page/{}/", 21, 54), [], "wordpress"),#54 pages, input as a range
@@ -238,10 +188,10 @@ NON_RECIPE_KEYWORDS = [
     "dining out", "interview", "guest post", "workshop", "class", "course", 
     "ebook", "merch", "store", "shop", "announcement", "update", "news", 
     "contest", "winner", "promo", "discount", "coupon", "deal", "top 10", 
-    "top 20", "5 best", "10 best", "15 best", "20 best", "rpl", "going vegan", 
+    "top 20", "5 best", "10 best", "15 best", "20 best", "33 vegan", " ways", "rpl", "going vegan", 
     "my story", "journey", "life lately", "carss", "coffee talk", "link love", 
     "weekend reading", "batch cooking", "staples", "essentials", "substitutes",
-    "how to make", "101", "tutorial", "guide", "tips", "tricks", "faq",
+    "how to make", "101", "tutorial", "guide", "tips", "tricks", "faq", "recipes", "dinners", 
     "policy", "terms", "privacy", "contact", "about", "search", "sitemap",
     "neighbor", "law", "videos", "planning", "rituals", "discontinued", 
     "forgotten", "finds", "live", "tests", "lab", "tracking", "progress", 
