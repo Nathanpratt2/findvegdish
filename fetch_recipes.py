@@ -119,7 +119,7 @@ HTML_SOURCES = [
     ("Namely Marly", ("https://namelymarly.com/category/vegan-recipes/page/{}/", 8, 25), [], "wordpress"),#35 pages for this
     ("Gretchen's Vegan Bakery", ("https://www.gretchensveganbakery.com/category/all-recipes/page/{}/", 8, 35), [], "wordpress"),#at least 50 pages
     ("My Goodness Kitchen", "https://mygoodnesskitchen.com/recipes/page/1/", [], "wordpress"),
-    ("Healthier Steps", ("https://healthiersteps.com/recipe-index/?_paged={}", 12, 35), [], "wordpress")#Hundreds of pages for this one
+    ("Healthier Steps", ("https://healthiersteps.com/recipe-index/?_paged={}", 12, 35), [], "wordpress"),#Hundreds of pages for this one
     ("Choosing Chia (Vegan Recipes)", ("https://choosingchia.com/category/diet%20/vegan/page/{}/", 3, 15), ["Easy"], "wordpress"),#37 pages
     ("The Burger Dude", ("https://theeburgerdude.com/recipe%20index/page/{}/", 21, 54), [], "wordpress"),#54 pages, input as a range
     # --- MAXED OUT SoURCES BELOW ---
