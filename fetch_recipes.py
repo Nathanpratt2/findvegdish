@@ -191,7 +191,7 @@ NON_RECIPE_KEYWORDS = [
     "top 20", "5 best", "10 best", "15 best", "20 best", "33 vegan", " ways", "rpl", "going vegan", 
     "my story", "journey", "life lately", "carss", "coffee talk", "link love", 
     "weekend reading", "batch cooking", "staples", "essentials", "substitutes",
-    "how to make", "101", "tutorial", "guide", "tips", "tricks", "faq", "recipes", "dinners", 
+    "how to make", "101", "tutorial", "guide", "tips", "tricks", "faq", 
     "policy", "terms", "privacy", "contact", "about", "search", "sitemap",
     "neighbor", "law", "videos", "planning", "rituals", "discontinued", 
     "forgotten", "finds", "live", "tests", "lab", "tracking", "progress", 
