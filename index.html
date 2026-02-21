@@ -1195,7 +1195,9 @@
         if (activeTags.size > 0) params.set('tag', Array.from(activeTags).join(','));
 
         const newURL = params.toString() ? `?${params.toString()}` : window.location.pathname;
-        history.pushState({}, '', newURL);
+        
+        // FIX: Use replaceState instead of pushState to prevent Android keyboard back-button glitches
+        history.replaceState({}, '', newURL);
         
         const canonical = document.getElementById('canonicalLink');
         if (canonical) canonical.href = "https://findvegdish.com/" + newURL;
