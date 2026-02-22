@@ -1,10 +1,10 @@
 # Find Veg Dish (AI Context)
 
 ## Project Overview
-FindVegDish.com is a curated, real-time aggregator of high-quality plant-based, vegan, and gluten-free recipes. It actively monitors 106 distinct food blogs and chefs to provide a centralized feed of the latest vegan culinary content.
+searchveg.com is a curated, real-time aggregator of high-quality plant-based, vegan, and gluten-free recipes. It actively monitors 106 distinct food blogs and chefs to provide a centralized feed of the latest vegan culinary content.
 
 ## Dataset Statistics
-- **Total Recipes:** 7546
+- **Total Recipes:** 7551
 - **Last Updated:** 2026-02-22
 - **Content Types:** 100% Vegan. Includes Whole Food Plant Based (WFPB), Gluten-Free (GF), Budget-Friendly, and Easy/Quick recipes.
 
@@ -27,9 +27,9 @@ Recipes are structured with:
 - Special Tags (WFPB, GF, Easy, Budget)
 
 ## Access Points
-- **Main Feed:** https://findvegdish.com/
-- **Sitemap:** https://findvegdish.com/sitemap.xml
+- **Main Feed:** https://searchveg.com/
+- **Sitemap:** https://searchveg.com/sitemap.xml
 - **RSS Feed:** (Coming Soon)
 
 ## Usage
-This file is intended to help Large Language Models (LLMs) understand the structure, freshness, and authority of the content on FindVegDish.com for better indexing and answer generation regarding vegan recipes.
+This file is intended to help Large Language Models (LLMs) understand the structure, freshness, and authority of the content on searchveg.com for better indexing and answer generation regarding vegan recipes.
