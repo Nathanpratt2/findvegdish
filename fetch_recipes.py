@@ -33,7 +33,6 @@ except ImportError:
 # Format: ("Blog Name", "Feed URL", ["SPECIAL_TAGS"])
 
 TOP_BLOGGERS = [
-    ("Vegan Richa", "https://www.veganricha.com/feed/", []), # Main Feed
     ("It Doesn't Taste Like Chicken", "https://itdoesnttastelikechicken.com/recipe-index/#search/c=eyJ2IjoiNC4wIiwidGl0bGUiOiJMYXRlc3QiLCJncm91cFR5cGUiOiJyZWNlbnQiLCJhcnJhbmdlbWVudCI6ImNvbnRleHQtd2l0aC1zZWFyY2gifQ%3D%3D", []), 
     ("Elavegan", "https://elavegan.com/feed/", ["GF"]), # Will auto-tag GF
     ("The First Mess", "https://thefirstmess.com/feed/", []),
@@ -51,7 +50,6 @@ TOP_BLOGGERS = [
     ("Sarah's Vegan Kitchen", "https://sarahsvegankitchen.com/feed/", []),
     ("Make It Dairy Free", "https://makeitdairyfree.com/feed/", []),
     ("Running on Real Food", "https://runningonrealfood.com/feed/", ["WFPB"]),
-    ("VegNews", "https://vegnews.com/feed", []),
     ("HealthyGirl Kitchen", "https://healthygirlkitchen.com/feed/", []),
     ("Big Box Vegan", "https://bigboxvegan.com/category/recipes/feed/", []),
     ("The Plant-Based RD", "https://plantbasedrdblog.com/feed/", []),
@@ -69,7 +67,6 @@ DISRUPTORS = [
     ("Strength and Sunshine", "https://strengthandsunshine.com/feed/", ["Easy", "GF"]), # Will auto-tag GF
     ("The Stingy Vegan", "https://thestingyvegan.com/feed/", ["Easy", "Budget"]),
     ("The Foodie Takes Flight", "https://thefoodietakesflight.com/feed/", ["Easy"]),
-    ("My Vegan Minimalist", "https://myveganminimalist.com/feed/", []),
     ("Messy Vegan Cook", "https://messyvegancook.com/feed/", []),
     ("The Conscious Plant Kitchen", "https://www.theconsciousplantkitchen.com/feed/", []),
     ("Flora & Vino", "https://www.floraandvino.com/feed/", ["WFPB"]),
@@ -91,47 +88,48 @@ DISRUPTORS = [
 # --- DIRECT HTML SCRAPING SOURCES ---
 HTML_SOURCES = [
 
-    ("Nora Cooks", ("https://www.noracooks.com/blog/page/{}/", 8, 9), [], "wordpress"),#45 pages
-    ("The Korean Vegan", ("https://thekoreanvegan.com/recipes/?pg={}", 8, 9), [], "wordpress"),#lots of pages
-    ("Earth to Veg", "https://earthtoveg.com/page/1/?s=+", [], "wordpress"),#have gotten entire catalog
-    ("Rainbow Plant Life", ("https://rainbowplantlife.com/category/recipes/dinner/page/{}/", 1, 2), [], "wordpress"),
-    ("Rainbow Plant Life GF", "https://rainbowplantlife.com/diet/gluten-free/", ["GF"], "wordpress"),
-    ("Vegan Richa GF", "https://www.veganricha.com/category/gluten-free/", ["GF"], "wordpress"),
-    ("Cadry's Kitchen", ("https://cadryskitchen.com/category/recipes/type/main-dishes/page/{}/", 1, 2), [], "wordpress"),
-    ("PlantYou", ("https://plantyou.com/category/all-recipes/page/{}", 11, 12), ["WFPB"], "wordpress"),#23 pages
-    ("School Night Vegan", ("https://schoolnightvegan.com/category/desserts/page/{}", 1, 3), [], "wordpress"),
-    ("Love and Lemons (Vegan Recipes)", "https://www.loveandlemons.com/category/recipes/vegan/page/9/", [], "wordpress"),#75 or more pages
-    ("The Loopy Whisk (Vegan Recipes)", "https://theloopywhisk.com/diet/vegan/page/9/", ["GF"], "wordpress"),#9 pages
-    ("Veg Kit","https://www.vegkit.com/recipes/?pagenumber=1",[], "squarespace"),#7 pages
-    ("Simple Vegan Blog", ("https://simpleveganblog.com/category/recipes/dinner/page/{}/", 1, 3), [], "wordpress"),
-    ("The Full Helping (Vegan Recipes)","https://www.thefullhelping.com/dietary/vegan/page/4/",[],"wordpress"),#Load more so unsure how many pages
-    ("Plant-Based on a Budget", "https://plantbasedonabudget.com/category/vegan-dinners/page/7/", ["Budget"], "wordpress"),#17 pages
-    ("Baking Hermann", "https://bakinghermann.com/recipes/", [], "wordpress"), #have gotten all of this catalog
-    ("Bianca Zapatka", ("https://biancazapatka.com/en/recipes/page/{}/", 8, 9), [], "wordpress"),#70 pages, input as a range
-    ("Dreena Burton", "https://dreenaburton.com/category/recipes/page/10/", ["WFPB"], "wordpress"),#21 pages of this
-    ("The Edgy Veg", "https://www.theedgyveg.com/recipes/page/18/", [], "wordpress"),#75 pages
-    ("The Cheap Lazy Vegan", "https://thecheaplazyvegan.com/blog/page/15/", ["Budget", "Easy"], "wordpress"),#62 pages
-    ("Vegan in the Freezer", "https://veganinthefreezer.com/recipes/?pg=7", [], "wordpress"),#62 pages
+    ("The Korean Vegan", ("https://thekoreanvegan.com/recipes/?pg={}", 10, 20), [], "wordpress"),#lots of pages
+    ("VegNews", ("https://vegnews.com/recipes/page/{}/", 2, 25), [], "wordpress"),#maybe infinite pages lol
+    ("Vegan Richa", ("https://www.veganricha.com/recipes-with-facets/?fwp_paged={}",2, 30), [], "wordpress"), #119 pages
+    ("Rainbow Plant Life", ("https://rainbowplantlife.com/category/recipes/page/{}/", 8, 19), [], "wordpress"),#19 pages
+    ("Cadry's Kitchen", ("https://cadryskitchen.com/page/{}/?s=+", 2, 15), [], "wordpress"),
+    ("PlantYou", ("https://plantyou.com/category/all-recipes/page/{}/", 1, 23), ["WFPB"], "wordpress"),#23 pages
+    ("Love and Lemons (Vegan Recipes)", ("https://www.loveandlemons.com/category/recipes/vegan/page/{}/", 10, 30), [], "wordpress"),#75 or more pages
+    ("Veg Kit", ("https://www.vegkit.com/recipes/?pagenumber={}", 3, 7), [], "wordpress"),#7 pages
+    ("Simple Vegan Blog", ("https://simpleveganblog.com/category/desserts/page/{}/", 1, 2), [], "wordpress"),#pretty much maxed after this. deserts and dinner covered
+    ("The Full Helping (Vegan Recipes)","https://www.thefullhelping.com/dietary/vegan/page/5/",[],"wordpress"),#Load more so unsure how many pages
+    ("Plant-Based on a Budget", ("https://plantbasedonabudget.com/category/vegan-dinners/page/{}/", 8, 17), ["Budget"], "wordpress"),#17 pages
+    ("Bianca Zapatka", ("https://biancazapatka.com/en/recipes/page/{}/", 20, 40), [], "wordpress"),#70 pages, input as a range
+    ("Dreena Burton", ("https://dreenaburton.com/category/recipes/page/{}/", 11, 20), ["WFPB"], "wordpress"),#21 pages of this
+    ("The Edgy Veg", ("https://www.theedgyveg.com/recipes/page/{}/", 19, 35), [], "wordpress"),#75 pages
+    ("The Cheap Lazy Vegan", "https://thecheaplazyvegan.com/blog/page/16/", ["Budget", "Easy"], "wordpress"),#62 pages
+    ("Vegan in the Freezer", "https://veganinthefreezer.com/recipes/?pg=8", [], "wordpress"),#62 pages
     ("Chef Bai", "https://www.chefbai.kitchen/blog?offset=1643497710300", [], "wordpress"),
-    ("Addicted to Dates", "https://addictedtodates.com/category/recipes/page/2/", [], "wordpress"),#19 pages
-    ("One Arab Vegan", "https://www.onearabvegan.com/category/recipes/page/9/", [], "wordpress"),#28 pages
-    ("Steamy Vegan", "https://steamyvegan.com/category/sweet-treats/page/3/", [], "wordpress"), #is posting new ones. 3 pages of sweets 
-    ("Namely Marly", ("https://namelymarly.com/category/vegan-recipes/page/{}/", 8, 9), [], "wordpress"),#35 pages for this
-    ("Gretchen's Vegan Bakery", ("https://www.gretchensveganbakery.com/category/all-recipes/page/{}/", 8, 9), [], "wordpress"),#at least 50 pages
-    ("My Goodness Kitchen", "https://mygoodnesskitchen.com/recipes/page/1/", [], "wordpress"),
-    ("Healthier Steps", ("https://healthiersteps.com/recipe-index/?_paged={}", 12, 35), [], "wordpress"),#Hundreds of pages for this one
-    ("Choosing Chia (Vegan Recipes)", ("https://choosingchia.com/category/diet%20/vegan/page/{}/", 3, 4), ["Easy"], "wordpress"),#37 pages
-    ("The Burger Dude", ("https://theeburgerdude.com/recipe%20index/page/{}/", 21, 22), [], "wordpress"),#54 pages, input as a range
+    ("Addicted to Dates", ("https://addictedtodates.com/category/recipes/page/{}/", 3, 19), [], "wordpress"),#19 pages
+    ("One Arab Vegan", "https://www.onearabvegan.com/category/recipes/page/10/", [], "wordpress"),#28 pages
+    ("Steamy Vegan", ("https://steamyvegan.com/page/{}/?s=+", 2, 16), [], "wordpress"), #16 paages
+    ("Namely Marly", ("https://namelymarly.com/category/vegan-recipes/page/{}/", 25, 35), [], "wordpress"),#35 pages for this
+    ("Gretchen's Vegan Bakery", ("https://www.gretchensveganbakery.com/category/all-recipes/page/{}/", 30, 40), [], "wordpress"),#at least 50 pages
+    ("Healthier Steps", ("https://healthiersteps.com/recipe-index/?_paged={}", 36, 45), [], "wordpress"),#Hundreds of pages for this one
+    ("Choosing Chia (Vegan Recipes)", ("https://choosingchia.com/category/diet%20/vegan/page/{}/", 15, 25), ["Easy"], "wordpress"),#37 pages
+    ("My Vegan Minimalist", ("https://myveganminimalist.com/page/{}/?s=+", 1, 6), [], "wordpress"),
     # --- MAXED OUT SoURCES BELOW ---
     ("Forks Over Knives", "https://www.forksoverknives.com/all-recipes/", ["WFPB"], "wordpress"),#maxed out
+    ("Earth to Veg", "https://earthtoveg.com/page/1/?s=+", [], "wordpress"),#maxed out
+    ("Rainbow Plant Life GF", "https://rainbowplantlife.com/diet/gluten-free/", ["GF"], "wordpress"),#maxed out
+    ("Nora Cooks", "https://www.noracooks.com/blog/page/1/", [], "wordpress"),#maxed out
+    ("Baking Hermann", "https://bakinghermann.com/recipes/", [], "wordpress"), #have gotten all of this catalog
+    ("Vegan Richa GF", "https://www.veganricha.com/category/gluten-free/", ["GF"], "wordpress"),
     ("Cookie and Kate (Vegan Recipes)", "https://cookieandkate.com/category/food-recipes/vegan/", [], "wordpress"),#maxed out
     ("BOSH! TV", "https://www.bosh.tv/recipes", [], "wordpress"), #maxed out
     ("Pick Up Limes", ("https://www.pickuplimes.com/recipe/?sb=&public=on&page={}", 1, 1), [], "custom_pul"),#maxed out
     ("Hot For Food","https://www.hotforfoodblog.com/category/recipes/page/1/",[],"wordpress"),#maxed out
+    ("My Goodness Kitchen", "https://mygoodnesskitchen.com/recipes/page/1/", [], "wordpress"),
     ("Sweet Simple Vegan", "https://sweetsimplevegan.com/recipes/page/1/", [], "wordpress"),#maxed out recipes
     ("Gaz Oakley", "https://www.gazoakleychef.com/recipes/?sf_paged=1", [], "wordpress"), #maxed out
     ("Vegan Yack Attack", "https://veganyackattack.com/", [], "wordpress"),#maxed out recipes. keep base link for new ones
     ("Minimalist Baker (Vegan Recipes)", "https://minimalistbaker.com/recipes/vegan", [], "wordpress"),#maxed out recipes
+    ("The Burger Dude", "https://theeburgerdude.com/recipe%20index/page/1/", [], "wordpress"),#maxed out
     ("Rhian's Recipes", "https://www.rhiansrecipes.com/recipes", ["GF"], "wordpress") #maxed out
 ]
 
@@ -166,7 +164,7 @@ for item in HTML_SOURCES:
         print(f"⚠️ Warning: Skipping malformed HTML config: {item}")
 
 
-MAX_RECIPES_PER_BLOG = 250 
+MAX_RECIPES_PER_BLOG = 280
 cutoff_date = datetime.now().astimezone() - timedelta(days=360)
 
 # --- KEYWORDS FOR AUTO TAGGING ---
