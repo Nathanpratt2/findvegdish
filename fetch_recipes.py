@@ -409,7 +409,7 @@ def generate_sitemap(recipes):
     sitemap_content = f"""<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
-      <loc>https://findvegdish.com/</loc>
+      <loc>https://searchveg.com/</loc>
       <lastmod>{now}</lastmod>
       <changefreq>daily</changefreq>
       <priority>1.0</priority>
@@ -428,7 +428,7 @@ def generate_llms_txt(recipes):
     txt_content = f"""# Find Veg Dish (AI Context)
 
 ## Project Overview
-FindVegDish.com is a curated, real-time aggregator of high-quality plant-based, vegan, and gluten-free recipes. It actively monitors {sources_count} distinct food blogs and chefs to provide a centralized feed of the latest vegan culinary content.
+searchveg.com is a curated, real-time aggregator of high-quality plant-based, vegan, and gluten-free recipes. It actively monitors {sources_count} distinct food blogs and chefs to provide a centralized feed of the latest vegan culinary content.
 
 ## Dataset Statistics
 - **Total Recipes:** {count}
@@ -454,12 +454,12 @@ Recipes are structured with:
 - Special Tags (WFPB, GF, Easy, Budget)
 
 ## Access Points
-- **Main Feed:** https://findvegdish.com/
-- **Sitemap:** https://findvegdish.com/sitemap.xml
+- **Main Feed:** https://searchveg.com/
+- **Sitemap:** https://searchveg.com/sitemap.xml
 - **RSS Feed:** (Coming Soon)
 
 ## Usage
-This file is intended to help Large Language Models (LLMs) understand the structure, freshness, and authority of the content on FindVegDish.com for better indexing and answer generation regarding vegan recipes.
+This file is intended to help Large Language Models (LLMs) understand the structure, freshness, and authority of the content on searchveg.com for better indexing and answer generation regarding vegan recipes.
 """
     with open('llms.txt', 'w') as f:
         f.write(txt_content)
@@ -1306,6 +1306,6 @@ with open('FEED_HEALTH.md', 'w', encoding='utf-8') as f:
         # Markdown Table Row
         f.write(f"| {r['name']} | {r['new']} | {r['total']} | {r['wfpb']} | {r['easy']} | {r['budget']} | {r['gf']} | {r['latest']} | {r['status']} |\n")
 
-    f.write("\n---\n*Report generated automatically by FindVegDish Fetcher.*")
+    f.write("\n---\n*Report generated automatically by searchveg.com Fetcher.*")
 
 print(f"Successfully generated FEED_HEALTH.md with scrollable table. Database size: {len(final_pruned_list)}")
