@@ -8,7 +8,7 @@
     <!-- SEO & Social Meta Tags -->
     <meta id="metaDesc" name="description" content="Find fresh daily vegan recipes from top bloggers. Search by ingredients, diet types, or explore new plant-based dishes.">
     
-    <link id="canonicalLink" rel="canonical" href="https://findvegdish.com/">
+    <link id="canonicalLink" rel="canonical" href="https://searchveg.com/">
     <meta name="robots" content="index, follow, max-image-preview:large">
 
     <!-- PERFORMANCE: Preload Critical Data Source -->
@@ -19,10 +19,10 @@
     {
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "url": "https://findvegdish.com/",
+        "url": "https://searchveg.com/",
         "potentialAction": {
             "@type": "SearchAction",
-            "target": "https://findvegdish.com/?q={search_term_string}",
+            "target": "https://searchveg.com/?q={search_term_string}",
             "query-input": "required name=search_term_string"
         }
     }
@@ -31,10 +31,10 @@
     <!-- Open Graph Tags (Dynamic via JS) -->
     <meta property="og:title" content="Daily Vegan Recipes">
     <meta property="og:description" content="Daily recipes from the top bloggers">
-    <meta property="og:image" content="https://findvegdish.com/default.jpg">
+    <meta property="og:image" content="https://searchveg.com/default.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:url" content="https://findvegdish.com">
+    <meta property="og:url" content="https://searchveg.com">
     <meta property="og:type" content="website">
     
     <link rel="manifest" href="manifest.json">
@@ -1290,7 +1290,7 @@
         history.replaceState({}, '', newURL);
         
         const canonical = document.getElementById('canonicalLink');
-        if (canonical) canonical.href = "https://findvegdish.com/" + newURL;
+        if (canonical) canonical.href = "https://searchveg.com/" + newURL;
     }
 
     // 2. DYNAMIC NOINDEX: Helps prevent Soft 404s on empty search results
@@ -1372,7 +1372,7 @@
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://findvegdish.com/"
+                "item": "https://searchveg.com/"
             }, {
                 "@type": "ListItem",
                 "position": 2,
@@ -1912,7 +1912,7 @@
             return;
         }
 
-        let text = "My Saved Recipes from FindVegDish.com:\n\n";
+        let text = "My Saved Recipes from searchveg.com:\n\n";
         // Convert Map to array and reverse to show most recent first (matching the view)
         const recipes = Array.from(savedRecipesMap.values()).sort((a, b) => (b.savedAt || 0) - (a.savedAt || 0));
         
