@@ -1,6 +1,6 @@
 {
-  "name": "Daily Vegan Recipes",
-  "short_name": "Daily Vegan",
+  "name": "Search Vegan Recipes",
+  "short_name": "Search Veg",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#f8f9fa",
