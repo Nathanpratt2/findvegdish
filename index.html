@@ -6,7 +6,7 @@
     <title>Search Vegan Recipes</title>
 
     <!-- SEO & Social Meta Tags -->
-    <meta id="metaDesc" name="description" content="Find fresh daily vegan recipes from top bloggers. Search by ingredients, cuisines, or explore new plant-based dishes.">
+    <meta id="metaDesc" name="description" content="Find fresh vegan recipes from top bloggers. Search by ingredients, cuisines, or explore new plant-based dishes.">
     
     <link id="canonicalLink" rel="canonical" href="https://searchveg.com/">
     <meta name="robots" content="index, follow, max-image-preview:large">
@@ -29,8 +29,8 @@
     </script>
 
     <!-- Open Graph Tags (Dynamic via JS) -->
-    <meta property="og:title" content="Daily Vegan Recipes">
-    <meta property="og:description" content="Daily recipes from the top bloggers">
+    <meta property="og:title" content="Searchveg">
+    <meta property="og:description" content="Search vegan recipes from the top bloggers">
     <meta property="og:image" content="https://searchveg.com/default.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -800,7 +800,7 @@
 <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="natethevegan" data-description="Support me on Buy me a coffee!" data-message="" data-color="#769F37" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 
 <footer>
-    <p>Daily Vegan Recipes aggregates the best plant-based cooking from top bloggers. Discover easy vegan dinner ideas, high-protein plant-based meals, WFPB (Whole Food Plant Based) dishes, gluten-free sweets, and budget-friendly vegan food. Updated daily.</p>
+    <p>Searchveg aggregates the best plant-based cooking from top bloggers. Discover easy vegan dinner ideas, high-protein plant-based meals, WFPB (Whole Food Plant Based) dishes, gluten-free sweets, and budget-friendly vegan food. Updated daily.</p>
     
     <div class="footer-topics">
         <a href="?q=pasta">Best Vegan Pasta</a>
@@ -1309,39 +1309,39 @@
     }
 
     function updateSEO(currentRecipes = []) {
-        let title = "Daily Vegan Recipes";
-        let desc = "Find fresh daily vegan recipes from top bloggers. Search by ingredients, diet types, or explore new plant-based dishes. ";
+        let title = "Searchveg";
+        let desc = "Find fresh Searchveg from top bloggers. Search by ingredients, diet types, or explore new plant-based dishes. ";
         let breadcrumbName = "Home";
         
         const searchVal = document.getElementById('searchInput').value;
         const tagsArr = Array.from(activeTags);
 
         if (isSavedView) {
-             title = "My Saved Recipes | Daily Vegan Recipes";
+             title = "My Saved Recipes | Searchveg";
              desc = "Your personalized collection of saved vegan recipes.";
              breadcrumbName = "Saved";
         } else if (searchVal) {
             const safeSearch = searchVal.replace(/</g, "&lt;").replace(/>/g, "&gt;");
-            title = `${safeSearch} - Search | Daily Vegan Recipes`;
+            title = `${safeSearch} - Search | Searchveg`;
             desc = `Best vegan recipes matching "${safeSearch}".`;
             breadcrumbName = `Search: ${safeSearch}`;
         } else if (activeType === 'meal') {
-            title = "Vegan Dinner & Meal Ideas | Daily Vegan Recipes";
+            title = "Vegan Dinner & Meal Ideas | Searchveg";
             desc = "Discover savory vegan meals, dinners, and lunch ideas from top plant-based blogs.";
             breadcrumbName = "Meals";
         } else if (activeType === 'sweet') {
-            title = "Vegan Sweets & Desserts | Daily Vegan Recipes";
+            title = "Vegan Sweets & Desserts | Searchveg";
             desc = "Indulge in the best vegan desserts, cookies, cakes, and sweets.";
             breadcrumbName = "Sweets";
         } else if (activeCuisines.size > 0) {
             const cuisinesArr = Array.from(activeCuisines);
             const primaryCuisine = cuisinesArr[0];
-            title = `Vegan ${primaryCuisine} Recipes | Daily Vegan Recipes`;
+            title = `Vegan ${primaryCuisine} Recipes | Searchveg`;
             desc = `Explore the best plant-based and vegan ${primaryCuisine} recipes updated daily.`;
             breadcrumbName = `${primaryCuisine} Cuisine`;
         } else if (tagsArr.length > 0) {
             const primaryTag = tagsArr[0];
-            title = `${primaryTag} Vegan Recipes | Daily Vegan Recipes`;
+            title = `${primaryTag} Vegan Recipes | Searchveg`;
             desc = `Top rated ${primaryTag} vegan recipes updated daily.`;
             breadcrumbName = primaryTag;
         }
@@ -1850,7 +1850,7 @@
         const url = window.location.href;
         if (navigator.share) {
             navigator.share({
-                title: 'Daily Vegan Recipes Search',
+                title: 'Searchveg Search',
                 url: url
             }).catch(console.error);
         } else {
