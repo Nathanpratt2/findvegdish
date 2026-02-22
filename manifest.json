@@ -1,19 +1,19 @@
 {
   "name": "Search Vegan Recipes",
   "short_name": "Search Veg",
-  "start_url": "./index.html",
+  "start_url": "https://searchveg.com/",
   "display": "standalone",
   "background_color": "#f8f9fa",
   "theme_color": "#ffffff",
   "icons": [
     {
-      "src": "logo.png",
+      "src": "https://searchveg.com/logo.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "logo.png",
+      "src": "https://searchveg.com/logo.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
