@@ -23,14 +23,25 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          # If manually triggered, always run
+          # 1. Check if another job is already running
+          # 'in_progress' count will be at least 1 because THIS current run is in progress.
+          # If it is > 1, it means an older job is still running.
+          IN_PROGRESS_COUNT=$(gh run list --workflow "Daily Recipe Refresh" --status in_progress --json databaseId -q '. | length')
+          
+          if [[ "$IN_PROGRESS_COUNT" -gt 1 ]]; then
+            echo "Another job is currently in progress ($IN_PROGRESS_COUNT total). Skipping this run to prevent overlap."
+            echo "skip_run=true" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          # 2. If manually triggered, always run
           if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
             echo "Manual trigger detected. Forcing run."
             echo "skip_run=false" >> $GITHUB_OUTPUT
             exit 0
           fi
 
-          # Get time of last SUCCESSFUL run for this workflow
+          # 3. Get time of last SUCCESSFUL run for this workflow
           LAST_RUN=$(gh run list --workflow "Daily Recipe Refresh" --status success --limit 1 --json updatedAt -q '.[0].updatedAt')
 
           if [[ -z "$LAST_RUN" ]]; then
