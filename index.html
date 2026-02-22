@@ -155,7 +155,7 @@
         }
 
         #searchInput {
-            /* Adjusted padding right to accommodate both buttons */
+            /* Default padding: accommodates buttons (80px) */
             padding: 12px 80px 12px 20px; 
             width: 100%;
             box-sizing: border-box;
@@ -169,6 +169,11 @@
             transition: all 0.3s ease;
             color: var(--input-text); 
             font-weight: 600;
+        }
+
+        /* DYNAMIC PADDING: Allows typewriter text to use full width when buttons are hidden */
+        #searchInput.placeholder-mode {
+            padding-right: 20px;
         }
         
         #searchInput:hover {
@@ -711,7 +716,8 @@
         <div class="search-wrapper">
             <label for="searchInput" style="display:none;">Search Recipes</label>
             <!-- 5. INPUT UX: Input Mode and Enter Key Hint -->
-            <input type="text" id="searchInput" placeholder="Search: Pancakes, Blog, Tofu..." inputmode="search" enterkeyhint="search">
+            <!-- Placeholder set to empty to prevent flash before TypeWriter starts -->
+            <input type="text" id="searchInput" placeholder="" inputmode="search" enterkeyhint="search">
             
             <!-- NEW SHARE BUTTON -->
             <button id="shareSearchBtn" class="search-bar-btn" title="Share this search URL" aria-label="Share Search">
@@ -851,11 +857,12 @@
     let isDeleting = false;
     let typeSpeed = 100;
 
-    // FIX: Clear placeholder immediately when user clicks (focus)
     const sInput = document.getElementById('searchInput');
     if(sInput) {
+        // FIX: Clear placeholder & Reset padding immediately when user clicks (focus)
         sInput.addEventListener('focus', () => {
             sInput.placeholder = '';
+            sInput.classList.remove('placeholder-mode');
         });
     }
 
@@ -865,9 +872,13 @@
 
         // Stop animating if user is typing or has the box clicked
         if (document.activeElement === input || input.value !== '') {
+            input.classList.remove('placeholder-mode'); // Ensure buttons have space
             setTimeout(typeWriter, 1000); 
             return;
         }
+
+        // Apply full-width padding class while animating (buttons are hidden)
+        input.classList.add('placeholder-mode');
 
         const currentFullText = vibes[vibeIndex];
 
