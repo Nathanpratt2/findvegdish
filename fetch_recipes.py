@@ -570,7 +570,6 @@ def extract_metadata_from_page(url):
 # --- HTML SCRAPING LOGIC ---
 
 def scrape_html_feed(name, url, mode, existing_links, recipes_list, source_tags):
-    print(f"   🔎 HTML Scraping: {name} (Mode: {mode})...")
     time.sleep(random.uniform(5, 8)) # Safety delay
     
     html = robust_fetch(url, is_scraping_page=True)
@@ -986,10 +985,12 @@ existing_links = {(r['link'], r['blog_name']) for r in recipes}
 feed_stats = {}
 previous_domain = ""
 
-print(f"Fetching recipes from {len(ALL_FEEDS)} RSS feeds & {len(HTML_SOURCES)} HTML sources...")
+print(f"Fetching recipes from {len(ALL_FEEDS)} RSS feeds & {len(HTML_SOURCES)} HTML sources...", flush=True)
 
 # 3. Scrape RSS Feeds
-for item in ALL_FEEDS:
+print("::group::📡 Scraping RSS Feeds", flush=True)
+total_rss = len(ALL_FEEDS)
+for i, item in enumerate(ALL_FEEDS, 1):
     if len(item) != 3: continue
     name, url, special_tags = item
 
@@ -998,12 +999,12 @@ for item in ALL_FEEDS:
     
     current_domain = urlparse(url).netloc
     if current_domain == previous_domain:
-        print(f"   (Pausing 5s for same domain: {current_domain})")
+        print(f"   (Pausing 5s for same domain: {current_domain})", flush=True)
         time.sleep(5)
     previous_domain = current_domain
     
     try:
-        print(f"Checking RSS: {name}...")
+        print(f"[{i}/{total_rss}] Checking RSS: {name}...", flush=True)
         xml_content = robust_fetch(url, is_scraping_page=False)
         
         if (not xml_content) and name == "VegNews":
@@ -1033,11 +1034,9 @@ for item in ALL_FEEDS:
                 else:
                     published_time = published_time.astimezone(timezone.utc)
                 
-                # SAFETY: Prevent future dates (typos or timezone glitches)
-                # Allow a small buffer (24h) for timezone differences, but discard obvious bad years
+                # SAFETY: Prevent future dates
                 now_utc = datetime.now(timezone.utc)
                 if published_time > now_utc + timedelta(days=1):
-                    # If date is way in the future, assume it's a mistake or sticky post; use Now
                     published_time = now_utc
 
                 if published_time > cutoff_date:
@@ -1064,19 +1063,23 @@ for item in ALL_FEEDS:
         feed_stats[name] = {'new': new_count, 'status': status}
 
     except Exception as e:
-        print(f"Failed to parse {name}: {e}")
+        print(f"   [!] Failed to parse {name}: {e}", flush=True)
         feed_stats[name] = {'new': 0, 'status': f"❌ Crash: {str(e)[:20]}"}
 
+print("::endgroup::", flush=True)
+
 # 4. Scrape HTML Sources
-print("\n--- STARTING HTML SCRAPING ---")
-for item in HTML_SOURCES:
+print("::group::🕸️ Scraping HTML Sources", flush=True)
+total_html = len(HTML_SOURCES)
+for html_idx, item in enumerate(HTML_SOURCES, 1):
     if len(item) != 4: continue
     name, url_source, tags, mode = item
     
-    # Enable Multi-Page Scraping: Handle string, list, OR range tuple (url_pattern, start, end)
+    print(f"[{html_idx}/{total_html}] Starting HTML Scrape: {name}", flush=True)
+    
+    # Enable Multi-Page Scraping: Handle string, list, OR range tuple
     if isinstance(url_source, tuple) and len(url_source) == 3:
         base_url, start_page, end_page = url_source
-        # Replace {} with the page number
         urls_to_scrape = [base_url.format(i) for i in range(start_page, end_page + 1)]
     elif isinstance(url_source, list):
         urls_to_scrape = url_source
@@ -1086,34 +1089,37 @@ for item in HTML_SOURCES:
     all_new_items =[]
     last_status = "Skipped"
 
+    total_pages = len(urls_to_scrape)
     for i, single_url in enumerate(urls_to_scrape):
-        # 1. Global polite delay between different blogs
         if i == 0:
             time.sleep(random.uniform(2, 7))
         else:
-            # 2. Intra-blog delay: Sleep 10s between pages of the SAME blog to avoid flagging
-            print(f"   ...cooling down (10s) before next page of {name}...")
+            print(f"   ...cooling down (10s) before page {i+1}/{total_pages} of {name}...", flush=True)
             time.sleep(random.uniform(8, 12))
 
         try:
+            print(f"   🔎 Page {i+1}/{total_pages} | HTML Scraping: {name} (Mode: {mode})...", flush=True)
             new_items, status = scrape_html_feed(name, single_url, mode, existing_links, recipes, tags)
             all_new_items.extend(new_items)
             last_status = status
             
-            # If blocked on page 1, do not attempt page 2
             if "Blocked" in status or "Crash" in status:
-                print(f"   Stopping multi-page scrape for {name} due to error on page {i+1}.")
+                print(f"   Stopping multi-page scrape for {name} due to error on page {i+1}.", flush=True)
                 break
                 
         except Exception as e:
-            print(f"   [!] Critical Error scraping {name}: {e}")
+            print(f"   [!] Critical Error scraping {name}: {e}", flush=True)
             last_status = "❌ HTML Crash"
 
     recipes.extend(all_new_items)
     feed_stats[name] = {'new': len(all_new_items), 'status': last_status}
 
+print("::endgroup::", flush=True)
+
+print("::group::⚙️ Processing, Pruning & Saving", flush=True)
+
 # 5. Backfill Tags (Including GF)
-print("\nUpdating tags for all recipes...")
+print("Updating tags for all recipes...", flush=True)
 for recipe in recipes:
     bname = recipe['blog_name']
     current_tags = recipe.get('special_tags', []) 
@@ -1121,19 +1127,17 @@ for recipe in recipes:
     auto_tags = get_auto_tags(recipe['title'])
     combined_tags = list(set(current_tags + base_tags + auto_tags))
     
-    # SAFETY: Remove GF tag if title contains obvious gluten words (unless explicitly marked GF in title)
+    # SAFETY: Remove GF tag if title contains obvious gluten words
     if "GF" in combined_tags:
         t_lower = recipe['title'].lower()
-        # If it has a bad word (like 'seitan' or 'sandwich')...
         if any(kw in t_lower for kw in NON_GF_KEYWORDS):
-            # ...and DOESN'T explicitly say "gluten free" or "gf" in the title...
             if not any(safe in t_lower for safe in GF_KEYWORDS):
                 combined_tags.remove("GF")
 
     recipe['special_tags'] = combined_tags
 
 # 5.5 Global Non-Recipe Filter
-print("Running global non-recipe filter...")
+print("Running global non-recipe filter...", flush=True)
 non_recipes_removed_count = 0
 valid_recipes = []
 
@@ -1151,10 +1155,10 @@ for r in recipes:
         valid_recipes.append(r)
 
 recipes = valid_recipes
-print(f"   Removed {non_recipes_removed_count} non-recipe items.")
+print(f"   Removed {non_recipes_removed_count} non-recipe items.", flush=True)
     
 # 6. Prune & Stats
-print("Pruning database and calculating stats...")
+print("Pruning database and calculating stats...", flush=True)
 recipes_by_blog = {}
 for r in recipes:
     bname = r['blog_name']
@@ -1185,7 +1189,7 @@ for bname, blog_recipes in recipes_by_blog.items():
 final_pruned_list.sort(key=lambda x: x['date'], reverse=True)
 
 # --- GLOBAL DEDUPLICATION ---
-print("   Running global deduplication (Rules: Title Match -> GF source > Older date)...")
+print("   Running global deduplication (Rules: Title Match -> GF source > Older date)...", flush=True)
 deduped_recipes = {}
 for recipe in final_pruned_list:
     title = recipe['title']
@@ -1208,10 +1212,9 @@ for recipe in final_pruned_list:
 final_pruned_list = list(deduped_recipes.values())
 final_pruned_list.sort(key=lambda x: x['date'], reverse=True)
 
-print("Pruning complete. Saving database with distinct source names...")
+print("Pruning complete. Saving database with distinct source names...", flush=True)
 
 if len(final_pruned_list) > 50:
-    # 1. Write to temp file first (Atomic Write Pattern)
     temp_file = "data.tmp.json"
     final_file = "data.json"
     
@@ -1219,28 +1222,24 @@ if len(final_pruned_list) > 50:
         with open(temp_file, 'w', encoding='utf-8') as f:
             json.dump(final_pruned_list, f, indent=2)
         
-        # 2. Rename/Move only if write was successful
-        # os.replace is atomic on POSIX, acts like move on Windows
         os.replace(temp_file, final_file)
-        print(f"✅ Successfully wrote {len(final_pruned_list)} items to {final_file}")
+        print(f"✅ Successfully wrote {len(final_pruned_list)} items to {final_file}", flush=True)
         
         generate_sitemap(final_pruned_list)
         generate_llms_txt(final_pruned_list)
         
     except Exception as e:
-        print(f"❌ CRITICAL ERROR writing database: {e}")
-        # Attempt cleanup of temp file
+        print(f"❌ CRITICAL ERROR writing database: {e}", flush=True)
         if os.path.exists(temp_file):
             os.remove(temp_file)
 else:
-    print("⚠️ SAFETY ALERT: Database too small (<50 items). Skipping write to prevent data loss.")
+    print("⚠️ SAFETY ALERT: Database too small (<50 items). Skipping write to prevent data loss.", flush=True)
 
 # 8. Generate Report
 with open('FEED_HEALTH.md', 'w', encoding='utf-8') as f:
     f.write(f"# Feed Health Report\n")
     f.write(f"**Last Run:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
 
-    # --- CALCULATE STATS ---
     total_new_today = sum(stats.get('new', 0) for stats in feed_stats.values())
     total_in_db = len(final_pruned_list)
     all_monitored_names = set(list(feed_stats.keys()) + list(total_counts.keys()))
@@ -1261,7 +1260,6 @@ with open('FEED_HEALTH.md', 'w', encoding='utf-8') as f:
     all_dates = [parser.parse(d) for d in latest_dates.values() if d != "N/A"]
     avg_date = datetime.fromtimestamp(sum(d.timestamp() for d in all_dates) / len(all_dates)).strftime('%Y-%m-%d') if all_dates else "N/A"
 
-    # --- WRITE SUMMARY TABLE ---
     f.write("### 📊 System Summary\n")
     f.write("| Metric | Value | Breakdown |\n")
     f.write("| :--- | :--- | :--- |\n")
@@ -1274,7 +1272,6 @@ with open('FEED_HEALTH.md', 'w', encoding='utf-8') as f:
     f.write("---\n\n")
     f.write("### 📋 Detailed Blog Status (Sorted: 0 Recipes First)\n\n")
     
-    # Standard Markdown Table Header
     f.write("| Blog Name | New | Total | WFPB | Easy | Budg | GF | Latest | Status |\n")
     f.write("| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n")
     
@@ -1285,7 +1282,6 @@ with open('FEED_HEALTH.md', 'w', encoding='utf-8') as f:
         total = total_counts.get(name, 0)
         latest = latest_dates.get(name, "N/A")
         
-        # Normalize status
         if "Scraped 0" in status or "Parsed 0 items" in status:
             status = "✅ OK" if total > 0 else "❌ Empty"
         
@@ -1296,14 +1292,12 @@ with open('FEED_HEALTH.md', 'w', encoding='utf-8') as f:
             "latest": latest, "status": status
         })
 
-    # --- CRITICAL: SORT BY STATUS (SKIPPED LAST), THEN TOTAL (0 FIRST), THEN NAME ---
-    # This ensures active/failed feeds are at the top, and decommissioned/skipped ones are at the bottom.
     report_rows.sort(key=lambda r: (1 if r['status'] == 'Skipped' else 0, r['total'], r['name']))
 
     for r in report_rows:
-        # Markdown Table Row
         f.write(f"| {r['name']} | {r['new']} | {r['total']} | {r['wfpb']} | {r['easy']} | {r['budget']} | {r['gf']} | {r['latest']} | {r['status']} |\n")
 
     f.write("\n---\n*Report generated automatically by searchveg.com Fetcher.*")
 
-print(f"Successfully generated FEED_HEALTH.md with scrollable table. Database size: {len(final_pruned_list)}")
+print(f"Successfully generated FEED_HEALTH.md with scrollable table. Database size: {len(final_pruned_list)}", flush=True)
+print("::endgroup::", flush=True)
